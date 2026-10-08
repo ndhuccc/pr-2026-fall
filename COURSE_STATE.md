@@ -22,10 +22,10 @@
 - [x] Step 3 agent 取得 Repo 存取(gh clone)
 - [x] Step 4 完成訪談,產生 `semester.toml`
 - [x] Step 5 套用設定;網站建置與實驗測試驗證通過(starter 27 失敗、solution 27 通過)
-- [ ] Step 6 提交並推送
-- [ ] Step 7a 啟用 Pages(Source: GitHub Actions)
-- [ ] Step 7b 開啟 Discussions
-- [ ] Step 7c 手動觸發 `deploy-site` 並確認網站可開
+- [x] Step 6 提交並推送(commit 945b993)
+- [x] Step 7a 啟用 Pages(Source: GitHub Actions),網址 https://ndhuccc.github.io/pr-2026-fall/
+- [x] Step 7b 開啟 Discussions
+- [x] Step 7c 手動觸發 `deploy-site` 並確認網站可開(run 37861833169 成功,網站回應 200)
 - [ ] Step 8 初始化內容(週次主題、保留的 Lab/作業、解答釋出日、課綱)
 - [ ] Step 9 向老師總結
 
@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 啟用 Pages(workflow 來源)與 Discussions;手動觸發 deploy-site 成功,網站可開。
 - 2026-10-09 — 建立 ndhuccc/pr-2026-fall(Private,由 course-template 產生);套用學期設定。第 1 週起始 2026-09-07(依 sys.ndhu.edu.tw 行事曆「全校開始上課」)。
 - 2026-10-09 — 行事曆標示週一放假:第 4 週 9/28(孔子誕辰／教師節)、第 8 週 10/26(光復節補假),排程時需跳過。
 - 2026-10-09 — 上課時間記為週一 14:10–17:00;上課地點未填(待補)。
