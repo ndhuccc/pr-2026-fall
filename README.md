@@ -33,7 +33,7 @@
 | [`lectures/`](lectures/) | 每週講義(Markdown + LaTeX) |
 | [`slides/`](slides/) | 投影片(HTML / PDF) |
 | [`notebooks/`](notebooks/) | 實作 Notebook(可於 Colab 開啟) |
-| [`labs/`](labs/) | 實驗 Lab 01–03:`starter/`(起始碼)、`tests/`(自動測試) |
+| [`labs/`](labs/) | 實驗(尚未加入,之後依課程進度新增) |
 | [`assignments/`](assignments/) | 作業說明與評分標準 |
 | [`projects/`](projects/) | 期末專題說明與里程碑 |
 | [`exams/`](exams/)、[`quizzes/`](quizzes/) | 考試範圍、考古題、測驗 |
@@ -54,8 +54,7 @@ python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-# 3. 驗證環境
-pytest labs/lab01/tests -q || echo "尚未完成 Lab 01,測試失敗屬正常"
+# 3. 驗證環境(實驗加入後,此處會列出測試指令)
 ```
 
 或直接使用 **GitHub Codespaces**(點選 *Code → Codespaces → Create*),環境已自動設定。

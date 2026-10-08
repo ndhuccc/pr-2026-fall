@@ -37,9 +37,10 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 移除範例實驗 labs/lab01–03(老師決定本學期尚無實驗,之後陸續加入;舊內容保留在 git commit 945b993)。autograde 的兩個 pytest 步驟改為無測試檔時略過;release_schedule.toml 清空 [solutions];README 與 lec01 移除實驗連結。
 - 2026-10-09 — 啟用 Pages(workflow 來源)與 Discussions;手動觸發 deploy-site 成功,網站可開。
 - 2026-10-09 — 建立 ndhuccc/pr-2026-fall(Private,由 course-template 產生);套用學期設定。第 1 週起始 2026-09-07(依 sys.ndhu.edu.tw 行事曆「全校開始上課」)。
 - 2026-10-09 — 行事曆標示週一放假:第 4 週 9/28(孔子誕辰／教師節)、第 8 週 10/26(光復節補假),排程時需跳過。
 - 2026-10-09 — 上課時間記為週一 14:10–17:00;上課地點未填(待補)。
 - 未填選填欄位:AI_POLICY、COURSE_DESCRIPTION、CREDITS、HW01_DUE、HW01_RELEASE、OFFICE_HOUR、TA、TEAM_SIZE、TEXTBOOK。
-- 待辦:Step 7 啟用 Pages/Discussions;Step 8 填 release_schedule.toml 解答釋出日(目前為佔位值 2099);補上課地點等選填欄位。
+- 待辦:(1) Step 8 實驗加入時依 AGENTS §5.2 建立;若要以舊範例為起點,可用 `git checkout 945b993 -- labs/lab01` 還原。(2) syllabus.md 仍列「實驗 15%」,需與老師確認評分比例。(3) 補上課地點等選填欄位。

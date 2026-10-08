@@ -40,6 +40,10 @@ jobs:
       - name: 執行 pytest 並產生報告
         run: |
           set -o pipefail
+          if [ -z "$(find labs -name 'test_*.py' -print -quit)" ]; then
+            echo "目前沒有實驗,略過測試" | tee pytest-report.txt
+            exit 0
+          fi
           pytest labs -q --tb=short | tee pytest-report.txt
         continue-on-error: false
 
@@ -70,4 +74,9 @@ jobs:
       - name: solution 必須全數通過
         env:
           LAB_TARGET: solution
-        run: pytest labs -q
+        run: |
+          if [ -z "$(find labs -name 'test_*.py' -print -quit)" ]; then
+            echo "目前沒有實驗,略過 solution 驗證"
+            exit 0
+          fi
+          pytest labs -q
