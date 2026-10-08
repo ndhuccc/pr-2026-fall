@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+"""把 Repo 內容整理成 MkDocs 網站的原始檔目錄(暫存區 ``.site_src/``)。
+
+為什麼需要這一步?
+    * Repo 的目錄結構是為「教學與協作」設計的,不是為網站設計的。
+    * 解答(``labs/*/solution/``)只能在 ``release_schedule.toml`` 規定的日期之後
+      才出現在網站上,這個判斷集中在這支腳本,不必手動改網站設定。
+
+用法::
+
+    python scripts/build_docs.py              # 以今天日期建置暫存區
+    python scripts/build_docs.py --today 2026-11-01   # 模擬某一天(測試用)
+    mkdocs build                              # 之後再用 MkDocs 產生 site/
+
+需要 Python >= 3.11(使用標準函式庫 ``tomllib``,無第三方相依)。
+"""
+
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import shutil
+import tomllib
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+ROOT = Path(__file__).resolve().parents[1]
+STAGE = ROOT / ".site_src"
+
+# 要放進網站的根目錄文件(README 會變成首頁 index.md)
+ROOT_DOCS = [
+    "syllabus.md",
+    "schedule.md",
+    "FAQ.md",
+    "glossary.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+]
+
+# 要整個複製的資料夾(只複製網站會用到的檔案類型)
+CONTENT_DIRS = [
+    "lectures",
+    "labs",
+    "assignments",
+    "projects",
+    "exams",
+    "quizzes",
+    "references",
+    "study-guide",
+    "notebooks",
+    "slides",
+]
+
+# 各資料夾允許的副檔名。注意:labs 只放 .md,因此 starter/solution 的 .py 不會被整包複製。
+ALLOWED_SUFFIXES = {".md", ".html", ".pdf", ".png", ".svg", ".jpg", ".jpeg", ".gif"}
+
+# MathJax 設定:讓 $...$ 與 $$...$$ 能在網站上渲染
+MATHJAX_JS = r"""window.MathJax = {
+  tex: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  options: {
+    ignoreHtmlClass: ".*|",
+    processHtmlClass: "arithmatex"
+  }
+};
+
+document$.subscribe(() => {
+  MathJax.startup.output.clearCache();
+  MathJax.typesetClear();
+  MathJax.texReset();
+  MathJax.typesetPromise();
+});
+"""
+
+
+def load_release_dates(today_tz: str | None = None) -> tuple[dict[str, dt.date], ZoneInfo]:
+    """讀取 ``release_schedule.toml``,回傳 (實驗代號 -> 釋出日期, 時區)。"""
+    path = ROOT / "release_schedule.toml"
+    if not path.exists():
+        return {}, ZoneInfo(today_tz or "UTC")
+    with path.open("rb") as f:
+        data = tomllib.load(f)
+    tz = ZoneInfo(data.get("timezone", "UTC"))
+    dates = {k: v for k, v in data.get("solutions", {}).items() if isinstance(v, dt.date)}
+    return dates, tz
+
+
+def copy_content(stage: Path) -> int:
+    """複製文件與資源到暫存區,回傳複製的檔案數。"""
+    count = 0
+
+    # 首頁:README.md -> index.md
+    shutil.copyfile(ROOT / "README.md", stage / "index.md")
+    count += 1
+
+    # 授權:LICENSE 沒有副檔名,MkDocs 不會處理,故包成 Markdown 頁面
+    lic = ROOT / "LICENSE"
+    if lic.exists():
+        (stage / "LICENSE.md").write_text(
+            "# 授權\n\n```text\n" + lic.read_text(encoding="utf-8") + "\n```\n", encoding="utf-8"
+        )
+        count += 1
+
+    for name in ROOT_DOCS:
+        src = ROOT / name
+        if src.exists():
+            shutil.copyfile(src, stage / name)
+            count += 1
+
+    for folder in CONTENT_DIRS:
+        base = ROOT / folder
+        if not base.exists():
+            continue
+        for src in base.rglob("*"):
+            if not src.is_file() or src.suffix.lower() not in ALLOWED_SUFFIXES:
+                continue
+            dest = stage / src.relative_to(ROOT)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, dest)
+            count += 1
+
+    # 圖片素材
+    figures = ROOT / "assets" / "figures"
+    if figures.exists():
+        for src in figures.rglob("*"):
+            if src.is_file() and src.suffix.lower() in ALLOWED_SUFFIXES:
+                dest = stage / src.relative_to(ROOT)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(src, dest)
+                count += 1
+    return count
+
+
+def rewrite_links(stage: Path) -> None:
+    """修正「在 GitHub 上正常、在網站上失效」的連結。
+
+    * 資料夾連結 ``](labs/)``  ->  ``](labs/README.md)``(GitHub 會顯示資料夾,MkDocs 不會)
+    * ``](LICENSE)``           ->  ``](LICENSE.md)``(對應上面包裝後的授權頁)
+    """
+    for md in stage.rglob("*.md"):
+        text = md.read_text(encoding="utf-8")
+        new = text
+        for folder in CONTENT_DIRS:
+            new = new.replace(f"]({folder}/)", f"]({folder}/README.md)")
+            new = new.replace(f"](./{folder}/)", f"](./{folder}/README.md)")
+        new = new.replace("](LICENSE)", "](LICENSE.md)")
+        if new != text:
+            md.write_text(new, encoding="utf-8")
+
+
+def publish_due_solutions(stage: Path, today: dt.date, dates: dict[str, dt.date]) -> list[str]:
+    """對「日期已到」的實驗,產生 ``labs/<lab>/solution.md``,回傳已釋出的代號。"""
+    released: list[str] = []
+    for lab, due in sorted(dates.items()):
+        if today < due:
+            continue
+        sol_dir = ROOT / "labs" / lab / "solution"
+        if not sol_dir.is_dir():
+            print(f"[警告] release_schedule.toml 列出 {lab},但找不到 {sol_dir}")
+            continue
+        parts = [f"# {lab} 參考解答\n", f"> 釋出日期:{due.isoformat()}\n"]
+        for py in sorted(sol_dir.glob("*.py")):
+            parts.append(f"\n## `{py.name}`\n\n```python\n{py.read_text(encoding='utf-8')}\n```\n")
+        out = stage / "labs" / lab / "solution.md"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text("\n".join(parts), encoding="utf-8")
+        released.append(lab)
+    return released
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--today", help="模擬今天日期(YYYY-MM-DD),預設為設定時區的今天")
+    args = parser.parse_args()
+
+    dates, tz = load_release_dates()
+    today = dt.date.fromisoformat(args.today) if args.today else dt.datetime.now(tz).date()
+
+    # 每次都從乾淨的暫存區開始,避免殘留已撤回的內容
+    if STAGE.exists():
+        shutil.rmtree(STAGE)
+    STAGE.mkdir(parents=True)
+
+    n = copy_content(STAGE)
+    rewrite_links(STAGE)
+    released = publish_due_solutions(STAGE, today, dates)
+
+    js = STAGE / "javascripts"
+    js.mkdir(exist_ok=True)
+    (js / "mathjax.js").write_text(MATHJAX_JS, encoding="utf-8")
+
+    print(f"今天:{today}｜複製 {n} 個檔案｜已釋出解答:{released or '無'}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
