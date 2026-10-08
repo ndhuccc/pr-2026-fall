@@ -4,12 +4,12 @@
 
 | 項目 | 內容 |
 |---|---|
-| 課程名稱 | {{COURSE_NAME}} |
-| 課號 | {{COURSE_CODE}} |
-| 學期 | {{SEMESTER}} |
+| 課程名稱 | 圖型識別 |
+| 課號 | CSIE6001 |
+| 學期 | 2026 秋季 |
 | 學分 / 時數 | {{CREDITS}} |
-| 上課時間地點 | {{CLASS_TIME_LOCATION}} |
-| 授課教師 | {{INSTRUCTOR}}({{EMAIL}}) |
+| 上課時間地點 | 週一 14:10–17:00 |
+| 授課教師 | 江政欽 教授(ccchiang@gms.ndhu.edu.tw) |
 | 助教 | {{TA}} |
 | Office Hour | {{OFFICE_HOUR}} |
 

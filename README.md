@@ -1,8 +1,8 @@
-# {{COURSE_NAME}}({{COURSE_CODE}})— {{SEMESTER}}
+# 圖型識別(CSIE6001)— 2026 秋季
 
-> {{UNIVERSITY}} {{DEPARTMENT}}｜授課教師:{{INSTRUCTOR}}｜聯絡信箱:{{EMAIL}}
+> 國立東華大學 資訊工程學系｜授課教師:江政欽 教授｜聯絡信箱:ccchiang@gms.ndhu.edu.tw
 
-課程網站:<{{SITE_URL}}>
+課程網站:<https://ndhuccc.github.io/pr-2026-fall/>
 
 > 🤖 **老師使用 AI Agent 經營本課程?** 請先看 `START_HERE.md`,並把 `AGENTS.md` 交給您的 AI。
 
@@ -46,8 +46,8 @@
 
 ```bash
 # 1. 取得專案
-git clone {{REPO_URL}}
-cd {{REPO_NAME}}
+git clone https://github.com/ndhuccc/pr-2026-fall
+cd pr-2026-fall
 
 # 2. 建立環境
 python -m venv .venv
@@ -64,9 +64,9 @@ pytest labs/lab01/tests -q || echo "尚未完成 Lab 01,測試失敗屬正常"
 
 | 需求 | 管道 |
 |---|---|
-| 課程內容提問 | [Issues → 提問]({{REPO_URL}}/issues/new/choose) 或 Discussions |
-| 講義/作業勘誤 | [Issues → 勘誤回報]({{REPO_URL}}/issues/new/choose) |
-| 請假/補交/成績申請 | [Issues → 申請]({{REPO_URL}}/issues/new/choose)(**請勿**在公開 Issue 填寫個資) |
+| 課程內容提問 | [Issues → 提問](https://github.com/ndhuccc/pr-2026-fall/issues/new/choose) 或 Discussions |
+| 講義/作業勘誤 | [Issues → 勘誤回報](https://github.com/ndhuccc/pr-2026-fall/issues/new/choose) |
+| 請假/補交/成績申請 | [Issues → 申請](https://github.com/ndhuccc/pr-2026-fall/issues/new/choose)(**請勿**在公開 Issue 填寫個資) |
 | 一對一討論 | Office Hour:{{OFFICE_HOUR}} |
 
 ## 授權

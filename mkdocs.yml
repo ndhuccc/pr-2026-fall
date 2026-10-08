@@ -1,9 +1,9 @@
 # 課程網站設定(MkDocs + Material)
 # 注意:網站原始檔由 scripts/build_docs.py 產生於 .site_src/,請勿直接編輯該資料夾。
-site_name: "{{COURSE_NAME}} — {{SEMESTER}}"
-site_description: "{{COURSE_NAME}} 課程網站"
-site_url: "{{SITE_URL}}"
-repo_url: "{{REPO_URL}}"
+site_name: "圖型識別 — 2026 秋季"
+site_description: "圖型識別 課程網站"
+site_url: "https://ndhuccc.github.io/pr-2026-fall/"
+repo_url: "https://github.com/ndhuccc/pr-2026-fall"
 docs_dir: .site_src
 
 theme:
