@@ -321,7 +321,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 | `release_schedule.toml` | 解答網站釋出日 | 只控制網站 |
 | `semester.toml` | 本學期參數 | **不上傳**(`.gitignore`) |
 | `COURSE_STATE.md` | 進度與決策紀錄 | **每次工作後更新** |
-| `scripts/` | `new_semester.py` `build_docs.py` `doctor.py` | 共用基礎設施,不要隨意改 |
+| `scripts/` | `new_semester.py` `build_docs.py` `sync_nav.py` `doctor.py` | 共用基礎設施,不要隨意改。`sync_nav.py` 會依 `schedule.md` 的順序產生 `mkdocs.yml` 的 `nav:`,讓側邊導覽依週次與輸入順序排列(由 `build_docs.py` 自動呼叫) |
 | `.github/workflows/` | 自動化(連結檢查、Notebook 驗證、自動評分、網站發佈) | 不要隨意改 |
 | `PLAN.md` `SETUP.md` | 設計說明、教師設定指南 | 需要細節時查閱 |
 

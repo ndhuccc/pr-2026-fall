@@ -21,6 +21,7 @@ import argparse
 import datetime as dt
 import re
 import shutil
+import sys
 import tomllib
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -260,6 +261,14 @@ def main() -> int:
     n = copy_content(STAGE)
     rewrite_links(STAGE)
     released = publish_due_solutions(STAGE, today, dates)
+
+    # 側邊導覽的順序:依 schedule.md 的週次與輸入順序(MkDocs 預設會按檔名排序)
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import sync_nav
+        sync_nav.main()
+    except Exception as exc:  # 導覽順序失敗不應擋住建置
+        print(f"[警告] 無法更新 mkdocs.yml 的 nav:{exc}")
 
     js = STAGE / "javascripts"
     js.mkdir(exist_ok=True)
