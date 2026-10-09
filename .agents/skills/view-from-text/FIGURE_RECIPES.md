@@ -129,6 +129,32 @@ ax.set_ylabel("density")
 uri = svg_data_uri(fig)
 ```
 
+## R6 判別差 g(x)=g1(x)-g2(x) 與決策邊界(講義 §4 決策曲面、§5.3)
+
+```python
+import numpy as np
+from jbd_figure import *
+use_jbd_style()
+
+def log_gauss(x, m, s):
+    return -0.5 * ((x - m) / s) ** 2 - np.log(s) - 0.5 * np.log(2 * np.pi)
+
+x = np.linspace(-6, 6, 800)
+# 與 R3 相同的一維例子;等先驗時 ln(0.5) 相消,g = g1 - g2
+d = log_gauss(x, 0.0, 1.0) - log_gauss(x, 2.0, 2.0)
+fig, ax = new_figure(560, 400)
+ax.plot(x, d, color="#5fb8a8", lw=2.5)
+ax.fill_between(x, 0, d, where=d > 0, color="#6a9fd6", alpha=0.25)   # g>0 判為 w1
+ax.fill_between(x, 0, d, where=d < 0, color="#d97757", alpha=0.25)   # g<0 判為 w2
+ax.axhline(0, color="#b7b0a5", lw=1)
+for r in x[1:][np.sign(d[1:]) != np.sign(d[:-1])]:   # 零點即決策邊界
+    ax.axvline(r, color="#e0995f", ls="--")
+ax.set_xlim(-6, 6)
+ax.set_xlabel(r"$x$")
+ax.set_ylabel(r"$g(x)$")
+uri = svg_data_uri(fig)
+```
+
 ## 把 uri 放進節點
 
 ```python
