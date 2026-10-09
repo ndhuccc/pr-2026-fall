@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 依課程網頁 Chapter 1(Introduction)用新版講義技能改寫 `lectures/lec01.md`(繁中英對照、高中可讀、補充素材標 [補充]/[Added])。新增 `assets/figures/lec01_fig1.py`(模擬特徵平面)、`lec01_fig2.py`(三種學習方式)、`lec01_fig3.py`(設計迴圈),已目視檢查。網頁中的教科書圖與 AI 生圖提示未直接使用。原創性檢查通過(剩餘重複為專有名詞與章名)。
 - 2026-10-09 — `lectures/lec01.md` 改寫為繁體中文與英文對照,加入決策規則的數字例(已用 Python 驗算)與示意圖 `assets/figures/lec01_fig1.png`(Matplotlib 腳本 `assets/figures/src/lec01_fig1.py`,已目視檢查)與術語表。
 - 2026-10-09 — 新增講義製作技能,放在 Repo 內 `.agents/skills/textbook-lecture-notes/`(教科書 PDF → 高中可讀的碩士講義)。新增 `scripts/render_formula.py`(KaTeX + Playwright 公式圖,已測試)與 `requirements-lecture.txt`;AGENTS.md §5.1 加入指引。
 - 2026-10-09 — 老師決定:TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數、作業繳交規範先留空(相關檔案的佔位符已清空)。lectures/lec01.md 依第 1 週主題「課程介紹與圖形識別概論」改寫,舊內容(線性模型與梯度下降)已移除。
