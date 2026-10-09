@@ -325,6 +325,8 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
    - 有任何一條不符，先修圖，再修圖說。
    - 稽核結果記入 `COURSE_STATE.md` 或給老師的摘要。
    - 案例：`lec01-design-loop` 為了避免虛線穿過方塊，刪除了回到「特徵生成」的細虛線，但圖說仍寫「任何較早的階段」，圖與圖說不符。
+   - 陰影或面積圖：陰影的上緣必須是圖上實際畫出的曲線。若陰影用了加權值（例如 $P(\omega_i)p(\mathbf{x}\mid\omega_i)$），圖上的曲線也要畫同一個加權值，不能只畫未加權的密度。圖說要標出面積數值，並與理論值比對。
+   - 案例：`lec02-error-regions` 的陰影用 $0.5\,p(x\mid\omega)$ 計算，圖上畫的卻是未加權的 $p(x\mid\omega)$，陰影邊界對不上任何可見曲線，被誤認為錯誤。
 
 驗證用的腳本是一次性的，不要提交進 Repo（除非是 `assets/figures/src/` 中的圖表腳本）。
 

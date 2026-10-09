@@ -126,11 +126,11 @@ The integrals are areas under the curves. The first term is the area of $\omega_
 
 The values above were computed with Python. `[Added]` Here $\Phi(-1)\approx 0.1587$ is the area of the standard normal distribution to the left of $-1$.
 
-![左：兩個高斯密度與誤判陰影（x0=0）；右：不同門檻下的總誤判機率（Left: two Gaussian densities with error shading for x0 = 0; right: total error probability for different thresholds）](../assets/figures/lec02-error-regions.png)
+![左：加權密度 $P(\omega_i)p(x\mid\omega_i)$ 與門檻 $x_0=0$ 的誤判陰影；右：不同門檻下的總誤判機率（Left: weighted densities $P(\omega_i)p(x\mid\omega_i)$ with error shading for $x_0=0$; right: total error probability for different thresholds）](../assets/figures/lec02-error-regions.png)
 
-**圖說 `lec02-error-regions`**：左圖是兩條高斯密度與門檻 $x_0=0$ 的誤判陰影。右圖是總誤判機率隨門檻變化的曲線，最低點在兩條曲線的交點 $x_0=0$。
+**圖說 `lec02-error-regions`**：左圖畫的是加權密度 $P(\omega_i)p(x\mid\omega_i)$。陰影的上緣就是圖上的曲線，每一塊陰影的面積都是 0.0793，兩塊合計 0.1587，也就是 $P_e$。右圖是總誤判機率隨門檻變化的曲線，最低點在兩條曲線的交點 $x_0=0$。
 
-**Caption `lec02-error-regions`**: left, the two Gaussian densities with the error shading for threshold $x_0=0$. Right, the total error probability as the threshold changes; the lowest point is the crossing point $x_0=0$.
+**Caption `lec02-error-regions`**: the left panel plots the weighted densities $P(\omega_i)p(x\mid\omega_i)$. The top edge of each shaded region is the plotted curve. Each region has area 0.0793, and the two together give $P_e=0.1587$. The right panel shows the total error probability as the threshold changes; the lowest point is the crossing point $x_0=0$.
 
 **常見迷思（Common misconception）**：「移動門檻就能同時減少兩種錯誤。」事實上，往某一邊移動，會減少一種錯誤，同時增加另一種。交點是兩者之和最小的位置。
 
