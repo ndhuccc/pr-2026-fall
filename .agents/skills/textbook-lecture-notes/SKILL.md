@@ -1,13 +1,13 @@
 ---
 name: textbook-lecture-notes
-description: Turn a textbook chapter (a PDF or text the user pastes) into graduate-level lecture notes written in plain language (readable by a high-school student), with worked examples for formulas and abstract ideas, AI-generated infographic requests, Matplotlib figures for geometric, functional, or statistical content, and KaTeX formula images when a formula must sit inside an image. Use when the user provides a textbook chapter PDF or pasted text and asks for 講義, lecture notes, 教材, or 示意圖 for a course in this repository.
+description: Turn a textbook chapter (a PDF, pasted text, or a URL the user gives) into graduate-level lecture notes written in plain language (readable by a high-school student), in bilingual Traditional Chinese and English, with worked examples for formulas and abstract ideas, AI-generated infographic requests, Matplotlib figures for geometric, functional, or statistical content, and KaTeX formula images when a formula must sit inside an image. Use when the user provides a textbook chapter as a PDF, pasted text, or URL and asks for 講義, lecture notes, 教材, or 示意圖 for a course in this repository.
 ---
 
 # textbook-lecture-notes
 
-把一章教科書轉成碩士班課程講義。輸入可以是 PDF 檔，也可以是使用者直接貼上的文本。你的角色是該領域的專家教授：理解原理、挑出關鍵知識點、用淺顯的語言講清楚，並用例子與圖讓抽象概念看得見。
+把一章教科書轉成碩士班課程講義。輸入可以是 PDF 檔、使用者直接貼上的文本，或一個網址。輸出為**繁體中文與英文對照**的雙語講義。你的角色是該領域的專家教授：理解原理、挑出關鍵知識點、用淺顯的語言講清楚，並用例子與圖讓抽象概念看得見。
 
-這個技能**不是**逐字翻譯或摘抄教科書。教科書受著作權保護：只能用自己的文字重新解釋，不得大段複製原文或原圖。
+這個技能**不是**逐字翻譯或摘抄教科書。教科書與網頁內容都受著作權保護：只能用自己的文字重新解釋，不得大段複製原文或原圖。
 
 技能位於課程 Repo 內：`.agents/skills/textbook-lecture-notes/`。技能內的路徑都以 Repo 根目錄為基準。
 
@@ -18,7 +18,7 @@ pip install -r requirements-lecture.txt
 python -m playwright install chromium     # 只有需要公式圖片時才需要
 ```
 
-若安裝失敗，先告知使用者，不要跳過驗證步驟。貼上文本的路徑不需要 `pypdf`，但仍需要其他驗證工具。
+若安裝失敗，先告知使用者，不要跳過驗證步驟。貼上文本與網址的路徑不需要 `pypdf`，但仍需要其他驗證工具。
 
 ## 1. 先讀專案脈絡
 
@@ -29,7 +29,7 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 5. 讀 `lectures/lec01.md`，沿用其 Markdown 格式（標題、週次引用、`$...$` 與 `$$...$$`）。
 6. 若 `AGENTS.md` 與本技能衝突，以 `AGENTS.md` 為準。
 
-需要向使用者確認的只有：對應週次（若 `schedule.md` 無法判斷）、以及特殊要求。若使用者給的是 PDF，還要確認路徑。
+需要向使用者確認的只有：對應週次（若 `schedule.md` 無法判斷）、以及特殊要求。若使用者給的是 PDF 或網址，還要確認檔案或頁面確實是要用的章節。
 
 ## 2. 取得文本內容
 
@@ -46,13 +46,20 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 2. 若文字中有章節標題、頁碼或段落編號，保留為出處。沒有的話，出處寫成「老師提供的文本（章節：……）」，**不要編造頁碼**。
 3. 檢查文本是否完整。若句子在中途斷掉、公式被拆成一行一個符號、圖說缺失，先告知使用者並請他補貼，**不要自行猜測缺漏的內容**。
 4. 貼上的公式常是 Unicode 或純文字（例如 `w^T x + b`）。整理成 LaTeX 前，先把每個公式的意思與使用者確認，特別是上標、下標與向量記號。
-5. 貼上的文字只用於產生講義，**不要把整段原文存進 Repo**。需要暫存時，放在系統暫存目錄或對話中，不要提交。
+
+### 2.3 使用者給的網址
+
+1. 用 `read` 工具讀取網址。若回傳的是 PDF，改依 2.1 處理。
+2. 確認抓到的是**文本本身**。若只拿到導覽頁、目錄、登入頁或需要 JavaScript 才會顯示內容的空白頁，告知使用者，並請他貼上文字或提供 PDF。
+3. 不要抓取需要登入、付費或其他存取限制後的內容，也不要嘗試繞過限制。
+4. 出處記錄網址與讀取日期。若網頁有章節標題或頁碼，一併保留。網頁可能會更新，講義中要註明讀取日期。
+5. 網頁內容同樣受著作權保護，遵守 2.2 的規則：用自己的文字解釋，**不把網頁原文存進 Repo**。
 
 ## 3. 萃取知識點地圖
 
 輸出一張表，每列一個知識點，建議 6–10 個：
 
-| # | 知識點 | 為什麼重要 | 出處（頁碼或段落） | 類型 | 視覺需求 |
+| # | 知識點 | 為什麼重要 | 出處（頁碼、段落或網址） | 類型 | 視覺需求 |
 |---|---|---|---|---|---|
 
 - **類型**：定義 / 公式 / 直覺 / 程序（演算法步驟）/ 比較 / 迷思
@@ -64,15 +71,33 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 
 ### 4.1 讀者與語言
 
-- 讀者是碩士生，但背景可能薄弱。用**高中生能讀懂**的文字寫。
-- 一句話只講一件事。中文句子盡量在 30 字內，超過 40 字就拆開。
+- 讀者是碩士生，但背景可能薄弱。用**高中生能讀懂**的文字寫，中文與英文都一樣。
+- 一句話只講一件事。中文句子盡量在 30 字內，超過 40 字就拆開。英文句子盡量在 20 個字以內。
 - 一段不超過 4 句。
 - 第一次出現的專有名詞，必須先用白話解釋，例如「**先驗機率**：在還沒看資料前，你對某類事件發生的把握程度。」
 - 不要連續堆疊兩個以上未定義的術語。
-- 用「你」來稱呼讀者。避免文言與冗長的被動句。
+- 用「你」來稱呼讀者（英文用 "you"）。避免文言與冗長的被動句。
 - 不寫空泛的開場白與結語，直接進入內容。
 
-### 4.2 深度（碩士程度）
+### 4.2 雙語格式（必做）
+
+講義一律以**繁體中文與英文對照**呈現：
+
+1. **標題雙語**：`## 知識點名稱 / Concept name`。
+2. **每個段落成對出現**：中文段落後緊接英文段落，兩者內容對應。英文不是逐字直譯，而是同等意思的獨立表達，但**不得多出或遺漏資訊**。
+3. **欄位成對**：每個欄位都有中英兩行，例如：
+
+   ```
+   **白話說明**：……
+   **Plain explanation**: ……
+   ```
+4. **表格雙語**：符號表使用三欄 `| 符號 | 中文意義 | English meaning |`；知識點地圖同樣如此。
+5. **公式與程式碼不重複**：公式、程式碼、檔名只出現一次。公式前後的說明文字用雙語。
+6. **圖的替代文字雙語**：`![中文描述｜English description](路徑)`。
+7. **術語表**：每份講義結尾加一張中英術語對照表，列出本講義所有第一次出現的專有名詞。之後同一術語在全講義要使用同一譯法。
+8. **英文的品質**：英文要符合學術用語的慣例，但仍要淺顯。避免俚語與過度修飾。
+
+### 4.3 深度（碩士程度）
 
 每個知識點都要包含：
 - **為什麼需要它**：它解決什麼問題，沒有它會怎樣。
@@ -81,37 +106,52 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 - **何時失效**：方法的限制與常見誤用。
 - **與實作的連結**：說明實際程式中要怎麼做，以及常見的數值問題。
 
-### 4.3 公式的處理（每個重要公式都要做到）
+### 4.4 公式的處理（每個重要公式都要做到）
 
-1. **符號表**：列出每個符號的白話意義與單位／維度。
-2. **白話直覺**：用一句話說明這個式子在做什麼。
+1. **符號表**：列出每個符號的中英意義與單位／維度。
+2. **白話直覺**：用一句話說明這個式子在做什麼，中英各一句。
 3. **具體數字例**：用小的數字逐步代入計算，每一步都要寫出來。**所有數字必須用 Python 實際算過**，不得心算。
-4. **常見錯誤**：一個學生最容易犯的錯，並說明為什麼錯。
+4. **常見錯誤**：一個學生最容易犯的錯，並說明為什麼錯，中英各一段。
 
-### 4.4 抽象概念的處理
+### 4.5 抽象概念的處理
 
 - 一個概念至少給：一個生活化的類比、一個具體例子、一個反例或迷思。
-- 類比要明說它的侷限，例如「這個類比只對應到……，不適用於……」。
+- 類比要明說它的侷限，例如「這個類比只對應到……，不適用於……」（中英各一句）。
 
-### 4.5 每個知識點的版面
+### 4.6 每個知識點的版面
 
 ```
-### 知識點名稱
+### 知識點名稱 / Concept name
 **一句話重點**：……
+**One-sentence summary**: ……
+
 **白話說明**：……（2–4 句）
+**Plain explanation**: ……（2–4 sentences）
+
 **正式定義**：……（符號與公式）
+**Formal definition**: ……（same symbols and formulas）
+
 **例子**：……（逐步計算）
+**Example**: ……（same calculation）
+
 **常見迷思**：……
+**Common misconception**: ……
+
 **圖**：……（若有）
+**Figure**: ……（若有）
+
 **想深入**（選讀）：……
+**Going deeper** (optional): ……
+
 **小練習**：……（只給問題與提示，預設不附答案，除非老師要求）
+**Practice**: ……（problems and hints only, no answers by default）
 ```
 
-### 4.6 忠實與出處
+### 4.7 忠實與出處
 
-- 教科書有錯或公式損壞：先還原，再重新推算。**不得默默修改數字**；若有疑問，在講義中標註並告知老師。
-- 超出原文範圍的補充內容，標上 `[補充]`。
-- 頁碼只引用你從 PDF 確認過的頁碼；貼上的文本沒有頁碼時，只引用章節或段落名稱。
+- 原文有錯或公式損壞：先還原，再重新推算。**不得默默修改數字**；若有疑問，在講義中標註並告知老師。
+- 超出原文範圍的補充內容，標上 `[補充]`／`[Added]`。
+- 頁碼只引用你從 PDF 確認過的頁碼；貼上的文本與網址沒有頁碼時，只引用章節或段落名稱。網址要附讀取日期。
 - 不編造文獻、作者、年份或頁碼。
 
 ## 5. 視覺素材
@@ -138,7 +178,7 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 - 目的：這張圖要幫學生理解哪一個概念。
 - 版面：流程、分層、並列、對照，等等。
 - 內容元素：只列出圖上要有的物件與連接關係。
-- **文字規範**：圖中**不要放中文字**（AI 生圖常產生亂碼）。只用英文短標籤或數學符號，中文說明放在 Markdown 文字中。
+- **文字規範**：圖中**不要放中文字**（AI 生圖常產生亂碼）。只用英文短標籤或數學符號，中英說明放在 Markdown 文字中。
 - 風格：簡潔、白底或透明底、高對比、無裝飾性元素。
 
 用可用的圖像生成工具產生 PNG，存到 `assets/figures/lecNN_figK.png`。若環境沒有生圖能力，告知使用者，並改用 Mermaid 或 SVG，不要假裝已生成。
@@ -172,7 +212,7 @@ fig.savefig("assets/figures/lecNN_figK.png", dpi=200)
 - **統計圖**：標示樣本數 $n$；需要時說明隨機種子。
 - **資料點超過 500 個**：散佈圖加 `rasterized=True`。
 - **圖例**：放在空白處，渲染後確認沒有壓到曲線。
-- **圖內文字**：只用英文與數學符號。中文說明用 Markdown 寫在圖的上下文中。
+- **圖內文字**：只用英文與數學符號。中英說明用 Markdown 寫在圖的上下文中。
 - **數值一致**：圖中的數字必須與正文完全一致。
 
 **生成後必須用 `read` 工具打開 PNG 目視檢查**：軸標籤有沒有被切掉、圖例有沒有壓到內容、比例是否正確。沒看過就不算完成。
@@ -192,7 +232,7 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 ```
 
 規則：
-- 中文字放在 `\text{...}` 中，例如 `\text{後驗機率}`。
+- 中文字放在 `\text{...}` 中，例如 `\text{後驗機率}`；英文字可直接寫。
 - LaTeX 字串不要包含外層 `$`。
 - 同一份講義的公式字級一致（預設 32px）；需要時用 `--font-px` 調整。
 - 腳本會在 KaTeX 語法錯誤時失敗並回報，不要忽略錯誤。
@@ -202,40 +242,45 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 ### 5.4 圖的引用
 
 ```markdown
-![直線 x1+x2-0.5=0 與兩側的點](../assets/figures/lec02_fig1.png)
+![直線 x1+x2-0.5=0 與兩側的點｜Line x1+x2-0.5=0 and points on each side](../assets/figures/lec02_fig1.png)
 ```
 
-替代文字（alt）必須描述圖的內容，不要只寫「示意圖」。
+替代文字必須描述圖的內容，不要只寫「示意圖」或「figure」。
 
 ## 6. 輸出
 
-1. 寫成 `lectures/lecNN.md`，格式參照 `lec01.md`：
-   - 標題：`# Lecture NN:<結論式標題>`
+1. 寫成 `lectures/lecNN.md`，格式參照 `lec01.md`，並套用第 4.2 節的雙語規則：
+   - 標題：`# Lecture NN:<結論式標題> / <English title>`
    - 週次行：`> 週次:第 N 週（日期）｜進度：<schedule.md 的主題>`
-   - `## 學習目標`（3–5 條，用動詞開頭）
-   - 每個知識點一個 `##` 區段（用 4.5 的版面）
-   - `## 小結`（3–5 條重點）
-   - `## 延伸閱讀`（只寫教科書章節與 `references/` 連結，不編造文獻）
+     `> Week N (date) | Topic: <topic from schedule.md>`
+   - `## 學習目標 / Learning objectives`（3–5 條，用動詞開頭，中英各一條）
+   - 每個知識點一個 `##` 區段（用 4.6 的版面）
+   - `## 小結 / Summary`（3–5 條重點，中英成對）
+   - `## 延伸閱讀 / Further reading`（只寫教科書章節與 `references/` 連結，不編造文獻）
+   - `## 術語表 / Glossary`（中英對照）
 2. 若專案有 `schedule.md`，把該週的「講義」欄連到新檔。
-3. 在 `COURSE_STATE.md` 記錄：講義編號、來源（PDF 的章節與頁碼，或貼上文本的章節名稱）、新增的圖檔數量。
+3. 在 `COURSE_STATE.md` 記錄：講義編號、來源（PDF 的章節與頁碼、貼上文本的章節名稱，或網址與讀取日期）、新增的圖檔數量。
 
 ## 7. 驗證（完成前必做）
 
 1. **執行所有 Matplotlib 腳本**，確認都能產生圖，並目視每一張。
 2. **執行所有公式圖的渲染**，確認沒有 KaTeX 錯誤，並目視每一張。
 3. **重算所有數字例**：用獨立的 Python 腳本重算講義中的每個數字，與正文比對。
-4. **可讀性檢查**：用腳本找出超過 40 字的句子與未定義的專有名詞，逐一修正。
-5. **建置網站**：`python3 scripts/build_docs.py && mkdocs build`，不得有 ERROR，也不得有新的 WARNING。
-6. **不要 push**：先給使用者看摘要，確認後才提交。
+4. **雙語對照檢查**：每個中文段落都要有英文對應段落；每個知識點的欄位（白話說明、正式定義、例子、常見迷思、想深入、小練習）中英都要成對。用腳本數一數兩邊的數量是否相等。
+5. **可讀性檢查**：用腳本找出超過 40 個中文字或 20 個英文單字的句子，以及未定義的專有名詞，逐一修正。
+6. **術語一致性**：同一個術語在全講義使用同一譯法，並與術語表相符。
+7. **建置網站**：`python3 scripts/build_docs.py && mkdocs build`，不得有 ERROR，也不得有新的 WARNING。
+8. **不要 push**：先給使用者看摘要，確認後才提交。
 
 驗證用的腳本是一次性的，不要提交進 Repo（除非是 `assets/figures/src/` 中的圖表腳本）。
 
 ## 8. 給使用者的摘要格式
 
-- 來源：PDF 的章節與頁碼範圍，或貼上文本的章節名稱
+- 來源：PDF 的章節與頁碼範圍、貼上文本的章節名稱，或網址與讀取日期
 - 知識點數量與對應的講義檔
 - 圖：資訊圖幾張（已生成／未生成）、Matplotlib 幾張（已驗證）、公式圖幾張（已渲染）
-- 需要使用者確認的地方：超出原文的 `[補充]` 內容、原文疑似錯誤、無法判斷的符號或定義、貼上文本的缺漏
+- 雙語檢查結果：中英段落是否成對
+- 需要使用者確認的地方：超出原文的 `[補充]` 內容、原文疑似錯誤、無法判斷的符號或定義、貼上文本的缺漏、網頁無法讀取的部分
 - 尚未驗證的項目（如有）
 
 ## 注意事項
