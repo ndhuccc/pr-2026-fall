@@ -157,26 +157,32 @@ PLAYER_URL = "https://github.com/ndhuccc/IDL115/releases/download/player-v1.0.0/
 
 
 def write_slides_index(stage: Path) -> int:
-    """產生網站的投影片下載頁(取代 slides/README.md),依週次列出各格式的檔案。"""
+    """產生網站的投影片下載頁(取代 slides/README.md),依週次列出各格式的檔案。
+
+    檔名規則:``lecNN.<格式>``(該週正課)或 ``lecNN-<slug>.<格式>``(該週的補充/自主學習教材)。
+    """
 
     base = ROOT / "slides"
     if not base.exists():
         return 0
-    lecture_re = re.compile(r"^(lec\d{2})\.(jbd\.json|pptx|pdf|html)$")
-    weeks: dict[str, list[tuple[str, str]]] = {}
+    lecture_re = re.compile(r"^(lec\d{2})(?:-([a-z0-9][a-z0-9-]*))?\.(jbd\.json|pptx|pdf|html)$")
+    weeks: dict[str, dict[str, list[tuple[str, str]]]] = {}
     others: list[str] = []
     for p in sorted(base.iterdir()):
         if not p.is_file() or p.name in ("README.md", "FORMATS.md"):
             continue
         m = lecture_re.match(p.name)
         if m:
-            weeks.setdefault(m.group(1), []).append((m.group(2), p.name))
+            week, slug, fmt = m.group(1), m.group(2) or "", m.group(3)
+            weeks.setdefault(week, {}).setdefault(slug, []).append((fmt, p.name))
         else:
             others.append(p.name)
 
     lines = ["# 投影片下載(Slides)", "",
              "每週的投影片可依需要下載。JianBauDau 格式請用 JianBauDau 播放器開啟;"
-             "PPTX、PDF、HTML 可直接用一般軟體開啟。", ""]
+             "PPTX、PDF、HTML 可直接用一般軟體開啟。", "",
+             "同一週可以有多份教材:沒有後綴的是該週正課,"
+             "有後綴的(例如 `lec02-parameter-estimation`)是補充或自主學習教材。", ""]
     lines += ["## JianBauDau 播放器", "",
               f"- [下載 JianBauDau 播放器 1.0.0(Windows,.exe)]({PLAYER_URL})",
               "- 開啟方式:執行播放器後按 Ctrl+O 選擇 `.jbd.json` 檔,或把檔案拖進視窗。",
@@ -184,11 +190,13 @@ def write_slides_index(stage: Path) -> int:
     if not weeks and not others:
         lines.append("目前尚無投影片。")
     if weeks:
-        lines += ["| 週次 | 格式 | 下載 |", "|:---:|---|---|"]
+        lines += ["| 週次 | 教材 | 格式 | 下載 |", "|:---:|---|---|---|"]
         for lec in sorted(weeks):
             num = int(lec[3:])
-            for fmt, name in sorted(weeks[lec], key=lambda t: t[0]):
-                lines.append(f"| 第 {num} 週 | {SLIDE_FORMATS[fmt]} | [{name}]({name}) |")
+            for slug in sorted(weeks[lec]):
+                label = "本週正課" if slug == "" else slug
+                for fmt, name in sorted(weeks[lec][slug], key=lambda t: t[0]):
+                    lines.append(f"| 第 {num} 週 | {label} | {SLIDE_FORMATS[fmt]} | [{name}]({name}) |")
         lines.append("")
     if others:
         lines += ["## 其他檔案", ""] + [f"- [{name}]({name})" for name in others] + [""]

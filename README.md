@@ -30,7 +30,7 @@
 |---|---|
 | [`syllabus.md`](syllabus.md) | 課程大綱、評分、規範 |
 | [`schedule.md`](schedule.md) | 週次進度與截止日 |
-| [`lectures/`](lectures/) | 每週講義(Markdown + LaTeX) |
+| [`lectures/`](lectures/) | 每週講義(Markdown + LaTeX)。同一週可有多份:`lecNN.md` 是正課,`lecNN-<代號>.md` 是補充或自主學習教材(見 `schedule.md`) |
 | [`slides/`](slides/) | 投影片(JianBauDau JSON、PPTX、PDF 或 HTML) |
 | [`notebooks/`](notebooks/) | 實作 Notebook(可於 Colab 開啟) |
 | [`labs/`](labs/) | 實驗(尚未加入,之後依課程進度新增) |

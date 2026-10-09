@@ -192,10 +192,11 @@ def check_slides() -> None:
     if not files:
         add(INFO, "投影片", "尚未提供投影片", "可依 slides/FORMATS.md 放入 JianBauDau JSON、PPTX、PDF 或 HTML")
         return
-    name_re = re.compile(r"^lec\d{2}\.(jbd\.json|pptx|pdf|html)$")
+    name_re = re.compile(r"^lec\d{2}(?:-[a-z0-9][a-z0-9-]*)?\.(jbd\.json|pptx|pdf|html)$")
     odd = [p.name for p in files if not name_re.match(p.name)]
     if odd:
-        add(WARN, "投影片檔名不符合慣例", ", ".join(odd), "請改為 lecNN.<格式>,例如 lec02.jbd.json")
+        add(WARN, "投影片檔名不符合慣例", ", ".join(odd),
+            "請改為 lecNN.<格式> 或 lecNN-<補充教材代號>.<格式>,例如 lec02.jbd.json")
     checker = load_check_slides()
     for p in files:
         if not p.name.endswith(".jbd.json"):
@@ -205,8 +206,10 @@ def check_slides() -> None:
                 add(FAIL, f"投影片 {p.name}", msg, "依 slides/FORMATS.md 修正")
             else:
                 add(WARN, f"投影片 {p.name}", msg, "請老師確認")
-    weeks_with = {m.group(1) for p in files if (m := re.match(r"^(lec\d{2})\.", p.name))}
+    weeks_with = {m.group(1) for p in files if (m := re.match(r"^(lec\d{2})(?:-|\.)", p.name))}
     lectures = {p.stem for p in (ROOT / "lectures").glob("lec[0-9][0-9].md")} if (ROOT / "lectures").exists() else set()
+    lectures |= {m.group(1) for p in (ROOT / "lectures").glob("lec[0-9][0-9]-*.md")
+                 if (m := re.match(r"^(lec\d{2})-", p.name))}
     missing = sorted(lectures - weeks_with)
     if missing:
         add(INFO, "尚未提供投影片的講義", ", ".join(missing))

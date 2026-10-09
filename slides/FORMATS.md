@@ -12,6 +12,8 @@
 
 檔名與 `lectures/lecNN.md` 對應。同一週可以同時放多種格式。不符合這個命名的檔案會列在下載頁的「其他檔案」。
 
+**同一週有多份教材時**,加一段代號:`lecNN-<代號>.<格式>`,例如 `lec02-parameter-estimation.jbd.json`、`lec02-bayes-networks.pdf`。代號用小寫英文與連字號,和該份講義的檔名一致(`lectures/lec02-parameter-estimation.md` 對應 `slides/lec02-parameter-estimation.jbd.json`)。網站的下載頁會把「沒有代號的」標為該週正課、有代號的標出代號,讓學生分得出必讀與自主學習。
+
 ## 格式與用途
 
 | 格式 | 學生如何開啟 | 老師如何產生 | 注意事項 |
