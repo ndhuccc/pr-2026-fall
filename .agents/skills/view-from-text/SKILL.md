@@ -21,6 +21,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 | `PRESENTATION_DESIGN_GUIDE.md` | 巢狀 Scene/Frame 結構、Step 路徑、構圖(瞄準框)、視覺多樣性 | 設計結構前 |
 | `VISUAL_AND_LAYOUT_GUIDE.md` | 拆頁、內容預算、色彩語意、版型 A–T、示意圖做法與嵌入預算 | 設計每一頁前 |
 | `jbd_figure.py` | 用 matplotlib 畫精準 SVG 示意圖並包成 image 節點 | 需要幾何、函數、統計圖時 |
+| `FIGURE_RECIPES.md` | 必圖類內容的 matplotlib 配方(R1–R5,已實際執行驗證) | 畫圖前 |
 | `example-page-spec.json` | 單頁匯入範例(僅附錄 A 使用) | 附錄 A |
 
 > 規格檔提到的 `examples/photosynthesis-knowledge-units.json` 與 `examples/` 資料夾不在本技能中。以規格內的「最小可行範例」為準。
@@ -44,7 +45,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
    - 來源段落(講義章節或段落位置)
    - 預估頁數
    - 主版型候選(A–T,依版面 §3.3)
-   - 是否需要示意圖(matplotlib 或原生節點)
+   - 圖需求:依 §4A 圖型對照表列出每張必圖(圖型、配方、所在頁)。不得以既有圖檔是否存在為由省略。
    - 跨單元關係(Connector 候選)
 2. 另列**需要老師決定的事項**,例如某段是否保留、習題是否附答案、是否要講者備註、某段原文公式是否損壞需還原。
 3. 把表格與事項交給老師,說明可以合併、拆分、刪除或調換順序。
@@ -60,7 +61,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 ### 步驟 3:平行處理
 
 - 若環境支援子代理(例如 task 工具),每批派一個子代理,同時最多 6 個。不支援時依序處理同樣的批次。
-- 派工時提供:該批來源文字、本技能的 `AUDIT_CHECKLIST.md` D–H 節、格式契約(見下)、隱私與解答規則、輸出路徑。
+- 派工時提供:該批來源文字、該單元的圖需求清單(§4A)、本技能的 `AUDIT_CHECKLIST.md` D–H 節、格式契約(見下)、隱私與解答規則、輸出路徑。
 - 子代理只負責自己的批次,輸出寫入暫存目錄的 `unit-uNN.fragment.json`。
 - 子代理**不得**修改根場景、不得寫入 `slides/`、不得執行 `check_slides.py`。整體驗證只在合併後執行一次。
 
@@ -89,6 +90,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 
 1. 對照 `AUDIT_CHECKLIST.md` 的 D、E、F、G、H 節檢查內容與版面。
 2. 檢查契約與格式:id 前綴、父子雙向、節點的 `sceneId`、Step 目標與 `reveal` 同 Scene、Connector 參照。
+   - **圖覆蓋率**:對照該單元的圖需求清單(§4A),每張必圖都要有對應 image 節點;缺圖即退回。圖的數值與講義一致。
 3. 檢查數字與原文一致(§3)。
 4. 逐條處理 `issues`。
 5. 有問題時,退回該子代理並附具體問題清單,最多 2 輪;仍未解決則由主代理直接修正。修正後重新稽核該批。**不得略過。**
@@ -131,9 +133,30 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 - **知識單元**:每個單元是一個 Frame,指向一個子 Scene。單元內可再巢狀,但不超過 3 層。跨單元的關係留在共同上層,用 Connector 表示(`PRESENTATION_DESIGN_GUIDE.md`)。
 - **版型**:每頁先選一個主版型(A–T,`VISUAL_AND_LAYOUT_GUIDE.md` §3.1),依 §3.3 決策表選擇。相鄰頁不用同一版型,避免單調(§3.4)。
 - **配色**:依 `VISUAL_AND_LAYOUT_GUIDE.md` §2 的色彩語意。一概念一色;Connector 標籤文字用深色。
-- **示意圖**:能由位置、角度、形狀承載資訊的圖用 `jbd_figure.py` 產生(§4.1、§4.3–4.6);只是排版的概念草圖用原生節點。
+- **示意圖**:凡屬 §4A「必圖」類內容(函數、分布、幾何、決策邊界、門檻與面積、統計圖),該頁必須有 matplotlib 圖,配方見 `FIGURE_RECIPES.md`。只有 §4A「不需圖」類內容才用原生節點。
 - **構圖**:Step 的鏡頭要讓內容貼齊 16:9 瞄準框,不留大片空白(`PRESENTATION_DESIGN_GUIDE.md` 構圖建議)。
 - **座標**:本地座標,16:9 為 1280×720,4:3 為 960×720。節點可略超出範圍,但不要大幅超出。
+
+### 4A. 圖型對照表(必讀,決定哪些單元必須有圖)
+
+講義內容依下表分類。**「必圖」類內容必須有 matplotlib 圖(用 `FIGURE_RECIPES.md` 的配方),不能只用公式或文字代替。** 把公式的形狀畫出來不是新增觀點,而是版面規範 §4.1 的要求。
+
+| 講義內容 | 圖型 | 配方 |
+|---|---|---|
+| 一維或多維機率密度、高斯曲線、常態分布 | 必圖(函數圖) | R1 |
+| 等機率線、共變異數、橢圓形狀 | 必圖(幾何) | R2 |
+| 判別函數、決策邊界、決策區域、門檻 | 必圖(區域圖) | R3 |
+| 誤判面積、積分區域、陰影 | 必圖 | R4 |
+| 直方圖、散佈圖、樣本統計 | 必圖(統計圖) | R5 |
+| 向量、法向量、投影、垂足、角度 | 必圖(幾何) | 版面 §4.4;R2 的 `set_aspect` 寫法 |
+| 數字表、公式對照、條列、卡片 | 不需圖(原生節點、表格卡) | — |
+| 流程、層級、知識單元地圖、概念關係 | 不需圖(原生節點 + Connector) | — |
+
+規則:
+1. 盤點時(§1A 步驟 1)依此表逐單元列出圖需求。**不得以「既有圖檔是否存在」決定是否畫圖。**
+2. 派工時(§1A 步驟 2)每個單元附上圖需求清單(圖型、配方、所在頁)。主代理不得宣告「本批不需要圖」,除非該單元內容確實不屬於本表「必圖」類。
+3. 稽核時(§1A 步驟 4)逐單元對照:每張必圖都有對應 image 節點,且圖的數值與講義一致。
+4. 每頁圖片不超過 2 張,且符合 VISUAL §4.6 的 SVG 大小預算(≤150 KB)。
 
 ### 節點必填欄位
 
