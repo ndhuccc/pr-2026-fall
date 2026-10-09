@@ -1,74 +1,81 @@
-"""Figure code: lec02-shared-covariance. Preview: a shared covariance makes the boundary a straight line.
+"""Figure code: lec02-shared-covariance. Preview: shared vs different covariance.
 
-The numbers are the ones already used in the lecture (Section 5.3): mu1 = 0 with sigma^2 = 1,
-and mu2 = 2 with sigma^2 = 4. Here they are extended to two features so that the "line or
-hyperplane" wording of Section 6 can be shown:
-  (a) shared covariance, Sigma_1 = Sigma_2 = I  -> the boundary is the straight line x1 = 1;
-  (b) different covariances, Sigma_1 = I and Sigma_2 = diag(4, 1) -> the boundary splits into two
-      parallel vertical lines, x1 = -2.571 and x1 = 1.238, the same two points as in 1-D.
-      (The x2 terms cancel, so the boundary does not depend on x2 at all.)
+Numbers come from the lecture's 1-D example (Section 5.3): mu1 = 0 and mu2 = 2, with variances 1 and 4.
+Extended to two features:
+  (a) shared covariance, Sigma_1 = Sigma_2 = I -> the boundary is the single straight line x1 = 1
+      (right where the two means are equidistant);
+  (b) different covariances, Sigma_1 = I and Sigma_2 = [[4, 0.5], [0.5, 1]] -> the quadratic terms no
+      longer cancel and the boundary bends into a hyperbola, crossing the horizontal axis at
+      x1 = -2.67 and x1 = 1.22. The diagonal entries 4 and 1 are the lecture's variances; the
+      off-diagonal 0.5 is chosen only so that the curvature is visible.
+Fills are opaque pre-blended tints (no alpha), so the figure renders the same everywhere.
 """
 import numpy as np
 import matplotlib.pyplot as plt
 
 plt.rcParams["mathtext.fontset"] = "cm"
-c1, c2 = "#6a9fd6", "#d97757"
+W1, W2, ORANGE, DARK = "#6a9fd6", "#d97757", "#e0995f", "#1c1712"
+
+
+def tint(hex_color, weight=0.15):
+    r, g, b = (int(hex_color[i:i + 2], 16) for i in (1, 3, 5))
+    f = lambda v: int(round(v * weight + 255 * (1 - weight)))
+    return "#%02x%02x%02x" % (f(r), f(g), f(b))
+
+
+TINT1, TINT2 = tint(W1), tint(W2)
 mu1 = np.array([0.0, 0.0])
 mu2 = np.array([2.0, 0.0])
+S1 = np.eye(2)
+S2 = np.array([[4.0, 0.5], [0.5, 1.0]])
 
 
 def g(x1, x2, mu, S):
-    d = np.stack([x1 - mu[0], x2 - mu[1]], axis=-1)
-    Si = np.linalg.inv(S)
-    quad = np.einsum("...i,ij,...j->...", d, Si, d)
+    dv = np.stack([x1 - mu[0], x2 - mu[1]], axis=-1)
+    quad = np.einsum("...i,ij,...j->...", dv, np.linalg.inv(S), dv)
     return -0.5 * quad - 0.5 * np.log(np.linalg.det(S))
 
 
-X1, X2 = np.meshgrid(np.linspace(-4.5, 6.0, 700), np.linspace(-3.2, 3.2, 560))
+def fill_regions(ax, X1, X2, Z):
+    ax.contourf(X1, X2, np.where(Z > 0, 1.0, 0.0), levels=[0.5, 1.5], colors=[TINT1])
+    ax.contourf(X1, X2, np.where(Z > 0, 0.0, 1.0), levels=[0.5, 1.5], colors=[TINT2])
+    ax.contour(X1, X2, Z, levels=[0], colors=[DARK], linewidths=2.0)
 
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.0, 4.3))
 
-# (a) shared covariance: boundary is a straight line
-S = np.eye(2)
-Z = g(X1, X2, mu1, S) - g(X1, X2, mu2, S)
-ax1.contourf(X1, X2, np.where(Z > 0, 1, 0), levels=[-0.5, 0.5, 1.5], colors=[c2, c1], alpha=0.15)
-ax1.contour(X1, X2, Z, levels=[0], colors="#333333", linewidths=2.2)
-ax1.plot([1, 1], [-3.2, 3.2], color="#e0995f", ls="--", lw=1.0)
-ax1.text(1.15, 2.5, r"$x_1=1$", fontsize=10)
-ax1.set_title("(a) shared $\\Sigma$: straight boundary", fontsize=10)
+X1, X2 = np.meshgrid(np.linspace(-4.5, 6.0, 300), np.linspace(-3.0, 3.0, 220))
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.6, 4.2))
+for ax in (ax1, ax2):
+    ax.set_facecolor("white")
+fig.patch.set_facecolor("white")
 
-# (b) different covariances: boundary bends
-S1, S2 = np.eye(2), np.diag([4.0, 1.0])
+fill_regions(ax1, X1, X2, g(X1, X2, mu1, S1) - g(X1, X2, mu2, S1))
+ax1.text(1.15, 2.3, r"$x_1=1$", fontsize=9, color=DARK)
+ax1.set_title("(a) shared $\\Sigma$: straight boundary", fontsize=9, color=DARK)
+
 Z2 = g(X1, X2, mu1, S1) - g(X1, X2, mu2, S2)
-ax2.contourf(X1, X2, np.where(Z2 > 0, 1, 0), levels=[-0.5, 0.5, 1.5], colors=[c2, c1], alpha=0.15)
-ax2.contour(X1, X2, Z2, levels=[0], colors="#333333", linewidths=2.2)
-for xc in (-2.571, 1.238):
-    ax2.plot([xc, xc], [-3.2, 3.2], color="#e0995f", ls="--", lw=1.0)
-ax2.text(-2.571, -2.75, r"$-2.571$", fontsize=9, ha="right", va="center")
-ax2.text(1.238, -2.75, r"$1.238$", fontsize=9, ha="left", va="center")
-ax2.set_title("(b) different $\\Sigma$: two parallel boundaries", fontsize=10)
-ax2.text(3.4, 2.2, "parallel to the $x_2$ axis", fontsize=9)
+fill_regions(ax2, X1, X2, Z2)
+xs = np.linspace(-4.5, 6.0, 4001)
+z0 = g(xs, np.zeros_like(xs), mu1, S1) - g(xs, np.zeros_like(xs), mu2, S2)
+roots = []
+for i in range(1, len(xs)):
+    if (z0[i] > 0) != (z0[i - 1] > 0):
+        roots.append(float(xs[i - 1] + (xs[i] - xs[i - 1]) * abs(z0[i - 1]) / (abs(z0[i - 1]) + abs(z0[i]))))
+for r in roots:
+    ax2.plot([r, r], [-3, 3], color=ORANGE, ls="--", lw=0.8)
+ax2.text(roots[0] - 0.2, -2.75, f"${roots[0]:.2f}$", fontsize=8, ha="right", va="center", color=DARK)
+ax2.text(roots[1] + 0.2, -2.75, f"${roots[1]:.2f}$", fontsize=8, ha="left", va="center", color=DARK)
+ax2.text(2.2, 1.5, "the boundary bends when\n$\\Sigma_2$ has an off-diagonal term", fontsize=8, color=DARK)
+ax2.set_title("(b) different $\\Sigma$: curved boundary", fontsize=9, color=DARK)
 
 for ax in (ax1, ax2):
-    ax.scatter([mu1[0], mu2[0]], [mu1[1], mu2[1]], color=[c1, c2], s=46, zorder=3)
-    ax.annotate(r"$\mu_1$", (mu1[0], mu1[1]), textcoords="offset points", xytext=(-26, 12),
-                fontsize=10, color=c1)
-    ax.annotate(r"$\mu_2$", (mu2[0], mu2[1]), textcoords="offset points",
-                xytext=(10, 12), fontsize=10, color=c2)
+    ax.scatter([mu1[0], mu2[0]], [mu1[1], mu2[1]], color=[W1, W2], s=34, zorder=3)
     ax.set_aspect("equal")
     ax.set_xlim(-4.5, 6.0)
-    ax.set_ylim(-3.2, 3.2)
-    ax.set_xlabel("$x_1$")
-    ax.set_ylabel("$x_2$")
-    ax.grid(alpha=0.3)
+    ax.set_ylim(-3.0, 3.0)
+    ax.set_xlabel(r"$x_1$", fontsize=8, color=DARK)
+    ax.set_ylabel(r"$x_2$", fontsize=8, color=DARK)
+    ax.tick_params(labelsize=7, colors=DARK)
 fig.tight_layout()
 fig.savefig("assets/figures/lec02-shared-covariance.png", dpi=200)
 print("saved assets/figures/lec02-shared-covariance.png")
-
-# verify: axis intercepts of the curved boundary, and the straight boundary of panel (a)
-xs = np.linspace(-6, 8, 2_000_001)
-zs = g(xs, np.zeros_like(xs), mu1, S1) - g(xs, np.zeros_like(xs), mu2, S2)
-crossings = xs[1:][np.sign(zs[1:]) != np.sign(zs[:-1])]
-print("curved boundary x-intercepts", np.round(crossings, 3))
-za = g(np.array([1.0]), np.array([0.0]), mu1, S) - g(np.array([1.0]), np.array([0.0]), mu2, S)
-print("panel (a): g1-g2 at (1,0) =", np.round(za, 8), "(0 means the straight boundary passes through x1 = 1)")
+print("x-crossings", [round(r, 3) for r in roots])
