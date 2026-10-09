@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 投影片下載頁(`slides/`)加入 JianBauDau 播放器(Windows, 1.0.0)下載連結,來源為 `ndhuccc/IDL115` 的 GitHub Release(`player-v1.0.0/JianBauDau-Player-1.0.0.exe`)。實作:`scripts/build_docs.py` 新增 `PLAYER_URL` 常數,由 `write_slides_index` 產生於下載頁。驗證:連結回應 200;`mkdocs build` 成功;推送後 `deploy-site`(run 37873286728)成功,線上 `slides/` 頁面已含連結。注意:連結指向他人專案的 Release,若 IDL115 刪除或改版,需更新 `PLAYER_URL`。
 - 2026-10-09 — 配合 JianBauDau 投影片(JSON)調整 repo 設計:`slides/` 接受 `lecNN.jbd.json`、`lecNN.pptx`、`lecNN.pdf`、`lecNN.html`;新增 `scripts/check_slides.py`(JianBauDau 完整文件的結構與隱私檢查,範例檔通過、page spec 與壞檔被擋)、`slides/FORMATS.md`(老師用格式說明,不上網站)。`build_docs.py` 讓 slides/ 的 .json/.pptx 可下載,並自動產生網站下載頁;`doctor.py` 新增投影片檢查;AGENTS.md 新增 §5.11 與地圖列;README 更新列。發現:課程網站為公開網址,投影片與講者備註會公開。
 - 2026-10-09 — 修正 `lec02-error-regions` 左圖:陰影用加權值 $0.5\,p(x\mid\omega)$ 計算,但圖上畫的是未加權密度,陰影上緣對不上曲線。改為畫加權密度 $P(\omega_i)p(x\mid\omega_i)$,陰影直接落在曲線之下,每塊面積 0.0793(合計 0.1587)。圖說與替代文字同步更新;講義技能 §7 第 9 項新增「陰影或面積圖」稽核。
 - 2026-10-09 — 依課程網頁 Chapter 2(以貝氏決策理論為基礎的分類器)撰寫第 2 週講義 `lectures/lec02.md`。範圍為教科書 2.1–2.4 的前半(貝氏決策、誤判機率與風險、判別函數、高斯貝氏分類器/QDA);2.4 後半的 LDA 超平面與 2.5 以後(參數估計、MAP、EM、無母數、kNN、Naive Bayes、貝氏網路)留待後續週次。圖:`lec02-bayes-numbers`、`lec02-error-regions`、`lec02-qda-regions`(Matplotlib,數字已驗算,已目視檢查)。原創性檢查通過(唯一重複為章名引用)。
