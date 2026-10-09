@@ -147,9 +147,9 @@ Designing a classification system usually passes through four stages: **feature 
 
 ![設計迴圈（Design loop）](../assets/figures/lec01-design-loop.png)
 
-**圖說 `lec01-design-loop`**：分類系統設計的四個階段依序排列。系統評估的結果不理想時，可以回頭修正前面的任何一個階段（粗虛線為主要的回饋路徑）。
+**圖說 `lec01-design-loop`**：分類系統設計的四個階段依序排列（實線箭頭）。系統評估的結果不理想時，有兩條回饋路徑：粗虛線回到「特徵選擇」，細虛線繞過圖的上方回到「特徵生成」。
 
-**Caption `lec01-design-loop`**: the four stages in order. If the evaluation result is poor, the design can return to any earlier stage (the thick dashed arrow is the main feedback path).
+**Caption `lec01-design-loop`**: the four stages in order (solid arrows). If the evaluation result is poor, there are two feedback paths: the thick dashed arrow returns to feature selection, and the thin dashed route goes over the top back to feature generation.
 
 **重要觀念：這不是一條單向流水線，而是一個迴圈。** 如果評估的結果不好，就要回頭修正前面的階段。有些方法會把「特徵選擇」與「分類器設計」當成同一個問題，一起求解。
 
