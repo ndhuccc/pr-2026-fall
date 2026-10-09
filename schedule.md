@@ -6,7 +6,7 @@
 | 週次 | 日期 | 主題 | 講義 | 備註 |
 |:---:|---|---|---|---|
 | 1 | 09/07 | Introduction / Course Overview & Introduction to Pattern Recognition | [lec01](lectures/lec01.md) | |
-| 2 | 09/14 | Bayes Classifiers (1)+(2) – Bayesian Decision Theory; Discriminant Functions & Error Bounds | | 合併原計畫第 2、3 週 |
+| 2 | 09/14 | Bayes Classifiers (1)+(2) – Bayesian Decision Theory; Discriminant Functions & Error Bounds | [lec02](lectures/lec02.md) | 合併原計畫第 2、3 週 |
 | 3 | 09/21 | Linear Classifiers (1)+(2) – Perceptron & Linear Discriminant Functions; Support Vector Machines | | 合併原計畫第 4、5 週 |
 | 4 | 09/28 | 放假(孔子誕辰／教師節) | | 無上課 |
 | 5 | 10/05 | Nonlinear Classifiers (1) – Neural Networks | | |
