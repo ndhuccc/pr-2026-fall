@@ -36,7 +36,7 @@
 - [ ] B4. `metadata.aspectRatio` 有明確填寫(`16:9` 或 `4:3`)。
 - [ ] B5. **每一個** `scene-point` 都有 `referenceViewport`,值等於頁面參考尺寸(16:9 為 1280×720,4:3 為 960×720)。程式逐一檢查,不可省略(省略時 `zoom` 不隨播放視窗縮放,視窗大於參考尺寸時會露出相鄰頁)。
 - [ ] B6. 鏡頭已為 Frame 標題列留空白:`zoom = H/(H+100)`、`point.x` = 頁面左上 x + W/2、`point.y` = 頁面左上 y + H/2 − 50;頁面頂端 100 單位(`y < 0` 的部分)沒有任何節點;Frame 標題為單行。公式見設計準則「頁面排列與鏡頭公式」。
-- [ ] B7. 同一個 Scene 內相鄰頁的橫向間隔 ≥ 160(`pitch ≥ W + 160`),鏡頭左右多看到的範圍(約 89 或 67 單位)不會露出相鄰頁。已用 Player 以 1280×720 與 1920×1080 各播一次確認:每頁(`scene-point` 停點)填滿畫面、看不到相鄰頁、頁面標題完整位於 Frame 標題列下方。`enter-frame` 與回到 Frame 的過場停點使用子 Scene 的 `camera`(應設成第 1 頁的鏡頭,SKILL §4B 第 6 點),在大於 1280×720 的視窗會多露出邊緣,屬已知限制,不算不通過。
+- [ ] B7. 同一個 Scene 內相鄰頁的橫向間隔 ≥ 160(`pitch ≥ W + 160`),鏡頭左右多看到的範圍(約 89 或 67 單位)不會露出相鄰頁。已用 Player 以 1280×720 與 1920×1080 各播一次確認:每頁(`scene-point` 停點)填滿畫面、看不到相鄰頁、頁面標題完整位於 Frame 標題列下方。根層聚焦 Frame 的 step 的 reticle 剛好框住該 Frame、沒有框進隔壁 Frame。
 
 ## C. 生成流程自檢(規格「給 agent 的產生流程建議」1–8)
 
@@ -44,7 +44,7 @@
 - [ ] C2. Scene 樹已規劃:一個根 Scene,每個一級單元對應根 Scene 上的一個 Frame 與一個子 Scene。所有 id 語意化命名(如 `frame-<單元>`、`scene-<單元>`、`<單元>-title`)。
 - [ ] C3. 每個 Scene 的 Node 不重疊,留白合理;不同單元的排版盡量有差異。
 - [ ] C4. 配色已依 D 節核對對比。
-- [ ] C5. 每個知識單元至少 2–3 個 Step:`enter-frame` 進場、展開細節的 Step(必要時搭配 `reveal` 與 `initiallyHidden`)。**不寫退回上一層的 Step**(播放時會自動退回 Frame)。所有 Step 依「根 `scene-overview` → 單元 1 的 `enter-frame` → 單元 1 的頁面 Step → 單元 2 的 `enter-frame` → …」串成一個扁平陣列,`order` 依序遞增。根 Scene 的 Step 數 = 1 個 `scene-overview` + 每個單元 1 個 `enter-frame`;不得出現額外的「返回總覽」。
+- [ ] C5. Step 結構:含 Frame 的 Scene(根 Scene 等)**每個 Frame 恰好一個 step**(以該 Frame 為中心的 `scene-point`);每個單元的子 Scene 每頁一個 `scene-point` step(必要時搭配 `reveal` 與 `initiallyHidden`),每單元至少 2–3 頁。**不用 `enter-frame`、不寫開場 `scene-overview`、不寫「返回總覽」。**所有 Step 依深度優先「Frame 1 → 單元 1 的頁面 → Frame 2 → …」串成一個扁平陣列,`order` 依序遞增。
 - [ ] C6. 完整 JSON 含 `schemaVersion`、`rootSceneId`、`scenes`、`nodes`、`steps`、`metadata`。
 - [ ] C7. 已用程式邏輯逐條核對 A1–A15,特別是 Scene↔Node 雙向、Frame↔子 Scene 雙向、Connector 參照與 hook 範圍、reveal 節點與目的地同 Scene。
 - [ ] C8. 輸出為純 JSON 檔案,方便存成 `.json` 後用 Open 匯入。
@@ -135,7 +135,7 @@
 - [ ] H2. Frame 在外層只顯示標題與輪廓,細節都在子 Scene。
 - [ ] H3. 需要再拆解的單元用巢狀 Frame 表示子單元,巢狀不超過 3 層。
 - [ ] H4. 單元之間的關聯用共同上層 Scene 的 Connector 表示,附文字標籤(例如「提供原料」「導致」「對比」),不寫進任一 Frame。
-- [ ] H5. Step 路徑依「進入 → 展開細節」設計,沒有手寫的退回上一層 Step(設計「Step 路徑設計建議」)。在編輯器 Scene mode 看根場景:只有一個整場景 reticle,時間軸只有開場總覽與各單元入口。
+- [ ] H5. **時間軸 step 與畫布 reticle 一對一**:在編輯器 Scene mode 逐一檢查每個 Scene(根 Scene、每個單元子 Scene),下方時間軸的 step 數量等於畫布上的 reticle 數量;根 Scene 的每個 Frame 各有一個 reticle 框住它。以 Player 播放:先播 Frame 1 的 reticle,進入並播完該單元所有頁後,退回 Frame 1 的 reticle 並顯示 Finished,再接 Frame 2……(深度優先,設計「Step 路徑設計建議」)。`check_slides.py` 會檢查含 Frame 的 Scene 是否恰好每個 Frame 一個 step、是否使用 `enter-frame`。
 - [ ] H6. 每個 Step 的鏡頭對齊瞄準框:Present 模式會把瞄準框內容線性縮放填滿螢幕,所以內容貼齊瞄準框、不留大片空白,也不讓無關物件進入框內(設計「構圖建議」)。16:9 瞄準框以 1280×720 本地座標為參考,必須透過每個 `scene-point` 的 `referenceViewport` 明確寫出(B5),並依 B6 為 Frame 標題列留空白。
 - [ ] H7. 用 `reveal` 逐項揭示的節點,與該 Step 的目的地 Scene 一致,並設定 `initiallyHidden: true`(設計、規格)。
 - [ ] H8. Connector 的 `textColor` 用深色(它畫在固定的近全白底色上)。

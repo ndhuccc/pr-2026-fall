@@ -143,6 +143,8 @@ def check_document(data) -> list[tuple[str, str]]:
             fid = target.get("frameId")
             if nodes.get(fid, {}).get("type") != "frame" or nodes[fid].get("sceneId") != scene_id:
                 fail(f"step {label!r} 的 enter-frame 畫框不合法")
+            # enter-frame 在 Scene mode 沒有 reticle,時間軸卡片與畫布 reticle 就無法一對一。
+            fail(f"step {label!r} 使用 enter-frame:它沒有 reticle;請改成以該 Frame 為中心的 scene-point(見 view-from-text 技能 §4B)")
         if kind == "scene-point":
             # 沒有 referenceViewport 時,zoom 不會隨播放視窗縮放:視窗比 1280x720 大就會露出相鄰頁,
             # 且與編輯器 Scene mode 的 reticle 範圍不一致(見 view-from-text 技能 §4B)。
@@ -166,15 +168,42 @@ def check_document(data) -> list[tuple[str, str]]:
     if notes_count:
         warn(f"{notes_count} 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開")
 
-    # 根場景只應有一個開場 scene-overview。子場景播完會自動退回畫框,不需要另寫「返回總覽」;
-    # 多出來的 scene-overview 會多一個停點,並在 Scene mode 疊出重複的整場景 reticle。
-    root_overviews = [
-        s.get("id", "?") for s in steps
-        if (s.get("target") or {}).get("kind") == "scene-overview" and (s.get("target") or {}).get("sceneId") == root
-    ]
-    if len(root_overviews) > 1:
-        fail(f"根場景有 {len(root_overviews)} 個 scene-overview step({', '.join(map(repr, root_overviews[:3]))}…);"
-             "只保留 1 個開場總覽,刪除「返回總覽」(播放時會自動退回畫框)")
+    # 含有 Frame 的場景:時間軸上的 step 必須與畫布上的 Frame reticle 一對一。
+    # 每個 Frame 恰好由一個 step 聚焦(以該 Frame 為中心的 scene-point,或 focus-node),
+    # 且這個場景不得有其他 step(例如開場的 scene-overview、「返回總覽」)。播放時會深度優先:
+    # 先播 Frame 內部的頁面,播完自動退回該 Frame 的 reticle 並顯示 Finished,再接下一個 reticle。
+    for sid in scenes:
+        frames = [nid for nid, n in nodes.items() if n.get("type") == "frame" and n.get("sceneId") == sid]
+        if not frames:
+            continue
+        scene_steps = [s for s in steps if (s.get("target") or {}).get("sceneId") == sid]
+        shown: dict[str, list[str]] = {fid: [] for fid in frames}
+        for s in scene_steps:
+            t = s.get("target") or {}
+            hit = None
+            if t.get("kind") == "focus-node" and t.get("nodeId") in shown:
+                hit = t["nodeId"]
+            elif t.get("kind") == "scene-point" and isinstance(t.get("point"), dict):
+                px, py = t["point"].get("x"), t["point"].get("y")
+                best = None
+                for fid in frames:
+                    n = nodes[fid]
+                    x, y = n["transform"]["x"], n["transform"]["y"]
+                    if isinstance(px, (int, float)) and isinstance(py, (int, float)) and x <= px <= x + n["width"] and y <= py <= y + n["height"]:
+                        d2 = (px - (x + n["width"] / 2)) ** 2 + (py - (y + n["height"] / 2)) ** 2
+                        if best is None or d2 < best[0]:
+                            best = (d2, fid)
+                hit = best[1] if best else None
+            if hit is None:
+                fail(f"場景 {sid!r} 的 step {s.get('id', '?')!r}({t.get('kind')})沒有聚焦任何 Frame;"
+                     "含 Frame 的場景只能有「每個 Frame 一個 step」,請刪除開場總覽或「返回總覽」")
+            else:
+                shown[hit].append(s.get("id", "?"))
+        for fid, ids in shown.items():
+            if not ids:
+                fail(f"場景 {sid!r} 的 Frame {fid!r} 沒有對應的 step(reticle),播放時會被略過")
+            elif len(ids) > 1:
+                fail(f"場景 {sid!r} 的 Frame {fid!r} 有 {len(ids)} 個 step 聚焦它({', '.join(map(repr, ids))});應恰好一個")
 
     # 伺服器資產參照與媒體來源
     for nid, node in nodes.items():

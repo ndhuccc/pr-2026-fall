@@ -102,7 +102,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 
 1. 在根場景為每個單元建立一個 Frame 節點(`frameId`),指向 `scene-uNN`。
 2. 跨單元 Connector 與根層總覽放在根場景。
-3. Step 順序:根層 `scene-overview` →(每單元依序)`enter-frame` → 該單元的 Step。**不加**退回根層的 `scene-overview`(播放時自動退回 Frame)。`order` 重新編為 0、1、2…。子代理交來的每個 `scene-point` 必須已有 `referenceViewport` 與標題列留白(§4 鏡頭規則),合併時逐一檢查。
+3. Step 結構(§4B):根場景為**每個單元的 Frame 建立恰好一個 step**(以該 Frame 為中心的 `scene-point`),不加開場 `scene-overview`、不加 `enter-frame`、不加「返回總覽」。`steps` 陣列照深度優先排:Frame 1 的 step → 單元 1 的頁面 step → Frame 2 的 step → …,`order` 重新編為 0、1、2…。子代理交來的每個 `scene-point` 必須已有 `referenceViewport` 與標題列留白(§4B),合併時逐一檢查。
 4. 合併後寫入 `slides/lecNN.jbd.json`。
 
 ### 步驟 6:整體驗證與交付
@@ -137,16 +137,25 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 - **構圖**:Step 的鏡頭要讓內容貼齊 16:9 瞄準框,不留大片空白(`PRESENTATION_DESIGN_GUIDE.md` 構圖建議)。
 - **座標**:本地座標,16:9 為 1280×720,4:3 為 960×720。節點可略超出範圍,但不要大幅超出。頁面內容放在 `0 ≤ y ≤ H`,頁面上方 100 單位留空(給 Frame 標題列)。
 
-### 4B. 鏡頭規則(硬規則,手算 `scene-point` 一律照做)
+### 4B. Step 結構與鏡頭規則(硬規則)
 
-先前的檔案因為違反這幾條,在 Player 裡出現「每頁範圍不對」與「標題被蓋住」,細節與公式見 `PRESENTATION_DESIGN_GUIDE.md`「頁面排列與鏡頭公式」。
+先前產生的檔案違反這些規則:時間軸的 step 數量與畫布上的 reticle 對不上、每頁範圍不對、頁面標題被 Frame 標題列蓋住。細節與公式見 `PRESENTATION_DESIGN_GUIDE.md`「Step 路徑設計建議」與「頁面排列與鏡頭公式」。
 
-1. **每個 `scene-point` 都要有 `referenceViewport`**:16:9 寫 `{"width": 1280, "height": 720}`,4:3 寫 `{"width": 960, "height": 720}`。**不可省略**(省略時 `zoom` 不隨播放視窗縮放,視窗變大就會露出相鄰頁)。
-2. **為 Frame 標題列留 100 單位空白**:`zoom = H/(H+100)`(0.878)、`point.x = 頁面左上 x + W/2`、`point.y = 頁面左上 y + H/2 − 50`。Frame 標題維持單行。
-3. **同一個 Scene 內的頁面橫向排列,間隔至少 160**(`pitch = W + 160`:16:9 為 1440,4:3 為 1120)。
-4. **不寫「返回總覽」或任何退回上一層的 Step。** 播放時,子 Scene 播完會自動退回 Frame;多寫的 Step 會多一個停點,並在 Scene mode 疊出重複的整場景 reticle。根 Scene 只有 1 個開場 `scene-overview` 加每單元 1 個 `enter-frame`。
-5. **Step 的 `label` 只寫結論短句,不加序號**(時間軸卡片已自動編號),各單元格式一致。
-6. **每個單元子 Scene 的 `camera` 設成第 1 頁的鏡頭**:`{"x": W/2, "y": H/2 − 50, "zoom": 0.878, "rotation": 0}`。`enter-frame` 與「回到 Frame」的停點用的就是這個 `camera`。**已知限制**:它沒有 `referenceViewport`,`zoom` 是絕對的螢幕像素倍率,所以只有在 1280×720 的視窗才完全貼齊第 1 頁;視窗更大時,這兩種過場停點會多露出一些邊緣與相鄰頁,下一個停點(用 `referenceViewport` 的 `scene-point`)會立刻修正。這是播放器的行為,技能無法繞過;交付時照實告知老師。
+**結構:時間軸的 step 與畫布上的 reticle 一對一**
+
+1. **每個 Scene 的時間軸 step 數 = 該 Scene 畫布上的 reticle 數。** 只有 `scene-point`、`focus-node`、`scene-overview` 在 Scene mode 會畫出 reticle;**`enter-frame` 沒有 reticle,本技能一律不用。**
+2. **含 Frame 的 Scene(根 Scene,以及有子單元的 Scene):每個 Frame 恰好一個 step**,用「以該 Frame 為中心的 `scene-point`」聚焦它(`point` 取 Frame 的中心,必須落在 Frame 範圍內),reticle 就框住這個 Frame。這類 Scene **不得**有其他 step:不要寫開場的 `scene-overview`、不要寫「返回總覽」。16:9 的預設 reticle 為 480×270,即 `zoom = 1280/480 ≈ 2.667`、`referenceViewport = {"width": 1280, "height": 720}`(400×200 的 Frame 剛好被框住)。
+3. **單元的子 Scene(沒有 Frame 的內容頁):每頁一個 `scene-point` step**,公式見下方。
+4. **播放順序是深度優先,由播放器自動完成**:播到某個 Frame 的 reticle → 進入它的子 Scene,依序播完所有頁 → **自動退回該 Frame 的 reticle viewport 並顯示 Finished**(代表這個 Frame 內的所有頁都播完了)→ 接著播下一個 Frame 的 reticle。所以不必、也不可以另外寫退回的 step。
+5. `steps` 陣列是扁平的,照深度優先排:Frame 1 的 step → Frame 1 單元的頁面 step → Frame 2 的 step → …。`order` 依序遞增 0、1、2…。
+
+**鏡頭**
+
+6. **每個 `scene-point` 都要有 `referenceViewport`**:16:9 寫 `{"width": 1280, "height": 720}`,4:3 寫 `{"width": 960, "height": 720}`。**不可省略**(省略時 `zoom` 不隨播放視窗縮放,視窗變大就會露出相鄰頁)。
+7. **內容頁要為 Frame 標題列留 100 單位空白**:`zoom = H/(H+100)`(0.878)、`point.x = 頁面左上 x + W/2`、`point.y = 頁面左上 y + H/2 − 50`。Frame 標題維持單行。(聚焦 Frame 的根層 step 不需要,根層畫面沒有標題列。)
+8. **同一個 Scene 內的頁面橫向排列,間隔至少 160**(`pitch = W + 160`:16:9 為 1440,4:3 為 1120)。
+9. **Step 的 `label`**:Frame 的 step 寫單元標題,內容頁的 step 寫結論短句;**不加序號**(時間軸卡片已自動編號),各單元格式一致。
+10. 單元子 Scene 的 `camera` 設成第 1 頁的鏡頭 `{"x": W/2, "y": H/2 − 50, "zoom": 0.878, "rotation": 0}`;它只影響在編輯器裡直接進入該 Scene 時的初始畫面,播放用的是各 step 的鏡頭。
 
 ```python
 W, H = 1280, 720            # 4:3 → 960, 720
@@ -155,6 +164,13 @@ ZOOM, PITCH = H / (H + HEADROOM), W + GAP
 
 def page_origin(i):          # 單元 Scene 內第 i 頁(0 起算)的左上角
     return i * PITCH, 0
+
+def frame_step(step_id, frame):      # 根層:聚焦一個 Frame(reticle 480x270,剛好框住 400x200 的 Frame)
+    t = frame["transform"]
+    return {"id": step_id, "label": frame["text"], "durationMs": 900, "holdMs": 500, "easing": "smooth",
+            "target": {"kind": "scene-point", "sceneId": frame["sceneId"],
+                       "point": {"x": t["x"] + frame["width"] / 2, "y": t["y"] + frame["height"] / 2},
+                       "zoom": W / 480, "referenceViewport": {"width": W, "height": H}}}
 
 def page_step(step_id, label, scene_id, i):
     x0, y0 = page_origin(i)
@@ -195,7 +211,7 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 
 - 用 Python 腳本在暫存目錄(不要放進 repo)組出 dict,再以 `json.dump(..., ensure_ascii=False, indent=2)` 寫到 `slides/lecNN.jbd.json`。不要手打長 JSON。篇幅超過 §1A 的門檻時,改依 §1A 分批處理後合併。
 - `metadata`:`title` 寫課程與週次,`createdAt`、`updatedAt` 用當下 ISO 時間,`aspectRatio` 明確填 `"16:9"` 或 `"4:3"`。
-- 每個知識單元至少 2–3 個 Step:`enter-frame` 進場,接著 `scene-overview`、`focus-node` 或 `scene-point` 展開細節(需要時搭配 `reveal` 與 `initiallyHidden`)。**不寫退回上一層的 Step**(§4B)。所有 Step 依「根 `scene-overview` → 單元 1 的 `enter-frame` → 單元 1 的頁面 Step → 單元 2 的 `enter-frame` → …」串成一個扁平陣列,`order` 依序遞增 0、1、2…。
+- Step 結構照 §4B:根場景每個單元 Frame 一個 `scene-point` step(聚焦該 Frame),每個單元子 Scene 每頁一個 `scene-point` step(需要時搭配 `reveal` 與 `initiallyHidden`);**不用 `enter-frame`、不寫開場 `scene-overview` 與「返回總覽」**。所有 Step 依深度優先「Frame 1 → 單元 1 的頁面 → Frame 2 → 單元 2 的頁面 → …」串成一個扁平陣列,`order` 依序遞增 0、1、2…。每個單元至少 2–3 頁。
 - `scene-point` 一律照 §4B 的公式與 `referenceViewport` 產生。
 - Step 的 `label` 是結論短句,≤ 20 字,**不加序號**(時間軸卡片已自動編號)。
 - 圖片大小控制在 20 MB 以內(超過會被 WARN)。
@@ -221,7 +237,7 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
    - SVG 圖正常顯示、縮放清晰。
    - Export PDF 時 SVG 正常。
    - 播放器中正常播放。**分別以 1280×720 與 1920×1080 的視窗各播一次**:每頁都填滿畫面、看不到相鄰頁、頁面標題完整位於 Frame 標題列下方,兩種視窗的構圖一致(AUDIT_CHECKLIST B5–B7)。
-   - 編輯器 Scene mode 看根場景:只有一個整場景 reticle,根時間軸只有開場總覽與各單元入口(AUDIT_CHECKLIST H5)。
+   - 編輯器 Scene mode 看根場景:畫布上每個 Frame 各有一個 reticle,下方時間軸的 step 數量與 reticle 數量相同(一對一)。播放時,每個 Frame 的頁面播完後會退回該 Frame 的 reticle 並顯示 Finished,再接下一個 Frame(AUDIT_CHECKLIST H5)。
    - 逐頁檢查排版、文字截斷與 Step 順序。
 3. 若要在講義中連結投影片,依 `AGENTS.md` §5.11 更新 `lectures/lecNN.md` 或 `schedule.md`。
 4. 依 `AGENTS.md` 的流程提交並推送。
