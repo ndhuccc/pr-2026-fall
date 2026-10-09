@@ -205,20 +205,20 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 
 ### 5.1 資訊圖（AI 生圖）
 
-為每張資訊圖寫一份提示檔 `assets/figures/src/lecNN_figK.prompt.md`，包含：
+為每張資訊圖寫一份提示檔 `assets/figures/src/lecNN-<圖代碼>.prompt.md`，包含：
 - 目的：這張圖要幫學生理解哪一個概念。
 - 版面：流程、分層、並列、對照，等等。
 - 內容元素：只列出圖上要有的物件與連接關係。
 - **文字規範**：圖中**不要放中文字**（AI 生圖常產生亂碼）。只用英文短標籤或數學符號，中英說明放在 Markdown 文字中。
 - 風格：簡潔、白底或透明底、高對比、無裝飾性元素。
 
-用可用的圖像生成工具產生 PNG，存到 `assets/figures/lecNN_figK.png`。若環境沒有生圖能力，告知使用者，並改用 Mermaid 或 SVG，不要假裝已生成。
+用可用的圖像生成工具產生 PNG，存到 `assets/figures/lecNN-<圖代碼>.png`。若環境沒有生圖能力，告知使用者，並改用 Mermaid 或 SVG，不要假裝已生成。
 
 生成後必須**親自看圖**：標籤是否正確、關係是否對、有沒有多出來的錯誤物件。有錯就重生，或改用其他方式。
 
 ### 5.2 Matplotlib 圖
 
-每張圖寫一支腳本 `assets/figures/src/lecNN_figK.py`，輸出 `assets/figures/lecNN_figK.png`（dpi 200）。
+每張圖寫一支腳本 `assets/figures/src/lecNN-<圖代碼>.py`，輸出 `assets/figures/lecNN-<圖代碼>.png`（dpi 200）。
 
 ```python
 import numpy as np
@@ -233,7 +233,7 @@ ax.set_aspect("equal")                    # 涉及方向、角度、垂直時必
 ax.set_xlim(-3, 3); ax.set_ylim(-3, 3)    # 座標範圍明確設定，不用自動
 ax.set_xlabel(r"$x_1$"); ax.set_ylabel(r"$x_2$")
 ax.grid(alpha=0.3)
-fig.savefig("assets/figures/lecNN_figK.png", dpi=200)
+fig.savefig("assets/figures/lecNN-<圖代碼>.png", dpi=200)
 ```
 
 規則：
@@ -256,7 +256,7 @@ fig.savefig("assets/figures/lecNN_figK.png", dpi=200)
 # 單一公式(區塊)
 python .agents/skills/textbook-lecture-notes/scripts/render_formula.py \
   --latex "\hat{\mathbf{y}}=\mathbf{W}\mathbf{x}+\mathbf{b}" \
-  --out assets/figures/lec02_formula1.png
+  --out assets/figures/lec02-formula-<圖代碼>.png
 
 # 多個公式:寫成 JSON [{"latex": "...", "out": "...", "display": false}, ...]
 python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch formulas.json
@@ -270,13 +270,21 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 - 生成後目視檢查，確認符號沒有缺漏。
 - 渲染需要網路（KaTeX 從 CDN 載入）。
 
-### 5.4 圖的引用
+### 5.4 圖的編號與圖說
+
+1. **編號使用文字代碼，不用數字序號**，格式為 `lecNN-<英文代碼>`，例如 `lec02-bayes-boundary`。代碼用小寫英文與連字號，描述圖的內容。
+2. 同一個代碼貫穿所有地方：檔名、腳本名、提示檔名與講義中的圖說。新增或刪除圖片時，其他圖的代碼都不變，不需要重新編號。
+3. **每張圖都要有圖說**，緊接在圖片之後，中英各一段（格式見 4.2）：
 
 ```markdown
-![直線 x1+x2-0.5=0 與兩側的點（Line x1+x2-0.5=0 and points on each side）](../assets/figures/lec02_fig1.png)
+![替代文字（Alt text）](../assets/figures/lec02-bayes-boundary.png)
+
+**圖說 `lec02-bayes-boundary`**：中文說明。
+
+**Caption `lec02-bayes-boundary`**: English caption.
 ```
 
-替代文字必須描述圖的內容，不要只寫「示意圖」或「figure」。
+4. 替代文字描述圖的內容，不要只寫「示意圖」或「figure」。圖說則要說明這張圖想讓學生看到什麼。
 
 ## 6. 輸出
 

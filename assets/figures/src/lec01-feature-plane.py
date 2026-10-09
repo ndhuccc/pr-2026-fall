@@ -1,4 +1,4 @@
-"""Lecture 01, Figure 1: a 2-D feature plane with simulated data (not from the textbook).
+"""Figure code: lec01-feature-plane. A 2-D feature plane with simulated data (not from the textbook).
 
 Each point is one region of interest: x = [mean gray level, gray-level std]^T.
 Class A and class B are simulated with a fixed random seed. The decision rule is the
@@ -46,5 +46,5 @@ ax.set_ylabel(r"gray-level std $x_2$")
 ax.grid(alpha=0.3)
 ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=2, frameon=False, fontsize=9)
 fig.tight_layout()
-fig.savefig("assets/figures/lec01_fig1.png", dpi=200)
-print("saved assets/figures/lec01_fig1.png")
+fig.savefig("assets/figures/lec01-feature-plane.png", dpi=200)
+print("saved assets/figures/lec01-feature-plane.png")

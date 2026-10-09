@@ -89,7 +89,11 @@ print(features(region))    # 輸出 [120.  14.142...]
 
 Each region becomes a point in two dimensions. Plotting many points on one plane gives a **feature plane**:
 
-![模擬資料的特徵平面：橫軸為平均灰階值，縱軸為灰階標準差，兩類點之間有一條決策線，一顆星號代表未知樣本（Simulated feature plane: mean gray level on the horizontal axis and gray-level standard deviation on the vertical axis; a decision line separates the two classes, and a star marks an unknown sample）](../assets/figures/lec01_fig1.png)
+![模擬資料的特徵平面（Simulated feature plane）](../assets/figures/lec01-feature-plane.png)
+
+**圖說 `lec01-feature-plane`**：橫軸為平均灰階值，縱軸為灰階標準差。直線是由兩類平均值算出的決策線；星號是一個未知樣本，離線很近，因此它的類別不是絕對的。資料為電腦模擬，並非教科書的真實病例。
+
+**Caption `lec01-feature-plane`**: the horizontal axis is mean gray level and the vertical axis is gray-level standard deviation. The line is the decision line computed from the two class means. The star is an unknown sample close to the line, so its class is not certain. The data are simulated, not real patient records.
 
 圖中的資料是我們用電腦模擬的，不是來自教科書的真實病例。決策線是用兩類的平均值算出來的，它是一條直線。依這條線，星號位於 B 類那一側。但它離線很近，所以結論不是絕對的。
 
@@ -141,7 +145,11 @@ Designing a classification system usually passes through four stages: **feature 
 - **分類器設計（Classifier design）**：依選定的特徵，找出最好的分界規則。多數真實問題的分界不是直線，而是彎曲的曲面。
 - **系統評估（System evaluation）**：用有系統的方法量出錯誤率，而不是憑感覺。
 
-![設計迴圈：四個階段依序排列，系統評估的結果可以回頭修正前面的階段（Design loop: four stages in order; the result of system evaluation can send the design back to an earlier stage）](../assets/figures/lec01_fig3.png)
+![設計迴圈（Design loop）](../assets/figures/lec01-design-loop.png)
+
+**圖說 `lec01-design-loop`**：分類系統設計的四個階段依序排列。系統評估的結果不理想時，可以回頭修正前面的任何一個階段（粗虛線為主要的回饋路徑）。
+
+**Caption `lec01-design-loop`**: the four stages in order. If the evaluation result is poor, the design can return to any earlier stage (the thick dashed arrow is the main feedback path).
 
 **重要觀念：這不是一條單向流水線，而是一個迴圈。** 如果評估的結果不好，就要回頭修正前面的階段。有些方法會把「特徵選擇」與「分類器設計」當成同一個問題，一起求解。
 
@@ -201,7 +209,11 @@ In clustering, semi-supervised methods often turn known labels into two kinds of
 
 `[Added]` Analogy: must-link is like "friends who must sit together"; cannot-link is like "people who must not sit together". The analogy describes the relation only, not real distances.
 
-![同一批點在三種學習方式下的對照：(a) 所有點都有標籤，(b) 沒有任何標籤，(c) 只有四個點有標籤（Same points under three settings: (a) all labelled, (b) no labels, (c) only four labelled）](../assets/figures/lec01_fig2.png)
+![三種學習方式的對照（Three learning settings）](../assets/figures/lec01-learning-settings.png)
+
+**圖說 `lec01-learning-settings`**：同一批點在三種學習方式下的對照。(a) 監督式：所有點都有標籤，並畫出決策線。(b) 非監督式：沒有任何標籤。(c) 半監督式：只有四個點保留標籤。
+
+**Caption `lec01-learning-settings`**: the same points under three learning settings. (a) Supervised: every point is labelled, and a decision line is drawn. (b) Unsupervised: no labels. (c) Semi-supervised: only four points keep their labels.
 
 **記憶要訣**：監督式是「有答案，學規則」；非監督式是「沒答案，找結構」；半監督式是「少量答案，帶動整體」。
 

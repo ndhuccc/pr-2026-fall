@@ -1,4 +1,4 @@
-"""Lecture 01, Figure 3: the four-stage design loop with a feedback arrow.
+"""Figure code: lec01-design-loop. The four-stage design loop with a feedback arrow.
 
 Labels are English so the figure can be reused without font issues.
 """
@@ -41,5 +41,5 @@ ax.text(8.0, 3.6, "rework if error\nrate is poor", fontsize=8.5, color="#0891b2"
 ax.text(0.6, 5.6, "Evaluation can send the design back to any earlier stage.", fontsize=9, color="#777777", ha="left")
 
 fig.tight_layout()
-fig.savefig("assets/figures/lec01_fig3.png", dpi=200)
-print("saved assets/figures/lec01_fig3.png")
+fig.savefig("assets/figures/lec01-design-loop.png", dpi=200)
+print("saved assets/figures/lec01-design-loop.png")

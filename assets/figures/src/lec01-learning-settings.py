@@ -1,4 +1,4 @@
-"""Lecture 01, Figure 2: the same simulated points under three learning settings.
+"""Figure code: lec01-learning-settings. The same simulated points under three learning settings.
 
 Panel (a) supervised: every point has a label and a decision line is drawn.
 Panel (b) unsupervised: the same points, no labels.
@@ -53,5 +53,5 @@ for ax in axes:
 axes[0].set_ylabel(r"$x_2$")
 axes[0].legend(loc="upper left", frameon=False, fontsize=8)
 fig.tight_layout()
-fig.savefig("assets/figures/lec01_fig2.png", dpi=200)
-print("saved assets/figures/lec01_fig2.png")
+fig.savefig("assets/figures/lec01-learning-settings.png", dpi=200)
+print("saved assets/figures/lec01-learning-settings.png")

@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 圖片改用文字代碼編號(不用數字序號,增刪圖片時不必重新編號):`lec01-feature-plane`、`lec01-learning-settings`、`lec01-design-loop`,檔名、腳本與圖說使用同一代碼。每張圖加上中英圖說。講義技能 §5.4 已更新此規則。
 - 2026-10-09 — 老師指示:之後課程 Repo 的變更直接 push 到 `main`,不需逐次確認。範本(`ndhuccc/course-template`)的變更仍需先確認。
 - 2026-10-09 — 修正網站公式:課程網站的 MathJax 不支援 `\boldsymbol`,會顯示紅色的 `\boldsymbol` 文字。`lectures/lec01.md` 的 4 處改為 `\mathbf`;講義技能 §4.4 新增此規則。
 - 2026-10-09 — 依課程網頁 Chapter 1(Introduction)用新版講義技能改寫 `lectures/lec01.md`(繁中英對照、高中可讀、補充素材標 [補充]/[Added])。新增 `assets/figures/lec01_fig1.py`(模擬特徵平面)、`lec01_fig2.py`(三種學習方式)、`lec01_fig3.py`(設計迴圈),已目視檢查。網頁中的教科書圖與 AI 生圖提示未直接使用。原創性檢查通過(剩餘重複為專有名詞與章名)。
