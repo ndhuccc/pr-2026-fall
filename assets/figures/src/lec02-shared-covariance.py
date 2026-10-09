@@ -4,8 +4,9 @@ The numbers are the ones already used in the lecture (Section 5.3): mu1 = 0 with
 and mu2 = 2 with sigma^2 = 4. Here they are extended to two features so that the "line or
 hyperplane" wording of Section 6 can be shown:
   (a) shared covariance, Sigma_1 = Sigma_2 = I  -> the boundary is the straight line x1 = 1;
-  (b) different covariances, Sigma_1 = I and Sigma_2 = diag(4, 1) -> the boundary bends, and it
-      crosses the horizontal axis at x1 = -2.571 and x1 = 1.238, the same two points as in 1-D.
+  (b) different covariances, Sigma_1 = I and Sigma_2 = diag(4, 1) -> the boundary splits into two
+      parallel vertical lines, x1 = -2.571 and x1 = 1.238, the same two points as in 1-D.
+      (The x2 terms cancel, so the boundary does not depend on x2 at all.)
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -45,7 +46,8 @@ for xc in (-2.571, 1.238):
     ax2.plot([xc, xc], [-3.2, 3.2], color="#e0995f", ls="--", lw=1.0)
 ax2.text(-2.571, -2.75, r"$-2.571$", fontsize=9, ha="right", va="center")
 ax2.text(1.238, -2.75, r"$1.238$", fontsize=9, ha="left", va="center")
-ax2.set_title("(b) different $\\Sigma$: curved boundary", fontsize=10)
+ax2.set_title("(b) different $\\Sigma$: two parallel boundaries", fontsize=10)
+ax2.text(3.4, 2.2, "parallel to the $x_2$ axis", fontsize=9)
 
 for ax in (ax1, ax2):
     ax.scatter([mu1[0], mu2[0]], [mu1[1], mu2[1]], color=[c1, c2], s=46, zorder=3)
