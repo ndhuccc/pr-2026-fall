@@ -146,6 +146,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 3. **同一個 Scene 內的頁面橫向排列,間隔至少 160**(`pitch = W + 160`:16:9 為 1440,4:3 為 1120)。
 4. **不寫「返回總覽」或任何退回上一層的 Step。** 播放時,子 Scene 播完會自動退回 Frame;多寫的 Step 會多一個停點,並在 Scene mode 疊出重複的整場景 reticle。根 Scene 只有 1 個開場 `scene-overview` 加每單元 1 個 `enter-frame`。
 5. **Step 的 `label` 只寫結論短句,不加序號**(時間軸卡片已自動編號),各單元格式一致。
+6. **每個單元子 Scene 的 `camera` 設成第 1 頁的鏡頭**:`{"x": W/2, "y": H/2 − 50, "zoom": 0.878, "rotation": 0}`。`enter-frame` 與「回到 Frame」的停點用的就是這個 `camera`。**已知限制**:它沒有 `referenceViewport`,`zoom` 是絕對的螢幕像素倍率,所以只有在 1280×720 的視窗才完全貼齊第 1 頁;視窗更大時,這兩種過場停點會多露出一些邊緣與相鄰頁,下一個停點(用 `referenceViewport` 的 `scene-point`)會立刻修正。這是播放器的行為,技能無法繞過;交付時照實告知老師。
 
 ```python
 W, H = 1280, 720            # 4:3 → 960, 720
