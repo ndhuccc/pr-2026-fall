@@ -32,6 +32,83 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 3. 讀 `AI_AGENT_FILE_FORMAT_SPEC.md`、`PRESENTATION_DESIGN_GUIDE.md`、`VISUAL_AND_LAYOUT_GUIDE.md` 與 `AUDIT_CHECKLIST.md`。
 4. 確認比例。預設 16:9;若要 4:3,頁面參考尺寸改為 960×720。只有在無法判斷週次或內容範圍時才問老師。
 
+## 1A. 長文本流程(篇幅超過門檻時)
+
+**門檻**:輸入文本超過約 3,000 個中文字,或盤點後預估超過 6 個知識單元,即走本流程。未達門檻則依 §5 一般流程處理。
+
+### 步驟 1:盤點(先停下來等老師確認)
+
+1. 通讀全文,列出**知識單元表**,每列包含:
+   - 代號(`u01`、`u02`…,依講義順序)
+   - 單元標題(結論句,6–20 字)
+   - 來源段落(講義章節或段落位置)
+   - 預估頁數
+   - 主版型候選(A–T,依版面 §3.3)
+   - 是否需要示意圖(matplotlib 或原生節點)
+   - 跨單元關係(Connector 候選)
+2. 另列**需要老師決定的事項**,例如某段是否保留、習題是否附答案、是否要講者備註、某段原文公式是否損壞需還原。
+3. 把表格與事項交給老師,說明可以合併、拆分、刪除或調換順序。
+4. **老師確認前,不得開始批次處理。** 確認後的表格是唯一基準;之後若要改,須重新確認。
+5. 把確認後的表格存成暫存目錄的 `manifest.json`(不放進 repo)。
+
+### 步驟 2:分批
+
+- 每批 3–4 個知識單元(約 8–12 頁)。批次依盤點表順序連續切分。
+- 每批只附該批的來源文字與該批的盤點列。不要把整篇文本交給每個子代理。
+- 跨批的 Connector 與根層總覽由主代理處理,不放進子代理的批次。
+
+### 步驟 3:平行處理
+
+- 若環境支援子代理(例如 task 工具),每批派一個子代理,同時最多 6 個。不支援時依序處理同樣的批次。
+- 派工時提供:該批來源文字、本技能的 `AUDIT_CHECKLIST.md` D–H 節、格式契約(見下)、隱私與解答規則、輸出路徑。
+- 子代理只負責自己的批次,輸出寫入暫存目錄的 `unit-uNN.fragment.json`。
+- 子代理**不得**修改根場景、不得寫入 `slides/`、不得執行 `check_slides.py`。整體驗證只在合併後執行一次。
+
+#### 批次輸出契約(fragment)
+
+```jsonc
+{
+  "unit": "u03",
+  "frameId": "lec02-frame-u03",     // 由主代理指定;子代理不得自行建立根層 Frame
+  "scenes": { "lec02-scene-u03": { }, "lec02-scene-u03-a": { } },  // 本單元所有 Scene(含巢狀)
+  "nodes": { },                      // 本單元所有節點
+  "steps": [ ],                      // 本單元的 Step;order 先留 0,由主代理重編
+  "issues": [ ]                      // 子代理自報的疑慮,例如原文公式損壞、內容不足以成頁
+}
+```
+
+- 頂層子 Scene id:`<前綴>-scene-uNN`;巢狀子 Scene 加字母後綴(`-a`、`-b`)。
+- 節點 id 以 `<前綴>-uNN-` 開頭。
+- 頂層子 Scene 的 `parentFrameId` 必須等於 `frameId`。
+- Step 的 `target.sceneId` 與 `reveal` 的節點只能指向本批的 Scene 與節點。
+- Step 的 `id` 以 `<前綴>-uNN-` 開頭。
+
+### 步驟 4:主代理稽核
+
+所有子代理完成後,主代理**逐一**稽核每一份 fragment:
+
+1. 對照 `AUDIT_CHECKLIST.md` 的 D、E、F、G、H 節檢查內容與版面。
+2. 檢查契約與格式:id 前綴、父子雙向、節點的 `sceneId`、Step 目標與 `reveal` 同 Scene、Connector 參照。
+3. 檢查數字與原文一致(§3)。
+4. 逐條處理 `issues`。
+5. 有問題時,退回該子代理並附具體問題清單,最多 2 輪;仍未解決則由主代理直接修正。修正後重新稽核該批。**不得略過。**
+6. 記錄每批的稽核結論與修正紀錄。
+
+### 步驟 5:合併
+
+主代理是唯一的整合負責人。
+
+1. 在根場景為每個單元建立一個 Frame 節點(`frameId`),指向 `scene-uNN`。
+2. 跨單元 Connector 與根層總覽放在根場景。
+3. Step 順序:根層 `scene-overview` →(每單元依序)`enter-frame` → 該單元的 Step →(可選)退回根層 `scene-overview`。`order` 重新編為 0、1、2…。
+4. 合併後寫入 `slides/lecNN.jbd.json`。
+
+### 步驟 6:整體驗證與交付
+
+1. 執行 §6 的 `check_slides.py`。
+2. 對合併後的全檔重做 `AUDIT_CHECKLIST.md` 的 A 節與 K 節。
+3. 交付時附上:盤點表(老師確認版)、每批稽核結論、退回與修正紀錄、`check_slides.py` 結果。
+
 ## 2. 隱私與公開(硬規則)
 
 課程網站是公開的,`slides/` 內的檔案會被提供下載,包含講者備註。
@@ -66,7 +143,7 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 
 ## 5. 產生檔案(完整簡報)
 
-- 用 Python 腳本在暫存目錄(不要放進 repo)組出 dict,再以 `json.dump(..., ensure_ascii=False, indent=2)` 寫到 `slides/lecNN.jbd.json`。不要手打長 JSON。
+- 用 Python 腳本在暫存目錄(不要放進 repo)組出 dict,再以 `json.dump(..., ensure_ascii=False, indent=2)` 寫到 `slides/lecNN.jbd.json`。不要手打長 JSON。篇幅超過 §1A 的門檻時,改依 §1A 分批處理後合併。
 - `metadata`:`title` 寫課程與週次,`createdAt`、`updatedAt` 用當下 ISO 時間,`aspectRatio` 明確填 `"16:9"` 或 `"4:3"`。
 - 每個知識單元至少 2–3 個 Step:`enter-frame` 進場,接著 `scene-overview`、`focus-node` 或 `scene-point` 展開細節(需要時搭配 `reveal` 與 `initiallyHidden`),視需要退回上一層。所有 Step 串成一個扁平陣列,`order` 依序遞增 0、1、2…。
 - Step 的 `label` 是「序號 + 結論短句」,≤ 20 字。
@@ -99,7 +176,7 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 
 ## 8. 常見狀況處理
 
-- **一次轉整週或整章**:依版面 §1 規劃頁數與版型序列(相鄰頁不重複版型),整批寫進同一份完整簡報,順序由 Step 陣列決定。
+- **一次轉整週或整章**:若篇幅超過 §1A 的門檻,改走長文本流程。否則依版面 §1 規劃頁數與版型序列(相鄰頁不重複版型),整批寫進同一份完整簡報,順序由 Step 陣列決定。
 - **內容一頁裝不下**:依 §1.4 拆成多頁,或改用巢狀 Frame 結構(設計準則),不要擠進單一頁。
 - **驗證失敗或圖片太大**:依錯誤訊息修正後重跑,不要略過。圖片超過預算時簡化圖、用 `rasterized=True`,或輸出 PNG(版面 §4.6)。
 - **無法確定某個版型或色彩**:依版面 §3.3 與 §2 選擇,不要自行發明。

@@ -152,3 +152,17 @@
 - [ ] J3. 講者備註預設不寫;若有,已告知老師備註會公開。
 - [ ] J4. `py scripts/check_slides.py slides/lecNN.jbd.json` 沒有 FAIL;WARN 已逐項列給老師。
 - [ ] J5. 檔案命名為 `slides/lecNN.jbd.json`,NN 與 `lectures/lecNN.md` 對應。
+
+## K. 長文本流程(SKILL.md §1A)
+
+- [ ] K1. 已先列出知識單元表給老師,並取得確認後才開始批次處理。確認的版本已存為 `manifest.json`。
+- [ ] K2. 每批 3–4 個知識單元,依盤點表順序連續切分;沒有跨批的單元被拆散。
+- [ ] K3. 每個子代理只拿到本批的來源文字與盤點列,沒有混入他批內容。
+- [ ] K4. 每份 fragment 符合契約:`unit`、`frameId`、子 Scene 與節點的 id 前綴、頂層子 Scene 的 `parentFrameId` 等於 `frameId`。
+- [ ] K5. 每份 fragment 都已逐批對照 D–H 節稽核,結論已記錄。
+- [ ] K6. 退回修正的批次,修正後已重新稽核。
+- [ ] K7. 根場景的 Frame 與 fragment 一一對應,沒有多出的 Frame,也沒有缺少的單元。
+- [ ] K8. 合併後 Step 的 `order` 連續、沒有重複;每個單元至少 2–3 個 Step;`id` 全域唯一。
+- [ ] K9. 跨單元 Connector 只放在根場景,且兩端的 Frame 都存在於根場景。
+- [ ] K10. 合併後 `check_slides.py` 沒有 FAIL;合併後的全檔已重做 A 節。
+- [ ] K11. 交付時附上盤點表(老師確認版)、每批稽核結論、退回與修正紀錄。
