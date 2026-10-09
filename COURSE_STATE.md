@@ -26,8 +26,8 @@
 - [x] Step 7a 啟用 Pages(Source: GitHub Actions),網址 https://ndhuccc.github.io/pr-2026-fall/
 - [x] Step 7b 開啟 Discussions
 - [x] Step 7c 手動觸發 `deploy-site` 並確認網站可開(run 37861833169 成功,網站回應 200)
-- [ ] Step 8 初始化內容(週次主題、保留的 Lab/作業、解答釋出日、課綱)
-- [ ] Step 9 向老師總結
+- [x] Step 8 初始化內容(週次與放假處理、課綱與評分、第 1 週講義、解答釋出日不適用因無實驗)。HW01 與專題里程碑保留範本內容,待之後改寫。
+- [x] Step 9 向老師總結(2026-10-09 完成)
 
 ## 待辦事項
 
@@ -46,4 +46,4 @@
 - 2026-10-09 — 行事曆標示週一放假:第 4 週 9/28(孔子誕辰／教師節)、第 8 週 10/26(光復節補假),排程時需跳過。
 - 2026-10-09 — 上課時間記為週一 14:10–17:00;上課地點未填(待補)。
 - 未填選填欄位(老師決定先留空):AI_POLICY、OFFICE_HOUR、TA、TEAM_SIZE、HW01_DUE、HW01_RELEASE。
-- 待辦:(1) Step 8 實驗加入時依 AGENTS §5.2 建立;若要以舊範例為起點,可用 `git checkout 945b993 -- labs/lab01` 還原。(2) 待老師提供後再補:TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數、作業繳交規範。(3) projects/README.md 的里程碑與 assignments/hw01 的題目仍是範本內容,需依本課程調整。
+- 待辦:(1) 待老師提供後再補:TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數、作業繳交規範。(2) HW01 與期末專題里程碑為範本內容,保留中,待依課程改寫。(3) 之後每週:新增講義、公告異動、處理 Issue、補充欄位;實驗加入時依 AGENTS §5.2,舊範例可用 `git checkout 945b993 -- labs/lab01` 還原。
