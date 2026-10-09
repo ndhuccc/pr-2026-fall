@@ -40,6 +40,10 @@ EASINGS = {"linear", "easeInOut", "smooth"}
 REQUIRED_KEYS = ("schemaVersion", "rootSceneId", "scenes", "nodes", "steps", "metadata")
 
 
+def _positive(value) -> bool:
+    return isinstance(value, (int, float)) and not isinstance(value, bool) and value > 0
+
+
 def _strings(obj):
     """遞迴取出所有字串值。"""
     if isinstance(obj, str):
@@ -139,6 +143,12 @@ def check_document(data) -> list[tuple[str, str]]:
             fid = target.get("frameId")
             if nodes.get(fid, {}).get("type") != "frame" or nodes[fid].get("sceneId") != scene_id:
                 fail(f"step {label!r} 的 enter-frame 畫框不合法")
+        if kind == "scene-point":
+            # 沒有 referenceViewport 時,zoom 不會隨播放視窗縮放:視窗比 1280x720 大就會露出相鄰頁,
+            # 且與編輯器 Scene mode 的 reticle 範圍不一致(見 view-from-text 技能 §4B)。
+            ref = target.get("referenceViewport")
+            if not (isinstance(ref, dict) and _positive(ref.get("width")) and _positive(ref.get("height"))):
+                fail(f"step {label!r} 的 scene-point 缺少 referenceViewport(16:9 請填 1280x720,4:3 請填 960x720)")
         if not (180 <= s.get("durationMs", -1) <= 10000):
             fail(f"step {label!r} 的 durationMs 必須在 180–10000")
         if not (0 <= s.get("holdMs", -1) <= 30000):
@@ -155,6 +165,16 @@ def check_document(data) -> list[tuple[str, str]]:
             notes_count += 1
     if notes_count:
         warn(f"{notes_count} 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開")
+
+    # 根場景只應有一個開場 scene-overview。子場景播完會自動退回畫框,不需要另寫「返回總覽」;
+    # 多出來的 scene-overview 會多一個停點,並在 Scene mode 疊出重複的整場景 reticle。
+    root_overviews = [
+        s.get("id", "?") for s in steps
+        if (s.get("target") or {}).get("kind") == "scene-overview" and (s.get("target") or {}).get("sceneId") == root
+    ]
+    if len(root_overviews) > 1:
+        fail(f"根場景有 {len(root_overviews)} 個 scene-overview step({', '.join(map(repr, root_overviews[:3]))}…);"
+             "只保留 1 個開場總覽,刪除「返回總覽」(播放時會自動退回畫框)")
 
     # 伺服器資產參照與媒體來源
     for nid, node in nodes.items():
@@ -179,6 +199,8 @@ def check_document(data) -> list[tuple[str, str]]:
     emails: set[str] = set()
     student_ids: set[str] = set()
     for text in _strings(data):
+        if text.startswith("data:"):
+            continue  # 內嵌圖片是 base64 編碼,不是可讀文字;掃描會因長字串回溯而卡住
         emails.update(EMAIL_RE.findall(text))
         student_ids.update(STUDENT_ID_RE.findall(text))
     if emails:

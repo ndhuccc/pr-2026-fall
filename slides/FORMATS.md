@@ -38,7 +38,7 @@
    python scripts/check_slides.py
    ```
 
-   - **FAIL**:播放器無法正確播放,必須修正(例如匯入用的 page spec、孤兒節點、`asset:` 伺服器參照)。
+   - **FAIL**:播放器無法正確播放,必須修正(例如匯入用的 page spec、孤兒節點、`asset:` 伺服器參照、`scene-point` 缺少 `referenceViewport`、根場景有多個 `scene-overview`)。
    - **WARN**:可以播放,但請逐項確認(講者備註、電子郵件、疑似學號、檔案大小)。
 4. 提交並推送。網站的 `slides/` 頁面會自動列出新檔案。
 
