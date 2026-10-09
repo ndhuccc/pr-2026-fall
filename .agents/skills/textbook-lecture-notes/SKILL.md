@@ -81,21 +81,23 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 
 ### 4.2 雙語格式（必做）
 
-講義一律以**繁體中文與英文對照**呈現：
+講義一律以**繁體中文與英文對照**呈現。中文與英文**不可放在同一行**，除非是下列的括號例外：
 
-1. **標題雙語**：`## 知識點名稱 / Concept name`。
-2. **每個段落成對出現**：中文段落後緊接英文段落，兩者內容對應。英文不是逐字直譯，而是同等意思的獨立表達，但**不得多出或遺漏資訊**。
-3. **欄位成對**：每個欄位都有中英兩行，例如：
+1. **標題**：英文用全形括號附在中文後，例如 `## 學習目標（Learning objectives）`。
+2. **段落**：中文一段，英文另起一段，中間空一行。英文與中文內容對應，不逐字直譯，也不多出或遺漏資訊。
+3. **欄位**：欄位名稱的中英各占一行，中間空一行，例如：
 
    ```
    **白話說明**：……
+
    **Plain explanation**: ……
    ```
-4. **表格雙語**：符號表使用三欄 `| 符號 | 中文意義 | English meaning |`；知識點地圖同樣如此。
-5. **公式與程式碼不重複**：公式、程式碼、檔名只出現一次。公式前後的說明文字用雙語。
-6. **圖的替代文字雙語**：`![中文描述｜English description](路徑)`。
-7. **術語表**：每份講義結尾加一張中英術語對照表，列出本講義所有第一次出現的專有名詞。之後同一術語在全講義要使用同一譯法。
-8. **英文的品質**：英文要符合學術用語的慣例，但仍要淺顯。避免俚語與過度修飾。
+4. **列表項目**：中文在前，英文用全形括號附在句末，例如「- 圖形識別讓電腦依特徵判斷類別（Pattern recognition lets a computer decide the class from features）」。
+5. **表格**：中英分欄，不把兩種語言放在同一格。符號表使用三欄 `| 符號 | 中文意義 | English meaning |`。
+6. **公式與程式碼不重複**：公式、程式碼、檔名只出現一次。公式前後的說明文字用雙語。
+7. **圖的替代文字**：中文與英文用括號分隔，例如 `![直線與兩側的點（Line and points on each side）](路徑)`。
+8. **術語表**：每份講義結尾加一張中英術語對照表，列出本講義所有第一次出現的專有名詞。之後同一術語在全講義要使用同一譯法。
+9. **英文的品質**：英文要符合學術用語的慣例，但仍要淺顯。避免俚語與過度修飾。
 
 ### 4.3 深度（碩士程度）
 
@@ -121,29 +123,38 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 ### 4.6 每個知識點的版面
 
 ```
-### 知識點名稱 / Concept name
+### 知識點名稱（Concept name）
+
 **一句話重點**：……
+
 **One-sentence summary**: ……
 
 **白話說明**：……（2–4 句）
+
 **Plain explanation**: ……（2–4 sentences）
 
 **正式定義**：……（符號與公式）
+
 **Formal definition**: ……（same symbols and formulas）
 
 **例子**：……（逐步計算）
+
 **Example**: ……（same calculation）
 
 **常見迷思**：……
+
 **Common misconception**: ……
 
 **圖**：……（若有）
+
 **Figure**: ……（若有）
 
 **想深入**（選讀）：……
+
 **Going deeper** (optional): ……
 
 **小練習**：……（只給問題與提示，預設不附答案，除非老師要求）
+
 **Practice**: ……（problems and hints only, no answers by default）
 ```
 
@@ -242,7 +253,7 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 ### 5.4 圖的引用
 
 ```markdown
-![直線 x1+x2-0.5=0 與兩側的點｜Line x1+x2-0.5=0 and points on each side](../assets/figures/lec02_fig1.png)
+![直線 x1+x2-0.5=0 與兩側的點（Line x1+x2-0.5=0 and points on each side）](../assets/figures/lec02_fig1.png)
 ```
 
 替代文字必須描述圖的內容，不要只寫「示意圖」或「figure」。
@@ -250,14 +261,16 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 ## 6. 輸出
 
 1. 寫成 `lectures/lecNN.md`，格式參照 `lec01.md`，並套用第 4.2 節的雙語規則：
-   - 標題：`# Lecture NN:<結論式標題> / <English title>`
-   - 週次行：`> 週次:第 N 週（日期）｜進度：<schedule.md 的主題>`
+   - 標題:`# Lecture NN：<結論式標題>（<English title>）`
+   - 週次行(中英分段):
+     `> 週次:第 N 週（日期）｜進度：<schedule.md 的主題>`
+     `>`
      `> Week N (date) | Topic: <topic from schedule.md>`
-   - `## 學習目標 / Learning objectives`（3–5 條，用動詞開頭，中英各一條）
+   - `## 學習目標（Learning objectives）`（3–5 條，用動詞開頭，每條中文後接括號英文）
    - 每個知識點一個 `##` 區段（用 4.6 的版面）
-   - `## 小結 / Summary`（3–5 條重點，中英成對）
-   - `## 延伸閱讀 / Further reading`（只寫教科書章節與 `references/` 連結，不編造文獻）
-   - `## 術語表 / Glossary`（中英對照）
+   - `## 小結（Summary）`（3–5 條重點，每條中文後接括號英文）
+   - `## 延伸閱讀（Further reading）`（只寫教科書章節與 `references/` 連結，不編造文獻）
+   - `## 術語表（Glossary）`（中英對照表）
 2. 若專案有 `schedule.md`，把該週的「講義」欄連到新檔。
 3. 在 `COURSE_STATE.md` 記錄：講義編號、來源（PDF 的章節與頁碼、貼上文本的章節名稱，或網址與讀取日期）、新增的圖檔數量。
 
