@@ -353,11 +353,11 @@ The decision boundaries are at $x\approx-2.571$ and $x\approx 1.238$. So $\omega
 
 If all classes share the same covariance ($\Sigma_i=\Sigma$), the quadratic terms cancel when we subtract discriminant functions, and the boundary becomes a line or a hyperplane. This is the starting point of next week's linear classifiers, such as linear discriminant analysis (LDA).
 
-![兩類共用 Σ 時邊界是直線，Σ 不同時邊界是曲線（Shared Sigma gives a straight boundary; different covariances give a curved one）](../assets/figures/lec02-shared-covariance.png)
+![兩類均值在 x1=0 與 x1=2：共用 Σ 時邊界是直線 x1=1，Σ 不同時邊界是穿過 -2.571 與 1.238 的曲線（Shared covariance gives the straight line x1=1; different covariances give a curve through -2.571 and 1.238）](../assets/figures/lec02-shared-covariance.png)
 
-**圖說 `lec02-shared-covariance`**：示意圖，數值為舉例。兩類中心都在同一条水平線上（左邊的 $\omega_1$、右邊的 $\omega_2$，以藍、橘點標出）。左圖兩類的 $\Sigma$ 都是單位矩陣，決策邊界（粗黑線）是筆直的 $x_1=0$；右圖第二類的 $\Sigma$ 拉長，邊界就彎成曲線。兩張圖只有共變異數不同，邊界就從直線變成曲線，這就是「二次項沒有互相抵消」的意思。讀圖時先看兩張圖的中心點位置相同，再比較粗黑線的形狀。〔功能：3〕
+**圖說 `lec02-shared-covariance`**：數值沿用第 5.3 節：$\mu_1=0$、$\mu_2=2$，變異數分別是 1 與 4，這裡擴展成兩個特徵。左圖兩類的 $\Sigma$ 都是單位矩陣，決策邊界（粗黑線）是筆直的 $x_1=1$，正好是兩個均值的中點。右圖第二類的 $\Sigma$ 在 $x_1$ 方向拉長（變異數 4），邊界就彎成曲線。它在水平軸上的兩個交點是 $x_1=-2.571$ 與 $x_1=1.238$，與第 5.3 節的兩個邊界相同。讀圖時先確認兩張圖的均值位置相同，再比較粗黑線的形狀：直線變成穿過兩個標記點的曲線。〔功能：3〕
 
-**Caption `lec02-shared-covariance`**: an illustrative figure with chosen numbers. The two class means lie on the same horizontal line ($\omega_1$ on the left, $\omega_2$ on the right, marked in blue and orange). In the left panel both classes use the identity covariance, and the decision boundary (the thick black curve) is the straight line $x_1=0$. In the right panel the second class uses an elongated covariance, and the boundary bends into a curve. Only the covariances differ, yet the boundary changes from a line to a curve. That is what it means for the quadratic terms not to cancel. Read the figure by first checking that the two means are in the same places, then by comparing the shape of the black boundary.
+**Caption `lec02-shared-covariance`**: the numbers come from Section 5.3: $\mu_1=0$ and $\mu_2=2$, with variances 1 and 4, extended here to two features. In the left panel both classes use the identity covariance. The decision boundary (the thick black curve) is then the straight line $x_1=1$, the midpoint of the two means. In the right panel the second class is elongated along $x_1$ (variance 4), so the boundary bends into a curve. It crosses the horizontal axis at $x_1=-2.571$ and $x_1=1.238$, the same two points as in Section 5.3. Read the figure by first checking that the means sit in the same places in both panels. Then compare the shape of the black boundary.
 
 ## 7. 小結（Summary）
 
