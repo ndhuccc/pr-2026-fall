@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — `lectures/lec01.md` 改寫為繁體中文與英文對照,加入決策規則的數字例(已用 Python 驗算)與示意圖 `assets/figures/lec01_fig1.png`(Matplotlib 腳本 `assets/figures/src/lec01_fig1.py`,已目視檢查)與術語表。
 - 2026-10-09 — 新增講義製作技能,放在 Repo 內 `.agents/skills/textbook-lecture-notes/`(教科書 PDF → 高中可讀的碩士講義)。新增 `scripts/render_formula.py`(KaTeX + Playwright 公式圖,已測試)與 `requirements-lecture.txt`;AGENTS.md §5.1 加入指引。
 - 2026-10-09 — 老師決定:TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數、作業繳交規範先留空(相關檔案的佔位符已清空)。lectures/lec01.md 依第 1 週主題「課程介紹與圖形識別概論」改寫,舊內容(線性模型與梯度下降)已移除。
 - 2026-10-09 — 依教學計畫表(115/1,科目代碼 AIIA50260)更新課程內容:課號改為 AIIA50260;學分 3 學分/3 小時;教科書與課程描述;評分改為平時 20% / 期中 25% / 期末 35% / 作業 20%(取代範本的實驗與專題比例);schedule.md 改為 17 週官方進度(期中 11/02、期末 12/28)。
