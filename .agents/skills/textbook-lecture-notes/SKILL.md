@@ -1,11 +1,11 @@
 ---
 name: textbook-lecture-notes
-description: Turn a PDF excerpt of a textbook chapter into graduate-level lecture notes written in plain language (readable by a high-school student), with worked examples for formulas and abstract ideas, AI-generated infographic requests, Matplotlib figures for geometric, functional, or statistical content, and KaTeX formula images when a formula must sit inside an image. Use when the user provides a textbook chapter PDF and asks for 講義, lecture notes, 教材, or 示意圖 for a course in this repository.
+description: Turn a textbook chapter (a PDF or text the user pastes) into graduate-level lecture notes written in plain language (readable by a high-school student), with worked examples for formulas and abstract ideas, AI-generated infographic requests, Matplotlib figures for geometric, functional, or statistical content, and KaTeX formula images when a formula must sit inside an image. Use when the user provides a textbook chapter PDF or pasted text and asks for 講義, lecture notes, 教材, or 示意圖 for a course in this repository.
 ---
 
 # textbook-lecture-notes
 
-把一章教科書（PDF）轉成碩士班課程講義。你的角色是該領域的專家教授：理解原理、挑出關鍵知識點、用淺顯的語言講清楚，並用例子與圖讓抽象概念看得見。
+把一章教科書轉成碩士班課程講義。輸入可以是 PDF 檔，也可以是使用者直接貼上的文本。你的角色是該領域的專家教授：理解原理、挑出關鍵知識點、用淺顯的語言講清楚，並用例子與圖讓抽象概念看得見。
 
 這個技能**不是**逐字翻譯或摘抄教科書。教科書受著作權保護：只能用自己的文字重新解釋，不得大段複製原文或原圖。
 
@@ -18,7 +18,7 @@ pip install -r requirements-lecture.txt
 python -m playwright install chromium     # 只有需要公式圖片時才需要
 ```
 
-若安裝失敗，先告知使用者，不要跳過驗證步驟。
+若安裝失敗，先告知使用者，不要跳過驗證步驟。貼上文本的路徑不需要 `pypdf`，但仍需要其他驗證工具。
 
 ## 1. 先讀專案脈絡
 
@@ -29,20 +29,30 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 5. 讀 `lectures/lec01.md`，沿用其 Markdown 格式（標題、週次引用、`$...$` 與 `$$...$$`）。
 6. 若 `AGENTS.md` 與本技能衝突，以 `AGENTS.md` 為準。
 
-需要向使用者確認的只有：PDF 路徑、對應週次（若 `schedule.md` 無法判斷）、以及特殊要求。
+需要向使用者確認的只有：對應週次（若 `schedule.md` 無法判斷）、以及特殊要求。若使用者給的是 PDF，還要確認路徑。
 
-## 2. 擷取 PDF 內容
+## 2. 取得文本內容
+
+### 2.1 PDF 檔
 
 1. 取得頁數與文字。優先用 `pypdf`（或 `pdfplumber`、`pdftotext`）。
 2. 若擷取結果幾乎是空的，表示是掃描檔。停止並告知使用者需要文字版或 OCR，**不要猜測內容**。
 3. 記下每個知識點對應的頁碼範圍，之後要註明出處頁碼。
 4. 公式擷取容易亂碼。凡是公式，必須以 PDF 畫面（渲染成圖片後目視）為準重新確認，不得只信文字擷取。
 
+### 2.2 使用者貼上的文本
+
+1. 直接使用貼上的內容，不需要擷取步驟。
+2. 若文字中有章節標題、頁碼或段落編號，保留為出處。沒有的話，出處寫成「老師提供的文本（章節：……）」，**不要編造頁碼**。
+3. 檢查文本是否完整。若句子在中途斷掉、公式被拆成一行一個符號、圖說缺失，先告知使用者並請他補貼，**不要自行猜測缺漏的內容**。
+4. 貼上的公式常是 Unicode 或純文字（例如 `w^T x + b`）。整理成 LaTeX 前，先把每個公式的意思與使用者確認，特別是上標、下標與向量記號。
+5. 貼上的文字只用於產生講義，**不要把整段原文存進 Repo**。需要暫存時，放在系統暫存目錄或對話中，不要提交。
+
 ## 3. 萃取知識點地圖
 
 輸出一張表，每列一個知識點，建議 6–10 個：
 
-| # | 知識點 | 為什麼重要 | 頁碼 | 類型 | 視覺需求 |
+| # | 知識點 | 為什麼重要 | 出處（頁碼或段落） | 類型 | 視覺需求 |
 |---|---|---|---|---|---|
 
 - **類型**：定義 / 公式 / 直覺 / 程序（演算法步驟）/ 比較 / 迷思
@@ -100,8 +110,8 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 ### 4.6 忠實與出處
 
 - 教科書有錯或公式損壞：先還原，再重新推算。**不得默默修改數字**；若有疑問，在講義中標註並告知老師。
-- 超出 PDF 範圍的補充內容，標上 `[補充]`。
-- 頁碼只引用你從 PDF 確認過的頁碼。
+- 超出原文範圍的補充內容，標上 `[補充]`。
+- 頁碼只引用你從 PDF 確認過的頁碼；貼上的文本沒有頁碼時，只引用章節或段落名稱。
 - 不編造文獻、作者、年份或頁碼。
 
 ## 5. 視覺素材
@@ -207,7 +217,7 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
    - `## 小結`（3–5 條重點）
    - `## 延伸閱讀`（只寫教科書章節與 `references/` 連結，不編造文獻）
 2. 若專案有 `schedule.md`，把該週的「講義」欄連到新檔。
-3. 在 `COURSE_STATE.md` 記錄：講義編號、來源 PDF 的章節與頁碼、新增的圖檔數量。
+3. 在 `COURSE_STATE.md` 記錄：講義編號、來源（PDF 的章節與頁碼，或貼上文本的章節名稱）、新增的圖檔數量。
 
 ## 7. 驗證（完成前必做）
 
@@ -222,10 +232,10 @@ python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch f
 
 ## 8. 給使用者的摘要格式
 
-- 來源：PDF 的章節與頁碼範圍
+- 來源：PDF 的章節與頁碼範圍，或貼上文本的章節名稱
 - 知識點數量與對應的講義檔
 - 圖：資訊圖幾張（已生成／未生成）、Matplotlib 幾張（已驗證）、公式圖幾張（已渲染）
-- 需要使用者確認的地方：超出 PDF 的 `[補充]` 內容、PDF 疑似錯誤、無法判斷的符號或定義
+- 需要使用者確認的地方：超出原文的 `[補充]` 內容、原文疑似錯誤、無法判斷的符號或定義、貼上文本的缺漏
 - 尚未驗證的項目（如有）
 
 ## 注意事項

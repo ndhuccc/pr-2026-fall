@@ -235,8 +235,8 @@ gh workflow run deploy-site.yml                                    # 第一次�
 
 ### 5.1 新增或更新某週講義
 - 問:第幾週?主題?要列出哪些重點?有現成的資料(文字、PDF)嗎?
-- 作法:若老師提供教科書章節 PDF,依 `.agents/skills/textbook-lecture-notes/SKILL.md` 製作講義(知識點萃取、高中可讀的白話撰寫、公式範例、示意圖與公式圖)。
-  沒有 PDF 時,在 `lectures/` 新增 `lecNN.md`(NN 為兩位數週次);格式照 `lectures/lec01.md`:開頭有週次、對應實作、學習目標。
+- 作法:若老師提供教科書章節(PDF 或貼上的文本),依 `.agents/skills/textbook-lecture-notes/SKILL.md` 製作講義(知識點萃取、高中可讀的白話撰寫、公式範例、示意圖與公式圖)。
+  沒有章節文本時,在 `lectures/` 新增 `lecNN.md`(NN 為兩位數週次);格式照 `lectures/lec01.md`:開頭有週次、對應實作、學習目標。
   數學式用 `$...$`(行內)與 `$$...$$`(區塊);圖片放 `assets/figures/` 並用相對路徑引用。
 - 同步:`schedule.md` 該週的「講義」欄加連結。
 - 驗證:`python3 scripts/build_docs.py && mkdocs build` 無 ERROR。
