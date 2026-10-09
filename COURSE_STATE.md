@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 依老師同意,將本次 view-from-text 技能更新同步至 GitHub `ndhuccc/course-template` 的 main(commit `817d509`):只修改 SKILL.md、AUDIT_CHECKLIST.md、AI_AGENT_FILE_FORMAT_SPEC.md、VISUAL_AND_LAYOUT_GUIDE.md、jbd_figure.py 五檔;包含 SVG 250 KB 預算、原生節點版型與 Connector 可見性規則,未帶入課程內容。驗證:GitHub 範本五檔與課程版本內容一致(忽略 CRLF);範本 SVG 檢查接受 200000/250000 bytes、拒絕 250001 bytes,實際 matplotlib 圖可成功產生 SVG data URI。課程投影片 commit `4e0ae66` 已部署成功(run `37929321431`),網站下載回應 200 且 JSON 內容一致,講義下載連結正常。
 - 2026-10-09 — 老師已在 JianBauDau 確認線性分類器投影片的連線修正成功,批准提交與推送。發佈 `slides/lec02-linear-classifiers.jbd.json`(4 個 Frame、14 頁、9 張圖、11 條可見 Connector),講義加入下載連結;一併同步 SVG 250 KB 上限、原生節點版型規則及 Connector 可見性稽核。查核 GitHub `ndhuccc/course-template` 的五份技能檔案,尚未包含這次更新;範本同步待老師另行同意。
 - 2026-10-09 — 修正 `slides/lec02-linear-classifiers.jbd.json` 的 Connector 不可見問題:暫存建構工具 `deckbuild.py` 的 STYLE_CONN 繼承 STYLE_TEXT 的 transparent stroke,導致 11 條線及箭頭透明。改為 stroke #6a9fd6、borderWidth 3,重新產生草稿。實際使用本機 JianBauDau standalone Player 載入並目視確認:縮小根場景可見 3 條,正常播放符號關係頁 4 條、白化頁 2 條、分數/距離關係頁 2 條;check_slides 通過。技能格式說明、§4A 與 AUDIT B8/F11 補上線色與實際可見性檢查。更正先前「節點存在即顯示成功」的錯誤交付說法。草稿仍未提交/發佈,待老師檢視;SVG 上限 250 KB 與前次版型規則修改維持。
 - 2026-10-09 — 修正課程網站側邊導覽的講義順序:先前 MkDocs 未設定 `nav`,會按檔名排序(導致 `lec02-bayesian-*` 排在 `lec02.md` 之前)。新增 `scripts/sync_nav.py`,依 `schedule.md` 的週次與輸入順序產生 `mkdocs.yml` 的 `nav:` 區塊,並由 `build_docs.py` 自動呼叫;AGENTS.md 的腳本清單一併更新。驗證:YAML 可解析、建置成功、側邊導覽順序為 lec01 → lec02 → 八份補充教材(依 schedule 排列)。
