@@ -4,41 +4,49 @@
 
 | 項目 | 內容 |
 |---|---|
-| 課程名稱 | 圖型識別 |
-| 課號 | CSIE6001 |
+| 課程名稱 | 圖型識別(Pattern Recognition) |
+| 課號 | AIIA50260 |
 | 學期 | 2026 秋季 |
-| 學分 / 時數 | {{CREDITS}} |
+| 修別 | 碩士 / 選修 |
+| 學分 / 時數 | 3 學分 / 3 小時 |
 | 上課時間地點 | 週一 14:10–17:00 |
 | 授課教師 | 江政欽 教授(ccchiang@gms.ndhu.edu.tw) |
 | 助教 | {{TA}} |
 | Office Hour | {{OFFICE_HOUR}} |
 
+## 課程描述
+
+本課程介紹圖形識別(Pattern Recognition)之基礎理論與應用技術,涵蓋貝氏分類器(Bayes Classifiers)、線性與非線性分類器(Linear and Nonlinear Classifiers)、特徵選取與萃取(Feature Selection and Generation)、樣板匹配(Template Matching)、上下文相關分類(Context-Dependent Classification)以及分群方法(Clustering)等主題。透過理論講授與實作練習,使學生具備運用電腦對文字、影像、聲音等各類資料進行分類與辨識之能力。
+
 ## 課程目標
 
-{{COURSE_DESCRIPTION}}
+學生完成本課程後,能建立圖形識別的理論與實作基礎,運用電腦對文字、影像、聲音等各類資料進行分類與辨識。
 
 ## 教科書與參考資料
 
-- 主要教材:{{TEXTBOOK}}
+- 主要教材:Sergios Theodoridis & Konstantinos Koutroumbas, Pattern Recognition, 4th Edition, Academic Press/Elsevier, 2008. ISBN 978-1-59749-272-0
 - 其他參考:見 [`references/`](references/)
+
+## 授課進度
+
+各週主題與日期見 [`schedule.md`](schedule.md),本學期共 17 週。
 
 ## 評分方式
 
 | 項目 | 比例 |
 |---|---|
-| 平時作業 | 30% |
-| 實驗(Lab) | 15% |
-| 期中考 | 20% |
-| 期末專題 | 25% |
-| 課堂參與 | 10% |
+| 平時成績(含出缺席) | 20% |
+| 期中考 | 25% |
+| 期末考 | 35% |
+| 作業 | 20% |
 
 總成績計算:
 
 $$
-S = 0.30\,S_{\text{hw}} + 0.15\,S_{\text{lab}} + 0.20\,S_{\text{mid}} + 0.25\,S_{\text{proj}} + 0.10\,S_{\text{part}}
+S = 0.20\,S_{\text{part}} + 0.25\,S_{\text{mid}} + 0.35\,S_{\text{final}} + 0.20\,S_{\text{hw}}
 $$
 
-> 實際比例以第一週公告為準,任何異動記錄於 [`CHANGELOG.md`](CHANGELOG.md)。
+> 比例依教學計畫表。任何異動記錄於 [`CHANGELOG.md`](CHANGELOG.md)。
 
 ## 作業繳交規範
 

@@ -1,4 +1,4 @@
-# 圖型識別(CSIE6001)— 2026 秋季
+# 圖型識別(AIIA50260)— 2026 秋季
 
 > 國立東華大學 資訊工程學系｜授課教師:江政欽 教授｜聯絡信箱:ccchiang@gms.ndhu.edu.tw
 
@@ -8,7 +8,7 @@
 
 ## 課程簡介
 
-{{COURSE_DESCRIPTION}}
+本課程介紹圖形識別（Pattern Recognition）之基礎理論與應用技術，涵蓋貝氏分類器（Bayes Classifiers）、線性與非線性分類器（Linear and Nonlinear Classifiers）、特徵選取與萃取（Feature Selection and Generation）、樣板匹配（Template Matching）、上下文相關分類（Context-Dependent Classification）以及分群方法（Clustering）等主題。透過理論講授與實作練習，使學生具備運用電腦對文字、影像、聲音等各類資料進行分類與辨識之能力。
 
 ## 學習目標
 

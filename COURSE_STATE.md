@@ -8,7 +8,7 @@
 
 | 項目 | 內容 |
 |---|---|
-| 課程 | 圖型識別(CSIE6001) |
+| 課程 | 圖型識別(AIIA50260) |
 | 學期 | 2026 秋季(第 1 週起始 2026-09-07) |
 | Repo | ndhuccc/pr-2026-fall |
 | Repo 可見度 | Private |
@@ -37,10 +37,12 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 依教學計畫表(115/1,科目代碼 AIIA50260)更新課程內容:課號改為 AIIA50260;學分 3 學分/3 小時;教科書與課程描述;評分改為平時 20% / 期中 25% / 期末 35% / 作業 20%(取代範本的實驗與專題比例);schedule.md 改為 17 週官方進度(期中 11/02、期末 12/28)。
+- 2026-10-09 — 老師決定:第 4 週(9/28)與第 8 週(10/26)放假,採「順延整體進度」。依計畫表的 15 個教學單元與剩餘可上課週一計算,有 2 個單元無位置,待老師決定壓縮或移動期中/期末方式。
 - 2026-10-09 — 移除範例實驗 labs/lab01–03(老師決定本學期尚無實驗,之後陸續加入;舊內容保留在 git commit 945b993)。autograde 的兩個 pytest 步驟改為無測試檔時略過;release_schedule.toml 清空 [solutions];README 與 lec01 移除實驗連結。
 - 2026-10-09 — 啟用 Pages(workflow 來源)與 Discussions;手動觸發 deploy-site 成功,網站可開。
 - 2026-10-09 — 建立 ndhuccc/pr-2026-fall(Private,由 course-template 產生);套用學期設定。第 1 週起始 2026-09-07(依 sys.ndhu.edu.tw 行事曆「全校開始上課」)。
 - 2026-10-09 — 行事曆標示週一放假:第 4 週 9/28(孔子誕辰／教師節)、第 8 週 10/26(光復節補假),排程時需跳過。
 - 2026-10-09 — 上課時間記為週一 14:10–17:00;上課地點未填(待補)。
-- 未填選填欄位:AI_POLICY、COURSE_DESCRIPTION、CREDITS、HW01_DUE、HW01_RELEASE、OFFICE_HOUR、TA、TEAM_SIZE、TEXTBOOK。
-- 待辦:(1) Step 8 實驗加入時依 AGENTS §5.2 建立;若要以舊範例為起點,可用 `git checkout 945b993 -- labs/lab01` 還原。(2) syllabus.md 仍列「實驗 15%」,需與老師確認評分比例。(3) 補上課地點等選填欄位。
+- 未填選填欄位:AI_POLICY、OFFICE_HOUR、TA、TEAM_SIZE、HW01_DUE、HW01_RELEASE。
+- 待辦:(1) Step 8 實驗加入時依 AGENTS §5.2 建立;若要以舊範例為起點,可用 `git checkout 945b993 -- labs/lab01` 還原。(2) 順延方案的排程待老師決定(見上)。(3) 補上 TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數等選填欄位。(4) lectures/lec01.md 為範本內容(課程介紹與數學預備),與計畫表第 1 週主題不完全相符,需確認是否改寫。

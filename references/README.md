@@ -2,7 +2,7 @@
 
 ## 教科書
 
-- {{TEXTBOOK}}
+- Sergios Theodoridis & Konstantinos Koutroumbas, Pattern Recognition, 4th Edition, Academic Press/Elsevier, 2008. ISBN 978-1-59749-272-0
 
 ## 論文與文章
 
