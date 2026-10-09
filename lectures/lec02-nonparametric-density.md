@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: supplement to Bayes Classifiers (2) — nonparametric methods after parameter estimation
 
+投影片：[JianBauDau JSON](../slides/lec02-nonparametric-density.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-nonparametric-density.jbd.json) (open with the JianBauDau editor or player).
+
 前面幾種方法都先假設機率密度有已知的形式,例如高斯,再從資料估參數。這一節換一條路:完全不做形式假設,只靠資料的密集程度,直接把密度的形狀畫回來。這是課程網頁第 2.5 節的兩個知識點。
 
 Earlier methods assume the density has a known form, such as a Gaussian, and estimate its parameters from data. This section takes a different route: assume nothing about the form and let the local crowding of the data paint the density itself. These are the two concepts from Section 2.5 of the course notes.

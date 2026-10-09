@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: Mixture models and the EM algorithm (course web notes, Section 2.5, point 13)
 
+投影片：[JianBauDau JSON](../slides/lec02-mixture-models-em.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-mixture-models-em.jbd.json) (open with the JianBauDau editor or player).
+
 本講義對應課程網頁 2.5 的知識點「混合模型與 EM 演算法」，以及課本 Figure 2.17 的主題。這裡談的是：資料由好幾個高斯疊加而成。如何在完全不知道每個點來自哪一群的情況下，把參數估出來？文字全部重新撰寫。標有 `[補充]` / `[Added]` 的內容是為了幫助理解而新增的。
 
 This lecture covers the course web note "mixture models and the EM algorithm" (point 13 of Section 2.5) and the topic of textbook Figure 2.17. The question is this. The data come from several overlapping Gaussians. How do we estimate the parameters when we never know which group each point came from? The text is newly written. Content marked `[補充]` / `[Added]` is added to help understanding.

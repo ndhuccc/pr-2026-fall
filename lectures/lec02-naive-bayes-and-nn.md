@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: Bayes classifiers, extended — the naive Bayes classifier and the nearest-neighbour rule
 
+投影片：[JianBauDau JSON](../slides/lec02-naive-bayes-and-nn.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-naive-bayes-and-nn.jbd.json) (open with the JianBauDau editor or player).
+
 本講義涵蓋課程網頁第 2.5–2.6 節的兩個知識點。第一個是**單純貝氏分類器（naive Bayes classifier）**：它用一個大膽的獨立假設，把指數成長的估計量壓回線性。第二個是**最近鄰居法則（nearest-neighbour rule）**：它完全不估計機率密度，直接讓鄰居投票。
 
 This note covers two knowledge points from Sections 2.5–2.6 of the course web page. The first is the **naive Bayes classifier**, which uses one bold independence assumption to collapse an exponentially growing estimation problem back to a linear one. The second is the **nearest-neighbour rule**, which estimates no probability density at all and simply lets the neighbours vote.

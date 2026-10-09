@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: Bayesian Inference and Maximum-Entropy Estimation
 
+投影片：[JianBauDau JSON](../slides/lec02-bayesian-inference.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-bayesian-inference.jbd.json) (open with the JianBauDau editor or player).
+
 本講義涵蓋課程網頁第 2 章 2.5 節的兩個知識點:貝氏推論,以及最大熵估計。本週主講義談的是已知分布參數時如何做決策。本講義改問另一個問題:參數本身不知道時,該怎麼辦。
 
 This lecture covers two topics from Section 2.5 of the course notes: Bayesian inference and maximum-entropy estimation. This week's main lecture assumed the distribution parameters were known; here we ask what to do when the parameters themselves are unknown.

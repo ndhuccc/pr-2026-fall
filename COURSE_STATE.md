@@ -31,11 +31,16 @@
 
 ## 待辦事項
 
-(目前沒有)
+- [x] 教師同意將第 2 週其餘七份自主學習投影片與講義連結儲存並同步至雲端（2026-10-09）。
+- [ ] 尚待確認 PDF 匯出與編輯器 Scene mode 的 reticle 顯示；播放器的雙尺寸逐頁檢查已完成。
 
 ## 決策與異動紀錄
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
+
+- 2026-10-09 — 教師明確要求「同步」，核准將第 2 週其餘七份投影片、講義下載連結、CHANGELOG 與課程紀錄儲存並同步至雲端；移除講義下載連結的草稿／待教師確認字樣。此次同意同步不代表 PDF 匯出或編輯器 reticle 已經實測，相關待辦保留。同步及網站部署結果另記於後續紀錄。
+- 2026-10-09 — 七份投影片草稿收尾驗證：`check_slides.py` 全部 9 份投影片皆 OK，0 FAIL／0 WARN；`build_docs.py` 與 MkDocs 建置成功，只有既有 Material 版本公告與三份未列入 nav 的文件提示；`doctor.py` 無錯誤，本機 16 個待同步檔案符合草稿狀態。七份講義產出的中英文下載連結共 14 個均指向存在的檔案，下載 JSON 與原草稿內容一致。網站僅在本機建置，未更新公開網站。
+- 2026-10-09 — 依老師要求完成第 2 週其餘七份自主學習投影片本機草稿：parameter-estimation（3 單元／23 頁／7 圖）、bayesian-inference（8／31／16）、mixture-models-em（9／36／20）、nonparametric-density（9／34／26）、naive-bayes-and-nn（7／31／16）、bayesian-networks（6／24／9）、bayesian-network-inference（5／28／8）。檔名皆為 `slides/lec02-<代號>.jbd.json`；合計 47 個 Frame、207 內容頁、102 張內嵌 SVG、156 條 Connector。因中英對照、公式與術語表拆頁，頁數高於初步估算，未刪減內容。七份講義已加草稿連結，既有線性分類器投影片維持不變。以實際 JianBauDau Player 在 1280×720、1920×1080 各逐頁播放並截圖；修正 12 處公式／文字裁切，最終 414 個頁面畫面皆無文字溢出、缺圖或 KaTeX 錯誤；縮放及平移後確認 40 條根場景箭頭均可見。另修正網路推論比較頁的結構箭頭被訊息箭頭反轉的錯誤，並保留證據機率 0.3711 的完整精度。獨立重算七主題的代表性例子，確認 ML 變異數 0.06／不偏 0.075、EM 均值 0.84596／變異數 0.14294、Parzen 密度 0.19614、郵件後驗 0.98765、六節點參數 14 與鏈狀後驗 0.57478／0.40340。來源的 3-NN「10.3%」與所列上界公式（36.018%）不一致，已在草稿明示，不當成已證實結果。PDF 匯出及編輯器 reticle 尚未實測，留待教師檢視。未提交、未推送、未發佈；暫存建構工具與播放截圖不放入課程資料夾。
 
 - 2026-10-09 — 依老師同意,將本次 view-from-text 技能更新同步至 GitHub `ndhuccc/course-template` 的 main(commit `817d509`):只修改 SKILL.md、AUDIT_CHECKLIST.md、AI_AGENT_FILE_FORMAT_SPEC.md、VISUAL_AND_LAYOUT_GUIDE.md、jbd_figure.py 五檔;包含 SVG 250 KB 預算、原生節點版型與 Connector 可見性規則,未帶入課程內容。驗證:GitHub 範本五檔與課程版本內容一致(忽略 CRLF);範本 SVG 檢查接受 200000/250000 bytes、拒絕 250001 bytes,實際 matplotlib 圖可成功產生 SVG data URI。課程投影片 commit `4e0ae66` 已部署成功(run `37929321431`),網站下載回應 200 且 JSON 內容一致,講義下載連結正常。
 - 2026-10-09 — 老師已在 JianBauDau 確認線性分類器投影片的連線修正成功,批准提交與推送。發佈 `slides/lec02-linear-classifiers.jbd.json`(4 個 Frame、14 頁、9 張圖、11 條可見 Connector),講義加入下載連結;一併同步 SVG 250 KB 上限、原生節點版型規則及 Connector 可見性稽核。查核 GitHub `ndhuccc/course-template` 的五份技能檔案,尚未包含這次更新;範本同步待老師另行同意。

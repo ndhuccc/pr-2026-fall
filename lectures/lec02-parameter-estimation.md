@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: Parameter estimation (1) — maximum likelihood and maximum a posteriori estimation
 
+投影片：[JianBauDau JSON](../slides/lec02-parameter-estimation.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-parameter-estimation.jbd.json) (open with the JianBauDau editor or player).
+
 前面幾個知識點都假設類別條件密度 $p(\mathbf{x}\mid\omega_i)$ 的參數已知：均值、共變異數都由老師直接給。真實世界沒有這麼好康，這些參數通常要從訓練資料估出來。本講義處理兩個最基本的方法：最大似然估計（ML）與最大後驗機率估計（MAP）。
 
 The earlier topics assumed the parameters of the class-conditional density $p(\mathbf{x}\mid\omega_i)$ were given: the mean and the covariance were handed to us. In the real world this is rarely true; the parameters must be estimated from training data. These notes cover the two most basic methods: maximum likelihood (ML) and maximum a posteriori (MAP) estimation.
