@@ -37,6 +37,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-09 — 依老師指示(選項 2)與 `ndhuccc/course-template` 同步播放器下載連結:`scripts/build_docs.py` 改為範本版本(`PLAYER_URL` 與下載頁區段),`slides/FORMATS.md` 補上「播放器下載」一節(以 LF 插入,範本為 CRLF,內容相同)。範本既有 commit `34f13ff` 已含相同功能,未覆寫範本。驗證:兩檔與範本內容一致(忽略 CR);`build_docs.py` 與 `mkdocs build` 成功;推送後 `deploy-site`(run 37873707204)成功;線上 `slides/` 頁面含連結(回應 200)。
 - 2026-10-09 — 投影片下載頁(`slides/`)加入 JianBauDau 播放器(Windows, 1.0.0)下載連結,來源為 `ndhuccc/IDL115` 的 GitHub Release(`player-v1.0.0/JianBauDau-Player-1.0.0.exe`)。實作:`scripts/build_docs.py` 新增 `PLAYER_URL` 常數,由 `write_slides_index` 產生於下載頁。驗證:連結回應 200;`mkdocs build` 成功;推送後 `deploy-site`(run 37873286728)成功,線上 `slides/` 頁面已含連結。注意:連結指向他人專案的 Release,若 IDL115 刪除或改版,需更新 `PLAYER_URL`。
 - 2026-10-09 — 配合 JianBauDau 投影片(JSON)調整 repo 設計:`slides/` 接受 `lecNN.jbd.json`、`lecNN.pptx`、`lecNN.pdf`、`lecNN.html`;新增 `scripts/check_slides.py`(JianBauDau 完整文件的結構與隱私檢查,範例檔通過、page spec 與壞檔被擋)、`slides/FORMATS.md`(老師用格式說明,不上網站)。`build_docs.py` 讓 slides/ 的 .json/.pptx 可下載,並自動產生網站下載頁;`doctor.py` 新增投影片檢查;AGENTS.md 新增 §5.11 與地圖列;README 更新列。發現:課程網站為公開網址,投影片與講者備註會公開。
 - 2026-10-09 — 修正 `lec02-error-regions` 左圖:陰影用加權值 $0.5\,p(x\mid\omega)$ 計算,但圖上畫的是未加權密度,陰影上緣對不上曲線。改為畫加權密度 $P(\omega_i)p(x\mid\omega_i)$,陰影直接落在曲線之下,每塊面積 0.0793(合計 0.1587)。圖說與替代文字同步更新;講義技能 §7 第 9 項新增「陰影或面積圖」稽核。
