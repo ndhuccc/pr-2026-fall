@@ -141,6 +141,8 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 
 先前產生的檔案違反這些規則:時間軸的 step 數量與畫布上的 reticle 對不上、每頁範圍不對、頁面標題被 Frame 標題列蓋住。細節與公式見 `PRESENTATION_DESIGN_GUIDE.md`「Step 路徑設計建議」與「頁面排列與鏡頭公式」。
 
+**版型**:每一頁在盤點與交付時都要標明版型代號(A–T,見 `VISUAL_AND_LAYOUT_GUIDE.md` §3.1/§3.3)。同一份簡報相鄰兩頁不得用同一版型;5 頁以上至少用到 4 種版型(§3.4)。**含流程、層級、關係的頁必須出現 `connector` 節點**(§4A 規則 0),稽核時逐頁核對(AUDIT F11、F12)。
+
 **結構:時間軸的 step 與畫布上的 reticle 一對一**
 
 1. **每個 Scene 的時間軸 step 數 = 該 Scene 畫布上的 reticle 數。** 只有 `scene-point`、`focus-node`、`scene-overview` 在 Scene mode 會畫出 reticle;**`enter-frame` 沒有 reticle,本技能一律不用。**
@@ -196,10 +198,12 @@ def page_step(step_id, label, scene_id, i):
 | 流程、層級、知識單元地圖、概念關係 | 不需圖(原生節點 + Connector) | — |
 
 規則:
-1. 盤點時(§1A 步驟 1)依此表逐單元列出圖需求。**不得以「既有圖檔是否存在」決定是否畫圖。**
+0. **原生節點版型(硬規則)**:內容屬於「流程、層級樹、概念關係、迭代迴圈、時序」時,該頁**必須**用原生節點排版,並包含**至少 1 個 `connector` 節點**把節點連起來。這一類**不得**用 matplotlib 圖片代替:結構圖要能在編輯器裡改。版型代號見 `VISUAL_AND_LAYOUT_GUIDE.md` §3.3:G 流程箭頭、H 循環迴圈、I 層級樹、J 時間軸、T 四象限、K 金字塔。
+1. 盤點時(§1A 步驟 1)依此表逐單元列出圖需求,並註明**版型代號**。**不得以「既有圖檔是否存在」決定是否畫圖。**
 2. 派工時(§1A 步驟 2)每個單元附上圖需求清單(圖型、配方、所在頁)。主代理不得宣告「本批不需要圖」,除非該單元內容確實不屬於本表「必圖」類。
 3. 稽核時(§1A 步驟 4)逐單元對照:每張必圖都有對應 image 節點,且圖的數值與講義一致。
-4. 每頁圖片不超過 2 張,且符合 VISUAL §4.6 的 SVG 大小預算(≤150 KB)。
+4. 每頁圖片不超過 2 張,且符合 VISUAL §4.6 的 SVG 大小預算(≤250 KB)。
+5. **Connector 可見性**:線與箭頭使用 `style.stroke`,不得繼承文字節點的 `transparent`;深色畫布建議用 `"#6a9fd6"`、`borderWidth: 3`,標籤文字仍用深色。必須在實際播放器核對頁內線與箭頭,根場景連線另以縮小後的根場景檢查(AUDIT B8)。`connector` 數量與格式檢查不能取代畫面驗證。
 
 ### 節點必填欄位
 

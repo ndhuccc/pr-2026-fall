@@ -4,6 +4,10 @@
 >
 > Week 2 (self-study material) | Topic: an extension of Bayes classifiers and a bridge to linear classifiers
 
+投影片下載：[JianBauDau JSON](../slides/lec02-linear-classifiers.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+
+Slides: [JianBauDau JSON](../slides/lec02-linear-classifiers.jbd.json) (open with the JianBauDau editor or player).
+
 本份講義接續 `lec02.md` 的第 5 節。那裡提到：當每個類別都使用同一顆共變異數矩陣時，判別函數裡的二次項會互相抵銷。本篇把這個結論講清楚，並介紹它的另一種說法：最小距離分類器。
 
 This note continues Section 5 of `lec02.md`. There we saw that when all classes share one covariance matrix, the quadratic terms in the discriminant functions cancel. This note explains that result in detail and presents a second way to read it: the minimum-distance classifier.

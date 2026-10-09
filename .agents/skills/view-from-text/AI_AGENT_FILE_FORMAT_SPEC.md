@@ -230,6 +230,7 @@ JianBauDau 不是「一張一張投影片」的線性模型，而是：
 - `arrowSize`：`"small" | "medium" | "large"`，可省略。
 - `waypoints`（可省略）：`{x,y}[]`，手動指定連接線經過的中繼點。
 - `label`（可省略）：`{ text, t, offset }`——`t` 是 0～1，代表標籤沿連線的相對位置（0.5 = 中點）；`offset` 是 `"on" | "above" | "below"`。**`label.text` 的 `style.textColor` 一律要用深色**（見上方 NodeStyle 一節的說明）。
+- **線與箭頭的顏色使用 `style.stroke`**,不是 `textColor` 或 `fill`;必須與畫布有足夠對比,不可用 `transparent` 或零透明度。深色畫布可用 `stroke: "#6a9fd6"`、`borderWidth: 3`。`textColor` 只控制標籤文字,仍用深色。節點存在或格式檢查通過不代表連線可見,必須在實際播放器確認線與箭頭。
 
 ---
 

@@ -106,7 +106,7 @@ def svg_text(fig) -> str:
     return buf.getvalue()
 
 
-def check_svg(svg: str, max_bytes: int = 150_000) -> list[str]:
+def check_svg(svg: str, max_bytes: int = 250_000) -> list[str]:
     """Cheap self-checks. Returns a list of problems (empty == OK)."""
     problems: list[str] = []
     try:
@@ -124,7 +124,7 @@ def check_svg(svg: str, max_bytes: int = 150_000) -> list[str]:
     return problems
 
 
-def svg_data_uri(fig, max_bytes: int = 150_000) -> str:
+def svg_data_uri(fig, max_bytes: int = 250_000) -> str:
     clipped = check_not_clipped(fig)
     if clipped:
         raise ValueError("; ".join(clipped))
