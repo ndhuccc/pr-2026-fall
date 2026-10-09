@@ -102,7 +102,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 
 1. 在根場景為每個單元建立一個 Frame 節點(`frameId`),指向 `scene-uNN`。
 2. 跨單元 Connector 與根層總覽放在根場景。
-3. Step 順序:根層 `scene-overview` →(每單元依序)`enter-frame` → 該單元的 Step →(可選)退回根層 `scene-overview`。`order` 重新編為 0、1、2…。
+3. Step 順序:根層 `scene-overview` →(每單元依序)`enter-frame` → 該單元的 Step。**不加**退回根層的 `scene-overview`(播放時自動退回 Frame)。`order` 重新編為 0、1、2…。子代理交來的每個 `scene-point` 必須已有 `referenceViewport` 與標題列留白(§4 鏡頭規則),合併時逐一檢查。
 4. 合併後寫入 `slides/lecNN.jbd.json`。
 
 ### 步驟 6:整體驗證與交付
@@ -135,7 +135,33 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 - **配色**:依 `VISUAL_AND_LAYOUT_GUIDE.md` §2 的色彩語意。一概念一色;Connector 標籤文字用深色。
 - **示意圖**:凡屬 §4A「必圖」類內容(函數、分布、幾何、決策邊界、門檻與面積、統計圖),該頁必須有 matplotlib 圖,配方見 `FIGURE_RECIPES.md`。只有 §4A「不需圖」類內容才用原生節點。
 - **構圖**:Step 的鏡頭要讓內容貼齊 16:9 瞄準框,不留大片空白(`PRESENTATION_DESIGN_GUIDE.md` 構圖建議)。
-- **座標**:本地座標,16:9 為 1280×720,4:3 為 960×720。節點可略超出範圍,但不要大幅超出。
+- **座標**:本地座標,16:9 為 1280×720,4:3 為 960×720。節點可略超出範圍,但不要大幅超出。頁面內容放在 `0 ≤ y ≤ H`,頁面上方 100 單位留空(給 Frame 標題列)。
+
+### 4B. 鏡頭規則(硬規則,手算 `scene-point` 一律照做)
+
+先前的檔案因為違反這幾條,在 Player 裡出現「每頁範圍不對」與「標題被蓋住」,細節與公式見 `PRESENTATION_DESIGN_GUIDE.md`「頁面排列與鏡頭公式」。
+
+1. **每個 `scene-point` 都要有 `referenceViewport`**:16:9 寫 `{"width": 1280, "height": 720}`,4:3 寫 `{"width": 960, "height": 720}`。**不可省略**(省略時 `zoom` 不隨播放視窗縮放,視窗變大就會露出相鄰頁)。
+2. **為 Frame 標題列留 100 單位空白**:`zoom = H/(H+100)`(0.878)、`point.x = 頁面左上 x + W/2`、`point.y = 頁面左上 y + H/2 − 50`。Frame 標題維持單行。
+3. **同一個 Scene 內的頁面橫向排列,間隔至少 160**(`pitch = W + 160`:16:9 為 1440,4:3 為 1120)。
+4. **不寫「返回總覽」或任何退回上一層的 Step。** 播放時,子 Scene 播完會自動退回 Frame;多寫的 Step 會多一個停點,並在 Scene mode 疊出重複的整場景 reticle。根 Scene 只有 1 個開場 `scene-overview` 加每單元 1 個 `enter-frame`。
+5. **Step 的 `label` 只寫結論短句,不加序號**(時間軸卡片已自動編號),各單元格式一致。
+
+```python
+W, H = 1280, 720            # 4:3 → 960, 720
+HEADROOM, GAP = 100, 160
+ZOOM, PITCH = H / (H + HEADROOM), W + GAP
+
+def page_origin(i):          # 單元 Scene 內第 i 頁(0 起算)的左上角
+    return i * PITCH, 0
+
+def page_step(step_id, label, scene_id, i):
+    x0, y0 = page_origin(i)
+    return {"id": step_id, "label": label, "durationMs": 900, "holdMs": 500, "easing": "smooth",
+            "target": {"kind": "scene-point", "sceneId": scene_id,
+                       "point": {"x": x0 + W / 2, "y": y0 + H / 2 - HEADROOM / 2},
+                       "zoom": ZOOM, "referenceViewport": {"width": W, "height": H}}}
+```
 
 ### 4A. 圖型對照表(必讀,決定哪些單元必須有圖)
 
@@ -168,8 +194,9 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 
 - 用 Python 腳本在暫存目錄(不要放進 repo)組出 dict,再以 `json.dump(..., ensure_ascii=False, indent=2)` 寫到 `slides/lecNN.jbd.json`。不要手打長 JSON。篇幅超過 §1A 的門檻時,改依 §1A 分批處理後合併。
 - `metadata`:`title` 寫課程與週次,`createdAt`、`updatedAt` 用當下 ISO 時間,`aspectRatio` 明確填 `"16:9"` 或 `"4:3"`。
-- 每個知識單元至少 2–3 個 Step:`enter-frame` 進場,接著 `scene-overview`、`focus-node` 或 `scene-point` 展開細節(需要時搭配 `reveal` 與 `initiallyHidden`),視需要退回上一層。所有 Step 串成一個扁平陣列,`order` 依序遞增 0、1、2…。
-- Step 的 `label` 是「序號 + 結論短句」,≤ 20 字。
+- 每個知識單元至少 2–3 個 Step:`enter-frame` 進場,接著 `scene-overview`、`focus-node` 或 `scene-point` 展開細節(需要時搭配 `reveal` 與 `initiallyHidden`)。**不寫退回上一層的 Step**(§4B)。所有 Step 依「根 `scene-overview` → 單元 1 的 `enter-frame` → 單元 1 的頁面 Step → 單元 2 的 `enter-frame` → …」串成一個扁平陣列,`order` 依序遞增 0、1、2…。
+- `scene-point` 一律照 §4B 的公式與 `referenceViewport` 產生。
+- Step 的 `label` 是結論短句,≤ 20 字,**不加序號**(時間軸卡片已自動編號)。
 - 圖片大小控制在 20 MB 以內(超過會被 WARN)。
 
 ## 6. 稽核與驗證(必做)
@@ -192,7 +219,8 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 2. 請老師在 JianBauDau 編輯器或播放器 **Open** 此檔,並確認 `AUDIT_CHECKLIST.md` I 節的四項:
    - SVG 圖正常顯示、縮放清晰。
    - Export PDF 時 SVG 正常。
-   - 播放器中正常播放。
+   - 播放器中正常播放。**分別以 1280×720 與 1920×1080 的視窗各播一次**:每頁都填滿畫面、看不到相鄰頁、頁面標題完整位於 Frame 標題列下方,兩種視窗的構圖一致(AUDIT_CHECKLIST B5–B7)。
+   - 編輯器 Scene mode 看根場景:只有一個整場景 reticle,根時間軸只有開場總覽與各單元入口(AUDIT_CHECKLIST H5)。
    - 逐頁檢查排版、文字截斷與 Step 順序。
 3. 若要在講義中連結投影片,依 `AGENTS.md` §5.11 更新 `lectures/lecNN.md` 或 `schedule.md`。
 4. 依 `AGENTS.md` 的流程提交並推送。

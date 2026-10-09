@@ -18,7 +18,7 @@
 
 - 根畫布（或上一層 scene）裡有一個 `type: "frame"` 的節點，它的 `frame.childSceneId` 指向一個獨立的 scene。
 - 那個獨立的 scene（`parentFrameId` 指回這個 Frame）裡放這個單元的實際內容：標題文字、說明、圖片、子項目卡片等等。
-- Step 路徑上，先用一個 `enter-frame` step 把鏡頭帶進這個 Frame，接著用 `scene-overview` / `focus-node` / `scene-point` 幾個 step 在這個 child scene 裡逐步展開細節，最後（視需要）用一個回到上一層的 `scene-overview` step 退回去，銜接下一個單元。
+- Step 路徑上，先用一個 `enter-frame` step 把鏡頭帶進這個 Frame，接著用 `scene-overview` / `focus-node` / `scene-point` 幾個 step 在這個 child scene 裡逐步展開細節。**不需要、也不要**另外寫「退回上一層」的 step：播放時，一個單元的 step 播完後，Present 會自動把鏡頭退回這個 Frame，再接下一個單元（見下方「Step 路徑設計建議」）。
 
 ## 遞迴巢狀：單元可以再切子單元
 
@@ -38,13 +38,53 @@
 
 1. `enter-frame`：鏡頭移入這個 Frame，觀眾看到它的標題／輪廓。
 2. 一個或多個 `scene-overview` / `focus-node` / `scene-point`：在 child scene 裡展開細節，需要的話搭配 `reveal` 逐項揭示（見下方）。
-3. （選用）退回上一層的 `scene-overview`：讓觀眾重新看到整體地圖，再接續下一個單元。
+3. **不要寫退回上一層的 step。** 播放順序是沿著 Scene/Frame 樹深度優先走的：一個 Frame 的子 Scene 播完後，Present 會自動再停回這個 Frame（`isReturn` 停點），然後接下一個單元。若再手寫一個「返回總覽」的 `scene-overview`，每個單元會多一個停點（觀眾要多按一次）；而且它屬於根 Scene，會在編輯器的 Scene mode 疊出多個一模一樣的整場景 reticle，讓根場景的時間軸塞滿重複卡片。
+   - 各 Scene 的 step 數量因此是：**根 Scene = 1 個 `scene-overview`（開場總覽）＋每個單元 1 個 `enter-frame`**；每個子 Scene 只放自己的展開 step。時間軸是依 Scene 分開顯示的，這就是階層：根層看到「總覽＋各單元入口」，進入單元後才看到該單元的頁面。
+   - `steps` 陣列仍是扁平的，建議照「根 `scene-overview` → 單元 1 的 `enter-frame` → 單元 1 的頁面 step → 單元 2 的 `enter-frame` → …」排列，`order` 依陣列索引遞增。
+4. **`label` 只寫結論短句，不加序號。** 時間軸卡片本身就會顯示編號（01、02…），label 再寫「1 …」「2 …」會重複，而且各單元容易寫得不一致。
 
 **`reveal` 的重要限制：** `reveal.enter`／`reveal.exit` 裡列出的節點，必須跟該 step 目的地 scene 的節點屬於同一個 scene——不能在 `enter-frame` 這種「换 scene」的 step 上直接揭示子 scene 裡的節點，要另外用一個目的地是該 child scene 的 step（例如 `scene-overview`）來搭配 `reveal`。要讓節點一開始就是隱藏狀態，記得在節點上設定 `initiallyHidden: true`。
 
 ## 構圖建議：對齊瞄準框
 
 編輯畫面右上角的紅色虛線框（瞄準框／aiming frame）就是 Present 模式實際會顯示的範圍，比例鎖定在您選的 Presentation Ratio（預設 16:9）。捕捉每個 step 的鏡頭時，盡量讓這一步要呈現的內容**貼齊瞄準框、不要留下大片空白**，也不要讓不相關的物件跑進瞄準框裡——因為 Present 模式會把瞄準框裡的內容線性縮放填滿整個螢幕，瞄準框裡有什麼、觀眾在台上看到的就是什麼。
+
+### 頁面排列與鏡頭公式（手算 `scene-point` 時必須照做）
+
+**為什麼：** 手寫的 `scene-point` 如果沒有 `referenceViewport`，`zoom` 的意思就變成「一個場景單位 = 一個螢幕像素」，不會隨播放視窗縮放。在 1920×1080 的 Player 裡，一頁只佔畫面約六成寬，右邊還會露出下一頁；編輯器 Scene mode 的 reticle 又是用 1280×720 畫的，兩邊看到的範圍不一致。另外，進入 Frame 後畫面最上方會蓋一條 Frame 標題列（約 56 px，不隨視窗縮放），頁面自己的標題如果貼著頁頂，就會被標題列遮住或疊在一起。
+
+**規則（16:9 為 1280×720，4:3 為 960×720；下面以 `W×H` 表示頁面參考尺寸）：**
+
+1. **每個 `scene-point` 都必須寫 `referenceViewport`**，值固定為頁面參考尺寸：`{"width": W, "height": H}`。有了它，`zoom` 才是「相對頁面參考尺寸的倍率」，在任何視窗大小下構圖都一致。
+2. **鏡頭要多留標題列的空間**：令 `HEADROOM = 100`（單行 Frame 標題；標題不要超過一行），一頁的左上角是 `(x0, y0)`，則
+   - `zoom = H / (H + HEADROOM)`（16:9 與 4:3 都是 `0.878`）
+   - `point.x = x0 + W / 2`
+   - `point.y = y0 + H / 2 − HEADROOM / 2`
+   也就是畫面涵蓋頁面上方多出的 100 單位空白；標題列蓋在這段空白上，頁面內容（含頁面標題）完整露在標題列下方。
+3. **同一個 Scene 內的頁面橫向排列，間隔至少 160**：`pitch = W + 160`（16:9 為 1440，4:3 為 1120）。鏡頭左右各會多看到 `(W / zoom − W) / 2` 單位（16:9 約 89，4:3 約 67），間隔夠大才不會露出相鄰頁。
+4. 頁面內容放在 `0 ≤ y ≤ H` 之內；頁面上方那段 100 單位的空白不要放任何節點。
+
+```python
+W, H = 1280, 720          # 4:3 → 960, 720
+HEADROOM, GAP = 100, 160
+ZOOM = H / (H + HEADROOM)  # 0.878
+PITCH = W + GAP
+
+def page_origin(index):             # 單元 Scene 內第 index 頁（0 起算）的左上角
+    return index * PITCH, 0
+
+def page_camera_target(scene_id, index):
+    x0, y0 = page_origin(index)
+    return {
+        "kind": "scene-point",
+        "sceneId": scene_id,
+        "point": {"x": x0 + W / 2, "y": y0 + H / 2 - HEADROOM / 2},
+        "zoom": ZOOM,
+        "referenceViewport": {"width": W, "height": H},
+    }
+```
+
+**驗證：** 在 Player 以 1280×720 與 1920×1080 各播一次，每頁都應該填滿畫面、看不到相鄰頁、頁面標題完整位於 Frame 標題列下方；兩種視窗的構圖應該相同。
 
 ## 視覺呈現：避免機械化、確保對比清楚
 
@@ -64,7 +104,9 @@
 - [ ] Frame 在外層只顯示標題／輪廓，細節都在 child scene 裡
 - [ ] 需要再拆解的單元，用巢狀 Frame 表示子單元（建議不超過 3 層）
 - [ ] 單元之間的關聯用根層（或共同上層）的 Connector 表示，附文字標籤
-- [ ] Step 路徑依「進入 → 展開細節 → （退回）」的模式設計
+- [ ] Step 路徑依「進入 → 展開細節」設計；**沒有**手寫的「返回總覽」step（根 Scene 只有 1 個開場 `scene-overview` 加每單元 1 個 `enter-frame`）
+- [ ] Step 的 `label` 只有結論短句，沒有序號前綴
+- [ ] 每個 `scene-point` 都有 `referenceViewport`，並照「頁面排列與鏡頭公式」算 `zoom` 與 `point`（含 100 單位的標題列空白）
 - [ ] 每個 step 捕捉鏡頭時，內容有貼齊瞄準框
 - [ ] 用 `reveal` 逐項揭示的節點，跟該 step 的目的地 scene 一致，並設定 `initiallyHidden: true`
 - [ ] Connector 的 `textColor` 用深色（它畫在固定的近全白底色上，不是畫布背景）

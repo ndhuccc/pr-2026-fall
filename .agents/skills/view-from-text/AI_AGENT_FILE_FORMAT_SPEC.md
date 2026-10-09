@@ -283,7 +283,7 @@ JianBauDau 不是「一張一張投影片」的線性模型，而是：
    ```jsonc
    { "kind": "scene-overview", "sceneId": "scene-root" }
    ```
-   常用在一個 Scene 的第一步（先給觀眾看整體地圖），或退回上一層時。
+   常用在一個 Scene 的第一步（先給觀眾看整體地圖）。**不要為了「退回上一層」而另外寫一個 `scene-overview`**：一個 Frame 的子 Scene 播完後，Present 會自動退回該 Frame；多寫一個只會多出一個停點，並在編輯器 Scene mode 疊出重複的整場景 reticle（見設計準則「Step 路徑設計建議」）。
 
 2. **`focus-node`** — 攝影機縮放到剛好框住某一個節點。
    ```jsonc
@@ -299,10 +299,13 @@ JianBauDau 不是「一張一張投影片」的線性模型，而是：
 
 4. **`scene-point`** — 攝影機移到 Scene 座標系裡指定的一個點、指定的縮放倍率。**這是 agent 手動精算構圖時最常用、最直接的類型**，因為前三種都是「自動算出來」的框景，只有這種能精確控制畫面裡看到什麼。
    ```jsonc
-   { "kind": "scene-point", "sceneId": "scene-input", "point": { "x": 240, "y": 240 }, "zoom": 0.95 }
+   { "kind": "scene-point", "sceneId": "scene-input", "point": { "x": 640, "y": 310 }, "zoom": 0.878, "referenceViewport": { "width": 1280, "height": 720 } }
    ```
    - `point`：這個 Scene 座標系裡，畫面**中心點**的座標。
-   - `zoom`：**每一個 Scene 座標單位對應多少像素**，必須 > 0。數字越大代表放得越大（越靠近）。沒有 `referenceViewport` 時，這個 `zoom` 是相對「編輯器目前畫布大小」的比例，**agent 自己手算這個檔案時很難精準對齊瞄準框，因此不建議手動指定 `referenceViewport`**（省略即可，讓它用預設行為），把重心放在讓 `point` 對準內容的視覺中心、`zoom` 大致讓內容不留太多空白／不被裁到即可，使用者匯入後仍可在編輯器裡用滑鼠微調。
+   - `referenceViewport`：`{ "width", "height" }`，**一律要寫**，16:9 為 `{1280, 720}`，4:3 為 `{960, 720}`（等於頁面參考尺寸）。它決定 `zoom` 以哪個畫面大小為基準。
+   - `zoom`：**相對 `referenceViewport` 的倍率**，必須 > 0。`zoom: 1` 表示剛好用 `referenceViewport` 這麼大的範圍填滿整個畫面，播放視窗再大或再小都會等比縮放，所以構圖在任何視窗下一致。數字越大代表放得越大（越靠近）。
+   - **不可以省略 `referenceViewport`。** 省略時 `zoom` 會變成「一個場景單位 = 一個螢幕像素」，與視窗大小無關：在 1920×1080 的播放器裡，一頁只佔約六成寬並露出相鄰頁，而編輯器 Scene mode 的 reticle 仍是按 1280×720 畫的，兩邊看到的範圍不一致。（這是舊版文件曾建議「省略即可」所造成的問題。）
+   - **進入 Frame 後，畫面最上方會蓋一條 Frame 標題列**（約 56 px，不隨視窗縮放）。鏡頭要多涵蓋頁面上方 100 單位的空白，讓標題列蓋在空白上，不要蓋到頁面內容：`zoom = H / (H + 100)`、`point.x = 頁面左上 x + W/2`、`point.y = 頁面左上 y + H/2 − 50`（`W×H` 為頁面參考尺寸）。完整公式、頁面間隔與程式碼見設計準則「頁面排列與鏡頭公式」。
 
 ### `reveal`（逐項揭示，可省略）
 
@@ -365,6 +368,10 @@ App 匯入檔案時會執行結構驗證，以下任何一條不成立，整份�
 - Connector 的 `style.textColor` 用了淺色 → 文字在近白底卡片上幾乎看不見（見上方提醒）。
 - 非矩形 `shapeKind`（`star`/`diamond`/... ）裡塞了長文字 → 文字被形狀邊緣截斷。
 - `scene-point` 的 `zoom` 抓太大或太小、`point` 沒對準內容中心 → Present 模式畫面留白過多或裁到內容一部分（構圖時盡量讓這一步要呈現的內容貼齊編輯器裡的紅色瞄準框）。
+- `scene-point` **沒有 `referenceViewport`** → `zoom` 不隨播放視窗縮放：視窗比 1280×720 大時，頁面只佔一部分並露出相鄰頁；在編輯器 Scene mode 與播放時看到的範圍不一致。
+- 頁面內容貼著頁頂、鏡頭沒有多留標題列的空白 → 進入 Frame 後，頁面標題被 Frame 標題列遮住或與它疊在一起。
+- 手寫「返回總覽」的 `scene-overview`（屬於根 Scene）→ 播放時每個單元多一個停點，編輯器 Scene mode 疊出多個一模一樣的整場景 reticle，根場景時間軸塞滿重複卡片。退回上一層是自動的，不必寫 step。
+- Step 的 `label` 加序號（「1 …」「2 …」）→ 與時間軸卡片自動顯示的編號重複，且容易各單元不一致。
 - `metadata.aspectRatio` 忘了填 → 會被視為缺省值處理成 `"16:9"`，如果你真的要 `4:3` 一定要顯式填。
 
 ---
@@ -377,7 +384,7 @@ App 匯入檔案時會執行結構驗證，以下任何一條不成立，整份�
 2. **規劃 Scene 樹**：一個根 Scene（`scene-root`），每個一級知識單元對應根 Scene 上的一個 Frame 節點 + 一個子 Scene；子單元依此類推往下巢狀。先把所有 `sceneId`/`nodeId` 命名定下來（建議語意化命名，如 `frame-<單元>`、`scene-<單元>`、`<單元>-title`）。
 3. **在每個 Scene 裡放 Node**：標題文字、說明文字、圖示形狀 + 標籤、Frame（指向子單元）、Connector（單元內或同層單元間的關聯）。決定座標時讓同一個 Scene 內的物件彼此不重疊、留白合理；不同單元之間的排版盡量做出差異（橫向並列/主副配置/左右對照，見設計準則文件）。
 4. **檢查配色對比**：尤其 Connector 標籤的 `textColor` 記得用深色。
-5. **寫 Step 序列**：通常每個知識單元至少 2～3 個 Step——`enter-frame` 進場、一個或多個 `scene-overview`/`focus-node`/`scene-point` 展開細節（需要的話搭配 `reveal` 逐項揭示 + 對應節點的 `initiallyHidden: true`）、視需要退回上一層。把所有單元的 Step 依照要呈現的順序串成一個扁平陣列，`order` 依序遞增。
+5. **寫 Step 序列**：通常每個知識單元至少 2～3 個 Step——`enter-frame` 進場、一個或多個 `scene-overview`/`focus-node`/`scene-point` 展開細節（需要的話搭配 `reveal` 逐項揭示 + 對應節點的 `initiallyHidden: true`）。**不用寫退回上一層的 Step**（播放時會自動退回 Frame）。每個 `scene-point` 都要寫 `referenceViewport` 並依公式留出標題列空白；`label` 只寫結論短句、不加序號。把所有單元的 Step 依照「根 `scene-overview` → 單元 1 的 `enter-frame` → 單元 1 的頁面 Step → 單元 2 的 `enter-frame` → …」串成一個扁平陣列，`order` 依序遞增。
 6. **組裝成完整 JSON**：`schemaVersion: 3`、`rootSceneId`、`scenes`、`nodes`、`steps`、`metadata`。
 7. **自我檢查**：逐條核對上方「驗證規則與常見錯誤」，特別是 Scene↔Node 的雙向 `nodeIds`/`sceneId` 一致性、Frame↔子 Scene 的雙向 `childSceneId`/`parentFrameId` 一致性、Connector 的節點參照與 hook 範圍、Reveal 節點與 Step 目的地同 Scene——這些是最常出錯、也最容易在自我檢查時用簡單的程式邏輯核對出來的地方。
 8. 輸出最終 JSON 檔案內容（純 JSON，不要包在 Markdown code fence 之外的說明文字裡，方便使用者直接存成 `.json` 檔用「Open」匯入）。
