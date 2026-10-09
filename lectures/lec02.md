@@ -70,7 +70,7 @@ $$
 
 ![先驗、概似、乘積與事後機率的數字對照（Priors, likelihoods, products, and posteriors side by side）](../assets/figures/lec02-bayes-numbers.png)
 
-**圖說 `lec02-bayes-numbers`**：左圖是先驗（深色）與概似（淺色）。單看概似，$\omega_1$ 較大（0.9 比 0.3）；單看先驗，$\omega_2$ 較大（0.8 比 0.2）。兩者相乘後，$\omega_2$ 勝出。中圖是乘積，右圖是除以證據後的事後機率。
+**圖說 `lec02-bayes-numbers`**：左圖是先驗（深色）與概似（淺色）。單看概似，$\omega_1$ 較大（0.9 比 0.3）；單看先驗，$\omega_2$ 較大（0.8 比 0.2）。兩者相乘後，$\omega_2$ 勝出。中圖是乘積，右圖是除以證據後的事後機率。讀圖時先看左圖的兩組長條：單看淺色的概似，$\omega_1$ 的長條較高；再轉到右圖，看除以證據之後的兩條長條，$\omega_2$ 反而較高。〔功能：1、2〕
 
 **Caption `lec02-bayes-numbers`**: left, the prior (dark) and the likelihood (light). Looking at the likelihood alone, $\omega_1$ wins (0.9 vs 0.3). Looking at the prior alone, $\omega_2$ wins (0.8 vs 0.2). After multiplying the two, $\omega_2$ wins. The middle panel shows the products; the right panel shows the posteriors after dividing by the evidence.
 
@@ -128,13 +128,19 @@ The values above were computed with Python. `[Added]` Here $\Phi(-1)\approx 0.15
 
 ![左：加權密度 $P(\omega_i)p(x\mid\omega_i)$ 與門檻 $x_0=0$ 的誤判陰影；右：不同門檻下的總誤判機率（Left: weighted densities $P(\omega_i)p(x\mid\omega_i)$ with error shading for $x_0=0$; right: total error probability for different thresholds）](../assets/figures/lec02-error-regions.png)
 
-**圖說 `lec02-error-regions`**：左圖畫的是加權密度 $P(\omega_i)p(x\mid\omega_i)$。陰影的上緣就是圖上的曲線，每一塊陰影的面積都是 0.0793，兩塊合計 0.1587，也就是 $P_e$。右圖是總誤判機率隨門檻變化的曲線，最低點在兩條曲線的交點 $x_0=0$。
+**圖說 `lec02-error-regions`**：左圖畫的是加權密度 $P(\omega_i)p(x\mid\omega_i)$。陰影的上緣就是圖上的曲線，每一塊陰影的面積都是 0.0793，兩塊合計 0.1587，也就是 $P_e$。右圖是總誤判機率隨門檻變化的曲線，最低點在兩條曲線的交點 $x_0=0$。讀圖時先看左圖的兩塊陰影：每塊陰影的上緣就是它旁邊那條曲線，面積 0.0793 是單一誤判的機率；再看右圖的最低點正好落在 $x_0=0$，也就是交點。〔功能：2、3〕
 
 **Caption `lec02-error-regions`**: the left panel plots the weighted densities $P(\omega_i)p(x\mid\omega_i)$. The top edge of each shaded region is the plotted curve. Each region has area 0.0793, and the two together give $P_e=0.1587$. The right panel shows the total error probability as the threshold changes; the lowest point is the crossing point $x_0=0$.
 
 **常見迷思（Common misconception）**：「移動門檻就能同時減少兩種錯誤。」事實上，往某一邊移動，會減少一種錯誤，同時增加另一種。交點是兩者之和最小的位置。
 
 **Common misconception**: "moving the threshold can reduce both kinds of error at once." In fact, moving it to one side reduces one kind of error and increases the other. The crossing point is where their sum is smallest.
+
+![門檻移動時兩種誤判一增一減，總誤判在交點最小（Two error terms trade off as the threshold moves; their sum is smallest at the crossing）](../assets/figures/lec02-threshold-tradeoff.png)
+
+**圖說 `lec02-threshold-tradeoff`**：沿用左圖（`lec02-error-regions`）的兩條加權密度，把兩種誤判拆開畫：橘色是 $\omega_2$ 被誤判成 $\omega_1$，藍色是 $\omega_1$ 被誤判成 $\omega_2$，黑線是兩者之和 $P_e$。門檻往左移（$x_0=-0.5$）時橘色變大、藍色變小；往右移（$x_0=+0.5$）時正好相反，兩種情況的總誤判都是 0.1877。讀圖時先看橘色與藍色兩條線的走向相反，再看黑線的最低點落在 $x_0=0$，這就是交點。〔功能：1、2〕
+
+**Caption `lec02-threshold-tradeoff`**: the two error terms of the previous figure, drawn separately against the threshold. Orange is $\omega_2$ judged as $\omega_1$, blue is $\omega_1$ judged as $\omega_2$, and black is their sum $P_e$. Moving the threshold left ($-0.5$) raises the orange term and lowers the blue one; moving it right ($+0.5$) does the opposite. The total error is 0.1877 at both, and 0.1587 at $x_0=0$. Read the orange and blue curves first, then the black curve, whose minimum sits at the crossing point.
 
 > 只要兩條曲線有重疊，誤判就不可能降到零。貝氏規則做到的，是讓誤判機率最小。
 >
@@ -191,6 +197,12 @@ $\ell_1<\ell_2$，所以判為 $\omega_1$。即使後驗機率明顯偏向 $\ome
 
 Since $\ell_1<\ell_2$, the decision is $\omega_1$. Even though the posterior favors $\omega_2$, the lowest-risk decision is $\omega_1$. The system becomes more cautious, assigning doubtful samples to the class whose mistakes are more costly.
 
+![左：後驗機率偏向 ω2；右：條件風險反而是 ω1 較低（Left: the posterior favors omega_2; right: the conditional risk is lower for omega_1）](../assets/figures/lec02-risk-flip.png)
+
+**圖說 `lec02-risk-flip`**：左圖是後驗機率，$\omega_2$ 的長條較高（0.75 對 0.25）。右圖是同一個點的條件風險，$\omega_1$ 的長條較低（0.75 對 1.25）。兩張圖的結論相反，這正是因為損失矩陣不對稱。讀圖時先確認左圖「誰的機率大」，再看右圖「誰的代價小」。右圖較低的長條對應哪一類，就是決策。〔功能：1、2〕
+
+**Caption `lec02-risk-flip`**: the left panel shows the posteriors, where $\omega_2$ is larger (0.75 against 0.25). The right panel shows the conditional risks of the same point, where $\omega_1$ is smaller (0.75 against 1.25). The two panels disagree because the loss matrix is asymmetric. Read the left panel first to see which class is more probable. Then read the right panel to see which mistake is cheaper. The shorter bar on the right is the decision.
+
 > 錯誤有輕重，決策要看後果。
 >
 > Mistakes have different weights; decisions should depend on the consequences.
@@ -217,6 +229,12 @@ We do not always need the probabilities themselves; a set of scores is enough. F
 分數的數值變了，但 $\omega_2$ 仍然勝出。`[補充]` 這正是單調變換的意義：數字的尺度可以改變，決策不會改變。
 
 The numbers changed, but $\omega_2$ still wins. `[Added]` This is the point of a monotone transform: the scale of the numbers can change, but the decision does not.
+
+![f(p)=√p 曲線與兩個數字例的點，分數改變但大小順序不變（The curve f(p)=sqrt(p) with the two numerical points; scores change but the order does not）](../assets/figures/lec02-monotone-transform.png)
+
+**圖說 `lec02-monotone-transform`**：黑線是 $f(p)=\sqrt{p}$。兩個圓點是上表的事後機率：藍點 $0.4286$ 變成分數 $0.6547$，橘點 $0.5714$ 變成分數 $0.7559$。分數的數字都變了，但橘點始終在藍點的右上，也就是排序沒有改變。讀圖時先看兩個圓點都在黑線上，再看它們的左右順序與高低順序一致，就知道 $\omega_2$ 仍然勝出。〔功能：1、2〕
+
+**Caption `lec02-monotone-transform`**: the black curve is $f(p)=\sqrt{p}$. The two dots are the posteriors from the table above: the blue point $0.4286$ becomes the score $0.6547$, and the orange point $0.5714$ becomes $0.7559$. Both numbers changed, but the orange point stays to the upper right of the blue one, so the order is unchanged. Read the figure by first checking that both dots lie on the curve, then that their left-to-right order matches their low-to-high order.
 
 **決策曲面（decision surface）**：兩類的判別函數相減 $g_{ij}(\mathbf{x})=g_i(\mathbf{x})-g_j(\mathbf{x})$，等於 0 的地方就是 $\omega_i$ 與 $\omega_j$ 的邊界。若只有兩類，常用單一函數 $g(\mathbf{x})=g_1(\mathbf{x})-g_2(\mathbf{x})$：$g(\mathbf{x})>0$ 判為 $\omega_1$，否則判為 $\omega_2$。
 
@@ -247,6 +265,12 @@ $$
 
 Plain explanation: $\mu$ decides where the curve is centered, and $\sigma$ decides how wide it is. A larger $\sigma$ gives a flatter, wider curve.
 
+![一維高斯密度曲線：中心由 μ 決定、寬度由 σ 決定（One-dimensional Gaussian densities: mu sets the center, sigma sets the width）](../assets/figures/lec02-gaussian-1d.png)
+
+**圖說 `lec02-gaussian-1d`**：藍線是 $\mathcal{N}(0,1)$，橘線是 $\mathcal{N}(2,2^2)$（第 5.3 節數字例會用到）。兩條虛線標出各自的 $\mu$：藍線的最高點在 $0$，橘線的最高點在 $2$，這就是 $\mu$ 管位置。橘線的 $\sigma$ 較大，所以最高點較低（0.20 對 0.40）、曲線較平、伸展較寬，這就是 $\sigma$ 管寬窄。讀圖時先比較兩條曲線的最高點高度，再比較它們的高度落在哪個 x 值。〔功能：2、3〕
+
+**Caption `lec02-gaussian-1d`**: the blue curve is $\mathcal{N}(0,1)$ and the orange curve is $\mathcal{N}(2,2^2)$, the pair used in the numerical example of Section 5.3. The dashed lines mark the means: the blue peak sits at $0$ and the orange peak at $2$, which is what $\mu$ controls. The orange curve has the larger $\sigma$, so its peak is lower (0.20 against 0.40). It is flatter and wider, which is what $\sigma$ controls. Read the figure by comparing the two peak heights first, then by comparing where each peak occurs.
+
 ### 5.2 多維高斯（Multivariate Gaussian）
 
 $$
@@ -263,6 +287,12 @@ $$
 白話：$\Sigma$ 的對角元素描述每個特徵各自的散布；對角以外的元素描述兩兩特徵之間的關聯，為 0 代表沒有線性相關。等機率線的形狀由 $\Sigma$ 決定：$\Sigma$ 是單位矩陣的倍數時，等機率線是圓；否則是橢圓。
 
 Plain explanation: the diagonal of $\Sigma$ holds each feature's own variance. The off-diagonal entries hold covariances between features; zero means no linear correlation. The shape of the equal-probability contours comes from $\Sigma$: they are circles when $\Sigma$ is a multiple of the identity, and ellipses otherwise.
+
+![二維高斯的等機率線：Σ 為單位矩陣時是圓，一般 Σ 是橢圓（Equal-probability contours of a 2-D Gaussian: circles for the identity, ellipses in general）](../assets/figures/lec02-gaussian-contours.png)
+
+**圖說 `lec02-gaussian-contours`**：兩張圖都用馬氏距離 $1$ 與 $2$ 畫出等機率線，中心（橘點）是 $\mu$。左圖 $\Sigma=I$，兩條線都是正圓；右圖是一般對稱的 $\Sigma$（示意，數值為舉例），線變成長短軸不等的橢圓，長軸方向由 $\Sigma$ 的特徵向量決定。讀圖時先比較兩張圖的線的形狀：圓形變成傾斜的橢圓，就是 $\Sigma$ 改變形狀的結果。〔功能：3〕
+
+**Caption `lec02-gaussian-contours`**: both panels draw the contours at Mahalanobis distance $1$ and $2$, centered on $\mu$ (orange dot). On the left, $\Sigma=I$ gives two circles. On the right, a general symmetric $\Sigma$ (illustrative values) gives ellipses whose long axis follows the eigenvector of $\Sigma$. Read the figure by comparing the shape of the contours first: the circle becomes a tilted ellipse because $\Sigma$ changes the shape.
 
 `[補充]` 記憶要訣：**Σ 管形狀，μ 管位置。**
 
@@ -297,9 +327,15 @@ $$
 
 The decision boundaries are at $x\approx-2.571$ and $x\approx 1.238$. So $\omega_1$ occupies the middle interval $[-2.571,\,1.238]$ and $\omega_2$ occupies both outer parts. Even though $\omega_2$ has the larger variance, it wins on the outside, because its wider curve has more probability far from the center.
 
+![判別差 g(x)=g1(x)-g2(x) 的曲線與兩個零點，兩點之間判為 ω1（The discriminant difference g(x)=g1(x)-g2(x) with its two zero crossings; between them the decision is omega_1）](../assets/figures/lec02-discriminant-difference.png)
+
+**圖說 `lec02-discriminant-difference`**：青線是單一函數 $g(\mathbf{x})=g_1(\mathbf{x})-g_2(\mathbf{x})$（等先驗時取對數的差）。橫軸的粗線是 $g=0$，也就是決策規則的分界。青線穿過粗線兩次：$x=-2.571$ 與 $x=1.238$，兩點之間 $g>0$（藍色）判為 $\omega_1$，兩側 $g<0$（橘色）判為 $\omega_2$。y 軸刻意只畫到 $\pm 7$，讓交點附近的形狀看得清楚。讀圖時先找兩條虛線（$g=0$ 的位置），再看兩條虛線之間是藍色，就知道那個區間判給 $\omega_1$。〔功能：3〕
+
+**Caption `lec02-discriminant-difference`**: the teal curve is the single function $g(\mathbf{x})=g_1(\mathbf{x})-g_2(\mathbf{x})$ (the difference of the log densities for equal priors). The thick horizontal line is $g=0$, which is the decision rule. The curve crosses that line twice, at $x=-2.571$ and $x=1.238$; between the two crossings $g>0$ (blue) means $\omega_1$, and outside $g<0$ (orange) means $\omega_2$. The y-axis is clipped to $\pm 7$ on purpose, so that the shape near the crossings is visible. Read the figure by locating the two dashed lines first, then checking that the region between them is blue.
+
 ![一維 QDA 的兩個決策邊界：中間判為 ω1，兩側判為 ω2（One-dimensional QDA with two boundaries: ω1 in the middle, ω2 on both sides）](../assets/figures/lec02-qda-regions.png)
 
-**圖說 `lec02-qda-regions`**：兩個高斯密度與數字例的決策區域。邊界是兩條曲線的交點，位於 $x\approx-2.571$ 與 $x\approx1.238$。中間區間判為 $\omega_1$，兩側判為 $\omega_2$。
+**圖說 `lec02-qda-regions`**：兩個高斯密度與數字例的決策區域。邊界是兩條曲線的交點，位於 $x\approx-2.571$ 與 $x\approx1.238$。中間區間判為 $\omega_1$，兩側判為 $\omega_2$。讀圖時先找到兩條虛線，它們就是邊界；再確認兩條虛線之間是 $\omega_1$ 的藍色區間，兩側是 $\omega_2$ 的橘色區域。〔功能：2、3〕
 
 **Caption `lec02-qda-regions`**: the two Gaussian densities and the decision regions of the numerical example. The boundaries are the crossing points of the two curves, at $x\approx-2.571$ and $x\approx1.238$. The middle interval is assigned to $\omega_1$, and the outer parts to $\omega_2$.
 
@@ -316,6 +352,12 @@ The decision boundaries are at $x\approx-2.571$ and $x\approx 1.238$. So $\omega
 若所有類別的共變異數都相同（$\Sigma_i=\Sigma$），判別函數中的二次項在相減時會互相抵消，決策邊界變成直線或超平面。這正是第 3 週線性分類器（如線性判別分析 LDA）的起點。
 
 If all classes share the same covariance ($\Sigma_i=\Sigma$), the quadratic terms cancel when we subtract discriminant functions, and the boundary becomes a line or a hyperplane. This is the starting point of next week's linear classifiers, such as linear discriminant analysis (LDA).
+
+![兩類共用 Σ 時邊界是直線，Σ 不同時邊界是曲線（Shared Sigma gives a straight boundary; different covariances give a curved one）](../assets/figures/lec02-shared-covariance.png)
+
+**圖說 `lec02-shared-covariance`**：示意圖，數值為舉例。兩類中心都在同一条水平線上（左邊的 $\omega_1$、右邊的 $\omega_2$，以藍、橘點標出）。左圖兩類的 $\Sigma$ 都是單位矩陣，決策邊界（粗黑線）是筆直的 $x_1=0$；右圖第二類的 $\Sigma$ 拉長，邊界就彎成曲線。兩張圖只有共變異數不同，邊界就從直線變成曲線，這就是「二次項沒有互相抵消」的意思。讀圖時先看兩張圖的中心點位置相同，再比較粗黑線的形狀。〔功能：3〕
+
+**Caption `lec02-shared-covariance`**: an illustrative figure with chosen numbers. The two class means lie on the same horizontal line ($\omega_1$ on the left, $\omega_2$ on the right, marked in blue and orange). In the left panel both classes use the identity covariance, and the decision boundary (the thick black curve) is the straight line $x_1=0$. In the right panel the second class uses an elongated covariance, and the boundary bends into a curve. Only the covariances differ, yet the boundary changes from a line to a curve. That is what it means for the quadratic terms not to cancel. Read the figure by first checking that the two means are in the same places, then by comparing the shape of the black boundary.
 
 ## 7. 小結（Summary）
 
