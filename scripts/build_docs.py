@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import shutil
 import tomllib
 from pathlib import Path
@@ -53,6 +54,10 @@ CONTENT_DIRS = [
 
 # 各資料夾允許的副檔名。注意:labs 只放 .md,因此 starter/solution 的 .py 不會被整包複製。
 ALLOWED_SUFFIXES = {".md", ".html", ".pdf", ".png", ".svg", ".jpg", ".jpeg", ".gif"}
+
+# slides/ 另外收錄可下載的投影片格式:JianBauDau 的 JSON 與 PPTX(學生下載用)。
+# 其他資料夾不受影響,避免把 JSON 測試資料等整包複製到網站。
+SLIDE_SUFFIXES = ALLOWED_SUFFIXES | {".json", ".pptx"}
 
 # MathJax 設定:讓 $...$ 與 $$...$$ 能在網站上渲染
 MATHJAX_JS = r"""window.MathJax = {
@@ -116,7 +121,10 @@ def copy_content(stage: Path) -> int:
         if not base.exists():
             continue
         for src in base.rglob("*"):
-            if not src.is_file() or src.suffix.lower() not in ALLOWED_SUFFIXES:
+            if folder == "slides" and src.name == "FORMATS.md":
+                continue  # 老師用的格式說明,不放進學生網站
+            allowed = SLIDE_SUFFIXES if folder == "slides" else ALLOWED_SUFFIXES
+            if not src.is_file() or src.suffix.lower() not in allowed:
                 continue
             dest = stage / src.relative_to(ROOT)
             dest.parent.mkdir(parents=True, exist_ok=True)
@@ -132,7 +140,55 @@ def copy_content(stage: Path) -> int:
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(src, dest)
                 count += 1
+    count += write_slides_index(stage)
     return count
+
+
+SLIDE_FORMATS = {
+    "jbd.json": "JianBauDau 投影片(JSON,需用 JianBauDau 播放器或編輯器開啟)",
+    "pptx": "PowerPoint(PPTX)",
+    "pdf": "PDF(可列印)",
+    "html": "網頁(HTML,可離線開啟)",
+}
+
+
+def write_slides_index(stage: Path) -> int:
+    """產生網站的投影片下載頁(取代 slides/README.md),依週次列出各格式的檔案。"""
+
+    base = ROOT / "slides"
+    if not base.exists():
+        return 0
+    lecture_re = re.compile(r"^(lec\d{2})\.(jbd\.json|pptx|pdf|html)$")
+    weeks: dict[str, list[tuple[str, str]]] = {}
+    others: list[str] = []
+    for p in sorted(base.iterdir()):
+        if not p.is_file() or p.name in ("README.md", "FORMATS.md"):
+            continue
+        m = lecture_re.match(p.name)
+        if m:
+            weeks.setdefault(m.group(1), []).append((m.group(2), p.name))
+        else:
+            others.append(p.name)
+
+    lines = ["# 投影片下載(Slides)", "",
+             "每週的投影片可依需要下載。JianBauDau 格式請用 JianBauDau 播放器開啟;"
+             "PPTX、PDF、HTML 可直接用一般軟體開啟。", ""]
+    if not weeks and not others:
+        lines.append("目前尚無投影片。")
+    if weeks:
+        lines += ["| 週次 | 格式 | 下載 |", "|:---:|---|---|"]
+        for lec in sorted(weeks):
+            num = int(lec[3:])
+            for fmt, name in sorted(weeks[lec], key=lambda t: t[0]):
+                lines.append(f"| 第 {num} 週 | {SLIDE_FORMATS[fmt]} | [{name}]({name}) |")
+        lines.append("")
+    if others:
+        lines += ["## 其他檔案", ""] + [f"- [{name}]({name})" for name in others] + [""]
+
+    dest = stage / "slides" / "README.md"
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return 1
 
 
 def rewrite_links(stage: Path) -> None:

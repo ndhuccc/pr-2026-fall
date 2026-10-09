@@ -176,6 +176,44 @@ def check_privacy() -> None:
         add(OK, "隱私檢查", "未發現疑似成績/名單檔名(僅檢查檔名)")
 
 
+def load_check_slides():
+    """以路徑載入 check_slides.py,重用它的 JianBauDau 投影片檢查規則。"""
+    spec = importlib.util.spec_from_file_location("check_slides", ROOT / "scripts" / "check_slides.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def check_slides() -> None:
+    """投影片:檔名慣例、JianBauDau JSON 的結構檢查,以及尚未提供投影片的講義。"""
+    base = ROOT / "slides"
+    skip = {"README.md", "FORMATS.md"}
+    files = sorted(p for p in base.iterdir() if p.is_file() and p.name not in skip) if base.exists() else []
+    if not files:
+        add(INFO, "投影片", "尚未提供投影片", "可依 slides/FORMATS.md 放入 JianBauDau JSON、PPTX、PDF 或 HTML")
+        return
+    name_re = re.compile(r"^lec\d{2}\.(jbd\.json|pptx|pdf|html)$")
+    odd = [p.name for p in files if not name_re.match(p.name)]
+    if odd:
+        add(WARN, "投影片檔名不符合慣例", ", ".join(odd), "請改為 lecNN.<格式>,例如 lec02.jbd.json")
+    checker = load_check_slides()
+    for p in files:
+        if not p.name.endswith(".jbd.json"):
+            continue
+        for level, msg in checker.check_file(p):
+            if level == checker.FAIL:
+                add(FAIL, f"投影片 {p.name}", msg, "依 slides/FORMATS.md 修正")
+            else:
+                add(WARN, f"投影片 {p.name}", msg, "請老師確認")
+    weeks_with = {m.group(1) for p in files if (m := re.match(r"^(lec\d{2})\.", p.name))}
+    lectures = {p.stem for p in (ROOT / "lectures").glob("lec[0-9][0-9].md")} if (ROOT / "lectures").exists() else set()
+    missing = sorted(lectures - weeks_with)
+    if missing:
+        add(INFO, "尚未提供投影片的講義", ", ".join(missing))
+    else:
+        add(OK, "投影片", f"{len(files)} 個檔案,每週講義都有對應投影片")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--json", action="store_true", help="輸出 JSON")
@@ -229,6 +267,7 @@ def main() -> int:
 
     check_release_schedule(labs)
     check_privacy()
+    check_slides()
 
     state_file = ROOT / "COURSE_STATE.md"
     add(OK if state_file.exists() else WARN, "COURSE_STATE.md",

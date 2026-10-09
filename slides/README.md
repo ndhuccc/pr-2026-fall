@@ -1,5 +1,5 @@
 # 投影片(Slides)
 
-- 命名:`lec01.html`、`lec01.pdf`…,與 `lectures/` 對應
-- 建議以單檔 HTML 發佈(可離線開啟),PDF 供列印
-- 網站發佈時會一併複製到課程網站的 `slides/` 路徑
+本資料夾存放各週的投影片(JianBauDau JSON、PPTX、PDF 或 HTML)。命名與發佈流程見 [FORMATS.md](FORMATS.md)。
+
+網站上的下載頁由建置腳本自動產生,會取代本檔。

@@ -296,6 +296,13 @@ gh workflow run deploy-site.yml                                    # 第一次�
 - **不要**複製舊的學期 Repo 來改;請回到範本重做 §3(範本可能已有改進)。
 - 要沿用舊內容:用 `git clone` 取得舊 Repo,把 `lectures/`、`labs/`、`assignments/` 等複製到新 Repo,再更新日期與主題。
 
+### 5.11 投影片(JianBauDau JSON、PPTX、PDF、HTML)
+- 問:這週的投影片是哪一種格式?是 JianBauDau 編輯器匯出的 JSON,還是 PPTX、PDF 或 HTML?
+- 作法:依 `slides/FORMATS.md` 命名為 `lecNN.<格式>`(JSON 為 `lecNN.jbd.json`),放進 `slides/`。同一週可以放多種格式。
+- 若是 JianBauDau JSON,執行 `python3 scripts/check_slides.py`。**FAIL 必須修正**(例如匯入用的 page spec、孤兒節點、`asset:` 伺服器參照);**WARN 請逐項告知老師確認**(講者備註、電子郵件、疑似學號、檔案大小)。
+- 提醒老師:課程網站是公開網址,`slides/` 內的檔案不需登入即可下載;講者備註會一起給學生。
+- 同步:`schedule.md` 或 `lectures/lecNN.md` 的投影片連結;網站下載頁由 `build_docs.py` 自動產生,不需手動維護。
+
 ---
 
 ## 6. Repo 地圖(哪些東西放哪裡)
@@ -304,7 +311,8 @@ gh workflow run deploy-site.yml                                    # 第一次�
 |---|---|---|
 | `README.md` | 課程首頁(也是網站首頁) | 含 `{{佔位符}}`;學期設定後自動填入 |
 | `syllabus.md` `schedule.md` | 課綱、週次進度 | 日期異動要同步 `CHANGELOG.md` |
-| `lectures/` `slides/` | 講義 / 投影片 | `lecNN.md`、`lecNN.html`;圖放 `assets/figures/` |
+| `lectures/` | 講義 | `lecNN.md`;圖放 `assets/figures/` |
+| `slides/` | 投影片(JianBauDau JSON、PPTX、PDF、HTML) | `lecNN.<格式>`;格式與發佈見 `slides/FORMATS.md` |
 | `labs/labNN/{starter,solution,tests}` | 實驗與自動測試 | `solution/` 見 §4;測試以 `LAB_TARGET` 切換 |
 | `notebooks/` | 實作 Notebook | 必須能「全部執行」成功(CI 會驗證) |
 | `assignments/hwNN/` | 作業說明與 rubric | 日期寫絕對日期 |

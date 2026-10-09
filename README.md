@@ -31,7 +31,7 @@
 | [`syllabus.md`](syllabus.md) | 課程大綱、評分、規範 |
 | [`schedule.md`](schedule.md) | 週次進度與截止日 |
 | [`lectures/`](lectures/) | 每週講義(Markdown + LaTeX) |
-| [`slides/`](slides/) | 投影片(HTML / PDF) |
+| [`slides/`](slides/) | 投影片(JianBauDau JSON、PPTX、PDF 或 HTML) |
 | [`notebooks/`](notebooks/) | 實作 Notebook(可於 Colab 開啟) |
 | [`labs/`](labs/) | 實驗(尚未加入,之後依課程進度新增) |
 | [`assignments/`](assignments/) | 作業說明與評分標準 |
