@@ -1,0 +1,235 @@
+---
+name: textbook-lecture-notes
+description: Turn a PDF excerpt of a textbook chapter into graduate-level lecture notes written in plain language (readable by a high-school student), with worked examples for formulas and abstract ideas, AI-generated infographic requests, Matplotlib figures for geometric, functional, or statistical content, and KaTeX formula images when a formula must sit inside an image. Use when the user provides a textbook chapter PDF and asks for 講義, lecture notes, 教材, or 示意圖 for a course in this repository.
+---
+
+# textbook-lecture-notes
+
+把一章教科書（PDF）轉成碩士班課程講義。你的角色是該領域的專家教授：理解原理、挑出關鍵知識點、用淺顯的語言講清楚，並用例子與圖讓抽象概念看得見。
+
+這個技能**不是**逐字翻譯或摘抄教科書。教科書受著作權保護：只能用自己的文字重新解釋，不得大段複製原文或原圖。
+
+技能位於課程 Repo 內：`.agents/skills/textbook-lecture-notes/`。技能內的路徑都以 Repo 根目錄為基準。
+
+## 0. 首次設定（每台電腦一次）
+
+```bash
+pip install -r requirements-lecture.txt
+python -m playwright install chromium     # 只有需要公式圖片時才需要
+```
+
+若安裝失敗，先告知使用者，不要跳過驗證步驟。
+
+## 1. 先讀專案脈絡
+
+1. 讀 `AGENTS.md`，確認這學期的操作規範。
+2. 讀 `COURSE_STATE.md`（目前進度與決策）。
+3. 讀 `schedule.md`，找出對應的週次與主題，決定講義編號 `lecNN`（兩位數）。
+4. 讀 `syllabus.md`，確認課程層級與符號。
+5. 讀 `lectures/lec01.md`，沿用其 Markdown 格式（標題、週次引用、`$...$` 與 `$$...$$`）。
+6. 若 `AGENTS.md` 與本技能衝突，以 `AGENTS.md` 為準。
+
+需要向使用者確認的只有：PDF 路徑、對應週次（若 `schedule.md` 無法判斷）、以及特殊要求。
+
+## 2. 擷取 PDF 內容
+
+1. 取得頁數與文字。優先用 `pypdf`（或 `pdfplumber`、`pdftotext`）。
+2. 若擷取結果幾乎是空的，表示是掃描檔。停止並告知使用者需要文字版或 OCR，**不要猜測內容**。
+3. 記下每個知識點對應的頁碼範圍，之後要註明出處頁碼。
+4. 公式擷取容易亂碼。凡是公式，必須以 PDF 畫面（渲染成圖片後目視）為準重新確認，不得只信文字擷取。
+
+## 3. 萃取知識點地圖
+
+輸出一張表，每列一個知識點，建議 6–10 個：
+
+| # | 知識點 | 為什麼重要 | 頁碼 | 類型 | 視覺需求 |
+|---|---|---|---|---|---|
+
+- **類型**：定義 / 公式 / 直覺 / 程序（演算法步驟）/ 比較 / 迷思
+- **視覺需求**：無 / 資訊圖（AI 生圖）/ 公式圖（KaTeX）/ Matplotlib（幾何、函數、統計）
+
+把這張表給使用者看，請他確認或增刪。使用者說「直接寫」或「不用確認」時，才跳過這一步。
+
+## 4. 撰寫規則（核心）
+
+### 4.1 讀者與語言
+
+- 讀者是碩士生，但背景可能薄弱。用**高中生能讀懂**的文字寫。
+- 一句話只講一件事。中文句子盡量在 30 字內，超過 40 字就拆開。
+- 一段不超過 4 句。
+- 第一次出現的專有名詞，必須先用白話解釋，例如「**先驗機率**：在還沒看資料前，你對某類事件發生的把握程度。」
+- 不要連續堆疊兩個以上未定義的術語。
+- 用「你」來稱呼讀者。避免文言與冗長的被動句。
+- 不寫空泛的開場白與結語，直接進入內容。
+
+### 4.2 深度（碩士程度）
+
+每個知識點都要包含：
+- **為什麼需要它**：它解決什麼問題，沒有它會怎樣。
+- **假設條件**：公式或方法在什麼情況下成立。
+- **關鍵推導步驟**：寫出主要步驟，但省略純代數細節（細節放「想深入」區塊）。
+- **何時失效**：方法的限制與常見誤用。
+- **與實作的連結**：說明實際程式中要怎麼做，以及常見的數值問題。
+
+### 4.3 公式的處理（每個重要公式都要做到）
+
+1. **符號表**：列出每個符號的白話意義與單位／維度。
+2. **白話直覺**：用一句話說明這個式子在做什麼。
+3. **具體數字例**：用小的數字逐步代入計算，每一步都要寫出來。**所有數字必須用 Python 實際算過**，不得心算。
+4. **常見錯誤**：一個學生最容易犯的錯，並說明為什麼錯。
+
+### 4.4 抽象概念的處理
+
+- 一個概念至少給：一個生活化的類比、一個具體例子、一個反例或迷思。
+- 類比要明說它的侷限，例如「這個類比只對應到……，不適用於……」。
+
+### 4.5 每個知識點的版面
+
+```
+### 知識點名稱
+**一句話重點**：……
+**白話說明**：……（2–4 句）
+**正式定義**：……（符號與公式）
+**例子**：……（逐步計算）
+**常見迷思**：……
+**圖**：……（若有）
+**想深入**（選讀）：……
+**小練習**：……（只給問題與提示，預設不附答案，除非老師要求）
+```
+
+### 4.6 忠實與出處
+
+- 教科書有錯或公式損壞：先還原，再重新推算。**不得默默修改數字**；若有疑問，在講義中標註並告知老師。
+- 超出 PDF 範圍的補充內容，標上 `[補充]`。
+- 頁碼只引用你從 PDF 確認過的頁碼。
+- 不編造文獻、作者、年份或頁碼。
+
+## 5. 視覺素材
+
+判斷標準只有一個：**圖上的位置、大小、角度、形狀、比例是否承載資訊？**
+
+| 內容性質 | 做法 |
+|---|---|
+| 概念關係、流程、分類框架、類比示意（位置只是排版） | **資訊圖**：寫生圖提示（見 5.1）並交給可用的圖像生成能力；若無生圖能力，改用 Mermaid 流程圖或手繪 SVG |
+| 幾何（向量、直線、角度、垂直、投影、面積、決策邊界） | **Matplotlib**（見 5.2） |
+| 函數圖形（曲線、切線、極值、積分區域） | **Matplotlib** |
+| 統計圖（直方圖、散佈圖、常態分布、盒鬚圖） | **Matplotlib** |
+| 公式必須放進圖片（例如投影片、無法使用網站數學渲染的講義） | **KaTeX 公式圖**（見 5.3） |
+
+**絕對不要手填座標去畫函數曲線**：一律用公式計算。
+
+**一般公式不需要轉成圖片。** 網站以 MathJax 渲染 Markdown 中的 `$...$` 與 `$$...$$`，直接寫在講義文字中即可。只有當公式必須成為圖片的一部分時，才使用 5.3。
+
+**不使用 HTML Canvas 畫圖。** 幾何與函數圖需要精確比例與軸線，Matplotlib 由解析式直接計算座標，較不容易出錯。
+
+### 5.1 資訊圖（AI 生圖）
+
+為每張資訊圖寫一份提示檔 `assets/figures/src/lecNN_figK.prompt.md`，包含：
+- 目的：這張圖要幫學生理解哪一個概念。
+- 版面：流程、分層、並列、對照，等等。
+- 內容元素：只列出圖上要有的物件與連接關係。
+- **文字規範**：圖中**不要放中文字**（AI 生圖常產生亂碼）。只用英文短標籤或數學符號，中文說明放在 Markdown 文字中。
+- 風格：簡潔、白底或透明底、高對比、無裝飾性元素。
+
+用可用的圖像生成工具產生 PNG，存到 `assets/figures/lecNN_figK.png`。若環境沒有生圖能力，告知使用者，並改用 Mermaid 或 SVG，不要假裝已生成。
+
+生成後必須**親自看圖**：標籤是否正確、關係是否對、有沒有多出來的錯誤物件。有錯就重生，或改用其他方式。
+
+### 5.2 Matplotlib 圖
+
+每張圖寫一支腳本 `assets/figures/src/lecNN_figK.py`，輸出 `assets/figures/lecNN_figK.png`（dpi 200）。
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+plt.rcParams["mathtext.fontset"] = "cm"   # 公式字型接近 LaTeX，不需安裝 TeX
+rng = np.random.default_rng(seed=0)       # 隨機資料一律固定種子
+
+fig, ax = plt.subplots(figsize=(6, 6))
+# ... 用解析式計算座標，不要手填 ...
+ax.set_aspect("equal")                    # 涉及方向、角度、垂直時必須有
+ax.set_xlim(-3, 3); ax.set_ylim(-3, 3)    # 座標範圍明確設定，不用自動
+ax.set_xlabel(r"$x_1$"); ax.set_ylabel(r"$x_2$")
+ax.grid(alpha=0.3)
+fig.savefig("assets/figures/lecNN_figK.png", dpi=200)
+```
+
+規則：
+- **函數曲線**：`np.linspace` 至少 400 個點；切線斜率用導數解析式算。
+- **向量、垂足、法向量**：用解析式計算，例如垂足 $= \mathbf{x}_0 - \frac{(\mathbf{w}^\top\mathbf{x}_0 + b)}{\|\mathbf{w}\|^2}\mathbf{w}$。
+- **直角**：畫直角符號，不要只靠看起來垂直。
+- **統計圖**：標示樣本數 $n$；需要時說明隨機種子。
+- **資料點超過 500 個**：散佈圖加 `rasterized=True`。
+- **圖例**：放在空白處，渲染後確認沒有壓到曲線。
+- **圖內文字**：只用英文與數學符號。中文說明用 Markdown 寫在圖的上下文中。
+- **數值一致**：圖中的數字必須與正文完全一致。
+
+**生成後必須用 `read` 工具打開 PNG 目視檢查**：軸標籤有沒有被切掉、圖例有沒有壓到內容、比例是否正確。沒看過就不算完成。
+
+### 5.3 KaTeX 公式圖
+
+腳本：`.agents/skills/textbook-lecture-notes/scripts/render_formula.py`（以 KaTeX 排版，Playwright 截圖為透明底 PNG）。
+
+```bash
+# 單一公式(區塊)
+python .agents/skills/textbook-lecture-notes/scripts/render_formula.py \
+  --latex "\hat{\mathbf{y}}=\mathbf{W}\mathbf{x}+\mathbf{b}" \
+  --out assets/figures/lec02_formula1.png
+
+# 多個公式:寫成 JSON [{"latex": "...", "out": "...", "display": false}, ...]
+python .agents/skills/textbook-lecture-notes/scripts/render_formula.py --batch formulas.json
+```
+
+規則：
+- 中文字放在 `\text{...}` 中，例如 `\text{後驗機率}`。
+- LaTeX 字串不要包含外層 `$`。
+- 同一份講義的公式字級一致（預設 32px）；需要時用 `--font-px` 調整。
+- 腳本會在 KaTeX 語法錯誤時失敗並回報，不要忽略錯誤。
+- 生成後目視檢查，確認符號沒有缺漏。
+- 渲染需要網路（KaTeX 從 CDN 載入）。
+
+### 5.4 圖的引用
+
+```markdown
+![直線 x1+x2-0.5=0 與兩側的點](../assets/figures/lec02_fig1.png)
+```
+
+替代文字（alt）必須描述圖的內容，不要只寫「示意圖」。
+
+## 6. 輸出
+
+1. 寫成 `lectures/lecNN.md`，格式參照 `lec01.md`：
+   - 標題：`# Lecture NN:<結論式標題>`
+   - 週次行：`> 週次:第 N 週（日期）｜進度：<schedule.md 的主題>`
+   - `## 學習目標`（3–5 條，用動詞開頭）
+   - 每個知識點一個 `##` 區段（用 4.5 的版面）
+   - `## 小結`（3–5 條重點）
+   - `## 延伸閱讀`（只寫教科書章節與 `references/` 連結，不編造文獻）
+2. 若專案有 `schedule.md`，把該週的「講義」欄連到新檔。
+3. 在 `COURSE_STATE.md` 記錄：講義編號、來源 PDF 的章節與頁碼、新增的圖檔數量。
+
+## 7. 驗證（完成前必做）
+
+1. **執行所有 Matplotlib 腳本**，確認都能產生圖，並目視每一張。
+2. **執行所有公式圖的渲染**，確認沒有 KaTeX 錯誤，並目視每一張。
+3. **重算所有數字例**：用獨立的 Python 腳本重算講義中的每個數字，與正文比對。
+4. **可讀性檢查**：用腳本找出超過 40 字的句子與未定義的專有名詞，逐一修正。
+5. **建置網站**：`python3 scripts/build_docs.py && mkdocs build`，不得有 ERROR，也不得有新的 WARNING。
+6. **不要 push**：先給使用者看摘要，確認後才提交。
+
+驗證用的腳本是一次性的，不要提交進 Repo（除非是 `assets/figures/src/` 中的圖表腳本）。
+
+## 8. 給使用者的摘要格式
+
+- 來源：PDF 的章節與頁碼範圍
+- 知識點數量與對應的講義檔
+- 圖：資訊圖幾張（已生成／未生成）、Matplotlib 幾張（已驗證）、公式圖幾張（已渲染）
+- 需要使用者確認的地方：超出 PDF 的 `[補充]` 內容、PDF 疑似錯誤、無法判斷的符號或定義
+- 尚未驗證的項目（如有）
+
+## 注意事項
+
+- 不要承諾你無法做的事，例如沒有生圖能力就直接說明，不要假裝已完成。
+- 不要為了趕進度省略驗證。
+- 對教科書內容有疑問時，先在講義中標註並詢問老師，不要自行決定答案。
