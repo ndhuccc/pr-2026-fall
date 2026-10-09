@@ -133,6 +133,7 @@ python -m playwright install chromium     # 只有需要公式圖片時才需要
 2. **白話直覺**：用一句話說明這個式子在做什麼，中英各一句。
 3. **具體數字例**：用小的數字逐步代入計算，每一步都要寫出來。**所有數字必須用 Python 實際算過**，不得心算。
 4. **常見錯誤**：一個學生最容易犯的錯，並說明為什麼錯，中英各一段。
+5. **粗體向量一律用 `\mathbf{x}`，不要用 `\boldsymbol{x}`。** 網站的 MathJax 設定不支援 `\boldsymbol`，會把它顯示成紅色的 `\boldsymbol` 文字。`\mathbf` 在網站、KaTeX 與 Matplotlib 都能正確渲染。
 
 ### 4.5 抽象概念的處理
 

@@ -57,7 +57,7 @@ Look closely: the inputs are very different (images, sound, documents, sequences
 **Feature vector**: when you arrange $l$ features in one column, you get a feature vector:
 
 $$
-\boldsymbol{x} = [x_1, x_2, \dots, x_l]^T
+\mathbf{x} = [x_1, x_2, \dots, x_l]^T
 $$
 
 上標 $T$ 表示**轉置**，也就是把一列橫著寫的數字改成一欄直著寫。
@@ -105,11 +105,11 @@ The data in the figure are simulated by computer, not real patient records from 
 - **Training sample**: a sample whose class is known and is used to design the classifier.
 - **Misclassification**: the classifier assigns a sample to the wrong class.
 
-`[補充]` 做一個簡單的檢查：用線性規則 $g(\boldsymbol{x}) = \boldsymbol{w}^T\boldsymbol{x} + w_0$，取 $\boldsymbol{w} = [1, 1.5]^T$、$w_0 = -150$。若 $g < 0$ 判為 A，若 $g > 0$ 判為 B。三個點的計算結果如下：
+`[補充]` 做一個簡單的檢查：用線性規則 $g(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0$，取 $\mathbf{w} = [1, 1.5]^T$、$w_0 = -150$。若 $g < 0$ 判為 A，若 $g > 0$ 判為 B。三個點的計算結果如下：
 
-`[Added]` A quick check: take the linear rule $g(\boldsymbol{x}) = \boldsymbol{w}^T\boldsymbol{x} + w_0$ with $\boldsymbol{w} = [1, 1.5]^T$ and $w_0 = -150$. Decide A if $g < 0$ and B if $g > 0$. Results for three points:
+`[Added]` A quick check: take the linear rule $g(\mathbf{x}) = \mathbf{w}^T\mathbf{x} + w_0$ with $\mathbf{w} = [1, 1.5]^T$ and $w_0 = -150$. Decide A if $g < 0$ and B if $g > 0$. Results for three points:
 
-| 點 $\boldsymbol{x}$ | 計算 $g(\boldsymbol{x})$ | 判斷（Decision） |
+| 點 $\mathbf{x}$ | 計算 $g(\mathbf{x})$ | 判斷（Decision） |
 |---|---|---|
 | $[110, 20]^T$ | $110 + 1.5 \times 20 - 150 = -10$ | A |
 | $[135, 40]^T$ | $135 + 1.5 \times 40 - 150 = 45$ | B |
