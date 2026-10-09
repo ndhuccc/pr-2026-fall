@@ -11416,25 +11416,21 @@
   },
   "steps": [
     {
-      "id": "lec02-root-overview",
+      "id": "lec02-u01-focus",
       "order": 0,
-      "label": "總覽",
+      "label": "先驗×概似→事後機率",
       "target": {
-        "kind": "scene-overview",
-        "sceneId": "scene-root"
-      },
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth"
-    },
-    {
-      "id": "lec02-u01-enter",
-      "order": 1,
-      "label": "進入:先驗×概似→事後機率",
-      "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u01"
+        "point": {
+          "x": 300.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11442,7 +11438,7 @@
     },
     {
       "id": "lec02-u01-s1",
-      "order": 2,
+      "order": 1,
       "label": "三個概念連成貝氏定理",
       "target": {
         "kind": "scene-point",
@@ -11463,7 +11459,7 @@
     },
     {
       "id": "lec02-u01-s2",
-      "order": 3,
+      "order": 2,
       "label": "先乘、再除、比大小",
       "target": {
         "kind": "scene-point",
@@ -11484,7 +11480,7 @@
     },
     {
       "id": "lec02-u01-s3",
-      "order": 4,
+      "order": 3,
       "label": "看圖：乘積與事後機率",
       "target": {
         "kind": "scene-point",
@@ -11504,13 +11500,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u02-enter",
-      "order": 5,
-      "label": "進入:誤判機率與門檻",
+      "id": "lec02-u02-focus",
+      "order": 4,
+      "label": "誤判機率與門檻",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u02"
+        "point": {
+          "x": 740.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11518,7 +11522,7 @@
     },
     {
       "id": "lec02-u02-s1",
-      "order": 6,
+      "order": 5,
       "label": "門檻與誤判積分",
       "target": {
         "kind": "scene-point",
@@ -11539,7 +11543,7 @@
     },
     {
       "id": "lec02-u02-s2",
-      "order": 7,
+      "order": 6,
       "label": "門檻表：交點誤判最小",
       "target": {
         "kind": "scene-point",
@@ -11560,7 +11564,7 @@
     },
     {
       "id": "lec02-u02-s3",
-      "order": 8,
+      "order": 7,
       "label": "圖：誤判隨門檻變化",
       "target": {
         "kind": "scene-point",
@@ -11580,13 +11584,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u03-enter",
-      "order": 9,
-      "label": "進入:誤判最小的理由",
+      "id": "lec02-u03-focus",
+      "order": 8,
+      "label": "誤判最小的理由",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u03"
+        "point": {
+          "x": 1180.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11594,7 +11606,7 @@
     },
     {
       "id": "lec02-u03-s1",
-      "order": 10,
+      "order": 9,
       "label": "同時減少兩種錯誤？",
       "target": {
         "kind": "scene-point",
@@ -11615,7 +11627,7 @@
     },
     {
       "id": "lec02-u03-s2",
-      "order": 11,
+      "order": 10,
       "label": "貝氏規則讓誤判最小",
       "target": {
         "kind": "scene-point",
@@ -11635,13 +11647,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u04-enter",
-      "order": 12,
-      "label": "進入:條件風險",
+      "id": "lec02-u04-focus",
+      "order": 11,
+      "label": "條件風險",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u04"
+        "point": {
+          "x": 1620.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11649,7 +11669,7 @@
     },
     {
       "id": "lec02-u04-s1",
-      "order": 13,
+      "order": 12,
       "label": "誤判代價不同",
       "target": {
         "kind": "scene-point",
@@ -11670,7 +11690,7 @@
     },
     {
       "id": "lec02-u04-s2",
-      "order": 14,
+      "order": 13,
       "label": "條件風險與決策規則",
       "target": {
         "kind": "scene-point",
@@ -11691,7 +11711,7 @@
     },
     {
       "id": "lec02-u04-s3",
-      "order": 15,
+      "order": 14,
       "label": "數字例：風險最小",
       "target": {
         "kind": "scene-point",
@@ -11711,13 +11731,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u05-enter",
-      "order": 16,
-      "label": "進入:判別函數",
+      "id": "lec02-u05-focus",
+      "order": 15,
+      "label": "判別函數",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u05"
+        "point": {
+          "x": 2060.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11725,7 +11753,7 @@
     },
     {
       "id": "lec02-u05-s1",
-      "order": 17,
+      "order": 16,
       "label": "判別函數與單調變換",
       "target": {
         "kind": "scene-point",
@@ -11746,7 +11774,7 @@
     },
     {
       "id": "lec02-u05-s2",
-      "order": 18,
+      "order": 17,
       "label": "兩類時的單一函數",
       "target": {
         "kind": "scene-point",
@@ -11766,13 +11794,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u06-enter",
-      "order": 19,
-      "label": "進入:高斯分布",
+      "id": "lec02-u06-focus",
+      "order": 18,
+      "label": "高斯分布",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u06"
+        "point": {
+          "x": 2500.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11780,7 +11816,7 @@
     },
     {
       "id": "lec02-u06-s1",
-      "order": 20,
+      "order": 19,
       "label": "為何常見、μ 與 σ²",
       "target": {
         "kind": "scene-point",
@@ -11801,7 +11837,7 @@
     },
     {
       "id": "lec02-u06-s2",
-      "order": 21,
+      "order": 20,
       "label": "一維與多維公式",
       "target": {
         "kind": "scene-point",
@@ -11822,7 +11858,7 @@
     },
     {
       "id": "lec02-u06-s3",
-      "order": 22,
+      "order": 21,
       "label": "Σ 管形狀，μ 管位置",
       "target": {
         "kind": "scene-point",
@@ -11842,13 +11878,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u07-enter",
-      "order": 23,
-      "label": "進入:二次決策曲面(QDA)",
+      "id": "lec02-u07-focus",
+      "order": 22,
+      "label": "二次決策曲面(QDA)",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u07"
+        "point": {
+          "x": 2940.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11856,7 +11900,7 @@
     },
     {
       "id": "lec02-u07-s1",
-      "order": 24,
+      "order": 23,
       "label": "取對數後得二次式",
       "target": {
         "kind": "scene-point",
@@ -11877,7 +11921,7 @@
     },
     {
       "id": "lec02-u07-s2",
-      "order": 25,
+      "order": 24,
       "label": "二次曲線：QDA 的決策面",
       "target": {
         "kind": "scene-point",
@@ -11898,7 +11942,7 @@
     },
     {
       "id": "lec02-u07-s3",
-      "order": 26,
+      "order": 25,
       "label": "四點與兩個邊界",
       "target": {
         "kind": "scene-point",
@@ -11919,7 +11963,7 @@
     },
     {
       "id": "lec02-u07-s4",
-      "order": 27,
+      "order": 26,
       "label": "圖：交點即為邊界",
       "target": {
         "kind": "scene-point",
@@ -11939,13 +11983,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u08-enter",
-      "order": 28,
-      "label": "進入:預告與小結",
+      "id": "lec02-u08-focus",
+      "order": 27,
+      "label": "預告與小結",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u08"
+        "point": {
+          "x": 3380.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -11953,7 +12005,7 @@
     },
     {
       "id": "lec02-u08-s1",
-      "order": 29,
+      "order": 28,
       "label": "預告：共同共變異數",
       "target": {
         "kind": "scene-point",
@@ -11974,7 +12026,7 @@
     },
     {
       "id": "lec02-u08-s2",
-      "order": 30,
+      "order": 29,
       "label": "小結：前三點",
       "target": {
         "kind": "scene-point",
@@ -11995,7 +12047,7 @@
     },
     {
       "id": "lec02-u08-s3",
-      "order": 31,
+      "order": 30,
       "label": "小結：後兩點與收尾",
       "target": {
         "kind": "scene-point",
@@ -12015,13 +12067,21 @@
       "easing": "smooth"
     },
     {
-      "id": "lec02-u09-enter",
-      "order": 32,
-      "label": "進入:課堂練習",
+      "id": "lec02-u09-focus",
+      "order": 31,
+      "label": "課堂練習",
       "target": {
-        "kind": "enter-frame",
+        "kind": "scene-point",
         "sceneId": "scene-root",
-        "frameId": "lec02-frame-u09"
+        "point": {
+          "x": 3820.0,
+          "y": 360.0
+        },
+        "zoom": 2.666667,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
       },
       "durationMs": 900,
       "holdMs": 500,
@@ -12029,7 +12089,7 @@
     },
     {
       "id": "lec02-u09-s1",
-      "order": 33,
+      "order": 32,
       "label": "練習一",
       "target": {
         "kind": "scene-point",
@@ -12050,7 +12110,7 @@
     },
     {
       "id": "lec02-u09-s2",
-      "order": 34,
+      "order": 33,
       "label": "練習二",
       "target": {
         "kind": "scene-point",
@@ -12071,7 +12131,7 @@
     },
     {
       "id": "lec02-u09-s3",
-      "order": 35,
+      "order": 34,
       "label": "練習三",
       "target": {
         "kind": "scene-point",
