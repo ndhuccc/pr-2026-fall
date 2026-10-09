@@ -299,6 +299,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 ### 5.11 投影片(JianBauDau JSON、PPTX、PDF、HTML)
 - 問:這週的投影片是哪一種格式?是 JianBauDau 編輯器匯出的 JSON,還是 PPTX、PDF 或 HTML?
 - 作法:依 `slides/FORMATS.md` 命名為 `lecNN.<格式>`(JSON 為 `lecNN.jbd.json`),放進 `slides/`。同一週可以放多種格式。
+- 若要從講義產生 JianBauDau 投影片草稿(完整 `lecNN.jbd.json`),依 `.agents/skills/view-from-text/SKILL.md`。產出後仍須執行下方的 `check_slides.py` 檢查,並請老師在 JianBauDau 中逐頁確認排版。
 - 若是 JianBauDau JSON,執行 `python3 scripts/check_slides.py`。**FAIL 必須修正**(例如匯入用的 page spec、孤兒節點、`asset:` 伺服器參照);**WARN 請逐項告知老師確認**(講者備註、電子郵件、疑似學號、檔案大小)。
 - 提醒老師:課程網站是公開網址,`slides/` 內的檔案不需登入即可下載;講者備註會一起給學生。
 - 同步:`schedule.md` 或 `lectures/lecNN.md` 的投影片連結;網站下載頁由 `build_docs.py` 自動產生,不需手動維護。
