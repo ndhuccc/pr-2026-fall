@@ -152,7 +152,7 @@ SLIDE_FORMATS = {
 }
 
 
-# JianBauDau 播放器(Windows)的下載位址,由 ndhuccc/IDL115 的 GitHub Release 發佈。
+# JianBauDau 播放器(Windows 執行檔)的下載位置。換版時改這一行即可。
 PLAYER_URL = "https://github.com/ndhuccc/IDL115/releases/download/player-v1.0.0/JianBauDau-Player-1.0.0.exe"
 
 
@@ -176,10 +176,11 @@ def write_slides_index(stage: Path) -> int:
 
     lines = ["# 投影片下載(Slides)", "",
              "每週的投影片可依需要下載。JianBauDau 格式請用 JianBauDau 播放器開啟;"
-             "PPTX、PDF、HTML 可直接用一般軟體開啟。", "",
-             "## JianBauDau 播放器(Windows)", "",
-             f"[下載 JianBauDau 播放器 1.0.0(.exe)]({PLAYER_URL})。"
-             "開啟 `.jbd.json` 投影片時,可在播放器中按 Ctrl+O,或把檔案拖進視窗。", ""]
+             "PPTX、PDF、HTML 可直接用一般軟體開啟。", ""]
+    lines += ["## JianBauDau 播放器", "",
+              f"- [下載 JianBauDau 播放器 1.0.0(Windows,.exe)]({PLAYER_URL})",
+              "- 開啟方式:執行播放器後按 Ctrl+O 選擇 `.jbd.json` 檔,或把檔案拖進視窗。",
+              "- 第一次執行時 Windows 可能出現安全性提示,請確認下載來源是本頁連結。", ""]
     if not weeks and not others:
         lines.append("目前尚無投影片。")
     if weeks:

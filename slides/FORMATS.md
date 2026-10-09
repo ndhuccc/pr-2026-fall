@@ -21,6 +21,13 @@
 | PDF | 任何 PDF 閱讀器 | 任何方式匯出 | 無法互動 |
 | HTML | 瀏覽器(離線即可開啟) | 單一檔案,不要引用外部資源 | 外部資源在離線時會失效 |
 
+## 播放器下載
+
+學生用的 JianBauDau 播放器(Windows 執行檔)連結會自動出現在網站的投影片下載頁:
+<https://github.com/ndhuccc/IDL115/releases/download/player-v1.0.0/JianBauDau-Player-1.0.0.exe>
+
+換新版時,修改 `scripts/build_docs.py` 的 `PLAYER_URL`。
+
 ## 老師的流程
 
 1. 在 JianBauDau 編輯器完成簡報,按 **Export**,得到 `.json` 檔。
