@@ -8,7 +8,8 @@ docs_dir: .site_src
 
 theme:
   name: material
-  language: zh-TW
+  language: custom
+  custom_dir: overrides
   features:
     - navigation.top
     - search.suggest
@@ -41,31 +42,33 @@ validation:
 
 # --- nav(由 build_docs.py 依 schedule.md 產生,請勿手改)---
 nav:
-  - 首頁: index.md
-  - 課程大綱: syllabus.md
-  - 週次進度表: schedule.md
-  - 講義:
-      - 第 1 週:導論：什麼是樣式識別: lectures/lec01.md
-      - 第 2 週:貝氏決策理論與判別函數: lectures/lec02.md
-      - 第 2 週:線性分類器: lectures/lec02-linear-classifiers.md
-      - 第 2 週:參數估計: lectures/lec02-parameter-estimation.md
-      - 第 2 週:貝氏推論與最大熵: lectures/lec02-bayesian-inference.md
-      - 第 2 週:混合模型與 EM: lectures/lec02-mixture-models-em.md
-      - 第 2 週:無母數密度估計: lectures/lec02-nonparametric-density.md
-      - 第 2 週:單純貝氏與最近鄰居: lectures/lec02-naive-bayes-and-nn.md
-      - 第 2 週:貝氏網路: lectures/lec02-bayesian-networks.md
-      - 第 2 週:貝氏網路推論: lectures/lec02-bayesian-network-inference.md
-  - 作業: assignments/README.md
-  - 專題: projects/README.md
-  - 考試與測驗: exams/README.md
-  - 實驗: labs/README.md
+  - 首頁 Home: index.md
+  - 課程大綱 Syllabus: syllabus.md
+  - 週次進度表 Schedule: schedule.md
+  - 講義 Lectures:
+      - 第 1 週 Week 1:
+          - 導論：什麼是樣式識別: lectures/lec01.md
+      - 第 2 週 Week 2:
+          - 貝氏決策理論與判別函數: lectures/lec02.md
+          - 線性分類器: lectures/lec02-linear-classifiers.md
+          - 參數估計: lectures/lec02-parameter-estimation.md
+          - 貝氏推論與最大熵: lectures/lec02-bayesian-inference.md
+          - 混合模型與 EM: lectures/lec02-mixture-models-em.md
+          - 無母數密度估計: lectures/lec02-nonparametric-density.md
+          - 單純貝氏與最近鄰居: lectures/lec02-naive-bayes-and-nn.md
+          - 貝氏網路: lectures/lec02-bayesian-networks.md
+          - 貝氏網路推論: lectures/lec02-bayesian-network-inference.md
+  - 作業 Assignments: assignments/README.md
+  - 專題 Projects: projects/README.md
+  - 考試與測驗 Exams & Quizzes: exams/README.md
+  - 實驗 Labs: labs/README.md
   - Notebook: notebooks/README.md
-  - 投影片下載: slides/README.md
-  - 參考資料: references/README.md
-  - 自學指引: study-guide/README.md
-  - 常見問題: FAQ.md
-  - 術語表: glossary.md
-  - 異動紀錄: CHANGELOG.md
-  - 貢獻指南: CONTRIBUTING.md
-  - 授權: LICENSE.md
+  - 投影片下載 Slides: slides/README.md
+  - 參考資料 References: references/README.md
+  - 自學指引 Study Guide: study-guide/README.md
+  - 常見問題 FAQ: FAQ.md
+  - 術語表 Glossary: glossary.md
+  - 異動紀錄 Changelog: CHANGELOG.md
+  - 貢獻指南 Contributing: CONTRIBUTING.md
+  - 授權 License: LICENSE.md
 # --- nav 結束 ---
