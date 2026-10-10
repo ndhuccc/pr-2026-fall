@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-10 — 依老師同意與明確指示,將網站導覽與雙語介面設計同步至 GitHub `ndhuccc/course-template` 的 main(commit `6e05b6f`):新增 `scripts/sync_nav.py`;更新 `scripts/build_docs.py`(呼叫導覽同步,並支援每週多份教材的下載頁);新增 `overrides/partials/languages/custom.html`(中英雙語介面字串);`mkdocs.yml` 只改主題設定(`language: custom`、`custom_dir: overrides`、移除 `navigation.sections`),範本的 `{{佔位符}}` 與導覽區塊未帶入;AGENTS.md 的 scripts 列補上 `sync_nav.py`。驗證:兩支腳本通過語法編譯;範本處於未設定狀態,未做完整網站建置,首次套用學期設定後再由 `build_docs.py` 產生導覽。
+
 - 2026-10-10 — 課程網站介面調整(commit `d87edd6`、`cdbf21a`、`2aea54f`,皆已推送):(1) 側邊導覽的講義前兩項由 `lec01`、`lec02` 改為主題標題(「導論：什麼是樣式識別」、「貝氏決策理論與判別函數」)——標題取自 `schedule.md` 的連結文字,改標題請改該處;(2) 移除 `mkdocs.yml` 的 `navigation.sections`,讓選單可收合;(3) 介面字串改中英雙語:新增 `overrides/partials/languages/custom.html`(以 Material 的 zh-TW 為底加英文,`mkdocs.yml` 設 `language: custom`、`custom_dir: overrides`),`scripts/sync_nav.py` 的固定項目標題加英文(如「首頁 Home」);(4) 講義選單依週次分組(「第 N 週 Week N」),`sync_nav.py` 自動依 `schedule.md` 產生,未列入進度表的講義歸入「其他 Others」。驗證:`build_docs.py` 與 `mkdocs build` 無 ERROR,建置後頁面含 Back to top、Type to start searching;尚未在瀏覽器逐項點選實測,也未確認線上部署結果。未處理:講義標題本身仍是純中文,尚未加英文,待老師決定。因 `sync_nav.py` 是共用基礎設施,若同步回 `ndhuccc/course-template` 需另行徵得同意。
 
 - 2026-10-09 — 七份自主學習投影片及七份講義連結已同步至 `ndhuccc/pr-2026-fall` 的 main（commit `e9a2626`），共 16 個檔案；課程網站部署成功（run `37940654423`）。正式網站投影片下載頁已列出全部教材，七份 JSON 下載與七份講義頁皆回應 HTTP 200；下載 JSON 內容與本機完全一致，14 個中英文講義下載連結正常。發佈前投影片格式檢查全數 OK、網站本機建置成功。既有線性分類器投影片未改動，PDF 匯出與編輯器 reticle 的未驗證事項仍保留。
