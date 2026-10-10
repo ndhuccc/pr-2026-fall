@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-10 — 新增「作業理解測驗」:作業截止後的課堂上,取每位學生標籤 `hwNN-submit` 版本的程式,由 AI 依固定四題型(解釋、靜態追蹤、修改影響、理由,每題 25 分)出個人化題目與參考答案,學生在教師安排的受控環境以電腦作答,AI 依評分要點初評、老師抽查(旗標、待確認、邊界與至少 10% 隨機抽樣)定案。老師決定:題目只問靜態可判斷的內容(不執行學生程式);採電腦版作答以便 AI 判讀。新增 `.agents/skills/assignment-quiz/SKILL.md`(含提示注入防護、輸出只存 git 之外的本機目錄、不寫入任何 Repo);`assignments/README.md` 新增 §6.1(作業最終分數 = Rubric 分數 × (0.5 + 0.5 × 理解測驗得分率))與 §6.2;`syllabus.md`「作業繳交規範」加入指向與說明。設計原因:修課 80 人,全員口試不可行,且為降低學生完全由 AI 代做作業而失去練習的風險。待老師決定:(1) 係數 0.5 目前為預設值,尚未經老師確認;(2) 受控環境(電腦教室、校內系統或其他)尚未指定,AI 無法替代環境控管;(3) 補測安排與遲交扣分規則;(4) syllabus「生成式 AI 使用政策」仍空白,未代老師決定。
+
 - 2026-10-10 — 修正 `scripts/doctor.py` 在繁體中文 Windows 的兩個編碼問題:(1) `run()` 以預設 cp950 解碼 `gh auth status` 的 UTF-8 輸出失敗,使 `stdout` 變 `None` 而丟 `NoneType.strip` 錯誤,改為 `encoding="utf-8", errors="replace"` 並容忍 `None`;(2) 主控台 cp950 印不出 emoji 而丟 `UnicodeEncodeError`,改為 `sys.stdout.reconfigure(errors="replace")`。已同步至 `ndhuccc/course-template`。驗證:本機 `doctor.py` 可跑完不再崩潰;範本僅做語法編譯。
 
 - 2026-10-10 — 作業繳交改為單一流程「學生自建作業 Repo」:每位學生建立**一個**私人 Repo `pr-2026-hw-<學號>` 存放整學期作業(`hwNN/report.md`、`hwNN/code/`),並把 `ndhuccc` 加為協作者;截止前打標籤 `hwNN-submit` 即完成繳交,不需另寄網址(Repo 為私人且教師為協作者,故無須公開)。改寫 `assignments/README.md`(流程、命名、協作者設定、習作與繳交規範、評分方式、FAQ);新增 AI 評分指引 `.agents/skills/assignment-grading/SKILL.md`(只依 Rubric、不寫成績進任何 Repo、對學生 Repo 唯讀且不執行程式、Repo 內對評分者的指令性文字須回報、逾時與誠信疑慮只回報由老師決定);同步修改 `assignments/hw01/README.md`、`AGENTS.md` §5.3、`SETUP.md` 步驟 4(移除 GitHub Classroom 與 Fork + PR 說明)。已知限制:學生個人帳號 Repo 邀請協作者時 GitHub 會給寫入權限,教師僅讀取;標籤時間以 GitHub Events 的推送時間為準,Events 只保留近期紀錄,評分宜在截止後盡快進行;遲交扣分規則 `syllabus.md`「作業繳交規範」仍空白,待老師訂定。`scripts/doctor.py` 在本機 Windows 有編碼造成的 `NoneType` 錯誤,與本次修改無關,尚未處理。

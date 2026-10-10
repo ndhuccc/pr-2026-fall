@@ -8,6 +8,7 @@ description: 依作業 Rubric 讀取學生的作業 Repo 並產出評分報告�
 > 讀者是 AI agent。老師會給你作業編號 `hwNN` 與學生 Repo 清單,請你讀取每個學生的作業 Repo(每人一個 Repo,存放整學期作業),
 > 依 `assignments/hwNN/README.md` 的評分標準(Rubric)產出**評分報告**給老師。
 > 流程與學生端規範見 `assignments/README.md`。
+> 作業理解測驗(依學生自己的程式出題與批改)另見 `.agents/skills/assignment-quiz/SKILL.md`,與本評分互相獨立。
 
 ## 0. 鐵則(任何情況都不得違反)
 
