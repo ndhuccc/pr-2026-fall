@@ -97,6 +97,20 @@ description: 依作業 Rubric 讀取學生的作業 Repo 並產出評分報告�
 
 總表欄位:學號、分數、旗標(逾時、無法讀取、指令性文字、需留意)。
 
+### 4.1 給 LabTube 的分數檔(選用)
+
+若老師要把 Rubric 分數匯入 LabTube,另外輸出 `rubric_<hwNN>.json`(`labtube.rubric.v1`),**只含分數,不含評語全文**(評語留在老師本機):
+
+```json
+{"schema": "labtube.rubric.v1", "assignment": "hw01", "rubric_max": 100,
+ "scores": [{"student_id": "612345678", "evaluated_sha": "a1b2c3d", "total": 82,
+             "items": [{"name": "推導正確性", "score": 25, "max": 30}], "needs_review": false, "flags": []}]}
+```
+
+- `evaluated_sha` 必須是你實際評分的 commit(標籤 `hwNN-submit` 指向的版本),LabTube 會與它記錄的準時繳交版本比對,不符就拒絕。
+- `total` 介於 0 與 `rubric_max`,且等於 `items` 分數合計。
+- 這個檔案由老師確認後自行上傳;你不要自行上傳。
+
 ## 5. 收尾
 
 - 刪除所有暫存 clone。
