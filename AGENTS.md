@@ -255,7 +255,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 - 若實驗需要 PyTorch,測試檔開頭用 `pytest.importorskip("torch")`(參考 `labs/lab03`)。
 
 ### 5.3 新增作業
-- 問:作業編號?發佈日與截止日?題目?繳交方式(GitHub Classroom 或 Fork + PR)?
+- 問:作業編號?發佈日與截止日?題目?(繳交方式固定為「學生自建一個作業 Repo、整學期共用,並加老師為協作者」,不必再問,見 `assignments/README.md`;評分流程見 `.agents/skills/assignment-grading/SKILL.md`)
 - 作法:複製 `assignments/hw01/` 為 `hwNN/`,改 `README.md`(題目、繳交內容、rubric、AI 使用聲明)。日期用絕對日期,不要寫「下週」。
 - 同步:`schedule.md` 標示發佈與截止週次。
 

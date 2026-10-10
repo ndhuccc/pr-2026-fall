@@ -60,14 +60,16 @@ python scripts/new_semester.py             # 正式套用(需要 Python 3.11+)
 | Projects | Projects → New project | 教學進度與專題里程碑看板 |
 | Codespaces | 預設可用 | 已含 `.devcontainer/` |
 
-### 步驟 4:作業自動批改(GitHub Classroom,🖱️)
+### 步驟 4:作業繳交與評分(學生自建 Repo,無需設定)
 
-1. 前往 <https://classroom.github.com> 建立 Classroom(綁定你的組織)。
-2. 新增作業 → 選「使用本 Repo 作為 Template」。
-3. 把邀請連結貼到作業說明(`assignments/hwNN/README.md`)。
-4. 學生接受作業後會得到私人 Repo,推送即觸發 `autograde.yml`。
+本課程作業**只採用一種流程**:每位學生建立**一個**私人 Repo(`pr-2026-hw-<學號>`)存放整學期作業,並把教師帳號 `ndhuccc` 加為協作者;
+每次作業在 `hwNN/` 資料夾完成,截止前打標籤 `hwNN-submit` 即完成繳交,不需另外寄網址。完整規範見 `assignments/README.md`。
 
-> ⚠️ 提供給學生的 Template **不應含有 `solution/`**。請在建立作業用的 Template 前,先刪除或移出 `labs/*/solution/`(見下節)。
+教師端不需要設定 Classroom 或 Template,只需接受學生的協作邀請。評分時請 AI agent 依 `.agents/skills/assignment-grading/SKILL.md` 讀取各 Repo,
+只依 `hwNN/README.md` 的 Rubric 初評,**成績不寫進任何 Repo**,最終由老師定案。
+
+> 提醒:每份新作業的 `hwNN/README.md` 都要寫清楚繳交內容、截止時間與 Rubric;Rubric 是 AI 評分唯一的依據。
+> 作業 Repo 由學生建立,不會取得本 Repo 的 `labs/*/solution/`,但仍請遵守下節的解答保密規則。
 
 ### 步驟 5:設定解答釋出日
 
