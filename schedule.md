@@ -5,8 +5,8 @@
 
 | 週次 | 日期 | 主題 | 講義 | 備註 |
 |:---:|---|---|---|---|
-| 1 | 09/07 | Introduction / Course Overview & Introduction to Pattern Recognition | [lec01](lectures/lec01.md) | |
-| 2 | 09/14 | Bayes Classifiers (1)+(2) – Bayesian Decision Theory; Discriminant Functions & Error Bounds | [lec02](lectures/lec02.md)(正課) | 合併原計畫第 2、3 週 |
+| 1 | 09/07 | Introduction / Course Overview & Introduction to Pattern Recognition | [導論：什麼是樣式識別](lectures/lec01.md) | |
+| 2 | 09/14 | Bayes Classifiers (1)+(2) – Bayesian Decision Theory; Discriminant Functions & Error Bounds | [貝氏決策理論與判別函數](lectures/lec02.md)(正課) | 合併原計畫第 2、3 週 |
 | 2 | 09/14 | 自主學習教材(依課程網頁第 2 章 2.4 後半–2.7) | [線性分類器](lectures/lec02-linear-classifiers.md)、[參數估計](lectures/lec02-parameter-estimation.md)、[貝氏推論與最大熵](lectures/lec02-bayesian-inference.md)、[混合模型與 EM](lectures/lec02-mixture-models-em.md)、[無母數密度估計](lectures/lec02-nonparametric-density.md)、[單純貝氏與最近鄰居](lectures/lec02-naive-bayes-and-nn.md)、[貝氏網路](lectures/lec02-bayesian-networks.md)、[貝氏網路推論](lectures/lec02-bayesian-network-inference.md) | 選讀,不列入考試範圍 |
 | 3 | 09/21 | Linear Classifiers (1)+(2) – Perceptron & Linear Discriminant Functions; Support Vector Machines | | 合併原計畫第 4、5 週 |
 | 4 | 09/28 | 放假(孔子誕辰／教師節) | | 無上課 |

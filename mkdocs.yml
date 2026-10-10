@@ -46,8 +46,8 @@ nav:
   - 課程大綱: syllabus.md
   - 週次進度表: schedule.md
   - 講義:
-      - 第 1 週:lec01: lectures/lec01.md
-      - 第 2 週:lec02: lectures/lec02.md
+      - 第 1 週:導論：什麼是樣式識別: lectures/lec01.md
+      - 第 2 週:貝氏決策理論與判別函數: lectures/lec02.md
       - 第 2 週:線性分類器: lectures/lec02-linear-classifiers.md
       - 第 2 週:參數估計: lectures/lec02-parameter-estimation.md
       - 第 2 週:貝氏推論與最大熵: lectures/lec02-bayesian-inference.md
