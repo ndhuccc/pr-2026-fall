@@ -318,6 +318,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 | `notebooks/` | 實作 Notebook | 必須能「全部執行」成功(CI 會驗證) |
 | `assignments/hwNN/` | 作業說明與 rubric | 日期寫絕對日期 |
 | `projects/` `exams/` `quizzes/` | 專題 / 考試 / 測驗 | 試題與解答不公開 |
+| `student-template/` | 學生作業 Repo 的範本內容(結構、`.gitignore`、檢查工具) | 不會出現在課程網站;老師把它的內容做成獨立的 GitHub 範本 Repo,見 SETUP.md 步驟 4 |
 | `release_schedule.toml` | 解答網站釋出日 | 只控制網站 |
 | `semester.toml` | 本學期參數 | **不上傳**(`.gitignore`) |
 | `COURSE_STATE.md` | 進度與決策紀錄 | **每次工作後更新** |
