@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-10 — 課程網站介面調整(commit `d87edd6`、`cdbf21a`、`2aea54f`,皆已推送):(1) 側邊導覽的講義前兩項由 `lec01`、`lec02` 改為主題標題(「導論：什麼是樣式識別」、「貝氏決策理論與判別函數」)——標題取自 `schedule.md` 的連結文字,改標題請改該處;(2) 移除 `mkdocs.yml` 的 `navigation.sections`,讓選單可收合;(3) 介面字串改中英雙語:新增 `overrides/partials/languages/custom.html`(以 Material 的 zh-TW 為底加英文,`mkdocs.yml` 設 `language: custom`、`custom_dir: overrides`),`scripts/sync_nav.py` 的固定項目標題加英文(如「首頁 Home」);(4) 講義選單依週次分組(「第 N 週 Week N」),`sync_nav.py` 自動依 `schedule.md` 產生,未列入進度表的講義歸入「其他 Others」。驗證:`build_docs.py` 與 `mkdocs build` 無 ERROR,建置後頁面含 Back to top、Type to start searching;尚未在瀏覽器逐項點選實測,也未確認線上部署結果。未處理:講義標題本身仍是純中文,尚未加英文,待老師決定。因 `sync_nav.py` 是共用基礎設施,若同步回 `ndhuccc/course-template` 需另行徵得同意。
+
 - 2026-10-09 — 七份自主學習投影片及七份講義連結已同步至 `ndhuccc/pr-2026-fall` 的 main（commit `e9a2626`），共 16 個檔案；課程網站部署成功（run `37940654423`）。正式網站投影片下載頁已列出全部教材，七份 JSON 下載與七份講義頁皆回應 HTTP 200；下載 JSON 內容與本機完全一致，14 個中英文講義下載連結正常。發佈前投影片格式檢查全數 OK、網站本機建置成功。既有線性分類器投影片未改動，PDF 匯出與編輯器 reticle 的未驗證事項仍保留。
 - 2026-10-09 — 教師明確要求「同步」，核准將第 2 週其餘七份投影片、講義下載連結、CHANGELOG 與課程紀錄儲存並同步至雲端；移除講義下載連結的草稿／待教師確認字樣。此次同意同步不代表 PDF 匯出或編輯器 reticle 已經實測，相關待辦保留。同步及網站部署結果另記於後續紀錄。
 - 2026-10-09 — 七份投影片草稿收尾驗證：`check_slides.py` 全部 9 份投影片皆 OK，0 FAIL／0 WARN；`build_docs.py` 與 MkDocs 建置成功，只有既有 Material 版本公告與三份未列入 nav 的文件提示；`doctor.py` 無錯誤，本機 16 個待同步檔案符合草稿狀態。七份講義產出的中英文下載連結共 14 個均指向存在的檔案，下載 JSON 與原草稿內容一致。網站僅在本機建置，未更新公開網站。
