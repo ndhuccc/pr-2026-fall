@@ -43,8 +43,9 @@ def add(level: str, title: str, detail: str = "", next_step: str = "") -> None:
 def run(cmd: list[str], timeout: int = 20) -> tuple[int, str]:
     """執行外部命令,失敗或逾時回傳 (非 0, 空字串),不丟例外。"""
     try:
-        p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, timeout=timeout)
-        return p.returncode, p.stdout.strip()
+        p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace", timeout=timeout)
+        return p.returncode, (p.stdout or "").strip()
     except (OSError, subprocess.TimeoutExpired):
         return 1, ""
 
@@ -221,6 +222,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--json", action="store_true", help="輸出 JSON")
     args = parser.parse_args()
+    # Windows 主控台常用 cp950,印不出 emoji 會丟 UnicodeEncodeError;改成無法編碼的字元以 ? 取代
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(errors="replace")
 
     check_environment()
     check_gh()

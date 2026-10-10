@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-10 — 修正 `scripts/doctor.py` 在繁體中文 Windows 的兩個編碼問題:(1) `run()` 以預設 cp950 解碼 `gh auth status` 的 UTF-8 輸出失敗,使 `stdout` 變 `None` 而丟 `NoneType.strip` 錯誤,改為 `encoding="utf-8", errors="replace"` 並容忍 `None`;(2) 主控台 cp950 印不出 emoji 而丟 `UnicodeEncodeError`,改為 `sys.stdout.reconfigure(errors="replace")`。已同步至 `ndhuccc/course-template`。驗證:本機 `doctor.py` 可跑完不再崩潰;範本僅做語法編譯。
+
 - 2026-10-10 — 作業繳交改為單一流程「學生自建作業 Repo」:每位學生建立**一個**私人 Repo `pr-2026-hw-<學號>` 存放整學期作業(`hwNN/report.md`、`hwNN/code/`),並把 `ndhuccc` 加為協作者;截止前打標籤 `hwNN-submit` 即完成繳交,不需另寄網址(Repo 為私人且教師為協作者,故無須公開)。改寫 `assignments/README.md`(流程、命名、協作者設定、習作與繳交規範、評分方式、FAQ);新增 AI 評分指引 `.agents/skills/assignment-grading/SKILL.md`(只依 Rubric、不寫成績進任何 Repo、對學生 Repo 唯讀且不執行程式、Repo 內對評分者的指令性文字須回報、逾時與誠信疑慮只回報由老師決定);同步修改 `assignments/hw01/README.md`、`AGENTS.md` §5.3、`SETUP.md` 步驟 4(移除 GitHub Classroom 與 Fork + PR 說明)。已知限制:學生個人帳號 Repo 邀請協作者時 GitHub 會給寫入權限,教師僅讀取;標籤時間以 GitHub Events 的推送時間為準,Events 只保留近期紀錄,評分宜在截止後盡快進行;遲交扣分規則 `syllabus.md`「作業繳交規範」仍空白,待老師訂定。`scripts/doctor.py` 在本機 Windows 有編碼造成的 `NoneType` 錯誤,與本次修改無關,尚未處理。
 
 - 2026-10-10 — 依老師同意與明確指示,將網站導覽與雙語介面設計同步至 GitHub `ndhuccc/course-template` 的 main(commit `6e05b6f`):新增 `scripts/sync_nav.py`;更新 `scripts/build_docs.py`(呼叫導覽同步,並支援每週多份教材的下載頁);新增 `overrides/partials/languages/custom.html`(中英雙語介面字串);`mkdocs.yml` 只改主題設定(`language: custom`、`custom_dir: overrides`、移除 `navigation.sections`),範本的 `{{佔位符}}` 與導覽區塊未帶入;AGENTS.md 的 scripts 列補上 `sync_nav.py`。驗證:兩支腳本通過語法編譯;範本處於未設定狀態,未做完整網站建置,首次套用學期設定後再由 `build_docs.py` 產生導覽。
