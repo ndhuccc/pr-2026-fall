@@ -65,8 +65,19 @@ python scripts/new_semester.py             # 正式套用(需要 Python 3.11+)
 本課程作業**只採用一種流程**:每位學生建立**一個**私人 Repo(`pr-2026-hw-<學號>`)存放整學期作業,並把教師帳號 `ndhuccc` 加為協作者;
 每次作業在 `hwNN/` 資料夾完成,截止前打標籤 `hwNN-submit` 即完成繳交,不需另外寄網址。完整規範見 `assignments/README.md`。
 
-教師端不需要設定 Classroom 或 Template,只需接受學生的協作邀請。評分時請 AI agent 依 `.agents/skills/assignment-grading/SKILL.md` 讀取各 Repo,
+教師端不需要設定 Classroom,只需接受學生的協作邀請。評分時請 AI agent 依 `.agents/skills/assignment-grading/SKILL.md` 讀取各 Repo,
 只依 `hwNN/README.md` 的 Rubric 初評,**成績不寫進任何 Repo**,最終由老師定案。
+
+**建立學生作業 Repo 範本(一次性,🖱️)**
+
+`student-template/` 是學生作業 Repo 的範本內容(根目錄 `README.md`、`.gitignore`、`hw01/` 骨架、`tools/check_structure.py`、
+`tools/new_hw.py`、`.github/workflows/check-structure.yml`)。請把它做成獨立的 GitHub 範本 Repo,讓學生一鍵建立:
+
+1. 在教師帳號下建立一個新的空 Repo,名稱例如 `<課程簡稱>-hw-template`。範本內**沒有解答與成績**,可設為 Public,學生才能使用。
+2. 把 `student-template/` 的**內容**(不含資料夾本身)放到該 Repo 根目錄並推送。
+3. 到該 Repo 的 **Settings → General**,勾選 **Template repository**。
+4. 把範本網址公告給學生(課程網站或課堂),並在 `assignments/README.md` 補上網址。
+5. 之後修改 `student-template/` 時,同步到該範本 Repo(學生已建立的 Repo 不會自動更新)。
 
 > 提醒:每份新作業的 `hwNN/README.md` 都要寫清楚繳交內容、截止時間與 Rubric;Rubric 是 AI 評分唯一的依據。
 > 作業 Repo 由學生建立,不會取得本 Repo 的 `labs/*/solution/`,但仍請遵守下節的解答保密規則。
