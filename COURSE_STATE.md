@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-10 — 依老師同意,建立學生作業 Repo 範本 `ndhuccc/pr-2026-hw-template`(Public,已設為 Template repository,內容為 `student-template/` 的目前版本,只含骨架與檢查工具,沒有解答與成績)。推送後 GitHub Actions 的 `check-structure` 在實際 Repo 執行成功(10 秒)。網址已寫入 `assignments/README.md`;尚待老師在課堂或課程網站公告。之後修改 `student-template/` 時,需手動同步到該範本 Repo,學生已建立的 Repo 不會自動更新。
+
 - 2026-10-10 — 確認「每位學生一個 Repo、所有作業分資料夾」的結構可行,並加上規範與範本。新增 `student-template/`(學生作業 Repo 範本內容):根目錄 `README.md`、`.gitignore`(排除大型檔案與私密設定)、`hw01/` 骨架(`report.md` 含 AI 使用聲明區塊、`code/README.md`、`code/requirements.txt`)、`tools/check_structure.py`(只讀;檢查資料夾命名需為小寫兩位數 hwNN、report.md 與 AI 使用聲明、code/ 非空、圖片需存在且為相對路徑、requirements 與執行說明、大型檔案、疑似金鑰;忽略程式碼區塊內的範例語法)、`tools/new_hw.py`(建立新作業骨架)與每次推送自動檢查的 workflow。已在隔離複本測試:標準骨架通過,錯誤命名、缺檔、絕對路徑圖片、疑似 Token、缺 AI 聲明、大檔案均被偵測。`assignments/README.md` 新增規則:資料夾命名固定、每個作業資料夾自給自足(各自 requirements 與執行說明)、不放大型檔案(建議 ≤ 5 MB,≥ 25 MB 不合格)、圖片用相對路徑、繳交前執行結構檢查、截止後移動或重打標籤以截止當下記錄為準且可能視為違反學術誠信。`SETUP.md` 步驟 4 與 `AGENTS.md` 地圖補上範本說明。**尚未建立 GitHub 上的範本 Repo**(需要老師同意並建立 `<課程簡稱>-hw-template`,勾選 Template repository),也尚未公告網址。檢查工具僅在 Windows 實測,GitHub Actions workflow 尚未在實際 Repo 執行。
 
 - 2026-10-10 — 再次改訂作業理解測驗(取代前一筆的「5 題、單選加短答」):老師要求避免選擇題以免學生投機猜題,測驗定位為「即時線上口試」。新規格:**3 題、全部簡答、每題答案 ≤ 50 字、限時約 6–8 分鐘**,時間短是為防止學生連網用 AI 回答。三題固定為解釋、修改影響(須同時答方向與原因,避免 50% 猜中)、理由;不得出選擇、是非、二選一題;讀碼禁止多步手算。每題 0–2 分(完整 2、部分 1、錯誤 0),得分率 = 三題合計 ÷ 6,代入作業分數公式 作業 Rubric 分數 × (0.5 + 0.5 × 得分率);全部由 AI 依關鍵點初評(不再有程式自動比對),老師複核旗標、待確認、邊界得分率及至少 10% 隨機抽樣;表單需設 50 字上限。已更新 `.agents/skills/assignment-quiz/SKILL.md` 與 `assignments/README.md` §6.1、§6.2,並同步至 `ndhuccc/course-template`。仍待老師決定:線上表單平台與巡視方式、係數 0.5、補測安排、遲交規則、生成式 AI 使用政策。
