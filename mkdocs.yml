@@ -10,7 +10,6 @@ theme:
   name: material
   language: zh-TW
   features:
-    - navigation.sections
     - navigation.top
     - search.suggest
     - content.code.copy
