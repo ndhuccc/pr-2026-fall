@@ -202,6 +202,7 @@ JianBauDau 不是「一張一張投影片」的線性模型，而是：
 - `padding`：子場景內容跟畫框邊緣的留白（px），預設 18。
 - `clip`：是否裁切超出畫框的內容，一般填 `true`。
 - 選填的標題文字樣式：`titleFontSize`（10～120，預設 32）、`titleColor`、`titleFontFamily`、`titleFontWeight`（300～800）、`titleFontStyle`（`"normal"|"italic"`）——這些控制畫框上方標題列（顯示 `text` 欄位內容）的外觀。
+- **課程簡報不要使用上述標題樣式欄位,也不要給 Frame 加有色填色**:標題列的背景色不可控,自訂顏色造成過低對比(實際發生過)。標準寫法見 `SKILL.md` §4D。
 - **Frame 節點的 `text` 欄位就是顯示在畫框標題列上的文字**，通常填這個知識單元的標題（例如 `"INPUT"`、`"光合作用過程"`）。
 
 **`type: "group"`**（群組，把多個節點視覺上綁在一起）

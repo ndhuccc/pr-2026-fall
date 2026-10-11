@@ -32,6 +32,8 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
 2. 讀 `lectures/lecNN.md`(NN 為週次)。講義是內容來源;投影片只呈現講義已有的內容,不加入新觀點。
 3. 讀 `AI_AGENT_FILE_FORMAT_SPEC.md`、`PRESENTATION_DESIGN_GUIDE.md`、`VISUAL_AND_LAYOUT_GUIDE.md` 與 `AUDIT_CHECKLIST.md`。
 4. 確認比例。預設 16:9;若要 4:3,頁面參考尺寸改為 960×720。只有在無法判斷週次或內容範圍時才問老師。
+5. **語言(硬規則)**:本課程的投影片一律**中英對照**(§4C),除非老師明確說「只要中文」。盤點表(§1A)必須有一欄寫出語言決定。不要自行改成「中文加英文術語」。
+6. 讀 §4D(Frame 樣式)與 §4E(預覽與自動稽核工具);這兩節的規則是過去實際出過問題才加上的。
 
 ## 1A. 長文本流程(篇幅超過門檻時)
 
@@ -47,7 +49,7 @@ description: Turn a lecture note (lectures/lecNN.md) or pasted text into a compl
    - 主版型候選(A–T,依版面 §3.3)
    - 圖需求:依 §4A 圖型對照表列出每張必圖(圖型、配方、所在頁)。不得以既有圖檔是否存在為由省略。
    - 跨單元關係(Connector 候選)
-2. 另列**需要老師決定的事項**,例如某段是否保留、習題是否附答案、是否要講者備註、某段原文公式是否損壞需還原。
+2. 另列**需要老師決定的事項**,例如某段是否保留、習題是否附答案、是否要講者備註、某段原文公式是否損壞需還原、**語言(預設中英對照)**。
 3. 把表格與事項交給老師,說明可以合併、拆分、刪除或調換順序。
 4. **老師確認前,不得開始批次處理。** 確認後的表格是唯一基準;之後若要改,須重新確認。
 5. 把確認後的表格存成暫存目錄的 `manifest.json`(不放進 repo)。
@@ -205,6 +207,49 @@ def page_step(step_id, label, scene_id, i):
 4. 每頁圖片不超過 2 張,且符合 VISUAL §4.6 的 SVG 大小預算(≤250 KB)。
 5. **Connector 可見性**:線與箭頭使用 `style.stroke`,不得繼承文字節點的 `transparent`;深色畫布建議用 `"#6a9fd6"`、`borderWidth: 3`,標籤文字仍用深色。必須在實際播放器核對頁內線與箭頭,根場景連線另以縮小後的根場景檢查(AUDIT B8)。`connector` 數量與格式檢查不能取代畫面驗證。
 
+### 4C. 中英對照(硬規則)
+
+- **頁面標題**:中文結論句(42 px 粗體)。標題正下方一行**英文副標**(24 px、次要文字色 `#b7b0a5`)。標題與副標都**不放行內數學 `$…$`**:KaTeX 的行高會讓標題與副標重疊,改用文字或 Unicode 寫。
+- **內文區塊**(卡片、說明、圖說、表頭):中文在前,**下一行起是英文,用 `*…*` 斜體**。英文與中文意思一致,不必逐字;至少 3 個英文單字才算有英文。
+- 公式與純數值不翻;表格的表頭與列名要雙語(兩行:中文、斜體英文)。
+- **Frame 標題、Step 的 `label`、Connector 標籤**:簡短,以中文為主。Frame 標題單行、≤ 16 字。連線標籤可寫「中文 English」,寬度要放得下。
+- 圖內文字仍只放拉丁字母、數字與數學符號(版面 §4.5)。
+- **版面預算**:英文行不計入「正文 ≤ 80 個中文字」,但**必須放進框內**,字級不得低於 22 px。放不下就加大框或拆頁,不要把字縮到 22 px 以下。
+- `[補充]` / `[Added]` 的標示照舊。
+- `audit_deck.py` 的 L 節會檢查:每頁有英文副標、含 8 個以上中文字的區塊有英文行、英文行用斜體。
+
+### 4D. Frame 節點樣式(硬規則)
+
+所有 Frame 節點一律使用已發佈簡報驗證過的樣式,**不得自行加色**:
+
+```json
+"style": {"fill": "transparent", "stroke": "transparent", "textColor": "#f2ede4", "fontSize": 22, "radius": 0},
+"frame": {"childSceneId": "…", "previewMode": "live", "padding": 18, "clip": true}
+```
+
+- **不要**設 `titleColor`、`titleFontSize`、`titleFontFamily`、`titleFontWeight`、`titleFontStyle`,也不要給 Frame 有色的 `fill` 或 `stroke`。Frame 標題列的背景色不是我們能控制的;只要自訂標題色,就可能得到與背景對比過低、看不清楚的標題(這件事實際發生過)。
+- Frame 標題單行、中文、≤ 16 字。
+- 想用顏色區分單元,放在子場景的卡片上,不要放在 Frame 上。
+- `audit_deck.py` 的 B9 逐一比對,不符就 FAIL。
+
+### 4E. 預覽與自動稽核工具(交付前必跑)
+
+兩支工具在 `.agents/skills/view-from-text/tools/`:
+
+| 工具 | 用途 |
+|---|---|
+| `audit_deck.py` | 自動核對程式能查的稽核項目:A 格式、B 鏡頭與連線色與 **Frame 樣式(B9)**、D 標題與字級、E10 對比(含 Frame)、H5 結構、G14 圖片說明、L 中英對照。有 FAIL 時退出碼為 1 |
+| `preview_deck.py` | 用瀏覽器加 KaTeX 把每一頁近似渲染成 PNG,回報文字溢出與每個文字框的剩餘高度;`--sheets` 另產生 2×3 縮圖總覽 |
+
+```bash
+py .agents/skills/view-from-text/tools/audit_deck.py slides/lecNN.jbd.json
+py .agents/skills/view-from-text/tools/preview_deck.py slides/lecNN.jbd.json --out <暫存資料夾> --sheets
+```
+
+必做順序:產生檔案 → `audit_deck.py`(直到 FAIL 0,WARN 逐項處理或列給老師)→ `preview_deck.py --sheets`(溢出 0,**逐張看縮圖**:字太小、卡片太空、圖例壓到曲線、文字擠在一起)→ 才交給老師。預覽輸出放暫存資料夾,**不要放進 repo**。
+
+**預覽不是 JianBauDau 的畫面**:文字卡片在預覽裡是靠上對齊,JianBauDau 可能垂直置中;字型也可能不同。預覽只用來提早抓溢出與擠壓,不能取代 `AUDIT_CHECKLIST.md` 的 I 節。需要 `pip install playwright pillow`(Edge 或 Chromium)與網路(KaTeX 來自 CDN)。
+
 ### 節點必填欄位
 
 每個節點都必須有:`id`、`type`、`name`、`sceneId`、`transform`(`x`、`y`、`scaleX`、`scaleY`、`rotation`)、`width`、`height`、`zIndex`、`locked`、`style`、`text`。其他欄位依型別需要(例如 `shape` 需要 `shapeKind`,`frame` 需要 `frame`,`connector` 需要 `connector`,`image` 需要 `image`)。型別細節見規格「各種節點型別要另外填的內容欄位」。
@@ -222,8 +267,9 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
 
 ## 6. 稽核與驗證(必做)
 
-1. **逐項核對 `AUDIT_CHECKLIST.md`**(A–J)。A 節是硬規則,違反會被 App 拒絕;其餘是設計品質。每項都要實際檢查,不是憑感覺。
-2. 執行結構驗證:
+1. **跑 §4E 的兩支工具**:`audit_deck.py` 到 FAIL 0,`preview_deck.py --sheets` 到溢出 0,並逐張看過縮圖。
+2. **逐項核對 `AUDIT_CHECKLIST.md`**(A–M)。A 節是硬規則,違反會被 App 拒絕;其餘是設計品質。工具查不到的項目要實際檢查,不是憑感覺。
+3. 執行結構驗證:
 
    ```bash
    py scripts/check_slides.py slides/lecNN.jbd.json
@@ -232,11 +278,11 @@ node id 必須全域唯一。建議每份簡報使用週次前綴(例如 `lec02-
    - **FAIL**:必須修正後重跑,直到沒有 FAIL。
    - **WARN**:逐項列給老師確認(講者備註、電子郵件、疑似學號、檔案大小、`aspectRatio`)。
 
-`check_slides.py` 只檢查 A 節的一部分。Connector 的參照與掛點、變換數值、版型與色彩都必須由 `AUDIT_CHECKLIST.md` 人工核對。
+`check_slides.py` 只檢查 A 節的一部分;`audit_deck.py` 補上鏡頭、Frame 樣式、對比、標題與雙語。Connector 的參照與掛點、變換數值、版型與色彩都必須由 `AUDIT_CHECKLIST.md` 人工核對。
 
 ## 7. 交付給老師
 
-1. 說明檔案位置 `slides/lecNN.jbd.json`、`check_slides.py` 的結果(FAIL 數、WARN 內容),以及 `AUDIT_CHECKLIST.md` 中有哪些項目無法自動確認。
+1. 說明檔案位置 `slides/lecNN.jbd.json`、`check_slides.py` 的結果(FAIL 數、WARN 內容),以及 `AUDIT_CHECKLIST.md` 中有哪些項目無法自動確認。同時附上 `audit_deck.py` 的結果與預覽縮圖,並**明說預覽是近似渲染、不是 JianBauDau 的實際畫面**。
 2. 請老師在 JianBauDau 編輯器或播放器 **Open** 此檔,並確認 `AUDIT_CHECKLIST.md` I 節的四項:
    - SVG 圖正常顯示、縮放清晰。
    - Export PDF 時 SVG 正常。

@@ -108,3 +108,5 @@
 - 2026-10-09 — 上課時間記為週一 14:10–17:00;上課地點未填(待補)。
 - 未填選填欄位(老師決定先留空):AI_POLICY、OFFICE_HOUR、TA、TEAM_SIZE、HW01_DUE、HW01_RELEASE。
 - 待辦:(1) 待老師提供後再補:TA、Office Hour、AI 使用政策、HW01 發佈與截止日、分組人數、作業繳交規範。(2) HW01 與期末專題里程碑為範本內容,保留中,待依課程改寫。(3) 之後每週:新增講義、公告異動、處理 Issue、補充欄位;實驗加入時依 AGENTS §5.2,舊範例可用 `git checkout 945b993 -- labs/lab01` 還原。
+
+- 2026-10-11 — 修正 `view-from-text` 技能:新增中英對照硬規則(§4C)、Frame 標準樣式(§4D,禁止自訂標題色)、標題不放行內數學、圖例不壓曲線;新增 `tools/audit_deck.py`(自動稽核)與 `tools/preview_deck.py`(近似預覽);稽核表新增 B9、D14、G19、L、M。同步重新發佈 `slides/lec02-bayesian-inference.jbd.json`(標題改純文字、補英文行)。尚未同步到 course-template。
