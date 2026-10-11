@@ -1,0 +1,14 @@
+{
+  "schema": "labtube.assignments.v1",
+  "assignments": [
+    {
+      "code": "hw01",
+      "title": "貝氏分類器:線性邊界與二次邊界",
+      "unit": "貝氏決策理論與判別函數",
+      "opens_at": "2026-10-12 00:00",
+      "due_at": "2026-10-25 23:59",
+      "rubric_max": 100,
+      "rubric_url": "https://ndhuccc.github.io/pr-2026-fall/assignments/hw01/"
+    }
+  ]
+}
