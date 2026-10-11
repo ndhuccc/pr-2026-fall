@@ -21,8 +21,8 @@
         "lec02em-u01-3-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -53,8 +53,8 @@
         "lec02em-u02-3-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -78,8 +78,8 @@
         "lec02em-u03-3-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -124,8 +124,8 @@
         "lec02em-u04-5-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -167,8 +167,8 @@
         "lec02em-u05-5-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -203,8 +203,8 @@
         "lec02em-u06-6-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -234,8 +234,8 @@
         "lec02em-u07-3-init-ln1"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -275,8 +275,8 @@
         "lec02em-u08-3-stable-ln1"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -317,8 +317,8 @@
         "lec02em-u09-5-english"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -392,7 +392,7 @@
       "name": "lec02em-u01-1-title",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -418,7 +418,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -448,7 +448,7 @@
       "name": "lec02em-u01-1-body",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 700.0,
+        "x": 700,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -473,7 +473,7 @@
       "name": "lec02em-u01-1-formula",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 700.0,
+        "x": 700,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -498,7 +498,7 @@
       "name": "lec02em-u01-1-english",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 700.0,
+        "x": 700,
         "y": 510,
         "scaleX": 1,
         "scaleY": 1,
@@ -523,7 +523,7 @@
       "name": "lec02em-u01-2-title",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -549,7 +549,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -579,7 +579,7 @@
       "name": "lec02em-u01-2-body",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -604,7 +604,7 @@
       "name": "lec02em-u01-2-english",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -629,7 +629,7 @@
       "name": "lec02em-u01-3-title",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -655,7 +655,7 @@
       "name": "lec02em-u01-3-body",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -680,7 +680,7 @@
       "name": "lec02em-u01-3-english",
       "sceneId": "lec02em-scene-u01",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -736,7 +736,7 @@
       "name": "lec02em-u02-1-title",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -762,7 +762,7 @@
       "name": "lec02em-u02-1-body",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -787,7 +787,7 @@
       "name": "lec02em-u02-1-english",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -812,7 +812,7 @@
       "name": "lec02em-u02-1-dependency-c0",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -838,7 +838,7 @@
       "name": "lec02em-u02-1-dependency-c0-t",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 76.0,
+        "x": 76,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -863,7 +863,7 @@
       "name": "lec02em-u02-1-dependency-c1",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 420.0,
+        "x": 420,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -889,7 +889,7 @@
       "name": "lec02em-u02-1-dependency-c1-t",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 436.0,
+        "x": 436,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -914,7 +914,7 @@
       "name": "lec02em-u02-1-dependency-c2",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 780.0,
+        "x": 780,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -940,7 +940,7 @@
       "name": "lec02em-u02-1-dependency-c2-t",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 796.0,
+        "x": 796,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -965,7 +965,7 @@
       "name": "lec02em-u02-1-dependency-ln0",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -1000,7 +1000,7 @@
       "name": "lec02em-u02-1-dependency-ln1",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -1035,7 +1035,7 @@
       "name": "lec02em-u02-2-title",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1061,7 +1061,7 @@
       "name": "lec02em-u02-2-body",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -1086,7 +1086,7 @@
       "name": "lec02em-u02-2-formula",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 280,
         "scaleX": 1,
         "scaleY": 1,
@@ -1111,7 +1111,7 @@
       "name": "lec02em-u02-2-english",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 570,
         "scaleX": 1,
         "scaleY": 1,
@@ -1136,7 +1136,7 @@
       "name": "lec02em-u02-3-title",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1162,7 +1162,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -1192,7 +1192,7 @@
       "name": "lec02em-u02-3-body",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -1217,7 +1217,7 @@
       "name": "lec02em-u02-3-english",
       "sceneId": "lec02em-scene-u02",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -1263,8 +1263,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u01",
-        "targetNodeId": "lec02em-frame-u02",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u02",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -1313,7 +1313,7 @@
       "name": "lec02em-u03-1-title",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1339,7 +1339,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 800.0,
+        "x": 800,
         "y": 130,
         "scaleX": 1,
         "scaleY": 1,
@@ -1369,7 +1369,7 @@
       "name": "lec02em-u03-1-body",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -1394,7 +1394,7 @@
       "name": "lec02em-u03-1-formula",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -1419,7 +1419,7 @@
       "name": "lec02em-u03-1-english",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 510,
         "scaleX": 1,
         "scaleY": 1,
@@ -1444,7 +1444,7 @@
       "name": "lec02em-u03-2-title",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1470,7 +1470,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -1500,7 +1500,7 @@
       "name": "lec02em-u03-2-body",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -1525,7 +1525,7 @@
       "name": "lec02em-u03-2-english",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -1550,7 +1550,7 @@
       "name": "lec02em-u03-3-title",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1576,7 +1576,7 @@
       "name": "lec02em-u03-3-body",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -1601,7 +1601,7 @@
       "name": "lec02em-u03-3-english",
       "sceneId": "lec02em-scene-u03",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -1647,8 +1647,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u02",
-        "targetNodeId": "lec02em-frame-u03",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u03",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -1697,7 +1697,7 @@
       "name": "lec02em-u04-1-title",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -1723,7 +1723,7 @@
       "name": "lec02em-u04-1-body",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -1748,7 +1748,7 @@
       "name": "lec02em-u04-1-english",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 235,
         "scaleX": 1,
         "scaleY": 1,
@@ -1773,7 +1773,7 @@
       "name": "lec02em-u04-1-updates-root",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 510.0,
+        "x": 510,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -1799,7 +1799,7 @@
       "name": "lec02em-u04-1-updates-root-t",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 526.0,
+        "x": 526,
         "y": 358,
         "scaleX": 1,
         "scaleY": 1,
@@ -1824,7 +1824,7 @@
       "name": "lec02em-u04-1-updates-c0",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 210.0,
+        "x": 210,
         "y": 570,
         "scaleX": 1,
         "scaleY": 1,
@@ -1850,7 +1850,7 @@
       "name": "lec02em-u04-1-updates-c0-t",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 226.0,
+        "x": 226,
         "y": 598,
         "scaleX": 1,
         "scaleY": 1,
@@ -1875,7 +1875,7 @@
       "name": "lec02em-u04-1-updates-ln0",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -1910,7 +1910,7 @@
       "name": "lec02em-u04-1-updates-c1",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 510.0,
+        "x": 510,
         "y": 570,
         "scaleX": 1,
         "scaleY": 1,
@@ -1936,7 +1936,7 @@
       "name": "lec02em-u04-1-updates-c1-t",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 526.0,
+        "x": 526,
         "y": 598,
         "scaleX": 1,
         "scaleY": 1,
@@ -1961,7 +1961,7 @@
       "name": "lec02em-u04-1-updates-ln1",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -1996,7 +1996,7 @@
       "name": "lec02em-u04-1-updates-c2",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 810.0,
+        "x": 810,
         "y": 570,
         "scaleX": 1,
         "scaleY": 1,
@@ -2022,7 +2022,7 @@
       "name": "lec02em-u04-1-updates-c2-t",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 826.0,
+        "x": 826,
         "y": 598,
         "scaleX": 1,
         "scaleY": 1,
@@ -2047,7 +2047,7 @@
       "name": "lec02em-u04-1-updates-ln2",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2082,7 +2082,7 @@
       "name": "lec02em-u04-2-title",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2108,7 +2108,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 2240.0,
+        "x": 2240,
         "y": 130,
         "scaleX": 1,
         "scaleY": 1,
@@ -2138,7 +2138,7 @@
       "name": "lec02em-u04-2-body",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2163,7 +2163,7 @@
       "name": "lec02em-u04-2-formula",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -2188,7 +2188,7 @@
       "name": "lec02em-u04-2-english",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 510,
         "scaleX": 1,
         "scaleY": 1,
@@ -2213,7 +2213,7 @@
       "name": "lec02em-u04-3-title",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2239,7 +2239,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2269,7 +2269,7 @@
       "name": "lec02em-u04-3-body",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2294,7 +2294,7 @@
       "name": "lec02em-u04-3-formula",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -2319,7 +2319,7 @@
       "name": "lec02em-u04-3-english",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 510,
         "scaleX": 1,
         "scaleY": 1,
@@ -2344,7 +2344,7 @@
       "name": "lec02em-u04-4-title",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2370,7 +2370,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2400,7 +2400,7 @@
       "name": "lec02em-u04-4-body",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5020.0,
+        "x": 5020,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2425,7 +2425,7 @@
       "name": "lec02em-u04-4-english",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5020.0,
+        "x": 5020,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -2450,7 +2450,7 @@
       "name": "lec02em-u04-5-title",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2476,7 +2476,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 6560.0,
+        "x": 6560,
         "y": 130,
         "scaleX": 1,
         "scaleY": 1,
@@ -2506,7 +2506,7 @@
       "name": "lec02em-u04-5-body",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -2531,7 +2531,7 @@
       "name": "lec02em-u04-5-formula",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -2556,7 +2556,7 @@
       "name": "lec02em-u04-5-english",
       "sceneId": "lec02em-scene-u04",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 510,
         "scaleX": 1,
         "scaleY": 1,
@@ -2602,8 +2602,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u03",
-        "targetNodeId": "lec02em-frame-u04",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u04",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -2652,7 +2652,7 @@
       "name": "lec02em-u05-1-title",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2678,7 +2678,7 @@
       "name": "lec02em-u05-1-body",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -2703,7 +2703,7 @@
       "name": "lec02em-u05-1-english",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 350,
         "scaleX": 1,
         "scaleY": 1,
@@ -2728,8 +2728,8 @@
       "name": "lec02em-u05-1-em-c0",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 780.0,
-        "y": 185.0,
+        "x": 889.057239057239,
+        "y": 91.12794612794619,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2754,8 +2754,8 @@
       "name": "lec02em-u05-1-em-c0-t",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 792.0,
-        "y": 219.0,
+        "x": 901.057239057239,
+        "y": 125.12794612794619,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2779,8 +2779,8 @@
       "name": "lec02em-u05-1-em-c1",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 930.0,
-        "y": 335.0,
+        "x": 1039.057239057239,
+        "y": 241.1279461279462,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2805,8 +2805,8 @@
       "name": "lec02em-u05-1-em-c1-t",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 942.0,
-        "y": 369.0,
+        "x": 1051.057239057239,
+        "y": 275.1279461279462,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2830,8 +2830,8 @@
       "name": "lec02em-u05-1-em-c2",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 780.0,
-        "y": 485.0,
+        "x": 889.057239057239,
+        "y": 391.1279461279462,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2856,8 +2856,8 @@
       "name": "lec02em-u05-1-em-c2-t",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 792.0,
-        "y": 519.0,
+        "x": 902.196127946128,
+        "y": 425.1279461279462,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2881,8 +2881,8 @@
       "name": "lec02em-u05-1-em-c3",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 630.0,
-        "y": 335.0,
+        "x": 739.057239057239,
+        "y": 241.1279461279462,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2907,8 +2907,8 @@
       "name": "lec02em-u05-1-em-c3-t",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 642.0,
-        "y": 369.0,
+        "x": 753.3350168350167,
+        "y": 278.5446127946129,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -2932,7 +2932,7 @@
       "name": "lec02em-u05-1-em-ln0",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2955,7 +2955,7 @@
         "sourceNodeId": "lec02em-u05-1-em-c0",
         "sourceHook": 4,
         "targetNodeId": "lec02em-u05-1-em-c1",
-        "targetHook": 12,
+        "targetHook": 0,
         "curve": true,
         "direction": "forward",
         "arrowSize": "medium"
@@ -2967,7 +2967,7 @@
       "name": "lec02em-u05-1-em-ln1",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2987,10 +2987,10 @@
       },
       "text": "",
       "connector": {
-        "sourceNodeId": "lec02em-u05-1-em-c1",
-        "sourceHook": 4,
+        "sourceNodeId": "lec02em-u05-1-em-c1-t",
+        "sourceHook": 8,
         "targetNodeId": "lec02em-u05-1-em-c2",
-        "targetHook": 12,
+        "targetHook": 4,
         "curve": true,
         "direction": "forward",
         "arrowSize": "medium"
@@ -3002,7 +3002,7 @@
       "name": "lec02em-u05-1-em-ln2",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -3023,9 +3023,9 @@
       "text": "",
       "connector": {
         "sourceNodeId": "lec02em-u05-1-em-c2",
-        "sourceHook": 4,
+        "sourceHook": 12,
         "targetNodeId": "lec02em-u05-1-em-c3",
-        "targetHook": 12,
+        "targetHook": 8,
         "curve": true,
         "direction": "forward",
         "arrowSize": "medium"
@@ -3037,7 +3037,7 @@
       "name": "lec02em-u05-1-em-ln3",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -3058,7 +3058,7 @@
       "text": "",
       "connector": {
         "sourceNodeId": "lec02em-u05-1-em-c3",
-        "sourceHook": 4,
+        "sourceHook": 0,
         "targetNodeId": "lec02em-u05-1-em-c0",
         "targetHook": 12,
         "curve": true,
@@ -3072,7 +3072,7 @@
       "name": "lec02em-u05-2-title",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3098,7 +3098,7 @@
       "name": "lec02em-u05-2-body",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -3123,7 +3123,7 @@
       "name": "lec02em-u05-2-formula",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 310,
         "scaleX": 1,
         "scaleY": 1,
@@ -3148,7 +3148,7 @@
       "name": "lec02em-u05-2-english",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 1520.0,
+        "x": 1520,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -3173,7 +3173,7 @@
       "name": "lec02em-u05-3-title",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3199,7 +3199,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3229,7 +3229,7 @@
       "name": "lec02em-u05-3-body",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3254,7 +3254,7 @@
       "name": "lec02em-u05-3-english",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3279,7 +3279,7 @@
       "name": "lec02em-u05-4-title",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3305,7 +3305,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3335,7 +3335,7 @@
       "name": "lec02em-u05-4-body",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 5170.0,
+        "x": 5170,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3360,7 +3360,7 @@
       "name": "lec02em-u05-4-english",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 5170.0,
+        "x": 5170,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3385,7 +3385,7 @@
       "name": "lec02em-u05-5-title",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3411,7 +3411,7 @@
       "name": "lec02em-u05-5-body",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 5840.0,
+        "x": 5840,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -3436,7 +3436,7 @@
       "name": "lec02em-u05-5-english",
       "sceneId": "lec02em-scene-u05",
       "transform": {
-        "x": 5840.0,
+        "x": 5840,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -3482,8 +3482,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u04",
-        "targetNodeId": "lec02em-frame-u05",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u05",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -3532,7 +3532,7 @@
       "name": "lec02em-u06-1-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3558,7 +3558,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3588,7 +3588,7 @@
       "name": "lec02em-u06-1-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 700.0,
+        "x": 700,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3613,7 +3613,7 @@
       "name": "lec02em-u06-1-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 700.0,
+        "x": 700,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3638,7 +3638,7 @@
       "name": "lec02em-u06-2-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3664,7 +3664,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 2240.0,
+        "x": 2240,
         "y": 130,
         "scaleX": 1,
         "scaleY": 1,
@@ -3694,7 +3694,7 @@
       "name": "lec02em-u06-2-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3719,7 +3719,7 @@
       "name": "lec02em-u06-2-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3744,7 +3744,7 @@
       "name": "lec02em-u06-3-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3770,7 +3770,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3800,7 +3800,7 @@
       "name": "lec02em-u06-3-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3825,7 +3825,7 @@
       "name": "lec02em-u06-3-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3850,7 +3850,7 @@
       "name": "lec02em-u06-4-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3876,7 +3876,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3906,7 +3906,7 @@
       "name": "lec02em-u06-4-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 5170.0,
+        "x": 5170,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -3931,7 +3931,7 @@
       "name": "lec02em-u06-4-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 5170.0,
+        "x": 5170,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -3956,7 +3956,7 @@
       "name": "lec02em-u06-5-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -3982,7 +3982,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -4012,7 +4012,7 @@
       "name": "lec02em-u06-5-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 6460.0,
+        "x": 6460,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -4037,7 +4037,7 @@
       "name": "lec02em-u06-5-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 6460.0,
+        "x": 6460,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -4062,7 +4062,7 @@
       "name": "lec02em-u06-6-title",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 7260.0,
+        "x": 7260,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -4088,7 +4088,7 @@
       "name": "lec02em-u06-6-body",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 7280.0,
+        "x": 7280,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -4113,7 +4113,7 @@
       "name": "lec02em-u06-6-english",
       "sceneId": "lec02em-scene-u06",
       "transform": {
-        "x": 7280.0,
+        "x": 7280,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -4159,8 +4159,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u05",
-        "targetNodeId": "lec02em-frame-u06",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u06",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -4209,7 +4209,7 @@
       "name": "lec02em-u07-1-title",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -4235,7 +4235,7 @@
       "name": "lec02em-u07-1-body",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -4260,7 +4260,7 @@
       "name": "lec02em-u07-1-english",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -4285,7 +4285,7 @@
       "name": "lec02em-u07-2-title",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -4311,7 +4311,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -4341,7 +4341,7 @@
       "name": "lec02em-u07-2-body",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -4366,7 +4366,7 @@
       "name": "lec02em-u07-2-english",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -4391,7 +4391,7 @@
       "name": "lec02em-u07-3-title",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -4417,7 +4417,7 @@
       "name": "lec02em-u07-3-body",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -4442,7 +4442,7 @@
       "name": "lec02em-u07-3-english",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -4467,7 +4467,7 @@
       "name": "lec02em-u07-3-init-c0",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -4493,7 +4493,7 @@
       "name": "lec02em-u07-3-init-c0-t",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2956.0,
+        "x": 2956,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -4518,7 +4518,7 @@
       "name": "lec02em-u07-3-init-c1",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 3300.0,
+        "x": 3300,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -4544,7 +4544,7 @@
       "name": "lec02em-u07-3-init-c1-t",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 3316.0,
+        "x": 3316,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -4569,7 +4569,7 @@
       "name": "lec02em-u07-3-init-c2",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 3660.0,
+        "x": 3660,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -4595,7 +4595,7 @@
       "name": "lec02em-u07-3-init-c2-t",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 3676.0,
+        "x": 3676,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -4620,7 +4620,7 @@
       "name": "lec02em-u07-3-init-ln0",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2880.0,
+        "x": 2880,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -4655,7 +4655,7 @@
       "name": "lec02em-u07-3-init-ln1",
       "sceneId": "lec02em-scene-u07",
       "transform": {
-        "x": 2880.0,
+        "x": 2880,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -4711,8 +4711,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u06",
-        "targetNodeId": "lec02em-frame-u07",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u07",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -4761,7 +4761,7 @@
       "name": "lec02em-u08-1-title",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -4787,7 +4787,7 @@
       "name": "lec02em-u08-1-trap0",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -4813,7 +4813,7 @@
       "name": "lec02em-u08-1-trap0cn",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 170,
         "scaleX": 1,
         "scaleY": 1,
@@ -4838,7 +4838,7 @@
       "name": "lec02em-u08-1-trap0en",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 255,
         "scaleX": 1,
         "scaleY": 1,
@@ -4863,7 +4863,7 @@
       "name": "lec02em-u08-1-trap1",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 660.0,
+        "x": 660,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -4889,7 +4889,7 @@
       "name": "lec02em-u08-1-trap1cn",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 680.0,
+        "x": 680,
         "y": 170,
         "scaleX": 1,
         "scaleY": 1,
@@ -4914,7 +4914,7 @@
       "name": "lec02em-u08-1-trap1en",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 680.0,
+        "x": 680,
         "y": 255,
         "scaleX": 1,
         "scaleY": 1,
@@ -4939,7 +4939,7 @@
       "name": "lec02em-u08-1-trap2",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 390,
         "scaleX": 1,
         "scaleY": 1,
@@ -4965,7 +4965,7 @@
       "name": "lec02em-u08-1-trap2cn",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 415,
         "scaleX": 1,
         "scaleY": 1,
@@ -4990,7 +4990,7 @@
       "name": "lec02em-u08-1-trap2en",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -5015,7 +5015,7 @@
       "name": "lec02em-u08-1-trap3",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 660.0,
+        "x": 660,
         "y": 390,
         "scaleX": 1,
         "scaleY": 1,
@@ -5041,7 +5041,7 @@
       "name": "lec02em-u08-1-trap3cn",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 680.0,
+        "x": 680,
         "y": 415,
         "scaleX": 1,
         "scaleY": 1,
@@ -5066,7 +5066,7 @@
       "name": "lec02em-u08-1-trap3en",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 680.0,
+        "x": 680,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -5091,7 +5091,7 @@
       "name": "lec02em-u08-2-title",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -5117,7 +5117,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -5147,7 +5147,7 @@
       "name": "lec02em-u08-2-body",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -5172,7 +5172,7 @@
       "name": "lec02em-u08-2-english",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -5197,7 +5197,7 @@
       "name": "lec02em-u08-3-title",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -5223,7 +5223,7 @@
       "name": "lec02em-u08-3-body",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -5248,7 +5248,7 @@
       "name": "lec02em-u08-3-english",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2960.0,
+        "x": 2960,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -5273,7 +5273,7 @@
       "name": "lec02em-u08-3-stable-c0",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -5299,7 +5299,7 @@
       "name": "lec02em-u08-3-stable-c0-t",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2956.0,
+        "x": 2956,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -5324,7 +5324,7 @@
       "name": "lec02em-u08-3-stable-c1",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 3300.0,
+        "x": 3300,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -5350,7 +5350,7 @@
       "name": "lec02em-u08-3-stable-c1-t",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 3316.0,
+        "x": 3316,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -5375,7 +5375,7 @@
       "name": "lec02em-u08-3-stable-c2",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 3660.0,
+        "x": 3660,
         "y": 300,
         "scaleX": 1,
         "scaleY": 1,
@@ -5401,7 +5401,7 @@
       "name": "lec02em-u08-3-stable-c2-t",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 3676.0,
+        "x": 3676,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -5426,7 +5426,7 @@
       "name": "lec02em-u08-3-stable-ln0",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2880.0,
+        "x": 2880,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5461,7 +5461,7 @@
       "name": "lec02em-u08-3-stable-ln1",
       "sceneId": "lec02em-scene-u08",
       "transform": {
-        "x": 2880.0,
+        "x": 2880,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5517,8 +5517,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u07",
-        "targetNodeId": "lec02em-frame-u08",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u08",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -5567,7 +5567,7 @@
       "name": "lec02em-u09-1-title",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 60.0,
+        "x": 60,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -5593,7 +5593,7 @@
       "name": "lec02em-u09-1-body",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -5618,7 +5618,7 @@
       "name": "lec02em-u09-1-english",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 80.0,
+        "x": 80,
         "y": 350,
         "scaleX": 1,
         "scaleY": 1,
@@ -5643,8 +5643,8 @@
       "name": "lec02em-u09-1-summary-c0",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 760.0,
-        "y": 165.0,
+        "x": 760,
+        "y": 165,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5669,8 +5669,8 @@
       "name": "lec02em-u09-1-summary-c0-t",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 772.0,
-        "y": 199.0,
+        "x": 772,
+        "y": 199,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5694,8 +5694,8 @@
       "name": "lec02em-u09-1-summary-c1",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 910.0,
-        "y": 315.0,
+        "x": 910,
+        "y": 315,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5720,8 +5720,8 @@
       "name": "lec02em-u09-1-summary-c1-t",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 922.0,
-        "y": 349.0,
+        "x": 922,
+        "y": 349,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5745,8 +5745,8 @@
       "name": "lec02em-u09-1-summary-c2",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 760.0,
-        "y": 465.0,
+        "x": 760,
+        "y": 465,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5771,8 +5771,8 @@
       "name": "lec02em-u09-1-summary-c2-t",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 772.0,
-        "y": 499.0,
+        "x": 772,
+        "y": 499,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5796,8 +5796,8 @@
       "name": "lec02em-u09-1-summary-c3",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 610.0,
-        "y": 315.0,
+        "x": 610,
+        "y": 315,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5822,8 +5822,8 @@
       "name": "lec02em-u09-1-summary-c3-t",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 622.0,
-        "y": 349.0,
+        "x": 622,
+        "y": 349,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -5847,7 +5847,7 @@
       "name": "lec02em-u09-1-summary-ln0",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5882,7 +5882,7 @@
       "name": "lec02em-u09-1-summary-ln1",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5917,7 +5917,7 @@
       "name": "lec02em-u09-1-summary-ln2",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5952,7 +5952,7 @@
       "name": "lec02em-u09-1-summary-ln3",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -5987,7 +5987,7 @@
       "name": "lec02em-u09-2-title",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -6013,7 +6013,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -6043,7 +6043,7 @@
       "name": "lec02em-u09-2-body",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -6068,7 +6068,7 @@
       "name": "lec02em-u09-2-english",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 2140.0,
+        "x": 2140,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -6093,7 +6093,7 @@
       "name": "lec02em-u09-3-title",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -6119,7 +6119,7 @@
       "name": "analytic",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 2940.0,
+        "x": 2940,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -6149,7 +6149,7 @@
       "name": "lec02em-u09-3-body",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 150,
         "scaleX": 1,
         "scaleY": 1,
@@ -6174,7 +6174,7 @@
       "name": "lec02em-u09-3-english",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 3580.0,
+        "x": 3580,
         "y": 330,
         "scaleX": 1,
         "scaleY": 1,
@@ -6199,7 +6199,7 @@
       "name": "lec02em-u09-4-title",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 4380.0,
+        "x": 4380,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -6225,7 +6225,7 @@
       "name": "lec02em-u09-4-body",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 4400.0,
+        "x": 4400,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -6250,7 +6250,7 @@
       "name": "lec02em-u09-4-english",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 4400.0,
+        "x": 4400,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -6275,7 +6275,7 @@
       "name": "lec02em-u09-5-title",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 5820.0,
+        "x": 5820,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -6301,7 +6301,7 @@
       "name": "lec02em-u09-5-body",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 5840.0,
+        "x": 5840,
         "y": 145,
         "scaleX": 1,
         "scaleY": 1,
@@ -6326,7 +6326,7 @@
       "name": "lec02em-u09-5-english",
       "sceneId": "lec02em-scene-u09",
       "transform": {
-        "x": 5840.0,
+        "x": 5840,
         "y": 500,
         "scaleX": 1,
         "scaleY": 1,
@@ -6372,8 +6372,8 @@
       "text": "接續",
       "connector": {
         "sourceNodeId": "lec02em-frame-u08",
-        "targetNodeId": "lec02em-frame-u09",
         "sourceHook": 4,
+        "targetNodeId": "lec02em-frame-u09",
         "targetHook": 12,
         "curve": false,
         "direction": "forward",
@@ -6389,10 +6389,8 @@
   "steps": [
     {
       "id": "lec02em-u01-frame",
+      "order": 0,
       "label": "混合密度疊加多個元件",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6406,77 +6404,77 @@
           "height": 720
         }
       },
-      "order": 0
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u01-p1",
-      "label": "混合密度是加權和",
       "order": 1,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "混合密度是加權和",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u01",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u01-p2",
-      "label": "兩座峰不能硬塞成一座",
       "order": 2,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "兩座峰不能硬塞成一座",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u01",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u01-p3",
-      "label": "元件更多不保證更好",
       "order": 3,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "元件更多不保證更好",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u01",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u02-frame",
+      "order": 4,
       "label": "未知標籤使概似糾纏",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6490,77 +6488,77 @@
           "height": 720
         }
       },
-      "order": 4
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u02-p1",
-      "label": "標籤與參數互相依賴",
       "order": 5,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "標籤與參數互相依賴",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u02",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u02-p2",
-      "label": "對數內的和纏住參數",
       "order": 6,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "對數內的和纏住參數",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u02",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u02-p3",
-      "label": "肉眼分群不等於知道標籤",
       "order": 7,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "肉眼分群不等於知道標籤",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u02",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u03-frame",
+      "order": 8,
       "label": "E步保留分群不確定性",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6574,77 +6572,77 @@
           "height": 720
         }
       },
-      "order": 8
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u03-p1",
-      "label": "責任度是後驗機率",
       "order": 9,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "責任度是後驗機率",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u03",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u03-p2",
-      "label": "一半一半是誠實的答案",
       "order": 10,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "一半一半是誠實的答案",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u03",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u03-p3",
-      "label": "硬取最大會丟掉資訊",
       "order": 11,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "硬取最大會丟掉資訊",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u03",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-frame",
+      "order": 12,
       "label": "M步使用責任度加權",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6658,119 +6656,119 @@
           "height": 720
         }
       },
-      "order": 12
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-p1",
-      "label": "責任度提供更新權重",
       "order": 13,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "責任度提供更新權重",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u04",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-p2",
-      "label": "均值與係數有解析更新",
       "order": 14,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "均值與係數有解析更新",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u04",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-p3",
-      "label": "球形變異數要除以維度",
       "order": 15,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "球形變異數要除以維度",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u04",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-p4",
-      "label": "三點軟分配仍各分一點五",
       "order": 16,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "三點軟分配仍各分一點五",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u04",
         "point": {
-          "x": 4960.0,
-          "y": 310.0
+          "x": 4960,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u04-p5",
-      "label": "新均值向彼此靠近",
       "order": 17,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "新均值向彼此靠近",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u04",
         "point": {
-          "x": 6400.0,
-          "y": 310.0
+          "x": 6400,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u05-frame",
+      "order": 18,
       "label": "概似不降不等於全域最佳",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6784,119 +6782,125 @@
           "height": 720
         }
       },
-      "order": 18
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u05-p1",
-      "label": "E與M交替改善概似",
       "order": 19,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "E與M交替改善概似",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u05",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
-        "zoom": 0.8780487804878049,
+        "zoom": 0.724390243902439,
         "referenceViewport": {
-          "width": 1280,
-          "height": 720
+          "width": 1056,
+          "height": 594
         }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "fallbackCamera": {
+        "x": 640,
+        "y": 310,
+        "zoom": 0.724390243902439,
+        "rotation": 0
       }
     },
     {
       "id": "lec02em-u05-p2",
-      "label": "期望完整概似定義Q",
       "order": 20,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "期望完整概似定義Q",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u05",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u05-p3",
-      "label": "第一次改善最大",
       "order": 21,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "第一次改善最大",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u05",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u05-p4",
-      "label": "每輪增量都在零以上",
       "order": 22,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "每輪增量都在零以上",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u05",
         "point": {
-          "x": 4960.0,
-          "y": 310.0
+          "x": 4960,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u05-p5",
-      "label": "不會變差不保證最好",
       "order": 23,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "不會變差不保證最好",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u05",
         "point": {
-          "x": 6400.0,
-          "y": 310.0
+          "x": 6400,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-frame",
+      "order": 24,
       "label": "百點迭代逐漸分開兩群",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -6910,140 +6914,140 @@
           "height": 720
         }
       },
-      "order": 24
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p1",
-      "label": "初始中心刻意幾乎重疊",
       "order": 25,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "初始中心刻意幾乎重疊",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p2",
-      "label": "前兩轮迅速推開中心",
       "order": 26,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "前兩轮迅速推開中心",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p3",
-      "label": "後续更新越來越小",
       "order": 27,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "後续更新越來越小",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p4",
-      "label": "第十轮界線變得清楚",
       "order": 28,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "第十轮界線變得清楚",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 4960.0,
-          "y": 310.0
+          "x": 4960,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p5",
-      "label": "樣本比例不必等於生成比例",
       "order": 29,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "樣本比例不必等於生成比例",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 6400.0,
-          "y": 310.0
+          "x": 6400,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u06-p6",
-      "label": "起點決定爬哪一座山",
       "order": 30,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "起點決定爬哪一座山",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u06",
         "point": {
-          "x": 7840.0,
-          "y": 310.0
+          "x": 7840,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u07-frame",
+      "order": 31,
       "label": "軟分配比硬標籤多留信心",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -7057,77 +7061,77 @@
           "height": 720
         }
       },
-      "order": 31
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u07-p1",
-      "label": "權重差異改變群模型",
       "order": 32,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "權重差異改變群模型",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u07",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u07-p2",
-      "label": "中間點需要保留不確定性",
       "order": 33,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "中間點需要保留不確定性",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u07",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u07-p3",
-      "label": "K-means可先幫EM找起點",
       "order": 34,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "K-means可先幫EM找起點",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u07",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u08-frame",
+      "order": 35,
       "label": "概似很大也可能是漏洞",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -7141,77 +7145,77 @@
           "height": 720
         }
       },
-      "order": 35
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u08-p1",
-      "label": "四個常見坑要先認識",
       "order": 36,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "四個常見坑要先認識",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u08",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u08-p2",
-      "label": "變異數崩塌不是好答案",
       "order": 37,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "變異數崩塌不是好答案",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u08",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u08-p3",
-      "label": "穩定責任度要避免下溢",
       "order": 38,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "穩定責任度要避免下溢",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u08",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-frame",
+      "order": 39,
       "label": "記住軟分配與加權更新",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -7225,118 +7229,120 @@
           "height": 720
         }
       },
-      "order": 39
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-p1",
-      "label": "EM串起未知標籤與參數",
       "order": 40,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "EM串起未知標籤與參數",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u09",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-p2",
-      "label": "再跑一輪只給參數提示",
       "order": 41,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "再跑一輪只給參數提示",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u09",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-p3",
-      "label": "硬分群與比例值得再思考",
       "order": 42,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "硬分群與比例值得再思考",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u09",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-p4",
-      "label": "中英術語對照核心概念",
       "order": 43,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "中英術語對照核心概念",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u09",
         "point": {
-          "x": 4960.0,
-          "y": 310.0
+          "x": 4960,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     },
     {
       "id": "lec02em-u09-p5",
-      "label": "中英術語串起實作警告",
       "order": 44,
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
+      "label": "中英術語串起實作警告",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec02em-scene-u09",
         "point": {
-          "x": 6400.0,
-          "y": 310.0
+          "x": 6400,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth"
     }
   ],
   "metadata": {
     "title": "圖型識別 第2週｜混合模型與 EM",
     "createdAt": "2026-10-09T13:18:48.033896+00:00",
-    "updatedAt": "2026-10-09T13:18:48.033896+00:00",
+    "updatedAt": "2026-10-11T13:36:21.782Z",
     "aspectRatio": "16:9"
   }
 }
