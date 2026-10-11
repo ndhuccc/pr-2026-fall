@@ -10,6 +10,7 @@ block, and leaves the rest of mkdocs.yml untouched.
 """
 from __future__ import annotations
 
+import argparse
 import re
 import sys
 from pathlib import Path
@@ -100,6 +101,7 @@ def render_nav() -> str:
 
 
 def main() -> int:
+    argparse.ArgumentParser(description=__doc__.split("\n\n")[0]).parse_args()
     text = MK.read_text(encoding="utf-8")
     block = render_nav()
     if NAV_START in text and NAV_END in text:
