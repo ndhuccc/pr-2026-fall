@@ -258,7 +258,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 - 問:作業編號?發佈日與截止日?題目?(繳交方式固定為「學生自建一個作業 Repo、整學期共用,並加老師為協作者」,不必再問,見 `assignments/README.md`;評分流程見 `.agents/skills/assignment-grading/SKILL.md`;作業理解測驗見 `.agents/skills/assignment-quiz/SKILL.md`)
 - 設計整份作業(說明、輸入/輸出、Rubric、操作指引)與產生 LabTube 匯入檔:照 `.agents/skills/assignment-design/SKILL.md`。
 - 作法:複製 `assignments/hw01/` 為 `hwNN/`,改 `README.md`(題目、繳交內容、rubric、AI 使用聲明)。日期用絕對日期,不要寫「下週」。
-- 同步:`schedule.md` 標示發佈與截止週次。
+- 同步:`schedule.md` 標示發佈與截止週次。網站側邊欄「作業」會自動列出每份 `assignments/hwNN/README.md`(標題取該檔第一個 `# ` 標題;第一項是「作業繳交說明」),由 `scripts/sync_nav.py` 在建置時產生,不要手改 `mkdocs.yml` 的 `nav:`。
 
 ### 5.4 公告或異動(調課、延期、更正)
 - 問:什麼變了?從何時生效?影響哪些人?

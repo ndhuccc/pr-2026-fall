@@ -21,8 +21,8 @@ NAV_END = "# --- nav 結束 ---\n"
 
 # 側邊導覽的固定骨架:標題 -> 檔案或資料夾的 README
 FIXED_HEAD = [("首頁 Home", "index.md"), ("課程大綱 Syllabus", "syllabus.md"), ("週次進度表 Schedule", "schedule.md")]
+ASSIGNMENTS_GUIDE = ("作業繳交說明 Submission Guide", "assignments/README.md")
 FIXED_TAIL = [
-    ("作業 Assignments", "assignments/README.md"),
     ("專題 Projects", "projects/README.md"),
     ("考試與測驗 Exams & Quizzes", "exams/README.md"),
     ("實驗 Labs", "labs/README.md"),
@@ -64,6 +64,23 @@ def lecture_order() -> list[tuple[str, str, str]]:
     return order
 
 
+def yq(title: str) -> str:
+    """YAML-safe nav title: quoted when it holds characters that could break a plain scalar."""
+    if re.search(r"[:#\[\]{}&*!|>'\"%@`,]", title) or title != title.strip():
+        return '"' + title.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    return title
+
+
+def assignment_order() -> list[tuple[str, str]]:
+    """(標題, 路徑) for every assignments/hwNN/README.md, ascending by hwNN. Title = the README's first heading."""
+    items = []
+    for p in sorted((ROOT / "assignments").glob("hw[0-9][0-9]/README.md")):
+        first = next((ln for ln in p.read_text(encoding="utf-8").splitlines() if ln.startswith("# ")), "")
+        title = first[2:].strip() or p.parent.name.upper()
+        items.append((title, f"assignments/{p.parent.name}/README.md"))
+    return items
+
+
 def render_nav() -> str:
     lines = ["nav:", *[f"  - {t}: {p}" for t, p in FIXED_HEAD]]
     lectures = lecture_order()
@@ -75,6 +92,9 @@ def render_nav() -> str:
         for week, items in groups.items():
             lines.append(f"      - 第 {week} 週 Week {week}:" if week else "      - 其他 Others:")
             lines += [f"          - {t}: {p}" for t, p in items]
+    lines.append("  - 作業 Assignments:")
+    lines.append(f"      - {yq(ASSIGNMENTS_GUIDE[0])}: {ASSIGNMENTS_GUIDE[1]}")
+    lines += [f"      - {yq(t)}: {p}" for t, p in assignment_order()]
     lines += [f"  - {t}: {p}" for t, p in FIXED_TAIL]
     return NAV_START + "\n".join(lines) + "\n" + NAV_END
 
