@@ -38,6 +38,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-11 — 老師決定所有作業的 Rubric 統一使用 40 / 35 / 25 配分(推導正確性 40、實驗與圖表 35、重現性 25;等級「優/可/待加強」各面向固定得 40/28/10、35/25/10、25/18/5)。`assignments/README.md` 新增 §6.0「標準配分」;`assignments/hw01/README.md` 的 Rubric 表加上點數,並移除題目旁原本的 30/50/20 分(避免與 Rubric 衝突,改為依面向給分)。LabTube 手冊(`docs/manual/`)新增計分公式數值示例、Rubric 分數意義與 AI 評分流程,以及 `labtube.rubric.v1` 格式。**尚未同步至 `ndhuccc/course-template`,待老師同意**。
 - 2026-10-11 — 依老師指示「全力將系統建立起來」,LabTube(`ndhuccc/LabTube`,本機 `E:\Users\ccchiang\Projects\LabTube`)完成作業與限時線上口試的實作(本機提交,**依老師指示尚未推送**)。內容:修課名單匯入、每課程權限(instructor/ta)、作業(截止時間同步到任務)、口試場次(每 60 秒輪替的加入碼、120 秒開始時限、裝置綁定與老師允許換裝置、IP 記錄、自動儲存、逾時與寬限、延長與補測)、題目匯入/作答匯出/評分匯入(`labtube.quiz|answers|grades|rubric|repocheck.v1`,整批驗證、禁止答案與選項欄位)、複核(旗標→待確認→邊界→抽樣)、定案/解鎖、成績公式 Rubric×((1−c)+c×得分率)、Repo 查核(老師本機 `gh` 工具,伺服器不保存 GitHub 憑證)、備份與封存/清除指令、緊急關閉開關。測試:pytest 全數通過;80 人負載測試(加入時間分散 20 秒)自動儲存 P95 約 95 ms,無錯誤無遺失。本次同步更新 `.agents/skills/assignment-quiz/SKILL.md`(題目檔改為合併的 `labtube.quiz.v1`、評分檔改為 `labtube.grades.v1`)與 `assignment-grading/SKILL.md`(選用的 `labtube.rubric.v1` 分數檔);**尚未同步至 `ndhuccc/course-template`,待老師同意**。尚待:T3.7 試跑、T4.0/T4.8 真實 GitHub 驗證、手機真機測試(iOS Safari、Android Chrome、LINE)、Linux 部署。
 
 - 2026-10-10 — 依老師同意,建立學生作業 Repo 範本 `ndhuccc/pr-2026-hw-template`(Public,已設為 Template repository,內容為 `student-template/` 的目前版本,只含骨架與檢查工具,沒有解答與成績)。推送後 GitHub Actions 的 `check-structure` 在實際 Repo 執行成功(10 秒)。網址已寫入 `assignments/README.md`;尚待老師在課堂或課程網站公告。之後修改 `student-template/` 時,需手動同步到該範本 Repo,學生已建立的 Repo 不會自動更新。
