@@ -74,9 +74,9 @@ $$
 
 ![預測分布是後驗加權下所有 p(x|θ) 的疊加（The predictive density is a posterior-weighted sum of p(x|theta) over theta）](../assets/figures/lec02-predictive-mixture.png)
 
-**圖說 `lec02-predictive-mixture`**：左圖每一條淡紫細線是一個 $p(x\mid\theta)$，高度依後驗 $p(\theta\mid X)$ 加權，節點由求積公式決定。深紫粗線是它們的和（峰值 $0.3283$），也就是預測分布。右圖把這個加權和與解析的積分結果疊在一起，兩條線幾乎重合（峰值都是 $0.3283$）。讀圖時先看左圖細線的高度分布，再看右圖兩條曲線是否貼合。〔功能：1、2、3〕
+**圖說 `lec02-predictive-mixture`**：左圖每一條淡紫細線是一個 $p(x\mid\theta)$，高度依後驗 $p(\theta\mid X)$ 加權，節點由求積公式決定。深紫粗線是它們的和（峰值 $0.3284$），也就是預測分布。右圖把這個加權和與解析的積分結果疊在一起，兩條線幾乎重合（峰值都是 $0.3284$）。讀圖時先看左圖細線的高度分布，再看右圖兩條曲線是否貼合。〔功能：1、2、3〕
 
-**Caption `lec02-predictive-mixture`**: in the left panel each pale purple curve is one $p(x\mid\theta)$, weighted by the posterior $p(\theta\mid X)$. The nodes come from the quadrature rule. The dark purple curve is their sum (peak $0.3283$), which is the predictive density. The right panel overlays this weighted sum on the analytic integral. The two curves nearly coincide, both with peak $0.3283$.
+**Caption `lec02-predictive-mixture`**: in the left panel each pale purple curve is one $p(x\mid\theta)$, weighted by the posterior $p(\theta\mid X)$. The nodes come from the quadrature rule. The dark purple curve is their sum (peak $0.3284$), which is the predictive density. The right panel overlays this weighted sum on the analytic integral. The two curves nearly coincide, both with peak $0.3284$.
 
 **常見迷思**:「貝氏推論只是換一種方法算點估計。」不是。它輸出的是整個分布，這比一個數字多出「不確定性有多大」的資訊。
 
