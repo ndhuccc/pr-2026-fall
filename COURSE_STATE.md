@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-12 — 新增 LabTube 導覽:`assignments/labtube.md`(老師導覽)、`assignments/labtube-student-manual/`(學生手冊網頁版與 PDF,放在課程網站)、`student-template/LABTUBE.md`(學生一頁版,已同步到 pr-2026-hw-template)。學生手冊的放置位置因此決定:課程網站。
+
 - 2026-10-11 — 網站側邊欄「作業」改為展開式清單(比照「講義」):第一項「作業繳交說明 Submission Guide」(原 `assignments/README.md`),其後依編號列出每份 `assignments/hwNN/README.md`(標題取自該檔第一個標題,含半形冒號時自動加引號)。實作:`scripts/sync_nav.py` 新增 `assignment_order()` 與 `yq()`(經老師要求修改共用腳本)。驗證:`sync_nav.py` 更新 `mkdocs.yml`;在暫存虛擬環境 `mkdocs build` 成功,首頁側邊欄含兩個連結,HW01 頁面的數學式(67 處)、表格與講義連結皆正常。
 - 2026-10-11 — 用 `assignment-design` 技能試設計 HW01「貝氏分類器:線性邊界與二次邊界」(共用 Σ 的線性高斯貝氏 vs 各類 Σ 的二次版;人工資料 A/B 學習曲線與決策邊界、Wine 資料集 5 折 CV、reg 選擇與討論)。老師決定:編號 hw01(取代原梯度下降範本,範本原文可由 git 還原)、2026-10-12 發佈、2026-10-25 23:59 截止。產出 `assignments/hw01/README.md` 與 `assignments/labtube-import/assignments_hw01.json`。驗證:檢查腳本 0 FAIL(WARN:無 course 欄位;「沒有標準答案」字樣誤判為解答);LabTube 驗證器無錯誤;另以暫存的參考解答跑過全部實驗確認可行(設定 B 參數經調整,使 Q 明顯優於 L;L 與 sklearn LDA 預測一致)。參考解答不在 Repo。尚待老師審閱,未提交、未匯入 LabTube。
 - 2026-10-11 — 新增作業設計技能 `.agents/skills/assignment-design/`(SKILL.md + `check_assignments.py`),AGENTS.md §5.3 加一行指向。用途:老師提出單元與作業題目後,agent 以實作作業設計專家身分寫出 `assignments/hwNN/README.md`(作業說明、輸入/輸出、操作指引、Rubric)並產生 LabTube 匯入檔 `labtube.assignments.v1`(存 `assignments/labtube-import/`,build_docs 不會公開 .json)。規則:Rubric 沿用標準配分 40/35/25、描述須可靜態判斷、參考解答不進公開檔案、日期不得編造。LabTube-dev 同步新增匯入功能(課程選單「📥 匯入作業」,講師限定,預覽後確認、整批驗證、只新增)。驗證:檢查腳本以暫存樣本測試(通過、日期/單元不一致被擋),與 LabTube 的 `validate_assignments` 對同兩份檔結果一致;尚未用真實作業實測,也未同步至 `ndhuccc/course-template`(需先經老師同意)。hw01 範本尚無「學習目標」「操作指引」「對應單元」欄位,首次使用本技能時須一併補上。尚未提交。
