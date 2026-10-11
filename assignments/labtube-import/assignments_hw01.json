@@ -1,5 +1,6 @@
 {
   "schema": "labtube.assignments.v1",
+  "course": "PR115",
   "assignments": [
     {
       "code": "hw01",
