@@ -1,6 +1,6 @@
 ---
 name: assignment-design
-description: 扮演「樣式識別」領域的實作作業設計專家,依老師給的單元與作業題目,設計完整作業(作業說明、輸入/輸出要求、評分標準 Rubric、操作指引),寫成 assignments/hwNN/README.md,並產生可匯入 LabTube 的 labtube.assignments.v1 檔。用於老師要求「設計作業」、「出 HWNN」、「新增作業」、「產生 LabTube 匯入檔」時。只設計不批改、不寫入學生 Repo、不放參考解答進公開檔案、不編造日期。
+description: 扮演「樣式識別」領域的實作作業設計專家,依老師給的單元與作業題目,設計完整作業(作業說明、輸入/輸出要求、評分標準 Rubric、操作指引),寫成 assignments/hwNN/README.md,並產生可匯入 LabTube 的 labtube.assignments.v1 檔(含完整作業說明 details,學生與老師都能在 LabTube 看到)。用於老師要求「設計作業」、「出 HWNN」、「新增作業」、「產生 LabTube 匯入檔」時。只設計不批改、不寫入學生 Repo、不放參考解答進公開檔案、不編造日期。
 ---
 
 # 作業設計指引(給 AI Agent)
@@ -23,7 +23,7 @@ description: 扮演「樣式識別」領域的實作作業設計專家,依老師
 6. **不執行來路不明的程式、不下載未經說明的資料。** 作業用的資料集必須是**公開、授權允許教學使用、體積小**(單檔建議 ≤ 5 MB)的資料,或由程式自動產生(固定隨機種子)。寫明來源與授權;不確定授權就問老師。
 7. **不要替老師做決定。** 作業的主題範圍、難度、分組與否、是否沿用上一份作業的程式,不確定就問,一次一個問題,附選項與預設值。
 8. **只做設計,不宣稱最終。** 完成後請老師審閱;老師說「好」之前,不要提交、不要推送(課程 Repo 的提交規則見 `AGENTS.md`,老師已授權直接推到 `main`,但仍需先經老師審閱內容)。
-9. **LabTube 匯入檔只能新增作業。** 該系統不會覆寫已存在的代號;不要產生會與既有代號衝突的檔案。不要在檔案內放任何學生資料。
+9. **LabTube 匯入檔不放任何學生資料。** 匯入預設只新增作業;若代號已存在,只有老師在匯入頁勾選「更新已存在的作業」才會更新(不動成績、口試與繳交紀錄)。不要替老師決定要不要覆蓋。
 
 ## 1. 開始前:讀現況,再問缺的
 
@@ -101,44 +101,51 @@ description: 扮演「樣式識別」領域的實作作業設計專家,依老師
 - 圖用相對路徑;**不要放在 README 裡的內容**:答案、解題程式碼、學生資料。
 - 題目編號與 Rubric 面向的對應要寫清楚(例如「第 1 題主要對應推導正確性」),沿用 hw01 的那句 blockquote。
 
-### 3.2 LabTube 匯入檔(必要)
+### 3.2 LabTube 匯入檔(必要,由 README 自動產生)
 
-路徑:`assignments/labtube-import/assignments_<hwNN>.json`(多份一起匯入時用 `assignments_hwNN-hwMM.json`)。
-這個資料夾的 `.json` **不會**被複製到公開網站(`build_docs.py` 的 `ALLOWED_SUFFIXES` 不含 `.json`);仍不得放任何學生資料。
+**README 是唯一的內容來源**:匯入檔不要手寫,改 README 之後執行
 
-```json
-{
-  "schema": "labtube.assignments.v1",
-  "course": "<課號,與 LabTube 的課程代號一致;不確定就省略此欄>",
-  "assignments": [
-    {
-      "code": "hw02",
-      "title": "<作業名稱,≤ 200 字>",
-      "unit": "<單元名稱,≤ 200 字>",
-      "opens_at": "2026-10-12 00:00",
-      "due_at": "2026-10-26 23:59",
-      "rubric_max": 100,
-      "rubric_url": "https://ndhuccc.github.io/pr-2026-fall/assignments/hw02/"
-    }
-  ]
-}
+```bash
+python3 .agents/skills/assignment-design/build_labtube_import.py hw02            # 單份
+python3 .agents/skills/assignment-design/build_labtube_import.py hw02 hw03 --course <LabTube 課程代號>   # 多份、帶課程代號
 ```
 
-欄位規則(LabTube 會整批驗證,**任何一項不符整批不匯入**):
+程式會讀 `assignments/hwNN/README.md`,寫出 `assignments/labtube-import/assignments_<hwNN>.json`
+(這個資料夾的 `.json` **不會**被複製到公開網站,但仍不得放任何學生資料)。對應關係:
+
+| README | 匯入檔 |
+|---|---|
+| `# HW NN — 作業名稱` | `title` |
+| 表格「發佈日」「截止日」(絕對日期;截止日寫 `(23:59,台北時間)`) | `opens_at`(00:00)、`due_at` |
+| 表格「對應單元」 | `unit`(同名單元在 LabTube 會沿用,沒有就新建) |
+| 表格「配分」 | `rubric_max`(固定 100) |
+| `mkdocs.yml` 的 `site_url` + `assignments/hwNN/` | `rubric_url`(學生在 LabTube 可連到課程網站版) |
+| 表格「預計花費」「繳交方式」 | `details` 的第一段「作業資訊」 |
+| 每個 `## 標題` 段落 | `details.sections[]`:`{"title": 標題, "body": 該段的 Markdown}` |
+
+`details` 就是**學生與老師在 LabTube「作業說明」頁看到的全部內容**:學習目標、背景、題目(含輸入/輸出要求)、資料與環境、操作指引、繳交內容、評分標準、常見錯誤。所以 README 的每一段都要寫到「學生只看 LabTube 就能做完」的程度。
+
+LabTube 會整批驗證,**任何一項不符整批不匯入**:
 
 | 欄位 | 規則 |
 |---|---|
 | `schema` | 固定為 `labtube.assignments.v1` |
-| `course` | 選填;有填就必須等於 LabTube 的課程代號 |
+| `course` | 選填;有填就必須等於 LabTube 的課程代號(不確定就省略) |
 | `code` | 小寫 `hw` 加兩位數字,檔內不重複,且**必須與 `assignments/hwNN/` 資料夾名稱和學生標籤 `hwNN-submit` 一致** |
-| `title` | 必填,1–200 字,與 README 標題的作業名稱一致 |
-| `unit` | 必填,1–200 字;同名單元會沿用,沒有就新建 |
-| `opens_at` / `due_at` | 選填;格式 `"YYYY-MM-DD HH:MM"`,**台北時間**;`opens_at` 必須早於 `due_at`;必須與 README 表格的發佈日、截止日一致 |
-| `rubric_max` | 正整數,**固定 100**(與標準配分一致) |
-| `rubric_url` | 選填,≤ 300 字;用 `mkdocs.yml` 的 `site_url` + `assignments/hwNN/` |
-| 其他欄位 | **不得出現**(未知欄位會被拒絕) |
+| `title` | 必填,1–200 字 |
+| `unit` | 必填,1–200 字 |
+| `opens_at` / `due_at` | 選填;`"YYYY-MM-DD HH:MM"`,台北時間;`opens_at` 早於 `due_at` |
+| `rubric_max` | 正整數,**固定 100** |
+| `rubric_url` | 選填,≤ 300 字 |
+| `details` | 選填但**本課程一律要有**:`{"sections": [{"title", "body"}]}`;最多 30 段,標題 ≤ 100 字且不重複,每段 body(Markdown)≤ 30000 字,全文 ≤ 200000 字;不得有其他欄位 |
+| 其他欄位 | **不得出現** |
 
-**不要**加入答案、題目內容、Rubric 細節或任何學生資料;匯入檔只描述作業的「殼」。
+`body` 的寫法:標準 Markdown(標題、清單、表格、程式碼區塊)與數學式 `$…$`、`$$…$$`;HTML 會被 LabTube 清除。相對連結(例如 `../README.md`)會在轉換時改成課程網站的完整網址,所以 README 裡照常用相對連結即可。
+學生在**發佈時間(`opens_at`)之前**看不到說明內容(只看到發佈時間),老師與助教隨時可看;所以日期務必設對。
+
+**不要**把答案、參考解答或任何學生資料放進 README(也就不會進 `details`)。
+
+**更新已匯入的作業**:改 README、重新產生匯入檔,到 LabTube **匯入作業**頁勾選「更新已存在的作業」。只會更新檔案裡有寫的欄位與說明,所屬單元、成績、口試與繳交紀錄不會動;沒勾選時已存在的代號會被拒絕。
 
 ### 3.3 同步其他檔案
 
@@ -166,13 +173,13 @@ description: 扮演「樣式識別」領域的實作作業設計專家,依老師
 
 ## 5. 自我檢查(交給老師之前必做)
 
-1. 執行離線檢查(只需標準函式庫):
+1. 先執行 `build_labtube_import.py` 產生匯入檔(§3.2),再執行離線檢查(只需標準函式庫):
 
    ```bash
    python3 .agents/skills/assignment-design/check_assignments.py assignments/labtube-import/assignments_hwNN.json
    ```
 
-   它會檢查匯入檔的欄位規則(與 LabTube 的驗證器同一套),並對照 `assignments/hwNN/README.md` 的日期、配分與 Rubric 點數是否一致。**有 FAIL 就修到沒有**;`WARN` 要自行判斷並在回報時說明。
+   它會檢查匯入檔的欄位規則(與 LabTube 的驗證器同一套,含 `details`),並對照 `assignments/hwNN/README.md` 的日期、單元、配分與 Rubric 點數是否一致,同時確認匯入檔的說明和 README **同步**(不同步就 FAIL,重新產生即可)。**有 FAIL 就修到沒有**;`WARN` 要自行判斷並在回報時說明。
 2. 人工逐項核對:
    - [ ] 每個題目都回到某條學習目標;沒有多餘題目
    - [ ] 每個任務都有輸入、輸出、限制;函式介面與報告產出寫明
@@ -191,7 +198,7 @@ description: 扮演「樣式識別」領域的實作作業設計專家,依老師
 
 1. 設計了什麼(一句話)+ 檔案位置。
 2. 需要老師決定或確認的事(最多 3 項,附預設值)。
-3. 匯入 LabTube 的步驟:到 LabTube 選單 **📚 課程 → 📥 匯入作業**,上傳檔案,先看預覽,確認後按「確認匯入」。**你不能代替老師按確認。**
+3. 匯入 LabTube 的步驟:到 LabTube 選單 **📚 課程 → 📥 匯入作業**,上傳檔案,先看預覽(會列出新增或更新、說明段數),確認後按「確認匯入」;之後在課程樹的作業卡片按「說明」,檢查學生會看到的內容。要修改已匯入的作業,勾選「更新已存在的作業」。**你不能代替老師按確認。**
 4. 自我檢查的結果(通過項、WARN、未能驗證的項目)。
 
 不要把整份 README 貼回對話;給路徑即可,老師要看再開。

@@ -16,7 +16,8 @@ from pathlib import Path
 
 SCHEMA = "labtube.assignments.v1"
 CODE_RE = re.compile(r"^hw\d{2}$")
-ALLOWED = {"code", "title", "unit", "opens_at", "due_at", "rubric_max", "rubric_url"}
+ALLOWED = {"code", "title", "unit", "opens_at", "due_at", "rubric_max", "rubric_url", "details"}
+REQUIRED_SECTIONS = ("題目", "評分標準")      # 匯入檔的作業說明至少要有這兩段(標題以包含為準)
 # assignments/README.md §6.0 的標準配分:面向 -> (優, 可, 待加強)
 STANDARD = {"推導正確性": (40, 28, 10), "實驗與圖表": (35, 25, 10), "重現性": (25, 18, 5)}
 ROOT = Path(__file__).resolve().parents[3]
@@ -39,6 +40,51 @@ def parse_time(text):
 
 def is_int(x):
     return isinstance(x, int) and not isinstance(x, bool)
+
+
+MISSING = object()
+
+
+def check_details(tag, details):
+    """作業說明 details:規則同 LabTube 的 validate_details。"""
+    if details is MISSING:
+        add("WARN", tag, "沒有 details(作業說明);學生在 LabTube 看不到題目與評分標準,請用 build_labtube_import.py 產生")
+        return
+    if not isinstance(details, dict) or set(details) - {"sections"}:
+        add("FAIL", tag, "details 必須是只含 sections 的物件")
+        return
+    secs = details.get("sections")
+    if not isinstance(secs, list) or not secs:
+        add("FAIL", tag, "details.sections 必須是非空陣列")
+        return
+    if len(secs) > 30:
+        add("FAIL", tag, f"details.sections 最多 30 段(目前 {len(secs)})")
+    titles, total = set(), 0
+    for n, sec in enumerate(secs, 1):
+        where = f"{tag} 說明第 {n} 段"
+        if not isinstance(sec, dict) or set(sec) - {"title", "body"}:
+            add("FAIL", where, "必須是只含 title 與 body 的物件")
+            continue
+        t, b = sec.get("title"), sec.get("body")
+        if not isinstance(t, str) or not t.strip() or len(t.strip()) > 100:
+            add("FAIL", where, "title 需為 1–100 字")
+        elif t.strip() in titles:
+            add("FAIL", where, f"標題「{t.strip()}」重複")
+        else:
+            titles.add(t.strip())
+        if not isinstance(b, str) or not b.strip() or len(b) > 30000:
+            add("FAIL", where, "body(Markdown)需為 1–30000 字")
+        else:
+            total += len(b)
+            if re.search(r"<\s*(script|iframe|object|embed)\b", b, re.I):
+                add("WARN", where, "內容含 script/iframe 等標籤;LabTube 會清除它們,請改用 Markdown")
+            if re.search(r"\]\((?!https?:|mailto:|#)[^)\s]+\)", b):
+                add("WARN", where, "內容有相對連結;在 LabTube 裡會失效,請用 build_labtube_import.py 轉成完整網址")
+    if total > 200000:
+        add("FAIL", tag, f"說明全文超過 200000 字(目前 {total})")
+    for need in REQUIRED_SECTIONS:
+        if not any(need in t for t in titles):
+            add("WARN", tag, f"作業說明沒有「{need}」段落")
 
 
 def check_entry(n, a, seen):
@@ -86,6 +132,7 @@ def check_entry(n, a, seen):
     extra = set(a) - ALLOWED
     if extra:
         add("FAIL", tag, "不認得的欄位:" + ", ".join(sorted(extra)))
+    check_details(tag, a.get("details", MISSING))
     return tag, code, a, times
 
 
@@ -147,6 +194,16 @@ def check_readme(tag, code, a, times):
     for pat in (r"準確率[^。\n]{0,10}(達|超過|≥|>=)", r"可(以)?一鍵(執行|跑)", r"能(夠)?(成功)?執行(並|且)?(得到|產生)"):
         if re.search(pat, rub):
             add("WARN", where, f"Rubric 似乎要求「執行結果」({pat});評分不執行程式,請改成可靜態判斷的描述")
+    # 匯入檔的作業說明要和 README 同步(README 是唯一來源)
+    if "details" in a:
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            import build_labtube_import as blt
+            fresh, _ = blt.build_entry(str(code), blt.site_url())
+            if fresh["details"] != a["details"]:
+                add("FAIL", where, "匯入檔的 details 和 README 不同步;請重新執行 build_labtube_import.py")
+        except SystemExit as exc:
+            add("WARN", where, f"無法比對 README 與 details:{exc}")
     # 公開頁面不得含答案
     if re.search(r"(參考解答|標準答案|solution\s*=|## *解答)", text):
         add("WARN", where, "README 內疑似含有解答字樣;作業說明會公開,請確認沒有答案")
