@@ -57,9 +57,9 @@ $$
 
 ![混合密度的三條曲線：兩條加權元件、混合密度、單一高斯的最大似然配適（A mixture density: two weighted components, the mixture, and a single-Gaussian ML fit）](../assets/figures/lec02-mixture-1d-components.png)
 
-**圖說 `lec02-mixture-1d-components`**：兩條虛線是加權後的元件 $P_1p_1$ 與 $P_2p_2$，實線黑線是它們的和，灰點線是用 600 個樣本配出的單一高斯（種子 7）。混合密度有兩座峰：高度 0.239 與 0.266。單一高斯的峰只有 0.231，而且位置落在兩峰之間的鞍部附近，兩座峰都抓不到。讀圖時先比較虛線的高度與實線兩座峰的關係，再看灰點線為什麼只有一座峰。〔功能：1、2〕
+**圖說 `lec02-mixture-1d-components`**：兩條虛線是加權後的元件 $P_1p_1$ 與 $P_2p_2$，實線黑線是它們的和，灰點線是用 600 個樣本配出的單一高斯（種子 7）。混合密度有兩座峰：高度 0.239 與 0.269。單一高斯的峰只有 0.231，而且位置落在兩峰之間的鞍部附近，兩座峰都抓不到。讀圖時先比較虛線的高度與實線兩座峰的關係，再看灰點線為什麼只有一座峰。〔功能：1、2〕
 
-**Caption `lec02-mixture-1d-components`**: the dashed curves are the weighted components $P_1p_1$ and $P_2p_2$. The solid black curve is their sum, and the grey dotted curve is a single Gaussian fitted to 600 samples (seed 7). The mixture has two peaks of height 0.239 and 0.266. The single Gaussian peaks at only 0.231 and sits near the saddle between them, so it captures neither peak.
+**Caption `lec02-mixture-1d-components`**: the dashed curves are the weighted components $P_1p_1$ and $P_2p_2$. The solid black curve is their sum, and the grey dotted curve is a single Gaussian fitted to 600 samples (seed 7). The mixture has two peaks of height 0.239 and 0.269. The single Gaussian peaks at only 0.231 and sits near the saddle between them, so it captures neither peak.
 
 **常見迷思**：「混合模型的參數比單一高斯多，所以一定配得比較好。」多參數確實更靈活，但也更容易過擬合。真正該問的是：元件的數量 $J$ 要怎麼決定？這通常靠模型選擇準則或領域知識，不是越多越好。
 
@@ -203,7 +203,7 @@ $$
 
 | 步驟（Step） | 元件 1（Component 1） | 元件 2（Component 2） |
 |---|---|---|
-| 責任度總和 $N_k$（Total responsibility） | $1.731+0.500+0.269=1.500$ | $0.269+0.500+0.731=1.500$ |
+| 責任度總和 $N_k$（Total responsibility） | $0.731+0.500+0.269=1.500$ | $0.269+0.500+0.731=1.500$ |
 | 新均值 $\hat{\mu}_k$（New mean） | $(0.731\times0.5+0.5\times1.0+0.269\times1.5)/1.5=0.846$ | $(0.269\times0.5+0.5\times1.0+0.731\times1.5)/1.5=1.154$ |
 | 新變異數 $\hat{\sigma}_k^2$（New variance） | $0.143$ | $0.143$ |
 | 新混合係數 $\hat{P}_k$（New mixing coefficient） | $1.5/3=0.5$ | $1.5/3=0.5$ |
