@@ -3,11 +3,18 @@
 
     py .agents/skills/view-from-text/tools/audit_deck.py slides/lec03.jbd.json            # bilingual course deck (default)
     py .agents/skills/view-from-text/tools/audit_deck.py slides/lec03.jbd.json --monolingual
+    py .agents/skills/view-from-text/tools/audit_deck.py slides/lec03.jbd.json --lecture lectures/lec03.md --speaker-notes
 
 Covers AUDIT_CHECKLIST.md: A (format), B (cameras, connector colours, FRAME STYLE), E10 (contrast incl. frame titles),
-D (fonts, titles), H5 (step / reticle structure), G14 (image alt), L (bilingual layout).
+D (fonts, titles), H5 (step / reticle structure), G14 (image alt), L (bilingual layout),
+N3 (results without a visible derivation), P (speaker notes) and, with --lecture,
+O1 (every lecture figure is used or explicitly excluded) and N6 (lecture formulas / numbers missing from the slides).
 It does NOT replace the visual checks: run preview_deck.py and look at the contact sheets, then open the deck in JianBauDau.
 Exit code 1 when there is any FAIL.
+
+Conventions the checks rely on (SKILL.md 4F, 3B):
+  * an image redrawn from a lecture figure carries the figure id in its node "name", e.g.  "fig:lec02-mixture-em-stages";
+  * a page whose numbers come from a program run (iteration tables etc.) says so on the page: "〔程式計算〕" / "(computed)".
 """
 import argparse
 import json
@@ -27,10 +34,42 @@ def en_words(text):
     return len(re.findall(r"[A-Za-z]{2,}", MATH.sub(" ", text)))
 
 
+NUM3 = re.compile(r"(?<![\d.])-?\d+\.\d{3,}(?![\d])")          # results usually carry 3+ decimals
+NUM2 = re.compile(r"(?<![\d.\w])-?\d+\.\d{2,}(?![\d])")
+_OPS = r"(\\times|×|\+|−|\\frac|\\dfrac|/|\\sum|\\cdot|\\sqrt|\^|\||\d\s*-\s*\d|\(\s*-?\d)"
+DERIV = re.compile(r"=.*" + _OPS + "|" + _OPS + r".*=")   # a line with "=" and some arithmetic
+COMPUTED = re.compile(r"〔程式計算〕|\(computed\)|程式計算|computed (by|with)")
+
+
+def norm_tex(s):
+    """Normalise a TeX string for coverage comparison (spacing, sizing and delimiters do not matter)."""
+    s = re.sub(r"\\(left|right|bigl|bigr|Bigl|Bigr|biggl|biggr|big|Big|textstyle|displaystyle|,|;|!|quad|qquad|:)", "", s)
+    s = re.sub(r"\\mathbf\{\\Theta\}", r"\\Theta", s)
+    s = re.sub(r"[\s{}]", "", s)
+    return s.strip(".,;。，")
+
+
+def lecture_inventory(path):
+    text = open(path, encoding="utf-8").read()
+    figs = re.findall(r"\*\*圖說 `([^`]+)`\*\*", text)
+    formulas = []
+    for block in re.findall(r"\$\$(.*?)\$\$", text, re.S):
+        for piece in re.split(r",\s*\\qquad|\\qquad|,\s*\\quad", block):
+            p = norm_tex(piece)
+            if len(p) >= 8: formulas.append((piece.strip(), p))
+    # numbers from the Chinese paragraphs only (the English ones repeat them)
+    zh = "\n".join(ln for ln in text.split("\n") if CJK.search(ln) and not ln.lstrip().startswith(("**Caption", "**Example", "**Plain", "**Formal", "`[Added]`")))
+    numbers = sorted(set(NUM2.findall(zh)), key=lambda v: float(v))
+    return figs, formulas, numbers
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("deck")
     ap.add_argument("--monolingual", action="store_true", help="skip the bilingual checks (only when the teacher asked for Chinese only)")
+    ap.add_argument("--lecture", help="the lecture the deck was made from: checks figure coverage (O1) and formula/number coverage (N6)")
+    ap.add_argument("--exclude-fig", action="append", default=[], help="lecture figure id the teacher agreed to leave out (repeatable)")
+    ap.add_argument("--speaker-notes", action="store_true", help="every content page must carry speaker notes (P1)")
     args = ap.parse_args()
     doc = json.load(open(args.deck, encoding="utf-8"))
     S, N, ST = doc["scenes"], doc["nodes"], doc["steps"]
@@ -79,8 +118,11 @@ def main():
         if not (180 <= s["durationMs"] <= 10000 and 0 <= s["holdMs"] <= 30000 and s["easing"] in ("linear", "easeInOut", "smooth")): F("A10", s["id"])
         if len(s["label"]) > 20: Wn("D3", f"step label longer than 20 chars: {s['label']!r}")
         if re.match(r"^\s*\d+[\s.、)]", s["label"]): F("D3", f"step label starts with a number: {s['label']!r}")
-        if "speakerNotes" in s: Wn("J3", "speaker notes present (they are public)")
         t = s["target"]
+        if args.speaker_notes and t["sceneId"] != root:
+            notes = s.get("speakerNotes", "")
+            if len(re.sub(r"\s", "", notes)) < 60: F("P1", f"page step {s['id']} has no (or too short) speaker notes")
+            elif re.search(r"[\w.+-]+@[\w-]+\.[\w.]+|\b\d{9}\b", notes): F("P3", f"speaker notes of {s['id']} look like they contain an e-mail or a student number")
         if t["sceneId"] not in S: F("A11", s["id"])
         if t["kind"] in ("enter-frame", "scene-overview"): F("H5", f"{t['kind']} must not be used ({s['id']})")
         if t["kind"] == "scene-point" and t.get("referenceViewport") != {"width": W, "height": H}: F("B5", f"referenceViewport {s['id']}")
@@ -183,15 +225,60 @@ def main():
                 if en_words(n["text"]) < 3:
                     no_en_nodes += 1
                     Wn("L1", f"{tag}: no English line in {n['id']}: {n['text'][:24]!r}")
-                elif "*" not in n["text"]:
-                    Wn("L2", f"{tag}: English line is not italic (*...*) in {n['id']}")
+                else:
+                    if "*" not in n["text"]:
+                        Wn("L2", f"{tag}: English line is not italic (*...*) in {n['id']}")
+                    cjk = len(CJK.findall(MATH.sub("", n["text"])))
+                    if cjk >= 12 and en_words(n["text"]) < 0.3 * cjk:
+                        Wn("L3", f"{tag}: English is a keyword fragment, not a full translation ({en_words(n['text'])} words for {cjk} Chinese chars) in {n['id']}")
     if not args.monolingual and total_nodes and no_en_nodes / total_nodes > 0.1:
         F("L1", f"{no_en_nodes}/{total_nodes} text blocks have no English line (more than 10%)")
+    alts = {}
     for nid, n in N.items():
         if n["type"] == "image":
             if len(n["image"]["alt"].strip()) < 12: F("G14", f"image alt too short: {nid}")
             if n["image"].get("fit") != "contain": F("G14", f"image fit must be 'contain': {nid}")
             if len(n["image"]["src"]) > 340_000: F("G13", f"embedded SVG too large: {nid}")
+            alts.setdefault(n["image"]["alt"].strip(), []).append(nid)
+    for a, ids in alts.items():
+        if len(ids) > 1 and len({N[i]["image"]["src"] for i in ids}) > 1:
+            Wn("G14", f"{len(ids)} different images share one generic alt text {a[:40]!r}: describe what each one shows")
+
+    # ------------------------------------------------------------ N3 results that appear without a derivation
+    page_text = {}
+    for (sid, idx), ns in pages.items():
+        page_text[(sid, idx)] = "\n".join(n.get("text", "") for n in ns if n["type"] in ("text", "shape"))
+    lines = [ln for txt in page_text.values() for ln in txt.split("\n")]
+    derived = set()
+    for ln in lines:
+        if DERIV.search(ln):
+            derived.update(v.lstrip("-") for v in NUM3.findall(ln))
+    for key, txt in sorted(page_text.items()):
+        if COMPUTED.search(txt): continue
+        for v in sorted(set(x.lstrip("-") for x in NUM3.findall(txt))):
+            if v not in derived:
+                Wn("N3", f"{key[0]}#p{key[1] + 1}: {v} appears with no derivation line anywhere in the deck (write the steps, or mark the page 〔程式計算〕)")
+
+    # ------------------------------------------------------------ lecture coverage: O1 figures, N6 formulas and numbers
+    if args.lecture:
+        figs, formulas, numbers = lecture_inventory(args.lecture)
+        names = " ".join(n.get("name", "") + " " + n.get("image", {}).get("alt", "") for n in N.values() if n["type"] == "image")
+        for f in figs:
+            if f in args.exclude_fig: continue
+            if f"fig:{f}" not in names:
+                F("O1", f"lecture figure {f} is not used (redraw it with the same data and name the image node 'fig:{f}', "
+                        f"or get the teacher's OK and pass --exclude-fig {f})")
+        alltex = norm_tex("\n".join(page_text.values()))
+        miss = [raw for raw, p in formulas if p not in alltex]
+        for raw in miss:
+            Wn("N6", f"lecture formula not on any slide: {raw[:70]!r}")
+        plain = "\n".join(page_text.values())
+        missing_nums = [v for v in numbers if not re.search(r"(?<![\d.])" + re.escape(v) + r"(?!\d)", plain)]
+        if missing_nums:
+            Wn("N6", f"{len(missing_nums)}/{len(numbers)} numbers of the lecture are not on any slide: {', '.join(missing_nums[:30])}"
+                     + (" ..." if len(missing_nums) > 30 else ""))
+        print(f"lecture: {args.lecture} | figures {len(figs)} (missing {sum(1 for f in figs if f not in args.exclude_fig and f'fig:{f}' not in names)}, "
+              f"excluded {len(args.exclude_fig)})  formulas {len(formulas)} (missing {len(miss)})  numbers {len(numbers)} (missing {len(missing_nums)})")
 
     print(f"audit_deck: {args.deck}  | scenes {len(S)}  nodes {len(N)}  steps {len(ST)}  frames {len(frames)}  pages {len(pages)}  "
           f"{'monolingual' if args.monolingual else 'bilingual'}")
