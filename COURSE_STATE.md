@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-12 — 依老師要求補強 `slides/lec02-bayesian-network-inference.jbd.json` 的數值計算:單元 2 第 5、7、8、9 頁改為逐步算式(全機率加總、互補、邊際機率、貝氏定理的分子分母);新增兩頁「上傳到 y」「上傳到 x」,補上原本只給結果的 0.327 與 0.403 的推導(換向後再加總);單元 1 第 5 頁寫出 P(w|x) 的四項加總。所有數字已用暴力聯合分布獨立驗證(P(y=1|w=1)=0.327405、P(x=0|w=1)=0.403395)。新增頁沿用本份簡報原有版式(無英文副標),尚未在 JianBauDau 實際檢視。
+
 - 2026-10-12 — 新增 LabTube 導覽:`assignments/labtube.md`(老師導覽)、`assignments/labtube-student-manual/`(學生手冊網頁版與 PDF,放在課程網站)、`student-template/LABTUBE.md`(學生一頁版,已同步到 pr-2026-hw-template)。學生手冊的放置位置因此決定:課程網站。
 
 - 2026-10-11 — 網站側邊欄「作業」改為展開式清單(比照「講義」):第一項「作業繳交說明 Submission Guide」(原 `assignments/README.md`),其後依編號列出每份 `assignments/hwNN/README.md`(標題取自該檔第一個標題,含半形冒號時自動加引號)。實作:`scripts/sync_nav.py` 新增 `assignment_order()` 與 `yq()`(經老師要求修改共用腳本)。驗證:`sync_nav.py` 更新 `mkdocs.yml`;在暫存虛擬環境 `mkdocs build` 成功,首頁側邊欄含兩個連結,HW01 頁面的數學式(67 處)、表格與講義連結皆正常。

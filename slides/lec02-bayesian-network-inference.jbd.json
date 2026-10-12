@@ -100,20 +100,32 @@
         "lec02bni-u02-9-probability",
         "lec02bni-u02-9-calc",
         "lec02bni-u02-9-explain",
+        "lec02bni-u02-12-title",
+        "lec02bni-u02-12-chain240-c0",
+        "lec02bni-u02-12-chain240-c0-t",
+        "lec02bni-u02-12-chain240-c1",
+        "lec02bni-u02-12-chain240-c1-t",
+        "lec02bni-u02-12-chain240-c2",
+        "lec02bni-u02-12-chain240-c2-t",
+        "lec02bni-u02-12-chain240-c3",
+        "lec02bni-u02-12-chain240-c3-t",
+        "lec02bni-u02-12-chain240-ln0",
+        "lec02bni-u02-12-chain240-ln1",
+        "lec02bni-u02-12-chain240-ln2",
+        "lec02bni-u02-12-kind240",
+        "lec02bni-u02-12-note13",
         "lec02bni-u02-10-title",
-        "lec02bni-u02-10-chain240-c0",
-        "lec02bni-u02-10-chain240-c0-t",
-        "lec02bni-u02-10-chain240-c1",
-        "lec02bni-u02-10-chain240-c1-t",
-        "lec02bni-u02-10-chain240-c2",
-        "lec02bni-u02-10-chain240-c2-t",
-        "lec02bni-u02-10-chain240-c3",
-        "lec02bni-u02-10-chain240-c3-t",
-        "lec02bni-u02-10-chain240-ln0",
-        "lec02bni-u02-10-chain240-ln1",
-        "lec02bni-u02-10-chain240-ln2",
-        "lec02bni-u02-10-kind240",
-        "lec02bni-u02-10-note13"
+        "lec02bni-u02-10-card0",
+        "lec02bni-u02-10-card1",
+        "lec02bni-u02-10-ct0",
+        "lec02bni-u02-10-ct1",
+        "lec02bni-u02-10-note",
+        "lec02bni-u02-11-title",
+        "lec02bni-u02-11-card0",
+        "lec02bni-u02-11-card1",
+        "lec02bni-u02-11-ct0",
+        "lec02bni-u02-11-ct1",
+        "lec02bni-u02-11-note"
       ],
       "camera": {
         "x": 640.0,
@@ -980,13 +992,13 @@
       "sceneId": "lec02bni-scene-u01",
       "transform": {
         "x": 6510.0,
-        "y": 390,
+        "y": 365,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 460,
-      "height": 200,
+      "height": 270,
       "zIndex": 5,
       "locked": false,
       "style": {
@@ -996,7 +1008,7 @@
         "fontSize": 24,
         "radius": 0
       },
-      "text": "x→y→z→w：\nP(w|x) 對 y、z 加總。\nSum over y and z."
+      "text": "x→y→z→w：P(w|x) 對 y、z 加總\nSum over y and z\n$=\\sum_{y,z}P(y\\mid x)P(z\\mid y)P(w\\mid z)$\n共 4 項：(y,z)=(0,0),(0,1),(1,0),(1,1)\nFour terms, one per pair (y,z)."
     },
     "lec02bni-frame-u02": {
       "id": "lec02bni-frame-u02",
@@ -2073,24 +2085,24 @@
       "name": "lec02bni-u02-5-calc",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 6510.0,
-        "y": 160,
+        "x": 6500.0,
+        "y": 150,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
-      "height": 270,
+      "width": 500,
+      "height": 300,
       "zIndex": 4,
       "locked": false,
       "style": {
         "fill": "transparent",
         "stroke": "transparent",
         "textColor": "#f2ede4",
-        "fontSize": 25,
+        "fontSize": 24,
         "radius": 0
       },
-      "text": "$$P(z=1\\mid x=1)$$\n$=0.25(0.4)+0.6(0.6)=0.46$"
+      "text": "對 y 加總（全機率公式）\nSum over y (total probability)\n$P(z=1\\mid x=1)$\n$=P(z=1\\mid y=1)\\,P(y=1\\mid x=1)$\n$\\;\\;+P(z=1\\mid y=0)\\,P(y=0\\mid x=1)$\n$=0.25\\times0.4+0.6\\times0.6$\n$=0.10+0.36=0.46$"
     },
     "lec02bni-u02-5-explain": {
       "id": "lec02bni-u02-5-explain",
@@ -2098,14 +2110,14 @@
       "name": "lec02bni-u02-5-explain",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 6510.0,
-        "y": 445,
+        "x": 6500.0,
+        "y": 465,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
-      "height": 220,
+      "width": 500,
+      "height": 150,
       "zIndex": 5,
       "locked": false,
       "style": {
@@ -2115,7 +2127,7 @@
         "fontSize": 22,
         "radius": 0
       },
-      "text": "z=0 的互補機率為 0.54。\nMarginalize y; P(z=0|x=1)=0.54."
+      "text": "互補：P(z=0|x=1)=1−0.46=0.54。\nComplement: P(z=0|x=1)=1−0.46=0.54."
     },
     "lec02bni-u02-6-title": {
       "id": "lec02bni-u02-6-title",
@@ -2255,13 +2267,13 @@
       "name": "lec02bni-u02-7-calc",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 9390.0,
-        "y": 160,
+        "x": 9380.0,
+        "y": 150,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
+      "width": 500,
       "height": 270,
       "zIndex": 4,
       "locked": false,
@@ -2269,10 +2281,10 @@
         "fill": "transparent",
         "stroke": "transparent",
         "textColor": "#f2ede4",
-        "fontSize": 25,
+        "fontSize": 24,
         "radius": 0
       },
-      "text": "$$P(w=0\\mid x=1)$$\n$=0.55(0.46)+0.70(0.54)$\n$=0.631\\approx0.63$"
+      "text": "查表取互補 / Complements from the CPT\n$P(w=0\\mid z=1)=1-0.45=0.55$\n$P(w=0\\mid z=0)=1-0.30=0.70$\n$P(w=0\\mid x=1)$\n$=0.55\\times0.46+0.70\\times0.54$\n$=0.253+0.378=0.631$"
     },
     "lec02bni-u02-7-explain": {
       "id": "lec02bni-u02-7-explain",
@@ -2280,14 +2292,14 @@
       "name": "lec02bni-u02-7-explain",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 9390.0,
-        "y": 445,
+        "x": 9380.0,
+        "y": 435,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
-      "height": 220,
+      "width": 500,
+      "height": 190,
       "zIndex": 5,
       "locked": false,
       "style": {
@@ -2297,7 +2309,7 @@
         "fontSize": 22,
         "radius": 0
       },
-      "text": "交出去的數可快取。\nCache the outgoing result.\n練習：改 P(x=1)=0.5，重算同兩個查詢。"
+      "text": "檢查：P(w=1|x=1)=1−0.631=0.369。\nCheck: P(w=1|x=1)=1−0.631=0.369.\n交出去的數可快取。Cache the outgoing result.\n練習：改 P(x=1)=0.5，重算同兩個查詢。"
     },
     "lec02bni-u02-8-title": {
       "id": "lec02bni-u02-8-title",
@@ -2362,23 +2374,23 @@
       "sceneId": "lec02bni-scene-u02",
       "transform": {
         "x": 10140.0,
-        "y": 175,
+        "y": 130,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 670,
-      "height": 240,
+      "height": 310,
       "zIndex": 4,
       "locked": false,
       "style": {
         "fill": "transparent",
         "stroke": "transparent",
         "textColor": "#f2ede4",
-        "fontSize": 26,
+        "fontSize": 24,
         "radius": 0
       },
-      "text": "$P(y=1)=0.4(0.6)+0.3(0.4)=0.36$\n\n$P(z=1)=0.25(0.36)+0.6(0.64)=0.474$"
+      "text": "$P(y=1)=\\sum_x P(y=1\\mid x)P(x)$\n$=0.4\\times0.6+0.3\\times0.4=0.24+0.12=0.36$\n$P(y=0)=1-0.36=0.64$\n$P(z=1)=0.25\\times0.36+0.6\\times0.64$\n$=0.09+0.384=0.474,\\quad P(z=0)=0.526$"
     },
     "lec02bni-u02-8-denom": {
       "id": "lec02bni-u02-8-denom",
@@ -2387,13 +2399,13 @@
       "sceneId": "lec02bni-scene-u02",
       "transform": {
         "x": 10150.0,
-        "y": 440,
+        "y": 445,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 650,
-      "height": 180,
+      "height": 200,
       "zIndex": 5,
       "locked": false,
       "style": {
@@ -2403,7 +2415,7 @@
         "fontSize": 24,
         "radius": 0
       },
-      "text": "P(w=1)=0.45(0.474)+0.3(0.526)=0.3711\n分母保留完整精度，再計算後驗。\nKeep full evidence precision for the posterior."
+      "text": "$P(w=1)=0.45\\times0.474+0.3\\times0.526$\n$=0.2133+0.1578=0.3711$\n分母保留完整精度，再計算後驗。\nKeep full evidence precision for the posterior."
     },
     "lec02bni-u02-9-title": {
       "id": "lec02bni-u02-9-title",
@@ -2467,24 +2479,24 @@
       "name": "lec02bni-u02-9-calc",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 12270.0,
-        "y": 160,
+        "x": 12260.0,
+        "y": 150,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
-      "height": 270,
+      "width": 500,
+      "height": 360,
       "zIndex": 4,
       "locked": false,
       "style": {
         "fill": "transparent",
         "stroke": "transparent",
         "textColor": "#f2ede4",
-        "fontSize": 25,
+        "fontSize": 24,
         "radius": 0
       },
-      "text": "$$P(z=1\\mid w=1)=\\frac{0.45(0.474)}{0.3711}$$\n$=0.5748\\approx0.575$"
+      "text": "貝氏定理 / Bayes' rule\n$$P(z\\mid w)=\\frac{P(w\\mid z)\\,P(z)}{P(w)}$$\n分子 numerator：$0.45\\times0.474=0.2133$\n$P(z=1\\mid w=1)=\\dfrac{0.2133}{0.3711}=0.5748$\n$P(z=0\\mid w=1)$\n$=1-0.5748=0.4252$"
     },
     "lec02bni-u02-9-explain": {
       "id": "lec02bni-u02-9-explain",
@@ -2492,14 +2504,14 @@
       "name": "lec02bni-u02-9-explain",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 12270.0,
-        "y": 445,
+        "x": 12260.0,
+        "y": 525,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 460,
-      "height": 220,
+      "width": 500,
+      "height": 150,
       "zIndex": 5,
       "locked": false,
       "style": {
@@ -2509,15 +2521,15 @@
         "fontSize": 22,
         "radius": 0
       },
-      "text": "再向上傳得到 P(x=0|w=1)=0.403。\nContinue upstream using the same CPTs."
+      "text": "下兩頁繼續往 y、x 上傳。\nNext: carry it upstream to y and x."
     },
-    "lec02bni-u02-10-title": {
-      "id": "lec02bni-u02-10-title",
+    "lec02bni-u02-12-title": {
+      "id": "lec02bni-u02-12-title",
       "type": "text",
-      "name": "lec02bni-u02-10-title",
+      "name": "lec02bni-u02-12-title",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13020.0,
+        "x": 15900.0,
         "y": 34,
         "scaleX": 1,
         "scaleY": 1,
@@ -2537,13 +2549,13 @@
       },
       "text": "反向交棒仍重用局部結果"
     },
-    "lec02bni-u02-10-chain240-c0": {
-      "id": "lec02bni-u02-10-chain240-c0",
+    "lec02bni-u02-12-chain240-c0": {
+      "id": "lec02bni-u02-12-chain240-c0",
       "type": "shape",
-      "name": "lec02bni-u02-10-chain240-c0",
+      "name": "lec02bni-u02-12-chain240-c0",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13020.0,
+        "x": 15900.0,
         "y": 240,
         "scaleX": 1,
         "scaleY": 1,
@@ -2563,13 +2575,13 @@
       "text": "",
       "shapeKind": "rectangle"
     },
-    "lec02bni-u02-10-chain240-c0-t": {
-      "id": "lec02bni-u02-10-chain240-c0-t",
+    "lec02bni-u02-12-chain240-c0-t": {
+      "id": "lec02bni-u02-12-chain240-c0-t",
       "type": "text",
-      "name": "lec02bni-u02-10-chain240-c0-t",
+      "name": "lec02bni-u02-12-chain240-c0-t",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13036.0,
+        "x": 15916.0,
         "y": 270,
         "scaleX": 1,
         "scaleY": 1,
@@ -2588,13 +2600,13 @@
       },
       "text": "x=0: 0.403"
     },
-    "lec02bni-u02-10-chain240-c1": {
-      "id": "lec02bni-u02-10-chain240-c1",
+    "lec02bni-u02-12-chain240-c1": {
+      "id": "lec02bni-u02-12-chain240-c1",
       "type": "shape",
-      "name": "lec02bni-u02-10-chain240-c1",
+      "name": "lec02bni-u02-12-chain240-c1",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13320.0,
+        "x": 16200.0,
         "y": 240,
         "scaleX": 1,
         "scaleY": 1,
@@ -2614,13 +2626,13 @@
       "text": "",
       "shapeKind": "rectangle"
     },
-    "lec02bni-u02-10-chain240-c1-t": {
-      "id": "lec02bni-u02-10-chain240-c1-t",
+    "lec02bni-u02-12-chain240-c1-t": {
+      "id": "lec02bni-u02-12-chain240-c1-t",
       "type": "text",
-      "name": "lec02bni-u02-10-chain240-c1-t",
+      "name": "lec02bni-u02-12-chain240-c1-t",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13336.0,
+        "x": 16216.0,
         "y": 270,
         "scaleX": 1,
         "scaleY": 1,
@@ -2639,13 +2651,13 @@
       },
       "text": "y: 0.327"
     },
-    "lec02bni-u02-10-chain240-c2": {
-      "id": "lec02bni-u02-10-chain240-c2",
+    "lec02bni-u02-12-chain240-c2": {
+      "id": "lec02bni-u02-12-chain240-c2",
       "type": "shape",
-      "name": "lec02bni-u02-10-chain240-c2",
+      "name": "lec02bni-u02-12-chain240-c2",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13620.0,
+        "x": 16500.0,
         "y": 240,
         "scaleX": 1,
         "scaleY": 1,
@@ -2665,13 +2677,13 @@
       "text": "",
       "shapeKind": "rectangle"
     },
-    "lec02bni-u02-10-chain240-c2-t": {
-      "id": "lec02bni-u02-10-chain240-c2-t",
+    "lec02bni-u02-12-chain240-c2-t": {
+      "id": "lec02bni-u02-12-chain240-c2-t",
       "type": "text",
-      "name": "lec02bni-u02-10-chain240-c2-t",
+      "name": "lec02bni-u02-12-chain240-c2-t",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13636.0,
+        "x": 16516.0,
         "y": 270,
         "scaleX": 1,
         "scaleY": 1,
@@ -2690,13 +2702,13 @@
       },
       "text": "z: 0.575"
     },
-    "lec02bni-u02-10-chain240-c3": {
-      "id": "lec02bni-u02-10-chain240-c3",
+    "lec02bni-u02-12-chain240-c3": {
+      "id": "lec02bni-u02-12-chain240-c3",
       "type": "shape",
-      "name": "lec02bni-u02-10-chain240-c3",
+      "name": "lec02bni-u02-12-chain240-c3",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13920.0,
+        "x": 16800.0,
         "y": 240,
         "scaleX": 1,
         "scaleY": 1,
@@ -2716,13 +2728,13 @@
       "text": "",
       "shapeKind": "rectangle"
     },
-    "lec02bni-u02-10-chain240-c3-t": {
-      "id": "lec02bni-u02-10-chain240-c3-t",
+    "lec02bni-u02-12-chain240-c3-t": {
+      "id": "lec02bni-u02-12-chain240-c3-t",
       "type": "text",
-      "name": "lec02bni-u02-10-chain240-c3-t",
+      "name": "lec02bni-u02-12-chain240-c3-t",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13936.0,
+        "x": 16816.0,
         "y": 270,
         "scaleX": 1,
         "scaleY": 1,
@@ -2741,13 +2753,13 @@
       },
       "text": "w=1\nEvidence"
     },
-    "lec02bni-u02-10-chain240-ln0": {
-      "id": "lec02bni-u02-10-chain240-ln0",
+    "lec02bni-u02-12-chain240-ln0": {
+      "id": "lec02bni-u02-12-chain240-ln0",
       "type": "connector",
-      "name": "lec02bni-u02-10-chain240-ln0",
+      "name": "lec02bni-u02-12-chain240-ln0",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 12960.0,
+        "x": 15840.0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2767,22 +2779,22 @@
       },
       "text": "",
       "connector": {
-        "sourceNodeId": "lec02bni-u02-10-chain240-c0",
+        "sourceNodeId": "lec02bni-u02-12-chain240-c0",
         "sourceHook": 4,
-        "targetNodeId": "lec02bni-u02-10-chain240-c1",
+        "targetNodeId": "lec02bni-u02-12-chain240-c1",
         "targetHook": 12,
         "curve": false,
         "direction": "backward",
         "arrowSize": "medium"
       }
     },
-    "lec02bni-u02-10-chain240-ln1": {
-      "id": "lec02bni-u02-10-chain240-ln1",
+    "lec02bni-u02-12-chain240-ln1": {
+      "id": "lec02bni-u02-12-chain240-ln1",
       "type": "connector",
-      "name": "lec02bni-u02-10-chain240-ln1",
+      "name": "lec02bni-u02-12-chain240-ln1",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 12960.0,
+        "x": 15840.0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2802,22 +2814,22 @@
       },
       "text": "",
       "connector": {
-        "sourceNodeId": "lec02bni-u02-10-chain240-c1",
+        "sourceNodeId": "lec02bni-u02-12-chain240-c1",
         "sourceHook": 4,
-        "targetNodeId": "lec02bni-u02-10-chain240-c2",
+        "targetNodeId": "lec02bni-u02-12-chain240-c2",
         "targetHook": 12,
         "curve": false,
         "direction": "backward",
         "arrowSize": "medium"
       }
     },
-    "lec02bni-u02-10-chain240-ln2": {
-      "id": "lec02bni-u02-10-chain240-ln2",
+    "lec02bni-u02-12-chain240-ln2": {
+      "id": "lec02bni-u02-12-chain240-ln2",
       "type": "connector",
-      "name": "lec02bni-u02-10-chain240-ln2",
+      "name": "lec02bni-u02-12-chain240-ln2",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 12960.0,
+        "x": 15840.0,
         "y": 0,
         "scaleX": 1,
         "scaleY": 1,
@@ -2837,22 +2849,22 @@
       },
       "text": "",
       "connector": {
-        "sourceNodeId": "lec02bni-u02-10-chain240-c2",
+        "sourceNodeId": "lec02bni-u02-12-chain240-c2",
         "sourceHook": 4,
-        "targetNodeId": "lec02bni-u02-10-chain240-c3",
+        "targetNodeId": "lec02bni-u02-12-chain240-c3",
         "targetHook": 12,
         "curve": false,
         "direction": "backward",
         "arrowSize": "medium"
       }
     },
-    "lec02bni-u02-10-kind240": {
-      "id": "lec02bni-u02-10-kind240",
+    "lec02bni-u02-12-kind240": {
+      "id": "lec02bni-u02-12-kind240",
       "type": "text",
-      "name": "lec02bni-u02-10-kind240",
+      "name": "lec02bni-u02-12-kind240",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13030.0,
+        "x": 15910.0,
         "y": 192,
         "scaleX": 1,
         "scaleY": 1,
@@ -2871,13 +2883,13 @@
       },
       "text": "Upstream message / 上傳"
     },
-    "lec02bni-u02-10-note13": {
-      "id": "lec02bni-u02-10-note13",
+    "lec02bni-u02-12-note13": {
+      "id": "lec02bni-u02-12-note13",
       "type": "text",
-      "name": "lec02bni-u02-10-note13",
+      "name": "lec02bni-u02-12-note13",
       "sceneId": "lec02bni-scene-u02",
       "transform": {
-        "x": 13040.0,
+        "x": 15920.0,
         "y": 550,
         "scaleX": 1,
         "scaleY": 1,
@@ -6466,6 +6478,312 @@
           "offset": "above"
         }
       }
+    },
+    "lec02bni-u02-10-title": {
+      "id": "lec02bni-u02-10-title",
+      "type": "text",
+      "name": "lec02bni-u02-10-title",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13020.0,
+        "y": 34,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 66,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 40,
+        "radius": 0,
+        "fontWeight": 700
+      },
+      "text": "上傳到 y：先換向再對 z 加總"
+    },
+    "lec02bni-u02-10-card0": {
+      "id": "lec02bni-u02-10-card0",
+      "type": "shape",
+      "name": "lec02bni-u02-10-card0",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13020.0,
+        "y": 135,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 565,
+      "height": 400,
+      "zIndex": 3,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "rgba(245,241,233,0.20)",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 16
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "lec02bni-u02-10-card1": {
+      "id": "lec02bni-u02-10-card1",
+      "type": "shape",
+      "name": "lec02bni-u02-10-card1",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13615.0,
+        "y": 135,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 565,
+      "height": 400,
+      "zIndex": 3,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "rgba(245,241,233,0.20)",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 16
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "lec02bni-u02-10-ct0": {
+      "id": "lec02bni-u02-10-ct0",
+      "type": "text",
+      "name": "lec02bni-u02-10-ct0",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13040.0,
+        "y": 152,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 525,
+      "height": 375,
+      "zIndex": 4,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 0
+      },
+      "text": "① 先用貝氏定理換向\nFlip with Bayes' rule\n$$P(y=1\\mid z)=\\frac{P(z\\mid y=1)\\,P(y=1)}{P(z)}$$\n$z=1$：$\\;0.25\\times0.36\\,/\\,0.474$\n$=0.09/0.474=0.1899$\n$z=0$：$\\;0.75\\times0.36\\,/\\,0.526$\n$=0.27/0.526=0.5133$"
+    },
+    "lec02bni-u02-10-ct1": {
+      "id": "lec02bni-u02-10-ct1",
+      "type": "text",
+      "name": "lec02bni-u02-10-ct1",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13635.0,
+        "y": 152,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 525,
+      "height": 375,
+      "zIndex": 4,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 0
+      },
+      "text": "② 再對 z 加總\nThen sum over z\n$P(y=1\\mid w=1)$\n$=\\sum_z P(y=1\\mid z)\\,P(z\\mid w=1)$\n$=0.1899\\times0.5748+0.5133\\times0.4252$\n$=0.1091+0.2183=0.3274\\approx0.327$"
+    },
+    "lec02bni-u02-10-note": {
+      "id": "lec02bni-u02-10-note",
+      "type": "text",
+      "name": "lec02bni-u02-10-note",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 13040.0,
+        "y": 560,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1120,
+      "height": 130,
+      "zIndex": 5,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 0
+      },
+      "text": "w 只透過 z 影響 y（鏈上 y⊥w | z），所以可以這樣加總。\nw affects y only through z (y ⟂ w given z), so the sum over z is valid."
+    },
+    "lec02bni-u02-11-title": {
+      "id": "lec02bni-u02-11-title",
+      "type": "text",
+      "name": "lec02bni-u02-11-title",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 14460.0,
+        "y": 34,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 66,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 40,
+        "radius": 0,
+        "fontWeight": 700
+      },
+      "text": "上傳到 x 得到零點四零三"
+    },
+    "lec02bni-u02-11-card0": {
+      "id": "lec02bni-u02-11-card0",
+      "type": "shape",
+      "name": "lec02bni-u02-11-card0",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 14460.0,
+        "y": 135,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 565,
+      "height": 400,
+      "zIndex": 3,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "rgba(245,241,233,0.20)",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 16
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "lec02bni-u02-11-card1": {
+      "id": "lec02bni-u02-11-card1",
+      "type": "shape",
+      "name": "lec02bni-u02-11-card1",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 15055.0,
+        "y": 135,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 565,
+      "height": 400,
+      "zIndex": 3,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "rgba(245,241,233,0.20)",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 16
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "lec02bni-u02-11-ct0": {
+      "id": "lec02bni-u02-11-ct0",
+      "type": "text",
+      "name": "lec02bni-u02-11-ct0",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 14480.0,
+        "y": 152,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 525,
+      "height": 375,
+      "zIndex": 4,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 0
+      },
+      "text": "① 先用貝氏定理換向\nFlip with Bayes' rule\n$$P(x=1\\mid y)=\\frac{P(y\\mid x=1)\\,P(x=1)}{P(y)}$$\n$y=1$：$\\;0.4\\times0.6\\,/\\,0.36$\n$=0.24/0.36=0.6667$\n$y=0$：$\\;0.6\\times0.6\\,/\\,0.64$\n$=0.36/0.64=0.5625$"
+    },
+    "lec02bni-u02-11-ct1": {
+      "id": "lec02bni-u02-11-ct1",
+      "type": "text",
+      "name": "lec02bni-u02-11-ct1",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 15075.0,
+        "y": 152,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 525,
+      "height": 375,
+      "zIndex": 4,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 0
+      },
+      "text": "② 再對 y 加總\nThen sum over y\n$P(y=0\\mid w=1)=1-0.3274=0.6726$\n$P(x=1\\mid w=1)$\n$=0.6667\\times0.3274+0.5625\\times0.6726$\n$=0.2183+0.3783=0.5966$\n$P(x=0\\mid w=1)$\n$=1-0.5966=0.4034\\approx0.403$"
+    },
+    "lec02bni-u02-11-note": {
+      "id": "lec02bni-u02-11-note",
+      "type": "text",
+      "name": "lec02bni-u02-11-note",
+      "sceneId": "lec02bni-scene-u02",
+      "transform": {
+        "x": 14480.0,
+        "y": 560,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1120,
+      "height": 130,
+      "zIndex": 5,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 0
+      },
+      "text": "同一組 CPT，方向相反：上傳序列 0.575 → 0.327 → 0.403。\nSame CPTs, opposite direction: the upstream sequence is 0.575 → 0.327 → 0.403."
     }
   },
   "steps": [
@@ -6807,7 +7125,7 @@
     },
     {
       "id": "lec02bni-u02-p10",
-      "label": "反向交棒仍重用局部結果",
+      "label": "上傳到 y：先換向再對 z 加總",
       "order": 16,
       "durationMs": 900,
       "holdMs": 500,
@@ -6817,6 +7135,48 @@
         "sceneId": "lec02bni-scene-u02",
         "point": {
           "x": 13600.0,
+          "y": 310.0
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    },
+    {
+      "id": "lec02bni-u02-p11",
+      "label": "上傳到 x 得到零點四零三",
+      "order": 17,
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec02bni-scene-u02",
+        "point": {
+          "x": 15040.0,
+          "y": 310.0
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      }
+    },
+    {
+      "id": "lec02bni-u02-p12",
+      "label": "反向交棒仍重用局部結果",
+      "order": 18,
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec02bni-scene-u02",
+        "point": {
+          "x": 16480.0,
           "y": 310.0
         },
         "zoom": 0.8780487804878049,
@@ -6845,12 +7205,12 @@
           "height": 720
         }
       },
-      "order": 17
+      "order": 19
     },
     {
       "id": "lec02bni-u03-p1",
       "label": "求和可依法往內分配",
-      "order": 18,
+      "order": 20,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6871,7 +7231,7 @@
     {
       "id": "lec02bni-u03-p2",
       "label": "局部消去再合併小結果",
-      "order": 19,
+      "order": 21,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6892,7 +7252,7 @@
     {
       "id": "lec02bni-u03-p3",
       "label": "分解改變運算成長次方",
-      "order": 20,
+      "order": 22,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6913,7 +7273,7 @@
     {
       "id": "lec02bni-u03-p4",
       "label": "消去順序影響中間大小",
-      "order": 21,
+      "order": 23,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6934,7 +7294,7 @@
     {
       "id": "lec02bni-u03-p5",
       "label": "運算量練習須看未觀察數",
-      "order": 22,
+      "order": 24,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6971,12 +7331,12 @@
           "height": 720
         }
       },
-      "order": 23
+      "order": 25
     },
     {
       "id": "lec02bni-u04-p1",
       "label": "結構邊與訊息箭頭不同",
-      "order": 24,
+      "order": 26,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -6997,7 +7357,7 @@
     {
       "id": "lec02bni-u04-p2",
       "label": "兩種查詢共用同一張網路",
-      "order": 25,
+      "order": 27,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7018,7 +7378,7 @@
     {
       "id": "lec02bni-u04-p3",
       "label": "反轉結構不是原本的查詢",
-      "order": 26,
+      "order": 28,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7039,7 +7399,7 @@
     {
       "id": "lec02bni-u04-p4",
       "label": "觀察結果不會讓因果倒流",
-      "order": 27,
+      "order": 29,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7076,12 +7436,12 @@
           "height": 720
         }
       },
-      "order": 28
+      "order": 30
     },
     {
       "id": "lec02bni-u05-p1",
       "label": "訓練先定拓樸再估機率表",
-      "order": 29,
+      "order": 31,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7102,7 +7462,7 @@
     {
       "id": "lec02bni-u05-p2",
       "label": "多重連通精確推論一般很難",
-      "order": 30,
+      "order": 32,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7123,7 +7483,7 @@
     {
       "id": "lec02bni-u05-p3",
       "label": "近似推論有兩大類方法",
-      "order": 31,
+      "order": 33,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
@@ -7144,7 +7504,7 @@
     {
       "id": "lec02bni-u05-p4",
       "label": "記住證據訊息與求和三件事",
-      "order": 32,
+      "order": 34,
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
