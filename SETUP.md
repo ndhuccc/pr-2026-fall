@@ -62,6 +62,8 @@ python scripts/new_semester.py             # 正式套用(需要 Python 3.11+)
 
 ### 步驟 4:作業繳交與評分(學生自建 Repo,無需設定)
 
+> LabTube 作業系統的開學前設定與每份作業流程,見 `assignments/labtube.md`。
+
 本課程作業**只採用一種流程**:每位學生建立**一個**私人 Repo(`pr-2026-hw-<學號>`)存放整學期作業,並把教師帳號 `ndhuccc` 加為協作者;
 每次作業在 `hwNN/` 資料夾完成,截止前打標籤 `hwNN-submit` 即完成繳交,不需另外寄網址。完整規範見 `assignments/README.md`。
 
@@ -79,8 +81,10 @@ python scripts/new_semester.py             # 正式套用(需要 Python 3.11+)
 4. 把範本網址公告給學生(課程網站或課堂),並在 `assignments/README.md` 補上網址。
 5. 之後修改 `student-template/` 時,同步到該範本 Repo(學生已建立的 Repo 不會自動更新)。
 
-> 提醒:每份新作業的 `hwNN/README.md` 都要寫清楚繳交內容、截止時間與 Rubric;Rubric 是 AI 評分唯一的依據。
-> 作業 Repo 由學生建立,不會取得本 Repo 的 `labs/*/solution/`,但仍請遵守下節的解答保密規則。
+> 提醒:
+> - 本課程的「課程簡稱」是 `pr-2026`:學生作業 Repo 名稱為 `pr-2026-hw-<學號>`,LabTube 本課程的「學生作業 Repo 名稱前綴」也要設為 `pr-2026`。
+> - 每份新作業的 `hwNN/README.md` 都要寫清楚繳交內容、截止時間與 Rubric;Rubric 是 AI 評分唯一的依據。
+> - 作業 Repo 由學生建立,不會取得本 Repo 的 `labs/*/solution/`,但仍請遵守下節的解答保密規則。
 
 ### 步驟 5:設定解答釋出日
 
