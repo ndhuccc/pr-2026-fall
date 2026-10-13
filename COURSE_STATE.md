@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-13 — 課程大綱補上「生成式 AI 使用政策」(採 idl-2026-fall 的規則,老師同意),`CHANGELOG.md` 記一筆〔公告〕,AI agent 提示詞頁改為把四欄位 commit 格式視為課程規定;`student-template/` 新增 `AGENTS.md`(給學生的 AI agent 作業助理規範,內容同 `assignments/ai-agent-prompt.md` 並改成 Repo 內使用的版本)、`CLAUDE.md`,README 加一行說明。尚未同步到學生作業範本 Repo。
+
 - 2026-10-13 — 新增給學生的 AI agent 提示詞 `assignments/ai-agent-prompt.md`(自 idl-2026-fall 同步,已改成本課程的名稱;沒有期末專題段落,AI 使用紀錄格式標為建議,遲交處理依課綱),並在作業說明頁、LabTube 導覽與側邊導覽(`scripts/sync_nav.py`)加入連結。
 
 - 2026-10-13 — 老師提供 LabTube 網址 http://134.208.2.44:5005;`assignments/README.md`(作業繳交說明頁)加入 LabTube 網址、學生手冊與 PDF 連結,並在繳交流程加上「到 LabTube 登記 Repo 與上傳執行結果」一步。
