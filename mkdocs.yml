@@ -60,6 +60,7 @@ nav:
           - 貝氏網路推論: lectures/lec02-bayesian-network-inference.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
+      - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
       - "HW 01 — 貝氏分類器:線性邊界與二次邊界": assignments/hw01/README.md
   - 專題 Projects: projects/README.md
   - 考試與測驗 Exams & Quizzes: exams/README.md
