@@ -38,6 +38,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-13 — 依老師要求自 idl-2026-fall 同步通用改進:新增 `diagram-design` 技能(`.agents/skills/diagram-design/`,樣式指南為深色投影片色票)、教材程度選項(`.agents/skills/LEVELS.md`;`textbook-lecture-notes` 與 `view-from-text` 開始前先問程度;`audit_deck.py --level`;`AUDIT_CHECKLIST.md` Q 節;`AGENTS.md` §5.1、§5.11 提示)、`view-from-text` 規定產生簡報前先列知識單元表並等老師確認。
+
 - 2026-10-13 — 依老師要求,依 course-template 的更新(`4aaa431`)把課程網站的 JianBauDau 播放器下載連結由 1.0.0 改為 1.0.1:`scripts/build_docs.py` 的 `PLAYER_URL` 與下載頁文字、`slides/FORMATS.md`。連結(ndhuccc/IDL115 的 player-v1.0.1)已確認可下載。
 
 - 2026-10-13 — 課程大綱補上「生成式 AI 使用政策」(採 idl-2026-fall 的規則,老師同意),`CHANGELOG.md` 記一筆〔公告〕,AI agent 提示詞頁改為把四欄位 commit 格式視為課程規定;`student-template/` 新增 `AGENTS.md`(給學生的 AI agent 作業助理規範,內容同 `assignments/ai-agent-prompt.md` 並改成 Repo 內使用的版本)、`CLAUDE.md`,README 加一行說明。尚未同步到學生作業範本 Repo。
