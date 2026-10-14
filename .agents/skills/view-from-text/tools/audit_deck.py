@@ -74,6 +74,12 @@ def main():
     ap.add_argument("--lecture", help="the lecture the deck was made from: checks figure coverage (O1) and formula/number coverage (N6)")
     ap.add_argument("--exclude-fig", action="append", default=[], help="lecture figure id the teacher agreed to leave out (repeatable)")
     ap.add_argument("--speaker-notes", action="store_true", help="every content page must carry speaker notes (P1)")
+    ap.add_argument("--minutes", type=float, help="class-time budget for the main line (LEVELS.md section 7): warns when the estimate exceeds it (T1); pages whose step label starts with the extension marker are not counted")
+    ap.add_argument("--max-pages-per-kp", type=int, default=6, help="hard cap on the pages of one unit (one knowledge point), extension and continuation pages included (U1)")
+    ap.add_argument("--source", action="append", default=[], help="source text file(s): O2 warns when pages repeat long runs of the source (14+ identical CJK characters)")
+    ap.add_argument("--narrative", action="store_true", help="require a bridge node (name contains 'bridge') on every content page and speaker notes that link to the previous and next page (R1, R3); see .agents/skills/NARRATIVE.md")
+    ap.add_argument("--outline", action="store_true", help="print the title chain and bridge line of every page, per unit, for the reading test (NARRATIVE.md section 5)")
+    ap.add_argument("--kps", type=int, help="number of knowledge points; with --minutes, prints the per-KP budget")
     ap.add_argument("--level", choices=sorted(LEVEL_LIMITS), help="teaching level (see .agents/skills/LEVELS.md): warns when a page exceeds the level's display-formula and body-text budget (Q1, Q2)")
     args = ap.parse_args()
     doc = json.load(open(args.deck, encoding="utf-8"))
@@ -270,6 +276,115 @@ def main():
         for v in sorted(set(x.lstrip("-") for x in NUM3.findall(txt))):
             if v not in derived:
                 Wn("N3", f"{key[0]}#p{key[1] + 1}: {v} appears with no derivation line anywhere in the deck (write the steps, or mark the page 〔程式計算〕)")
+
+    # ------------------------------------------------------------ S/V/P2/R quality checks (NARRATIVE.md, VISUAL guide 1.5)
+    from collections import Counter
+    FOOT = re.compile(r"^\s*(KP|U)\d+\s*[·•]")
+    GENERIC = ("備註不代替正文", "本頁英文與中文對應", "這張視覺休息頁", "讀者應能指出本頁的輸入條件")
+    PREV_W = ("上一頁", "前一頁", "前面", "剛才", "回顧", "承接", "上一步")
+    NEXT_W = ("下一頁", "接下來", "接著", "下一步", "下一個", "預告", "之後", "下一單元")
+
+    def body_nodes(ns):
+        return [n for n in ns if n["type"] in ("text", "shape") and n.get("text", "").strip()
+                and n["transform"]["y"] >= 130 and not FOOT.match(n["text"])]
+
+    def page_of(t):
+        tg = t["target"]
+        return tg["sceneId"], round((tg["point"]["x"] - W / 2) / PITCH)
+
+    content_steps = [t for t in ST if t["target"]["sceneId"] != root]
+    label_count = Counter(t["label"] for t in content_steps)
+    for lab, c in label_count.items():
+        if c > 2: Wn("S2", f"step label {lab!r} appears {c} times: merge or retitle (filler pages)")
+    note_keys = Counter(re.sub(r"\s", "", t.get("speakerNotes", ""))[:80] for t in content_steps if t.get("speakerNotes"))
+    for key, c in note_keys.items():
+        if c > 1: Wn("S3", f"{c} pages share the same speaker notes ({key[:30]!r}...): notes must be specific to the page")
+    prev_scene, run, run_sig = None, 0, None
+    for i, t in enumerate(content_steps):
+        key = page_of(t)
+        ns = pages.get(key, [])
+        tag = f"{key[0]}#p{key[1] + 1}"
+        body = body_nodes(ns)
+        chars = sum(len(re.sub(r"[\s$]", "", n["text"])) for n in body)
+        ids = {n["id"] for n in ns}
+        has_img = any(n["type"] == "image" for n in ns)
+        has_conn = any(N[j]["type"] == "connector" and N[j]["connector"]["sourceNodeId"] in ids for j in S[key[0]]["nodeIds"])
+        if chars < 100 and not has_img and not has_conn:
+            F("S1", f"{tag}: empty page ({chars} body characters, no figure or connector): {t['label']!r}")
+        notes = t.get("speakerNotes", "")
+        if notes:
+            if any(g in notes for g in GENERIC): Wn("S3", f"{tag}: speaker notes contain boilerplate text")
+            ptxt = "".join(n["text"] for n in ns if n["type"] in ("text", "shape"))
+            bigrams = lambda x: {x[k:k + 2] for k in range(len(x) - 1) if CJK.match(x[k]) and CJK.match(x[k + 1])}
+            if len(bigrams(notes) & bigrams(ptxt)) < 6: Wn("P2", f"{tag}: speaker notes share almost no wording with the page; they look generic")
+        sig = tuple(sorted((n["type"], round((n["transform"]["x"] % PITCH) / 60), round(n["transform"]["y"] / 60), round(n["width"] / 60), round(n["height"] / 60))
+                           for n in ns if not (n["transform"]["y"] < 130)))
+        if key[0] == prev_scene and sig == run_sig:
+            run += 1
+            if run == 4: Wn("V1", f"{tag}: 4 consecutive pages share the same layout; vary the layout (VISUAL guide 3.4)")
+        else:
+            run = 1
+        prev_scene, run_sig = key[0], sig
+        if args.narrative and i > 0 and not t["label"].endswith("(續)") and not t["label"].endswith("(續)"):
+            if not any("bridge" in n.get("name", "").lower() for n in ns):
+                F("R1", f"{tag}: no bridge node (name containing 'bridge') linking this page to the previous one: {t['label']!r}")
+            if notes and not (any(w in notes for w in PREV_W) and any(w in notes for w in NEXT_W)):
+                Wn("R3", f"{tag}: speaker notes should say how this page follows the previous one and leads to the next")
+    for fid, fr in frames.items():
+        sc = S.get(fr["frame"]["childSceneId"])
+        if sc and sc["name"] != fr["text"] and sc["name"].startswith(fr["text"]) and len(sc["name"]) > len(fr["text"]):
+            F("S4", f"frame title {fr['text']!r} is a truncated copy of {sc['name']!r}: write a short title instead of cutting")
+    if args.outline:
+        cur = None
+        for t in content_steps:
+            key = page_of(t)
+            if key[0] != cur:
+                cur = key[0]
+                print(f"\n== {S[cur]['name']}")
+            br = [n["text"].split("\n")[0] for n in pages.get(key, []) if "bridge" in n.get("name", "").lower()]
+            print(f"  {t['label']}" + (f"   <- {br[0][:60]}" if br else ""))
+        print()
+
+    # ------------------------------------------------------------ U1 pages per knowledge point, O2 originality
+    per_scene = Counter(sid for (sid, _idx) in pages)
+    for sid, c in per_scene.items():
+        if c > args.max_pages_per_kp:
+            F("U1", f"{S[sid]['name']!r} has {c} pages; a knowledge point may use at most {args.max_pages_per_kp} (move detail to the lecture)")
+    if args.source:
+        stream = lambda t: "".join(CJK.findall(re.sub(r"\$[^$]*\$", "", t)))
+        grams = set()
+        for sp in args.source:
+            st = stream(open(sp, encoding="utf-8").read())
+            grams |= {st[i:i + 14] for i in range(len(st) - 13)}
+        flagged = 0
+        for (sid, idx), ns in sorted(pages.items()):
+            pt = stream("".join(n.get("text", "") for n in ns if n["type"] in ("text", "shape")))
+            hits = sum(1 for i in range(len(pt) - 13) if pt[i:i + 14] in grams)
+            if hits >= 10:
+                flagged += 1
+                Wn("O2", f"{sid}#p{idx + 1}: {hits} positions repeat the source verbatim; rewrite in your own words")
+        if flagged > 3: Wn("O2", f"{flagged} pages repeat the source verbatim: the deck is not freshly written")
+
+    # ------------------------------------------------------------ T1 class-time estimate (LEVELS.md section 7.4)
+    if args.minutes:
+        core = ext = 0
+        total = 0.0
+        for t in ST:
+            tg = t["target"]
+            if tg["sceneId"] == root: continue
+            idx = int((tg["point"]["x"]) // PITCH)
+            ns = pages.get((tg["sceneId"], idx), [])
+            if t["label"].startswith(("延伸:", "延伸:")):
+                ext += 1
+                continue
+            text = "\n".join(n.get("text", "") for n in ns if n["type"] in ("text", "shape"))
+            heavy = any(n["type"] == "image" for n in ns) or t["label"].startswith("練習") or text.count("$") >= 6
+            total += 4.0 if heavy else 2.5
+            core += 1
+        per = f"; per-KP budget {args.minutes / args.kps:.1f} min ({args.kps} KPs)" if args.kps else ""
+        print(f"time estimate: main line {core} pages ~{total:.0f} min, extension pages {ext} (not counted); budget {args.minutes:.0f} min{per}")
+        if ext > core: Wn("T2", f"{ext} extension pages exceed the {core} main-line pages: merge extension content into whole-idea pages (LEVELS.md 7.3)")
+        if total > args.minutes: Wn("T1", f"main line ~{total:.0f} min exceeds the {args.minutes:.0f} min budget: move pages to the extension group (label starts with 延伸:) or trim")
 
     # ------------------------------------------------------------ lecture coverage: O1 figures, N6 formulas and numbers
     if args.lecture:

@@ -38,6 +38,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-14 — 依老師要求自 idl-2026-fall 同步通用改進(技能新功能):新增 `.agents/skills/NARRATIVE.md`(備課五步、單元敘事弧、銜接條、禁止填充)、`INVENTORY_FORMAT.md`(開工前盤點報告的固定八部分格式、分批與子代理規則);`LEVELS.md` 新增簡報時長與每 KP 頁數上限;`view-from-text` 更新 SKILL、AUDIT_CHECKLIST(新增 R、S、T 等節)、VISUAL_AND_LAYOUT_GUIDE,`tools/audit_deck.py` 新增 S1–S4、V1、P2、T1/T2、U1、O2、R1/R3、--narrative、--outline、--minutes、--kps、--max-pages-per-kp、--source;新增 `tools/deckkit/`(kit、flow、fit、add_fig、範例與說明,供大量 KP 產生簡報);`textbook-lecture-notes` 更新 SKILL 並新增 `scripts/audit_lecture.py`(L1–L10)。`pr-2026-fall` 的 `assignment-design/build_labtube_import.py` 因課程代號範例不同而未覆蓋。
 - 2026-10-13 — 依老師要求自 idl-2026-fall 同步通用改進:新增 `diagram-design` 技能(`.agents/skills/diagram-design/`,樣式指南為深色投影片色票)、教材程度選項(`.agents/skills/LEVELS.md`;`textbook-lecture-notes` 與 `view-from-text` 開始前先問程度;`audit_deck.py --level`;`AUDIT_CHECKLIST.md` Q 節;`AGENTS.md` §5.1、§5.11 提示)、`view-from-text` 規定產生簡報前先列知識單元表並等老師確認。
 
 - 2026-10-13 — 依老師要求,依 course-template 的更新(`4aaa431`)把課程網站的 JianBauDau 播放器下載連結由 1.0.0 改為 1.0.1:`scripts/build_docs.py` 的 `PLAYER_URL` 與下載頁文字、`slides/FORMATS.md`。連結(ndhuccc/IDL115 的 player-v1.0.1)已確認可下載。
