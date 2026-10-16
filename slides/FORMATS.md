@@ -57,3 +57,8 @@ PPTX、PDF、HTML 直接放進來即可。`check_slides.py` 只檢查 `.jbd.json
 - 檢查腳本:`scripts/check_slides.py`
 - 網站下載頁的產生:`scripts/build_docs.py`(`write_slides_index`)
 - 投影片與講義的對應:`lectures/lecNN.md`、`schedule.md`
+
+
+## 一個KP一個檔案（教師2026-10-16指定）
+
+新增或重製的知識點教材，每個KP各自存成一份完整JianBauDau文件，講義也各自一份Markdown，兩者使用相同主檔名。例如 `lec03-kp02-batch-perceptron.md` 與 `lec03-kp02-batch-perceptron.jbd.json`。一份簡報內不得合併多個KP；該KP可有多個內容頁。

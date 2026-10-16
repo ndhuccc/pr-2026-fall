@@ -5,3 +5,6 @@
 - 格式:Markdown;行內公式 `$...$`,區塊公式 `$$...$$`
 - 每份講義開頭須含:週次、對應實作、學習目標
 - 圖片放於 `../assets/figures/`,以相對路徑引用;圖的代碼沿用該講義的代號(`lec02-` 或 `lec02-parameter-estimation-`)。
+
+
+- 教師指定（2026-10-16）：新增或重製的KP教材採「一個KP一份Markdown講義、一份JianBauDau簡報」。同一KP使用相同檔名主體，例如 `lectures/lec03-kp02-batch-perceptron.md` 與 `slides/lec03-kp02-batch-perceptron.jbd.json`；不把多個KP合成一份講義或簡報。
