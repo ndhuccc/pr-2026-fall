@@ -151,3 +151,4 @@
 
 - 2026-10-11 — 修正 `view-from-text` 技能:新增中英對照硬規則(§4C)、Frame 標準樣式(§4D,禁止自訂標題色)、標題不放行內數學、圖例不壓曲線;新增 `tools/audit_deck.py`(自動稽核)與 `tools/preview_deck.py`(近似預覽);稽核表新增 B9、D14、G19、L、M。同步重新發佈 `slides/lec02-bayesian-inference.jbd.json`(標題改純文字、補英文行)。尚未同步到 course-template。
 
+- 2026-10-16 — 依老師指示更新 `slides-to-four-panel-comics`：新增預設 JPEG 品質 90、最寬 1920 px、不放大、4:4:4、透明背景補白；可逐張選 PNG 或保留原圖，依實際資料標記 MIME，保留原始圖片與既有投影片節點，回報壓縮前後位元組與成品大小。新增壓縮後中文字、公式與細線清晰度檢查；修正 Windows UTF-8/BOM JSON 讀寫。9 項程式測試通過（含 JPEG/PNG/原圖、透明度、尺寸、MIME、播放順序、碰撞與覆寫防護）；未進行實際播放器匯入或真實漫畫的目視驗證。本次更新 PR 課程副本與可攜 ZIP，未確認個人雲端技能庫更新。
