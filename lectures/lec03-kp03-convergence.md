@@ -2,8 +2,6 @@
 
 > 程度：研究生（grad）／Level: Graduate (grad)
 >
-> [下載本KP簡報（JianBauDau slides）](../slides/lec03-kp03-convergence.jbd.json)
->
 > 圖型識別 AIIA50260，2026秋季；一個KP一個講義檔案。
 >
 > Pattern Recognition AIIA50260, Fall 2026. This handout contains one knowledge point.
