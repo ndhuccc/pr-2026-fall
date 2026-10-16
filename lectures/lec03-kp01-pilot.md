@@ -10,7 +10,7 @@
 
 **Source**: Chapter 3, §3.2, knowledge point 1, including its instructor notes. Accessed October 16, 2026. This handout reorganizes the explanation and retains the source examples.
 
-**教材下載**：[JianBauDau投影片](../slides/lec03-kp01-pilot.jbd.json)。本批僅含KP01，4個內容頁；實際播放器待驗收。
+**教材下載**：[JianBauDau投影片](../slides/lec03-kp01-pilot-with-comics.jbd.json)。本批僅含KP01，4個內容頁；實際播放器待驗收。
 
 **Downloads**: PDF handout and JianBauDau slides are linked above. This pilot covers KP01 with four content pages. Player and slide PDF export checks remain pending.
 

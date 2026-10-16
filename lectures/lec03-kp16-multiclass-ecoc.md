@@ -6,7 +6,7 @@
 >
 > Week 3 (2026-09-21) | Topic: Linear Classifiers
 
-[JianBauDau 簡報](../slides/lec03-kp16-multiclass-ecoc.jbd.json)
+[JianBauDau 簡報](../slides/lec03-kp16-multiclass-ecoc-with-comics.jbd.json)
 
 ## 學習目標（Learning objectives）
 

@@ -6,7 +6,7 @@
 >
 > Week 3 (2026-09-21) | Topic: Linear Classifiers
 
-[JianBauDau 簡報](../slides/lec03-kp06-kesler.jbd.json)
+[JianBauDau 簡報](../slides/lec03-kp06-kesler-with-comics.jbd.json)
 
 ## 學習目標（Learning objectives）
 
