@@ -41,6 +41,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-16 — 教師提供修改後的`lec03-kp01-pilot.jbd.json`附件，明確要求替換後連同講義再次推送；本次原樣採用附件，未改寫教師內容、圖像、播放鏡頭或步驟。新版為2個Scene、45個節點、8個播放步驟（原4個內容頁、3個新增圖像聚焦、1個單元入口），檔案3,306,213 bytes，SHA-256為`5145c340366ad40013b8d688a25a45cc6abf0341bed2071147de3b413ecb817d`。正式講義格式依教師更正為Markdown：`lectures/lec03-kp01-pilot.md`；其內容與前次已推送版本一致，課表主要講義入口仍指向此檔。check_slides無FAIL、僅公開講者備註提醒；audit_lecture為FAIL 0/WARN 0；doctor無FAIL；網站建置成功。作者版設計稽核為FAIL 18/WARN 34，未宣稱全數通過：新增圖像獨立聚焦不符合固定720高頁面及標準鏡頭公式（9項）、3張PNG被套用SVG內嵌大小門檻（3項）、圖像描述過短（3項）、新增步驟無講者備註（3項）；其餘WARN包含前次講義公式對照與本次時長估算。已逐張檢視新增圖像並計算實際鏡頭邊界，3/3張均完整落在各自聚焦視窗內。依教師指定原檔同步，不擅改這些設計。近似預覽因本環境缺少瀏覽器執行檔未完成；JianBauDau實際播放與匯出仍未由本次環境驗證。
+
 - 2026-10-16 — 教師本輪明確要求把已交付的KP01講義與投影片推送到GitHub，因此將本批同步至本課程main。新增`lectures/lec03-kp01-pilot.md`、12頁PDF與`slides/lec03-kp01-pilot.jbd.json`（1個單元入口、4個內容頁），附4張白底PNG、4張深色SVG及可重畫程式；更新第3週課表、由既有工具產生的網站導覽及CHANGELOG。來源為`https://ndhuccc.github.io/CCC-LNS/PR_115/Ch03-linear-classifiers/index.html`的§3.2、KP01及教授祕笈（讀取2026-10-16）；程度grad、中英對照。保留原例`w=(1,1), b=-0.5, A=(1,1), B=(0.4,0.05)`，數值與公式檢查沿用本批已通過紀錄。本次重新執行check_slides（無FAIL、僅5個公開講者備註提醒）、audit_lecture（FAIL 0/WARN 0）、audit_deck（FAIL 0/WARN 32）、doctor（FAIL 0）與網站建置（無新增WARNING或ERROR）。稽核WARN為3項已有逐步計算的小數結果識別提醒，以及29項精簡投影片未逐字重印的講義公式／數字對照；已依試做交付的來源覆蓋表逐項核對，完整推導保留於講義§3–7，4/4張圖皆有對應，沒有以「WARN 0」宣稱全覆蓋。PDF為講義排版輸出；JianBauDau實際播放、編輯器reticle與投影片PDF匯出仍待教師驗收。只完成全章18個KP中的KP01，後續依序分批。
 
 - 2026-10-14 — 依老師要求改版網站的投影片下載頁:`scripts/build_docs.py` 的 `write_slides_index` 改為一週一個頁籤、一個頁籤一張表(教材、格式、下載),教材欄顯示對應講義的標題;`mkdocs.yml` 新增 `pymdownx.tabbed`(`alternate_style: true`);`slides/FORMATS.md` 補一句說明。idl-2026-fall、course-template、pr-2026-fall 三個倉庫使用相同設計。
