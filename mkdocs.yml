@@ -60,6 +60,8 @@ nav:
           - 單純貝氏與最近鄰居: lectures/lec02-naive-bayes-and-nn.md
           - 貝氏網路: lectures/lec02-bayesian-networks.md
           - 貝氏網路推論: lectures/lec02-bayesian-network-inference.md
+      - 第 3 週 Week 3:
+          - KP01：分數、法向量與距離（試做）: lectures/lec03-kp01-pilot.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md

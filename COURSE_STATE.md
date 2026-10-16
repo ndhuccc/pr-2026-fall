@@ -12,8 +12,8 @@
 | 學期 | 2026 秋季(第 1 週起始 2026-09-07) |
 | Repo | ndhuccc/pr-2026-fall |
 | Repo 可見度 | Private |
-| 使用的 agent 工具 | Claude(本次對話) |
-| agent 能力等級 | L2(gh 已登入,可直接操作 Repo) |
+| 使用的 agent 工具 | Codex（本次；GitHub 連線） |
+| agent 能力等級 | 可執行本機檢查；透過 GitHub 連線同步，未安裝 gh |
 
 ## 建立學期的檢查表(AGENTS.md §3)
 
@@ -31,12 +31,17 @@
 
 ## 待辦事項
 
+- [ ] 第3章 KP01：教師在 JianBauDau 實際檢查 Open、1280×720／1920×1080 播放、編輯器 reticle 與 SVG 的 PDF 匯出；近似預覽不能代替。
+- [ ] 第3章其餘17個知識點尚未完成；KP01驗收後依核准流程接續KP02–KP05。
+
 - [x] 教師同意將第 2 週其餘七份自主學習投影片與講義連結儲存並同步至雲端（2026-10-09）。
 - [ ] 尚待確認 PDF 匯出與編輯器 Scene mode 的 reticle 顯示；播放器的雙尺寸逐頁檢查已完成。
 
 ## 決策與異動紀錄
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
+
+- 2026-10-16 — 教師本輪明確要求把已交付的KP01講義與投影片推送到GitHub，因此將本批同步至本課程main。新增`lectures/lec03-kp01-pilot.md`、12頁PDF與`slides/lec03-kp01-pilot.jbd.json`（1個單元入口、4個內容頁），附4張白底PNG、4張深色SVG及可重畫程式；更新第3週課表、由既有工具產生的網站導覽及CHANGELOG。來源為`https://ndhuccc.github.io/CCC-LNS/PR_115/Ch03-linear-classifiers/index.html`的§3.2、KP01及教授祕笈（讀取2026-10-16）；程度grad、中英對照。保留原例`w=(1,1), b=-0.5, A=(1,1), B=(0.4,0.05)`，數值與公式檢查沿用本批已通過紀錄。本次重新執行check_slides（無FAIL、僅5個公開講者備註提醒）、audit_lecture（FAIL 0/WARN 0）、audit_deck（FAIL 0/WARN 32）、doctor（FAIL 0）與網站建置（無新增WARNING或ERROR）。稽核WARN為3項已有逐步計算的小數結果識別提醒，以及29項精簡投影片未逐字重印的講義公式／數字對照；已依試做交付的來源覆蓋表逐項核對，完整推導保留於講義§3–7，4/4張圖皆有對應，沒有以「WARN 0」宣稱全覆蓋。PDF為講義排版輸出；JianBauDau實際播放、編輯器reticle與投影片PDF匯出仍待教師驗收。只完成全章18個KP中的KP01，後續依序分批。
 
 - 2026-10-14 — 依老師要求改版網站的投影片下載頁:`scripts/build_docs.py` 的 `write_slides_index` 改為一週一個頁籤、一個頁籤一張表(教材、格式、下載),教材欄顯示對應講義的標題;`mkdocs.yml` 新增 `pymdownx.tabbed`(`alternate_style: true`);`slides/FORMATS.md` 補一句說明。idl-2026-fall、course-template、pr-2026-fall 三個倉庫使用相同設計。
 - 2026-10-14 — 依老師要求自 idl-2026-fall 同步通用改進(技能新功能):新增 `.agents/skills/NARRATIVE.md`(備課五步、單元敘事弧、銜接條、禁止填充)、`INVENTORY_FORMAT.md`(開工前盤點報告的固定八部分格式、分批與子代理規則);`LEVELS.md` 新增簡報時長與每 KP 頁數上限;`view-from-text` 更新 SKILL、AUDIT_CHECKLIST(新增 R、S、T 等節)、VISUAL_AND_LAYOUT_GUIDE,`tools/audit_deck.py` 新增 S1–S4、V1、P2、T1/T2、U1、O2、R1/R3、--narrative、--outline、--minutes、--kps、--max-pages-per-kp、--source;新增 `tools/deckkit/`(kit、flow、fit、add_fig、範例與說明,供大量 KP 產生簡報);`textbook-lecture-notes` 更新 SKILL 並新增 `scripts/audit_lecture.py`(L1–L10)。`pr-2026-fall` 的 `assignment-design/build_labtube_import.py` 因課程代號範例不同而未覆蓋。
