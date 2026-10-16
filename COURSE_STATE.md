@@ -42,6 +42,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-16 — 依老師要求把「週次進度表跟著實際製作的講義內容更新配置」寫進標準工作規範:`AGENTS.md` 新增 §5.12(依實際講義拆列並概括主題、每列列出存在的講義與簡報連結、備註寫知識點範圍、未列入進度表的講義會落到選單「其他」、不自行改週次日期、驗證與記錄),§5.1、§5.11 的同步步驟指向 §5.12,§9 檢查清單新增一項。pr-2026-fall、course-template、idl-2026-fall 三個倉庫的 `AGENTS.md` 相同。
 - 2026-10-16 — 依實際製作的講義更新週次進度表:第 3 週(09/21,合併原計畫第 4、5 週)由一列改為三列——感知器 KP01–KP05、線性判別函數 KP06–KP13、支持向量機 KP14–KP18,每列列出對應講義與簡報(簡報為 with-comics 版);其餘週次不動。
 - 2026-10-16 — 新增技能 `.agents/skills/slides-to-four-panel-comics/`(讀簡報、擷取每個核心概念、為每個概念產生一張 16:9 的 2×2 四格漫畫並插入簡報;含 `SKILL.md`、`references/jbd-format.md`、`scripts/insert_jbd_comics.py` 等);三個倉庫(idl-2026-fall、pr-2026-fall、course-template)內容相同。
 - 2026-10-16 — 教師明確指定「講義和簡報都必須一個KP一個檔案」，並於15:11要求推送。依此同步KP02–KP05：4份雙語Markdown講義、4份JianBauDau簡報、5張白底PNG及其深色SVG與可重畫程式。檔名依序為`lec03-kp02-batch-perceptron`、`lec03-kp03-convergence`、`lec03-kp04-online-perceptron`、`lec03-kp05-neuron-pocket`；講義存`lectures/`，簡報存`slides/`。每份簡報只有1個KP、1個單元Frame、4個內容頁及1個入口，共5個播放步驟。原KP01教師修訂檔保留；未發佈合併KP02–KP05的舊草稿。課表與講義內加入各KP簡報連結，講義／簡報命名說明記錄一KP一檔決定。4份講義稽核FAIL 0/WARN 0；4份check_slides皆無FAIL（公開講者備註提醒）；4份audit_deck皆FAIL 0，N6公式／數字對照WARN依序10、9、2、6，共27項，包含等價寫法、留於講義的完整推導及文獻DOI，未宣稱完整字串覆蓋。所有附圖連結存在且5/5圖在對應簡報中；拆分保留原正文與算例，數值沿用已獨立重算結果。實際JianBauDau播放、編輯器reticle、SVG PDF匯出仍未驗證；先前瀏覽器預覽程序無法完成。此環境只有教材及檢查所需的部分副本，未冒充完整Repo執行doctor或本機全站建置；推送後由既有deploy-site建置，實際結果另查核回報。本次內容查核：2026-10-16T15:14:15+08:00。
