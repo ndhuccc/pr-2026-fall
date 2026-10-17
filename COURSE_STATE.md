@@ -32,8 +32,8 @@
 ## 待辦事項
 
 - [ ] 第3章 KP01：教師在 JianBauDau 實際檢查 Open、1280×720／1920×1080 播放、編輯器 reticle 與 SVG 的 PDF 匯出；近似預覽不能代替。
-- [ ] 第3章KP06–KP18共13個知識點尚未完成；下一批依序為KP06–KP09。
-- [ ] 第3章KP02–KP05：已依教師要求同步一KP一份講義及一份簡報；JianBauDau實際播放、reticle及投影片PDF匯出仍待確認。
+- [x] 第3章 KP06–KP18：18 個知識點的講義與簡報（含漫畫版）均已建立並提交（一 KP 一份講義、一份簡報；依實際檔案核對，2026-10-17）。
+- [ ] 第3章 KP02–KP18：JianBauDau 實際播放、編輯器 reticle 與投影片 PDF 匯出仍待確認（講義與簡報檔案均已建立）。
 
 - [x] 教師同意將第 2 週其餘七份自主學習投影片與講義連結儲存並同步至雲端（2026-10-09）。
 - [ ] 尚待確認 PDF 匯出與編輯器 Scene mode 的 reticle 顯示；播放器的雙尺寸逐頁檢查已完成。
@@ -41,6 +41,8 @@
 ## 決策與異動紀錄
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
+
+- 2026-10-17 — 統一 lec03 簡報檔名:`slides/lec03-kp13-logistic-comics.jbd.json` 以 `git mv` 改名為 `slides/lec03-kp13-logistic-with-comics.jbd.json`(其餘 KP01–KP18 皆為 `-with-comics`),並同步更新 `schedule.md` 第 3 週 KP13 的簡報連結與 `lectures/lec03-kp13-logistic.md` 的簡報連結。僅檔名與連結變更,簡報內容未動;改名後仍符合 `build_docs.py` 的簡報命名規則,無斷鏈。另依 W01 唯讀盤點結果更正「待辦事項」:第3章 KP06–KP18 的講義與簡報（含漫畫）實際均已建立並提交,原「尚未完成」記載已過時;KP02–KP18 的 JianBauDau 實際播放、reticle 與 PDF 匯出仍待教師確認。
 
 - 2026-10-17 — 依老師指示以新作業取代 HW01:題目改為「手寫數字辨識:貝氏分類器與朴素貝氏分類器的比較」(`sklearn.datasets.load_digits`,8×8=64 維、10 類、內建免下載),比較 LDA(共用共變異數→線性邊界)、QDA(各類共變異數→一般二次)與高斯朴素貝氏(對角共變異數→軸對齊二次);4 題(題1 推導各類不同 $\Sigma_i$ 的判別函式並以 Markdown 作答、題2 只用 NumPy 手寫高斯朴素貝氏、題3 含 `reg_param` 掃描與任選兩個特徵的 2 維決策區域、題4 討論含 784 維 MNIST 定性題),不使用 PCA。對應單元沿用「貝氏決策理論與判別函數」;發佈 2026-10-17、截止 2026-11-09 23:59。更新 `assignments/hw01/README.md` 並重生 `assignments/labtube-import/assignments_hw01.json`(`course: PR115`、`rubric_url` 指課程網站)。`check_assignments.py` FAIL 0/WARN 0;已同步 `schedule.md` 備註(第 6 週「HW01 發佈」、第 10 週「HW01 截止」)。舊 HW01 內容由 Git 歷史保留(取代前版本可 `git show HEAD:assignments/hw01/README.md` 取回)。尚未匯入 LabTube;因 LabTube 已有 `hw01` 代號,匯入時須勾選「更新已存在的作業」,由老師確認。
 
