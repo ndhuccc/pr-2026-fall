@@ -49,23 +49,40 @@ nav:
   - 週次進度表 Schedule: schedule.md
   - 講義 Lectures:
       - 第 1 週 Week 1:
-          - 導論：什麼是樣式識別: lectures/lec01.md
+          - KP01 導論：什麼是樣式識別: lectures/lec01.md
       - 第 2 週 Week 2:
-          - 貝氏決策理論與判別函數: lectures/lec02.md
-          - 線性分類器: lectures/lec02-linear-classifiers.md
-          - 參數估計: lectures/lec02-parameter-estimation.md
-          - 貝氏推論與最大熵: lectures/lec02-bayesian-inference.md
-          - 混合模型與 EM: lectures/lec02-mixture-models-em.md
-          - 無母數密度估計: lectures/lec02-nonparametric-density.md
-          - 單純貝氏與最近鄰居: lectures/lec02-naive-bayes-and-nn.md
-          - 貝氏網路: lectures/lec02-bayesian-networks.md
-          - 貝氏網路推論: lectures/lec02-bayesian-network-inference.md
+          - KP01 貝氏決策理論與判別函數: lectures/lec02.md
+          - KP02 線性分類器: lectures/lec02-linear-classifiers.md
+          - KP03 參數估計: lectures/lec02-parameter-estimation.md
+          - KP04 貝氏推論與最大熵: lectures/lec02-bayesian-inference.md
+          - KP05 混合模型與 EM: lectures/lec02-mixture-models-em.md
+          - KP06 無母數密度估計: lectures/lec02-nonparametric-density.md
+          - KP07 單純貝氏與最近鄰居: lectures/lec02-naive-bayes-and-nn.md
+          - KP08 貝氏網路: lectures/lec02-bayesian-networks.md
+          - KP09 貝氏網路推論: lectures/lec02-bayesian-network-inference.md
       - 第 3 週 Week 3:
-          - KP01：分數、法向量與距離（試做）: lectures/lec03-kp01-pilot.md
+          - KP01 分數、法向量與距離: lectures/lec03-kp01-pilot.md
+          - KP02 批次感知器: lectures/lec03-kp02-batch-perceptron.md
+          - KP03 收斂證明: lectures/lec03-kp03-convergence.md
+          - KP04 線上感知器: lectures/lec03-kp04-online-perceptron.md
+          - KP05 神經元與口袋: lectures/lec03-kp05-neuron-pocket.md
+          - KP06 把多類比較整理成感知器限制: lectures/lec03-kp06-kesler.md
+          - KP07 平方誤差最小就是正交投影: lectures/lec03-kp07-mse-projection.md
+          - KP08 用當下誤差逐筆修正權重: lectures/lec03-kp08-lms.md
+          - KP09 以有限樣本直接解最小平方: lectures/lec03-kp09-least-squares.md
+          - KP10 平方誤差下，條件平均是最佳預測: lectures/lec03-kp10-conditional-mean.md
+          - KP11 0/1 標籤的條件平均就是事後機率: lectures/lec03-kp11-mse-posterior.md
+          - KP12 平均偏離與資料敏感度是兩種誤差: lectures/lec03-kp12-bias-variance.md
+          - KP13 線性對數比值反解為有效機率: lectures/lec03-kp13-logistic.md
+          - KP14 從分對資料走向最大間隔: lectures/lec03-kp14-hard-margin.md
+          - KP15 用鬆弛變數交換間隔與違規代價: lectures/lec03-kp15-soft-margin.md
+          - KP16 把多類別決策拆成可組合的二元問題: lectures/lec03-kp16-multiclass-ecoc.md
+          - KP17 讓ν連結違規上界與支持向量下界: lectures/lec03-kp17-nu-svm.md
+          - KP18 用凸包最近點看懂SVM幾何: lectures/lec03-kp18-convex-hulls.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
-      - "HW 01 — 貝氏分類器:線性邊界與二次邊界": assignments/hw01/README.md
+      - "HW 01 — 手寫數字辨識:貝氏分類器與朴素貝氏分類器的比較": assignments/hw01/README.md
   - 專題 Projects: projects/README.md
   - 考試與測驗 Exams & Quizzes: exams/README.md
   - 實驗 Labs: labs/README.md

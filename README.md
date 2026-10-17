@@ -14,10 +14,15 @@
 
 完成本課程後,你將能夠:
 
-1. 說明課程核心概念與數學基礎(例如:$\mathbf{y} = W\mathbf{x} + \mathbf{b}$)
-2. 以 Python / PyTorch 實作並驗證模型
-3. 閱讀與討論相關文獻
-4. 完成一項期末專題
+本課程的總目標:建立圖形識別(Pattern Recognition)的理論與實作基礎,能運用電腦對文字、影像、聲音等各類資料進行分類與辨識。具體而言:
+
+1. **貝氏分類器(Bayes Classifiers)**:說明貝氏決策理論、判別函數與錯誤界限,並能估計機率密度(參數與無母數方法、混合模型與 EM),推導決策邊界,例如 $P(\omega_i \mid \mathbf{x}) \propto p(\mathbf{x} \mid \omega_i)P(\omega_i)$
+2. **線性與非線性分類器(Linear and Nonlinear Classifiers)**:理解並實作感知器、線性判別函數、支持向量機、類神經網路、核方法與決策樹,比較其假設、優缺點與適用情境
+3. **特徵選取與萃取(Feature Selection and Generation)**:運用特徵選取方法、主成分分析(PCA)與線性判別分析(LDA),降低資料維度並提升辨識效果
+4. **樣板匹配(Template Matching)**:運用距離度量與動態時間校正(DTW)比對序列與樣式
+5. **上下文相關分類(Context-Dependent Classification)**:說明馬可夫模型與隱馬可夫模型(HMM),並應用於序列資料的辨識
+6. **分群方法(Clustering)**:運用 K-means 與階層式分群,並評估分群結果
+7. **實作與專題**:以 Python 實作並驗證上述方法,對文字、影像、聲音等資料進行分類與辨識,並完成一項期末專題與發表
 
 ## 先備知識
 
