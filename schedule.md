@@ -14,11 +14,11 @@
 | 3 | 09/21 | Linear Classifiers (2) – Support Vector Machines(支持向量機:硬間隔、軟間隔、多類別 ECOC、ν-SVM、凸包幾何) | [KP14 從分對資料走向最大間隔](lectures/lec03-kp14-hard-margin.md) · [簡報](slides/lec03-kp14-hard-margin-with-comics.jbd.json)；[KP15 用鬆弛變數交換間隔與違規代價](lectures/lec03-kp15-soft-margin.md) · [簡報](slides/lec03-kp15-soft-margin-with-comics.jbd.json)；[KP16 把多類別決策拆成可組合的二元問題](lectures/lec03-kp16-multiclass-ecoc.md) · [簡報](slides/lec03-kp16-multiclass-ecoc-with-comics.jbd.json)；[KP17 讓ν連結違規上界與支持向量下界](lectures/lec03-kp17-nu-svm.md) · [簡報](slides/lec03-kp17-nu-svm-with-comics.jbd.json)；[KP18 用凸包最近點看懂SVM幾何](lectures/lec03-kp18-convex-hulls.md) · [簡報](slides/lec03-kp18-convex-hulls-with-comics.jbd.json) | KP14–KP18 |
 | 4 | 09/28 | 放假(孔子誕辰／教師節) | | 無上課 |
 | 5 | 10/05 | Nonlinear Classifiers (1) – Neural Networks | | |
-| 6 | 10/12 | Nonlinear Classifiers (2) – Kernel Methods & Decision Trees | | |
+| 6 | 10/12 | Nonlinear Classifiers (2) – Kernel Methods & Decision Trees | | HW01 發佈 |
 | 7 | 10/19 | Feature Selection and Generation (1) – Feature Selection Methods | | |
 | 8 | 10/26 | 放假(光復節補假) | | 無上課 |
 | 9 | 11/02 | 期中考 Midterm Exam | | 期中考 |
-| 10 | 11/09 | Feature Selection and Generation (2) – PCA & LDA | | |
+| 10 | 11/09 | Feature Selection and Generation (2) – PCA & LDA | | HW01 截止 |
 | 11 | 11/16 | Template Matching (1) – Matching Techniques & Distance Measures | | |
 | 12 | 11/23 | Template Matching (2) – Dynamic Time Warping | | |
 | 13 | 11/30 | Context-Dependent Classification (1) – Markov Models | | |

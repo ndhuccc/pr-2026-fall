@@ -42,6 +42,8 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-17 — 依老師指示以新作業取代 HW01:題目改為「手寫數字辨識:貝氏分類器與朴素貝氏分類器的比較」(`sklearn.datasets.load_digits`,8×8=64 維、10 類、內建免下載),比較 LDA(共用共變異數→線性邊界)、QDA(各類共變異數→一般二次)與高斯朴素貝氏(對角共變異數→軸對齊二次);4 題(題1 推導各類不同 $\Sigma_i$ 的判別函式並以 Markdown 作答、題2 只用 NumPy 手寫高斯朴素貝氏、題3 含 `reg_param` 掃描與任選兩個特徵的 2 維決策區域、題4 討論含 784 維 MNIST 定性題),不使用 PCA。對應單元沿用「貝氏決策理論與判別函數」;發佈 2026-10-17、截止 2026-11-09 23:59。更新 `assignments/hw01/README.md` 並重生 `assignments/labtube-import/assignments_hw01.json`(`course: PR115`、`rubric_url` 指課程網站)。`check_assignments.py` FAIL 0/WARN 0;已同步 `schedule.md` 備註(第 6 週「HW01 發佈」、第 10 週「HW01 截止」)。舊 HW01 內容由 Git 歷史保留(取代前版本可 `git show HEAD:assignments/hw01/README.md` 取回)。尚未匯入 LabTube;因 LabTube 已有 `hw01` 代號,匯入時須勾選「更新已存在的作業」,由老師確認。
+
 - 2026-10-16 — 依老師提供的 `slides-to-four-panel-comics-v1.1-jpeg.zip` 更新技能 `.agents/skills/slides-to-four-panel-comics/`:新增 §2A「準備精簡的內嵌圖片」(新插入的漫畫預設存成 JPEG,品質 90、寬度上限 1920、4:4:4、不放大不裁切;需保真或透明時改用 PNG 或原始位元組,每張可個別指定),`scripts/insert_jbd_comics.py` 新增 `--image-format`、`--jpeg-quality`、`--max-width` 與每項 `image_format`、`jpeg_quality`、`max_width`,並回報原始與內嵌位元組數;只壓縮新插入的漫畫,不動既有圖片與原簡報。我用 idl-2026-fall 的簡報與合成圖做過冒煙測試(可執行、結構驗證通過);實際漫畫的可讀性仍須目視確認。三個倉庫相同。
 - 2026-10-16 — 老師決定:考試範圍在考試前再另行公告(第 2 週講義不再區分正課與自主學習,進度表不標示考試範圍)。公告時依 §5.4 記入 CHANGELOG,並可在 `exams/` 新增範圍說明(§5.8)。
 - 2026-10-16 — 講義標題格式再統一:所有講義(含導論與整份課堂講義)一律「KPNN 標題」,每週編號從 KP01 起依進度表順序遞增;`scripts/sync_nav.py` 的 `check_titles` 同步擴大為檢查所有講義與週內編號。pr-2026-fall:第 1 週導論改為 KP01;第 2 週不再區分「正課」與「自主學習」,九份講義編為 KP01–KP09 並依內容拆成三列(貝氏決策與線性分類器 KP01–KP02、機率密度估計 KP03–KP06、單純貝氏最近鄰居與貝氏網路 KP07–KP09),各列附講義與簡報連結;原「選讀,不列入考試範圍」的備註隨之移除(考試範圍需另行確認)。course-template 的 lec01 連結文字改為「KP01 課程介紹與環境設定」。AGENTS.md §5.12 第 1、6 項更新,三個倉庫相同。
