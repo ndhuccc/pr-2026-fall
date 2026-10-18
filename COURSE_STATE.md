@@ -32,8 +32,8 @@
 ## 待辦事項
 
 - [ ] 第3章 KP01：教師在 JianBauDau 實際檢查 Open、1280×720／1920×1080 播放、編輯器 reticle 與 SVG 的 PDF 匯出；近似預覽不能代替。
-- [x] 第3章 KP06–KP18：18 個知識點的講義與簡報（含漫畫版）均已建立並提交（一 KP 一份講義、一份簡報；依實際檔案核對，2026-10-17）。
-- [ ] 第3章 KP02–KP18：JianBauDau 實際播放、編輯器 reticle 與投影片 PDF 匯出仍待確認（講義與簡報檔案均已建立）。
+- [x] 第3章 KP06–KP16：16 個知識點的講義與簡報（含漫畫版）均已建立並提交（一 KP 一份講義、一份簡報；依實際檔案核對，2026-10-17）。
+- [ ] 第3章 KP02–KP16：JianBauDau 實際播放、編輯器 reticle 與投影片 PDF 匯出仍待確認（講義與簡報檔案均已建立）。
 
 - [x] 教師同意將第 2 週其餘七份自主學習投影片與講義連結儲存並同步至雲端（2026-10-09）。
 - [ ] 尚待確認 PDF 匯出與編輯器 Scene mode 的 reticle 顯示；播放器的雙尺寸逐頁檢查已完成。
@@ -42,6 +42,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-18 — 依老師指示移除第 3 週 KP17(ν-SVM)與 KP18(凸包幾何):刪除 `lectures/lec03-kp17-*.md`、`lec03-kp18-*.md`、對應的兩份 `slides/*-with-comics.jbd.json`,以及 3 組示意圖(`assets/figures/lec03-kp17-*`、`lec03-kp18-*` 的 png 與 svg)。`schedule.md` 第 3 週 SVM 列改為 KP14–KP16(第 3 週共 16 個知識點),`mkdocs.yml` 選單由建置自動更新。網站建置無 ERROR 與 WARNING。圖檔腳本 `assets/figures/src/lec03-kp14-kp18-figures.py` 仍保留 KP17、KP18 的繪圖函式,尚未清理。Git 歷史可取回被刪檔案。
 - 2026-10-17 — 首頁(`README.md`)與課綱(`syllabus.md`)的學習目標改寫為可觀察的學習動詞,並標註對應評量方式:貝氏分類器對應 HW01 與期中考,其餘單元對應期中考／期末考／期末專題。課綱改為「學習目標 × 評量方式」表格。內容與既有 HW01(手寫數字辨識:貝氏分類器與朴素貝氏分類器比較)一致;本次僅文件文字變更,未動教材、作業或程式。
 
 - 2026-10-17 — 統一 lec03 簡報檔名:`slides/lec03-kp13-logistic-comics.jbd.json` 以 `git mv` 改名為 `slides/lec03-kp13-logistic-with-comics.jbd.json`(其餘 KP01–KP18 皆為 `-with-comics`),並同步更新 `schedule.md` 第 3 週 KP13 的簡報連結與 `lectures/lec03-kp13-logistic.md` 的簡報連結。僅檔名與連結變更,簡報內容未動;改名後仍符合 `build_docs.py` 的簡報命名規則,無斷鏈。另依 W01 唯讀盤點結果更正「待辦事項」:第3章 KP06–KP18 的講義與簡報（含漫畫）實際均已建立並提交,原「尚未完成」記載已過時;KP02–KP18 的 JianBauDau 實際播放、reticle 與 PDF 匯出仍待教師確認。

@@ -77,8 +77,6 @@ nav:
           - KP14 從分對資料走向最大間隔: lectures/lec03-kp14-hard-margin.md
           - KP15 用鬆弛變數交換間隔與違規代價: lectures/lec03-kp15-soft-margin.md
           - KP16 把多類別決策拆成可組合的二元問題: lectures/lec03-kp16-multiclass-ecoc.md
-          - KP17 讓ν連結違規上界與支持向量下界: lectures/lec03-kp17-nu-svm.md
-          - KP18 用凸包最近點看懂SVM幾何: lectures/lec03-kp18-convex-hulls.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
