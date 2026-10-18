@@ -1,0 +1,266 @@
+[
+  {
+    "id": "01",
+    "title": "機率表太大，關係也不能全刪",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2181811,
+    "embedded_bytes": 536780,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u01-p3",
+    "comic_step": 5,
+    "viewport": [
+      2880.0,
+      912.0,
+      4160.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u01"
+  },
+  {
+    "id": "02",
+    "title": "拆成連乘，不代表省參數",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1963880,
+    "embedded_bytes": 498999,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u02-p2",
+    "comic_step": 9,
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u02"
+  },
+  {
+    "id": "03",
+    "title": "真正省下來的是父集合",
+    "dimensions": [
+      1672,
+      940
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.000531914893617022,
+    "original_bytes": 1912508,
+    "embedded_bytes": 470131,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u02-p3",
+    "comic_step": 11,
+    "viewport": [
+      2880.0,
+      1856.0,
+      4160.0,
+      2576.0
+    ],
+    "scene": "lec02bn-scene-u02"
+  },
+  {
+    "id": "04",
+    "title": "箭頭有方向，沿路不能繞回",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1938642,
+    "embedded_bytes": 492633,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u03-p1",
+    "comic_step": 14,
+    "viewport": [
+      0.0,
+      912.0,
+      1280.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u03"
+  },
+  {
+    "id": "05",
+    "title": "有圖，還得有機率表",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2013918,
+    "embedded_bytes": 534138,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u03-p3",
+    "comic_step": 17,
+    "viewport": [
+      2880.0,
+      1856.0,
+      4160.0,
+      2576.0
+    ],
+    "scene": "lec02bn-scene-u03"
+  },
+  {
+    "id": "06",
+    "title": "全部取一，六個因子相乘",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2027797,
+    "embedded_bytes": 510208,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u03-p4",
+    "comic_step": 19,
+    "viewport": [
+      4320.0,
+      2800.0,
+      5600.0,
+      3520.0
+    ],
+    "scene": "lec02bn-scene-u03"
+  },
+  {
+    "id": "07",
+    "title": "知道中介，資訊就不同",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1941150,
+    "embedded_bytes": 508896,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u04-p4",
+    "comic_step": 25,
+    "viewport": [
+      4320.0,
+      912.0,
+      5600.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u04"
+  },
+  {
+    "id": "08",
+    "title": "數參數，要先數父節點",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1827381,
+    "embedded_bytes": 467158,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u05-p1",
+    "comic_step": 28,
+    "viewport": [
+      0.0,
+      912.0,
+      1280.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u05"
+  },
+  {
+    "id": "09",
+    "title": "同樣六變數，六、十四、六十三",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2056301,
+    "embedded_bytes": 522461,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u05-p4",
+    "comic_step": 32,
+    "viewport": [
+      4320.0,
+      1856.0,
+      5600.0,
+      2576.0
+    ],
+    "scene": "lec02bn-scene-u05"
+  },
+  {
+    "id": "10",
+    "title": "從吸菸、疾病，連到檢測",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1983327,
+    "embedded_bytes": 485104,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u06-p1",
+    "comic_step": 35,
+    "viewport": [
+      0.0,
+      912.0,
+      1280.0,
+      1632.0
+    ],
+    "scene": "lec02bn-scene-u06"
+  },
+  {
+    "id": "11",
+    "title": "看清楚，誰是已知條件",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1916736,
+    "embedded_bytes": 526878,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u06-p2",
+    "comic_step": 37,
+    "viewport": [
+      1440.0,
+      1856.0,
+      2720.0,
+      2576.0
+    ],
+    "scene": "lec02bn-scene-u06"
+  },
+  {
+    "id": "12",
+    "title": "完全獨立，和單純貝氏差在哪",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1795594,
+    "embedded_bytes": 440696,
+    "mime": "image/jpeg",
+    "anchor": "lec02bn-u06-p4",
+    "comic_step": 40,
+    "viewport": [
+      4320.0,
+      2800.0,
+      5600.0,
+      3520.0
+    ],
+    "scene": "lec02bn-scene-u06"
+  }
+]

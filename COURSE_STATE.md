@@ -31,6 +31,12 @@
 
 ## 待辦事項
 
+- [ ] 第2週 KP09漫畫版：在可開本機檔案的簡報島／播放器驗證Open、17張漫畫播放、reticle與PDF；目前Chrome擴充功能檔案存取權限阻擋。完整設計稽核差異見漫畫REPORT。
+
+- [ ] 第2週 KP08 漫畫版：原生 Open／12張漫畫播放／PDF 驗收仍待完成；本次兩種檔案選擇操作均逾時。原稿概念差異及設計稽核結果見漫畫 REPORT.md。
+
+- [ ] 第 2 週 KP07 漫畫版：原生簡報島 Open／逐頁播放／PDF 驗收；目前 Chrome 擴充功能未允許檔案存取，匯入未完成。完整設計稽核的既存問題及 W03／W04 版面規則差異見漫畫 REPORT.md。
+
 - [ ] 第3章 KP01：教師在 JianBauDau 實際檢查 Open、1280×720／1920×1080 播放、編輯器 reticle 與 SVG 的 PDF 匯出；近似預覽不能代替。
 - [x] 第3章 KP06–KP16：16 個知識點的講義與簡報（含漫畫版）均已建立並提交（一 KP 一份講義、一份簡報；依實際檔案核對，2026-10-17）。
 - [ ] 第3章 KP02–KP16：JianBauDau 實際播放、編輯器 reticle 與投影片 PDF 匯出仍待確認（講義與簡報檔案均已建立）。
@@ -41,6 +47,12 @@
 ## 決策與異動紀錄
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
+
+- 2026-10-18 — 依老師指定 `lec02-bayesian-network-inference.jbd.json` 製作17張繁中2×2四格漫畫，另存 `slides/lec02-bayesian-network-inference-with-comics.jbd.json`（52 steps、255 nodes、12,428,817 bytes）。原35步驟與238節點保留；所有新圖使用Q90/4:4:4 JPEG，實測圖資減少73.41%。17次緊接插頁、MIME及新鏡頭零碰撞通過；17張壓縮圖1280×720逐張檢視，07/09/11/14/16另檢1920×1080。16個聯合狀態完整列舉核對0.46、0.631與後驗0.5748/0.3274/0.4034；漫畫使用分母0.3711。圖資、分鏡、離線圖集與REPORT位於 `assets/figures/lec02-bayesian-network-inference-comics/`。完整設計稽核原稿36 FAIL、漫畫版87 FAIL，未宣稱全過。原生Open的fileChooser.setFiles被擴充功能要求Allow access to file URLs阻擋；未改權限或上傳伺服器，播放／reticle／PDF待驗。已同步本機講義與進度表下載連結，未提交、推送或部署。
+
+- 2026-10-18 — 為老師指定 `lec02-bayesian-networks.jbd.json` 製作12張繁中四格漫畫，以W04原插頁器另存 `slides/lec02-bayesian-networks-with-comics.jbd.json`（41 steps、約8.5MB）；227個原節點與29個原step內容保留。新增圖資、分鏡提示詞、離線圖集及REPORT位於 `assets/figures/lec02-bayesian-networks-comics/`。漫畫12區分完全獨立與給定類別後獨立的Naive Bayes；漫畫06實算0.077112≈0.0771，未更改原正文。基本結構、12次緊接插頁、MIME與新鏡頭零碰撞檢查通過；12張壓縮圖1280×720逐張檢視，05／07／10／12另檢1920×1080。完整設計稽核原稿27 FAIL、漫畫版62 FAIL，含固定橫向頁樣板與圖片內嵌資料量規則，未宣稱全過。原生匯入檔案選擇器兩次逾時；未上傳伺服器或同步雲端。另更正上一份漫畫REPORT對G13的描述，G13實為image.src長度門檻，非版面預算。
+
+- 2026-10-18 — 依老師「為此份簡報繪製四格漫畫」指示，為 `lec02-naive-bayes-and-nn.jbd.json` 的 14 個實質概念生成繁中 2×2 四格漫畫，以 W04 原插頁器另存 `slides/lec02-naive-bayes-and-nn-with-comics.jbd.json`（52 steps）；保留原檔及全部原節點。原圖、JPEG、分鏡提示詞、離線圖集與報告放 `assets/figures/lec02-naive-bayes-and-nn-comics/`。基本結構、圖片 MIME、原 step 內容、緊接插頁與新鏡頭零碰撞已核實；全部 14 張壓縮圖以 1280×720 檢視，公式密集 02／05／07 另以 1920×1080 檢視。完整設計稽核原稿 38 FAIL、漫畫版 80 FAIL（含固定頁樣板與 W04 下方安全配置差異），未宣稱整份通過。原生匯入被 Chrome 檔案存取權限擋住；未啟用設定、未上傳伺服器。網站建置及最後檢查見 REPORT.md；未同步雲端。
 
 - 2026-10-18 — 依老師指示修正 `lectures/lec02-nonparametric-density.md` §6「常見迷思」(中英對照各一處):高斯核密度估計滿足 $\hat p(x)\le 0.40/b$,$b=1.0$ 時不會超過 0.40,只有 $b<1$ 才可能超過。數值檢查:$b=1.0, 0.5, 0.1$ 的最大值依序為 0.399、0.798、3.976。對應簡報 `slides/lec02-nonparametric-density.jbd.json` 沒有這句話,未動。稽核 L1–L11 皆通過,網站建置無 ERROR 與 WARNING。
 - 2026-10-18 — 以 `bloom-exam-designer` 為第 2 週(KP01–KP09)產生測驗草稿:10 題多選、25 分鐘、Bloom 分布 1/1/3/3/1/1、中英對照,狀態「DRAFT,待老師審閱」。產出存放於 Repo 以外的私人目錄 `C:\Users\ccchiang\Private\ndhuccc\PR115\`(命題藍圖與品質報告、教師版、學生版共三個檔案,不在 Repo 內)。未匯入任何線上系統,未產生 OnlineQuiz JSON。命題時發現講義 `lec02-nonparametric-density.md` §6「常見迷思」宣稱多顆核疊加可超過 0.40,但 b≥1 時 p̂≤0.399/b,該句不成立,待老師決定是否修正。期中考範圍仍待老師公告。

@@ -1,0 +1,376 @@
+[
+  {
+    "id": "01",
+    "title": "先固定證據，再問未知",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1971808,
+    "embedded_bytes": 533688,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u01-p2",
+    "comic_step": 4,
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "scene": "lec02bni-scene-u01"
+  },
+  {
+    "id": "02",
+    "title": "有圖還要有表，才能算機率",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1903741,
+    "embedded_bytes": 513642,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u01-p3",
+    "comic_step": 6,
+    "viewport": [
+      2880.0,
+      1856.0,
+      4160.0,
+      2576.0
+    ],
+    "scene": "lec02bni-scene-u01"
+  },
+  {
+    "id": "03",
+    "title": "四種組合，怎麼越算越多",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2138391,
+    "embedded_bytes": 592129,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u01-p5",
+    "comic_step": 9,
+    "viewport": [
+      5760.0,
+      2800.0,
+      7040.0,
+      3520.0
+    ],
+    "scene": "lec02bni-scene-u01"
+  },
+  {
+    "id": "04",
+    "title": "同一組表，二元機率要成對",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1882358,
+    "embedded_bytes": 516870,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p3",
+    "comic_step": 14,
+    "viewport": [
+      2880.0,
+      912.0,
+      4160.0,
+      1632.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "05",
+    "title": "訊息接力：零點四六怎麼來",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1974165,
+    "embedded_bytes": 537772,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p6",
+    "comic_step": 18,
+    "viewport": [
+      7200.0,
+      1856.0,
+      8480.0,
+      2576.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "06",
+    "title": "最後一棒，要查的是 w 等於零",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1967767,
+    "embedded_bytes": 506447,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p7",
+    "comic_step": 20,
+    "viewport": [
+      8640.0,
+      2800.0,
+      9920.0,
+      3520.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "07",
+    "title": "反推之前，先算證據有多常見",
+    "dimensions": [
+      1672,
+      940
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.000531914893617022,
+    "original_bytes": 1953874,
+    "embedded_bytes": 514134,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p8",
+    "comic_step": 22,
+    "viewport": [
+      10080.0,
+      3744.0,
+      11360.0,
+      4464.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "08",
+    "title": "貝氏定理，把證據帶回上游",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1991509,
+    "embedded_bytes": 489493,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p9",
+    "comic_step": 24,
+    "viewport": [
+      11520.0,
+      4688.0,
+      12800.0,
+      5408.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "09",
+    "title": "再往上一站：先換條件，再加總",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1967742,
+    "embedded_bytes": 496201,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p10",
+    "comic_step": 26,
+    "viewport": [
+      12960.0,
+      5632.0,
+      14240.0,
+      6352.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "10",
+    "title": "反向接力，最後問 x 等於零",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1880641,
+    "embedded_bytes": 505452,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u02-p12",
+    "comic_step": 29,
+    "viewport": [
+      15840.0,
+      6576.0,
+      17120.0,
+      7296.0
+    ],
+    "scene": "lec02bni-scene-u02"
+  },
+  {
+    "id": "11",
+    "title": "大總和拆小，小結果留下來",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2204861,
+    "embedded_bytes": 576179,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u03-p2",
+    "comic_step": 33,
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "scene": "lec02bni-scene-u03"
+  },
+  {
+    "id": "12",
+    "title": "省下來的不只是固定倍數",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1866007,
+    "embedded_bytes": 496850,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u03-p3",
+    "comic_step": 35,
+    "viewport": [
+      2880.0,
+      1856.0,
+      4160.0,
+      2576.0
+    ],
+    "scene": "lec02bni-scene-u03"
+  },
+  {
+    "id": "13",
+    "title": "消去誰在先，會改變中間表",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1931295,
+    "embedded_bytes": 516573,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u03-p5",
+    "comic_step": 38,
+    "viewport": [
+      5760.0,
+      2800.0,
+      7040.0,
+      3520.0
+    ],
+    "scene": "lec02bni-scene-u03"
+  },
+  {
+    "id": "14",
+    "title": "訊息可以反向，結構不用翻面",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2039763,
+    "embedded_bytes": 574731,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u04-p4",
+    "comic_step": 44,
+    "viewport": [
+      4320.0,
+      912.0,
+      5600.0,
+      1632.0
+    ],
+    "scene": "lec02bni-scene-u04"
+  },
+  {
+    "id": "15",
+    "title": "先畫關係，再用資料填機率",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2077365,
+    "embedded_bytes": 561139,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u05-p1",
+    "comic_step": 47,
+    "viewport": [
+      0.0,
+      912.0,
+      1280.0,
+      1632.0
+    ],
+    "scene": "lec02bni-scene-u05"
+  },
+  {
+    "id": "16",
+    "title": "一般情況難，不代表每張圖都難",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 1968682,
+    "embedded_bytes": 490196,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u05-p2",
+    "comic_step": 49,
+    "viewport": [
+      1440.0,
+      1856.0,
+      2720.0,
+      2576.0
+    ],
+    "scene": "lec02bni-scene-u05"
+  },
+  {
+    "id": "17",
+    "title": "算不動時，兩條近似路線",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "exact_16_9": false,
+    "ratio_error": 0.0005313496280551638,
+    "original_bytes": 2010163,
+    "embedded_bytes": 547843,
+    "mime": "image/jpeg",
+    "anchor": "lec02bni-u05-p3",
+    "comic_step": 51,
+    "viewport": [
+      2880.0,
+      2800.0,
+      4160.0,
+      3520.0
+    ],
+    "scene": "lec02bni-scene-u05"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "01",
+    "title": "高維機率表，塞爆了！",
+    "anchor": "lec02nn-u01-p3",
+    "step": 5,
+    "scene": "lec02nn-scene-u01",
+    "viewport": [
+      2880.0,
+      912.0,
+      4160.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2325752,
+    "embedded_bytes": 579672,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "02",
+    "title": "對數：小數連乘變連加",
+    "anchor": "lec02nn-u02-p2",
+    "step": 9,
+    "scene": "lec02nn-scene-u02",
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1982745,
+    "embedded_bytes": 473858,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "03",
+    "title": "先知道類別，再假設獨立",
+    "anchor": "lec02nn-u02-p3",
+    "step": 11,
+    "scene": "lec02nn-scene-u02",
+    "viewport": [
+      2880.0,
+      1856.0,
+      4160.0,
+      2576.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1987729,
+    "embedded_bytes": 507123,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "04",
+    "title": "沒出現的字，也有一票",
+    "anchor": "lec02nn-u03-p3",
+    "step": 16,
+    "scene": "lec02nn-scene-u03",
+    "viewport": [
+      2880.0,
+      912.0,
+      4160.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1966380,
+    "embedded_bytes": 468750,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "05",
+    "title": "先驗加權，才是分類分數",
+    "anchor": "lec02nn-u03-p4",
+    "step": 18,
+    "scene": "lec02nn-scene-u03",
+    "viewport": [
+      4320.0,
+      1856.0,
+      5600.0,
+      2576.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2144251,
+    "embedded_bytes": 583323,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "06",
+    "title": "分數大，不等於機率大於一",
+    "anchor": "lec02nn-u03-p6",
+    "step": 21,
+    "scene": "lec02nn-scene-u03",
+    "viewport": [
+      7200.0,
+      2800.0,
+      8480.0,
+      3520.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1981083,
+    "embedded_bytes": 527104,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "07",
+    "title": "二元線索，加權成直線",
+    "anchor": "lec02nn-u03-p7",
+    "step": 23,
+    "scene": "lec02nn-scene-u03",
+    "viewport": [
+      8640.0,
+      3744.0,
+      9920.0,
+      4464.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1880410,
+    "embedded_bytes": 440601,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "08",
+    "title": "先找最近，再來投票",
+    "anchor": "lec02nn-u04-p2",
+    "step": 27,
+    "scene": "lec02nn-scene-u04",
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1915364,
+    "embedded_bytes": 471987,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "09",
+    "title": "誤差保證，要看前提",
+    "anchor": "lec02nn-u04-p4",
+    "step": 30,
+    "scene": "lec02nn-scene-u04",
+    "viewport": [
+      4320.0,
+      1856.0,
+      5600.0,
+      2576.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2093500,
+    "embedded_bytes": 510391,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "10",
+    "title": "奇數鄰居，也可能平手",
+    "anchor": "lec02nn-u04-p5",
+    "step": 32,
+    "scene": "lec02nn-scene-u04",
+    "viewport": [
+      5760.0,
+      2800.0,
+      7040.0,
+      3520.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1815343,
+    "embedded_bytes": 425195,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "11",
+    "title": "最近鄰，把空間分地盤",
+    "anchor": "lec02nn-u05-p2",
+    "step": 36,
+    "scene": "lec02nn-scene-u05",
+    "viewport": [
+      1440.0,
+      912.0,
+      2720.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 1667075,
+    "embedded_bytes": 385780,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "12",
+    "title": "鄰居多，未必分得好",
+    "anchor": "lec02nn-u06-p3",
+    "step": 41,
+    "scene": "lec02nn-scene-u06",
+    "viewport": [
+      2880.0,
+      912.0,
+      4160.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2143584,
+    "embedded_bytes": 564577,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "13",
+    "title": "三種分類器，各有代價",
+    "anchor": "lec02nn-u07-p1",
+    "step": 44,
+    "scene": "lec02nn-scene-u07",
+    "viewport": [
+      0.0,
+      912.0,
+      1280.0,
+      1632.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2168829,
+    "embedded_bytes": 559797,
+    "mime": "image/jpeg"
+  },
+  {
+    "id": "14",
+    "title": "沒有訓練，查詢仍要忙",
+    "anchor": "lec02nn-u07-p2",
+    "step": 46,
+    "scene": "lec02nn-scene-u07",
+    "viewport": [
+      1440.0,
+      1856.0,
+      2720.0,
+      2576.0
+    ],
+    "dimensions": [
+      1672,
+      941
+    ],
+    "original_bytes": 2174823,
+    "embedded_bytes": 538273,
+    "mime": "image/jpeg"
+  }
+]

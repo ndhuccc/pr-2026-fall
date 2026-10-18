@@ -4,9 +4,9 @@
 >
 > Week 2 (self-study material) | Topic: Bayes Classifiers (2) — Bayesian networks and probabilistic inference
 
-投影片：[JianBauDau JSON](../slides/lec02-bayesian-network-inference.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
+投影片：[JianBauDau JSON](../slides/lec02-bayesian-network-inference.jbd.json) · [四格漫畫版](../slides/lec02-bayesian-network-inference-with-comics.jbd.json)（使用 JianBauDau 編輯器或播放器開啟）。
 
-Slides: [JianBauDau JSON](../slides/lec02-bayesian-network-inference.jbd.json) (open with the JianBauDau editor or player).
+Slides: [JianBauDau JSON](../slides/lec02-bayesian-network-inference.jbd.json) · [Comic version](../slides/lec02-bayesian-network-inference-with-comics.jbd.json) (open with the JianBauDau editor or player).
 
 前面的講義已經把貝氏網路蓋好。節點是隨機變數，箭頭代表因果或依賴關係。每個節點附一張條件機率表（CPT）。這份講義要回答一個很實務的問題——網路上線之後，最常被問的是什麼？
 
