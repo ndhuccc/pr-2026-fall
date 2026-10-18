@@ -62,8 +62,8 @@
         "comic-image-55dedb074c22448ab9d3554e48001b59"
       ],
       "camera": {
-        "x": 640.0,
-        "y": 310.0,
+        "x": 640,
+        "y": 310,
         "zoom": 0.8780487804878049,
         "rotation": 0
       }
@@ -1180,7 +1180,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "$t=0.25:\\quad \\mathbf a=(0.25,0.25,0.25,0.25)$\n$\\mathbf w=\\sum_i\\alpha_i y_i\\mathbf x_i=(1,0)$",
+      "text": "$t=0.25:\\quad \\mathbf \\alpha=(0.25,0.25,0.25,0.25)$\n$\\mathbf w=\\sum_i\\alpha_i y_i\\mathbf x_i=(1,0)$",
       "shapeKind": "rectangle"
     },
     "pr03b5-u14-p5-sparse": {
@@ -1211,7 +1211,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "$t=0:\\quad \\mathbf a=(0,0.5,0,0.5),\\quad \\mathbf w=(1,0)$\n兩組對偶值皆為 $1-1/2=0.5$；貼邊與正乘子須分開。\n*Both dual objectives equal 0.5; distinguish active margin points from positive multipliers.*",
+      "text": "$t=0:\\quad \\mathbf \\alpha=(0,0.5,0,0.5),\\quad \\mathbf w=(1,0)$\n兩組對偶值皆為 $Q(\\boldsymbol{\\alpha}) = \\sum_{i=1}^{n} \\alpha_i - \\frac{1}{2} \\sum_{i=1}^{n} \\sum_{j=1}^{n} \\alpha_i \\alpha_j y_i y_j \\mathbf{x}_i^T \\mathbf{x}_j=1-1/2=0.5$；貼邊與正乘子須分開。\n*Both dual objectives equal 0.5; distinguish active margin points from positive multipliers.*",
       "shapeKind": "rectangle"
     },
     "pr03b5-u14-p5-footer": {
@@ -1484,8 +1484,8 @@
       "name": "分數尺度與幾何距離",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 0.0,
-        "y": 912.0,
+        "x": 0,
+        "y": 912,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1514,8 +1514,8 @@
       "name": "硬間隔主問題",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 1440.0,
-        "y": 1856.0,
+        "x": 1440,
+        "y": 1856,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1544,8 +1544,8 @@
       "name": "對偶與互補條件",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 2880.0,
-        "y": 2800.0,
+        "x": 2880,
+        "y": 2800,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1574,8 +1574,8 @@
       "name": "四角點間隔比較",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 4320.0,
-        "y": 3744.0,
+        "x": 4320,
+        "y": 3744,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1604,8 +1604,8 @@
       "name": "對偶乘子不唯一",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 5760.0,
-        "y": 4688.0,
+        "x": 5760,
+        "y": 4688,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1634,8 +1634,8 @@
       "name": "移動零乘子點的條件",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 7200.0,
-        "y": 5632.0,
+        "x": 7200,
+        "y": 5632,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1664,8 +1664,8 @@
       "name": "一維硬間隔練習解答",
       "sceneId": "pr03b5-scene-u14",
       "transform": {
-        "x": 7200.0,
-        "y": 6576.0,
+        "x": 7200,
+        "y": 6576,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1694,9 +1694,6 @@
       "id": "pr03b5-root-step-u14",
       "order": 0,
       "label": "最大間隔與支持向量",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
       "target": {
         "kind": "scene-point",
         "sceneId": "scene-root",
@@ -1710,29 +1707,32 @@
           "height": 720
         }
       },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
       "speakerNotes": "教材程度:研究生(grad)。沿用中英對照、自主學習、一KP一檔與16:9規格。未新增教師已核准時長。完整推導與來源勘誤見對應講義，講者備註均為可公開教學內容。"
     },
     {
       "id": "pr03b5-u14-step1",
       "order": 1,
       "label": "相同邊界的分數可以任意放大",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「相同邊界的分數可以任意放大」中具體回答。把係數乘以正數只改變分數，不改變零集合。若不固定尺度，任何人都能把分數放大並冒稱間隔更安全。這裡先假設有限資料包含正負兩類且嚴格可分，並讓最小帶標籤分數為1。正負方向不能任意交換，因為分類標籤已經指定。距離須除以法向量長度，因此後續最小化範數才有幾何意義。接下來把半寬與全寬寫清楚，再定義最佳化問題。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 640.0,
-          "y": 310.0
+          "x": 640,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「相同邊界的分數可以任意放大」中具體回答。把係數乘以正數只改變分數，不改變零集合。若不固定尺度，任何人都能把分數放大並冒稱間隔更安全。這裡先假設有限資料包含正負兩類且嚴格可分，並讓最小帶標籤分數為1。正負方向不能任意交換，因為分類標籤已經指定。距離須除以法向量長度，因此後續最小化範數才有幾何意義。接下來把半寬與全寬寫清楚，再定義最佳化問題。"
     },
     {
       "id": "comic-step-468b3ff374fc4a3696b960cc612e3ac3",
@@ -1742,8 +1742,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 640.0,
-          "y": 1272.0
+          "x": 640,
+          "y": 1272
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1760,23 +1760,23 @@
       "id": "pr03b5-u14-step2",
       "order": 3,
       "label": "固定尺度後，最短法向量給最大間隔",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「固定尺度後，最短法向量給最大間隔」中具體回答。先讀符號γ與W，避免把教材說的margin1和全寬2當成互相矛盾。限制右側1是前頁選定的尺度；在此尺度下最小化權重平方才能最大化間隔。目標對b沒有平方項，不能因為看見凸二次式就聲稱所有變數與乘子都唯一。可分兩類的硬間隔設定提供更強結論，但這種說法不能移植到任意凸問題。接下來以拉格朗日乘子把限制與支持向量連起來。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 2080.0,
-          "y": 310.0
+          "x": 2080,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「固定尺度後，最短法向量給最大間隔」中具體回答。先讀符號γ與W，避免把教材說的margin1和全寬2當成互相矛盾。限制右側1是前頁選定的尺度；在此尺度下最小化權重平方才能最大化間隔。目標對b沒有平方項，不能因為看見凸二次式就聲稱所有變數與乘子都唯一。可分兩類的硬間隔設定提供更強結論，但這種說法不能移植到任意凸問題。接下來以拉格朗日乘子把限制與支持向量連起來。"
     },
     {
       "id": "comic-step-4dbeccf9874a496f83fc14a5a899b469",
@@ -1786,8 +1786,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 2080.0,
-          "y": 2216.0
+          "x": 2080,
+          "y": 2216
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1804,23 +1804,23 @@
       "id": "pr03b5-u14-step3",
       "order": 5,
       "label": "對偶乘子指出哪些樣本參與預測",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「對偶乘子指出哪些樣本參與預測」中具體回答。α是限制的非負乘子，不是機率。對w與b令偏導為0，得到上方兩個平衡式；代回後只剩內積與乘子的對偶目標。最下方互補條件是兩個量相乘為0：若α正，分數缺口一定為0；若缺口0，α仍可為0。內積結構不表示計算完全與維度無關，真正的成本仍包含內積與樣本對數。接下來用原書正方形比較兩個可行方向。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 3520.0,
-          "y": 310.0
+          "x": 3520,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「對偶乘子指出哪些樣本參與預測」中具體回答。α是限制的非負乘子，不是機率。對w與b令偏導為0，得到上方兩個平衡式；代回後只剩內積與乘子的對偶目標。最下方互補條件是兩個量相乘為0：若α正，分數缺口一定為0；若缺口0，α仍可為0。內積結構不表示計算完全與維度無關，真正的成本仍包含內積與樣本對數。接下來用原書正方形比較兩個可行方向。"
     },
     {
       "id": "comic-step-79fdd101bd544f10aca197729700c125",
@@ -1830,8 +1830,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 3520.0,
-          "y": 3160.0
+          "x": 3520,
+          "y": 3160
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1848,23 +1848,23 @@
       "id": "pr03b5-u14-step4",
       "order": 7,
       "label": "相同四點在正交邊界留下更寬間隔",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「相同四點在正交邊界留下更寬間隔」中具體回答。圖的左右面板使用相同座標比例，資料完全沿用來源四角。左圖最小帶標籤分數為1，法向量長度1，因此全寬2。右圖權重2與1也滿足全部限制，但範數根號5較大，間隔較小。圖上虛線是分數正負1而非額外分類邊界，中央實線才做決策。不要把全寬2誤讀為單點到中央的距離。接下來驗算同一邊界的多組乘子。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 4960.0,
-          "y": 310.0
+          "x": 4960,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「相同四點在正交邊界留下更寬間隔」中具體回答。圖的左右面板使用相同座標比例，資料完全沿用來源四角。左圖最小帶標籤分數為1，法向量長度1，因此全寬2。右圖權重2與1也滿足全部限制，但範數根號5較大，間隔較小。圖上虛線是分數正負1而非額外分類邊界，中央實線才做決策。不要把全寬2誤讀為單點到中央的距離。接下來驗算同一邊界的多組乘子。"
     },
     {
       "id": "comic-step-f7f90381bb814fd89cb2ada46a62884c",
@@ -1874,8 +1874,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 4960.0,
-          "y": 4104.0
+          "x": 4960,
+          "y": 4104
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1892,23 +1892,23 @@
       "id": "pr03b5-u14-step5",
       "order": 9,
       "label": "乘子不唯一，邊界仍可以相同",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「乘子不唯一，邊界仍可以相同」中具體回答。按本講義明列的點順序，正類是前兩個，負類是後兩個。來源乘子方程有順序不一致之處，本頁按定義重算。t四分之一得到對稱解，t零得到只有兩個正乘子的解；兩者的標籤加權和都是零，權重相同，對偶值也相同。因此來源「全部都是支持向量」若只是指貼邊可以理解，若指每組解α都正就不成立。接下來釐清非支持點能怎樣移動，並做一維練習。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 6400.0,
-          "y": 310.0
+          "x": 6400,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「乘子不唯一，邊界仍可以相同」中具體回答。按本講義明列的點順序，正類是前兩個，負類是後兩個。來源乘子方程有順序不一致之處，本頁按定義重算。t四分之一得到對稱解，t零得到只有兩個正乘子的解；兩者的標籤加權和都是零，權重相同，對偶值也相同。因此來源「全部都是支持向量」若只是指貼邊可以理解，若指每組解α都正就不成立。接下來釐清非支持點能怎樣移動，並做一維練習。"
     },
     {
       "id": "comic-step-1db67d94fd884403b2c002df4765d907",
@@ -1918,8 +1918,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 6400.0,
-          "y": 5048.0
+          "x": 6400,
+          "y": 5048
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1936,23 +1936,23 @@
       "id": "pr03b5-u14-step6",
       "order": 11,
       "label": "無關點移動仍須保留原限制",
-      "durationMs": 900,
-      "holdMs": 500,
-      "easing": "smooth",
-      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「無關點移動仍須保留原限制」中具體回答。本頁把「遠處點不重要」改成有條件的敘述。若改動後舊最優解仍滿足該點限制，舊的零乘子表示法仍可證明其最優；若點跨入間隔，原證明的可行前提就消失。練習只給題目與提示，不預先給解答；先找左右類別最接近位置，再處理標籤方向與尺度。訓練點全部可分是本單元假設，不是一般資料的必然性質。接下來在KP15引入鬆弛量，處理不能全部滿足的限制。",
       "target": {
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 7840.0,
-          "y": 310.0
+          "x": 7840,
+          "y": 310
         },
         "zoom": 0.8780487804878049,
         "referenceViewport": {
           "width": 1280,
           "height": 720
         }
-      }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁與銜接條提出的問題，在本頁「無關點移動仍須保留原限制」中具體回答。本頁把「遠處點不重要」改成有條件的敘述。若改動後舊最優解仍滿足該點限制，舊的零乘子表示法仍可證明其最優；若點跨入間隔，原證明的可行前提就消失。練習只給題目與提示，不預先給解答；先找左右類別最接近位置，再處理標籤方向與尺度。訓練點全部可分是本單元假設，不是一般資料的必然性質。接下來在KP15引入鬆弛量，處理不能全部滿足的限制。"
     },
     {
       "id": "comic-step-6386376448144152a045a9c065784a99",
@@ -1962,8 +1962,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 7840.0,
-          "y": 5992.0
+          "x": 7840,
+          "y": 5992
         },
         "zoom": 1,
         "referenceViewport": {
@@ -1984,8 +1984,8 @@
         "kind": "scene-point",
         "sceneId": "pr03b5-scene-u14",
         "point": {
-          "x": 7840.0,
-          "y": 6936.0
+          "x": 7840,
+          "y": 6936
         },
         "zoom": 1,
         "referenceViewport": {
@@ -2002,7 +2002,7 @@
   "metadata": {
     "title": "PR 第3章 KP14 最大間隔與支持向量",
     "createdAt": "2026-10-16T10:00:01.826364+00:00",
-    "updatedAt": "2026-10-16T11:06:02.205734+00:00",
+    "updatedAt": "2026-10-18T02:32:00.637Z",
     "aspectRatio": "16:9"
   }
 }
