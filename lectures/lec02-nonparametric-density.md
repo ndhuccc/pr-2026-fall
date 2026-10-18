@@ -268,9 +268,9 @@ The five kernel values sum to $0.9807$. Dividing by $N=5$ gives $0.1961$, and di
 
 All numbers above were computed with Python, not by hand.
 
-**常見迷思**:「高斯核的峰高是 1,所以密度估計不會超過 1。」錯。核的峰高是 $1/\sqrt{2\pi}\approx0.40$,不是 1;而且多顆核疊加後可以超過 0.40,見右圖的 0.196 與更密集資料時的更高值。
+**常見迷思**:「高斯核的峰高是 1,所以密度估計不會超過 1。」錯。核的峰高是 $1/\sqrt{2\pi}\approx0.40$,不是 1。又因為 $\hat p(x)$ 是 $N$ 顆核的平均再除以 $b$,所以 $\hat p(x)\le 0.40/b$:$b=1.0$ 時估計值**不會超過 0.40**(本節的 0.196 也遠低於它);只有 $b<1$ 時,估計值才可能超過 0.40,甚至超過 1,因為除以較小的 $b$ 會把密度放大。
 
-**Common misconception**: "The Gaussian kernel peaks at 1, so the estimate never exceeds 1." The peak of the kernel is $1/\sqrt{2\pi}\approx0.40$, not 1. Stacked kernels can exceed 0.40, as the value 0.196 in a sparse example shows.
+**Common misconception**: "The Gaussian kernel peaks at 1, so the estimate never exceeds 1." The peak of the kernel is $1/\sqrt{2\pi}\approx0.40$, not 1. Because $\hat p(x)$ is the average of $N$ kernels divided by $b$, we have $\hat p(x)\le 0.40/b$. With $b=1.0$ the estimate **cannot exceed 0.40** (the 0.196 of this section is well below it); only when $b<1$ can the estimate exceed 0.40, or even 1, because dividing by a smaller $b$ scales the density up.
 
 **圖**:見上方 `lec02-nonparametric-kernel-shapes` 的右圖,五顆核與它們的平均都畫在同一張圖上。
 
