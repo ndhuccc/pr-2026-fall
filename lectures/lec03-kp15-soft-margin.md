@@ -68,6 +68,7 @@ $$
 \frac12\|\mathbf w\|^2+C\sum_i\xi_i,
 \quad q_i\ge1-\xi_i,\quad\xi_i\ge0.
 $$
+
 $$
 \min_{\mathbf w,b}\frac12\|\mathbf w\|^2+
 C\sum_i\max(0,1-y_i g_i).
@@ -101,6 +102,7 @@ $$
 L=\frac12\|\mathbf w\|^2+C\sum_i\xi_i+
 \sum_i\alpha_i(1-\xi_i-y_i g_i)-\sum_i\beta_i\xi_i,
 $$
+
 $$
 C-\alpha_i-\beta_i=0\quad\Longrightarrow\quad0\le\alpha_i\le C.
 $$

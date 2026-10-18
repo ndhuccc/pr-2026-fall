@@ -42,6 +42,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-18 — 修正網頁公式顯示多餘 `$$$$` 的錯誤:原因是講義中前一個 `$$ ... $$` 區塊結尾與下一個區塊開頭緊接、中間沒有空行。掃描全部 `lectures/*.md`、`assignments/`、根目錄 `.md`,共 6 處,皆在 `lec03-kp14-hard-margin.md`(3)、`lec03-kp15-soft-margin.md`(2)、`lec03-kp16-multiclass-ecoc.md`(1);已於區塊間補空行,其他講義無此問題。網站建置無 ERROR 與 WARNING,三頁 HTML 不再含 `$$`。技能稽核:`.agents/skills/textbook-lecture-notes/scripts/audit_lecture.py` 新增 L11(相鄰 `$$` 或 `$$` 行數為奇數,屬 FAIL),SKILL.md 新增 §4.7a 並在品質稽核步驟註明;以舊版 KP14 驗證可偵出 3 處,現行全部講義 0 處。簡報(JSON)不受影響。
 - 2026-10-18 — 依老師指示移除第 3 週 KP17(ν-SVM)與 KP18(凸包幾何):刪除 `lectures/lec03-kp17-*.md`、`lec03-kp18-*.md`、對應的兩份 `slides/*-with-comics.jbd.json`,以及 3 組示意圖(`assets/figures/lec03-kp17-*`、`lec03-kp18-*` 的 png 與 svg)。`schedule.md` 第 3 週 SVM 列改為 KP14–KP16(第 3 週共 16 個知識點),`mkdocs.yml` 選單由建置自動更新。網站建置無 ERROR 與 WARNING。圖檔腳本 `assets/figures/src/lec03-kp14-kp18-figures.py` 仍保留 KP17、KP18 的繪圖函式,尚未清理。Git 歷史可取回被刪檔案。
 - 2026-10-17 — 首頁(`README.md`)與課綱(`syllabus.md`)的學習目標改寫為可觀察的學習動詞,並標註對應評量方式:貝氏分類器對應 HW01 與期中考,其餘單元對應期中考／期末考／期末專題。課綱改為「學習目標 × 評量方式」表格。內容與既有 HW01(手寫數字辨識:貝氏分類器與朴素貝氏分類器比較)一致;本次僅文件文字變更,未動教材、作業或程式。
 

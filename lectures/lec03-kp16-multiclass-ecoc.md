@@ -132,6 +132,7 @@ $$
 d_H(\mathbf s,\mathbf c_k)\ge
 d_H(\mathbf c_t,\mathbf c_k)-e\ge d_{\min}-e.
 $$
+
 $$
 e<d_{\min}-e\quad\Longleftrightarrow\quad
 2e<d_{\min},\qquad

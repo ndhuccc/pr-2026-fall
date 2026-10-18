@@ -76,6 +76,7 @@ $$
 L=\frac12\|\mathbf w\|^2+
 \sum_i\alpha_i[1-y_i(\mathbf w^T\mathbf x_i+b)],
 $$
+
 $$
 \mathbf w=\sum_i\alpha_i y_i\mathbf x_i,
 \qquad \sum_i\alpha_i y_i=0.
@@ -117,6 +118,7 @@ $$
 (g_1,g_2,g_3,g_4)=(1,1,-1,-1),\quad
 (y_1g_1,\ldots,y_4g_4)=(1,1,1,1),
 $$
+
 $$
 \|\mathbf w\|=1,\quad \gamma=1,\quad W=2.
 $$
@@ -135,6 +137,7 @@ $$
 (\alpha_1,\alpha_2,\alpha_3,\alpha_4)
 =(t,\tfrac12-t,t,\tfrac12-t),\quad0\le t\le\tfrac12.
 $$
+
 $$
 \sum_i\alpha_i=1,\quad \mathbf w=(1,0)^T,\quad
 \sum_i\alpha_i-\tfrac12\|\mathbf w\|^2=\tfrac12.
