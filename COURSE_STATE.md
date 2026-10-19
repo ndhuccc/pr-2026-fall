@@ -48,7 +48,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
-- 2026-10-19 — 依老師「提交後推送 pr-2026-fall」指示，整理 `slides/lec02-bayesian-network-inference-with-comics.jbd.json` 的既有編輯：新增「杯子倒了，貓咪來過嗎？」邊際化教學圖片並調整播放順序；簡報維持52個步驟，節點253個。基本結構檢查無FAIL；17則既有講者備註未變更，已核對皆為教學說明。以隔離暫存目錄完成網站嚴格建置，成品簡報與來源位元組一致。原生簡報島播放與PDF未重新驗證；雲端同步結果見本次交付摘要。
+- 2026-10-19 — 依老師「提交後推送 pr-2026-fall」指示，整理 `slides/lec02-bayesian-network-inference-with-comics.jbd.json` 的既有編輯：新增「杯子倒了，貓咪來過嗎？」邊際化教學圖片並調整播放順序。基本結構檢查無FAIL；17則既有講者備註未變更，已核對皆為教學說明。以隔離暫存目錄完成網站嚴格建置，成品簡報與來源位元組一致。原生簡報島播放與PDF未重新驗證；雲端同步結果見本次交付摘要。
 
 - 2026-10-18 — 依老師指定 `lec02-bayesian-network-inference.jbd.json` 製作17張繁中2×2四格漫畫，另存 `slides/lec02-bayesian-network-inference-with-comics.jbd.json`（52 steps、255 nodes、12,428,817 bytes）。原35步驟與238節點保留；所有新圖使用Q90/4:4:4 JPEG，實測圖資減少73.41%。17次緊接插頁、MIME及新鏡頭零碰撞通過；17張壓縮圖1280×720逐張檢視，07/09/11/14/16另檢1920×1080。16個聯合狀態完整列舉核對0.46、0.631與後驗0.5748/0.3274/0.4034；漫畫使用分母0.3711。圖資、分鏡、離線圖集與REPORT位於 `assets/figures/lec02-bayesian-network-inference-comics/`。完整設計稽核原稿36 FAIL、漫畫版87 FAIL，未宣稱全過。原生Open的fileChooser.setFiles被擴充功能要求Allow access to file URLs阻擋；未改權限或上傳伺服器，播放／reticle／PDF待驗。已同步本機講義與進度表下載連結，未提交、推送或部署。
 
