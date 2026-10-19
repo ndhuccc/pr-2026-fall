@@ -66,17 +66,17 @@ nav:
           - KP03 收斂證明: lectures/lec03-kp03-convergence.md
           - KP04 線上感知器: lectures/lec03-kp04-online-perceptron.md
           - KP05 神經元與口袋: lectures/lec03-kp05-neuron-pocket.md
-          - KP06 把多類比較整理成感知器限制: lectures/lec03-kp06-kesler.md
-          - KP07 平方誤差最小就是正交投影: lectures/lec03-kp07-mse-projection.md
-          - KP08 用當下誤差逐筆修正權重: lectures/lec03-kp08-lms.md
-          - KP09 以有限樣本直接解最小平方: lectures/lec03-kp09-least-squares.md
-          - KP10 平方誤差下，條件平均是最佳預測: lectures/lec03-kp10-conditional-mean.md
-          - KP11 0/1 標籤的條件平均就是事後機率: lectures/lec03-kp11-mse-posterior.md
-          - KP12 平均偏離與資料敏感度是兩種誤差: lectures/lec03-kp12-bias-variance.md
-          - KP13 線性對數比值反解為有效機率: lectures/lec03-kp13-logistic.md
-          - KP14 從分對資料走向最大間隔: lectures/lec03-kp14-hard-margin.md
-          - KP15 用鬆弛變數交換間隔與違規代價: lectures/lec03-kp15-soft-margin.md
-          - KP16 把多類別決策拆成可組合的二元問題: lectures/lec03-kp16-multiclass-ecoc.md
+          - KP06 Kesler 構造: lectures/lec03-kp06-kesler.md
+          - KP07 最小平方與正交投影: lectures/lec03-kp07-mse-projection.md
+          - KP08 LMS 演算法: lectures/lec03-kp08-lms.md
+          - KP09 最小平方解: lectures/lec03-kp09-least-squares.md
+          - KP10 條件平均與最佳預測: lectures/lec03-kp10-conditional-mean.md
+          - KP11 條件平均與事後機率: lectures/lec03-kp11-mse-posterior.md
+          - KP12 偏差與變異: lectures/lec03-kp12-bias-variance.md
+          - KP13 邏輯迴歸: lectures/lec03-kp13-logistic.md
+          - KP14 硬間隔 SVM: lectures/lec03-kp14-hard-margin.md
+          - KP15 軟間隔與鬆弛變數: lectures/lec03-kp15-soft-margin.md
+          - KP16 多類別 ECOC: lectures/lec03-kp16-multiclass-ecoc.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md

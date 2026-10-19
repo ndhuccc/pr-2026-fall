@@ -171,6 +171,25 @@ def lecture_title(stem: str) -> str:
     return ""
 
 
+def schedule_kp_labels() -> dict[str, str]:
+    """從 schedule.md 的講義連結 ``[KPNN 標題](lectures/<stem>.md)`` 取得 {stem: "KPNN 標題"}。"""
+    p = ROOT / "schedule.md"
+    if not p.exists():
+        return {}
+    pat = re.compile(r"\[(KP\d{2} [^\]]+)\]\(lectures/([^)#]+)\.md\)")
+    return {m.group(2): m.group(1) for m in pat.finditer(p.read_text(encoding="utf-8"))}
+
+
+def slide_label(stem: str, kp_labels: dict[str, str]) -> tuple[str, str]:
+    """投影片檔的顯示名稱與排序鍵:優先用進度表的「KPNN 標題」,漫畫版加註。"""
+    base, comics = (stem[: -len("-with-comics")], True) if stem.endswith("-with-comics") else (stem, False)
+    label = kp_labels.get(base) or lecture_title(base)
+    if not label:
+        return "", stem
+    key = label if label.startswith("KP") else "~" + label
+    return (f"{label}(漫畫版)" if comics else label), key + ("1" if comics else "0")
+
+
 def write_slides_index(stage: Path) -> int:
     """產生網站的投影片下載頁(取代 slides/README.md),依週次列出各格式的檔案。
 
@@ -181,6 +200,7 @@ def write_slides_index(stage: Path) -> int:
     if not base.exists():
         return 0
     lecture_re = re.compile(r"^(lec\d{2})(?:-([a-z0-9][a-z0-9-]*))?\.(jbd\.json|pptx|pdf|html)$")
+    kp_labels = schedule_kp_labels()
     weeks: dict[str, dict[str, list[tuple[str, str]]]] = {}
     others: list[str] = []
     for p in sorted(base.iterdir()):
@@ -210,9 +230,13 @@ def write_slides_index(stage: Path) -> int:
         for lec in sorted(weeks):
             num = int(lec[3:])
             lines += [f'=== "第 {num} 週"', "", "    | 教材 | 格式 | 下載 |", "    |---|---|---|"]
-            for slug in sorted(weeks[lec]):
+            def order(slug: str, lec: str = lec) -> str:
                 stem = lec if slug == "" else f"{lec}-{slug}"
-                label = "本週正課" if slug == "" else lecture_title(stem) or slug
+                return slide_label(stem, kp_labels)[1] if slide_label(stem, kp_labels)[0] else "~~" + slug
+
+            for slug in sorted(weeks[lec], key=order):
+                stem = lec if slug == "" else f"{lec}-{slug}"
+                label = slide_label(stem, kp_labels)[0] or ("本週正課" if slug == "" else slug)
                 for fmt, name in sorted(weeks[lec][slug], key=lambda t: t[0]):
                     lines.append(f"    | {label} | {SLIDE_SHORT.get(fmt, fmt)} | [{name}]({name}) |")
             lines.append("")
