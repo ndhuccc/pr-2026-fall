@@ -48,6 +48,7 @@
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
+- 2026-10-24 07:49 — 依老師指示,網站的簡報下載只提供 HTML:`scripts/build_docs.py` 不再把 `.jbd.json` 發佈到網站(來源檔仍在 Repo)、下載頁移除 JSON 欄與 JianBauDau 播放器連結,進度表與講義指向 `slides/…jbd.json` 的連結改指向同名 HTML;僅在某份簡報沒有網頁版(轉換失敗或缺少 Node.js)時才退回提供 JSON 與播放器連結。網站體積隨之縮小(idl 約 713→361 MB、pr 約 637→390 MB)。三個課程 Repo 相同。
 - 2026-10-24 — 投影片下載頁改為以 HTML 網頁版為主:新增專案技能 `.agents/skills/slides-to-html/`(JianBauDau JSON 轉單檔離線 HTML,公式用 KaTeX 預先排版、圖片音檔內嵌),`scripts/build_docs.py` 在建置時自動轉換 `slides/` 第一層的 `.jbd.json` 並把 HTML 列在下載頁(JSON 與播放器連結保留為選用);`deploy-site.yml` 新增 Node 20 與 `npm ci` 步驟、`.gitignore` 排除 `node_modules/`。HTML 不提交進 Git,只存在網站。三個課程 Repo 相同。
 - 2026-10-22 — 依老師要求,JianBauDau 播放器下載連結由 1.0.1 改為 1.0.2(新增逐頁教學語音:Voice 按鈕與逐字稿):`scripts/build_docs.py`、`slides/FORMATS.md`。Release `player-v1.0.2` 已發佈於 ndhuccc/IDL115。
 
