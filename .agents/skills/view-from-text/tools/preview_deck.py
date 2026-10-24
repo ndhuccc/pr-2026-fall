@@ -119,6 +119,17 @@ def main():
         except Exception:
             browser = p.chromium.launch()
         pg = browser.new_page(viewport={"width": 1280, "height": 720})
+        kd = os.environ.get("KATEX_DIR")      # offline: folder of the katex npm package (e.g. slides-to-html/node_modules/katex)
+        if kd:
+            import mimetypes
+            def local_katex(route):
+                rel = route.request.url.split("/dist/", 1)[1].split("?")[0]
+                fp = os.path.join(kd, "dist", rel)
+                if os.path.exists(fp):
+                    route.fulfill(path=fp, content_type=mimetypes.guess_type(fp)[0] or "application/octet-stream")
+                else:
+                    route.abort()
+            pg.route("https://cdn.jsdelivr.net/npm/katex@*/dist/**", local_katex)
         pg.on("pageerror", lambda e: errors.append(str(e)[:100]))
         for sid, sc in S.items():
             if sid == doc["rootSceneId"]:
