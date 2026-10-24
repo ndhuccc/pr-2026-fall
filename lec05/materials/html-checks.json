@@ -1,0 +1,27 @@
+{
+  "(1280, 720)": {
+    "steps": 13,
+    "badImages": 0,
+    "katexErrors": 0,
+    "shrunk": [],
+    "overflow": [],
+    "pageErrors": [],
+    "externalRequests": []
+  },
+  "(1920, 1080)": {
+    "steps": 13,
+    "badImages": 0,
+    "katexErrors": 0,
+    "shrunk": [],
+    "overflow": [],
+    "pageErrors": [],
+    "externalRequests": []
+  },
+  "lecture": {
+    "badImages": 0,
+    "katexErrors": 0,
+    "formulaCount": 71,
+    "externalSources": [],
+    "externalRequests": []
+  }
+}

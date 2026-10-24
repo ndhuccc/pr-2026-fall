@@ -1,0 +1,29 @@
+
+== XOR 與線性分類
+  先問模型能否表示答案   <- 第三章用直線分類；本單元檢查它的適用界線。
+  相同座標，標籤決定可分性   <- 先固定四個輸入，再比較 OR 與 XOR 的類別。
+  分數正負決定預測類別   <- 圖形直覺需要固定的判別規則，才可逐點驗證。
+  一組參數可算出四個預測   <- 用同一組權重逐點計算，才能公平比較 OR 與 XOR。
+  兩個正類要求分數之和為正   <- 一次失敗不代表所有直線失敗；改看任意權重的必要條件。
+  負類要求同一個和非正，矛盾   <- A 類要求總和為正；現在把 B 類的必要條件相加。
+  訓練能改善參數，不能改變邊界族   <- 既然沒有全對直線，增加訓練還能改變什麼？
+  先解釋限制，再提出模型改變   <- 把「沒有全對直線」連到下一個問題：多條邊界如何組合？
+  延伸:AND 也能用單一直線分開   <- 延伸核對：改成 AND，看看同樣四點如何被分開。
+  延伸:候選線會錯；證明才排除所有線   <- 同一條候選線，改變判別方向或平手規則會改變錯誤數。
+  延伸:兩條邊界可選出中間的正類   <- 單一直線失敗後，改變模型允許的邊界組合。
+  延伸:固定平手規則，才能重現驗證   <- 把前面的算例與證明轉成可自行檢查的步驟。
+
+time estimate: main line 8 pages ~28 min, extension pages 4 (not counted); budget 15 min; per-KP budget 15.0 min (1 KPs)
+lecture: lectures/lec05-kp01-xor.md | figures 0 (missing 0, excluded 0)  formulas 11 (missing 7)  numbers 0 (missing 0)
+audit_deck: slides/lec05-kp01-xor.jbd.json  | scenes 2  nodes 94  steps 13  frames 1  pages 12  bilingual
+FAIL 0
+WARN 9
+  WARN U1 'XOR 與線性分類' has 12 pages; the guideline is 6. More is allowed when clarity needs it: say which unit grew and why in the delivery summary
+  WARN T1 main line ~28 min exceeds the 15 min budget: move pages to the extension group (label starts with 延伸:) or trim
+  WARN N6 lecture formula not on any slide: '\\widehat y(\\mathbf{x})=\\begin{cases}1\\;(A),&g(\\mathbf{x})>0,\\\\0\\;(B),&'
+  WARN N6 lecture formula not on any slide: 'g(\\mathbf{x})=1x_1+1x_2-0.5=x_1+x_2-0.5.'
+  WARN N6 lecture formula not on any slide: '\\text{XOR accuracy}=\\frac{\\text{correct predictions}}{\\text{all sample'
+  WARN N6 lecture formula not on any slide: 'g(0,1)=w_2+w_0>0'
+  WARN N6 lecture formula not on any slide: 'g(1,0)=w_1+w_0>0.'
+  WARN N6 lecture formula not on any slide: 'w_0+(w_1+w_2+w_0)=w_1+w_2+2w_0\\leq0.'
+  WARN N6 lecture formula not on any slide: '\\widehat y=1\\quad\\Longleftrightarrow\\quad 0.5<s\\leq1.5.'

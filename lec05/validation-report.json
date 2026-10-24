@@ -4,7 +4,7 @@
   "contentPages": 12,
   "navigationStepsExcluded": 1,
   "audioGenerated": false,
-  "sourceFile": "slides/lec05-kp01-xor.jbd.json",
+  "sourceFile": "lec05/materials/lec05-kp01-xor.jbd.json",
   "sourceSha256": "dea75d95732620cadd65ef3d506735ec820e377f9bf5bb03e76e8a6b5e5fda28",
   "groundingWarnings": 0,
   "txtMatchesPlan": true,
@@ -83,5 +83,5 @@
       "characters": 309
     }
   ],
-  "sourceAvailability": "local unsubmitted draft"
+  "sourceAvailability": "archived repository draft"
 }

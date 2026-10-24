@@ -5,12 +5,12 @@
   "sources": [
     {
       "id": "lec05-kp01",
-      "file": "slides/lec05-kp01-xor.jbd.json",
+      "file": "lec05/materials/lec05-kp01-xor.jbd.json",
       "sha256": "dea75d95732620cadd65ef3d506735ec820e377f9bf5bb03e76e8a6b5e5fda28",
       "sourceRef": "local KP01 draft; baseline 7b3dafb689637bdbb032aa96044c43951303d3c8",
       "format": "jbd",
       "schemaVersion": 3,
-      "availability": "Local unsubmitted slide draft; not included in this transcript-only commit."
+      "availability": "Archived in this repository as a draft; not published to the course website."
     }
   ],
   "pages": [

@@ -1,0 +1,65 @@
+[
+  {
+    "weights": [
+      1,
+      1,
+      -0.5
+    ],
+    "scores": [
+      -0.5,
+      0.5,
+      0.5,
+      1.5
+    ],
+    "predictions": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "errors": 1,
+    "accuracy": 0.75
+  },
+  {
+    "weights": [
+      1,
+      1,
+      -1.5
+    ],
+    "scores": [
+      -1.5,
+      -0.5,
+      -0.5,
+      0.5
+    ],
+    "predictions": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "errors": 3,
+    "accuracy": 0.25
+  },
+  {
+    "weights": [
+      1,
+      -1,
+      0
+    ],
+    "scores": [
+      0,
+      -1,
+      1,
+      0
+    ],
+    "predictions": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "errors": 1,
+    "accuracy": 0.75
+  }
+]
