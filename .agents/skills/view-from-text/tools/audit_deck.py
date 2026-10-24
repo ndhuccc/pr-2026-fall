@@ -224,7 +224,8 @@ def main():
         if len(title) != 1: Wn("D2", f"{tag}: expected one page title (font >= 40, y < 120), found {len(title)}"); continue
         t = title[0]
         if "$" in t["text"]: F("D2", f"{tag}: math in the page title (KaTeX line height makes it collide with the subtitle): {t['text']!r}")
-        if not (6 <= len(re.sub(r"\s", "", t["text"])) <= 26): Wn("D2", f"{tag}: title length: {t['text']!r}")
+        _tl = len(re.sub(r"\s", "", t["text"])) if CJK.search(t["text"]) else len(t["text"]) // 2    # English titles: ~2 characters per CJK character
+        if not (6 <= _tl <= 26): Wn("D2", f"{tag}: title length: {t['text']!r}")
         if args.level:
             max_blocks, max_chars = LEVEL_LIMITS[args.level]
             blocks = sum(n["text"].count("$$") // 2 for n in ns if n["type"] in ("text", "shape"))
@@ -304,8 +305,8 @@ def main():
     from collections import Counter
     FOOT = re.compile(r"^\s*(KP|U)\d+\s*[·•]")
     GENERIC = ("備註不代替正文", "本頁英文與中文對應", "這張視覺休息頁", "讀者應能指出本頁的輸入條件")
-    PREV_W = ("上一頁", "前一頁", "前面", "剛才", "回顧", "承接", "上一步")
-    NEXT_W = ("下一頁", "接下來", "接著", "下一步", "下一個", "預告", "之後", "下一單元")
+    PREV_W = ("上一頁", "前一頁", "前面", "剛才", "回顧", "承接", "上一步", "previous page", "last page", "previously", "earlier", "so far")
+    NEXT_W = ("下一頁", "接下來", "接著", "下一步", "下一個", "預告", "之後", "下一單元", "next page", "next,", "next ", "after this", "then ")
 
     def body_nodes(ns):
         return [n for n in ns if n["type"] in ("text", "shape") and n.get("text", "").strip()
@@ -339,7 +340,8 @@ def main():
             if any(g in notes for g in GENERIC): Wn("S3", f"{tag}: speaker notes contain boilerplate text")
             ptxt = "".join(n["text"] for n in ns if n["type"] in ("text", "shape"))
             bigrams = lambda x: {x[k:k + 2] for k in range(len(x) - 1) if CJK.match(x[k]) and CJK.match(x[k + 1])}
-            if len(bigrams(notes) & bigrams(ptxt)) < 6: Wn("P2", f"{tag}: speaker notes share almost no wording with the page; they look generic")
+            wordgrams = lambda x: {w for w in re.findall(r"[a-z][a-z]{3,}", x.lower())}
+            if len(bigrams(notes) & bigrams(ptxt)) < 6 and len(wordgrams(notes) & wordgrams(ptxt)) < 4: Wn("P2", f"{tag}: speaker notes share almost no wording with the page; they look generic")
         sig = tuple(sorted((n["type"], round((n["transform"]["x"] % PITCH) / 60), round(n["transform"]["y"] / 60), round(n["width"] / 60), round(n["height"] / 60))
                            for n in ns if not (n["transform"]["y"] < 130)))
         if key[0] == prev_scene and sig == run_sig:
@@ -351,12 +353,13 @@ def main():
         if args.narrative and i > 0 and not t["label"].endswith("(續)") and not t["label"].endswith("(續)"):
             if not any("bridge" in n.get("name", "").lower() for n in ns):
                 F("R1", f"{tag}: no bridge node (name containing 'bridge') linking this page to the previous one: {t['label']!r}")
-            if notes and not (any(w in notes for w in PREV_W) and any(w in notes for w in NEXT_W)):
+            nl = notes.lower()
+            if notes and not (any(w in nl for w in PREV_W) and any(w in nl for w in NEXT_W)):
                 Wn("R3", f"{tag}: speaker notes should say how this page follows the previous one and leads to the next")
     # ------------------------------------------------------------ J / R4 / R5 / S5 / V2: story and jargon (CLARITY.md C12-C17)
     page_list = [(page_of(t), t) for t in content_steps]
     ptext = lambda key: "\n".join(n.get("text", "") for n in pages.get(key, []) if n["type"] in ("text", "shape"))
-    ext_label = lambda t: t["label"].startswith("延伸")
+    ext_label = lambda t: t["label"].startswith("延伸") or t["label"].lower().startswith("extension")
     if args.terms:
         reg = json.load(open(args.terms, encoding="utf-8"))
         cards = {}
@@ -365,7 +368,7 @@ def main():
                 if n.get("name", "").startswith("term:"): cards.setdefault(n["name"][5:], i)
         for term, info in reg.items():
             names = [term] + list((info or {}).get("aliases", []))
-            uses = [i for i, (key, t) in enumerate(page_list) if any(nm in t["label"] + "\n" + ptext(key) for nm in names)]
+            uses = [i for i, (key, t) in enumerate(page_list) if any(nm.lower() in (t["label"] + "\n" + ptext(key)).lower() for nm in names)]
             if term not in cards:
                 F("J1", f"term {term!r} has no definition card (a node named 'term:{term}' with a plain-language definition and its meaning in the running example)")
                 continue
@@ -377,7 +380,8 @@ def main():
                 F("J3", f"term {term!r} is defined only on an extension page ({page_list[ci][1]['label']!r}) but a main-line page uses it: define it on the main line")
     elif args.narrative:
         Wn("J0", "no --terms registry: list every technical term of the unit with --terms so J1-J3 can check that each is defined in plain words before use (CLARITY.md C12)")
-    bg = lambda x: {x[k:k + 2] for k in range(len(x) - 1) if CJK.match(x[k]) and CJK.match(x[k + 1])}
+    bg = lambda x: {x[k:k + 2] for k in range(len(x) - 1) if CJK.match(x[k]) and CJK.match(x[k + 1])} | \
+        {a + " " + b for a, b in zip(re.findall(r"[a-z]+", x.lower()), re.findall(r"[a-z]+", x.lower())[1:]) if len(a) > 2 and len(b) > 2}
     QWORD = ("？", "?", "如何", "為什麼", "能否", "是否", "會不會", "怎麼", "哪")
     for i, (key, t) in enumerate(page_list):
         if i == 0 or not args.narrative or t["label"].endswith("(續)") or t["label"].endswith("(續)"): continue
@@ -386,7 +390,7 @@ def main():
         br = MATH.sub("", brs[0])
         prev_key, prev_t = page_list[i - 1]
         shared = bg(br) & bg(prev_t["label"] + ptext(prev_key))
-        if len(shared) < 3:
+        if len(shared) < (3 if CJK.search(br) else 2):
             F("R4", f"{key[0]}#p{key[1] + 1}: the bridge does not mention anything concrete from the previous page ({prev_t['label']!r}): say what that page found and what is still unsolved")
         if not any(q in br for q in QWORD):
             Wn("R5", f"{key[0]}#p{key[1] + 1}: the bridge names no question; end it with the question this page answers (CLARITY.md C14)")
@@ -448,7 +452,7 @@ def main():
             if tg["sceneId"] == root: continue
             idx = int((tg["point"]["x"]) // PITCH)
             ns = pages.get((tg["sceneId"], idx), [])
-            if t["label"].startswith(("延伸:", "延伸:")):
+            if t["label"].startswith(("延伸:", "延伸:")) or t["label"].lower().startswith("extension"):
                 ext += 1
                 continue
             text = "\n".join(n.get("text", "") for n in ns if n["type"] in ("text", "shape"))

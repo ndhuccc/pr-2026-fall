@@ -51,3 +51,12 @@ materials/lec05-kp03-polyhedral-codes.*：簡報（11頁：主線9頁＋延伸2�
 本版為每頁配代數與幾何對照圖（共11張，含立方體圖、缺口圖、中點圖等補充圖）；已通過 check_slides.py 與 audit_deck.py（FAIL 0）。
 冷讀者檢查做兩輪（獨立子代理），評分仍為3/5，詳見來源包內 COLD_READER.md；原生JianBauDau播放與PDF匯出尚未驗收。
 KP01、KP02、KP04、KP05仍為舊版，待依新規範重做。
+
+KP03中文版與英文版（2026-10-24，分開製作，可分別下載；草稿，待教師驗收）
+
+中文版：materials/lec05-kp03-polyhedral-codes-zh-download.zip（簡報HTML、簡報原檔、講義PDF、講義閱讀HTML、Markdown、圖檔）。
+英文版：materials/lec05-kp03-polyhedral-codes-en-download.zip（內容相同，另寫英文，不是機器剪貼）。
+同一批檔案也單獨放在 materials/：lec05-kp03-polyhedral-codes-zh.* 與 -en.*（.jbd.json、.html、-lecture.pdf、-reading.html）。
+先前的中英對照版保留不動（lec05-kp03-polyhedral-codes.*）；教師決定採用哪一套後，再刪除不用的版本。
+兩個單語簡報都通過 check_slides.py 與 audit_deck.py --monolingual（FAIL 0）；兩份講義通過 audit_lecture.py --lang（FAIL 0）。
+英文版的簡報標題、術語卡、講者備註、圖的替代文字與講義全部另寫；來源包（-review.zip）含兩種語言的組裝程式與術語表。
