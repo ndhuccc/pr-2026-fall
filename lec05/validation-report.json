@@ -1,0 +1,87 @@
+{
+  "status": "draft_for_teacher_review",
+  "language": "zh-TW",
+  "contentPages": 12,
+  "navigationStepsExcluded": 1,
+  "audioGenerated": false,
+  "sourceFile": "slides/lec05-kp01-xor.jbd.json",
+  "sourceSha256": "dea75d95732620cadd65ef3d506735ec820e377f9bf5bb03e76e8a6b5e5fda28",
+  "groundingWarnings": 0,
+  "txtMatchesPlan": true,
+  "allPagesAwaitTeacherReview": true,
+  "pages": [
+    {
+      "page": 1,
+      "stepId": "lec05-kp01-step-1",
+      "sha256": "f6eb69d1e7116ad7121dcc6403d67ce8618b1016704320990f7d5b1c2f928d6e",
+      "characters": 285
+    },
+    {
+      "page": 2,
+      "stepId": "lec05-kp01-step-2",
+      "sha256": "331fc869ad7243c8d4e782a68b9876d6fd56102d98edb16c5285b2246ac606a7",
+      "characters": 313
+    },
+    {
+      "page": 3,
+      "stepId": "lec05-kp01-step-3",
+      "sha256": "e1b942c49d436cdd139ddaa8f368ada489005678d0458ef5487b8287468f6a07",
+      "characters": 328
+    },
+    {
+      "page": 4,
+      "stepId": "lec05-kp01-step-4",
+      "sha256": "7df2f7ed793f8b6b5eb21cbdbf53e10b56cc7dba46692e0bd04ed50066582129",
+      "characters": 419
+    },
+    {
+      "page": 5,
+      "stepId": "lec05-kp01-step-5",
+      "sha256": "52daa2960fe25d8985f014f3642ef07695f47a5209203bfc17027a7dcdb44259",
+      "characters": 391
+    },
+    {
+      "page": 6,
+      "stepId": "lec05-kp01-step-6",
+      "sha256": "6e65614679eb03f2f093bd8f06f0275f51820fa100a184fd03713c0d234b4b14",
+      "characters": 377
+    },
+    {
+      "page": 7,
+      "stepId": "lec05-kp01-step-7",
+      "sha256": "f5655def3ed35fa0bd743b94a4f24c8b8b9fa780d5463660e8f58876d2326cb1",
+      "characters": 309
+    },
+    {
+      "page": 8,
+      "stepId": "lec05-kp01-step-8",
+      "sha256": "a515df1e89d2e4bc3c91682970ab71d1fec6a0fe36ded8ccc2c951118f3d6dd8",
+      "characters": 246
+    },
+    {
+      "page": 9,
+      "stepId": "lec05-kp01-step-9",
+      "sha256": "20050415282f4169f5633f878763c7bfabe9ca1f9f45a4bfd7cbdf11df07a0ef",
+      "characters": 322
+    },
+    {
+      "page": 10,
+      "stepId": "lec05-kp01-step-10",
+      "sha256": "c8a05761669353f455abf233849e982043bc1b9dfd8f37f7ad856dc7486d0b6c",
+      "characters": 376
+    },
+    {
+      "page": 11,
+      "stepId": "lec05-kp01-step-11",
+      "sha256": "7b0e2946160af2e8504892cf19a231f68667cbbe8d5dc5eff81c25bc6a684177",
+      "characters": 331
+    },
+    {
+      "page": 12,
+      "stepId": "lec05-kp01-step-12",
+      "sha256": "4b16d0928f9673e259e597170524103f4cdd998f2187453507bdcbadcbb55462",
+      "characters": 309
+    }
+  ],
+  "sourceAvailability": "local unsubmitted draft"
+}

@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "lecture": "lec05",
+  "language": "zh-TW",
+  "sources": [
+    {
+      "id": "lec05-kp01",
+      "file": "slides/lec05-kp01-xor.jbd.json",
+      "sha256": "dea75d95732620cadd65ef3d506735ec820e377f9bf5bb03e76e8a6b5e5fda28",
+      "sourceRef": "local KP01 draft; baseline 7b3dafb689637bdbb032aa96044c43951303d3c8",
+      "format": "jbd",
+      "schemaVersion": 3,
+      "availability": "Local unsubmitted slide draft; not included in this transcript-only commit."
+    }
+  ],
+  "pages": [
+    {
+      "kp": "01",
+      "page": 1,
+      "title": "先問模型能否表示答案",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-1",
+      "stepIds": [
+        "lec05-kp01-step-1"
+      ],
+      "stepOrder": 1,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 640,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "先問模型能否表示答案",
+        "*Ask whether the model can represent the answer*",
+        "第三章用直線分類；本單元檢查它的適用界線。\n*Chapter 3 used linear boundaries; we now examine their limits.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 1",
+        "觀察：同點換標籤\n*Observe: relabel the same points.*",
+        "證明：列出矛盾條件\n*Prove: derive conflicting conditions.*",
+        "突破：組合多個邊界\n*Extend: combine several boundaries.*",
+        "目標：能算預測、證明不可分，並辨認訓練的限制。\n*You will compute predictions, prove nonseparability, and recognize training limits.*"
+      ],
+      "media": [],
+      "transcript": "學習分類器時，我們先問一個問題：這個模型有沒有可能表示出我們要的答案？如果模型允許的邊界不夠，即使繼續訓練，也可能找不到完整的答案。\n\n請看這張地圖，由左往右分成三步。第一步是觀察：保持資料點的位置不變，只改變標籤，看看分類問題會有什麼差別。第二步是證明：把分類正確的條件寫出來，檢查這些條件能不能同時成立。第三步是突破：如果單一直線不夠，就考慮多個邊界的組合。\n\n這個單元的目標，不只是記住一個模型的限制。我們要能算出預測，能說明為什麼不可分，也能辨認哪些問題可以靠訓練改善，哪些問題需要改變模型允許的邊界。請沿著這個順序讀下去：先觀察，再證明，最後才談如何改變模型。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p001.txt",
+      "scriptSha256": "f6eb69d1e7116ad7121dcc6403d67ce8618b1016704320990f7d5b1c2f928d6e"
+    },
+    {
+      "kp": "01",
+      "page": 2,
+      "title": "相同座標，標籤決定可分性",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-2",
+      "stepIds": [
+        "lec05-kp01-step-2"
+      ],
+      "stepOrder": 2,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 2080,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "相同座標，標籤決定可分性",
+        "*The same points can have different separability*",
+        "先固定四個輸入，再比較 OR 與 XOR 的類別。\n*Keep the four inputs fixed and compare OR with XOR.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 2",
+        "OR",
+        "XOR",
+        "OR 四點與 x1+x2=0.5 邊界，三個 A 圓點與一個 B 方點。",
+        "XOR 四點，A 在非主對角、B 在主對角；座標與 OR 相同。"
+      ],
+      "media": [
+        {
+          "nodeId": "lec05-kp01-p2-fig-or",
+          "type": "image",
+          "alt": "OR 四點與 x1+x2=0.5 邊界，三個 A 圓點與一個 B 方點。"
+        },
+        {
+          "nodeId": "lec05-kp01-p2-fig-xor",
+          "type": "image",
+          "alt": "XOR 四點，A 在非主對角、B 在主對角；座標與 OR 相同。"
+        }
+      ],
+      "transcript": "請先看左右兩張圖。橫軸是第一個輸入，縱軸是第二個輸入。四個點的位置相同，差別在於類別標籤。\n\n圖例裡，圓點代表 A，輸出是一；方點代表 B，輸出是零。先看左邊的 OR。你可以找到三個 A 圓點，以及左下角的一個 B 方點。橘色直線把這個方點，和另外三個圓點分在兩側。所以，左圖有一條能把兩類分開的直線。\n\n再看右邊的 XOR。請特別注意右上角：它變成 B 方點了。現在，兩個 A 圓點分別在左上角與右下角；兩個 B 方點在另外一條對角上。也就是說，同類點分布在對角。\n\n請停一下，試著在右圖想像一條直線：它必須讓兩個 A 都留在同一側，兩個 B 都在另一側。這張圖要你注意的，是相同座標可以因為標籤配置不同，而有不同的可分性。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。圖中OR/XOR點位、0/1座標與A/B圖例已由實際HTML截圖核對。",
+      "script": "script/lec05-kp01-p002.txt",
+      "scriptSha256": "331fc869ad7243c8d4e782a68b9876d6fd56102d98edb16c5285b2246ac606a7"
+    },
+    {
+      "kp": "01",
+      "page": 3,
+      "title": "分數正負決定預測類別",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-3",
+      "stepIds": [
+        "lec05-kp01-step-3"
+      ],
+      "stepOrder": 3,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 3520,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "分數正負決定預測類別",
+        "*The sign of a score determines the prediction*",
+        "圖形直覺需要固定的判別規則，才可逐點驗證。\n*A fixed decision rule makes the geometric intuition testable.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 3",
+        "判別分數：$g(\\mathbf{x})=w_1x_1+w_2x_2+w_0$。\n$g>0$ 判 A；$g\\leq0$ 判 B。\n*A positive score predicts A; a nonpositive score predicts B.*",
+        "$\\mathbf{x}=[x_1,x_2]^T$，$x_1,x_2\\in\\{0,1\\}$　2 維輸入\n*Two-dimensional input*",
+        "$w_1,w_2$；$w_0$　權重；偏置\n*Weights; bias*",
+        "$g$；$y,\\widehat y$　分數；真值與預測\n*Score; true and predicted labels*"
+      ],
+      "media": [],
+      "transcript": "要檢查分類是否正確，我們得先把判別規則固定下來。請看這個分數，記作 g。它的算法是：w 下標一，乘以 x 下標一；再加上 w 下標二，乘以 x 下標二；最後加上 w 下標零。\n\n下面的符號表把各個角色列出來。x 是輸入向量，裡面有兩個分量，分別是 x 下標一與 x 下標二。每個分量只能取零或一。w 下標一與 w 下標二是權重；w 下標零是偏置。\n\ng 是算出來的判別分數。y 表示真實標籤，y 上面有一個帽子的符號，表示預測標籤。真實標籤與預測標籤要分清楚，因為我們最後就是要比較這兩者。\n\n判別規則是：分數大於零，判為 A；分數小於或等於零，判為 B。請注意這裡的等於：分數剛好是零，也要判為 B。把這個規則固定好，才知道同一個分數應該產生哪一類預測。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p003.txt",
+      "scriptSha256": "e1b942c49d436cdd139ddaa8f368ada489005678d0458ef5487b8287468f6a07"
+    },
+    {
+      "kp": "01",
+      "page": 4,
+      "title": "一組參數可算出四個預測",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-4",
+      "stepIds": [
+        "lec05-kp01-step-4"
+      ],
+      "stepOrder": 4,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 4960,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "一組參數可算出四個預測",
+        "*One parameter set gives four explicit predictions*",
+        "用同一組權重逐點計算，才能公平比較 OR 與 XOR。\n*Evaluate every point with the same parameters before comparing the labels.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 4",
+        "1. 代入權重／Substitute weights：$g=1x_1+1x_2-0.5$。",
+        "2. $(0,0)$：$1(0)+1(0)-0.5=-0.5$；預測／prediction 0，XOR 0。",
+        "2. $(0,1)$：$1(0)+1(1)-0.5=0.5$；預測／prediction 1，XOR 1。",
+        "2. $(1,0)$：$1(1)+1(0)-0.5=0.5$；預測／prediction 1，XOR 1。",
+        "2. $(1,1)$：$1(1)+1(1)-0.5=1.5$；預測／prediction 1，XOR 0。",
+        "3. 正確率：$3/4=0.75=75\\%$。驗算：$1/4=25\\%$，$75\\%+25\\%=100\\%$。\n*Three predictions are correct; the remaining one is an error. These fractions sum to one.*"
+      ],
+      "media": [],
+      "transcript": "這一頁固定使用同一組權重，逐點計算四個輸入。請看最上面的式子：g 等於一乘以 x 下標一，加上一乘以 x 下標二，再減掉零點五。\n\n第一個輸入是零、零。代入之後，一乘零，加上一乘零，再減零點五，得到負零點五。頁面列出的預測是零，而 XOR 的真值也是零，所以這一點預測正確。\n\n第二個輸入是零、一。計算是一乘零，加上一乘一，再減零點五，得到零點五。預測是一，XOR 的真值也是一。\n\n第三個輸入是一、零。計算是一乘一，加上一乘零，再減零點五，也得到零點五。預測是一，真值也是一。\n\n第四個輸入是一、一。計算是一乘一，加上一乘一，再減零點五，得到一點五。這次預測是一，但 XOR 的真值是零，所以這一點分錯了。\n\n四個點裡，有三個預測正確。正確率就是三除以四，等於零點七五，也就是百分之七十五。另有一個錯誤，錯誤率是一除以四，也就是百分之二十五。把百分之七十五和百分之二十五相加，剛好是百分之百。請注意，這一頁是在核對這一組參數的四個預測。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p004.txt",
+      "scriptSha256": "7df2f7ed793f8b6b5eb21cbdbf53e10b56cc7dba46692e0bd04ed50066582129"
+    },
+    {
+      "kp": "01",
+      "page": 5,
+      "title": "兩個正類要求分數之和為正",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-5",
+      "stepIds": [
+        "lec05-kp01-step-5"
+      ],
+      "stepOrder": 5,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 6400,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "兩個正類要求分數之和為正",
+        "*The two positive points require a positive sum*",
+        "一次失敗不代表所有直線失敗；改看任意權重的必要條件。\n*One failed line is insufficient; derive necessary conditions for arbitrary weights.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 5",
+        "符號：權重為 $w_1,w_2$，偏置為 $w_0$；A 是輸出 1。\n*The weights are $w_1,w_2$, the bias is $w_0$, and class A has output 1.*",
+        "1. A 點 $(0,1)$：$g(0,1)=w_1(0)+w_2(1)+w_0=w_2+w_0>0$。\n*Substitute the first A point; its score must be positive.*",
+        "2. A 點 $(1,0)$：$g(1,0)=w_1(1)+w_2(0)+w_0=w_1+w_0>0$。\n*Substitute the second A point; its score must also be positive.*",
+        "3. 相加：$(w_2+w_0)+(w_1+w_0)=w_1+w_2+2w_0>0$。\n*Adding two positive scores produces a positive sum.*"
+      ],
+      "media": [],
+      "transcript": "只找到一條失敗的直線，還不能說所有直線都不可能成功。因此，這一頁不挑特定權重，而是看任意權重必須符合什麼條件。\n\n請先看符號：w 下標一與 w 下標二是權重，w 下標零是偏置。A 類的輸出是一。若要把 A 類分對，A 點的判別分數就必須大於零。\n\n第一個 A 點是零、一。把它代入分數，一個權重乘零，另一個權重乘一，再加上偏置。因此，分數變成 w 下標二，加 w 下標零。這個和必須大於零。\n\n第二個 A 點是一、零。代入後，分數變成 w 下標一，加 w 下標零。它也必須大於零。\n\n現在看最下面，把這兩個分數相加。w 下標二加 w 下標零，再加上 w 下標一加 w 下標零，整理後就是 w 下標一，加 w 下標二，再加兩倍的 w 下標零。\n\n為什麼這個總和必須大於零？因為我們相加的是兩個都大於零的分數。請把注意力放在這個必要條件：若兩個 A 點都要分對，這個總和就一定得是正的。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p005.txt",
+      "scriptSha256": "52daa2960fe25d8985f014f3642ef07695f47a5209203bfc17027a7dcdb44259"
+    },
+    {
+      "kp": "01",
+      "page": 6,
+      "title": "負類要求同一個和非正，矛盾",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-6",
+      "stepIds": [
+        "lec05-kp01-step-6"
+      ],
+      "stepOrder": 6,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 7840,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "負類要求同一個和非正，矛盾",
+        "*The negative points require the same sum to be nonpositive*",
+        "A 類要求總和為正；現在把 B 類的必要條件相加。\n*Class A requires a positive sum; now add the conditions for class B.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 6",
+        "符號：權重為 $w_1,w_2$，偏置為 $w_0$；B 是輸出 0，零分也判 B。\n*The weights are $w_1,w_2$, the bias is $w_0$; class B includes zero scores.*",
+        "1. B 點 $(0,0)$：$g(0,0)=w_0\\leq0$。\n*The first B point must have a nonpositive score.*",
+        "2. B 點 $(1,1)$：$g(1,1)=w_1+w_2+w_0\\leq0$。\n*The second B point must also have a nonpositive score.*",
+        "3. 相加得 $w_1+w_2+2w_0\\leq0$，卻又必須 $>0$：不存在全對參數。\n*The same sum cannot be both nonpositive and positive; a perfect linear rule does not exist.*"
+      ],
+      "media": [],
+      "transcript": "這張圖要檢查的是：同一個總和，能不能同時滿足 A 類與 B 類的要求。頁面上寫明，A 類要求總和為正，而 B 類的輸出是零；分數剛好是零時，也判為 B。\n\n符號仍是權重 w 下標一、w 下標二，以及偏置 w 下標零。先看第一個 B 點，零、零。它的分數就是 w 下標零。要判成 B，這個分數必須小於或等於零。\n\n再看第二個 B 點，一、一。它的分數是 w 下標一，加 w 下標二，再加 w 下標零。要判成 B，這個分數同樣必須小於或等於零。\n\n現在把這兩個 B 點的分數相加。結果是 w 下標一，加 w 下標二，再加兩倍的 w 下標零。因為兩個分數都小於或等於零，它們的和也必須小於或等於零。\n\n問題就在這裡：頁面最下面的同一個量，一方面必須大於零，另一方面卻必須小於或等於零。這兩個要求不能同時成立。所以，不存在一組可以全部分對的參數。這就是矛盾所在。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p006.txt",
+      "scriptSha256": "6e65614679eb03f2f093bd8f06f0275f51820fa100a184fd03713c0d234b4b14"
+    },
+    {
+      "kp": "01",
+      "page": 7,
+      "title": "訓練能改善參數，不能改變邊界族",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-7",
+      "stepIds": [
+        "lec05-kp01-step-7"
+      ],
+      "stepOrder": 7,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 9280,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "訓練能改善參數，不能改變邊界族",
+        "*Training changes parameters within the same boundary family*",
+        "既然沒有全對直線，增加訓練還能改變什麼？\n*If no perfect line exists, what can additional training change?*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 7",
+        "最佳化：在允許的直線中找較好的參數。\n調學習率、訓練次數與初始化，仍是同一族。\n*Optimization searches for better parameters among allowed lines. Learning rate, iterations, and initialization keep the same family.*",
+        "表達能力：模型允許哪些邊界？\nXOR 的完整答案不在單一直線的集合中。\n*Representational capacity determines which boundaries are allowed. No single linear boundary represents the full XOR labeling.*",
+        "比喻：一片筆直隔板只能分兩側。限制是形狀，不是移動速度。\n*Analogy: one straight divider has two sides. Its limit is its shape, not its movement speed.*"
+      ],
+      "media": [],
+      "transcript": "請看左右兩張卡片。左邊談最佳化，右邊談表達能力。這兩個問題很容易混在一起，但它們問的事情不同。\n\n最佳化問的是：在模型允許的直線裡，我們能不能找到比較好的參數？調整學習率，改變訓練次數，或換一個初始化，都是在這一族允許的直線裡繼續找。\n\n表達能力問的則是：模型究竟允許哪些邊界？右邊指出，XOR 的完整答案，不在單一直線的集合中。如果允許的邊界只有直線，換參數仍然沒有改變這個邊界族。\n\n下面用一片筆直隔板作比喻。它能把兩側分開，但是它受到的限制是形狀。把隔板移動得快一點，或慢一點，都不會改變它是筆直的這件事。\n\n所以，這一頁要分清楚兩件事：訓練可以在允許的邊界族裡改善參數；但是訓練本身，不會改變模型允許哪些邊界。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p007.txt",
+      "scriptSha256": "f5655def3ed35fa0bd743b94a4f24c8b8b9fa780d5463660e8f58876d2326cb1"
+    },
+    {
+      "kp": "01",
+      "page": 8,
+      "title": "先解釋限制，再提出模型改變",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-8",
+      "stepIds": [
+        "lec05-kp01-step-8"
+      ],
+      "stepOrder": 8,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 10720,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "先解釋限制，再提出模型改變",
+        "*Explain the limit before proposing a model change*",
+        "把「沒有全對直線」連到下一個問題：多條邊界如何組合？\n*Connect the missing linear solution to the question of combining boundaries.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 8",
+        "練習：為什麼「再訓練久一點」無法讓 XOR 全對？\n提示：回看 A、B 各自相加的條件。\n*Practice: why can more training not solve XOR perfectly? Hint: revisit the sums required by A and B.*",
+        "留下的問題：兩條線各判斷一次。\n*Next question: let two lines make separate decisions.*",
+        "下一個單元：隱藏層如何組合判斷？\n*Next unit: how does a hidden layer combine the decisions?*"
+      ],
+      "media": [],
+      "transcript": "請先讀這一頁的問題：為什麼再訓練久一點，還是無法讓 XOR 全部分對？\n\n先不要急著只說出結論。請根據題目下方的提示，檢查 A 類與 B 類各自相加後的條件，想想這兩組條件是否能同時成立。這個練習要你說明限制的理由，而不只是背一個結論。\n\n接著看下方兩張卡片。左邊提出一個方向：讓兩條線，各自做一次判斷。右邊再接一個問題：隱藏層如何把這些判斷組合起來？\n\n請把這兩個層次分開。先解釋為什麼沒有全對的單一直線，再思考多條邊界的判斷要怎麼組合。這一頁先留下這個問題，不急著把隱藏層的做法全部展開。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p008.txt",
+      "scriptSha256": "a515df1e89d2e4bc3c91682970ab71d1fec6a0fe36ded8ccc2c951118f3d6dd8"
+    },
+    {
+      "kp": "01",
+      "page": 9,
+      "title": "延伸:AND 也能用單一直線分開",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-9",
+      "stepIds": [
+        "lec05-kp01-step-9"
+      ],
+      "stepOrder": 9,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 12160,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "AND 也能用單一直線分開",
+        "*AND also admits one separating line*",
+        "延伸核對：改成 AND，看看同樣四點如何被分開。\n*Extension: relabel the same four points as AND and check the separation.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 9",
+        "AND 四點與 x1+x2=1.5 邊界，右上角唯一 A。",
+        "$g=x_1+x_2-1.5$；$g>0$ 判 1。\n$(0,0):0+0-1.5=-1.5\\to0$\n$(0,1):0+1-1.5=-0.5\\to0$\n$(1,0):1+0-1.5=-0.5\\to0$\n$(1,1):1+1-1.5=0.5\\to1$\n*Here the inputs are binary. The four predictions match AND; only the upper-right point is positive.*"
+      ],
+      "media": [
+        {
+          "nodeId": "lec05-kp01-p9-fig-and",
+          "type": "image",
+          "alt": "AND 四點與 x1+x2=1.5 邊界，右上角唯一 A。"
+        }
+      ],
+      "transcript": "請看這個 AND 的例子。左邊圖中，圓點 A 代表輸出一，方點 B 代表輸出零。唯一的 A 點在右上角，橘色直線把它與另外三個 B 點分開。\n\n右邊使用的分數是：g 等於 x 下標一，加 x 下標二，再減一點五。規則寫得很清楚：g 大於零，就判為一。\n\n我們逐行算。輸入零、零時，零加零減一點五，得到負一點五，預測是零。輸入零、一時，零加一減一點五，得到負零點五，預測是零。\n\n輸入一、零時，一加零減一點五，也得到負零點五，預測是零。最後，輸入一、一時，一加一減一點五，得到零點五，預測是一。\n\n所以，這四個預測是零、零、零、一，符合 AND。讀圖時，請把右上角的正分數，和左邊唯一的 A 圓點對起來。這個例子顯示，AND 可以用單一直線分開。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p009.txt",
+      "scriptSha256": "20050415282f4169f5633f878763c7bfabe9ca1f9f45a4bfd7cbdf11df07a0ef"
+    },
+    {
+      "kp": "01",
+      "page": 10,
+      "title": "延伸:候選線會錯；證明才排除所有線",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-10",
+      "stepIds": [
+        "lec05-kp01-step-10"
+      ],
+      "stepOrder": 10,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 13600,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "候選線會錯；證明才排除所有線",
+        "*Failed candidates illustrate; proof establishes impossibility*",
+        "同一條候選線，改變判別方向或平手規則會改變錯誤數。\n*Predicted sides and tie rules matter when counting candidate errors.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 10",
+        "XOR 的三條候選直線 x1+x2=0.5、x1+x2=1.5、x1=x2。",
+        "順序／Order：$(0,0),(0,1),(1,0),(1,1)$\n$g>0\\to1$；其餘／otherwise $0$。\n$g=x_1+x_2-0.5\\to(0,1,1,1)$\n$g=x_1+x_2-1.5\\to(0,0,0,1)$\n$g=x_1-x_2\\to(0,0,1,0)$\n*The inputs are binary and g is the score. These candidates make one, three, and one XOR errors, respectively.*"
+      ],
+      "media": [
+        {
+          "nodeId": "lec05-kp01-p10-fig-attempts",
+          "type": "image",
+          "alt": "XOR 的三條候選直線 x1+x2=0.5、x1+x2=1.5、x1=x2。"
+        }
+      ],
+      "transcript": "左邊畫了三條候選線，右邊列出它們對四個輸入的預測。先確認右邊最上方的輸入順序：零、零；零、一；一、零；一、一。每一組預測都要依這個順序讀。\n\n這一頁的 g 是分數。判別規則是分數大於零，預測為一；其餘情況預測為零。特別注意，「其餘」包含分數剛好為零。\n\n第一個候選，g 等於 x 下標一加 x 下標二減零點五，預測依序是零、一、一、一。頁面指出，它會有一個 XOR 錯誤。\n\n第二個候選，g 等於 x 下標一加 x 下標二減一點五，預測是零、零、零、一，會有三個 XOR 錯誤。\n\n第三個候選，g 等於 x 下標一減 x 下標二，預測是零、零、一、零，會有一個 XOR 錯誤。\n\n請把每一條候選線和它的預測規則一起看。只看線畫在哪裡，還不夠；哪一側預測成哪一類，以及零分時怎麼判，都會影響錯誤數。這幾條失敗的候選線是例子，要排除所有直線，仍然需要證明。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p010.txt",
+      "scriptSha256": "c8a05761669353f455abf233849e982043bc1b9dfd8f37f7ad856dc7486d0b6c"
+    },
+    {
+      "kp": "01",
+      "page": 11,
+      "title": "延伸:兩條邊界可選出中間的正類",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-11",
+      "stepIds": [
+        "lec05-kp01-step-11"
+      ],
+      "stepOrder": 11,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 15040,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "兩條邊界可選出中間的正類",
+        "*Two boundaries can select the middle positive class*",
+        "單一直線失敗後，改變模型允許的邊界組合。\n*After a single line fails, change the allowed combination of boundaries.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 11",
+        "XOR 的兩條邊界與陰影帶，僅兩個 A 位於 0.5<x1+x2≤1.5。",
+        "［補充］$s=x_1+x_2$ 是兩輸入之和。\n$\\widehat y=1\\iff0.5<s\\leq1.5$。\n先看邊界，再看陰影；帶內兩點為 A。\n*[Added] The sum s selects class A only inside the strip. The construction checks the four Boolean inputs, not a unique labeling of the whole plane.*",
+        "下一步：用隱藏層組合兩個判斷。\n*Next: combine the two decisions with a hidden layer.*"
+      ],
+      "media": [
+        {
+          "nodeId": "lec05-kp01-p11-fig-strip",
+          "type": "image",
+          "alt": "XOR 的兩條邊界與陰影帶，僅兩個 A 位於 0.5<x1+x2≤1.5。"
+        }
+      ],
+      "transcript": "這一頁是補充內容，討論兩條邊界的組合。先看右邊的定義：s 等於 x 下標一，加 x 下標二。s 就是兩個輸入的和。\n\n下面的條件說：預測為一，若且唯若，s 大於零點五，而且 s 小於或等於一點五。請注意，這裡有兩個條件，必須同時成立。下邊界不包含等號，上邊界包含等號。\n\n現在看左圖，先找兩條橘色邊界，再看它們中間的陰影帶。兩個 A 圓點落在陰影帶內，另外兩個 B 方點在帶外。這個帶狀區域把中間的正類選了出來。\n\n這個做法改變的是模型允許的邊界組合，不只是移動一條直線。也請注意頁面上的限制：這個構造檢查的是四個布林輸入，不能把它當成整個平面唯一正確的標籤配置。\n\n這一頁留下的下一步，是用隱藏層把兩個判斷組合起來。先看懂這個組合方向，就能掌握它要解決的問題。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p011.txt",
+      "scriptSha256": "7b0e2946160af2e8504892cf19a231f68667cbbe8d5dc5eff81c25bc6a684177"
+    },
+    {
+      "kp": "01",
+      "page": 12,
+      "title": "延伸:固定平手規則，才能重現驗證",
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-step-12",
+      "stepIds": [
+        "lec05-kp01-step-12"
+      ],
+      "stepOrder": 12,
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp01-scene",
+        "point": {
+          "x": 16480,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "visibleTexts": [
+        "固定平手規則，才能重現驗證",
+        "*A fixed tie rule makes the check reproducible*",
+        "把前面的算例與證明轉成可自行檢查的步驟。\n*Turn the examples and proof into checks you can perform yourself.*",
+        "來源 Source：第四章 Chapter 4，KP01，§§4.1–4.2 ｜ 12",
+        "自測：XOR 失敗源於樣本少、雜訊、學習率，還是邊界受限？\n提示：找出不等式矛盾排除的對象。\n*Self-check: is the cause sample size, noise, learning rate, or restricted boundaries? Hint: identify what the contradiction rules out.*",
+        "自測：OR、XOR、XNOR，哪個能用一條線分開？\nXNOR：輸入相同輸出 1。提示：先畫四點標籤。\n*Self-check: which of OR, XOR, and XNOR admits one separating line? XNOR outputs 1 for matching inputs. Hint: draw the four labels.*",
+        "實作：用 score > 0 產生預測，再對照真值；一定檢查零分點。\n*Implementation: predict with score > 0, compare labels, and include zero-score points.*"
+      ],
+      "media": [],
+      "transcript": "這一頁有兩個自測問題，請先想，再看提示。\n\n第一題問：XOR 分類失敗，是因為樣本太少、雜訊、學習率，還是邊界受限？提示是，找出不等式矛盾真正排除的對象。請根據這個提示說明理由，不要只憑選項的字面來猜。\n\n第二題問：OR、XOR、XNOR，哪一個能用單一直線分開？頁面先定義了 XNOR：輸入相同時，輸出一。提示是先畫四個點的標籤。請把標籤畫好，再判斷能不能用一條線分開。\n\n最後看最下面的實作提醒：先用分數大於零，產生預測，再把預測與真實標籤比較。一定要檢查零分點，確認你的程式在平手時，仍然依固定的判別規則處理。\n\n這兩個問題，分別檢查你能不能說明限制，以及能不能把標籤配置轉成幾何判斷。請把自己的理由完整說出來。",
+      "reviewed": false,
+      "reviewNotes": "AI已逐句對照本頁文字與已檢視圖像；教師尚未審閱。保留提示，不新增練習答案。無音檔。",
+      "script": "script/lec05-kp01-p012.txt",
+      "scriptSha256": "4b16d0928f9673e259e597170524103f4cdd998f2187453507bdcbadcbb55462"
+    }
+  ],
+  "excludedSteps": [
+    {
+      "sourceId": "lec05-kp01",
+      "stepId": "lec05-kp01-frame-step",
+      "reason": "Frame-only root navigation"
+    }
+  ],
+  "status": "draft_for_teacher_review",
+  "audioRequested": false,
+  "reviewPolicy": "reviewed remains false until teacher approval"
+}

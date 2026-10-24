@@ -1,0 +1,13 @@
+﻿page,title,stepId,script,characters,teacherReviewed,audioStatus
+1,先問模型能否表示答案,lec05-kp01-step-1,script/lec05-kp01-p001.txt,285,False,not_requested
+2,相同座標，標籤決定可分性,lec05-kp01-step-2,script/lec05-kp01-p002.txt,313,False,not_requested
+3,分數正負決定預測類別,lec05-kp01-step-3,script/lec05-kp01-p003.txt,328,False,not_requested
+4,一組參數可算出四個預測,lec05-kp01-step-4,script/lec05-kp01-p004.txt,419,False,not_requested
+5,兩個正類要求分數之和為正,lec05-kp01-step-5,script/lec05-kp01-p005.txt,391,False,not_requested
+6,負類要求同一個和非正，矛盾,lec05-kp01-step-6,script/lec05-kp01-p006.txt,377,False,not_requested
+7,訓練能改善參數，不能改變邊界族,lec05-kp01-step-7,script/lec05-kp01-p007.txt,309,False,not_requested
+8,先解釋限制，再提出模型改變,lec05-kp01-step-8,script/lec05-kp01-p008.txt,246,False,not_requested
+9,延伸:AND 也能用單一直線分開,lec05-kp01-step-9,script/lec05-kp01-p009.txt,322,False,not_requested
+10,延伸:候選線會錯；證明才排除所有線,lec05-kp01-step-10,script/lec05-kp01-p010.txt,376,False,not_requested
+11,延伸:兩條邊界可選出中間的正類,lec05-kp01-step-11,script/lec05-kp01-p011.txt,331,False,not_requested
+12,延伸:固定平手規則，才能重現驗證,lec05-kp01-step-12,script/lec05-kp01-p012.txt,309,False,not_requested
