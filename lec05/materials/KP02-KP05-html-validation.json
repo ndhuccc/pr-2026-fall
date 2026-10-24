@@ -1,0 +1,118 @@
+{
+  "lec05-kp02-two-layer-perceptron": {
+    "1280x720": {
+      "steps": 10,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "1920x1080": {
+      "steps": 10,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "lecture": {
+      "badImages": 0,
+      "katexErrors": 0,
+      "formulaCount": 66,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  },
+  "lec05-kp03-polyhedral-codes": {
+    "1280x720": {
+      "steps": 11,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "1920x1080": {
+      "steps": 11,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "lecture": {
+      "badImages": 0,
+      "katexErrors": 0,
+      "formulaCount": 52,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  },
+  "lec05-kp04-three-layer-perceptron": {
+    "1280x720": {
+      "steps": 12,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "1920x1080": {
+      "steps": 12,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "lecture": {
+      "badImages": 0,
+      "katexErrors": 0,
+      "formulaCount": 39,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  },
+  "lec05-kp05-constructive-methods": {
+    "1280x720": {
+      "steps": 14,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "1920x1080": {
+      "steps": 14,
+      "badImages": 0,
+      "katexErrors": 0,
+      "shrunk": [],
+      "overflow": [],
+      "styleMismatches": [],
+      "pageErrors": [],
+      "externalRequests": []
+    },
+    "lecture": {
+      "badImages": 0,
+      "katexErrors": 0,
+      "formulaCount": 76,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  }
+}

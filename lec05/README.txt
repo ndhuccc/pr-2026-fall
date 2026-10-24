@@ -27,3 +27,19 @@ HTML請下載後以瀏覽器開啟。講義閱讀版與簡報HTML請放在同一
 正式教材尚未寫入lectures/、slides/或assets/，也未同步課程進度表；先存於此處，以免先行發布。
 原生播放器與其PDF匯出仍待驗收。8頁主線工具估28分鐘，4頁延伸不計；原先暫配15分鐘的時間差異待整章配置調整。
 本次沒有漫畫、音檔。逐字稿另見同目錄的審閱版與script/。
+
+下一批KP02–KP05講義與簡報（草稿，待教師驗收）
+
+每個KP在materials/提供同名的 -lecture.pdf、-reading.html、.html簡報、.jbd.json原檔及-review.zip完整來源包。
+KP02：lec05-kp02-two-layer-perceptron（講義8頁；簡報9個內容頁）
+KP03：lec05-kp03-polyhedral-codes（講義8頁；簡報10個內容頁）
+KP04：lec05-kp04-three-layer-perceptron（講義8頁；簡報11個內容頁）
+KP05：lec05-kp05-constructive-methods（講義12頁；簡報13個內容頁）
+
+合計43個內容頁；每份HTML另有1個根Frame導覽步驟。
+計畫與檢查說明：materials/KP02-KP05-plan.txt、KP02-KP05-report.txt。
+本批沒有漫畫、逐字稿、音檔。未正式發布課程網站；下一批KP06–KP09尚未製作，其中KP08規劃為自主學習。
+
+保留更正：兩層網路不只可形成凸區域；三層表示足夠不等於每次tiling都只長三層。
+圖與算例均有來源或補充標示；純化例是解析教學構造，不宣稱pocket實驗或完整原演算法重現。
+已完成公式驗算、43頁近似預覽及雙尺寸HTML檢查；原生JianBauDau播放與其PDF匯出仍待驗收。

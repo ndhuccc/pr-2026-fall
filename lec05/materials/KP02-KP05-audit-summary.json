@@ -1,0 +1,38 @@
+[
+  {
+    "kp": 2,
+    "stem": "lec05-kp02-two-layer-perceptron",
+    "slides": 9,
+    "lecturePdfPages": 8,
+    "deckAudit": "\n== 兩層感知器與重新表示\n  隱藏層先編碼，輸出層再分類   <- XOR 沒有全對直線；先改變輸入的表示。\n  兩個位元記錄兩條線的正側   <- 先看原始四點，再問它位於每條線的哪一側。\n  延伸:階梯把分數轉成位置位元   <- 位置判斷需要固定的數學規則。\n  先算兩個分數，再得到隱藏碼   <- 用一個 A 輸入完整走一次隱藏層。\n  延伸:四個輸入只占三個隱藏位置   <- 其餘輸入也使用同一組隱藏分數與門檻。\n  輸出層在隱藏空間只需一條線   <- 重新編碼之後，要在新座標上判類別。\n  逐點驗算，輸出恰好等於 XOR   <- 隱藏空間的直線仍要接受數值核對。\n  延伸:同類合併有用，異類合併會失去區別   <- 四點變三點不是錯誤；要檢查合併了誰。\n  延伸:先固定編碼，再檢查輸出偏置   <- 用練習分清楚隱藏表示與最終決策。\n\nlecture: lectures/lec05-kp02-two-layer-perceptron.md | figures 0 (missing 0, excluded 0)  formulas 6 (missing 5)  numbers 0 (missing 0)\naudit_deck: slides/lec05-kp02-two-layer-perceptron.jbd.json  | scenes 2  nodes 68  steps 10  frames 1  pages 9  bilingual\nFAIL 0\nWARN 6\n  WARN U1 '兩層感知器與重新表示' has 9 pages; the guideline is 6. More is allowed when clarity needs it: say which unit grew and why in the delivery summary\n  WARN N6 lecture formula not on any slide: 'f(t)=\\\\begin{cases}1,&t>0,\\\\\\\\0,&t\\\\leq0.\\\\end{cases}'\n  WARN N6 lecture formula not on any slide: 'g_1(\\\\mathbf{x})=x_1+x_2-0.5'\n  WARN N6 lecture formula not on any slide: 'g_2(\\\\mathbf{x})=x_1+x_2-1.5'\n  WARN N6 lecture formula not on any slide: 'g_{\\\\mathrm{out}}(\\\\mathbf{y})=y_1-y_2-0.5'\n  WARN N6 lecture formula not on any slide: '\\\\widehat c=f(g_{\\\\mathrm{out}}).'\n",
+    "lectureAudit": "audit_lecture: lectures/lec05-kp02-two-layer-perceptron.md  headings 8  knowledge points 1  FAIL 0  WARN 0\n",
+    "structureAudit": "[WARN] lec05-kp02-two-layer-perceptron.jbd.json: 10 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開\n"
+  },
+  {
+    "kp": 3,
+    "stem": "lec05-kp03-polyhedral-codes",
+    "slides": 10,
+    "lecturePdfPages": 8,
+    "deckAudit": "\n== 多面體編碼與能力邊界\n  更多隱藏位元把空間編成區域   <- 兩層 XOR 成功後，仍要檢查一般編碼的可分性。\n  三條線不一定產生八個區域   <- 用明確方程式，檢查哪些編碼真的出現。\n  虛擬碼不是尚未蒐集到的資料   <- 101 的缺席必須由幾何條件證明。\n  延伸:超立方體包含連續點，階梯只輸出頂點   <- 二元碼位於哪裡，決定輸出需要處理的集合。\n  延伸:這個輸出式分開一組實際頂點   <- 不是所有聯集都失敗；先驗算來源的成功例子。\n  延伸:輸出只需滿足實際出現的碼   <- 成功例子不需要替空區域完成另一個任務。\n  同一個面上已有不可分的反例   <- 換成 A＝000、110、111，檢查固定表示的限制。\n  單一編碼凸，不代表所有輸出區域凸   <- 要分清楚半空間交集與多個編碼的聯集。\n  延伸:限制針對固定映射，不是所有隱藏層   <- 不可分的碼仍可能因另一種隱藏表示而改變。\n  延伸:用虛擬碼與零位元檢查理解   <- 把區域、編碼與輸出條件分開檢查。\n\nlecture: lectures/lec05-kp03-polyhedral-codes.md | figures 0 (missing 0, excluded 0)  formulas 5 (missing 1)  numbers 0 (missing 0)\naudit_deck: slides/lec05-kp03-polyhedral-codes.jbd.json  | scenes 2  nodes 70  steps 11  frames 1  pages 10  bilingual\nFAIL 0\nWARN 2\n  WARN U1 '多面體編碼與能力邊界' has 10 pages; the guideline is 6. More is allowed when clarity needs it: say which unit grew and why in the delivery summary\n  WARN N6 lecture formula not on any slide: '\\\\mathbf{y}=[f(g_1(\\\\mathbf{x})),\\\\ldots,f(g_p(\\\\mathbf{x}))]^T\\\\in\\\\{0,1\\\\}^'\n",
+    "lectureAudit": "audit_lecture: lectures/lec05-kp03-polyhedral-codes.md  headings 8  knowledge points 1  FAIL 0  WARN 0\n",
+    "structureAudit": "[WARN] lec05-kp03-polyhedral-codes.jbd.json: 11 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開\n"
+  },
+  {
+    "kp": 4,
+    "stem": "lec05-kp04-three-layer-perceptron",
+    "slides": 11,
+    "lecturePdfPages": 8,
+    "deckAudit": "\n== 三層感知器與區域聯集\n  再加一層，逐個辨認目標區域   <- 單一輸出分不開的碼，可以先分別偵測。\n  固定編碼下，把目標區域取聯集   <- 沿用 A＝000、110、111，不強迫一個平面直接分完。\n  延伸:一個階梯神經元可以偵測一個頂點   <- 先給可代入的公式，再檢查為何只有目標通過。\n  延伸:每錯一個位元，偵測分數少一   <- 用二元位元的貢獻，證明頂點偵測的條件。\n  三個目標碼各有一個偵測器   <- 把一般構造展開成可手算的三個分數。\n  收到 110，只有匹配偵測器啟動   <- 先算分數，再將分數轉成三個位元。\n  至少一個偵測器啟動，OR 就接受   <- 偵測區域之後，最後一層只需取聯集。\n  延伸:非目標碼令所有偵測器保持零   <- 用反例檢查，不只驗算一個成功輸入。\n  延伸:先細分區域，再偵測所有目標碼   <- 把頂點構造推廣到有限多面體聯集。\n  表示足夠，不等於權重已知或網路最小   <- 幾何構造成功後，實務仍只有帶標籤的點。\n  延伸:建立自己的頂點偵測器，並檢查反例   <- 用一般構造檢查是否理解逐頂點偵測。\n\nlecture: lectures/lec05-kp04-three-layer-perceptron.md | figures 0 (missing 0, excluded 0)  formulas 5 (missing 0)  numbers 0 (missing 0)\naudit_deck: slides/lec05-kp04-three-layer-perceptron.jbd.json  | scenes 2  nodes 80  steps 12  frames 1  pages 11  bilingual\nFAIL 0\nWARN 1\n  WARN U1 '三層感知器與區域聯集' has 11 pages; the guideline is 6. More is allowed when clarity needs it: say which unit grew and why in the delivery summary\n",
+    "lectureAudit": "audit_lecture: lectures/lec05-kp04-three-layer-perceptron.md  headings 8  knowledge points 1  FAIL 0  WARN 0\n",
+    "structureAudit": "[WARN] lec05-kp04-three-layer-perceptron.jbd.json: 12 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開\n"
+  },
+  {
+    "kp": 5,
+    "stem": "lec05-kp05-constructive-methods",
+    "slides": 13,
+    "lecturePdfPages": 12,
+    "deckAudit": "\n== 構造式網路與訓練集\n  只有訓練點時，依需要增長網路   <- 已知區域的構造，不等於從樣本自動得到幾何答案。\n  主要節點分類，輔助節點純化   <- 一個節點不夠時，先確定新增節點要處理誰。\n  用同一組 XOR 點，看見子群被純化   <- 以下選解析權重示範機制，不冒稱 pocket 執行紀錄。\n  延伸:新增位元把 A 與右上角 B 分開   <- 先驗算混雜子群中的兩個代表輸入。\n  延伸:純化不要求每類只剩一種編碼   <- 完整位元向量才決定異類是否仍混在一起。\n  新 master 對純化碼可以全對   <- 在新表示上重新檢查單一直線。\n  延伸:混雜群樣本數不是分類錯誤數   <- 先說清楚圖上量的意義，再談進展。\n  同層純化與跨層改善是兩種進展   <- 不能把不同停止論證合併成任意加點都有效。\n  停止保證需要資料一致與嚴格進展   <- 說出條件，才不會把保證套到任意資料或學習器。\n  延伸:等距比較可寫成線性超平面   <- 另一條構造路線，從訓練點的距離比較開始。\n  延伸:雙點例子的邊界位於正中央   <- 將等距式代入明確座標，檢查幾何位置。\n  延伸:成對比較能造區域，也可能造成大網路   <- 把距離比較接到區域與類別，並檢查成本。\n  訓練全對，仍要問未見資料與大小   <- 用保證的適用範圍，決定下一個學習問題。\n\nlecture: lectures/lec05-kp05-constructive-methods.md | figures 0 (missing 0, excluded 0)  formulas 5 (missing 2)  numbers 0 (missing 0)\naudit_deck: slides/lec05-kp05-constructive-methods.jbd.json  | scenes 2  nodes 94  steps 14  frames 1  pages 13  bilingual\nFAIL 0\nWARN 3\n  WARN U1 '構造式網路與訓練集' has 13 pages; the guideline is 6. More is allowed when clarity needs it: say which unit grew and why in the delivery summary\n  WARN N6 lecture formula not on any slide: 'f(t)=\\\\begin{cases}1,&t>0,\\\\\\\\0,&t\\\\leq0.\\\\end{cases}'\n  WARN N6 lecture formula not on any slide: '\\\\|\\\\mathbf{x}-\\\\mathbf{a}\\\\|^2=\\\\|\\\\mathbf{x}-\\\\mathbf{b}\\\\|^2\\n\\\\quad\\\\Longleft'\n",
+    "lectureAudit": "audit_lecture: lectures/lec05-kp05-constructive-methods.md  headings 10  knowledge points 1  FAIL 0  WARN 0\n",
+    "structureAudit": "[WARN] lec05-kp05-constructive-methods.jbd.json: 14 個步驟含講者備註;學生下載的檔案會包含這些備註,請確認可以公開\n"
+  }
+]

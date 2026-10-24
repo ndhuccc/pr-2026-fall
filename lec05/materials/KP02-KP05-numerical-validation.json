@@ -1,0 +1,276 @@
+{
+  "xorInput": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "xorHidden": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "xorScores": [
+    -0.5,
+    0.5,
+    0.5,
+    -0.5
+  ],
+  "cubeVertices": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "isolators": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "threeLayerPredictions": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+  ],
+  "constructiveCodes": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "constructivePredictions": [
+    0,
+    1,
+    1,
+    0
+  ],
+  "mixedCounts": [
+    3,
+    0
+  ],
+  "detectorExhaustiveChecks": [
+    {
+      "bits": 1,
+      "targetCodePairs": 4,
+      "pass": true
+    },
+    {
+      "bits": 2,
+      "targetCodePairs": 16,
+      "pass": true
+    },
+    {
+      "bits": 3,
+      "targetCodePairs": 64,
+      "pass": true
+    },
+    {
+      "bits": 4,
+      "targetCodePairs": 256,
+      "pass": true
+    },
+    {
+      "bits": 5,
+      "targetCodePairs": 1024,
+      "pass": true
+    },
+    {
+      "bits": 6,
+      "targetCodePairs": 4096,
+      "pass": true
+    }
+  ],
+  "realizedWitnesses": [
+    [
+      -0.7,
+      -1.7
+    ],
+    [
+      -1.8,
+      -0.2
+    ],
+    [
+      -0.25,
+      0.35
+    ],
+    [
+      -1.5,
+      1.6
+    ],
+    [
+      1.2,
+      -1.2
+    ],
+    [
+      1.7,
+      0.65
+    ],
+    [
+      0.3,
+      2.0
+    ]
+  ],
+  "realizedCodes": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "sourceSeparatorScores": [
+    0.5,
+    1.5,
+    -0.5,
+    0.5,
+    -0.5,
+    -1.5,
+    -0.5
+  ],
+  "obstructionVectorIdentity": "000+110=010+100",
+  "bisectorChecks": true
+}

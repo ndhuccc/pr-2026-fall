@@ -1,0 +1,2274 @@
+{
+  "schemaVersion": 3,
+  "rootSceneId": "lec05-kp03-root",
+  "scenes": {
+    "lec05-kp03-root": {
+      "id": "lec05-kp03-root",
+      "name": "根畫布",
+      "parentFrameId": null,
+      "nodeIds": [
+        "lec05-kp03-frame"
+      ],
+      "camera": {
+        "x": 200,
+        "y": 100,
+        "zoom": 2,
+        "rotation": 0
+      }
+    },
+    "lec05-kp03-scene": {
+      "id": "lec05-kp03-scene",
+      "name": "多面體編碼與能力邊界",
+      "parentFrameId": "lec05-kp03-frame",
+      "nodeIds": [
+        "lec05-kp03-p1-title",
+        "lec05-kp03-p1-subtitle",
+        "lec05-kp03-p1-bridge",
+        "lec05-kp03-p1-source",
+        "lec05-kp03-p1-stage0",
+        "lec05-kp03-p1-stage1",
+        "lec05-kp03-p1-stage2",
+        "lec05-kp03-p1-link7",
+        "lec05-kp03-p1-link8",
+        "lec05-kp03-p1-define",
+        "lec05-kp03-p2-title",
+        "lec05-kp03-p2-subtitle",
+        "lec05-kp03-p2-bridge",
+        "lec05-kp03-p2-source",
+        "lec05-kp03-p2-fig",
+        "lec05-kp03-p2-scores",
+        "lec05-kp03-p3-title",
+        "lec05-kp03-p3-subtitle",
+        "lec05-kp03-p3-bridge",
+        "lec05-kp03-p3-source",
+        "lec05-kp03-p3-row0",
+        "lec05-kp03-p3-row1",
+        "lec05-kp03-p3-row2",
+        "lec05-kp03-p4-title",
+        "lec05-kp03-p4-subtitle",
+        "lec05-kp03-p4-bridge",
+        "lec05-kp03-p4-source",
+        "lec05-kp03-p4-cube",
+        "lec05-kp03-p4-cell",
+        "lec05-kp03-p5-title",
+        "lec05-kp03-p5-subtitle",
+        "lec05-kp03-p5-bridge",
+        "lec05-kp03-p5-source",
+        "lec05-kp03-p5-score-def",
+        "lec05-kp03-p5-positive",
+        "lec05-kp03-p5-negative",
+        "lec05-kp03-p6-title",
+        "lec05-kp03-p6-subtitle",
+        "lec05-kp03-p6-bridge",
+        "lec05-kp03-p6-source",
+        "lec05-kp03-p6-row0",
+        "lec05-kp03-p6-row1",
+        "lec05-kp03-p6-row2",
+        "lec05-kp03-p7-title",
+        "lec05-kp03-p7-subtitle",
+        "lec05-kp03-p7-bridge",
+        "lec05-kp03-p7-source",
+        "lec05-kp03-p7-fig",
+        "lec05-kp03-p7-proof",
+        "lec05-kp03-p8-title",
+        "lec05-kp03-p8-subtitle",
+        "lec05-kp03-p8-bridge",
+        "lec05-kp03-p8-source",
+        "lec05-kp03-p8-and",
+        "lec05-kp03-p8-weighted",
+        "lec05-kp03-p8-correction",
+        "lec05-kp03-p9-title",
+        "lec05-kp03-p9-subtitle",
+        "lec05-kp03-p9-bridge",
+        "lec05-kp03-p9-source",
+        "lec05-kp03-p9-row0",
+        "lec05-kp03-p9-row1",
+        "lec05-kp03-p9-row2",
+        "lec05-kp03-p10-title",
+        "lec05-kp03-p10-subtitle",
+        "lec05-kp03-p10-bridge",
+        "lec05-kp03-p10-source",
+        "lec05-kp03-p10-exercise",
+        "lec05-kp03-p10-exercise2"
+      ],
+      "camera": {
+        "x": 640,
+        "y": 310,
+        "zoom": 0.8780487804878049,
+        "rotation": 0
+      }
+    }
+  },
+  "nodes": {
+    "lec05-kp03-p1-title": {
+      "id": "lec05-kp03-p1-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "更多隱藏位元把空間編成區域"
+    },
+    "lec05-kp03-p1-subtitle": {
+      "id": "lec05-kp03-p1-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*More hidden bits encode a partition into cells*"
+    },
+    "lec05-kp03-p1-bridge": {
+      "id": "lec05-kp03-p1-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "兩層 XOR 成功後，仍要檢查一般編碼的可分性。\n*The XOR construction does not settle separability of general hidden codes.*"
+    },
+    "lec05-kp03-p1-source": {
+      "id": "lec05-kp03-p1-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 1"
+    },
+    "lec05-kp03-p1-stage0": {
+      "id": "lec05-kp03-p1-stage0",
+      "type": "text",
+      "name": "stage0",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 270,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 340,
+      "height": 240,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "隱藏層\n$p$ 個半空間判斷\n*The hidden layer makes p half-space decisions.*"
+    },
+    "lec05-kp03-p1-stage1": {
+      "id": "lec05-kp03-p1-stage1",
+      "type": "text",
+      "name": "stage1",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 470,
+        "y": 270,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 340,
+      "height": 240,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "二元表示\n$\\mathbf{y}\\in\\{0,1\\}^p$\n*Each cell receives a binary vertex code.*"
+    },
+    "lec05-kp03-p1-stage2": {
+      "id": "lec05-kp03-p1-stage2",
+      "type": "text",
+      "name": "stage2",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 880,
+        "y": 270,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 340,
+      "height": 240,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "單一輸出\n再作一次線性分隔\n*One output performs another linear separation.*"
+    },
+    "lec05-kp03-p1-link7": {
+      "id": "lec05-kp03-p1-link7",
+      "type": "connector",
+      "name": "link7",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 10,
+      "height": 10,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#6a9fd6",
+        "textColor": "#1c1712",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32,
+        "borderWidth": 3
+      },
+      "text": "",
+      "connector": {
+        "sourceNodeId": "lec05-kp03-p1-stage0",
+        "targetNodeId": "lec05-kp03-p1-stage1",
+        "sourceHook": 4,
+        "targetHook": 12,
+        "direction": "forward",
+        "curve": false,
+        "arrowSize": "medium"
+      }
+    },
+    "lec05-kp03-p1-link8": {
+      "id": "lec05-kp03-p1-link8",
+      "type": "connector",
+      "name": "link8",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 10,
+      "height": 10,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#6a9fd6",
+        "textColor": "#1c1712",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32,
+        "borderWidth": 3
+      },
+      "text": "",
+      "connector": {
+        "sourceNodeId": "lec05-kp03-p1-stage1",
+        "targetNodeId": "lec05-kp03-p1-stage2",
+        "sourceHook": 4,
+        "targetHook": 12,
+        "direction": "forward",
+        "curve": false,
+        "arrowSize": "medium"
+      }
+    },
+    "lec05-kp03-p1-define": {
+      "id": "lec05-kp03-p1-define",
+      "type": "text",
+      "name": "define",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 60,
+        "y": 550,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 85,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "$p$ 為隱藏節點數；$\\mathbf{y}$ 為其二元輸出向量。\n*p is hidden width, and y is the vector of binary outputs.*"
+    },
+    "lec05-kp03-p2-title": {
+      "id": "lec05-kp03-p2-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 1500,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "三條線不一定產生八個區域"
+    },
+    "lec05-kp03-p2-subtitle": {
+      "id": "lec05-kp03-p2-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 1500,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*Three lines need not realize all eight binary codes*"
+    },
+    "lec05-kp03-p2-bridge": {
+      "id": "lec05-kp03-p2-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 1500,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "用明確方程式，檢查哪些編碼真的出現。\n*Use explicit equations to inspect which codes actually occur.*"
+    },
+    "lec05-kp03-p2-source": {
+      "id": "lec05-kp03-p2-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 1500,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 2"
+    },
+    "lec05-kp03-p2-fig": {
+      "id": "lec05-kp03-p2-fig",
+      "type": "image",
+      "name": "fig:lec05-kp03-regions",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 1500,
+        "y": 225,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 530,
+      "height": 440,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "transparent",
+        "fontSize": 1,
+        "radius": 0
+      },
+      "text": "三條線x1=0、x2=0、-x1+x2-1=0形成七個實際編碼，101不存在。",
+      "image": {
+        "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjM4MS42cHQiIGhlaWdodD0iMzE2LjhwdCIgdmlld0JveD0iMCAwIDM4MS42IDMxNi44IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiA8bWV0YWRhdGE+CiAgPHJkZjpSREYgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICA8Y2M6V29yaz4KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4KICAgIDxkYzpkYXRlPjIwMjYtMTAtMjRUMTI6MTA6NTYuNTc4NTE2PC9kYzpkYXRlPgogICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICA8ZGM6Y3JlYXRvcj4KICAgICA8Y2M6QWdlbnQ+CiAgICAgIDxkYzp0aXRsZT5NYXRwbG90bGliIHYzLjEwLjgsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvPC9kYzp0aXRsZT4KICAgICA8L2NjOkFnZW50PgogICAgPC9kYzpjcmVhdG9yPgogICA8L2NjOldvcms+CiAgPC9yZGY6UkRGPgogPC9tZXRhZGF0YT4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+KntzdHJva2UtbGluZWpvaW46IHJvdW5kOyBzdHJva2UtbGluZWNhcDogYnV0dH08L3N0eWxlPgogPC9kZWZzPgogPGcgaWQ9ImZpZ3VyZV8xIj4KICA8ZyBpZD0icGF0Y2hfMSI+CiAgIDxwYXRoIGQ9Ik0gMCAzMTYuOCAKTCAzODEuNiAzMTYuOCAKTCAzODEuNiAwIApMIDAgMCAKTCAwIDMxNi44IAp6CiIgc3R5bGU9ImZpbGw6IG5vbmUiLz4KICA8L2c+CiAgPGcgaWQ9ImF4ZXNfMSI+CiAgIDxnIGlkPSJwYXRjaF8yIj4KICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjcwIApMIDMxMS40IDI3MCAKTCAzMTEuNCA2OC40IApMIDEwOS44IDY4LjQgCkwgMTA5LjggMjcwIAp6CiIgc3R5bGU9ImZpbGw6IG5vbmUiLz4KICAgPC9nPgogICA8ZyBpZD0ibWF0cGxvdGxpYi5heGlzXzEiPgogICAgPGcgaWQ9Inh0aWNrXzEiPgogICAgIDxnIGlkPSJsaW5lMmRfMSI+CiAgICAgIDxwYXRoIGQ9Ik0gMTMzLjA2MTUzOCAyNzAgCkwgMTMzLjA2MTUzOCA2OC40IAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzIiPgogICAgICA8ZGVmcz4KICAgICAgIDxwYXRoIGlkPSJtNjhhYTE3NTNmNCIgZD0iTSAwIDAgCkwgMCAzLjUgCiIgc3R5bGU9InN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9kZWZzPgogICAgICA8Zz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI202OGFhMTc1M2Y0IiB4PSIxMzMuMDYxNTM4IiB5PSIyNzAiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfMSI+CiAgICAgIDwhLS0g4oiSMiAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyMi40NDcxNjMgMjg3Ljk0MTc1KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDxkZWZzPgogICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTIyMTIiIGQ9Ik0gNjc4IDIyNzIgCkwgNDY4NCAyMjcyIApMIDQ2ODQgMTc0MSAKTCA2NzggMTc0MSAKTCA2NzggMjI3MiAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMzIiIGQ9Ik0gMTIyOCA1MzEgCkwgMzQzMSA1MzEgCkwgMzQzMSAwIApMIDQ2OSAwIApMIDQ2OSA1MzEgClEgODI4IDkwMyAxNDQ4IDE1MjkgClEgMjA2OSAyMTU2IDIyMjggMjMzOCAKUSAyNTMxIDI2NzggMjY1MSAyOTE0IApRIDI3NzIgMzE1MCAyNzcyIDMzNzggClEgMjc3MiAzNzUwIDI1MTEgMzk4NCAKUSAyMjUwIDQyMTkgMTgzMSA0MjE5IApRIDE1MzQgNDIxOSAxMjA0IDQxMTYgClEgODc1IDQwMTMgNTAwIDM4MDMgCkwgNTAwIDQ0NDEgClEgODgxIDQ1OTQgMTIxMiA0NjcyIApRIDE1NDQgNDc1MCAxODE5IDQ3NTAgClEgMjU0NCA0NzUwIDI5NzUgNDM4NyAKUSAzNDA2IDQwMjUgMzQwNiAzNDE5IApRIDM0MDYgMzEzMSAzMjk4IDI4NzMgClEgMzE5MSAyNjE2IDI5MDYgMjI2NiAKUSAyODI4IDIxNzUgMjQwOSAxNzQyIApRIDE5OTEgMTMwOSAxMjI4IDUzMSAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8L2RlZnM+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTIyMTIiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgzLjc4OTA2MiAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inh0aWNrXzIiPgogICAgIDxnIGlkPSJsaW5lMmRfMyI+CiAgICAgIDxwYXRoIGQ9Ik0gMjEwLjYgMjcwIApMIDIxMC42IDY4LjQgCiIgY2xpcC1wYXRoPSJ1cmwoI3AwOTdlZTIwMzJhKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfNCI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTY4YWExNzUzZjQiIHg9IjIxMC42IiB5PSIyNzAiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfMiI+CiAgICAgIDwhLS0gMCAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNi4wMTkgMjg3Ljk0MTc1KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDxkZWZzPgogICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTMwIiBkPSJNIDIwMzQgNDI1MCAKUSAxNTQ3IDQyNTAgMTMwMSAzNzcwIApRIDEwNTYgMzI5MSAxMDU2IDIzMjggClEgMTA1NiAxMzY5IDEzMDEgODg5IApRIDE1NDcgNDA5IDIwMzQgNDA5IApRIDI1MjUgNDA5IDI3NzAgODg5IApRIDMwMTYgMTM2OSAzMDE2IDIzMjggClEgMzAxNiAzMjkxIDI3NzAgMzc3MCAKUSAyNTI1IDQyNTAgMjAzNCA0MjUwIAp6Ck0gMjAzNCA0NzUwIApRIDI4MTkgNDc1MCAzMjMzIDQxMjkgClEgMzY0NyAzNTA5IDM2NDcgMjMyOCAKUSAzNjQ3IDExNTAgMzIzMyA1MjkgClEgMjgxOSAtOTEgMjAzNCAtOTEgClEgMTI1MCAtOTEgODM2IDUyOSAKUSA0MjIgMTE1MCA0MjIgMjMyOCAKUSA0MjIgMzUwOSA4MzYgNDEyOSAKUSAxMjUwIDQ3NTAgMjAzNCA0NzUwIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDwvZGVmcz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ4dGlja18zIj4KICAgICA8ZyBpZD0ibGluZTJkXzUiPgogICAgICA8cGF0aCBkPSJNIDI4OC4xMzg0NjIgMjcwIApMIDI4OC4xMzg0NjIgNjguNCAKIiBjbGlwLXBhdGg9InVybCgjcDA5N2VlMjAzMmEpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF82Ij4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtNjhhYTE3NTNmNCIgeD0iMjg4LjEzODQ2MiIgeT0iMjcwIiBzdHlsZT0iZmlsbDogI2I3YjBhNTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDAuOCIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgIDxnIGlkPSJ0ZXh0XzMiPgogICAgICA8IS0tIDIgLS0+CiAgICAgIDxnIHN0eWxlPSJmaWxsOiAjYjdiMGE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODMuNTU3NDYyIDI4Ny45NDE3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMyIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0idGV4dF80Ij4KICAgICA8IS0tICR4XzEkIC0tPgogICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMDMuNDcyIDMwNS44NzgyNSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgIDxkZWZzPgogICAgICAgPHBhdGggaWQ9IkNtbWkxMC03OCIgZD0iTSA1MDAgMTg0IApRIDYxMyA5NyA4MTkgOTcgClEgMTAxOSA5NyAxMTcyIDI4OSAKUSAxMzI1IDQ4MSAxMzgxIDcwOSAKTCAxNjcyIDE4NDQgClEgMTc0MSAyMTUzIDE3NDEgMjI2NiAKUSAxNzQxIDI0MjUgMTY1MiAyNTQ0IApRIDE1NjMgMjY2MyAxNDAzIDI2NjMgClEgMTIwMCAyNjYzIDEwMjIgMjUzNiAKUSA4NDQgMjQwOSA3MjIgMjIxNCAKUSA2MDAgMjAxOSA1NTAgMTgxOSAKUSA1MzggMTc3OCA1MDAgMTc3OCAKTCA0MjIgMTc3OCAKUSAzNzIgMTc3OCAzNzIgMTgzOCAKTCAzNzIgMTg1NiAKUSA0MzQgMjA5NCA1ODQgMjMyMCAKUSA3MzQgMjU0NyA5NTEgMjY4NyAKUSAxMTY5IDI4MjggMTQxNiAyODI4IApRIDE2NTAgMjgyOCAxODM5IDI3MDMgClEgMjAyOCAyNTc4IDIxMDYgMjM2MyAKUSAyMjE2IDI1NTkgMjM4NiAyNjkzIApRIDI1NTYgMjgyOCAyNzU5IDI4MjggClEgMjg5NyAyODI4IDMwNDAgMjc3OSAKUSAzMTg0IDI3MzEgMzI3NSAyNjMxIApRIDMzNjYgMjUzMSAzMzY2IDIzODEgClEgMzM2NiAyMjE5IDMyNjEgMjEwMSAKUSAzMTU2IDE5ODQgMjk5NCAxOTg0IApRIDI4OTEgMTk4NCAyODIyIDIwNTAgClEgMjc1MyAyMTE2IDI3NTMgMjIxNiAKUSAyNzUzIDIzNTAgMjg0NSAyNDUxIApRIDI5MzggMjU1MyAzMDY2IDI1NzIgClEgMjk1MCAyNjYzIDI3NDcgMjY2MyAKUSAyNTQxIDI2NjMgMjM4OSAyNDcyIApRIDIyMzggMjI4MSAyMTc1IDIwNDcgCkwgMTg5NCA5MTYgClEgMTgyNSA2NTkgMTgyNSA0OTQgClEgMTgyNSAzMzEgMTkxNyAyMTQgClEgMjAwOSA5NyAyMTYzIDk3IApRIDI0NjMgOTcgMjY5OCAzNjEgClEgMjkzNCA2MjUgMzAwOSA5NDEgClEgMzAyMiA5NzggMzA1OSA5NzggCkwgMzEzOCA5NzggClEgMzE2MyA5NzggMzE3OCA5NjEgClEgMzE5NCA5NDQgMzE5NCA5MjIgClEgMzE5NCA5MTYgMzE4OCA5MDMgClEgMzA5NyA1MjIgMjgwNiAyMjUgClEgMjUxNiAtNzIgMjE1MCAtNzIgClEgMTkxNiAtNzIgMTcyNyA1NCAKUSAxNTM4IDE4MSAxNDU5IDM5NyAKUSAxMzU5IDIwOSAxMTgyIDY4IApRIDEwMDYgLTcyIDgwNiAtNzIgClEgNjY5IC03MiA1MjMgLTIzIApRIDM3OCAyNSAyODcgMTI1IApRIDE5NyAyMjUgMTk3IDM3OCAKUSAxOTcgNTI4IDMwMSA2NTEgClEgNDA2IDc3NSA1NjMgNzc1IApRIDY2OSA3NzUgNzQxIDcxMSAKUSA4MTMgNjQ3IDgxMyA1NDQgClEgODEzIDQwOSA3MjMgMzA5IApRIDYzNCAyMDkgNTAwIDE4NCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8cGF0aCBpZD0iQ21yMTAtMzEiIGQ9Ik0gNTk0IDAgCkwgNTk0IDIyNSAKUSAxMzk0IDIyNSAxMzk0IDQyOCAKTCAxMzk0IDM3ODggClEgMTA2MyAzNjI4IDU1NiAzNjI4IApMIDU1NiAzODUzIApRIDEzNDEgMzg1MyAxNzQxIDQyNjMgCkwgMTgzMSA0MjYzIApRIDE4NTMgNDI2MyAxODczIDQyNDUgClEgMTg5NCA0MjI4IDE4OTQgNDIwNiAKTCAxODk0IDQyOCAKUSAxODk0IDIyNSAyNjk0IDIyNSAKTCAyNjk0IDAgCkwgNTk0IDAgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICA8L2RlZnM+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0NtbWkxMC03OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwLjgxMjUpIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0NtcjEwLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1Ny4wODAwNzggLTE2LjE5Mzc1KSBzY2FsZSgwLjcpIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJtYXRwbG90bGliLmF4aXNfMiI+CiAgICA8ZyBpZD0ieXRpY2tfMSI+CiAgICAgPGcgaWQ9ImxpbmUyZF83Ij4KICAgICAgPHBhdGggZD0iTSAxMDkuOCAyNDYuNzM4NDYyIApMIDMxMS40IDI0Ni43Mzg0NjIgCiIgY2xpcC1wYXRoPSJ1cmwoI3AwOTdlZTIwMzJhKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfOCI+CiAgICAgIDxkZWZzPgogICAgICAgPHBhdGggaWQ9Im1lOTk1NGUxNmYwIiBkPSJNIDAgMCAKTCAtMy41IDAgCiIgc3R5bGU9InN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9kZWZzPgogICAgICA8Zz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI21lOTk1NGUxNmYwIiB4PSIxMDkuOCIgeT0iMjQ2LjczODQ2MiIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF81Ij4KICAgICAgPCEtLSDiiJIyIC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODEuNTcxMjUgMjUyLjIwOTMzNykgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTIyMTIiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgzLjc4OTA2MiAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inl0aWNrXzIiPgogICAgIDxnIGlkPSJsaW5lMmRfOSI+CiAgICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjA3Ljk2OTIzMSAKTCAzMTEuNCAyMDcuOTY5MjMxIAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzEwIj4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtZTk5NTRlMTZmMCIgeD0iMTA5LjgiIHk9IjIwNy45NjkyMzEiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfNiI+CiAgICAgIDwhLS0g4oiSMSAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgxLjU3MTI1IDIxMy40NDAxMDYpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgICAgPGRlZnM+CiAgICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMzEiIGQ9Ik0gNzk0IDUzMSAKTCAxODI1IDUzMSAKTCAxODI1IDQwOTEgCkwgNzAzIDM4NjYgCkwgNzAzIDQ0NDEgCkwgMTgxOSA0NjY2IApMIDI0NTAgNDY2NiAKTCAyNDUwIDUzMSAKTCAzNDgxIDUzMSAKTCAzNDgxIDAgCkwgNzk0IDAgCkwgNzk0IDUzMSAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8L2RlZnM+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTIyMTIiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgzLjc4OTA2MiAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inl0aWNrXzMiPgogICAgIDxnIGlkPSJsaW5lMmRfMTEiPgogICAgICA8cGF0aCBkPSJNIDEwOS44IDE2OS4yIApMIDMxMS40IDE2OS4yIAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzEyIj4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtZTk5NTRlMTZmMCIgeD0iMTA5LjgiIHk9IjE2OS4yIiBzdHlsZT0iZmlsbDogI2I3YjBhNTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDAuOCIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgIDxnIGlkPSJ0ZXh0XzciPgogICAgICA8IS0tIDAgLS0+CiAgICAgIDxnIHN0eWxlPSJmaWxsOiAjYjdiMGE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5My42MzggMTc0LjY3MDg3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0ieXRpY2tfNCI+CiAgICAgPGcgaWQ9ImxpbmUyZF8xMyI+CiAgICAgIDxwYXRoIGQ9Ik0gMTA5LjggMTMwLjQzMDc2OSAKTCAzMTEuNCAxMzAuNDMwNzY5IAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzE0Ij4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtZTk5NTRlMTZmMCIgeD0iMTA5LjgiIHk9IjEzMC40MzA3NjkiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfOCI+CiAgICAgIDwhLS0gMSAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDkzLjYzOCAxMzUuOTAxNjQ0KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzEiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ5dGlja181Ij4KICAgICA8ZyBpZD0ibGluZTJkXzE1Ij4KICAgICAgPHBhdGggZD0iTSAxMDkuOCA5MS42NjE1MzggCkwgMzExLjQgOTEuNjYxNTM4IAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzE2Ij4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtZTk5NTRlMTZmMCIgeD0iMTA5LjgiIHk9IjkxLjY2MTUzOCIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF85Ij4KICAgICAgPCEtLSAyIC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTMuNjM4IDk3LjEzMjQxMykgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMyIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0idGV4dF8xMCI+CiAgICAgPCEtLSAkeF8yJCAtLT4KICAgICA8ZyBzdHlsZT0iZmlsbDogI2YyZWRlNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzQuNTc2NSAxNzYuMzI4KSByb3RhdGUoLTkwKSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgPGRlZnM+CiAgICAgICA8cGF0aCBpZD0iQ21yMTAtMzIiIGQ9Ik0gMzE5IDAgCkwgMzE5IDE3MiAKUSAzMTkgMTg4IDMzMSAyMDYgCkwgMTMyNSAxMzA2IApRIDE1NTAgMTU1MCAxNjkwIDE3MTUgClEgMTgzMSAxODgxIDE5NjggMjA5NyAKUSAyMTA2IDIzMTMgMjE4NiAyNTM2IApRIDIyNjYgMjc1OSAyMjY2IDMwMDkgClEgMjI2NiAzMjcyIDIxNjkgMzUxMSAKUSAyMDcyIDM3NTAgMTg4MCAzODk0IApRIDE2ODggNDAzOCAxNDE2IDQwMzggClEgMTEzOCA0MDM4IDkxNiAzODcwIApRIDY5NCAzNzAzIDYwMyAzNDM4IApRIDYyOCAzNDQ0IDY3MiAzNDQ0IApRIDgxNiAzNDQ0IDkxNyAzMzQ3IApRIDEwMTkgMzI1MCAxMDE5IDMwOTcgClEgMTAxOSAyOTUwIDkxNyAyODQ4IApRIDgxNiAyNzQ3IDY3MiAyNzQ3IApRIDUyMiAyNzQ3IDQyMCAyODUxIApRIDMxOSAyOTU2IDMxOSAzMDk3IApRIDMxOSAzMzM4IDQwOSAzNTQ4IApRIDUwMCAzNzU5IDY3MCAzOTIzIApRIDg0MSA0MDg4IDEwNTUgNDE3NSAKUSAxMjY5IDQyNjMgMTUwOSA0MjYzIApRIDE4NzUgNDI2MyAyMTkwIDQxMDggClEgMjUwNiAzOTUzIDI2OTAgMzY3MCAKUSAyODc1IDMzODggMjg3NSAzMDA5IApRIDI4NzUgMjczMSAyNzUzIDI0ODEgClEgMjYzMSAyMjMxIDI0NDAgMjAyNiAKUSAyMjUwIDE4MjIgMTk1MyAxNTYyIApRIDE2NTYgMTMwMyAxNTYzIDEyMTYgCkwgODM4IDUxOSAKTCAxNDUzIDUxOSAKUSAxOTA2IDUxOSAyMjExIDUyNiAKUSAyNTE2IDUzNCAyNTM0IDU1MCAKUSAyNjA5IDYzMSAyNjg4IDExNDEgCkwgMjg3NSAxMTQxIApMIDI2OTQgMCAKTCAzMTkgMCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDwvZGVmcz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjQ21taTEwLTc4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDAuODEyNSkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjQ21yMTAtMzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU3LjA4MDA3OCAtMTYuMTkzNzUpIHNjYWxlKDAuNykiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9ImxpbmUyZF8xNyI+CiAgICA8cGF0aCBkPSJNIDIxMC42IDI3MCAKTCAyMTAuNiA2OC40IAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNlMDk5NWY7IHN0cm9rZS13aWR0aDogMzsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICA8L2c+CiAgIDxnIGlkPSJsaW5lMmRfMTgiPgogICAgPHBhdGggZD0iTSAxMDkuOCAxNjkuMiAKTCAzMTEuNCAxNjkuMiAKIiBjbGlwLXBhdGg9InVybCgjcDA5N2VlMjAzMmEpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjZTA5OTVmOyBzdHJva2Utd2lkdGg6IDM7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0ibGluZTJkXzE5Ij4KICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjMxLjIzMDc2OSAKTCAzMTEuNCAyOS42MzA3NjkgCkwgMzExLjQgMjkuNjMwNzY5IAoiIGNsaXAtcGF0aD0idXJsKCNwMDk3ZWUyMDMyYSkiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNlMDk5NWY7IHN0cm9rZS13aWR0aDogMzsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICA8L2c+CiAgIDxnIGlkPSJsaW5lMmRfMjAiLz4KICAgPGcgaWQ9InBhdGNoXzMiPgogICAgPHBhdGggZD0iTSAxMDkuOCAyNzAgCkwgMTA5LjggNjguNCAKIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDEuNjsgc3Ryb2tlLWxpbmVqb2luOiBtaXRlcjsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICA8L2c+CiAgIDxnIGlkPSJwYXRjaF80Ij4KICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjcwIApMIDMxMS40IDI3MCAKIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDEuNjsgc3Ryb2tlLWxpbmVqb2luOiBtaXRlcjsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzExIj4KICAgIDxnIGlkPSJwYXRjaF81Ij4KICAgICA8cGF0aCBkPSJNIDE2OC43MTA1MzggMjQzLjA4Mzk0MiAKTCAxOTguMjEyNTM4IDI0My4wODM5NDIgCkwgMTk4LjIxMjUzOCAyMjcuMTMxNDQyIApMIDE2OC43MTA1MzggMjI3LjEzMTQ0MiAKegoiIHN0eWxlPSJmaWxsOiAjMTUxNTEzOyBvcGFjaXR5OiAwLjkiLz4KICAgIDwvZz4KICAgIDwhLS0gMDAwIC0tPgogICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS43MTg1MzggMjM5LjA4MTE5Mikgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjYyMzA0NyAwKSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyNy4yNDYwOTQgMCkiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xMiI+CiAgICA8ZyBpZD0icGF0Y2hfNiI+CiAgICAgPHBhdGggZD0iTSAxMjYuMDY0Mzg1IDE4NC45MzAwOTYgCkwgMTU1LjU2NjM4NSAxODQuOTMwMDk2IApMIDE1NS41NjYzODUgMTY4Ljk3NzU5NiAKTCAxMjYuMDY0Mzg1IDE2OC45Nzc1OTYgCnoKIiBzdHlsZT0iZmlsbDogIzE1MTUxMzsgb3BhY2l0eTogMC45Ii8+CiAgICA8L2c+CiAgICA8IS0tIDAwMSAtLT4KICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMDcyMzg1IDE4MC45MjczNDYpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMjQ2MDk0IDApIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMTMiPgogICAgPGcgaWQ9InBhdGNoXzciPgogICAgIDxwYXRoIGQ9Ik0gMTg2LjE1NjY5MiAxNjMuNjA3MDE5IApMIDIxNS42NTg2OTIgMTYzLjYwNzAxOSAKTCAyMTUuNjU4NjkyIDE0Ny42NTQ1MTkgCkwgMTg2LjE1NjY5MiAxNDcuNjU0NTE5IAp6CiIgc3R5bGU9ImZpbGw6ICMxNTE1MTM7IG9wYWNpdHk6IDAuOSIvPgogICAgPC9nPgogICAgPCEtLSAwMTAgLS0+CiAgICA8ZyBzdHlsZT0iZmlsbDogI2YyZWRlNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTg3LjE2NDY5MiAxNTkuNjA0MjY5KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI3LjI0NjA5NCAwKSIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzE0Ij4KICAgIDxnIGlkPSJwYXRjaF84Ij4KICAgICA8cGF0aCBkPSJNIDEzNy42OTUxNTQgMTE1LjE0NTQ4MSAKTCAxNjcuMTk3MTU0IDExNS4xNDU0ODEgCkwgMTY3LjE5NzE1NCA5OS4xOTI5ODEgCkwgMTM3LjY5NTE1NCA5OS4xOTI5ODEgCnoKIiBzdHlsZT0iZmlsbDogIzE1MTUxMzsgb3BhY2l0eTogMC45Ii8+CiAgICA8L2c+CiAgICA8IS0tIDAxMSAtLT4KICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzguNzAzMTU0IDExMS4xNDI3MzEpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMjQ2MDk0IDApIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMTUiPgogICAgPGcgaWQ9InBhdGNoXzkiPgogICAgIDxwYXRoIGQ9Ik0gMjQyLjM3MjA3NyAyMjMuNjk5MzI3IApMIDI3MS44NzQwNzcgMjIzLjY5OTMyNyAKTCAyNzEuODc0MDc3IDIwNy43NDY4MjcgCkwgMjQyLjM3MjA3NyAyMDcuNzQ2ODI3IAp6CiIgc3R5bGU9ImZpbGw6ICMxNTE1MTM7IG9wYWNpdHk6IDAuOSIvPgogICAgPC9nPgogICAgPCEtLSAxMDAgLS0+CiAgICA8ZyBzdHlsZT0iZmlsbDogI2YyZWRlNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjQzLjM4MDA3NyAyMTkuNjk2NTc3KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI3LjI0NjA5NCAwKSIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzE2Ij4KICAgIDxnIGlkPSJwYXRjaF8xMCI+CiAgICAgPHBhdGggZD0iTSAyNjEuNzU2NjkyIDE1MS45NzYyNSAKTCAyOTEuMjU4NjkyIDE1MS45NzYyNSAKTCAyOTEuMjU4NjkyIDEzNi4wMjM3NSAKTCAyNjEuNzU2NjkyIDEzNi4wMjM3NSAKegoiIHN0eWxlPSJmaWxsOiAjMTUxNTEzOyBvcGFjaXR5OiAwLjkiLz4KICAgIDwvZz4KICAgIDwhLS0gMTEwIC0tPgogICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2Mi43NjQ2OTIgMTQ3Ljk3MzUpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzEiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMjQ2MDk0IDApIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMTciPgogICAgPGcgaWQ9InBhdGNoXzExIj4KICAgICA8cGF0aCBkPSJNIDIwNy40Nzk3NjkgOTkuNjM3Nzg4IApMIDIzNi45ODE3NjkgOTkuNjM3Nzg4IApMIDIzNi45ODE3NjkgODMuNjg1Mjg4IApMIDIwNy40Nzk3NjkgODMuNjg1Mjg4IAp6CiIgc3R5bGU9ImZpbGw6ICMxNTE1MTM7IG9wYWNpdHk6IDAuOSIvPgogICAgPC9nPgogICAgPCEtLSAxMTEgLS0+CiAgICA8ZyBzdHlsZT0iZmlsbDogI2YyZWRlNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjA4LjQ4Nzc2OSA5NS42MzUwMzgpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzEiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMjQ2MDk0IDApIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9ImxlZ2VuZF8xIj4KICAgIDxnIGlkPSJsaW5lMmRfMjEiPgogICAgIDxwYXRoIGQ9Ik0gMTMwLjg0OTQyNSA0My40NTY3MjUgCkwgMTQzLjgwOTQyNSA0My40NTY3MjUgCkwgMTU2Ljc2OTQyNSA0My40NTY3MjUgCiIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2UwOTk1Zjsgc3Ryb2tlLXdpZHRoOiAzOyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICA8L2c+CiAgICA8ZyBpZD0idGV4dF8xOCI+CiAgICAgPCEtLSBnMT0wLCBnMj0wLCBnMz0wIC0tPgogICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjcuMTM3NDI1IDQ3Ljk5MjcyNSkgc2NhbGUoMC4xMjk2IC0wLjEyOTYpIj4KICAgICAgPGRlZnM+CiAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy02NyIgZD0iTSAyOTA2IDE3OTEgClEgMjkwNiAyNDE2IDI2NDggMjc1OSAKUSAyMzkxIDMxMDMgMTkyNSAzMTAzIApRIDE0NjMgMzEwMyAxMjA1IDI3NTkgClEgOTQ3IDI0MTYgOTQ3IDE3OTEgClEgOTQ3IDExNjkgMTIwNSA4MjUgClEgMTQ2MyA0ODEgMTkyNSA0ODEgClEgMjM5MSA0ODEgMjY0OCA4MjUgClEgMjkwNiAxMTY5IDI5MDYgMTc5MSAKegpNIDM0ODEgNDM0IApRIDM0ODEgLTQ1OSAzMDg0IC04OTUgClEgMjY4OCAtMTMzMSAxODY5IC0xMzMxIApRIDE1NjYgLTEzMzEgMTI5NyAtMTI4NiAKUSAxMDI4IC0xMjQxIDc3NSAtMTE0NyAKTCA3NzUgLTU4OCAKUSAxMDI4IC03MjUgMTI3NSAtNzkwIApRIDE1MjIgLTg1NiAxNzc4IC04NTYgClEgMjM0NCAtODU2IDI2MjUgLTU2MSAKUSAyOTA2IC0yNjYgMjkwNiAzMzEgCkwgMjkwNiA2MTYgClEgMjcyOCAzMDYgMjQ1MCAxNTMgClEgMjE3MiAwIDE3ODQgMCAKUSAxMTQxIDAgNzQ3IDQ5MCAKUSAzNTMgOTgxIDM1MyAxNzkxIApRIDM1MyAyNjAzIDc0NyAzMDkzIApRIDExNDEgMzU4NCAxNzg0IDM1ODQgClEgMjE3MiAzNTg0IDI0NTAgMzQzMSAKUSAyNzI4IDMyNzggMjkwNiAyOTY5IApMIDI5MDYgMzUwMCAKTCAzNDgxIDM1MDAgCkwgMzQ4MSA0MzQgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtM2QiIGQ9Ik0gNjc4IDI5MDYgCkwgNDY4NCAyOTA2IApMIDQ2ODQgMjM4MSAKTCA2NzggMjM4MSAKTCA2NzggMjkwNiAKegpNIDY3OCAxNjMxIApMIDQ2ODQgMTYzMSAKTCA0Njg0IDExMDAgCkwgNjc4IDExMDAgCkwgNjc4IDE2MzEgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMmMiIGQ9Ik0gNzUwIDc5NCAKTCAxNDA5IDc5NCAKTCAxNDA5IDI1NiAKTCA4OTcgLTc0NCAKTCA0OTQgLTc0NCAKTCA3NTAgMjU2IApMIDc1MCA3OTQgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMjAiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy0zMyIgZD0iTSAyNTk3IDI1MTYgClEgMzA1MCAyNDE5IDMzMDQgMjExMiAKUSAzNTU5IDE4MDYgMzU1OSAxMzU2IApRIDM1NTkgNjY2IDMwODQgMjg3IApRIDI2MDkgLTkxIDE3MzQgLTkxIApRIDE0NDEgLTkxIDExMzAgLTMzIApRIDgxOSAyNSA0ODggMTQxIApMIDQ4OCA3NTAgClEgNzUwIDU5NyAxMDYyIDUxOSAKUSAxMzc1IDQ0MSAxNzE2IDQ0MSAKUSAyMzA5IDQ0MSAyNjIwIDY3NSAKUSAyOTMxIDkwOSAyOTMxIDEzNTYgClEgMjkzMSAxNzY5IDI2NDIgMjAwMSAKUSAyMzUzIDIyMzQgMTgzOCAyMjM0IApMIDEyOTQgMjIzNCAKTCAxMjk0IDI3NTMgCkwgMTg2MyAyNzUzIApRIDIzMjggMjc1MyAyNTc1IDI5MzkgClEgMjgyMiAzMTI1IDI4MjIgMzQ3NSAKUSAyODIyIDM4MzQgMjU2NyA0MDI2IApRIDIzMTMgNDIxOSAxODM4IDQyMTkgClEgMTU3OCA0MjE5IDEyODEgNDE2MiAKUSA5ODQgNDEwNiA2MjggMzk4OCAKTCA2MjggNDU1MCAKUSA5ODggNDY1MCAxMzAyIDQ3MDAgClEgMTYxNiA0NzUwIDE4OTQgNDc1MCAKUSAyNjEzIDQ3NTAgMzAzMSA0NDIzIApRIDM0NTAgNDA5NyAzNDUwIDM1NDEgClEgMzQ1MCAzMTUzIDMyMjggMjg4NiAKUSAzMDA2IDI2MTkgMjU5NyAyNTE2IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPC9kZWZzPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY3Ii8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjQ3NjU2MiAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTNkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMDk5NjA5IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxMC44ODg2NzIgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjc0LjUxMTcxOSAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTIwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMDYuMjk4ODI4IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMzOC4wODU5MzggMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDAxLjU2MjUgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDY1LjE4NTU0NyAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NDguOTc0NjA5IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMmMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYxMi41OTc2NTYgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjQ0LjM4NDc2NiAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTY3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2NzYuMTcxODc1IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDczOS42NDg0MzggMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAzLjI3MTQ4NCAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4ODcuMDYwNTQ3IDApIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgPC9nPgogPC9nPgogPGRlZnM+CiAgPGNsaXBQYXRoIGlkPSJwMDk3ZWUyMDMyYSI+CiAgIDxyZWN0IHg9IjEwOS44IiB5PSI2OC40IiB3aWR0aD0iMjAxLjYiIGhlaWdodD0iMjAxLjYiLz4KICA8L2NsaXBQYXRoPgogPC9kZWZzPgo8L3N2Zz4K",
+        "alt": "三條線x1=0、x2=0、-x1+x2-1=0形成七個實際編碼，101不存在。",
+        "fit": "contain"
+      }
+    },
+    "lec05-kp03-p2-scores": {
+      "id": "lec05-kp03-p2-scores",
+      "type": "text",
+      "name": "scores",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2090,
+        "y": 245,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 340,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "［補充］$g_1=x_1$，$g_2=x_2$，$g_3=-x_1+x_2-1$。\n$y_i=1$ 若 $g_i>0$，其餘為 $0$。\n先看邊界，再讀區域標籤；101 不出現。\n*[Added] The three scores generate sign bits. Read boundaries before region codes; code 101 is absent.*"
+    },
+    "lec05-kp03-p3-title": {
+      "id": "lec05-kp03-p3-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "虛擬碼不是尚未蒐集到的資料"
+    },
+    "lec05-kp03-p3-subtitle": {
+      "id": "lec05-kp03-p3-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*An unrealized code is not merely unobserved data*"
+    },
+    "lec05-kp03-p3-bridge": {
+      "id": "lec05-kp03-p3-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "101 的缺席必須由幾何條件證明。\n*Prove the absence of 101 from the geometric conditions.*"
+    },
+    "lec05-kp03-p3-source": {
+      "id": "lec05-kp03-p3-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 3"
+    },
+    "lec05-kp03-p3-row0": {
+      "id": "lec05-kp03-p3-row0",
+      "type": "text",
+      "name": "row0",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 240,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "1. 101 要求 $x_1>0$、$x_2\\leq0$。位元依 $g_i>0$ 編碼。\n*Code 101 requires a positive first input and a nonpositive second input.*"
+    },
+    "lec05-kp03-p3-row1": {
+      "id": "lec05-kp03-p3-row1",
+      "type": "text",
+      "name": "row1",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 370,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "2. 因此 $g_3=-x_1+x_2-1<0$，第三位必為 $0$。\n*Those conditions force a negative third score and hence a zero third bit.*"
+    },
+    "lec05-kp03-p3-row2": {
+      "id": "lec05-kp03-p3-row2",
+      "type": "text",
+      "name": "row2",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 2940,
+        "y": 500,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "3. 101 的輸入區域為空；任意替它標類，都不改變實際預測。\n*Its preimage is empty; either assigned label leaves actual predictions unchanged.*"
+    },
+    "lec05-kp03-p4-title": {
+      "id": "lec05-kp03-p4-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4380,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "超立方體包含連續點，階梯只輸出頂點"
+    },
+    "lec05-kp03-p4-subtitle": {
+      "id": "lec05-kp03-p4-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4380,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*The cube contains continuous points; steps produce vertices*"
+    },
+    "lec05-kp03-p4-bridge": {
+      "id": "lec05-kp03-p4-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4380,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "二元碼位於哪裡，決定輸出需要處理的集合。\n*Locate binary codes before defining the output constraint.*"
+    },
+    "lec05-kp03-p4-source": {
+      "id": "lec05-kp03-p4-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4380,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 4"
+    },
+    "lec05-kp03-p4-cube": {
+      "id": "lec05-kp03-p4-cube",
+      "type": "text",
+      "name": "cube",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4380,
+        "y": 245,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 550,
+      "height": 300,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "單位超立方體：$H_p=[0,1]^p$。\n頂點：$\\operatorname{Vert}(H_p)=\\{0,1\\}^p$。\n$p$ 為位元數；$\\mathbf{y}=[f(g_1),\\ldots,f(g_p)]^T$ 只在頂點。\n*The cube includes its interior, but a p-bit step output lies only at vertices.*"
+    },
+    "lec05-kp03-p4-cell": {
+      "id": "lec05-kp03-p4-cell",
+      "type": "text",
+      "name": "cell",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 4970,
+        "y": 245,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 300,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "單一編碼的原像：各半空間條件的交集。\n因此是一個凸多面體區域，或空集合。\n*A code preimage intersects half-space conditions. It is one convex polyhedral cell or the empty set.*"
+    },
+    "lec05-kp03-p5-title": {
+      "id": "lec05-kp03-p5-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "這個輸出式分開一組實際頂點"
+    },
+    "lec05-kp03-p5-subtitle": {
+      "id": "lec05-kp03-p5-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*This output score separates one realized label set*"
+    },
+    "lec05-kp03-p5-bridge": {
+      "id": "lec05-kp03-p5-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "不是所有聯集都失敗；先驗算來源的成功例子。\n*Not every union fails; first verify the source separating example.*"
+    },
+    "lec05-kp03-p5-source": {
+      "id": "lec05-kp03-p5-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 5"
+    },
+    "lec05-kp03-p5-score-def": {
+      "id": "lec05-kp03-p5-score-def",
+      "type": "text",
+      "name": "score-def",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 235,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 85,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 25,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "$\\mathbf{y}$ 為三位元碼；$q(\\mathbf{y})=-y_1-y_2+y_3+0.5$，正分判 A。\n*The three-bit code enters q; a positive score predicts A.*"
+    },
+    "lec05-kp03-p5-positive": {
+      "id": "lec05-kp03-p5-positive",
+      "type": "text",
+      "name": "positive",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 5820,
+        "y": 340,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 550,
+      "height": 280,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "000：$-0-0+0+0.5=0.5$。\n001：$-0-0+1+0.5=1.5$。\n011：$-0-1+1+0.5=0.5$。\n*These three realized codes have positive scores and belong to A.*"
+    },
+    "lec05-kp03-p5-negative": {
+      "id": "lec05-kp03-p5-negative",
+      "type": "text",
+      "name": "negative",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 6410,
+        "y": 340,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 300,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 25,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "010：$-0-1+0+0.5=-0.5$。\n100：$-1-0+0+0.5=-0.5$。\n110：$-1-1+0+0.5=-1.5$。\n111：$-1-1+1+0.5=-0.5$。\n*These four realized codes have negative scores and belong to B.*"
+    },
+    "lec05-kp03-p6-title": {
+      "id": "lec05-kp03-p6-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "輸出只需滿足實際出現的碼"
+    },
+    "lec05-kp03-p6-subtitle": {
+      "id": "lec05-kp03-p6-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*Only realized codes constrain input predictions*"
+    },
+    "lec05-kp03-p6-bridge": {
+      "id": "lec05-kp03-p6-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "成功例子不需要替空區域完成另一個任務。\n*The successful example imposes no prediction task on an empty input region.*"
+    },
+    "lec05-kp03-p6-source": {
+      "id": "lec05-kp03-p6-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 6"
+    },
+    "lec05-kp03-p6-row0": {
+      "id": "lec05-kp03-p6-row0",
+      "type": "text",
+      "name": "row0",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 240,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "［補充驗算］虛擬碼 101：$q=-1-0+1+0.5=0.5$。\n*[Added check] The unrealized code 101 also receives a positive score.*"
+    },
+    "lec05-kp03-p6-row1": {
+      "id": "lec05-kp03-p6-row1",
+      "type": "text",
+      "name": "row1",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 370,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "但沒有輸入會得到 101；它被判為 A，不會改變任何實際輸入的類別。\n*No input receives that code, so its A prediction affects no actual input.*"
+    },
+    "lec05-kp03-p6-row2": {
+      "id": "lec05-kp03-p6-row2",
+      "type": "text",
+      "name": "row2",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 7260,
+        "y": 500,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 26,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "分類限制要檢查「實際碼＋指定標籤」，不能把未出現頂點當成必要資料。\n*Check realized codes with their assigned labels, rather than treating all cube vertices as observed data.*"
+    },
+    "lec05-kp03-p7-title": {
+      "id": "lec05-kp03-p7-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 8700,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "同一個面上已有不可分的反例"
+    },
+    "lec05-kp03-p7-subtitle": {
+      "id": "lec05-kp03-p7-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 8700,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*One cube face already contains a nonseparable pattern*"
+    },
+    "lec05-kp03-p7-bridge": {
+      "id": "lec05-kp03-p7-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 8700,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "換成 A＝000、110、111，檢查固定表示的限制。\n*Assign A to 000, 110, and 111 and test the fixed representation.*"
+    },
+    "lec05-kp03-p7-source": {
+      "id": "lec05-kp03-p7-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 8700,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 7"
+    },
+    "lec05-kp03-p7-fig": {
+      "id": "lec05-kp03-p7-fig",
+      "type": "image",
+      "name": "fig:lec05-kp03-obstruction",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 8700,
+        "y": 225,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 530,
+      "height": 440,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "transparent",
+        "fontSize": 1,
+        "radius": 0
+      },
+      "text": "y3=0的四點中000與110為A，010與100為B，呈交錯標籤。",
+      "image": {
+        "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIKICAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjM4MS42cHQiIGhlaWdodD0iMzE2LjhwdCIgdmlld0JveD0iMCAwIDM4MS42IDMxNi44IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiA8bWV0YWRhdGE+CiAgPHJkZjpSREYgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICA8Y2M6V29yaz4KICAgIDxkYzp0eXBlIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiLz4KICAgIDxkYzpkYXRlPjIwMjYtMTAtMjRUMTI6MTA6NTYuNzMxMzc0PC9kYzpkYXRlPgogICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICA8ZGM6Y3JlYXRvcj4KICAgICA8Y2M6QWdlbnQ+CiAgICAgIDxkYzp0aXRsZT5NYXRwbG90bGliIHYzLjEwLjgsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvPC9kYzp0aXRsZT4KICAgICA8L2NjOkFnZW50PgogICAgPC9kYzpjcmVhdG9yPgogICA8L2NjOldvcms+CiAgPC9yZGY6UkRGPgogPC9tZXRhZGF0YT4KIDxkZWZzPgogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+KntzdHJva2UtbGluZWpvaW46IHJvdW5kOyBzdHJva2UtbGluZWNhcDogYnV0dH08L3N0eWxlPgogPC9kZWZzPgogPGcgaWQ9ImZpZ3VyZV8xIj4KICA8ZyBpZD0icGF0Y2hfMSI+CiAgIDxwYXRoIGQ9Ik0gMCAzMTYuOCAKTCAzODEuNiAzMTYuOCAKTCAzODEuNiAwIApMIDAgMCAKTCAwIDMxNi44IAp6CiIgc3R5bGU9ImZpbGw6IG5vbmUiLz4KICA8L2c+CiAgPGcgaWQ9ImF4ZXNfMSI+CiAgIDxnIGlkPSJwYXRjaF8yIj4KICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjcwIApMIDMxMS40IDI3MCAKTCAzMTEuNCA2OC40IApMIDEwOS44IDY4LjQgCkwgMTA5LjggMjcwIAp6CiIgc3R5bGU9ImZpbGw6IG5vbmUiLz4KICAgPC9nPgogICA8ZyBpZD0ibWF0cGxvdGxpYi5heGlzXzEiPgogICAgPGcgaWQ9Inh0aWNrXzEiPgogICAgIDxnIGlkPSJsaW5lMmRfMSI+CiAgICAgIDxwYXRoIGQ9Ik0gMTQ3LjYgMjcwIApMIDE0Ny42IDY4LjQgCiIgY2xpcC1wYXRoPSJ1cmwoI3A4YWE2OGQ3ZjZjKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfMiI+CiAgICAgIDxkZWZzPgogICAgICAgPHBhdGggaWQ9Im01YjgxZDZhMDBmIiBkPSJNIDAgMCAKTCAwIDMuNSAKIiBzdHlsZT0ic3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDAuOCIvPgogICAgICA8L2RlZnM+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTViODFkNmEwMGYiIHg9IjE0Ny42IiB5PSIyNzAiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfMSI+CiAgICAgIDwhLS0gMC4wIC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM2LjE0OTc1IDI4Ny45NDE3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy0zMCIgZD0iTSAyMDM0IDQyNTAgClEgMTU0NyA0MjUwIDEzMDEgMzc3MCAKUSAxMDU2IDMyOTEgMTA1NiAyMzI4IApRIDEwNTYgMTM2OSAxMzAxIDg4OSAKUSAxNTQ3IDQwOSAyMDM0IDQwOSAKUSAyNTI1IDQwOSAyNzcwIDg4OSAKUSAzMDE2IDEzNjkgMzAxNiAyMzI4IApRIDMwMTYgMzI5MSAyNzcwIDM3NzAgClEgMjUyNSA0MjUwIDIwMzQgNDI1MCAKegpNIDIwMzQgNDc1MCAKUSAyODE5IDQ3NTAgMzIzMyA0MTI5IApRIDM2NDcgMzUwOSAzNjQ3IDIzMjggClEgMzY0NyAxMTUwIDMyMzMgNTI5IApRIDI4MTkgLTkxIDIwMzQgLTkxIApRIDEyNTAgLTkxIDgzNiA1MjkgClEgNDIyIDExNTAgNDIyIDIzMjggClEgNDIyIDM1MDkgODM2IDQxMjkgClEgMTI1MCA0NzUwIDIwMzQgNDc1MCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMmUiIGQ9Ik0gNjg0IDc5NCAKTCAxMzQ0IDc5NCAKTCAxMzQ0IDAgCkwgNjg0IDAgCkwgNjg0IDc5NCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8L2RlZnM+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1LjQxMDE1NiAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inh0aWNrXzIiPgogICAgIDxnIGlkPSJsaW5lMmRfMyI+CiAgICAgIDxwYXRoIGQ9Ik0gMjEwLjYgMjcwIApMIDIxMC42IDY4LjQgCiIgY2xpcC1wYXRoPSJ1cmwoI3A4YWE2OGQ3ZjZjKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfNCI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTViODFkNmEwMGYiIHg9IjIxMC42IiB5PSIyNzAiIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfMiI+CiAgICAgIDwhLS0gMC41IC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTk5LjE0OTc1IDI4Ny45NDE3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy0zNSIgZD0iTSA2OTEgNDY2NiAKTCAzMTY5IDQ2NjYgCkwgMzE2OSA0MTM0IApMIDEyNjkgNDEzNCAKTCAxMjY5IDI5OTEgClEgMTQwNiAzMDM4IDE1NDMgMzA2MSAKUSAxNjgxIDMwODQgMTgxOSAzMDg0IApRIDI2MDAgMzA4NCAzMDU2IDI2NTYgClEgMzUxMyAyMjI4IDM1MTMgMTQ5NyAKUSAzNTEzIDc0NCAzMDQ0IDMyNiAKUSAyNTc1IC05MSAxNzIyIC05MSAKUSAxNDI4IC05MSAxMTIzIC00MSAKUSA4MTkgOSA0OTQgMTA5IApMIDQ5NCA3NDQgClEgNzc1IDU5MSAxMDc1IDUxNiAKUSAxMzc1IDQ0MSAxNzA5IDQ0MSAKUSAyMjUwIDQ0MSAyNTY1IDcyNSAKUSAyODgxIDEwMDkgMjg4MSAxNDk3IApRIDI4ODEgMTk4NCAyNTY1IDIyNjggClEgMjI1MCAyNTUzIDE3MDkgMjU1MyAKUSAxNDU2IDI1NTMgMTIwNCAyNDk3IApRIDk1MyAyNDQxIDY5MSAyMzIyIApMIDY5MSA0NjY2IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDwvZGVmcz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjYyMzA0NyAwKSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTUuNDEwMTU2IDApIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0ieHRpY2tfMyI+CiAgICAgPGcgaWQ9ImxpbmUyZF81Ij4KICAgICAgPHBhdGggZD0iTSAyNzMuNiAyNzAgCkwgMjczLjYgNjguNCAKIiBjbGlwLXBhdGg9InVybCgjcDhhYTY4ZDdmNmMpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF82Ij4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtNWI4MWQ2YTAwZiIgeD0iMjczLjYiIHk9IjI3MCIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF8zIj4KICAgICAgPCEtLSAxLjAgLS0+CiAgICAgIDxnIHN0eWxlPSJmaWxsOiAjYjdiMGE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNjIuMTQ5NzUgMjg3Ljk0MTc1KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDxkZWZzPgogICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTMxIiBkPSJNIDc5NCA1MzEgCkwgMTgyNSA1MzEgCkwgMTgyNSA0MDkxIApMIDcwMyAzODY2IApMIDcwMyA0NDQxIApMIDE4MTkgNDY2NiAKTCAyNDUwIDQ2NjYgCkwgMjQ1MCA1MzEgCkwgMzQ4MSA1MzEgCkwgMzQ4MSAwIApMIDc5NCAwIApMIDc5NCA1MzEgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPC9kZWZzPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NS40MTAxNTYgMCkiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ0ZXh0XzQiPgogICAgIDwhLS0gJHlfMSQgLS0+CiAgICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwNC4wNDggMzA1Ljg0OSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgIDxkZWZzPgogICAgICAgPHBhdGggaWQ9IkNtbWkxMC03OSIgZD0iTSA1MzggLTkxNiAKUSA2NzIgLTExNDcgMTAwNiAtMTE0NyAKUSAxMzA5IC0xMTQ3IDE1MzEgLTkzNCAKUSAxNzUzIC03MjIgMTg4OSAtNDIwIApRIDIwMjUgLTExOSAyMTAwIDE5NyAKUSAxODE2IC03MiAxNDg0IC03MiAKUSAxMjMxIC03MiAxMDUzIDE1IApRIDg3NSAxMDMgNzc2IDI3NiAKUSA2NzggNDUwIDY3OCA2OTcgClEgNjc4IDkwNiA3MzQgMTEyNiAKUSA3OTEgMTM0NyA4OTIgMTYxNyAKUSA5OTQgMTg4OCAxMDY5IDIwODggClEgMTE1MyAyMzIyIDExNTMgMjQ3MiAKUSAxMTUzIDI2NjMgMTAxMyAyNjYzIApRIDc1OSAyNjYzIDU5NSAyNDAyIApRIDQzMSAyMTQxIDM1MyAxODE5IApRIDM0MSAxNzc4IDMwMCAxNzc4IApMIDIyNSAxNzc4IApRIDE3MiAxNzc4IDE3MiAxODM4IApMIDE3MiAxODU2IApRIDI3NSAyMjM4IDQ4NyAyNTMzIApRIDcwMCAyODI4IDEwMjUgMjgyOCAKUSAxMjUzIDI4MjggMTQxMSAyNjc4IApRIDE1NjkgMjUyOCAxNTY5IDIyOTcgClEgMTU2OSAyMTc4IDE1MTYgMjA0NyAKUSAxNDg4IDE5NjkgMTM4OCAxNzA2IApRIDEyODggMTQ0NCAxMjM0IDEyNzIgClEgMTE4MSAxMTAwIDExNDcgOTM0IApRIDExMTMgNzY5IDExMTMgNjAzIApRIDExMTMgMzkxIDEyMDMgMjQ0IApRIDEyOTQgOTcgMTQ5MSA5NyAKUSAxODg4IDk3IDIyMDMgNTgxIApMIDI2ODggMjU1MyAKUSAyNzA5IDI2MzggMjc4NyAyNjk4IApRIDI4NjYgMjc1OSAyOTU2IDI3NTkgClEgMzAzNCAyNzU5IDMwOTIgMjcwOSAKUSAzMTUwIDI2NTkgMzE1MCAyNTc4IApRIDMxNTAgMjU0MSAzMTQ0IDI1MjggCkwgMjUwOSAtMTkgClEgMjQyNSAtMzQ3IDIyMDAgLTY0NyAKUSAxOTc1IC05NDcgMTY1OCAtMTEzMCAKUSAxMzQxIC0xMzEzIDk5NyAtMTMxMyAKUSA4MzEgLTEzMTMgNjY4IC0xMjQ4IApRIDUwNiAtMTE4NCA0MDYgLTEwNTYgClEgMzA2IC05MjggMzA2IC03NTYgClEgMzA2IC01ODEgNDA5IC00NTMgClEgNTEzIC0zMjUgNjg0IC0zMjUgClEgNzg4IC0zMjUgODU4IC0zODkgClEgOTI4IC00NTMgOTI4IC01NTYgClEgOTI4IC03MDMgODE4IC04MTIgClEgNzA5IC05MjIgNTYzIC05MjIgClEgNTU2IC05MTkgNTUwIC05MTcgClEgNTQ0IC05MTYgNTM4IC05MTYgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPHBhdGggaWQ9IkNtcjEwLTMxIiBkPSJNIDU5NCAwIApMIDU5NCAyMjUgClEgMTM5NCAyMjUgMTM5NCA0MjggCkwgMTM5NCAzNzg4IApRIDEwNjMgMzYyOCA1NTYgMzYyOCAKTCA1NTYgMzg1MyAKUSAxMzQxIDM4NTMgMTc0MSA0MjYzIApMIDE4MzEgNDI2MyAKUSAxODUzIDQyNjMgMTg3MyA0MjQ1IApRIDE4OTQgNDIyOCAxODk0IDQyMDYgCkwgMTg5NCA0MjggClEgMTg5NCAyMjUgMjY5NCAyMjUgCkwgMjY5NCAwIApMIDU5NCAwIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgPC9kZWZzPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNDbW1pMTAtNzkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMC44MTI1KSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNDbXIxMC0zMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDkuMDIzNDM4IC0xNi4xOTM3NSkgc2NhbGUoMC43KSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0ibWF0cGxvdGxpYi5heGlzXzIiPgogICAgPGcgaWQ9Inl0aWNrXzEiPgogICAgIDxnIGlkPSJsaW5lMmRfNyI+CiAgICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjYzLjcgCkwgMzExLjQgMjYzLjcgCiIgY2xpcC1wYXRoPSJ1cmwoI3A4YWE2OGQ3ZjZjKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfOCI+CiAgICAgIDxkZWZzPgogICAgICAgPHBhdGggaWQ9Im00NzJjNmU3YjkzIiBkPSJNIDAgMCAKTCAtMy41IDAgCiIgc3R5bGU9InN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9kZWZzPgogICAgICA8Zz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI200NzJjNmU3YjkzIiB4PSIxMDkuOCIgeT0iMjYzLjciIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfNSI+CiAgICAgIDwhLS0g4oiSMC4yNSAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4LjY3MDc1IDI2OS4xNzA4NzUpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgICAgPGRlZnM+CiAgICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtMjIxMiIgZD0iTSA2NzggMjI3MiAKTCA0Njg0IDIyNzIgCkwgNDY4NCAxNzQxIApMIDY3OCAxNzQxIApMIDY3OCAyMjcyIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy0zMiIgZD0iTSAxMjI4IDUzMSAKTCAzNDMxIDUzMSAKTCAzNDMxIDAgCkwgNDY5IDAgCkwgNDY5IDUzMSAKUSA4MjggOTAzIDE0NDggMTUyOSAKUSAyMDY5IDIxNTYgMjIyOCAyMzM4IApRIDI1MzEgMjY3OCAyNjUxIDI5MTQgClEgMjc3MiAzMTUwIDI3NzIgMzM3OCAKUSAyNzcyIDM3NTAgMjUxMSAzOTg0IApRIDIyNTAgNDIxOSAxODMxIDQyMTkgClEgMTUzNCA0MjE5IDEyMDQgNDExNiAKUSA4NzUgNDAxMyA1MDAgMzgwMyAKTCA1MDAgNDQ0MSAKUSA4ODEgNDU5NCAxMjEyIDQ2NzIgClEgMTU0NCA0NzUwIDE4MTkgNDc1MCAKUSAyNTQ0IDQ3NTAgMjk3NSA0Mzg3IApRIDM0MDYgNDAyNSAzNDA2IDM0MTkgClEgMzQwNiAzMTMxIDMyOTggMjg3MyAKUSAzMTkxIDI2MTYgMjkwNiAyMjY2IApRIDI4MjggMjE3NSAyNDA5IDE3NDIgClEgMTk5MSAxMzA5IDEyMjggNTMxIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDwvZGVmcz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMjIxMiIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODMuNzg5MDYyIDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDcuNDEyMTA5IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNzkuMTk5MjE5IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNDIuODIyMjY2IDApIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0ieXRpY2tfMiI+CiAgICAgPGcgaWQ9ImxpbmUyZF85Ij4KICAgICAgPHBhdGggZD0iTSAxMDkuOCAyMzIuMiAKTCAzMTEuNCAyMzIuMiAKIiBjbGlwLXBhdGg9InVybCgjcDhhYTY4ZDdmNmMpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF8xMCI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTQ3MmM2ZTdiOTMiIHg9IjEwOS44IiB5PSIyMzIuMiIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF82Ij4KICAgICAgPCEtLSAwLjAwIC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAuNzM3NSAyMzcuNjcwODc1KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjYyMzA0NyAwKSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTUuNDEwMTU2IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNTkuMDMzMjAzIDApIi8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBpZD0ieXRpY2tfMyI+CiAgICAgPGcgaWQ9ImxpbmUyZF8xMSI+CiAgICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjAwLjcgCkwgMzExLjQgMjAwLjcgCiIgY2xpcC1wYXRoPSJ1cmwoI3A4YWE2OGQ3ZjZjKSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLW9wYWNpdHk6IDAuMTU7IHN0cm9rZS13aWR0aDogMC44OyBzdHJva2UtbGluZWNhcDogc3F1YXJlIi8+CiAgICAgPC9nPgogICAgIDxnIGlkPSJsaW5lMmRfMTIiPgogICAgICA8Zz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI200NzJjNmU3YjkzIiB4PSIxMDkuOCIgeT0iMjAwLjciIHN0eWxlPSJmaWxsOiAjYjdiMGE1OyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS13aWR0aDogMC44Ii8+CiAgICAgIDwvZz4KICAgICA8L2c+CiAgICAgPGcgaWQ9InRleHRfNyI+CiAgICAgIDwhLS0gMC4yNSAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwLjczNzUgMjA2LjE3MDg3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1LjQxMDE1NiAwKSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTU5LjAzMzIwMyAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inl0aWNrXzQiPgogICAgIDxnIGlkPSJsaW5lMmRfMTMiPgogICAgICA8cGF0aCBkPSJNIDEwOS44IDE2OS4yIApMIDMxMS40IDE2OS4yIAoiIGNsaXAtcGF0aD0idXJsKCNwOGFhNjhkN2Y2YykiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6ICNiN2IwYTU7IHN0cm9rZS1vcGFjaXR5OiAwLjE1OyBzdHJva2Utd2lkdGg6IDAuODsgc3Ryb2tlLWxpbmVjYXA6IHNxdWFyZSIvPgogICAgIDwvZz4KICAgICA8ZyBpZD0ibGluZTJkXzE0Ij4KICAgICAgPGc+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtNDcyYzZlN2I5MyIgeD0iMTA5LjgiIHk9IjE2OS4yIiBzdHlsZT0iZmlsbDogI2I3YjBhNTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDAuOCIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgIDxnIGlkPSJ0ZXh0XzgiPgogICAgICA8IS0tIDAuNTAgLS0+CiAgICAgIDxnIHN0eWxlPSJmaWxsOiAjYjdiMGE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3MC43Mzc1IDE3NC42NzA4NzUpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NS40MTAxNTYgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OS4wMzMyMDMgMCkiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ5dGlja181Ij4KICAgICA8ZyBpZD0ibGluZTJkXzE1Ij4KICAgICAgPHBhdGggZD0iTSAxMDkuOCAxMzcuNyAKTCAzMTEuNCAxMzcuNyAKIiBjbGlwLXBhdGg9InVybCgjcDhhYTY4ZDdmNmMpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF8xNiI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTQ3MmM2ZTdiOTMiIHg9IjEwOS44IiB5PSIxMzcuNyIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF85Ij4KICAgICAgPCEtLSAwLjc1IC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAuNzM3NSAxNDMuMTcwODc1KSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgIDxkZWZzPgogICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTM3IiBkPSJNIDUyNSA0NjY2IApMIDM1MjUgNDY2NiAKTCAzNTI1IDQzOTcgCkwgMTgzMSAwIApMIDExNzIgMCAKTCAyNzY2IDQxMzQgCkwgNTI1IDQxMzQgCkwgNTI1IDQ2NjYgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPC9kZWZzPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTM3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NS40MTAxNTYgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OS4wMzMyMDMgMCkiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ5dGlja182Ij4KICAgICA8ZyBpZD0ibGluZTJkXzE3Ij4KICAgICAgPHBhdGggZD0iTSAxMDkuOCAxMDYuMiAKTCAzMTEuNCAxMDYuMiAKIiBjbGlwLXBhdGg9InVybCgjcDhhYTY4ZDdmNmMpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF8xOCI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTQ3MmM2ZTdiOTMiIHg9IjEwOS44IiB5PSIxMDYuMiIgc3R5bGU9ImZpbGw6ICNiN2IwYTU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAwLjgiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgICA8ZyBpZD0idGV4dF8xMCI+CiAgICAgIDwhLS0gMS4wMCAtLT4KICAgICAgPGcgc3R5bGU9ImZpbGw6ICNiN2IwYTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcwLjczNzUgMTExLjY3MDg3NSkgc2NhbGUoMC4xNDQgLTAuMTQ0KSI+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTJlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk1LjQxMDE1NiAwKSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTU5LjAzMzIwMyAwKSIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgaWQ9Inl0aWNrXzciPgogICAgIDxnIGlkPSJsaW5lMmRfMTkiPgogICAgICA8cGF0aCBkPSJNIDEwOS44IDc0LjcgCkwgMzExLjQgNzQuNyAKIiBjbGlwLXBhdGg9InVybCgjcDhhYTY4ZDdmNmMpIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utb3BhY2l0eTogMC4xNTsgc3Ryb2tlLXdpZHRoOiAwLjg7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgICA8L2c+CiAgICAgPGcgaWQ9ImxpbmUyZF8yMCI+CiAgICAgIDxnPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjbTQ3MmM2ZTdiOTMiIHg9IjEwOS44IiB5PSI3NC43IiBzdHlsZT0iZmlsbDogI2I3YjBhNTsgc3Ryb2tlOiAjYjdiMGE1OyBzdHJva2Utd2lkdGg6IDAuOCIvPgogICAgICA8L2c+CiAgICAgPC9nPgogICAgIDxnIGlkPSJ0ZXh0XzExIj4KICAgICAgPCEtLSAxLjI1IC0tPgogICAgICA8ZyBzdHlsZT0iZmlsbDogI2I3YjBhNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAuNzM3NSA4MC4xNzA4NzUpIHNjYWxlKDAuMTQ0IC0wLjE0NCkiPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIvPgogICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0yZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NS40MTAxNTYgMCkiLz4KICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1OS4wMzMyMDMgMCkiLz4KICAgICAgPC9nPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ0ZXh0XzEyIj4KICAgICA8IS0tICR5XzIkIC0tPgogICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MS42NDY3NSAxNzUuNzUyKSByb3RhdGUoLTkwKSBzY2FsZSgwLjE0NCAtMC4xNDQpIj4KICAgICAgPGRlZnM+CiAgICAgICA8cGF0aCBpZD0iQ21yMTAtMzIiIGQ9Ik0gMzE5IDAgCkwgMzE5IDE3MiAKUSAzMTkgMTg4IDMzMSAyMDYgCkwgMTMyNSAxMzA2IApRIDE1NTAgMTU1MCAxNjkwIDE3MTUgClEgMTgzMSAxODgxIDE5NjggMjA5NyAKUSAyMTA2IDIzMTMgMjE4NiAyNTM2IApRIDIyNjYgMjc1OSAyMjY2IDMwMDkgClEgMjI2NiAzMjcyIDIxNjkgMzUxMSAKUSAyMDcyIDM3NTAgMTg4MCAzODk0IApRIDE2ODggNDAzOCAxNDE2IDQwMzggClEgMTEzOCA0MDM4IDkxNiAzODcwIApRIDY5NCAzNzAzIDYwMyAzNDM4IApRIDYyOCAzNDQ0IDY3MiAzNDQ0IApRIDgxNiAzNDQ0IDkxNyAzMzQ3IApRIDEwMTkgMzI1MCAxMDE5IDMwOTcgClEgMTAxOSAyOTUwIDkxNyAyODQ4IApRIDgxNiAyNzQ3IDY3MiAyNzQ3IApRIDUyMiAyNzQ3IDQyMCAyODUxIApRIDMxOSAyOTU2IDMxOSAzMDk3IApRIDMxOSAzMzM4IDQwOSAzNTQ4IApRIDUwMCAzNzU5IDY3MCAzOTIzIApRIDg0MSA0MDg4IDEwNTUgNDE3NSAKUSAxMjY5IDQyNjMgMTUwOSA0MjYzIApRIDE4NzUgNDI2MyAyMTkwIDQxMDggClEgMjUwNiAzOTUzIDI2OTAgMzY3MCAKUSAyODc1IDMzODggMjg3NSAzMDA5IApRIDI4NzUgMjczMSAyNzUzIDI0ODEgClEgMjYzMSAyMjMxIDI0NDAgMjAyNiAKUSAyMjUwIDE4MjIgMTk1MyAxNTYyIApRIDE2NTYgMTMwMyAxNTYzIDEyMTYgCkwgODM4IDUxOSAKTCAxNDUzIDUxOSAKUSAxOTA2IDUxOSAyMjExIDUyNiAKUSAyNTE2IDUzNCAyNTM0IDU1MCAKUSAyNjA5IDYzMSAyNjg4IDExNDEgCkwgMjg3NSAxMTQxIApMIDI2OTQgMCAKTCAzMTkgMCAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgIDwvZGVmcz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjQ21taTEwLTc5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDAuODEyNSkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjQ21yMTAtMzIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ5LjAyMzQzOCAtMTYuMTkzNzUpIHNjYWxlKDAuNykiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9ImxpbmUyZF8yMSI+CiAgICA8cGF0aCBkPSJNIDE0Ny42IDIzMi4yIApMIDI3My42IDEwNi4yIAoiIGNsaXAtcGF0aD0idXJsKCNwOGFhNjhkN2Y2YykiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2UtZGFzaGFycmF5OiAxMS4xLDQuODsgc3Ryb2tlLWRhc2hvZmZzZXQ6IDA7IHN0cm9rZTogI2Q5Nzc1Nzsgc3Ryb2tlLW9wYWNpdHk6IDAuNTsgc3Ryb2tlLXdpZHRoOiAzIi8+CiAgIDwvZz4KICAgPGcgaWQ9ImxpbmUyZF8yMiI+CiAgICA8cGF0aCBkPSJNIDE0Ny42IDEwNi4yIApMIDI3My42IDIzMi4yIAoiIGNsaXAtcGF0aD0idXJsKCNwOGFhNjhkN2Y2YykiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2UtZGFzaGFycmF5OiAzLDQuOTU7IHN0cm9rZS1kYXNob2Zmc2V0OiAwOyBzdHJva2U6ICM2YTlmZDY7IHN0cm9rZS1vcGFjaXR5OiAwLjU7IHN0cm9rZS13aWR0aDogMyIvPgogICA8L2c+CiAgIDxnIGlkPSJwYXRjaF8zIj4KICAgIDxwYXRoIGQ9Ik0gMTA5LjggMjcwIApMIDEwOS44IDY4LjQgCiIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAxLjY7IHN0cm9rZS1saW5lam9pbjogbWl0ZXI7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0icGF0Y2hfNCI+CiAgICA8cGF0aCBkPSJNIDEwOS44IDI3MCAKTCAzMTEuNCAyNzAgCiIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogI2I3YjBhNTsgc3Ryb2tlLXdpZHRoOiAxLjY7IHN0cm9rZS1saW5lam9pbjogbWl0ZXI7IHN0cm9rZS1saW5lY2FwOiBzcXVhcmUiLz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xMyI+CiAgICA8IS0tIDAwMCAtLT4KICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjAuMiAyNTEuMSkgc2NhbGUoMC4xMzY4IC0wLjEzNjgpIj4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI3LjI0NjA5NCAwKSIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJ0ZXh0XzE0Ij4KICAgIDwhLS0gMDEwIC0tPgogICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2MC4yIDkxLjA4KSBzY2FsZSgwLjEzNjggLTAuMTM2OCkiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2My42MjMwNDcgMCkiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjcuMjQ2MDk0IDApIi8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9InRleHRfMTUiPgogICAgPCEtLSAxMDAgLS0+CiAgICA8ZyBzdHlsZT0iZmlsbDogI2YyZWRlNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjM1LjggMjUxLjEpIHNjYWxlKDAuMTM2OCAtMC4xMzY4KSI+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYzLjYyMzA0NyAwKSIvPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEyNy4yNDYwOTQgMCkiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBpZD0idGV4dF8xNiI+CiAgICA8IS0tIDExMCAtLT4KICAgIDxnIHN0eWxlPSJmaWxsOiAjZjJlZGU0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzUuOCA5MS4wOCkgc2NhbGUoMC4xMzY4IC0wLjEzNjgpIj4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTMxIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjMuNjIzMDQ3IDApIi8+CiAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI3LjI0NjA5NCAwKSIvPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGlkPSJQYXRoQ29sbGVjdGlvbl8xIj4KICAgIDxkZWZzPgogICAgIDxwYXRoIGlkPSJtMDY1ZDRjNzUwZiIgZD0iTSAwIDUuNzAwODc3IApDIDEuNTExODkgNS43MDA4NzcgMi45NjIwNjEgNS4xMDAxOTcgNC4wMzExMjkgNC4wMzExMjkgCkMgNS4xMDAxOTcgMi45NjIwNjEgNS43MDA4NzcgMS41MTE4OSA1LjcwMDg3NyAwIApDIDUuNzAwODc3IC0xLjUxMTg5IDUuMTAwMTk3IC0yLjk2MjA2MSA0LjAzMTEyOSAtNC4wMzExMjkgCkMgMi45NjIwNjEgLTUuMTAwMTk3IDEuNTExODkgLTUuNzAwODc3IDAgLTUuNzAwODc3IApDIC0xLjUxMTg5IC01LjcwMDg3NyAtMi45NjIwNjEgLTUuMTAwMTk3IC00LjAzMTEyOSAtNC4wMzExMjkgCkMgLTUuMTAwMTk3IC0yLjk2MjA2MSAtNS43MDA4NzcgLTEuNTExODkgLTUuNzAwODc3IDAgCkMgLTUuNzAwODc3IDEuNTExODkgLTUuMTAwMTk3IDIuOTYyMDYxIC00LjAzMTEyOSA0LjAzMTEyOSAKQyAtMi45NjIwNjEgNS4xMDAxOTcgLTEuNTExODkgNS43MDA4NzcgMCA1LjcwMDg3NyAKegoiIHN0eWxlPSJzdHJva2U6ICNkOTc3NTciLz4KICAgIDwvZGVmcz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwOGFhNjhkN2Y2YykiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI20wNjVkNGM3NTBmIiB4PSIxNDcuNiIgeT0iMjMyLjIiIHN0eWxlPSJmaWxsOiAjZDk3NzU3OyBzdHJva2U6ICNkOTc3NTciLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtMDY1ZDRjNzUwZiIgeD0iMjczLjYiIHk9IjEwNi4yIiBzdHlsZT0iZmlsbDogI2Q5Nzc1Nzsgc3Ryb2tlOiAjZDk3NzU3Ii8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9IlBhdGhDb2xsZWN0aW9uXzIiPgogICAgPGRlZnM+CiAgICAgPHBhdGggaWQ9Im1jNTgyNTFjYWI5IiBkPSJNIC01LjcwMDg3NyA1LjcwMDg3NyAKTCA1LjcwMDg3NyA1LjcwMDg3NyAKTCA1LjcwMDg3NyAtNS43MDA4NzcgCkwgLTUuNzAwODc3IC01LjcwMDg3NyAKegoiIHN0eWxlPSJzdHJva2U6ICM2YTlmZDYiLz4KICAgIDwvZGVmcz4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNwOGFhNjhkN2Y2YykiPgogICAgIDx1c2UgeGxpbms6aHJlZj0iI21jNTgyNTFjYWI5IiB4PSIxNDcuNiIgeT0iMTA2LjIiIHN0eWxlPSJmaWxsOiAjNmE5ZmQ2OyBzdHJva2U6ICM2YTlmZDYiLz4KICAgICA8dXNlIHhsaW5rOmhyZWY9IiNtYzU4MjUxY2FiOSIgeD0iMjczLjYiIHk9IjIzMi4yIiBzdHlsZT0iZmlsbDogIzZhOWZkNjsgc3Ryb2tlOiAjNmE5ZmQ2Ii8+CiAgICA8L2c+CiAgIDwvZz4KICAgPGcgaWQ9ImxlZ2VuZF8xIj4KICAgIDxnIGlkPSJQYXRoQ29sbGVjdGlvbl8zIj4KICAgICA8Zz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjbTA2NWQ0Yzc1MGYiIHg9IjExMi41MjYyMTMiIHk9IjQ0LjU5MDcyNSIgc3R5bGU9ImZpbGw6ICNkOTc3NTc7IHN0cm9rZTogI2Q5Nzc1NyIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ0ZXh0XzE3Ij4KICAgICA8IS0tIEE6IGNsYXNzIDEgLS0+CiAgICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzNS44NTQyMTMgNDcuOTkyNzI1KSBzY2FsZSgwLjEyOTYgLTAuMTI5NikiPgogICAgICA8ZGVmcz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTQxIiBkPSJNIDIxODggNDA0NCAKTCAxMzMxIDE3MjIgCkwgMzA0NyAxNzIyIApMIDIxODggNDA0NCAKegpNIDE4MzEgNDY2NiAKTCAyNTQ3IDQ2NjYgCkwgNDMyNSAwIApMIDM2NjkgMCAKTCAzMjQ0IDExOTcgCkwgMTE0MSAxMTk3IApMIDcxNiAwIApMIDUwIDAgCkwgMTgzMSA0NjY2IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTNhIiBkPSJNIDc1MCA3OTQgCkwgMTQwOSA3OTQgCkwgMTQwOSAwIApMIDc1MCAwIApMIDc1MCA3OTQgCnoKTSA3NTAgMzMwOSAKTCAxNDA5IDMzMDkgCkwgMTQwOSAyNTE2IApMIDc1MCAyNTE2IApMIDc1MCAzMzA5IAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTIwIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICAgPHBhdGggaWQ9IkRlamFWdVNhbnMtNjMiIGQ9Ik0gMzEyMiAzMzY2IApMIDMxMjIgMjgyOCAKUSAyODc4IDI5NjMgMjYzMyAzMDMwIApRIDIzODggMzA5NyAyMTM4IDMwOTcgClEgMTU3OCAzMDk3IDEyNjggMjc0MiAKUSA5NTkgMjM4OCA5NTkgMTc0NyAKUSA5NTkgMTEwNiAxMjY4IDc1MSAKUSAxNTc4IDM5NyAyMTM4IDM5NyAKUSAyMzg4IDM5NyAyNjMzIDQ2NCAKUSAyODc4IDUzMSAzMTIyIDY2NiAKTCAzMTIyIDEzNCAKUSAyODgxIDIyIDI2MjMgLTM0IApRIDIzNjYgLTkxIDIwNzUgLTkxIApRIDEyODQgLTkxIDgxOCA0MDYgClEgMzUzIDkwMyAzNTMgMTc0NyAKUSAzNTMgMjYwMyA4MjMgMzA5MyAKUSAxMjk0IDM1ODQgMjExMyAzNTg0IApRIDIzNzggMzU4NCAyNjMxIDM1MjkgClEgMjg4NCAzNDc1IDMxMjIgMzM2NiAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy02YyIgZD0iTSA2MDMgNDg2MyAKTCAxMTc4IDQ4NjMgCkwgMTE3OCAwIApMIDYwMyAwIApMIDYwMyA0ODYzIAp6CiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAxNTYyNSkiLz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTYxIiBkPSJNIDIxOTQgMTc1OSAKUSAxNDk3IDE3NTkgMTIyOCAxNjAwIApRIDk1OSAxNDQxIDk1OSAxMDU2IApRIDk1OSA3NTAgMTE2MSA1NzAgClEgMTM2MyAzOTEgMTcwOSAzOTEgClEgMjE4OCAzOTEgMjQ3NyA3MzAgClEgMjc2NiAxMDY5IDI3NjYgMTYzMSAKTCAyNzY2IDE3NTkgCkwgMjE5NCAxNzU5IAp6Ck0gMzM0MSAxOTk3IApMIDMzNDEgMCAKTCAyNzY2IDAgCkwgMjc2NiA1MzEgClEgMjU2OSAyMTMgMjI3NSA2MSAKUSAxOTgxIC05MSAxNTU2IC05MSAKUSAxMDE5IC05MSA3MDEgMjExIApRIDM4NCA1MTMgMzg0IDEwMTkgClEgMzg0IDE2MDkgNzc5IDE5MDkgClEgMTE3NSAyMjA5IDE5NTkgMjIwOSAKTCAyNzY2IDIyMDkgCkwgMjc2NiAyMjY2IApRIDI3NjYgMjY2MyAyNTA1IDI4ODAgClEgMjI0NCAzMDk3IDE3NzIgMzA5NyAKUSAxNDcyIDMwOTcgMTE4NyAzMDI1IApRIDkwMyAyOTUzIDY0MSAyODA5IApMIDY0MSAzMzQxIApRIDk1NiAzNDYzIDEyNTMgMzUyMyAKUSAxNTUwIDM1ODQgMTgzMSAzNTg0IApRIDI1OTEgMzU4NCAyOTY2IDMxOTAgClEgMzM0MSAyNzk3IDMzNDEgMTk5NyAKegoiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMTU2MjUpIi8+CiAgICAgICA8cGF0aCBpZD0iRGVqYVZ1U2Fucy03MyIgZD0iTSAyODM0IDMzOTcgCkwgMjgzNCAyODUzIApRIDI1OTEgMjk3OCAyMzI4IDMwNDAgClEgMjA2NiAzMTAzIDE3ODQgMzEwMyAKUSAxMzU2IDMxMDMgMTE0MiAyOTcyIApRIDkyOCAyODQxIDkyOCAyNTc4IApRIDkyOCAyMzc4IDEwODEgMjI2NCAKUSAxMjM0IDIxNTAgMTY5NyAyMDQ3IApMIDE4OTQgMjAwMyAKUSAyNTA2IDE4NzIgMjc2NCAxNjMzIApRIDMwMjIgMTM5NCAzMDIyIDk2NiAKUSAzMDIyIDQ3OCAyNjM2IDE5MyAKUSAyMjUwIC05MSAxNTc1IC05MSAKUSAxMjk0IC05MSA5ODkgLTM2IApRIDY4NCAxOSAzNDcgMTI4IApMIDM0NyA3MjIgClEgNjY2IDU1NiA5NzUgNDczIApRIDEyODQgMzkxIDE1ODggMzkxIApRIDE5OTQgMzkxIDIyMTIgNTMwIApRIDI0MzEgNjY5IDI0MzEgOTIyIApRIDI0MzEgMTE1NiAyMjczIDEyODEgClEgMjExNiAxNDA2IDE1ODEgMTUyMiAKTCAxMzgxIDE1NjkgClEgODQ3IDE2ODEgNjA5IDE5MTQgClEgMzcyIDIxNDcgMzcyIDI1NTMgClEgMzcyIDMwNDcgNzIyIDMzMTUgClEgMTA3MiAzNTg0IDE3MTYgMzU4NCAKUSAyMDM0IDM1ODQgMjMxNSAzNTM3IApRIDI1OTcgMzQ5MSAyODM0IDMzOTcgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICA8L2RlZnM+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDEiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjYuNjU4MjAzIDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMC4zNDk2MDkgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTMyLjEzNjcxOSAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODcuMTE3MTg4IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNjEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNC45MDAzOTEgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjc2LjE3OTY4OCAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTczIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMjguMjc5Mjk3IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDM4MC4zNzg5MDYgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDEyLjE2NjAxNiAwKSIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJQYXRoQ29sbGVjdGlvbl80Ij4KICAgICA8Zz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjbWM1ODI1MWNhYjkiIHg9IjIzNi4zOTM0MzgiIHk9IjQ0LjU5MDcyNSIgc3R5bGU9ImZpbGw6ICM2YTlmZDY7IHN0cm9rZTogIzZhOWZkNiIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnIGlkPSJ0ZXh0XzE4Ij4KICAgICA8IS0tIEI6IGNsYXNzIDAgLS0+CiAgICAgPGcgc3R5bGU9ImZpbGw6ICNmMmVkZTQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1OS43MjE0MzggNDcuOTkyNzI1KSBzY2FsZSgwLjEyOTYgLTAuMTI5NikiPgogICAgICA8ZGVmcz4KICAgICAgIDxwYXRoIGlkPSJEZWphVnVTYW5zLTQyIiBkPSJNIDEyNTkgMjIyOCAKTCAxMjU5IDUxOSAKTCAyMjcyIDUxOSAKUSAyNzgxIDUxOSAzMDI2IDczMCAKUSAzMjcyIDk0MSAzMjcyIDEzNzUgClEgMzI3MiAxODEzIDMwMjYgMjAyMCAKUSAyNzgxIDIyMjggMjI3MiAyMjI4IApMIDEyNTkgMjIyOCAKegpNIDEyNTkgNDE0NyAKTCAxMjU5IDI3NDEgCkwgMjE5NCAyNzQxIApRIDI2NTYgMjc0MSAyODgyIDI5MTQgClEgMzEwOSAzMDg4IDMxMDkgMzQ0NCAKUSAzMTA5IDM3OTcgMjg4MiAzOTcyIApRIDI2NTYgNDE0NyAyMTk0IDQxNDcgCkwgMTI1OSA0MTQ3IAp6Ck0gNjI4IDQ2NjYgCkwgMjI0MSA0NjY2IApRIDI5NjMgNDY2NiAzMzUzIDQzNjYgClEgMzc0NCA0MDY2IDM3NDQgMzUxMyAKUSAzNzQ0IDMwODQgMzU0NCAyODMxIApRIDMzNDQgMjU3OCAyOTU2IDI1MTYgClEgMzQyMiAyNDE2IDM2ODAgMjA5OCAKUSAzOTM4IDE3ODEgMzkzOCAxMzA2IApRIDM5MzggNjgxIDM1MTMgMzQwIApRIDMwODggMCAyMzAzIDAgCkwgNjI4IDAgCkwgNjI4IDQ2NjYgCnoKIiB0cmFuc2Zvcm09InNjYWxlKDAuMDE1NjI1KSIvPgogICAgICA8L2RlZnM+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNDIiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy0zYSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjguNjAzNTE2IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMjAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMi4yOTQ5MjIgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy02MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM0LjA4MjAzMSAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTZjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODkuMDYyNSAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTYxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMTYuODQ1NzAzIDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtNzMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3OC4xMjUgMCkiLz4KICAgICAgPHVzZSB4bGluazpocmVmPSIjRGVqYVZ1U2Fucy03MyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzMwLjIyNDYwOSAwKSIvPgogICAgICA8dXNlIHhsaW5rOmhyZWY9IiNEZWphVnVTYW5zLTIwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzODIuMzI0MjE5IDApIi8+CiAgICAgIDx1c2UgeGxpbms6aHJlZj0iI0RlamFWdVNhbnMtMzAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxNC4xMTEzMjggMCkiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgIDwvZz4KICA8L2c+CiA8L2c+CiA8ZGVmcz4KICA8Y2xpcFBhdGggaWQ9InA4YWE2OGQ3ZjZjIj4KICAgPHJlY3QgeD0iMTA5LjgiIHk9IjY4LjQiIHdpZHRoPSIyMDEuNiIgaGVpZ2h0PSIyMDEuNiIvPgogIDwvY2xpcFBhdGg+CiA8L2RlZnM+Cjwvc3ZnPgo=",
+        "alt": "y3=0的四點中000與110為A，010與100為B，呈交錯標籤。",
+        "fit": "contain"
+      }
+    },
+    "lec05-kp03-p7-proof": {
+      "id": "lec05-kp03-p7-proof",
+      "type": "text",
+      "name": "proof",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 9290,
+        "y": 235,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 410,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "$y_3=0$；輸出 $q=\\mathbf{a}^T\\mathbf{y}+a_0$。\nA 要求 $q(000)+q(110)=a_1+a_2+2a_0>0$。\nB 要求 $q(010)+q(100)=a_1+a_2+2a_0\\leq0$。\n同一個和矛盾，單一輸出無解。\n*With weights a and bias a0, the two class sums are identical but require opposite signs. One linear output cannot satisfy them.*"
+    },
+    "lec05-kp03-p8-title": {
+      "id": "lec05-kp03-p8-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "單一編碼凸，不代表所有輸出區域凸"
+    },
+    "lec05-kp03-p8-subtitle": {
+      "id": "lec05-kp03-p8-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*A convex code cell does not force a convex output region*"
+    },
+    "lec05-kp03-p8-bridge": {
+      "id": "lec05-kp03-p8-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "要分清楚半空間交集與多個編碼的聯集。\n*Distinguish a half-space intersection from a union of accepted codes.*"
+    },
+    "lec05-kp03-p8-source": {
+      "id": "lec05-kp03-p8-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 8"
+    },
+    "lec05-kp03-p8-and": {
+      "id": "lec05-kp03-p8-and",
+      "type": "text",
+      "name": "and",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 245,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 550,
+      "height": 270,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 28,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "AND 構造：要求每個半空間條件都成立。\n它形成一個凸交集。\n*An AND construction requires every half-space condition, producing one convex intersection.*"
+    },
+    "lec05-kp03-p8-weighted": {
+      "id": "lec05-kp03-p8-weighted",
+      "type": "text",
+      "name": "weighted",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10730,
+        "y": 245,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 310,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 28,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "一般加權輸出可接受多個碼。\n其原像可能非凸或不連通；但不是任意聯集都可分。\n*A weighted output can accept several codes, giving nonconvex or disconnected preimages. Arbitrary unions are still not guaranteed.*"
+    },
+    "lec05-kp03-p8-correction": {
+      "id": "lec05-kp03-p8-correction",
+      "type": "text",
+      "name": "correction",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 10140,
+        "y": 580,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 80,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "更正：不能把來源互動說明的 AND 限制，套到所有兩層網路。\n*Correction: the interactive AND limitation does not apply to every two-layer network.*"
+    },
+    "lec05-kp03-p9-title": {
+      "id": "lec05-kp03-p9-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "限制針對固定映射，不是所有隱藏層"
+    },
+    "lec05-kp03-p9-subtitle": {
+      "id": "lec05-kp03-p9-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*The obstruction concerns the fixed hidden mapping*"
+    },
+    "lec05-kp03-p9-bridge": {
+      "id": "lec05-kp03-p9-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "不可分的碼仍可能因另一種隱藏表示而改變。\n*A different hidden representation may change the code-separation problem.*"
+    },
+    "lec05-kp03-p9-source": {
+      "id": "lec05-kp03-p9-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 9"
+    },
+    "lec05-kp03-p9-row0": {
+      "id": "lec05-kp03-p9-row0",
+      "type": "text",
+      "name": "row0",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 240,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "已證明：這組實際碼與標籤，沒有單一輸出超平面能全對。\n*Proved: this fixed code-and-label set has no perfect linear output separator.*"
+    },
+    "lec05-kp03-p9-row1": {
+      "id": "lec05-kp03-p9-row1",
+      "type": "text",
+      "name": "row1",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 370,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "未證明：原始輸入任務在所有其他隱藏邊界或寬度下，也一定失敗。\n*Not proved: every alternative hidden boundary set or width fails on the original task.*"
+    },
+    "lec05-kp03-p9-row2": {
+      "id": "lec05-kp03-p9-row2",
+      "type": "text",
+      "name": "row2",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 11580,
+        "y": 500,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 115,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "下一步：若保留這份編碼，可再加一層偵測目標頂點。\n*Next: retain the code and add another layer to detect target vertices.*"
+    },
+    "lec05-kp03-p10-title": {
+      "id": "lec05-kp03-p10-title",
+      "type": "text",
+      "name": "title",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 24,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 60,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 42,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "用虛擬碼與零位元檢查理解"
+    },
+    "lec05-kp03-p10-subtitle": {
+      "id": "lec05-kp03-p10-subtitle",
+      "type": "text",
+      "name": "subtitle",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 88,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 42,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 24,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "*Use unrealized codes and zero coordinates to test understanding*"
+    },
+    "lec05-kp03-p10-bridge": {
+      "id": "lec05-kp03-p10-bridge",
+      "type": "text",
+      "name": "bridge",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 142,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 76,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "把區域、編碼與輸出條件分開檢查。\n*Check regions, codes, and output constraints separately.*"
+    },
+    "lec05-kp03-p10-source": {
+      "id": "lec05-kp03-p10-source",
+      "type": "text",
+      "name": "source",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 680,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 32,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#b7b0a5",
+        "fontSize": 22,
+        "radius": 0,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "來源 Source：第四章 Chapter 4，KP03 ｜ 10"
+    },
+    "lec05-kp03-p10-exercise": {
+      "id": "lec05-kp03-p10-exercise",
+      "type": "text",
+      "name": "exercise",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 235,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 175,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 28,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "練習：101 沒有原像，替它改類別會改變實際預測嗎？\n提示：先問是否有輸入得到這個碼。\n*Practice: does relabeling 101 change actual predictions? Hint: ask whether any input receives it.*"
+    },
+    "lec05-kp03-p10-exercise2": {
+      "id": "lec05-kp03-p10-exercise2",
+      "type": "text",
+      "name": "exercise2",
+      "sceneId": "lec05-kp03-scene",
+      "transform": {
+        "x": 13020,
+        "y": 420,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1160,
+      "height": 175,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "rgba(245,241,233,0.05)",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 27,
+        "radius": 14,
+        "fontWeight": 400,
+        "lineHeight": 1.32
+      },
+      "text": "練習：反例的四點 $y_3=0$。只改輸出權重 $a_3$ 能消除矛盾嗎？\n提示：檢查第三位對分數的貢獻。\n*Practice: can changing only a3 remove the obstruction when all four third coordinates are zero? Hint: examine that coordinate contribution.*"
+    },
+    "lec05-kp03-frame": {
+      "id": "lec05-kp03-frame",
+      "type": "frame",
+      "name": "多面體編碼與能力邊界",
+      "sceneId": "lec05-kp03-root",
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 400,
+      "height": 200,
+      "zIndex": 1,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "textColor": "#f2ede4",
+        "fontSize": 22,
+        "radius": 0
+      },
+      "text": "多面體編碼與能力邊界",
+      "frame": {
+        "childSceneId": "lec05-kp03-scene",
+        "previewMode": "live",
+        "padding": 18,
+        "clip": true
+      }
+    }
+  },
+  "steps": [
+    {
+      "id": "lec05-kp03-frame-step",
+      "order": 0,
+      "label": "多面體編碼與能力邊界",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-root",
+        "point": {
+          "x": 200,
+          "y": 100
+        },
+        "zoom": 2.6666666666666665,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "教材程度：大學三年級（undergrad）。\n全章純教學270分鐘，休息另計；本檔為完整閱讀草稿，實際課堂配時待全章統整。不設頁數硬上限；本批無漫畫、逐字稿或音檔。"
+    },
+    {
+      "id": "lec05-kp03-step-1",
+      "order": 1,
+      "label": "更多隱藏位元把空間編成區域",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 640,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：兩層 XOR 成功後，仍要檢查一般編碼的可分性。本頁以「更多隱藏位元把空間編成區域」回答。頁面中應逐項核對的依據為：隱藏層\n$p$ 個半空間判斷；二元表示\n$\\mathbf{y}\\in\\{0,1\\}^p$；單一輸出\n再作一次線性分隔；$p$ 為隱藏節點數；$\\mathbf{y}$ 為其二元輸出向量。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：三條線不一定產生八個區域。"
+    },
+    {
+      "id": "lec05-kp03-step-2",
+      "order": 2,
+      "label": "三條線不一定產生八個區域",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 2080,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：用明確方程式，檢查哪些編碼真的出現。本頁以「三條線不一定產生八個區域」回答。頁面中應逐項核對的依據為：［補充］$g_1=x_1$，$g_2=x_2$，$g_3=-x_1+x_2-1$。\n$y_i=1$ 若 $g_i>0$，其餘為 $0$。\n先看邊界，再讀區域標籤；101 不出現。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：虛擬碼不是尚未蒐集到的資料。"
+    },
+    {
+      "id": "lec05-kp03-step-3",
+      "order": 3,
+      "label": "虛擬碼不是尚未蒐集到的資料",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 3520,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：101 的缺席必須由幾何條件證明。本頁以「虛擬碼不是尚未蒐集到的資料」回答。頁面中應逐項核對的依據為：1. 101 要求 $x_1>0$、$x_2\\leq0$。位元依 $g_i>0$ 編碼。；2. 因此 $g_3=-x_1+x_2-1<0$，第三位必為 $0$。；3. 101 的輸入區域為空；任意替它標類，都不改變實際預測。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：超立方體包含連續點，階梯只輸出頂點。"
+    },
+    {
+      "id": "lec05-kp03-step-4",
+      "order": 4,
+      "label": "延伸:超立方體包含連續點，階梯只輸出頂點",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 4960,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：二元碼位於哪裡，決定輸出需要處理的集合。本頁以「超立方體包含連續點，階梯只輸出頂點」回答。頁面中應逐項核對的依據為：單位超立方體：$H_p=[0,1]^p$。\n頂點：$\\operatorname{Vert}(H_p)=\\{0,1\\}^p$。\n$p$ 為位元數；$\\mathbf{y}=[f(g_1),\\ldots,f(g_p)]^T$ 只在頂點。；單一編碼的原像：各半空間條件的交集。\n因此是一個凸多面體區域，或空集合。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：這個輸出式分開一組實際頂點。"
+    },
+    {
+      "id": "lec05-kp03-step-5",
+      "order": 5,
+      "label": "延伸:這個輸出式分開一組實際頂點",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 6400,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：不是所有聯集都失敗；先驗算來源的成功例子。本頁以「這個輸出式分開一組實際頂點」回答。頁面中應逐項核對的依據為：$\\mathbf{y}$ 為三位元碼；$q(\\mathbf{y})=-y_1-y_2+y_3+0.5$，正分判 A。；000：$-0-0+0+0.5=0.5$。\n001：$-0-0+1+0.5=1.5$。\n011：$-0-1+1+0.5=0.5$。；010：$-0-1+0+0.5=-0.5$。\n100：$-1-0+0+0.5=-0.5$。\n110：$-1-1+0+0.5=-1.5$。\n111：$-1-1+1+0.5=-0.5$。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：輸出只需滿足實際出現的碼。"
+    },
+    {
+      "id": "lec05-kp03-step-6",
+      "order": 6,
+      "label": "延伸:輸出只需滿足實際出現的碼",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 7840,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：成功例子不需要替空區域完成另一個任務。本頁以「輸出只需滿足實際出現的碼」回答。頁面中應逐項核對的依據為：［補充驗算］虛擬碼 101：$q=-1-0+1+0.5=0.5$。；但沒有輸入會得到 101；它被判為 A，不會改變任何實際輸入的類別。；分類限制要檢查「實際碼＋指定標籤」，不能把未出現頂點當成必要資料。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：同一個面上已有不可分的反例。"
+    },
+    {
+      "id": "lec05-kp03-step-7",
+      "order": 7,
+      "label": "同一個面上已有不可分的反例",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 9280,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：換成 A＝000、110、111，檢查固定表示的限制。本頁以「同一個面上已有不可分的反例」回答。頁面中應逐項核對的依據為：$y_3=0$；輸出 $q=\\mathbf{a}^T\\mathbf{y}+a_0$。\nA 要求 $q(000)+q(110)=a_1+a_2+2a_0>0$。\nB 要求 $q(010)+q(100)=a_1+a_2+2a_0\\leq0$。\n同一個和矛盾，單一輸出無解。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：單一編碼凸，不代表所有輸出區域凸。"
+    },
+    {
+      "id": "lec05-kp03-step-8",
+      "order": 8,
+      "label": "單一編碼凸，不代表所有輸出區域凸",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 10720,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：要分清楚半空間交集與多個編碼的聯集。本頁以「單一編碼凸，不代表所有輸出區域凸」回答。頁面中應逐項核對的依據為：AND 構造：要求每個半空間條件都成立。\n它形成一個凸交集。；一般加權輸出可接受多個碼。\n其原像可能非凸或不連通；但不是任意聯集都可分。；更正：不能把來源互動說明的 AND 限制，套到所有兩層網路。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：限制針對固定映射，不是所有隱藏層。"
+    },
+    {
+      "id": "lec05-kp03-step-9",
+      "order": 9,
+      "label": "延伸:限制針對固定映射，不是所有隱藏層",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 12160,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：不可分的碼仍可能因另一種隱藏表示而改變。本頁以「限制針對固定映射，不是所有隱藏層」回答。頁面中應逐項核對的依據為：已證明：這組實際碼與標籤，沒有單一輸出超平面能全對。；未證明：原始輸入任務在所有其他隱藏邊界或寬度下，也一定失敗。；下一步：若保留這份編碼，可再加一層偵測目標頂點。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：用虛擬碼與零位元檢查理解。"
+    },
+    {
+      "id": "lec05-kp03-step-10",
+      "order": 10,
+      "label": "延伸:用虛擬碼與零位元檢查理解",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lec05-kp03-scene",
+        "point": {
+          "x": 13600,
+          "y": 310
+        },
+        "zoom": 0.8780487804878049,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 900,
+      "holdMs": 500,
+      "easing": "smooth",
+      "speakerNotes": "上一頁留下的問題是：把區域、編碼與輸出條件分開檢查。本頁以「用虛擬碼與零位元檢查理解」回答。頁面中應逐項核對的依據為：練習：101 沒有原像，替它改類別會改變實際預測嗎？\n提示：先問是否有輸入得到這個碼。；練習：反例的四點 $y_3=0$。只改輸出權重 $a_3$ 能消除矛盾嗎？\n提示：檢查第三位對分數的貢獻。。請把代入與結論分開讀；圖中的顏色和形狀依該圖圖例辨認，不替未列出的數字新增推論。接下來處理：依講義練習檢查理解，再進入下一個知識點。"
+    }
+  ],
+  "metadata": {
+    "title": "圖型識別 多面體編碼與能力邊界",
+    "createdAt": "2026-10-24T12:30:12.775195+00:00",
+    "updatedAt": "2026-10-24T12:30:12.775195+00:00",
+    "aspectRatio": "16:9"
+  }
+}
