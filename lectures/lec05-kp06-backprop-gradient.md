@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.6
 
-[簡報閱讀與下載](../slides/lec05-kp06-backprop-gradient.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp06-backprop-gradient.jbd.json) | [English version](en/lec05-kp06-backprop-gradient.md)
 
 ## 學習目標
 

@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.19.1
 
-[簡報閱讀與下載](../slides/lec05-kp21-representer.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp21-representer.jbd.json) | [English version](en/lec05-kp21-representer.md)
 
 ## 學習目標
 

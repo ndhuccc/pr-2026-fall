@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.18
 
-[簡報閱讀與下載](../slides/lec05-kp19-kernel-svm.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp19-kernel-svm.jbd.json) | [English version](en/lec05-kp19-kernel-svm.md)
 
 ## 學習目標
 

@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.13
 
-[簡報閱讀與下載](../slides/lec05-kp14-cover-theorem.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp14-cover-theorem.jbd.json) | [English version](en/lec05-kp14-cover-theorem.md)
 
 ## 學習目標
 

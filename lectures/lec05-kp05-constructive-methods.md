@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.5
 
-[簡報閱讀與下載](../slides/lec05-kp05-constructive-methods.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp05-constructive-methods.jbd.json) | [English version](en/lec05-kp05-constructive-methods.md)
 
 ## 學習目標
 

@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.8
 
-[簡報閱讀與下載](../slides/lec05-kp09-cost-functions.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp09-cost-functions.jbd.json) | [English version](en/lec05-kp09-cost-functions.md)
 
 ## 學習目標
 

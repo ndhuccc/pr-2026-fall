@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.19.2
 
-[簡報閱讀與下載](../slides/lec05-kp22-robust-ridge.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp22-robust-ridge.jbd.json) | [English version](en/lec05-kp22-robust-ridge.md)
 
 ## 學習目標
 

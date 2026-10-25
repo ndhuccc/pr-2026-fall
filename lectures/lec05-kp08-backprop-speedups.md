@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.7
 
-[簡報閱讀與下載](../slides/lec05-kp08-backprop-speedups.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp08-backprop-speedups.jbd.json) | [English version](en/lec05-kp08-backprop-speedups.md)
 
 ## 學習目標
 

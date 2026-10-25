@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.21
 
-[簡報閱讀與下載](../slides/lec05-kp24-combining.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp24-combining.jbd.json) | [English version](en/lec05-kp24-combining.md)
 
 ## 學習目標
 

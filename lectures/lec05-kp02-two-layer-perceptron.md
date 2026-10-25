@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.3
 
-[簡報閱讀與下載](../slides/lec05-kp02-two-layer-perceptron.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp02-two-layer-perceptron.jbd.json) | [English version](en/lec05-kp02-two-layer-perceptron.md)
 
 ## 學習目標
 

@@ -46,6 +46,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-10-26:教師已在 JianBauDau 與 PDF 驗收 lec05 新版;第 5、6 週 KP00–KP26 英文版講義(`lectures/en/`)與簡報(`slides/lec05-kpNN-*-en.jbd.json`)已上網;英文講義不進左側導覽(避免與中文標題編號重複),由中文講義的 English version 連結與 `schedule.md` 的「英文版教材」清單進入。
+
 - 2026-10-26:第 5、6 週 lec05 的 KP00–KP26 中文版講義(`lectures/lec05-kpNN-*.md`)與簡報(`slides/lec05-kpNN-*.jbd.json`)已上網目錄;圖放 `assets/figures/lec05-*.png`;`schedule.md` 第 5 週拆 3 列(KP00–KP12)、第 6 週拆 3 列(KP13–KP26);網站建置無警告、`sync_nav.py --strict` 通過。英文版與下載包留在 `lec05/materials/`,未上網;簡報在 JianBauDau 的原生播放與 PDF 驗收仍待教師確認。
 
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)

@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.23
 
-[簡報閱讀與下載](../slides/lec05-kp26-imbalance.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp26-imbalance.jbd.json) | [English version](en/lec05-kp26-imbalance.md)
 
 ## 學習目標
 

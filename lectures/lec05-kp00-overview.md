@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 總覽（KP01–KP05）
 
-[簡報閱讀與下載](../slides/lec05-kp00-overview.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp00-overview.jbd.json) | [English version](en/lec05-kp00-overview.md)
 
 ## 學習目標
 

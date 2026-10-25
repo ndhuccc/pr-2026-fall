@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.16
 
-[簡報閱讀與下載](../slides/lec05-kp17-universal-approx.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp17-universal-approx.jbd.json) | [English version](en/lec05-kp17-universal-approx.md)
 
 ## 學習目標
 

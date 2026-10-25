@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.20
 
-[簡報閱讀與下載](../slides/lec05-kp23-decision-tree.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp23-decision-tree.jbd.json) | [English version](en/lec05-kp23-decision-tree.md)
 
 ## 學習目標
 

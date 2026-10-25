@@ -31,5 +31,37 @@
 | 16 | 12/21 | Clustering (2) – Evaluation & Course Project Discussion | | |
 | 17 | 12/28 | 期末考 / 期末專題發表 Final Exam / Project Presentation | | 期末考(學校期末評量 12/28–31) |
 
+## 英文版教材(English materials, weeks 5–6)
+
+第 5、6 週(Nonlinear Classifiers)的講義與簡報另有英文版,內容與上表中文版對應。
+
+- Chapter 4 Route Map: After One Line Is Not Enough:[Lecture](lectures/en/lec05-kp00-overview.md) · [Slides](slides/lec05-kp00-overview-en.jbd.json)
+- KP01 XOR and the limit of one line:[Lecture](lectures/en/lec05-kp01-xor.md) · [Slides](slides/lec05-kp01-xor-en.jbd.json)
+- KP02 Two-Layer Perceptron: Encode Positions First, Then Classify:[Lecture](lectures/en/lec05-kp02-two-layer-perceptron.md) · [Slides](slides/lec05-kp02-two-layer-perceptron-en.jbd.json)
+- KP03 Codes of several lines and the limit of two layers:[Lecture](lectures/en/lec05-kp03-polyhedral-codes.md) · [Slides](slides/lec05-kp03-polyhedral-codes-en.jbd.json)
+- KP04 Three-Layer Perceptron: Detect Each Code, Then Merge:[Lecture](lectures/en/lec05-kp04-three-layer-perceptron.md) · [Slides](slides/lec05-kp04-three-layer-perceptron-en.jbd.json)
+- KP05 Constructive Methods: Growing a Network from Training Points:[Lecture](lectures/en/lec05-kp05-constructive-methods.md) · [Slides](slides/lec05-kp05-constructive-methods-en.jbd.json)
+- KP06 From the Step to the Gradient of Backpropagation:[Lecture](lectures/en/lec05-kp06-backprop-gradient.md) · [Slides](slides/lec05-kp06-backprop-gradient-en.jbd.json)
+- KP07 The Backpropagation Algorithm:[Lecture](lectures/en/lec05-kp07-backprop-algorithm.md) · [Slides](slides/lec05-kp07-backprop-algorithm-en.jbd.json)
+- KP08 Speeding Up Backpropagation:[Lecture](lectures/en/lec05-kp08-backprop-speedups.md) · [Slides](slides/lec05-kp08-backprop-speedups-en.jbd.json)
+- KP09 Choosing the Cost Function:[Lecture](lectures/en/lec05-kp09-cost-functions.md) · [Slides](slides/lec05-kp09-cost-functions-en.jbd.json)
+- KP10 Network size, generalization and early stopping:[Lecture](lectures/en/lec05-kp10-network-size.md) · [Slides](slides/lec05-kp10-network-size-en.jbd.json)
+- KP11 Pruning, regularization and reported simulations:[Lecture](lectures/en/lec05-kp11-pruning-regularization.md) · [Slides](slides/lec05-kp11-pruning-regularization-en.jbd.json)
+- KP12 Weight sharing and transformation invariance:[Lecture](lectures/en/lec05-kp12-weight-sharing.md) · [Slides](slides/lec05-kp12-weight-sharing-en.jbd.json)
+- KP13 Generalized Linear Classifiers:[Lecture](lectures/en/lec05-kp13-generalized-linear.md) · [Slides](slides/lec05-kp13-generalized-linear-en.jbd.json)
+- KP14 Cover's Theorem:[Lecture](lectures/en/lec05-kp14-cover-theorem.md) · [Slides](slides/lec05-kp14-cover-theorem-en.jbd.json)
+- KP15 Polynomial Classifiers:[Lecture](lectures/en/lec05-kp15-polynomial.md) · [Slides](slides/lec05-kp15-polynomial-en.jbd.json)
+- KP16 RBF Networks:[Lecture](lectures/en/lec05-kp16-rbf.md) · [Slides](slides/lec05-kp16-rbf-en.jbd.json)
+- KP17 The Universal Approximation Theorem:[Lecture](lectures/en/lec05-kp17-universal-approx.md) · [Slides](slides/lec05-kp17-universal-approx-en.jbd.json)
+- KP18 The Probabilistic Neural Network (PNN):[Lecture](lectures/en/lec05-kp18-pnn.md) · [Slides](slides/lec05-kp18-pnn-en.jbd.json)
+- KP19 The Nonlinear SVM and the Mercer Kernel Trick:[Lecture](lectures/en/lec05-kp19-kernel-svm.md) · [Slides](slides/lec05-kp19-kernel-svm-en.jbd.json)
+- KP20 Beyond the SVM: The General Kernel Trick and the Kernel Perceptron:[Lecture](lectures/en/lec05-kp20-beyond-svm.md) · [Slides](slides/lec05-kp20-beyond-svm-en.jbd.json)
+- KP21 The Representer Theorem, Kernel Expansions and Sparsification:[Lecture](lectures/en/lec05-kp21-representer.md) · [Slides](slides/lec05-kp21-representer-en.jbd.json)
+- KP22 Robust Statistical Regression and Ridge Regression:[Lecture](lectures/en/lec05-kp22-robust-ridge.md) · [Slides](slides/lec05-kp22-robust-ridge-en.jbd.json)
+- KP23 Decision Trees: OBCT, Splitting Criteria and Pruning:[Lecture](lectures/en/lec05-kp23-decision-tree.md) · [Slides](slides/lec05-kp23-decision-tree-en.jbd.json)
+- KP24 Combining Classifiers: Product, Sum, Majority Vote and the Bayesian View:[Lecture](lectures/en/lec05-kp24-combining.md) · [Slides](slides/lec05-kp24-combining-en.jbd.json)
+- KP25 Boosting and AdaBoost: Turning Weak into Strong:[Lecture](lectures/en/lec05-kp25-adaboost.md) · [Slides](slides/lec05-kp25-adaboost-en.jbd.json)
+- KP26 The Class Imbalance Problem:[Lecture](lectures/en/lec05-kp26-imbalance.md) · [Slides](slides/lec05-kp26-imbalance-en.jbd.json)
+
 > 重要日期若有異動,請同步更新 [`CHANGELOG.md`](CHANGELOG.md)。
 

@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.17
 
-[簡報閱讀與下載](../slides/lec05-kp18-pnn.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp18-pnn.jbd.json) | [English version](en/lec05-kp18-pnn.md)
 
 ## 學習目標
 

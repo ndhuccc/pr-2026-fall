@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.15
 
-[簡報閱讀與下載](../slides/lec05-kp16-rbf.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp16-rbf.jbd.json) | [English version](en/lec05-kp16-rbf.md)
 
 ## 學習目標
 

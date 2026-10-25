@@ -4,7 +4,7 @@
 >
 > 圖型識別｜第四章 §4.22
 
-[簡報閱讀與下載](../slides/lec05-kp25-adaboost.jbd.json)
+[簡報閱讀與下載](../slides/lec05-kp25-adaboost.jbd.json) | [English version](en/lec05-kp25-adaboost.md)
 
 ## 學習目標
 
