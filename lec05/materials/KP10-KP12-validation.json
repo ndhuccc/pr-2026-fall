@@ -1,0 +1,145 @@
+{
+  "createdAt": "2026-10-25T08:22:17.689344+00:00",
+  "course": "PR",
+  "skillBaseCommit": "5216578",
+  "scope": "KP10–KP12; undergraduate third year; self-study outside 270 classroom minutes",
+  "independentColdRead": false,
+  "teacherApproved": false,
+  "nativeJianBauDauPlayback": "NOT_TESTED",
+  "audio": "NOT_CREATED",
+  "comics": "NOT_CREATED",
+  "files": {
+    "lec05-kp11-pruning-regularization-zh-download.zip": {
+      "bytes": 2870904,
+      "sha256": "2f74d2392fda06a2e86677e05384eda300f1ef5f04d1e43ec86c1fd258f273da"
+    },
+    "lec05-kp11-pruning-regularization-en-reading.html": {
+      "bytes": 2129083,
+      "sha256": "77ff5c3dbc0c75d391a1a3a1eb014389dd2e2c0f9ef42290a4b7692fdf9ff76f"
+    },
+    "lec05-kp10-network-size-en-reading.html": {
+      "bytes": 1772129,
+      "sha256": "5c84abecedc797b216b50f1d6243f6e442b49519792cb4587cad1ed52923e9b2"
+    },
+    "lec05-kp11-pruning-regularization-en-lecture.pdf": {
+      "bytes": 426099,
+      "sha256": "2214f4950bcc4ff871c3aa9fe91d729987e19b72989aa548ffd7e2194b75608f"
+    },
+    "lec05-kp10-network-size-zh.jbd.json": {
+      "bytes": 421778,
+      "sha256": "a744aeaf15da1650a17b69623b0d081c20b731fb9fbb66eeb590f0c277851238"
+    },
+    "lec05-kp12-weight-sharing-zh.html": {
+      "bytes": 812343,
+      "sha256": "a1e48615c1ac08ed4dd04dff2253f10219d21341943caf6692ce78deda6b6e7a"
+    },
+    "lec05-kp10-network-size-en-download.zip": {
+      "bytes": 1976204,
+      "sha256": "0306c045666a06b1a392b1fc0b5bac6d6a6c726c48c7f91f418abe3dc2c68136"
+    },
+    "lec05-kp11-pruning-regularization-zh.html": {
+      "bytes": 1284485,
+      "sha256": "0144928f0a6e48bce292e61b0880a30c4566365f1e8f9d7072168fd4e2f5b4a1"
+    },
+    "KP10-KP12-source-review.zip": {
+      "bytes": 15722478,
+      "sha256": "b80bd0458589da16c8de6e5bfeb0155bc24d42112dac9724320ae7daa253f054"
+    },
+    "lec05-kp12-weight-sharing-zh-reading.html": {
+      "bytes": 1802364,
+      "sha256": "f15e83aeafff7c4abcaa7523caac62bec50f856314e2366a8b56a091fbe039f5"
+    },
+    "lec05-kp12-weight-sharing-en.jbd.json": {
+      "bytes": 463143,
+      "sha256": "2f710483cd2d7989f7c2341cf5dec3cf1ec602e57368a0770c05639d46bde6ed"
+    },
+    "lec05-kp11-pruning-regularization-zh-reading.html": {
+      "bytes": 2128211,
+      "sha256": "2fcf944157802f330f16f3bce138838c8a2970c719ec4bc6bf8ae14850522960"
+    },
+    "KP10-KP12-plan.txt": {
+      "bytes": 99929,
+      "sha256": "565cf096e61c259bb159434cae2be9e81b92a9ee9799fc2cdbb1cd25c159c7dc"
+    },
+    "lec05-kp11-pruning-regularization-en.jbd.json": {
+      "bytes": 763685,
+      "sha256": "699f245e67827ff2da351782c258551b8fb1c931f5937f0f1db8994fba3b7297"
+    },
+    "lec05-kp10-network-size-zh-lecture.pdf": {
+      "bytes": 864744,
+      "sha256": "73651ae625a57b8c68248b56384395359f491fba52d9098db533d2fcb58f52c2"
+    },
+    "lec05-kp10-network-size-en.html": {
+      "bytes": 744538,
+      "sha256": "fea88fb79ff9f761fe4149272825a9c8d73c8d30547d6f02d1d5b29c91cc086d"
+    },
+    "lec05-kp11-pruning-regularization-en-download.zip": {
+      "bytes": 2574871,
+      "sha256": "6e12f96c2fd169afceb2e307b4c8756a2127dedf71a50655c9c2c2d2faa0c099"
+    },
+    "lec05-kp12-weight-sharing-zh.jbd.json": {
+      "bytes": 462912,
+      "sha256": "57903a8efb4c1ecf45ee9e2d9d83d4efc97e9c701e6bbf43861258519c2267f0"
+    },
+    "lec05-kp11-pruning-regularization-en.html": {
+      "bytes": 1285302,
+      "sha256": "8c7f7746b6123ad41868ee48e30052422b969c3204eebcf794be8a3bbc3e1f9d"
+    },
+    "lec05-kp11-pruning-regularization-zh.jbd.json": {
+      "bytes": 763555,
+      "sha256": "aca7bb4944de377431a27f2a7808804abcbd5a26c1260e1f75ace0440b6fb4fb"
+    },
+    "lec05-kp10-network-size-zh-download.zip": {
+      "bytes": 2249408,
+      "sha256": "30bce1bf3322ab06e347bd4a1faa6f0673aba51599609f6234dc35037663ba8e"
+    },
+    "lec05-kp11-pruning-regularization-zh-lecture.pdf": {
+      "bytes": 1042141,
+      "sha256": "11a938d79b1c1f59b05498992eeb3474592db1af8409efc673d5780402739232"
+    },
+    "lec05-kp10-network-size-en-lecture.pdf": {
+      "bytes": 287420,
+      "sha256": "0c115f6988b5e2643c39e8714c2a1738e89963d891e0ca26f90f5b99ecbe8034"
+    },
+    "KP10-KP12-README.txt": {
+      "bytes": 2414,
+      "sha256": "a77492f7aef5da72f54c2494c70f2ef5d24c40e95e60c950eba2fdc6b5911181"
+    },
+    "lec05-kp10-network-size-en.jbd.json": {
+      "bytes": 421118,
+      "sha256": "8f1a60879c1124c5f719d6b15007b96a061de0e9cf0ddf5bc4389561445dd21c"
+    },
+    "lec05-kp12-weight-sharing-en-lecture.pdf": {
+      "bytes": 327453,
+      "sha256": "897f95e46b73642ef4a0e97e69be069497d03f4ac54e98a8979bdcf8585e9db1"
+    },
+    "lec05-kp12-weight-sharing-zh-download.zip": {
+      "bytes": 2202236,
+      "sha256": "e717a4eec7e37532af41585a72ff18476b748793c0c2112145494924412b6da1"
+    },
+    "lec05-kp12-weight-sharing-en-download.zip": {
+      "bytes": 1935551,
+      "sha256": "dc1205ec5d52aba6bd78cfe5e248adfd4421d0bf847b74e0c544c4e8a6f7cdea"
+    },
+    "lec05-kp10-network-size-zh.html": {
+      "bytes": 745084,
+      "sha256": "5d1e173de4095d1dd4729e845f1c6773441cc629c44e6bd4df91e2d75b81d7c2"
+    },
+    "lec05-kp12-weight-sharing-en-reading.html": {
+      "bytes": 1800201,
+      "sha256": "1ae82487533344df2e3028ef19a5bcfea9074fb47fcd9657b29315e0a7d20f6e"
+    },
+    "lec05-kp10-network-size-zh-reading.html": {
+      "bytes": 1771737,
+      "sha256": "4f18882bd1f5708a3a26642fb7ee12ad7ade1c88a80028ea133ba33665a48645"
+    },
+    "lec05-kp12-weight-sharing-zh-lecture.pdf": {
+      "bytes": 888256,
+      "sha256": "ba76ec92e4bd6cd2754fe2f6504230ca05ecb0e98f51e19ab45cc3721ad3ab98"
+    },
+    "lec05-kp12-weight-sharing-en.html": {
+      "bytes": 809276,
+      "sha256": "adbdaa4264ef4bcc881d31d7462ade4e197b9230fb8817a3948bb0681a58d9f9"
+    }
+  }
+}

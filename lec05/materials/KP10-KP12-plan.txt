@@ -1,0 +1,1911 @@
+{
+  "settings": {
+    "audience": "undergrad year 3",
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "delivery": "self-study",
+    "classroomMinutesCounted": 0,
+    "classroomTotalUnchanged": 270,
+    "source": "https://ndhuccc.github.io/CCC-LNS/PR_115/Ch04-nonlinear-classifiers/index.html",
+    "sourceReadDate": "2026-10-25",
+    "pages": {
+      "KP10": 13,
+      "KP11": 22,
+      "KP12": 16
+    }
+  },
+  "knowledgeMap": [
+    {
+      "kp": 10,
+      "question": "How choose size and training duration?",
+      "insight": "Held-out evidence, not training fit alone",
+      "next": "How remove unnecessary parameters?"
+    },
+    {
+      "kp": 11,
+      "question": "Which connection may be removed?",
+      "insight": "Magnitude is not importance; estimated cost needs conditions",
+      "next": "Can parameters be shared from the start?"
+    },
+    {
+      "kp": 12,
+      "question": "What does tying weights actually guarantee?",
+      "insight": "Equivariant responses differ from invariant readout",
+      "next": "Choose representations consistent with task transformations"
+    }
+  ],
+  "pagePlan": {
+    "10": [
+      {
+        "titles": [
+          "訓練資料全對，明天的新資料也會對嗎？",
+          "A perfect training score need not survive new data"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**泛化**：對未參與訓練的新資料仍能正確預測，叫泛化；不是把原來的答案背熟。",
+              "**Generalization**: Correct prediction on data not used for fitting is generalization; memorizing training answers is different."
+            ],
+            "terms": [
+              "泛化",
+              "Generalization"
+            ]
+          },
+          {
+            "texts": [
+              "圖是連續預測的補充示意；分類也面臨同樣取捨。先找主要規律，再看樣本小波動，不必把每個波動都當成規律。",
+              "This continuous-prediction illustration exposes a trade-off also faced in classification. Find the main trend before treating sample fluctuations as rules."
+            ]
+          }
+        ],
+        "bridges": [
+          "前面的網路能把給定的點分對。若我們真正關心的是沒見過的點，應該用什麼判斷網路好壞？",
+          "Earlier networks classified given points. What should judge a network meant for unseen points?"
+        ],
+        "coaches": [
+          "請讀者先預測右方沒有樣本的位置；兩條都能靠近樣本的曲線，對新位置可能有不同答案。這個圖只是概念示意，沒有執行網路訓練。",
+          "Ask the reader to predict at an unobserved position. Similar training fits can disagree there. The diagram is illustrative, not a network experiment."
+        ],
+        "layout": "10-trend"
+      },
+      {
+        "titles": [
+          "要選網路大小，先數真正能調的參數",
+          "Count adjustable parameters before choosing network size"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**自由參數**：訓練時可以獨立改變的數字叫自由參數；權重與偏置都算。",
+              "**Free parameter**: A free parameter is an independently adjustable number; weights and biases both count."
+            ],
+            "terms": [
+              "自由參數",
+              "Free parameter"
+            ]
+          },
+          {
+            "texts": [
+              "兩個輸入、三個隱藏單元、一個輸出，全部相連，且每個計算單元有偏置。",
+              "Use two inputs, three hidden units and one output, with dense connections and one bias per computing unit."
+            ]
+          },
+          {
+            "texts": [
+              "隱藏層：$(2+1)\\times3=9$；輸出層：$(3+1)\\times1=4$。總共 $9+4=13$ 個，不是只有三個。",
+              "Hidden layer: $(2+1)\\times3=9$. Output layer: $(3+1)\\times1=4$. There are $9+4=13$ parameters, not three."
+            ]
+          }
+        ],
+        "bridges": [
+          "模型可能只記住訓練答案。若自由度影響它能追到的細節，三個隱藏單元究竟能調幾個數字？",
+          "Memorizing training answers differs from generalization. Which adjustable numbers give three hidden units their flexibility?"
+        ],
+        "coaches": [
+          "請讀者指出每個加一來自偏置，不是另一個輸入特徵。架構中的單元數和可獨立更新的參數數不能混用。下一步才討論這些自由度能學到什麼。",
+          "Locate the bias represented by each added one. Unit count and adjustable-parameter count differ. Next ask what those degrees of freedom can fit."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "參數不足會漏掉規律，太靈活也可能追到雜訊",
+          "Too little flexibility misses rules; too much can fit noise"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**欠擬合**：模型連主要規律都表達不好，訓練與新資料的表現都可能差，叫欠擬合。",
+              "**Underfitting**: Underfitting means the model misses important structure and can perform poorly even on training data."
+            ],
+            "terms": [
+              "欠擬合",
+              "Underfitting"
+            ]
+          },
+          {
+            "texts": [
+              "**過擬合**：模型配合這批訓練資料的偶然細節，反而損害新資料預測，叫過擬合。",
+              "**Overfitting**: Overfitting adapts to incidental training details at the expense of prediction on new data."
+            ],
+            "terms": [
+              "過擬合",
+              "Overfitting"
+            ]
+          },
+          {
+            "texts": [
+              "「較大」不是過擬合的充分條件；資料量、權重大小、限制方式與訓練程序都會影響結果。",
+              "Size alone does not prove overfitting. Data, weight magnitudes, constraints and the fitting procedure also matter."
+            ]
+          }
+        ],
+        "bridges": [
+          "三個隱藏單元共有十三個自由參數。若再增加自由參數，就一定更能預測新資料嗎？",
+          "Our three hidden units use thirteen free parameters. Does increasing this count always improve prediction?"
+        ],
+        "coaches": [
+          "可用地圖比例作比喻：過粗會漏路，過細可能把暫時的障礙當永久道路。比喻只對應細節取捨，不表示每個細節都是雜訊。",
+          "A coarse map may omit roads; excessive detail may preserve temporary obstacles. The analogy concerns detail selection, not a claim that every detail is noise."
+        ],
+        "layout": "10-trend"
+      },
+      {
+        "titles": [
+          "架構不變，繼續訓練也可能傷害新資料表現",
+          "Even a fixed network can worsen with more training"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**驗證集**：不拿來更新權重、用來選模型或訓練檢查點的資料，叫驗證集。",
+              "**Validation set**: Validation data do not update weights; they help choose a model or training checkpoint."
+            ],
+            "terms": [
+              "驗證集",
+              "Validation set"
+            ]
+          },
+          {
+            "texts": [
+              "**過度訓練**：架構固定，後續訓練開始追逐訓練集細節，驗證表現反而惡化，稱為過度訓練。",
+              "**Overtraining**: Overtraining occurs when further fitting of a fixed architecture starts hurting validation performance."
+            ],
+            "terms": [
+              "過度訓練",
+              "Overtraining"
+            ]
+          },
+          {
+            "texts": [
+              "圖中訓練損失持續下降，驗證損失在第 3 輪最低後回升。兩條曲線不必相交，差距也不必從零開始。",
+              "Training loss keeps falling; validation loss rises after its minimum at epoch 3. The curves need not cross or start together."
+            ]
+          }
+        ],
+        "bridges": [
+          "過擬合是配合訓練資料的偶然細節。即使架構固定，持續訓練也可能追到這些細節嗎？",
+          "Overfitting adapts to incidental training details. Can a fixed architecture do that merely by continuing to train?"
+        ],
+        "coaches": [
+          "圖的五組數字是補充教學表，不是原文實驗曲線。先讓讀者指出最低點，再問最後一輪為何未必最好；不要把曲線第一次分開的位置當通用停止規則。",
+          "These five values are a teaching table, not a published experiment. Locate the minimum before asking why the final epoch may not be best."
+        ],
+        "layout": "10-early"
+      },
+      {
+        "titles": [
+          "這五個檢查點應保留第 3 輪，不是最後一輪",
+          "Keep checkpoint 3, not the last checkpoint"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**早停**：根據驗證表現停止訓練並還原最佳檢查點，叫早停；實作可容許幾次未改善。",
+              "**Early stopping**: Early stopping uses validation performance and restores the best checkpoint; implementation may allow patience."
+            ],
+            "terms": [
+              "早停",
+              "Early stopping"
+            ]
+          },
+          {
+            "texts": [
+              "第 1–5 輪的驗證損失是 $0.55,0.35,0.25,0.28,0.40$。最小是 $0.25$，在第 3 輪。",
+              "Validation losses at epochs 1–5 are $0.55,0.35,0.25,0.28,0.40$. The minimum is $0.25$ at epoch 3."
+            ]
+          },
+          {
+            "texts": [
+              "第 5 輪的訓練損失較低，驗證卻由 $0.25$ 增至 $0.40$，增加 $0.40-0.25=0.15$。",
+              "Epoch 5 has lower training loss, but validation loss rises from $0.25$ to $0.40$: $0.40-0.25=0.15$."
+            ]
+          }
+        ],
+        "bridges": [
+          "驗證損失在第3輪最低後回升，訓練損失卻繼續下降。若只保留一組權重，應選哪一輪？",
+          "Validation loss rises after its minimum at epoch 3 while training loss falls. Which checkpoint should we keep?"
+        ],
+        "coaches": [
+          "先選較小的指標值，再查它的輪數；若使用準確率則方向相反。最佳權重要另存，不能停在第五輪後只回報第三輪的分數而不還原模型。",
+          "Minimize a loss, but maximize an accuracy. Save the actual best weights; reporting epoch 3 while retaining epoch 5 is not restoration."
+        ],
+        "layout": "10-early"
+      },
+      {
+        "titles": [
+          "選模型的驗證集，不能兼任最後的測試集",
+          "Model selection and final testing need different roles"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**訓練集**：用它更新權重，學到資料中的規律。",
+              "**Training data** fit weights to patterns."
+            ]
+          },
+          {
+            "texts": [
+              "**驗證集**：用它選大小、懲罰強度及停止點，不直接更新權重。",
+              "**Validation data** select size, penalty strength and checkpoints without directly fitting weights."
+            ]
+          },
+          {
+            "texts": [
+              "**測試集**：模型選完後才做最後評估。反覆看它挑模型，就不再是獨立檢查；也要避免重複個體或時間資訊洩漏。",
+              "**Test set**: reserve it for evaluation after model selection. Reusing it to choose models breaks independence; avoid duplicate-subject and temporal leakage."
+            ],
+            "terms": [
+              "測試集",
+              "Test set"
+            ]
+          }
+        ],
+        "bridges": [
+          "早停要還原最佳檢查點，這裡選第3輪。反覆用驗證集挑選後，最後成績還能用同一批資料嗎？",
+          "Early stopping restores the best checkpoint, here epoch 3. Can repeatedly inspected validation data also give an untouched final score?"
+        ],
+        "coaches": [
+          "用三張不同用途的答題紙說明資料角色，但不要暗示三者必須等大。來源把 validation/test 並列，本教材依現代模型選擇慣例區分兩個角色。",
+          "Explain three roles without implying equal split sizes. The source groups validation and test terminology; this material distinguishes their modern roles."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "驗證資料太少時，一個錯誤就可能改變選擇",
+          "A tiny validation set makes selection unstable"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "十筆中錯一筆：錯誤率 $1/10=0.1$；錯兩筆：$2/10=0.2$。只差一個案例，估計就差十個百分點。",
+              "One error among ten gives $1/10=0.1$; two give $2/10=0.2$. One case changes the estimate by ten percentage points."
+            ]
+          },
+          {
+            "texts": [
+              "可用重複切分或交叉驗證輔助選擇，但每次仍須把訓練與評估分開；不能憑空增加獨立資料。",
+              "Repeated splits or cross-validation can support selection, but fitting and evaluation must remain separated. They do not create new independent data."
+            ]
+          },
+          {
+            "texts": [
+              "因此沒有一個脫離資料量與任務的「最佳神經元數」。",
+              "There is no best neuron count independent of the data and task."
+            ]
+          }
+        ],
+        "bridges": [
+          "訓練集改權重，驗證集選模型，測試集做最後檢查。但驗證集只有十筆時，選擇有多可靠？",
+          "Training fits weights and validation selects size and checkpoints. With only ten validation cases, how stable is that selection?"
+        ],
+        "coaches": [
+          "將 0.1 與 0.2 讀成比例，不是相差一個百分點。這裡只是解釋小樣本估計的敏感性，沒有計算信賴區間，也沒有聲稱交叉驗證消除所有偏差。",
+          "Read 0.1 and 0.2 as proportions. The example illustrates sensitivity, not a confidence interval or a guarantee that cross-validation removes all bias."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "幾何分析能算最多幾塊，不能決定哪個模型最好",
+          "Geometry counts possible cells, not predictive quality"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**區域數上界**：用 K 個超平面切 d 維空間，區域數最多為 M；一般位置可達此最大值，退化排列可能較少。",
+              "**Cell-count bound**: K hyperplanes partition d-dimensional space into at most M cells. General position attains the maximum; degenerate arrangements may not."
+            ],
+            "terms": [
+              "區域數上界",
+              "Cell-count bound"
+            ]
+          },
+          {
+            "texts": [
+              "$M_{\\max}(K,d)=\\sum_{m=0}^{d}\\binom{K}{m}$。K 是隱藏單元數，d 是輸入維度；$\\binom{K}{m}=0$ 若 $m>K$。",
+              "$M_{\\max}(K,d)=\\sum_{m=0}^{d}\\binom{K}{m}$. K counts hidden units and d input dimensions; $\\binom{K}{m}=0$ when $m>K$."
+            ]
+          },
+          {
+            "texts": [
+              "一般位置指分界沒有造成重合、平行或多線共點等減少區域的退化情形；條件隨維度改變。",
+              "General position excludes coincidences, parallelism and excessive intersections that reduce cell count; the precise condition depends on dimension."
+            ]
+          }
+        ],
+        "bridges": [
+          "十筆驗證資料中，一個案例就改變十個百分點。若還想先估模型能力，幾何能告訴我們什麼？",
+          "One case changes a ten-case estimate by ten percentage points. Can geometry complement this unstable data-based assessment?"
+        ],
+        "coaches": [
+          "區域數是在輸入空間計數，不是輸出類別數，也不是任意標籤都能線性分開的保證。請讀者將這個問題和 KP03 的輸出可分性分開。",
+          "Count input-space cells, not output classes or guaranteed separable labellings. Distinguish this capacity question from the output separability of KP03."
+        ],
+        "layout": "10-regions"
+      },
+      {
+        "titles": [
+          "二維兩條線最多四塊，平行時卻只有三塊",
+          "Two planar lines give at most four cells, but parallel lines give three"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "$d=2,K=2$：$M_{\\max}=1+2+1=4$；三個組合數分別是選 0、1、2 條線。",
+              "For $d=2,K=2$, $M_{\\max}=1+2+1=4$. The three terms count choices of 0, 1 and 2 lines."
+            ]
+          },
+          {
+            "texts": [
+              "XOR 的 $x_1+x_2=0.5$ 與 $x_1+x_2=1.5$ 平行，實際形成三條帶，兩個 A 點住在中間。",
+              "The XOR boundaries $x_1+x_2=0.5$ and $x_1+x_2=1.5$ are parallel: three actual bands, with both A points in the middle."
+            ]
+          },
+          {
+            "texts": [
+              "「四塊上界容得下三塊」只是容量檢查。兩個單元足夠，還要靠這個明確構造證明。",
+              "An upper bound of four accommodates three cells; sufficiency of two units still needs this explicit construction."
+            ]
+          }
+        ],
+        "bridges": [
+          "區域數上界只算最多能切幾塊。把它代入二維兩條線，再和 XOR 的平行線比較，會有什麼差別？",
+          "The cell-count bound counts possible cells, not output classes. Do two parallel XOR boundaries attain the maximum?"
+        ],
+        "coaches": [
+          "注意本頁是三個組合數項，不是四個；4 是相加後的答案。來源由容量直接說足夠，本教材把容量檢查和構造證明分開，以免倒置充分條件。",
+          "There are three binomial terms; four is their sum. Separate a capacity check from a constructive sufficiency proof."
+        ],
+        "layout": "10-xor"
+      },
+      {
+        "titles": [
+          "決定大小有三條路：先估、先長大再剪、從小長起",
+          "Estimate size, prune a large network, or grow a small one"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**解析法**：用代數或統計分析估能力，但通常忽略具體的最佳化過程。",
+              "**Analytical methods** estimate capacity using algebra or statistics, often without optimization details."
+            ]
+          },
+          {
+            "texts": [
+              "**剪枝**：先訓練較大網路，再依規則刪掉較不重要的連線。",
+              "**Pruning** fits a larger network, then removes less useful connections by a rule."
+            ]
+          },
+          {
+            "texts": [
+              "**構造式方法**：從小架構逐步增加單元。三條路都需驗證；下一個KP先研究怎麼剪。",
+              "**Constructive methods** grow units from a small architecture. All routes need validation; the next KP studies pruning."
+            ]
+          }
+        ],
+        "bridges": [
+          "XOR 的兩條平行線只切三條帶，上界四塊不能代替明確構造。除了幾何估算，還能怎麼選大小？",
+          "Two parallel boundaries form three bands, below the upper bound of four. What other routes select network size?"
+        ],
+        "coaches": [
+          "請比較兩種相反的搜尋方向：從大往小與從小往大。不要說其中任何一條必然找到最小網路；實際取捨還包含計算、穩定性與可解釋性。",
+          "Contrast shrinking and growing searches. Neither automatically finds the smallest network; computation, stability and interpretability also matter."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "延伸：1–k–1 網路的互動示範只是一組實驗",
+          "Extension: the 1–k–1 demo is one experiment"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "來源用 15 個訓練點、10 個獨立測試點，目標為 $y=\\sin(2\\pi x)+\\epsilon$，$\\epsilon$ 是加到觀測的雜訊。",
+              "The source uses 15 training points and 10 independent test points for $y=\\sin(2\\pi x)+\\epsilon$, where $\\epsilon$ is observation noise."
+            ]
+          },
+          {
+            "texts": [
+              "$\\hat y=\\sum_{j=1}^{k}v_j\\tanh(a_jx+b_j)+c$。a、b、v、c 都可調，參數數為 $3k+1$；k 是隱藏單元數。",
+              "$\\hat y=\\sum_{j=1}^{k}v_j\\tanh(a_jx+b_j)+c$. Adjustable a, b, v and c give $3k+1$ parameters; k counts hidden units."
+            ]
+          },
+          {
+            "texts": [
+              "來源描述 k 約 3–5 較合適、k=15 可能過擬合；這不是任何資料的通用最佳值，本教材未重跑其訓練。",
+              "The source describes k around 3–5 as useful and possible overfitting at k=15. These are not universal choices; this training was not rerun here."
+            ]
+          }
+        ],
+        "bridges": [
+          "解析法、剪枝與構造式方法都要保留資料檢查。來源的正弦示範，能給任何任務通用的大小嗎？",
+          "Analytical methods, pruning and constructive methods still need held-out assessment. Does the source sine demo provide a universal size?"
+        ],
+        "coaches": [
+          "tanh 把數字平滑壓到負一與一之間，足以讀懂這個架構。不要把互動圖中的測試點繼續用來調 k 後，仍聲稱是完全沒看過的評估資料。",
+          "Tanh smoothly maps a number between minus one and one. Repeatedly choosing k from the test points uses them for selection."
+        ],
+        "layout": "10-trend"
+      },
+      {
+        "titles": [
+          "延伸：先選檢查點，再解釋區域上界",
+          "Extension: choose a checkpoint and explain the cell bound"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "題 1：訓練損失為 $0.40,0.20,0.10$，驗證損失為 $0.45,0.25,0.30$。選哪一輪？提示：先找驗證最小值。",
+              "Question 1: training losses are $0.40,0.20,0.10$ and validation losses $0.45,0.25,0.30$. Choose a checkpoint by the validation minimum."
+            ]
+          },
+          {
+            "texts": [
+              "題 2：二維三條一般位置直線的最大區域數是多少？提示：算 $\\binom30+\\binom31+\\binom32$；若三線平行還是這個數嗎？",
+              "Question 2: count the maximum cells of three planar lines in general position using $\\binom30+\\binom31+\\binom32$. Does parallelism attain it?"
+            ]
+          }
+        ],
+        "bridges": [
+          "來源的正弦示範沒有通用最佳k。回到驗證數字與區域上界，你能在另一組設定自己判斷嗎？",
+          "The source sine demo gives no universal k. Can you apply validation selection and cell counting to new numbers?"
+        ],
+        "coaches": [
+          "先把選模型和計幾何區域分開作答，避免把更多區域誤當成更小驗證誤差。答案在下一頁，請先保留自己的判斷理由。",
+          "Answer model selection and geometric counting separately. More cells do not imply lower validation loss. Write a reason before viewing the worked answer."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "延伸：第 2 輪最好；七塊是最大值，不是每次都有",
+          "Extension: checkpoint 2 is best; seven is a maximum"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "① 驗證值 $0.45,0.25,0.30$ 中，$0.25$ 最小，因此保留第 2 輪；最後一輪的訓練值較低也不改選擇。",
+              "1. The minimum of $0.45,0.25,0.30$ is $0.25$: retain checkpoint 2, despite lower final training loss."
+            ]
+          },
+          {
+            "texts": [
+              "② 二維三線：$M_{\\max}=1+3+3=7$。三線平行只有四條帶，沒有達到七塊上界。",
+              "2. Three planar lines give $M_{\\max}=1+3+3=7$. Three parallel lines give only four bands."
+            ]
+          },
+          {
+            "texts": [
+              "③ 驗算：第 3 輪驗證比第 2 輪增加 $0.30-0.25=0.05$。選檢查點時，幾何區域數沒有參與這個比較。",
+              "3. Validation loss rises by $0.30-0.25=0.05$. Cell count did not enter the checkpoint comparison."
+            ]
+          }
+        ],
+        "bridges": [
+          "題1要找驗證最小值，題2要算三條直線的最大區域數。逐步核對後，答案是什麼？",
+          "Question 1 asks for a validation minimum; question 2 counts three planar lines in general position. What do the steps give?"
+        ],
+        "coaches": [
+          "用反問收尾：若全部訓練全對，卻不知道新資料的表現，還缺哪個證據？應答保留資料評估，而不是再算一次自由參數數。",
+          "Close by asking what is missing when training is perfect but new-data performance is unknown: held-out evidence, not another parameter count."
+        ],
+        "layout": "10-regions"
+      }
+    ],
+    "11": [
+      {
+        "titles": [
+          "剪掉一條連線前，要先問會付出多少代價",
+          "Ask the cost before deleting a connection"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**剪枝**：移除部分連線或單元，減少模型可調的部分，叫剪枝；刪除後仍需檢查表現。",
+              "**Pruning**: Pruning removes connections or units to reduce adjustable structure; performance must be checked afterward."
+            ],
+            "terms": [
+              "剪枝",
+              "Pruning"
+            ]
+          },
+          {
+            "texts": [
+              "我們先研究單條連線：把它的權重設成零，等於這條輸入不再貢獻分數。",
+              "Start with one connection: setting its weight to zero removes its contribution to the score."
+            ]
+          },
+          {
+            "texts": [
+              "目標不是「刪最多」，而是在可接受的損失與保留資料表現下，換到較簡單的模型。",
+              "The goal is acceptable loss and held-out performance with a simpler model, not deletion for its own sake."
+            ]
+          }
+        ],
+        "bridges": [
+          "KP10 說不能只追訓練成績。若已經有一個大網路，怎麼找出可以刪掉的部分？",
+          "KP10 warned against training scores alone. How can we simplify a network that is already large?"
+        ],
+        "coaches": [
+          "可比喻移除電路中的支線，但刪一條可能牽動全局。不要用線條粗細直接決定重要性，下一段會用一個小權重反而重要的例子挑戰它。",
+          "Removing a branch of a circuit may affect the whole system. Line thickness alone is not importance; a small weight can matter more."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "權重歸零的變動量，就是原權重的負值",
+          "Zeroing a weight changes it by its negative"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "w_i 是第 i 個權重，$\\delta w_i$ 是修改量。$w_i+\\delta w_i=0$，所以 $\\delta w_i=-w_i$。",
+              "w_i is weight i and $\\delta w_i$ its change. Since $w_i+\\delta w_i=0$, deletion uses $\\delta w_i=-w_i$."
+            ]
+          },
+          {
+            "texts": [
+              "J 是訓練代價，$\\Delta J$ 是刪除後減去刪除前的代價；它不是權重的大小。",
+              "J is the training objective; $\\Delta J$ is its value after deletion minus before deletion. It is not the weight magnitude."
+            ]
+          },
+          {
+            "texts": [
+              "假如 $w_i=0.2$，刪除是加上 $-0.2$；別把「只改一點點」直接當成「影響一定小」。",
+              "If $w_i=0.2$, deletion adds $-0.2$. A small parameter change need not have a small effect."
+            ]
+          }
+        ],
+        "bridges": [
+          "剪枝會把某條連線的權重設成零。這個刪除操作，對權重本身造成多少修改量？",
+          "Pruning sets a connection weight to zero. What parameter change describes removing its contribution to the score?"
+        ],
+        "coaches": [
+          "記號 delta 在這裡是有限變動，不是反向傳播中的誤差訊號。先讓讀者口頭算出刪除量，再看代價曲線的彎曲程度。",
+          "Delta denotes a finite change here, not a backpropagated error signal. Compute the deletion amount before looking at the loss curvature."
+        ],
+        "layout": "11-curvature"
+      },
+      {
+        "titles": [
+          "損失曲線彎得越陡，同樣變動可能越昂貴",
+          "Steeper loss curvature can make a small change costly"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**曲率**：在目前權重附近，曲率描述損失斜率改變得多快；這裡用二階導數衡量。",
+              "**Curvature**: Local curvature describes how quickly the loss slope changes; here it is measured by a second derivative."
+            ],
+            "terms": [
+              "曲率",
+              "Curvature"
+            ]
+          },
+          {
+            "texts": [
+              "**海森矩陣**：把權重間所有二階偏導數排成矩陣 H，稱為海森矩陣；$H_{ii}$ 描述第 i 個方向的曲率。",
+              "**Hessian**: The Hessian matrix H collects second partial derivatives; $H_{ii}$ measures curvature in weight direction i."
+            ],
+            "terms": [
+              "海森矩陣",
+              "Hessian"
+            ]
+          },
+          {
+            "texts": [
+              "圖中 A 的權重較小，但所在損失曲線較陡；刪除的損失可比大權重 B 更高。",
+              "Weight A is smaller but lies in a more curved loss profile; its deletion can cost more than deleting larger weight B."
+            ]
+          }
+        ],
+        "bridges": [
+          "權重歸零時，修改量是原權重的負值。小修改量為何不保證小代價，損失曲線能說明嗎？",
+          "A small parameter change need not have a small effect. Which feature of the loss curve measures that sensitivity?"
+        ],
+        "coaches": [
+          "這兩條曲線都是可精確計算的局部二次例子，並非同一條曲線上的兩個模型。讀圖先找原來最低點，再沿各自曲線移到零。",
+          "These are two exact local quadratic examples, not two points on one curve. Find each minimum, then move to weight zero."
+        ],
+        "layout": "11-curvature"
+      },
+      {
+        "titles": [
+          "近似極小值附近，刪除代價可用二階項估計",
+          "Near a minimum, second-order terms estimate deletion cost"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "$\\Delta J\\approx\\sum_i g_i\\delta w_i+\\frac12\\sum_{i,j}H_{ij}\\delta w_i\\delta w_j$；$g_i=\\partial J/\\partial w_i$ 是當地斜率。",
+              "$\\Delta J\\approx\\sum_i g_i\\delta w_i+\\frac12\\sum_{i,j}H_{ij}\\delta w_i\\delta w_j$, where $g_i=\\partial J/\\partial w_i$ is the local slope."
+            ]
+          },
+          {
+            "texts": [
+              "接近極小值，取 $g_i\\approx0$；用對角近似忽略跨權重交互項，得到 $\\Delta J\\approx\\frac12\\sum_iH_{ii}(\\delta w_i)^2$。",
+              "Near a minimum, take $g_i\\approx0$. A diagonal approximation drops cross-weight terms, leaving $\\Delta J\\approx\\frac12\\sum_iH_{ii}(\\delta w_i)^2$."
+            ]
+          },
+          {
+            "texts": [
+              "**顯著度**：代入 $\\delta w_i=-w_i$，定義刪除代價估計 $s_i=\\frac12H_{ii}w_i^2$，稱為顯著度；是近似，不是實測損失。",
+              "**Saliency**: Substituting $\\delta w_i=-w_i$ gives estimated deletion cost $s_i=\\frac12H_{ii}w_i^2$, called saliency. It is an approximation, not measured loss."
+            ],
+            "terms": [
+              "顯著度",
+              "Saliency"
+            ]
+          }
+        ],
+        "bridges": [
+          "海森矩陣描述不同方向的曲率。要估刪除的損失，怎麼把曲率與修改量放進同一個式子？",
+          "The Hessian matrix collects curvature in weight directions. How can local slopes and curvature estimate a deletion cost?"
+        ],
+        "coaches": [
+          "兩個假設都要說明，不能只背最後公式。若只改一個權重且其他固定，二次項本來只留下該對角項；忽略耦合在多權重刪除或允許補償時尤其重要。",
+          "State both assumptions. For a single changed weight with all others fixed, only its diagonal quadratic term remains; coupling matters for joint changes or compensation."
+        ],
+        "layout": "11-curvature"
+      },
+      {
+        "titles": [
+          "小權重 A 的刪除代價，反而是 B 的兩百倍",
+          "Deleting smaller weight A costs two hundred times more"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "A：$w_A=0.2,H_{AA}=100$。$s_A=\\frac12\\times100\\times0.2^2=2$。",
+              "A: $w_A=0.2,H_{AA}=100$. Then $s_A=\\frac12\\times100\\times0.2^2=2$."
+            ]
+          },
+          {
+            "texts": [
+              "B：$w_B=1,H_{BB}=0.02$。$s_B=\\frac12\\times0.02\\times1^2=0.01$。",
+              "B: $w_B=1,H_{BB}=0.02$. Then $s_B=\\frac12\\times0.02\\times1^2=0.01$."
+            ]
+          },
+          {
+            "texts": [
+              "比較：$2/0.01=200$。依這個局部估計先刪 B，雖然它的權重較大。",
+              "Compare: $2/0.01=200$. This local estimate prefers deleting B, despite its larger magnitude."
+            ]
+          }
+        ],
+        "bridges": [
+          "顯著度同時乘上曲率和權重平方。小權重A與大權重B，依這個估計究竟先刪誰？",
+          "Estimated deletion cost uses both curvature and squared magnitude. Which of weight A and weight B should go first?"
+        ],
+        "coaches": [
+          "注意對數長條的高度不能當成線性比例看。這個精確二次例子只驗證排序原理，沒有證明任何真實網路都維持這個兩百倍比例。",
+          "Do not read log-scale bar heights as linear ratios. The exact quadratic example verifies a principle, not a universal factor of two hundred."
+        ],
+        "layout": "11-saliency"
+      },
+      {
+        "titles": [
+          "顯著度是局部預測，刪完仍要重測與再訓練",
+          "Saliency is local: remeasure and retrain after deletion"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "尚未接近極小值時，一階項未必小；刪除幅度太大時，高階項也可能不可忽略。",
+              "Away from a minimum, the first-order term may matter; a large deletion can also invalidate the local expansion."
+            ]
+          },
+          {
+            "texts": [
+              "同時刪多個權重可能有耦合。若海森矩陣呈現負曲率，也不能把負數直接解讀成「安全重要性」。",
+              "Multiple deletions can interact. Negative Hessian curvature should not be treated as a safe importance score."
+            ]
+          },
+          {
+            "texts": [
+              "用小步驟刪除、重新量測代價、再訓練剩餘權重，並保留最佳驗證模型。",
+              "Prune in small steps, measure loss again, retrain the remaining weights and keep the best validation model."
+            ]
+          }
+        ],
+        "bridges": [
+          "依局部估計，小權重A的刪除代價是B的兩百倍。這個局部估計，什麼時候可能不可靠？",
+          "Deleting smaller weight A costs two hundred times more in the local estimate. When is the approximation unreliable?"
+        ],
+        "coaches": [
+          "把估計值和刪除後實測值並列記錄。若兩者差很遠，應反省局部近似的條件，而非把誤差藏在繪圖平滑處理中。",
+          "Record predicted and measured loss changes side by side. A discrepancy should trigger a review of assumptions rather than cosmetic smoothing."
+        ],
+        "layout": "11-curvature"
+      },
+      {
+        "titles": [
+          "剪枝是反覆訓練與刪除，不是一次清空小權重",
+          "Pruning alternates retraining and selective deletion"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "先訓練到合適位置 → 估顯著度 → 刪少量低顯著度連線 → 再訓練與驗證。",
+              "Fit to a suitable state → estimate saliency → remove a few low-saliency connections → retrain and validate."
+            ]
+          },
+          {
+            "texts": [
+              "依驗證表現、允許的損失增加或資源預算停止；刪除後的較小網路不保證每次都更準。",
+              "Stop using validation, an allowed loss increase or a resource budget. A smaller pruned network is not always more accurate."
+            ]
+          },
+          {
+            "texts": [
+              "完整海森矩陣方法還能考慮其他權重如何補償；代價是較高的儲存與計算需求。",
+              "Full-Hessian methods can account for compensating changes in other weights, at higher storage and computation cost."
+            ]
+          }
+        ],
+        "bridges": [
+          "局部估計會受大變動與權重耦合影響。若要小步刪除並重新量測，完整剪枝程序應該怎麼走？",
+          "Multiple deletions can interact, so prune in small steps and measure loss again. How should the full loop work?"
+        ],
+        "coaches": [
+          "讓讀者指出回圈從驗證不合格時回到哪一步，以及保存模型的時機。來源的固定檢查間隔是案例設定，不是這個程序的通用常數。",
+          "Ask where the loop returns after an unacceptable validation result and when a model is saved. A reported checking interval is a case setting, not a universal constant."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "也可以在訓練時，替不必要的權重加上代價",
+          "Penalize unnecessary weights during fitting"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**正則化**：在資料誤差之外加入對模型的限制或偏好，叫正則化；它改變我們願意接受的解。",
+              "**Regularization**: Regularization adds a model preference or constraint beyond data fit, changing which solutions are favored."
+            ],
+            "terms": [
+              "正則化",
+              "Regularization"
+            ]
+          },
+          {
+            "texts": [
+              "$J_{\\mathrm{total}}=J_{\\mathrm{data}}+\\alpha P(\\mathbf w)$。第一項量資料誤差，P 是權重懲罰，$\\alpha\\ge0$ 控制相對比重。",
+              "$J_{\\mathrm{total}}=J_{\\mathrm{data}}+\\alpha P(\\mathbf w)$. The first term measures data error; P penalizes weights and $\\alpha\\ge0$ sets its strength."
+            ]
+          },
+          {
+            "texts": [
+              "若資料誤差採總和或平均，尺度不同，同一個數值的 alpha 也有不同作用；不能直接跨設定照抄。",
+              "Summed and averaged data losses have different scales, so the same numerical alpha has different effects."
+            ]
+          }
+        ],
+        "bridges": [
+          "剪枝程序反覆刪除、再訓練與驗證。若要在訓練目標裡就限制模型，可以怎麼做？",
+          "Pruning alternates selective deletion, retraining and validation. Can the training objective itself charge for unnecessary structure?"
+        ],
+        "coaches": [
+          "正則化不只是為了刪權重；它也可保留全部連線而改變權重大小。這裡先統一資料損失的尺度，再比較候選模型。",
+          "Regularization need not delete connections; it may retain them with different magnitudes. Fix the data-loss scale before comparing candidates."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "加入懲罰後，訓練誤差稍高的模型可能更划算",
+          "A slightly worse fit can have a better penalized objective"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "模型 A：資料誤差 $0.10$、懲罰 $4$。模型 B：資料誤差 $0.20$、懲罰 $1$；先固定 $\\alpha=0.1$。",
+              "Model A has data loss $0.10$ and penalty $4$; B has data loss $0.20$ and penalty $1$. Fix $\\alpha=0.1$."
+            ]
+          },
+          {
+            "texts": [
+              "$J_A=0.10+0.1\\times4=0.50$；$J_B=0.20+0.1\\times1=0.30$。因此此目標選 B。",
+              "$J_A=0.10+0.1\\times4=0.50$; $J_B=0.20+0.1\\times1=0.30$. This objective favors B."
+            ]
+          },
+          {
+            "texts": [
+              "若 $\\alpha=0$，反而選 A。alpha 應以驗證資料選擇；總代價較小不等於測試誤差必然較小。",
+              "With $\\alpha=0$, A wins. Select alpha with validation data; lower penalized training objective need not imply lower test error."
+            ]
+          }
+        ],
+        "bridges": [
+          "正則化把資料誤差與權重懲罰相加。兩個候選模型各有不同的資料誤差和懲罰，該選誰？",
+          "Regularization adds a model preference beyond data fit. How does a weight penalty change the comparison between two candidates?"
+        ],
+        "coaches": [
+          "引導讀者看到資料誤差與總代價不是同一欄。這個例子比較既定候選解，不是證明最佳化演算法會找到它們。",
+          "Separate the data-loss column from the total-objective column. Comparing fixed candidates does not prove that an optimizer will find them."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "飽和懲罰強烈區分小權重與大權重",
+          "A saturating penalty treats small and large weights differently"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**飽和懲罰**：$\\rho(w)=w^2/(\\tau^2+w^2)$，$\\tau>0$ 是尺度；權重很大時懲罰接近 1，稱為飽和。",
+              "**Saturating penalty**: $\\rho(w)=w^2/(\\tau^2+w^2)$ with scale $\\tau>0$ approaches 1 for large magnitude weights."
+            ],
+            "terms": [
+              "飽和懲罰",
+              "Saturating penalty"
+            ]
+          },
+          {
+            "texts": [
+              "懲罰總和 $P=\\sum_i\\rho(w_i)$。取 $\\tau=1$：$\\rho(0.2)=0.04/1.04\\approx0.0385$，$\\rho(1)=0.5$，$\\rho(3)=0.9$。",
+              "Set $P=\\sum_i\\rho(w_i)$. With $\\tau=1$: $\\rho(0.2)=0.04/1.04\\approx0.0385$, $\\rho(1)=0.5$, $\\rho(3)=0.9$."
+            ]
+          },
+          {
+            "texts": [
+              "用絕對值比較尺度：$|w|\\ll\\tau$ 才是接近零的區段，不是只比較帶正負號的 w 和 tau。",
+              "Compare magnitudes: $|w|\\ll\\tau$ describes the near-zero range, not a signed comparison between w and tau."
+            ]
+          }
+        ],
+        "bridges": [
+          "相同alpha下，資料誤差較高的B反而有較小總代價。權重懲罰還有哪些形狀可以選？",
+          "The penalized objective favored model B despite its higher data loss. What penalty shape does the source use?"
+        ],
+        "coaches": [
+          "本教材將來源的 w0 尺度參數改記 tau，以免和神經元偏置混淆。接近零的懲罰小，不代表已經被自動刪除。",
+          "The source scale w0 is renamed tau to avoid confusion with a bias. A small penalty does not mean a connection has already been deleted."
+        ],
+        "layout": "11-rho"
+      },
+      {
+        "titles": [
+          "平滑懲罰讓權重縮小，刪除仍需要明確門檻",
+          "Smooth shrinkage is not the same as exact deletion"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "$\\rho'(w)=2\\tau^2w/(\\tau^2+w^2)^2$。在 $w=0$ 時導數是 0；有限步更新不保證恰好到零。",
+              "$\\rho'(w)=2\\tau^2w/(\\tau^2+w^2)^2$. Its derivative is zero at $w=0$; finite updates need not reach exact zero."
+            ]
+          },
+          {
+            "texts": [
+              "**權重消除**：訓練時促進縮小，再定期把小於門檻的權重設零或刪除，稱為權重消除。",
+              "**Weight elimination**: Weight elimination encourages shrinkage and periodically zeroes or removes weights below a chosen threshold."
+            ],
+            "terms": [
+              "權重消除",
+              "Weight elimination"
+            ]
+          },
+          {
+            "texts": [
+              "門檻以 $|w_i|<\\varepsilon$ 判斷；epsilon 是刪除門檻，tau 是懲罰尺度，兩者用途不同。",
+              "Use $|w_i|<\\varepsilon$ for deletion. Epsilon is a deletion threshold; tau is the penalty scale. Their roles differ."
+            ]
+          }
+        ],
+        "bridges": [
+          "飽和懲罰在小權重附近接近零。這樣的平滑曲線，真的會把權重精確刪成零嗎？",
+          "A saturating penalty approaches one for large magnitude weights and is small near zero. Does smooth shrinkage give exact deletion?"
+        ],
+        "coaches": [
+          "來源的懲罰曲線是平滑且非凸的，不能套用所有凸最佳化的保證。刪除應伴隨驗證，並清楚記錄門檻與實際刪除數。",
+          "This saturating penalty is smooth and nonconvex; do not import general convex-optimization guarantees. Validate deletions and record thresholds and actual counts."
+        ],
+        "layout": "11-gradient"
+      },
+      {
+        "titles": [
+          "若要移除整個單元，也要檢查它的輸出貢獻",
+          "Removing a whole unit requires checking its contribution"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "來源還考慮對神經元輸出加懲罰，鼓勵某些單元反應變小；不是只對單一連線計分。",
+              "The source also discusses penalties on neuron outputs, encouraging some units to respond less rather than scoring only individual connections."
+            ]
+          },
+          {
+            "texts": [
+              "單元輸出小，仍可能被很大的下一層權重放大；應檢查整條路徑及刪除後的資料表現。",
+              "A small unit output may be amplified by a large downstream weight. Inspect the path and performance after removal."
+            ]
+          },
+          {
+            "texts": [
+              "刪連線、刪單元、縮小數值是三種不同操作，必須分別記錄。",
+              "Connection deletion, unit deletion and numerical shrinkage are distinct operations and should be recorded separately."
+            ]
+          }
+        ],
+        "bridges": [
+          "權重消除還需要門檻與實際刪除。若想刪的不是一條連線而是整個單元，只看小權重夠嗎？",
+          "Weight elimination uses a chosen threshold and explicit deletion. Is one small weight enough reason to remove a whole hidden unit?"
+        ],
+        "coaches": [
+          "用一個音量旋鈕和下一級擴大器的類比說明縮放補償；類比只對應訊號幅度，不代表網路一定線性。",
+          "Use a volume control followed by an amplifier to illustrate scale compensation; the analogy concerns amplitude, not a claim that the network is linear."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "權重的大小，也能影響泛化分析中的複雜度",
+          "Weight magnitude can matter to generalization complexity"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "來源引述兩層 sigmoid 網路的結果：在小訓練誤差與權重範數限制等條件下，複雜度項包含 $A^3\\sqrt{\\log d/N}$。",
+              "The source cites a two-layer sigmoid-network result whose complexity term includes $A^3\\sqrt{\\log d/N}$ under training-error and weight-norm conditions."
+            ]
+          },
+          {
+            "texts": [
+              "A 是每個單元權重絕對值和的共同上界；d 是輸入維度，N 是樣本數。這只是來源的量級摘要，並非完整機率界。",
+              "A bounds each unit's sum of absolute weights; d is input dimension and N sample count. This is the source's scaling summary, not a complete probability bound."
+            ]
+          },
+          {
+            "texts": [
+              "固定 d、N，把 A 加倍，此項變為 $2^3=8$ 倍；不能把它直接當成分類錯誤率。",
+              "With d and N fixed, doubling A multiplies this term by $2^3=8$. The term is not itself a classification error probability."
+            ]
+          }
+        ],
+        "bridges": [
+          "小單元輸出還可能被下一層大權重放大。除了參數數量，權重大小是否也影響泛化分析？",
+          "A small unit output may meet a large downstream weight. Beyond parameter count, can weight magnitudes affect generalization analysis?"
+        ],
+        "coaches": [
+          "這裡沒有完整原定理的常數、信賴參數與所有假設，不能據此計算某個模型的實際錯誤上限。重點是重量級限制與數量計數可能刻畫不同的複雜度。",
+          "Constants, confidence parameters and full assumptions are unavailable here. Do not compute a certified error bound from this summary; magnitude and count capture different complexity."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "另一種做法：先補最沒學好的部分，再增加單元",
+          "Grow a unit where the current model still fails"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**殘差**：真實目標減去目前預測，$e_n=t_n-\\hat y_n$，稱為殘差；n 是樣本編號。",
+              "**Residual**: The residual is target minus prediction, $e_n=t_n-\\hat y_n$, with n indexing examples."
+            ],
+            "terms": [
+              "殘差",
+              "Residual"
+            ]
+          },
+          {
+            "texts": [
+              "**級聯相關法**：每次增加一個能回應目前殘差的隱藏單元，再重訓輸出，稱為級聯相關法。",
+              "**Cascade correlation**: Cascade correlation adds a hidden unit responsive to current residuals, then refits output weights."
+            ],
+            "terms": [
+              "級聯相關法",
+              "Cascade correlation"
+            ]
+          },
+          {
+            "texts": [
+              "新單元接收原輸入與先前隱藏單元；先訓練它的輸入側權重，之後凍結這些權重。",
+              "The new unit receives original inputs and earlier hidden outputs. Train its incoming weights, then freeze them."
+            ]
+          }
+        ],
+        "bridges": [
+          "權重範數和數量刻畫不同複雜度。若從小架構逐步增加單元，新單元應該補哪一種不足？",
+          "Weight magnitude and parameter count describe different complexity. Instead of pruning, where should a new hidden unit help a growing network?"
+        ],
+        "coaches": [
+          "畫出原本的輸出與新候選單元，讓讀者分清楚輸入側和輸出側。增加單元不是隨機塞進一個節點後就結束。",
+          "Locate the candidate's incoming and outgoing weights. Growth is more than inserting an arbitrary node."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "輸入側找殘差關聯，輸出側再降低平方誤差",
+          "Train incoming weights for residual association, then refit the output"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "候選輸出 v 與殘差 e 的單輸出教學分數：$S=|\\sum_n(v_n-\\bar v)(e_n-\\bar e)|$；橫線代表樣本平均。",
+              "A single-output teaching score is $S=|\\sum_n(v_n-\\bar v)(e_n-\\bar e)|$, where bars denote sample means."
+            ]
+          },
+          {
+            "texts": [
+              "取 $e=(-1,1)$：候選 $v=(-1,1)$ 得 $S=|-1\\times(-1)+1\\times1|=2$；常數候選 $v=(1,1)$ 中心化後為零，得 $S=0$。",
+              "For $e=(-1,1)$, candidate $v=(-1,1)$ gives $S=|-1\\times(-1)+1\\times1|=2$. Constant $v=(1,1)$ centers to zero and gives $S=0$."
+            ]
+          },
+          {
+            "texts": [
+              "選好候選並凍結輸入側後，重訓輸出側權重以降低平方誤差；這裡的 S 未除標準差，不是 Pearson 係數。",
+              "After selecting the candidate and freezing incoming weights, refit outgoing weights for squared error. S is unnormalized, not a Pearson coefficient."
+            ]
+          }
+        ],
+        "bridges": [
+          "級聯相關法先讓新單元回應殘差，再凍結輸入側權重。這兩個訓練階段各自追求什麼？",
+          "The new hidden unit responds to current residuals before its incoming weights freeze. Which objective belongs to each training stage?"
+        ],
+        "coaches": [
+          "必須分清兩個階段不同的目標，不能說所有權重一起追同一個分數。這是單輸出機制示範，不冒稱完整重現原演算法。",
+          "The two stages optimize different objectives. This single-output illustration does not claim a full reproduction of the original algorithm."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "原文的模擬資料有八個群，共四百個訓練點",
+          "The reported simulation has eight clusters and four hundred training points"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "A 類四個均值：$(0.4,0.9),(2.0,1.8),(2.3,2.3),(2.6,1.8)$；B 類：$(1.5,1.0),(1.9,1.0),(1.5,3.0),(3.3,2.6)$。",
+              "A means: $(0.4,0.9),(2.0,1.8),(2.3,2.3),(2.6,1.8)$. B means: $(1.5,1.0),(1.9,1.0),(1.5,3.0),(3.3,2.6)$."
+            ]
+          },
+          {
+            "texts": [
+              "每群 50 點，共 $8\\times50=400$。每群協方差 $0.08I$；I 是二維單位矩陣，標準差為 $\\sqrt{0.08}$，不是 0.08。",
+              "Each cluster contributes 50 cases: $8\\times50=400$. Covariance is $0.08I$; I is the 2-D identity and standard deviation is $\\sqrt{0.08}$, not 0.08."
+            ]
+          },
+          {
+            "texts": [
+              "圖用相同分布設定與固定種子重新抽樣，只核對資料分布，不是原始樣本，也沒有重跑網路訓練。",
+              "The plot resamples the stated distributions with a fixed seed. It checks the data design, not the original samples or network training."
+            ]
+          }
+        ],
+        "bridges": [
+          "候選單元找殘差關聯，輸出側再降低平方誤差。要比較不同訓練方法，來源用了什麼資料？",
+          "Cascade correlation separates a residual score from outgoing weights fitted for squared error. What data conditions define the source comparison?"
+        ],
+        "coaches": [
+          "圖中圓與加號是兩個類別，不是兩種訓練程序。來源的訓練資料設定和後面的剪枝圖屬不同展示，不能假定每張原圖用了同一批點。",
+          "Circles and pluses denote classes, not training algorithms. Do not assume the later pruning illustration uses these same samples."
+        ],
+        "layout": "11-data"
+      },
+      {
+        "titles": [
+          "收斂較快是這組設定的報告，不是方法排名定理",
+          "Faster convergence is a reported case, not a universal ranking"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "網路為 2–3–2–1，logistic 活化的斜率參數為 1，目標為 1／0；本教材計入偏置的參數數為 $9+8+3=20$。",
+              "The network is 2–3–2–1 with logistic slope 1 and targets 1/0. Counting biases gives $9+8+3=20$ parameters."
+            ]
+          },
+          {
+            "texts": [
+              "來源的動量設定：$\\mu=0.05,\\alpha=0.85$；自適應動量：$\\mu=0.01,\\alpha=0.85,r_i=1.05,c=1.05,r_d=0.7$。",
+              "Reported momentum uses $\\mu=0.05,\\alpha=0.85$; adaptive momentum uses $\\mu=0.01,\\alpha=0.85,r_i=1.05,c=1.05,r_d=0.7$."
+            ]
+          },
+          {
+            "texts": [
+              "此處 mu 是學習率，alpha 是動量係數，r_i、r_d 是學習率放大與縮小倍率，c 是觸發縮小的代價比門檻；同名 alpha 在正則化頁用途不同。來源報告批次模式下自適應動量較快。",
+              "Here mu is learning rate, alpha momentum, and r_i and r_d learning-rate multipliers, and c the cost-ratio threshold. This alpha differs from regularization strength. Adaptive momentum was faster in the reported batch case."
+            ]
+          }
+        ],
+        "bridges": [
+          "八個群、每群50點，共400個訓練樣本。資料條件固定後，來源比較的網路與訓練設定是什麼？",
+          "Eight clusters contribute four hundred training points. With this data design fixed, which network and fitting settings were reported?"
+        ],
+        "coaches": [
+          "這頁保存原數值，但不把它們推薦為新資料的預設參數。缺少原始執行記錄，不提供虛構的時間、準確率或重畫為精確實驗的收斂曲線。",
+          "Preserve the reported values without recommending them for new data. No fabricated timings, accuracies or exact convergence traces are supplied."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "從四百八十減到二十五，是案例結果，不是保證",
+          "Four hundred eighty to twenty-five is a case result, not a promise"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "來源報告：兩個各 20 單元的隱藏層，先訓練含 480 權重的模型，每 100 輪檢查顯著度，最後保留 25 個權重。",
+              "The source reports two hidden layers of 20 units, an initial 480-weight model, saliency checks every 100 epochs and 25 retained weights."
+            ]
+          },
+          {
+            "texts": [
+              "剩下比例 $25/480\\approx0.0521$，約 5.21%；刪除 $480-25=455$ 個，約 94.79%。",
+              "The retained fraction is $25/480\\approx0.0521$, about 5.21%. Deleting $480-25=455$ weights removes about 94.79%."
+            ]
+          },
+          {
+            "texts": [
+              "來源報告效能改善，原圖邊界由彎曲變得近似直線；此案例不能保證剪枝普遍提升泛化。",
+              "The source reports improved performance and shows a wavy boundary becoming approximately straight. The case does not guarantee improved generalization after every pruning procedure."
+            ]
+          }
+        ],
+        "bridges": [
+          "動量與自適應動量比較的是收斂速度。來源另一個剪枝案例，權重數與決策邊界又怎麼變了？",
+          "Adaptive momentum was faster in the reported batch case. What did the separate pruning example report about network size?"
+        ],
+        "coaches": [
+          "480 是來源報告的權重數，計數口徑未完整交代，不能和前頁含偏置的20參數直接做比例。圖僅比較報告的數量，沒有偽造前後訓練輸出。",
+          "The source does not fully specify the counting convention for 480. Do not compare it directly with the previous bias-inclusive count of 20. The plot shows reported counts only."
+        ],
+        "layout": "11-counts"
+      },
+      {
+        "titles": [
+          "畫決策邊界前，要把連續輸出和類別判斷分開",
+          "Separate a continuous response from a class decision"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "補充示範：取輸入分數 $r=x_2-0.6x_1-1$，連續輸出 $p=1/(1+e^{-r})$，以0.5為門檻。這不是來源訓練出的模型。",
+              "Added illustration: use score $r=x_2-0.6x_1-1$ and continuous response $p=1/(1+e^{-r})$, thresholded at 0.5. This is not the source's trained model."
+            ]
+          },
+          {
+            "texts": [
+              "在二維座標鋪網格、計算每點 p、畫出 $p=0.5$ 等高線；只有類別值才會在 0 與 1 間翻轉。",
+              "Evaluate p on a 2-D grid and draw the $p=0.5$ contour. It is the thresholded class that switches between 0 and 1."
+            ]
+          },
+          {
+            "texts": [
+              "網格解析度、門檻與座標範圍都要記錄；平滑的圖形不等於正確率比較。",
+              "Record grid resolution, threshold and coordinate range. A smoother figure alone is not an accuracy comparison."
+            ]
+          }
+        ],
+        "bridges": [
+          "來源報告480權重減到25，邊界變得近似直線。這條決策邊界要怎麼從連續網路輸出畫出來？",
+          "The original figure shows a wavy boundary becoming approximately straight with twenty-five weights. How is a plotted decision boundary obtained?"
+        ],
+        "coaches": [
+          "這是對來源「輸出由0翻到1」的精確化，不是宣稱重跑原網路。也要避免把連續p直接當成校準良好的後驗機率，除非另有驗證。",
+          "This clarifies the source's description of output flips without claiming reproduction. A continuous p is not automatically a calibrated probability."
+        ],
+        "layout": "11-boundary"
+      },
+      {
+        "titles": [
+          "延伸：完整二階資訊，能讓其他權重補償刪除",
+          "Extension: full curvature lets other weights compensate"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "補充二次例子：$H=\\begin{bmatrix}4&1\\\\1&2\\end{bmatrix}$，刪除 $w_1=0.5$，所以 $\\delta w_1=-0.5$。",
+              "In an added quadratic example, $H=\\begin{bmatrix}4&1\\\\1&2\\end{bmatrix}$ and deleting $w_1=0.5$ gives $\\delta w_1=-0.5$."
+            ]
+          },
+          {
+            "texts": [
+              "若 $\\delta w_2=0$，代價為 $\\frac12\\times4\\times0.5^2=0.5$。允許補償時，$\\Delta J=0.5-0.5\\delta w_2+(\\delta w_2)^2$。",
+              "Fixing $\\delta w_2=0$ costs $\\frac12\\times4\\times0.5^2=0.5$. Allowing compensation gives $\\Delta J=0.5-0.5\\delta w_2+(\\delta w_2)^2$."
+            ]
+          },
+          {
+            "texts": [
+              "對 delta w2 微分得 $-0.5+2\\delta w_2=0$，取 $\\delta w_2=0.25$；代價 $0.5-0.125+0.0625=0.4375$，比 0.5 小。",
+              "Differentiating gives $-0.5+2\\delta w_2=0$, so $\\delta w_2=0.25$. Cost $0.5-0.125+0.0625=0.4375$ is below 0.5."
+            ]
+          }
+        ],
+        "bridges": [
+          "決策邊界要由連續輸出和門檻分開處理。回到刪除估計，若其他權重可以補償，代價會變嗎？",
+          "A smoother figure is not an accuracy comparison. Returning to deletion costs, what changes when other weights may compensate?"
+        ],
+        "coaches": [
+          "H 是正定矩陣，因此這個二次最小化有唯一解。只用這個例子說明耦合與補償，不宣稱完整實作來源引用的完整海森剪枝演算法。",
+          "Positive definiteness gives a unique quadratic minimizer. The example explains compensation without claiming implementation of a complete pruning algorithm."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "延伸：自己排序刪除候選，也檢查懲罰值",
+          "Extension: rank deletion candidates and evaluate a penalty"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "題 1：C 的權重 0.5、曲率 8；D 的權重 2、曲率 0.1。依顯著度先刪誰？提示：先算 $s=Hw^2/2$。",
+              "Question 1: C has weight 0.5 and curvature 8; D has weight 2 and curvature 0.1. Which has lower saliency $s=Hw^2/2$?"
+            ]
+          },
+          {
+            "texts": [
+              "題 2：取 $\\tau=2,w=2$，算 $\\rho(w)$。它是否已經代表這個權重被刪掉？提示：區分懲罰和實際操作。",
+              "Question 2: set $\\tau=2,w=2$ and calculate $\\rho(w)$. Does that value mean the weight has been deleted?"
+            ]
+          }
+        ],
+        "bridges": [
+          "允許其他權重補償，二次代價可由0.5降為0.4375。回到對角估計與飽和懲罰，你能自己算嗎？",
+          "Compensating changes lowered the quadratic cost from 0.5 to 0.4375. Can you now rank candidates and evaluate a saturating penalty?"
+        ],
+        "coaches": [
+          "要求先寫刪除幅度，再用平方代入。第二題的權重與尺度同為2，是檢查比例形狀，不是改變前面定義。",
+          "Write the deletion amount before squaring. Equal weight and scale in question 2 test the shape without changing the definition."
+        ],
+        "layout": "11-rho-practice"
+      },
+      {
+        "titles": [
+          "延伸：先刪 D；懲罰一半並不代表權重歸零",
+          "Extension: delete D first; a half penalty is not deletion"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "題 1：$s_C=\\frac12\\times8\\times0.5^2=1$；$s_D=\\frac12\\times0.1\\times2^2=0.2$。所以依估計先刪 D。",
+              "Question 1: $s_C=\\frac12\\times8\\times0.5^2=1$; $s_D=\\frac12\\times0.1\\times2^2=0.2$. The estimate favors deleting D."
+            ]
+          },
+          {
+            "texts": [
+              "題 2：$\\rho(2)=2^2/(2^2+2^2)=4/8=0.5$。權重仍是 2，只有執行設零或移除才叫刪除。",
+              "Question 2: $\\rho(2)=2^2/(2^2+2^2)=4/8=0.5$. The weight remains 2 until an explicit zeroing or removal operation."
+            ]
+          },
+          {
+            "texts": [
+              "驗算：較大權重也可有較小顯著度。下一個 KP 改問：能否一開始就讓多條連線共用少數參數？",
+              "Check the lesson: a larger weight can have lower saliency. Next ask whether connections can share fewer parameters from the start."
+            ]
+          }
+        ],
+        "bridges": [
+          "題1比較C與D的顯著度，題2區分懲罰值與刪除操作。代入數字後，先刪誰，又算出什麼？",
+          "Question 1 compares C and D using saliency; question 2 distinguishes a penalty from deletion. What do the numbers give?"
+        ],
+        "coaches": [
+          "請讀者將本頁兩個結論各連回前面的反例：重要性不只看大小，數值懲罰不等於結構刪除。這樣收尾能為權重共享建立動機。",
+          "Connect the answers to the earlier misconceptions: magnitude alone is not importance, and a penalty is not deletion. This motivates sharing parameters next."
+        ],
+        "layout": "11-saliency-practice"
+      }
+    ],
+    "12": [
+      {
+        "titles": [
+          "同一筆畫換個位置，模型還認得出來嗎？",
+          "Can the model recognize the same stroke at a new position?"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**轉換不變性**：對指定轉換 T，分類結果滿足 $c(Tx)=c(x)$，叫轉換不變性；先說清楚是哪一種轉換。",
+              "**Transformation invariance**: For a specified transformation T, invariance means $c(Tx)=c(x)$. State which transformation is intended."
+            ],
+            "terms": [
+              "轉換不變性",
+              "Transformation invariance"
+            ]
+          },
+          {
+            "texts": [
+              "圖中同一條三格直筆畫向右移兩格，沒有被裁掉；我們希望類別不變，不要求每個中間數字都不變。",
+              "The same three-pixel stroke shifts right by two cells without cropping. Its class should stay the same; intermediate arrays need not."
+            ]
+          }
+        ],
+        "bridges": [
+          "KP11 透過懲罰與剪枝減少不必要的自由度。若不同位置本來就該用同一種判斷，能不能直接共用參數？",
+          "KP11 removed unnecessary freedom. If positions need the same judgment, can they reuse parameters from the start?"
+        ],
+        "coaches": [
+          "開場只談平移，不把旋轉與縮放一起承諾。這是極小的筆畫例子，不是辨識郵遞區號的實驗，也沒有宣稱它能分所有數字。",
+          "Start with translation rather than promising rotation and scale invariance too. This tiny stroke example is not a postal-code recognition experiment."
+        ],
+        "layout": "12-shift"
+      },
+      {
+        "titles": [
+          "每個位置先看附近的一小塊影像",
+          "Each position first examines a small local patch"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**感受野**：某個單元直接接收的輸入範圍叫感受野；本例是影像中一塊 3×3 的視窗。",
+              "**Receptive field**: A receptive field is the input region directly visible to a unit; here it is a 3×3 patch."
+            ],
+            "terms": [
+              "感受野",
+              "Receptive field"
+            ]
+          },
+          {
+            "texts": [
+              "影像是 6×6。視窗每次移一格、不補邊，左上角共有 $4\\times4=16$ 個合法位置。",
+              "The image is 6×6. A stride-one 3×3 window with no padding has $4\\times4=16$ valid positions."
+            ]
+          },
+          {
+            "texts": [
+              "一個位置看九個數字；不同位置看到的資料不同，但可以使用相同的判斷規則。",
+              "One position sees nine numbers. Positions see different data but can apply the same rule."
+            ]
+          }
+        ],
+        "bridges": [
+          "同一筆畫換位置，希望類別仍然相同。若各位置要做相同判斷，先讓它們看多大的視窗？",
+          "The same three-pixel stroke shifts without cropping. What local patch should each position inspect to recognize it?"
+        ],
+        "coaches": [
+          "請讀者沿著橘框數出三列三欄，再親手算水平方向6減3加1等於4。不要將整個輸入大小誤當每個單元的感受野。",
+          "Count the orange patch's three rows and columns, then compute six minus three plus one positions. The receptive field is not the whole image."
+        ],
+        "layout": "12-patch"
+      },
+      {
+        "titles": [
+          "同一組九個權重，可以重複計算每個視窗",
+          "Reuse one set of nine weights at every window"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**權重共享**：多條對應連線被限制使用同一個可調數值，叫權重共享；更新時也只更新這個共同數值。",
+              "**Weight sharing**: Weight sharing constrains corresponding connections to use one adjustable value, updated as a single parameter."
+            ],
+            "terms": [
+              "權重共享",
+              "Weight sharing"
+            ]
+          },
+          {
+            "texts": [
+              "**卷積核**：滑動視窗重用的權重矩陣稱為卷積核；本例中欄為 1，其餘為 0，偏置為 0。",
+              "**Kernel**: A kernel is the weight matrix reused across windows; this example has ones in the middle column, zeros elsewhere and zero bias."
+            ],
+            "terms": [
+              "卷積核",
+              "Kernel"
+            ]
+          },
+          {
+            "texts": [
+              "中欄是 $1,1,1$ 的視窗，分數為 $1\\times1+1\\times1+1\\times1=3$；這只是這個局部特徵的分數。",
+              "A patch with middle column $1,1,1$ scores $1\\times1+1\\times1+1\\times1=3$, a score for this local feature only."
+            ]
+          }
+        ],
+        "bridges": [
+          "每個感受野看3×3九個數字，共有16個位置。為何同一種筆畫要學16套規則，能不能共用？",
+          "A receptive field sees nine numbers at each of sixteen positions. Can those positions reuse one set of weights?"
+        ],
+        "coaches": [
+          "嚴格說這個未翻轉核的運算是互相關，深度學習常稱卷積。先聚焦重用同一組係數，不把分數3誤讀為類別3或三倍機率。",
+          "The unflipped-kernel operation is cross-correlation, commonly called convolution in deep learning. The score 3 is neither class 3 nor a probability."
+        ],
+        "layout": "12-kernel"
+      },
+      {
+        "titles": [
+          "各位置的分數排起來，就是一張特徵圖",
+          "Arrange local scores into a feature map"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**特徵圖**：把每個視窗的分數依其位置排成陣列，叫特徵圖；本例大小是 4×4。",
+              "**Feature map**: A feature map arranges local responses by position; this one is 4×4."
+            ],
+            "terms": [
+              "特徵圖",
+              "Feature map"
+            ]
+          },
+          {
+            "texts": [
+              "左圖是平移前的反應，右圖是同一權重看平移後影像的反應；最大的分數都為 3，但位置不同。",
+              "The maps show responses before and after image translation using the same weights. Both maxima are 3, at different locations."
+            ]
+          },
+          {
+            "texts": [
+              "卷積核只比較局部數值；它並沒有自動移除「這個特徵在哪裡」的資訊。",
+              "The kernel evaluates local data; it does not automatically discard where the feature occurs."
+            ]
+          }
+        ],
+        "bridges": [
+          "同一卷積核在每個視窗重用九個權重。算完每個視窗的分數後，怎麼保留它出現的位置？",
+          "One reusable set of nine weights gives a local feature score. How do we organize scores while retaining positions?"
+        ],
+        "coaches": [
+          "請讀者找兩張圖中值為3的位置，並和原影像筆畫的位置對照。保留位置有時正是偵測與分割任務需要的資訊。",
+          "Locate the value 3 in both maps and relate it to the original stroke. Localization is useful in detection and segmentation tasks."
+        ],
+        "layout": "12-maps"
+      },
+      {
+        "titles": [
+          "共享權重通常讓反應跟著移動，而不是原地不變",
+          "Shared weights usually make responses move with the input"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**平移等變性**：輸入平移，輸出也按相對應方式平移，寫成 $F(Tx)=TF(x)$，稱為平移等變性。",
+              "**Translation equivariance**: Translation equivariance means a translated input produces a correspondingly translated response: $F(Tx)=TF(x)$."
+            ],
+            "terms": [
+              "平移等變性",
+              "Translation equivariance"
+            ]
+          },
+          {
+            "texts": [
+              "F 是從影像算特徵圖的運算；T 表示平移。此時通常 $F(Tx)\\ne F(x)$，因為高分的位置變了。",
+              "F maps an image to a feature map, and T is translation. Usually $F(Tx)\\ne F(x)$ because the high-response position changes."
+            ]
+          },
+          {
+            "texts": [
+              "整數平移、步長、補邊與邊界條件必須相容；裁掉物件時，也不能保證同樣反應。",
+              "Integer shifts, stride, padding and boundary conditions must be compatible; cropping can also destroy the correspondence."
+            ]
+          }
+        ],
+        "bridges": [
+          "兩張特徵圖的最大分數都是3，但位置不同。反應跟著輸入移動，算不算整張特徵圖不變？",
+          "The feature map retains local responses by position. Both maxima are three at different locations: is the map itself unchanged?"
+        ],
+        "coaches": [
+          "這是對來源「反應完全相同」的關鍵澄清：對應位置的局部計算相同，不是每個固定位置的輸出都不變。",
+          "Clarify the source's phrase identical response: corresponding local computations agree, not every fixed-position output."
+        ],
+        "layout": "12-maps"
+      },
+      {
+        "titles": [
+          "再把位置彙整掉，才可能得到不變的分類特徵",
+          "Aggregating over position can create an invariant feature"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**最大值彙整**：從整張特徵圖只取最大值，$z=\\max_{i,j}F(x)_{ij}$，叫全域最大值彙整。",
+              "**Global max pooling**: Global max pooling retains only $z=\\max_{i,j}F(x)_{ij}$ from the feature map."
+            ],
+            "terms": [
+              "最大值彙整",
+              "Global max pooling"
+            ]
+          },
+          {
+            "texts": [
+              "本例平移前後都是 $z=3$。若後續分類只依 z，這兩張影像就有相同判斷依據。",
+              "Both images give $z=3$. A later classifier using only z receives the same feature for these two images."
+            ]
+          },
+          {
+            "texts": [
+              "這只驗證本例與保留特徵的平移；彙整也會丟位置，未必適合需要精確定位的任務。",
+              "This checks the example and translations preserving the feature. Pooling loses location and may be inappropriate for precise localization."
+            ]
+          }
+        ],
+        "bridges": [
+          "平移等變性讓高分位置跟著移動。若分類只在乎筆畫有沒有出現，能不能把位置彙整掉？",
+          "Translation equivariance gives a correspondingly translated response. How can classification discard position while retaining the feature?"
+        ],
+        "coaches": [
+          "不把一次數值相同宣稱為所有影像、所有平移都成立的定理。有限視窗、遮擋、步長及邊界都可能破壞條件。",
+          "One equality is not a theorem for every image or translation. Cropping, occlusion, stride and boundaries can break the assumptions."
+        ],
+        "layout": "12-maps"
+      },
+      {
+        "titles": [
+          "十六個位置共用一套參數，從一百六十減為十",
+          "Sharing across sixteen positions reduces one hundred sixty parameters to ten"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "不共享：16 個位置各自有九個權重與一個偏置，$16\\times(9+1)=160$。",
+              "Without sharing, sixteen positions each have nine weights and one bias: $16\\times(9+1)=160$."
+            ]
+          },
+          {
+            "texts": [
+              "共享：所有位置共用九個權重與一個偏置，只有 $9+1=10$ 個；運算仍會在十六個位置執行。",
+              "Sharing uses just nine weights and one bias: $9+1=10$. Computation still runs at all sixteen positions."
+            ]
+          },
+          {
+            "texts": [
+              "這個減量需要共享假設適合任務；參數少不代表每個問題都更準，也不代表運算次數只剩十分之一。",
+              "The reduction is useful only when the sharing assumption fits the task. Fewer parameters guarantee neither better accuracy nor proportional computation savings."
+            ]
+          }
+        ],
+        "bridges": [
+          "全域最大值彙整讓本例兩張影像都得到3。除了這種不變特徵，共用參數本身省下多少數字？",
+          "Global max pooling retains the same scalar in this example. How many adjustable numbers does sharing also save?"
+        ],
+        "coaches": [
+          "這裡連偏置也共享，若偏置逐位置獨立就不是10個。請分開數參數儲存、連線使用次數與乘加運算次數。",
+          "Biases are shared too; position-specific biases would change the count. Distinguish parameter storage, uses and arithmetic operations."
+        ],
+        "layout": "compare"
+      },
+      {
+        "titles": [
+          "共用權重的梯度，要把所有使用位置的貢獻加起來",
+          "A shared weight accumulates gradients from every use"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "設共同權重為 k，$r_p$ 是位置 p 的輸入分數，$x_p$ 是乘上 k 的輸入，$\\delta_p=\\partial J/\\partial r_p$。",
+              "Let k be a shared weight, r_p the preactivation at position p, x_p its input, and $\\delta_p=\\partial J/\\partial r_p$."
+            ]
+          },
+          {
+            "texts": [
+              "鏈鎖法則：$\\partial J/\\partial k=\\sum_p\\delta_px_p$。兩個位置若給 $0.2\\times3$ 與 $-0.1\\times1$，總梯度 $0.6-0.1=0.5$。",
+              "The chain rule gives $\\partial J/\\partial k=\\sum_p\\delta_px_p$. Contributions $0.2\\times3$ and $-0.1\\times1$ sum to $0.6-0.1=0.5$."
+            ]
+          },
+          {
+            "texts": [
+              "學習率 $\\eta=0.1$、原 k=1 時，更新 $k=1-0.1\\times0.5=0.95$；所有位置接著都用 0.95。",
+              "With learning rate $\\eta=0.1$ and k=1, update $k=1-0.1\\times0.5=0.95$. Every position then uses 0.95."
+            ]
+          }
+        ],
+        "bridges": [
+          "16個位置共用九權重與一偏置，只需10個參數。每個位置都使用同一數字，訓練時怎麼更新它？",
+          "Sharing uses just nine weights and one bias across sixteen positions. How should one shared value receive updates from every position?"
+        ],
+        "coaches": [
+          "位置梯度不是輪流覆蓋共同權重，而是依計算圖累積。若損失定義取平均，平均因子已包含在delta，不能再任意多除一次。",
+          "Uses contribute additively rather than overwriting the parameter. If loss is averaged, delta already carries that scaling; do not divide again arbitrarily."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "不變特徵、架構約束與資料擴增，是三種路線",
+          "Invariant features, architectural constraints and augmentation are different routes"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "選不變特徵：先把資料轉成對指定變換不敏感的表示，但可能丟掉辨識所需資訊。",
+              "Choose invariant features, accepting that some useful information may be discarded."
+            ]
+          },
+          {
+            "texts": [
+              "架構約束：共享權重與適當彙整，明確限制哪些計算必須相同。",
+              "Constrain architecture with shared weights and suitable aggregation, specifying which computations should match."
+            ]
+          },
+          {
+            "texts": [
+              "資料擴增：用合理的變換產生訓練例子，但有限例子通常不保證所有變換下完全不變。",
+              "Augment training data with valid transformations; a finite augmented sample usually does not guarantee exact invariance everywhere."
+            ]
+          }
+        ],
+        "bridges": [
+          "共用權重的梯度要累積所有位置的貢獻。若想對轉換更穩定，除了架構共享還有哪些路線？",
+          "A shared weight accumulates gradients from every use. What other approaches complement architecture constraints for transformation stability?"
+        ],
+        "coaches": [
+          "比較三條路的假設，不把它們講成互斥選項。旋轉6與9可能改變類別，應先判斷指定變換是否真的保留標籤。",
+          "The routes can be combined. Rotating a six into a nine can change the class; first check whether the transformation preserves labels."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "高階網路讓像素乘積，也參與加權計分",
+          "Higher-order networks also weight products of pixels"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "**高階網路**：活化前的分數包含輸入乘積，例如 $v=b+\\sum_i a_ix_i+\\sum_{j,k}c_{jk}x_jx_k$，稱為高階網路。",
+              "**Higher-order network**: A higher-order network includes input products in its preactivation, for example $v=b+\\sum_i a_ix_i+\\sum_{j,k}c_{jk}x_jx_k$."
+            ],
+            "terms": [
+              "高階網路",
+              "Higher-order network"
+            ]
+          },
+          {
+            "texts": [
+              "x_i 是像素值，a_i 是單點權重，c_jk 是像素對的權重，b 是偏置；再經活化 $f(v)$。",
+              "x_i is a pixel value, a_i a single-pixel weight, c_jk a pair weight, and b a bias, followed by activation $f(v)$."
+            ]
+          },
+          {
+            "texts": [
+              "例如兩格都為 1，乘積為 1；只要其中一格為 0，乘積就為 0。像素對能描述位置間的聯合作用。",
+              "For binary pixels the product is one only when both are one. Pair terms can encode joint spatial evidence."
+            ]
+          }
+        ],
+        "bridges": [
+          "不變特徵、架構約束與資料擴增可以互補。架構約束若再考慮兩個像素的乘積，會得到什麼模型？",
+          "Invariant features, architectural constraints and data augmentation can be combined. How can architecture also represent products of pixels?"
+        ],
+        "coaches": [
+          "高階指輸入組合的次數，不是隱藏層更多。這個式子是二階示例，不把任意深網一律稱為高階網路。",
+          "Order refers to the degree of input products, not network depth. This is a second-order example, not a name for all deep networks."
+        ],
+        "layout": "12-pair"
+      },
+      {
+        "titles": [
+          "純平移保留的是位移向量，不只是斜率",
+          "Pure translation preserves displacement, not merely slope"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "兩端點同時加位移 t，差向量不變：$(p_k+t)-(p_j+t)=p_k-p_j$。",
+              "Translating endpoints by t preserves displacement: $(p_k+t)-(p_j+t)=p_k-p_j$."
+            ]
+          },
+          {
+            "texts": [
+              "圖中兩條藍線位移都是 $(1,1)$，可按同一位移組共享；橘線位移 $(2,2)$，雖同斜率卻不是純平移的同一線段。",
+              "The blue pairs both have displacement $(1,1)$ and can share as one displacement group. The orange pair $(2,2)$ has the same slope but is not its translation."
+            ]
+          },
+          {
+            "texts": [
+              "因此「同斜率就夠」過於粗略；若要整體不變，單點項、邊界處理及讀出方式也須符合相同對稱要求。",
+              "Matching slopes alone is too coarse. Whole-model invariance also requires compatible single-pixel terms, boundaries and readout."
+            ]
+          }
+        ],
+        "bridges": [
+          "高階網路讓像素對的乘積參與分數。每一對位置形成線段，純平移時應保留什麼幾何量？",
+          "A higher-order network weights products of pixels. Which geometric quantity of a pixel pair is preserved by translation?"
+        ],
+        "coaches": [
+          "這是來源平移約束說法的修正。分享同斜率可能施加更強約束，但不能拿斜率單獨辨認平移的等價類。",
+          "This corrects the source's translation description. Slope-only tying may impose extra constraints, but slope does not identify translation-equivalent segments."
+        ],
+        "layout": "12-pair"
+      },
+      {
+        "titles": [
+          "旋轉保留距離，但網格與其他項也要相容",
+          "Rotation preserves length, subject to grid and model conditions"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "旋轉保留線段長度，因此可讓相同長度的像素對共用二階係數；這是把幾何先驗放進模型。",
+              "Rotation preserves segment length, so equal-length pixel pairs can share second-order coefficients, encoding a geometric prior."
+            ]
+          },
+          {
+            "texts": [
+              "在有限像素網格上，任意角度旋轉常需插值或裁切；只有相容的轉換、項與彙整，才可能得到精確不變性。",
+              "On a finite pixel grid, arbitrary rotations require interpolation or cropping. Exact invariance needs compatible transformations, terms and aggregation."
+            ]
+          },
+          {
+            "texts": [
+              "高階網路可減少自由參數，但來源也提醒此類方法未廣泛成為主流；不能把幾何直覺當成無條件效能保證。",
+              "Sharing can reduce parameters, but the source notes limited adoption of these higher-order methods. Geometry alone is not a performance guarantee."
+            ]
+          }
+        ],
+        "bridges": [
+          "純平移保留完整位移向量，不只是斜率。若改成旋轉，還有哪些線段可以用相同係數？",
+          "Pure translation preserves displacement, not merely slope. Which segment property survives rotation and suggests a different tying rule?"
+        ],
+        "coaches": [
+          "不把這一頁和現代一般卷積混為一談：普通平移共享核不會自動保證旋轉不變。兩種共享群組使用不同的對稱規則。",
+          "Ordinary translation-shared kernels do not automatically guarantee rotation invariance. The grouping rules represent different symmetries."
+        ],
+        "layout": "12-pair"
+      },
+      {
+        "titles": [
+          "額外共享一個平方項，不會讓整個模型自動旋轉不變",
+          "A shared squared-norm term does not make the whole model invariant"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "$v=b+\\sum_i a_ix_i+c\\sum_i x_i^2$。c 是所有平方項共同的係數，只比原來多一個參數；不是每格各加一個。",
+              "$v=b+\\sum_i a_ix_i+c\\sum_i x_i^2$. One shared coefficient c adds one parameter, not one per pixel."
+            ]
+          },
+          {
+            "texts": [
+              "平方和是 $\\|x\\|^2$：$(1,0)$ 與 $(0,1)$ 都得 $1^2+0^2=1$。平方和本身對正交旋轉不變。",
+              "The squared sum is $\\|x\\|^2$: both $(1,0)$ and $(0,1)$ give $1^2+0^2=1$. This term is invariant under orthogonal rotations."
+            ]
+          },
+          {
+            "texts": [
+              "但線性項可能不同：若 $a=(1,0)$，兩點分數分別為 $b+1+c$ 與 $b+c$。來源的泛化效益是引用主張，不是這個算例的保證。",
+              "The linear term can differ: for $a=(1,0)$, scores are $b+1+c$ and $b+c$. Reported generalization benefits are cited claims, not proved by this example."
+            ]
+          }
+        ],
+        "bridges": [
+          "旋轉保留線段長度，但有限網格仍有取樣限制。來源另有平方和的特例，它又共享什麼參數？",
+          "Rotation preserves segment length, subject to grid conditions. What single shared squared-norm coefficient does the circular model add?"
+        ],
+        "coaches": [
+          "這裡的旋轉是向量空間中的正交變換；影像旋轉還涉及像素取樣。用兩點反例讓讀者分清一個項不變和整個分類器不變。",
+          "Orthogonal vector rotations and sampled image rotations are distinct. The two-point counterexample separates an invariant term from an invariant classifier."
+        ],
+        "layout": "12-radius"
+      },
+      {
+        "titles": [
+          "郵遞區號的歷史例子，重點是局部連線與共享",
+          "The postal-code example combines locality and shared weights"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "來源描述三個隱藏層，前兩層由特徵圖組成；每個單元只接收前層局部視窗，同一張圖上的對應連線共用權重。",
+              "The source describes three hidden layers, with feature maps in the first two. Units receive local windows and corresponding connections share weights within a map."
+            ]
+          },
+          {
+            "texts": [
+              "這與本例的三格筆畫是同一個共享原理，但不是同一架構；沒有足夠原始細節，不能推算其完整參數數或準確率。",
+              "It shares the principle of our stroke example, not its architecture. The available description does not justify a full parameter count or accuracy claim."
+            ]
+          },
+          {
+            "texts": [
+              "下一步：先問什麼變換該保留標籤，再決定特徵、共享規則與讀出方式；別只問「共享一定比較好嗎」。",
+              "First ask which transformations should preserve labels, then choose features, tying rules and readout instead of assuming sharing is always better."
+            ]
+          }
+        ],
+        "bridges": [
+          "共享平方項本身不變，不代表整個模型旋轉不變。回到第一階共享，歷史的郵遞區號網路如何安排？",
+          "An invariant squared-norm term is not an invariant classifier. How did the source postal-code network organize first-order sharing?"
+        ],
+        "coaches": [
+          "請讀者指出本例的哪些限制可能不適合真實字形：筆畫粗細、字體、邊界與旋轉。這種限制檢查比背一個歷史架構的層數更可遷移。",
+          "Ask which toy assumptions fail for real glyphs: width, style, borders and rotations. This transfers better than memorizing one layer count."
+        ],
+        "layout": "flow"
+      },
+      {
+        "titles": [
+          "延伸：把影像改成八乘八，重新數參數",
+          "Extension: count parameters for an eight-by-eight image"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "題 1：8×8 輸入、3×3 視窗、步長 1、不補邊，且偏置也共享。特徵圖多大？共享與不共享各幾個參數？",
+              "Question 1: use an 8×8 input, 3×3 window, stride one, no padding and a shared bias. Find map size and shared versus unshared counts."
+            ]
+          },
+          {
+            "texts": [
+              "題 2：共享後高分位置跟著輸入移動，這叫等變還是不變？提示：比較 $F(Tx)=TF(x)$ 和 $F(Tx)=F(x)$。",
+              "Question 2: high responses follow an input shift. Is this equivariance or invariance? Compare $F(Tx)=TF(x)$ with $F(Tx)=F(x)$."
+            ]
+          }
+        ],
+        "bridges": [
+          "郵遞區號網路用局部視窗與對應連線共享。回到本例，把影像變成8×8後，參數與位置數怎麼變？",
+          "The postal-code example combines local windows with corresponding shared connections. If our toy image grows, which counts change?"
+        ],
+        "coaches": [
+          "自己列出每個位置的九權重加一偏置後，再乘位置數。第二題先看輸出是整張陣列還是一個彙整值，不要只因分數最大值相同就說整張圖不變。",
+          "Count nine weights and one bias per position before multiplying. For question 2 distinguish the whole array from a pooled scalar."
+        ],
+        "layout": "12-kernel"
+      },
+      {
+        "titles": [
+          "延伸：特徵圖六乘六，共享仍只要十個參數",
+          "Extension: a six-by-six map still shares only ten parameters"
+        ],
+        "cards": [
+          {
+            "texts": [
+              "① 每個方向 $8-3+1=6$ 個位置，共 $6\\times6=36$，特徵圖為 6×6。",
+              "1. Each direction has $8-3+1=6$ positions, giving $6\\times6=36$: a 6×6 map."
+            ]
+          },
+          {
+            "texts": [
+              "② 不共享：$36\\times(9+1)=360$。共享：$9+1=10$。影像變大增加使用次數，不增加這一組共享參數。",
+              "2. Without sharing: $36\\times(9+1)=360$. With sharing: $9+1=10$. A larger image adds uses, not parameters in this shared kernel."
+            ]
+          },
+          {
+            "texts": [
+              "③ 高分位置跟著移動是等變；若再做適當彙整且條件成立，才可能得到不變特徵。",
+              "3. A moving response is equivariance; suitable aggregation under the required conditions can yield an invariant feature."
+            ]
+          }
+        ],
+        "bridges": [
+          "題1要算8×8影像的位置數與共享參數，題2要分等變與不變。逐項核對後，答案是什麼？",
+          "Question 1 changes map size and parameter count; question 2 distinguishes equivariance from invariance. What do the steps give?"
+        ],
+        "coaches": [
+          "用反問收尾：若筆畫被移出影像外，最大值也一定保持嗎？不一定，因為前面的保留特徵條件已被破壞。",
+          "Close by shifting the stroke out of the image: the maximum need not survive because the feature-preservation condition has failed."
+        ],
+        "layout": "12-maps-practice"
+      }
+    ]
+  },
+  "authority": "Direct user request to produce KP10–KP12; established course audience, separate language editions and self-study scope retained",
+  "delegation": "No subagents used",
+  "supplements": "Hand-computed examples, finite-difference check, toy shared convolution, explicitly illustrated data and boundary",
+  "review": "Author-agent review; teacher review pending; no independent student test",
+  "existingFilesPolicy": "New files only; no existing documents modified"
+}
