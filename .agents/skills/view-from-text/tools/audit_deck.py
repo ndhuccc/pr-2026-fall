@@ -76,7 +76,7 @@ def main():
     ap.add_argument("--exclude-fig", action="append", default=[], help="lecture figure id the teacher agreed to leave out (repeatable)")
     ap.add_argument("--speaker-notes", action="store_true", help="every content page must carry speaker notes (P1)")
     ap.add_argument("--minutes", type=float, help="class-time budget for the main line (LEVELS.md section 7): warns when the estimate exceeds it (T1); pages whose step label starts with the extension marker are not counted")
-    ap.add_argument("--max-pages-per-kp", type=int, default=6, help="guideline for the pages of one unit (one knowledge point), extension and continuation pages included; more is allowed when clarity needs it (U1 warns only)")
+    ap.add_argument("--max-pages-per-kp", type=int, default=0, help="optional page limit per unit (U1 warns only); default 0 = no limit (the 6-page guideline was withdrawn on 2026-10-25)")
     ap.add_argument("--source", action="append", default=[], help="source text file(s): O2 warns when pages repeat long runs of the source (14+ identical CJK characters)")
     ap.add_argument("--narrative", action="store_true", help="require a bridge node (name contains 'bridge') on every content page and speaker notes that link to the previous and next page (R1, R3); see .agents/skills/NARRATIVE.md")
     ap.add_argument("--terms", help="term registry JSON (CLARITY.md C12): {\"term\": {\"aliases\": [...]}}; every term needs a card node named 'term:<term>' on or before its first use, and on a main-line page if any main-line page uses it (J1-J3)")
@@ -426,7 +426,7 @@ def main():
     # ------------------------------------------------------------ U1 pages per knowledge point, O2 originality
     per_scene = Counter(sid for (sid, _idx) in pages)
     for sid, c in per_scene.items():
-        if c > args.max_pages_per_kp:
+        if args.max_pages_per_kp and c > args.max_pages_per_kp:
             Wn("U1", f"{S[sid]['name']!r} has {c} pages; the guideline is {args.max_pages_per_kp}. More is allowed when clarity needs it: say which unit grew and why in the delivery summary")
     if args.source:
         stream = lambda t: "".join(CJK.findall(re.sub(r"\$[^$]*\$", "", t)))
