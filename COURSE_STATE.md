@@ -46,6 +46,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-10-26:第 5、6 週 lec05 的 KP00–KP26 中文版講義(`lectures/lec05-kpNN-*.md`)與簡報(`slides/lec05-kpNN-*.jbd.json`)已上網目錄;圖放 `assets/figures/lec05-*.png`;`schedule.md` 第 5 週拆 3 列(KP00–KP12)、第 6 週拆 3 列(KP13–KP26);網站建置無警告、`sync_nav.py --strict` 通過。英文版與下載包留在 `lec05/materials/`,未上網;簡報在 JianBauDau 的原生播放與 PDF 驗收仍待教師確認。
+
 (最新的在最上面。格式:`YYYY-MM-DD — 決定或異動內容`)
 
 - 2026-10-24 07:49 — 依老師指示,網站的簡報下載只提供 HTML:`scripts/build_docs.py` 不再把 `.jbd.json` 發佈到網站(來源檔仍在 Repo)、下載頁移除 JSON 欄與 JianBauDau 播放器連結,進度表與講義指向 `slides/…jbd.json` 的連結改指向同名 HTML;僅在某份簡報沒有網頁版(轉換失敗或缺少 Node.js)時才退回提供 JSON 與播放器連結。網站體積隨之縮小(idl 約 713→361 MB、pr 約 637→390 MB)。三個課程 Repo 相同。

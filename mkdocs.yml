@@ -77,6 +77,35 @@ nav:
           - KP14 硬間隔 SVM: lectures/lec03-kp14-hard-margin.md
           - KP15 軟間隔與鬆弛變數: lectures/lec03-kp15-soft-margin.md
           - KP16 多類別 ECOC: lectures/lec03-kp16-multiclass-ecoc.md
+      - 第 5 週 Week 5:
+          - KP00 本章路線圖: lectures/lec05-kp00-overview.md
+          - KP01 XOR 與一條線的極限: lectures/lec05-kp01-xor.md
+          - KP02 兩層感知器: lectures/lec05-kp02-two-layer-perceptron.md
+          - KP03 多條線的編碼: lectures/lec05-kp03-polyhedral-codes.md
+          - KP04 三層感知器: lectures/lec05-kp04-three-layer-perceptron.md
+          - KP05 構造式方法: lectures/lec05-kp05-constructive-methods.md
+          - KP06 反向傳播的梯度: lectures/lec05-kp06-backprop-gradient.md
+          - KP07 反向傳播的演算法: lectures/lec05-kp07-backprop-algorithm.md
+          - KP08 反向傳播的加速: lectures/lec05-kp08-backprop-speedups.md
+          - KP09 代價函數的選擇: lectures/lec05-kp09-cost-functions.md
+          - KP10 網路大小與早停: lectures/lec05-kp10-network-size.md
+          - KP11 剪枝與正則化: lectures/lec05-kp11-pruning-regularization.md
+          - KP12 權重共享: lectures/lec05-kp12-weight-sharing.md
+      - 第 6 週 Week 6:
+          - KP13 廣義線性分類器: lectures/lec05-kp13-generalized-linear.md
+          - KP14 Cover 定理: lectures/lec05-kp14-cover-theorem.md
+          - KP15 多項式分類器: lectures/lec05-kp15-polynomial.md
+          - KP16 RBF 網路: lectures/lec05-kp16-rbf.md
+          - KP17 通用近似定理: lectures/lec05-kp17-universal-approx.md
+          - KP18 機率神經網路: lectures/lec05-kp18-pnn.md
+          - KP19 非線性 SVM 與核技巧: lectures/lec05-kp19-kernel-svm.md
+          - KP20 核技巧的通用化: lectures/lec05-kp20-beyond-svm.md
+          - KP21 表示定理與稀疏化: lectures/lec05-kp21-representer.md
+          - KP22 穩健迴歸與脊迴歸: lectures/lec05-kp22-robust-ridge.md
+          - KP23 決策樹: lectures/lec05-kp23-decision-tree.md
+          - KP24 結合分類器: lectures/lec05-kp24-combining.md
+          - KP25 Boosting 與 AdaBoost: lectures/lec05-kp25-adaboost.md
+          - KP26 類別不平衡: lectures/lec05-kp26-imbalance.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
