@@ -277,7 +277,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**The idea and the naive worry**: design in a $k$-dimensional space by using $y_i^Ty$; but $k\\gg l$, so surely the cost explodes?",
+      "text": "**The idea and the naive worry**: design in a $k$-dimensional space by using $\\phi(x_i)^T\\phi(x)$; but $k\\gg l$, so surely the cost explodes?",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p2-title": {
@@ -321,7 +321,7 @@
         "rotation": 0
       },
       "width": 1160,
-      "height": 107,
+      "height": 102,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -336,7 +336,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "The naive worry was that the cost explodes when $k\\gg l$. Take one concrete map: how is the mapped inner product $y_i^Ty_j$ computed?",
+      "text": "The naive worry was that the cost explodes when $k\\gg l$. Take one concrete map: how is the mapped inner product $\\phi(x_i)^T\\phi(x_j)$ computed?",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p2-fig1": {
@@ -346,7 +346,7 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 1500,
-        "y": 251,
+        "y": 246,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -376,7 +376,7 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 2080,
-        "y": 251,
+        "y": 246,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -407,13 +407,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 2080,
-        "y": 389,
+        "y": 384,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 105,
+      "height": 112,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -428,7 +428,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**The identity**: for $y=[x_1^2,\\sqrt2x_1x_2,x_2^2]^T$, $y_i^Ty_j=(x_i^Tx_j)^2$.",
+      "text": "**The identity**: for $\\phi(x)=[x_1^2,\\sqrt2x_1x_2,x_2^2]^T$, $y_i^Ty_j=(x_i^Tx_j)^2$.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p2-c2": {
@@ -438,13 +438,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 2080,
-        "y": 504,
+        "y": 506,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 160,
+      "height": 191,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -459,7 +459,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**Check**: $x_i=(1,2)$, $x_j=(2,1)$: $y_i=(1,2.828,4)$, $y_j=(4,2.828,1)$, inner product $4+8+4=16$; the original space gives $4^2=16$, the same; the entry fee is zero.",
+      "text": "**Check**: $x_i=(1,2)$, $x_j=(2,1)$: $\\phi(x_i)=(1,2.828,4)$, $\\phi(x_j)=(4,2.828,1)$, inner product $4+8+4=16$; the original space gives $4^2=16$, the same; the high-dimensional vectors never have to be built.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p3-title": {
@@ -1216,7 +1216,7 @@
         "textAlign": "left",
         "lineHeight": 1.25
       },
-      "text": "The hyperparameters C and γ steer generalization: at γ = 50 training reaches 99.2% but new points fall to 74.7%"
+      "text": "C and γ steer generalization: at γ = 50 training reaches 99.2%, new points 74.7%"
     },
     "lec05kp19-u01-p7-bridge": {
       "id": "lec05kp19-u01-p7-bridge",
@@ -1231,7 +1231,7 @@
         "rotation": 0
       },
       "width": 1160,
-      "height": 89,
+      "height": 70,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1246,7 +1246,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "The Gaussian kernel keeps only 19 support vectors, but γ and C must be fixed beforehand. What happens when they go up or down?",
+      "text": "The Gaussian kernel keeps 19 support vectors, but γ and C must be fixed first. What if they go up or down?",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p7-fig1": {
@@ -1256,7 +1256,7 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 8700,
-        "y": 233,
+        "y": 214,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1286,13 +1286,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 9280,
-        "y": 233,
+        "y": 214,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 122,
+      "height": 91,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1307,7 +1307,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**Hyperparameter**: a parameter set before training rather than solved from the data, here the Gaussian $\\gamma$ and the penalty cap $C$.",
+      "text": "**Hyperparameter**: set before training, not solved from the data: here $\\gamma$ and $C$.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p7-c1": {
@@ -1317,13 +1317,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 9280,
-        "y": 365,
+        "y": 315,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 92,
+      "height": 123,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1338,7 +1338,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**Data** (designed here): rings overlapping more (sd 0.45), $C=10$.",
+      "text": "**Method** (designed here): overlapping rings (sd 0.45); per class 60 training, 500 validation, 500 test points; $C=10$.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p7-c2": {
@@ -1348,13 +1348,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 9280,
-        "y": 467,
+        "y": 448,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 128,
+      "height": 126,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1369,7 +1369,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**Results** (training, new): $\\gamma=0.1$: 88.3%, 87.0% (best); $\\gamma=10$: 98.3%, 79.4%; $\\gamma=50$: 99.2%, 74.7%.",
+      "text": "**Results** (correct: training / 120, validation / 1000, test / 1000): $\\gamma=0.5$: 106, 866 (best on validation), 861; $\\gamma=50$: 119, 753, 747.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p7-c3": {
@@ -1379,13 +1379,13 @@
       "sceneId": "lec05kp19-scene-u01",
       "transform": {
         "x": 9280,
-        "y": 605,
+        "y": 584,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
       "width": 580,
-      "height": 97,
+      "height": 131,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1400,7 +1400,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**C** ($\\gamma=0.5$), new points: $C=0.01$: 84.3%; $C=1$: 86.4% (best); $C=1000$: 82.8% (new-point pick).",
+      "text": "**Choosing**: read the validation column, pick $\\gamma=0.5$, $C=10$: test 86.1%; peeking at the test column for $\\gamma=0.1$ gives 87.0%, optimistic.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p8-title": {
@@ -1582,7 +1582,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "**Limit**: training still needs an $N\\times N$ Gram matrix. **To remember**: an algorithm that uses only inner products gets higher dimensions for free; the price is not knowing the space.",
+      "text": "**Limit**: training still needs an $N\\times N$ Gram matrix. **To remember**: an algorithm that uses only inner products can be lifted to a higher dimension; the price is not knowing the space.",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p9-title": {
@@ -1641,7 +1641,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "Any algorithm using only inner products gets higher dimensions for free, but nobody knows how to pick the best kernel. Is the common hyperbolic-tangent kernel always legal?",
+      "text": "Any algorithm using only inner products can be lifted to a higher dimension, but nobody knows how to pick the best kernel. Is the common hyperbolic-tangent kernel always legal?",
       "shapeKind": "rectangle"
     },
     "lec05kp19-u01-p9-fig1": {
@@ -2221,7 +2221,7 @@
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
-      "speakerNotes": "The previous page worried that the complexity would explode. This page takes one concrete map and asks how the mapped inner product is computed. First the kernel function K: a function that gives the mapped inner product directly, without computing the map first. The identity: for y equal to x1 squared, root 2 times x1 x2, and x2 squared, y_i transpose y_j equals the square of x_i transpose x_j. Check: x_i is (1, 2) and x_j is (2, 1); y_i is (1, 2.828, 4) and y_j is (4, 2.828, 1), with inner product 4 plus 8 plus 4, which is 16; in the original space 1 times 2 plus 2 times 1 is 4, and its square is also 16, the same. The meaning is that the high-dimensional inner product comes from the original-space inner product, so the entry fee is zero. The next page asks whether this map really makes inseparable data separable.",
+      "speakerNotes": "The previous page worried that the complexity would explode. This page takes one concrete map and asks how the mapped inner product is computed. First the kernel function K: a function that gives the mapped inner product directly, without computing the map first. The identity: for y equal to x1 squared, root 2 times x1 x2, and x2 squared, y_i transpose y_j equals the square of x_i transpose x_j. Check: x_i is (1, 2) and x_j is (2, 1); y_i is (1, 2.828, 4) and y_j is (4, 2.828, 1), with inner product 4 plus 8 plus 4, which is 16; in the original space 1 times 2 plus 2 times 1 is 4, and its square is also 16, the same. The meaning is that the high-dimensional inner product comes from the original-space inner product, so the high-dimensional vectors never have to be built. The next page asks whether this map really makes inseparable data separable.",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec05kp19-scene-u01",
@@ -2331,7 +2331,7 @@
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
-      "speakerNotes": "The previous page said the Gaussian kernel keeps only 19 support vectors. This page asks what happens when its gamma and C, which must be fixed beforehand, go up or down. First hyperparameters: parameters set before training rather than solved from the data, here the Gaussian gamma and the penalty cap C. The data were designed here: rings that overlap more, standard deviation 0.45, 60 training and 500 new points per class, C equal to 10, sweeping gamma. Results, training and new points: gamma 0.01 gives 75.0% and 77.2%; gamma 0.1 gives 88.3% and 87.0%, the best; gamma 10 gives 98.3% and 79.4%; gamma 50 gives 99.2% and 74.7%. For C with gamma 0.5: C of 0.01 gives 84.3% on new points, C of 1 gives 86.4%, the best, and C of 1000 gives 82.8%. A large C fits training tighter but new points need not improve. The next page asks why it is cheap when the kernel space is so large.",
+      "speakerNotes": "The previous page said the Gaussian kernel keeps only 19 support vectors. This page asks what happens when its gamma and C, which must be fixed beforehand, go up or down. First hyperparameters: parameters set before training rather than solved from the data, here the Gaussian gamma and the penalty cap C. The data were split in three: 60 training points per class, 500 per class for validation and 500 per class for test, and the hyperparameters were chosen on the validation data. Results, training correct out of 120, validation and test correct out of 1000: gamma 0.1 gives 106, 863 and 870; gamma 0.5 gives 106, 866 and 861, the highest on validation; gamma 50 gives 119, 753 and 747. For C with gamma 0.5, C of 10 is highest on validation. Taking the validation choice, gamma 0.5 and C 10, to the test gives 861 out of 1000, 86.1%; peeking at the test column and picking gamma 0.1 would give 87.0%, a picked number that is optimistic. A tighter fit to training does not always help new points. The next page asks why it is cheap when the kernel space is so large.",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec05kp19-scene-u01",
@@ -2353,7 +2353,7 @@
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
-      "speakerNotes": "The previous page said the hyperparameters gamma and C must be fixed beforehand. This page asks, looking back, why it is still cheap when the kernel space is so large. Explicit feature counts: a polynomial kernel of dimension l and degree q corresponds to l plus q choose q features: l equal to 2 and q equal to 2 gives 6; l equal to 10 and q equal to 3 gives 286; l equal to 100 and q equal to 5 gives 96,560,646; l equal to 784 and q equal to 5 gives 2,515,874,132,157. One kernel value: an inner product and a power, about l multiplications, independent of the kernel-space dimension; the Gaussian space is infinite-dimensional yet costs one distance. The limits: training still needs an N by N Gram matrix and grows with the number of points, and nobody knows how to pick the best kernel. To remember: the kernel trick says any algorithm that uses only inner products gets higher dimensions for free; the price is not knowing which space you are in. The next extension page looks at an illegal kernel.",
+      "speakerNotes": "The previous page said the hyperparameters gamma and C must be fixed beforehand. This page asks, looking back, why it is still cheap when the kernel space is so large. Explicit feature counts: a polynomial kernel of dimension l and degree q corresponds to l plus q choose q features: l equal to 2 and q equal to 2 gives 6; l equal to 10 and q equal to 3 gives 286; l equal to 100 and q equal to 5 gives 96,560,646; l equal to 784 and q equal to 5 gives 2,515,874,132,157. One kernel value: an inner product and a power, about l multiplications, independent of the kernel-space dimension; the Gaussian space is infinite-dimensional yet costs one distance. The limits: training still needs an N by N Gram matrix and grows with the number of points, and nobody knows how to pick the best kernel. To remember: the kernel trick says any algorithm that uses only inner products can be lifted to a higher dimension; the price is not knowing which space you are in. The next extension page looks at an illegal kernel.",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec05kp19-scene-u01",
@@ -2375,7 +2375,7 @@
       "durationMs": 900,
       "holdMs": 500,
       "easing": "smooth",
-      "speakerNotes": "The previous page said any algorithm using only inner products gets higher dimensions for free, but nobody knows how to pick the best kernel. This extension asks whether the common hyperbolic-tangent kernel is always legal. The example was designed here: K equal to tanh of 2 times x transpose z plus 1 on the three points (-1, 0), (1.6, 0.9) and (0.1, -0.8) gives a Gram matrix with eigenvalues minus 0.132, 0.875 and 2.232. The result: a negative eigenvalue violates the Mercer condition; with 10 random points drawn 200 times the tanh kernel has a negative eigenvalue in all 200 draws and the Gaussian kernel in none. The meaning is that this choice of beta equal to 2 and gamma equal to 1 is not a legal kernel and the dual problem need not be convex, a theoretical inference and not measured here; check before using it, or use the Gaussian kernel. The next page poses an exercise.",
+      "speakerNotes": "The previous page said any algorithm using only inner products can be lifted to a higher dimension, but nobody knows how to pick the best kernel. This extension asks whether the common hyperbolic-tangent kernel is always legal. The example was designed here: K equal to tanh of 2 times x transpose z plus 1 on the three points (-1, 0), (1.6, 0.9) and (0.1, -0.8) gives a Gram matrix with eigenvalues minus 0.132, 0.875 and 2.232. The result: a negative eigenvalue violates the Mercer condition; with 10 random points drawn 200 times the tanh kernel has a negative eigenvalue in all 200 draws and the Gaussian kernel in none. The meaning is that this choice of beta equal to 2 and gamma equal to 1 is not a legal kernel and the dual problem need not be convex, a theoretical inference and not measured here; check before using it, or use the Gaussian kernel. The next page poses an exercise.",
       "target": {
         "kind": "scene-point",
         "sceneId": "lec05kp19-scene-u01",
