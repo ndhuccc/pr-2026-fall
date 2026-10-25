@@ -282,16 +282,23 @@ def write_slides_index(stage: Path, generated: frozenset[str] | set[str] = froze
         lines += ["同一週的所有教材在該週的頁籤裡,請點選週次。", ""]
         for lec in sorted(weeks):
             num = int(lec[3:])
-            lines += [f'=== "第 {num} 週"', "", "    | 教材 | 格式 | 下載 |", "    |---|---|---|"]
+            lines += [f'=== "第 {num} 週"', "", "    | 教材 | 中文版 | 英文版 |", "    |---|---|---|"]
+            # 英文版(slug 以 -en 結尾,且有對應的中文版)併入同一列的「英文版」欄。
+            en_of = {sl[: -len("-en")]: sl for sl in weeks[lec] if sl.endswith("-en") and sl[: -len("-en")] in weeks[lec]}
+            en_slugs = set(en_of.values())
+
             def order(slug: str, lec: str = lec) -> str:
                 stem = lec if slug == "" else f"{lec}-{slug}"
                 return slide_label(stem, kp_labels)[1] if slide_label(stem, kp_labels)[0] else "~~" + slug
 
-            for slug in sorted(weeks[lec], key=order):
+            def cell(items: list[tuple[str, str]]) -> str:
+                return " · ".join(f"[{SLIDE_SHORT.get(f, f)}]({n})" for f, n in sorted(items, key=lambda t: t[0])) or "—"
+
+            for slug in sorted((x for x in weeks[lec] if x not in en_slugs), key=order):
                 stem = lec if slug == "" else f"{lec}-{slug}"
                 label = slide_label(stem, kp_labels)[0] or ("本週正課" if slug == "" else slug)
-                for fmt, name in sorted(weeks[lec][slug], key=lambda t: t[0]):
-                    lines.append(f"    | {label} | {SLIDE_SHORT.get(fmt, fmt)} | [{name}]({name}) |")
+                en_items = weeks[lec].get(en_of.get(slug, "\0"), [])
+                lines.append(f"    | {label} | {cell(weeks[lec][slug])} | {cell(en_items)} |")
             lines.append("")
     if others:
         lines += ["## 其他檔案", ""] + [f"- [{name}]({name})" for name in others] + [""]
