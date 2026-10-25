@@ -30,7 +30,11 @@ Figure `lec05-kp26-setup`: Scatter of one training set: 1000 blue majority point
 
 ![How the experiment works](../../assets/figures/lec05-kp26-setup.png)
 
-**Experiment details** (reproducible): implemented with scikit-learn in Python (SVC, DecisionTreeClassifier, AdaBoostClassifier, version 1.9.1 defaults except as listed). On pages 1 to 3 and 5 to 7 the test set is fixed at 5000 + 100 (random seed 998) and the training sets use seeds 0 to 19; the sampling of oversampling and undersampling reuses the training seed. On page 4 the test set is fixed at 2000 + 2000 (seed 997) and the training sets again use seeds 0 to 19, 20 runs, with the class centres differing only along the $x_1$ axis by 4 or 1.5. The tree is CART (Gini impurity, random seed 0); AdaBoost uses depth-1 decision stumps, 100 rounds and learning rate 1. The SVM class weights are $n/(2n_c)$: rare $1020/(2\times 20)=25.5$, majority $1020/(2\times 1000)=0.51$, a ratio of 50. A mean count is the mean of 20 integer counts, so it can have decimals (for example 5.85 = 117 / 20). TP in each cell of page 4 (of 2000 rare test points): easy task 1950.9, 1831.8, 1335.1, 1561.1, 863.8; hard task 1571.65, 298, 0.35, 0.65, 0.
+**Experiment details** (reproducible): implemented with scikit-learn in Python (SVC, DecisionTreeClassifier, AdaBoostClassifier, version 1.9.1 defaults except as listed). On pages 1 to 3 and 5 to 7 the test set is fixed at 5000 + 100 (random seed 998) and the training sets use seeds 0 to 19; the sampling of oversampling and undersampling reuses the training seed. On page 4 the test set is fixed at 2000 + 2000 (seed 997) and the training sets again use seeds 0 to 19, 20 runs, with the class centres differing only along the $x_1$ axis by 4 or 1.5.
+
+The tree is CART (Gini impurity, random seed 0); AdaBoost uses depth-1 decision stumps, 100 rounds and learning rate 1. The SVM class weights are $n/(2n_c)$: rare $1020/(2\times 20)=25.5$, majority $1020/(2\times 1000)=0.51$, a ratio of 50.
+
+A mean count is the mean of 20 integer counts, so it can have decimals (for example 5.85 = 117 / 20). TP in each cell of page 4 (of 2000 rare test points): easy task 1950.9, 1831.8, 1335.1, 1561.1, 863.8; hard task 1571.65, 298, 0.35, 0.65, 0.
 
 ### 2. From counts to measures
 

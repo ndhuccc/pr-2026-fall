@@ -60,7 +60,9 @@ Figure `lec05-kp23-ex42`: Example 4.2 recomputed against the book's numbers.
 
 ### 5. Why weighting
 
-**Example** (designed here): a parent of 5 against 5 ($I=1$). Split A: Yes $(1,0)$, No $(4,5)$; split B: Yes $(4,1)$, No $(1,4)$. Weighted: A $=0.108$, B $=0.278$, so B is chosen. Unweighted (children simply averaged): A $=0.504$, B $=0.278$, so A is chosen; one pure point is mistaken for a big gain. **Common misconception**: a split is good whenever a child becomes pure; making only a tiny subset pure is worth little.
+**Example** (designed here): a parent of 5 against 5 ($I=1$). Split A: Yes $(1,0)$, No $(4,5)$; split B: Yes $(4,1)$, No $(1,4)$. Weighted: A $=0.108$, B $=0.278$, so B is chosen.
+
+Unweighted (children simply averaged): A $=0.504$, B $=0.278$, so A is chosen; one pure point is mistaken for a big gain. **Common misconception**: a split is good whenever a child becomes pure; making only a tiny subset pure is worth little.
 
 Figure `lec05-kp23-weight`: the scores of two splits with and without weighting.
 
@@ -84,7 +86,9 @@ Figure `lec05-kp23-prune`: pruning strength and accuracy.
 
 ### 8. Variance and bagging
 
-**Bagging**: draw $B$ samples with replacement from the training set, grow a tree on each and take a majority vote. **Variance** (designed here): on 8 training sets of the same size every first cut is on the second feature, with thresholds 0.42, 0.11, 0.12, 0.09, 0.22, 0.26, 0.22, 0.29 and 22 to 33 leaves. Averages (20 training sets, new points): a single tree 84.4±1.4%; bagging with 25 trees 87.7±1.1%; a random forest (bagging plus random features per node) of 25 trees 87.8±1.1%. A tree is hierarchical, so an error high up reaches every leaf below; averaging lowers the variance. **To remember**: a decision tree makes hierarchical, sequential hard decisions while a neural network makes parallel soft ones; the MLP wins on error rate and the tree on training time (source).
+**Bagging**: draw $B$ samples with replacement from the training set, grow a tree on each and take a majority vote. **Variance** (designed here): on 8 training sets of the same size every first cut is on the second feature, with thresholds 0.42, 0.11, 0.12, 0.09, 0.22, 0.26, 0.22, 0.29 and 22 to 33 leaves. Averages (20 training sets, new points): a single tree 84.4±1.4%; bagging with 25 trees 87.7±1.1%; a random forest (bagging plus random features per node) of 25 trees 87.8±1.1%.
+
+A tree is hierarchical, so an error high up reaches every leaf below; averaging lowers the variance. **To remember**: a decision tree makes hierarchical, sequential hard decisions while a neural network makes parallel soft ones; the MLP wins on error rate and the tree on training time (source).
 
 Figure `lec05-kp23-bag`: the mean accuracy of three methods and 8 root thresholds.
 

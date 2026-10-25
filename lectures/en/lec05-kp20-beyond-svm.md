@@ -44,7 +44,9 @@ Figure `lec05-kp20-kmean`: the kernelized Euclidean classifier.
 
 ### 3. Comparison on the rings
 
-**Example** (designed here): rings of radius 1 and 2 (sd 0.25), 60 training and 500 new points per class; Gaussian $\gamma=0.5$, quadratic $(x^Tz+1)^2$. Accuracy on new points: linear 48.8%; quadratic 93.8%; Gaussian 97.4%. Dropping $\theta$, comparing only the two sums as an equal-prior Parzen comparison, leaves 79.8%. The classes differ in mean kernel value within themselves and $\theta$ corrects for it, so "≈ Parzen" cannot ignore it. **Common misconception**: the two sums look like Parzen estimates, so comparing them directly is a Parzen classifier; without $\theta$ the result is far worse.
+**Example** (designed here): rings of radius 1 and 2 (sd 0.25), 60 training and 500 new points per class; Gaussian $\gamma=0.5$, quadratic $(x^Tz+1)^2$. Accuracy on new points: linear 48.8%; quadratic 93.8%; Gaussian 97.4%. Dropping $\theta$, comparing only the two sums as an equal-prior Parzen comparison, leaves 79.8%.
+
+The classes differ in mean kernel value within themselves and $\theta$ corrects for it, so "≈ Parzen" cannot ignore it. **Common misconception**: the two sums look like Parzen estimates, so comparing them directly is a Parzen classifier; without $\theta$ the result is far worse.
 
 Figure `lec05-kp20-kmeanres`: new-point accuracy of the four versions.
 

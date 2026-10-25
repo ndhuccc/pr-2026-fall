@@ -91,7 +91,9 @@ Figure `lec05-kp15-moons`: training and new-point accuracy for orders 1 to 10.
 
 ### 8. Going too far
 
-**Condition number**: how much a matrix magnifies small errors; the larger, the less stable the solution. On new points $r=8$ gives 77.3%, $r=9$ gives 63.7% and $r=10$ gives 55.5%, while training points are 100% at $r=9,10$. **Common misconception**: a higher order is always more accurate. $r=9$ has 55 terms and $r=10$ has 66, close to or above the 60 training points, so the model can memorize every point, noise included: overfitting. It is numerically worse too: for the same 60 points the condition number of $\Phi$ rises from 3.25 at $r=1$ to 4.4 million at $r=8$.
+**Condition number**: how much a matrix magnifies small errors; the larger, the less stable the solution. On new points $r=8$ gives 77.3%, $r=9$ gives 63.7% and $r=10$ gives 55.5%, while training points are 100% at $r=9,10$. **Common misconception**: a higher order is always more accurate.
+
+$r=9$ has 55 terms and $r=10$ has 66, close to or above the 60 training points, so the model can memorize every point, noise included: overfitting. It is numerically worse too: for the same 60 points the condition number of $\Phi$ rises from 3.25 at $r=1$ to 4.4 million at $r=8$.
 
 Figure `lec05-kp15-cond`: the condition number of the design matrix against the order (semi-log).
 

@@ -76,7 +76,9 @@ Figure `lec05-kp19-regions`: the decision regions and support vectors (circles) 
 
 ### 7. Hyperparameters
 
-**Hyperparameter**: a parameter set before training rather than solved from the data, here the Gaussian $\gamma$ and the penalty cap $C$. **Example** (designed here): rings that overlap more (sd 0.45), $C=10$, sweeping $\gamma$. Accuracy on training and new points: $\gamma=0.1$: 88.3%, 87.0% (best); $\gamma=10$: 98.3%, 79.4%; $\gamma=50$: 99.2%, 74.7%. Sweeping $C$ at $\gamma=0.5$, new points: $C=0.01$: 84.3%; $C=1$: 86.4% (best); $C=1000$: 82.8%. The best values were picked on the new points; in practice use separate validation data. **Common misconception**: the higher the training accuracy the better; when $\gamma$ is too large the training fit tightens and the new points get worse.
+**Hyperparameter**: a parameter set before training rather than solved from the data, here the Gaussian $\gamma$ and the penalty cap $C$. **Example** (designed here): rings that overlap more (sd 0.45), $C=10$, sweeping $\gamma$. Accuracy on training and new points: $\gamma=0.1$: 88.3%, 87.0% (best); $\gamma=10$: 98.3%, 79.4%; $\gamma=50$: 99.2%, 74.7%.
+
+Sweeping $C$ at $\gamma=0.5$, new points: $C=0.01$: 84.3%; $C=1$: 86.4% (best); $C=1000$: 82.8%. The best values were picked on the new points; in practice use separate validation data. **Common misconception**: the higher the training accuracy the better; when $\gamma$ is too large the training fit tightens and the new points get worse.
 
 Figure `lec05-kp19-hyper`: training and new-point accuracy against the Gaussian $\gamma$.
 

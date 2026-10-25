@@ -235,7 +235,9 @@ $$
 J(\mathbf w+\delta\mathbf w)-J(\mathbf w)\approx\nabla J(\mathbf w)^T\delta\mathbf w+\frac12\delta\mathbf w^TH\delta\mathbf w.
 $$
 
-Only near stationarity may the first term be neglected. The diagonal assumption simplifies computation; it does not make real network weights independent. Changing only one weight with all others fixed removes cross terms because other perturbations are zero. Allowing compensation requires the off-diagonal information again. The final $2\times2$ example illustrates this distinction.
+Only near stationarity may the first term be neglected. The diagonal assumption simplifies computation; it does not make real network weights independent. Changing only one weight with all others fixed removes cross terms because other perturbations are zero.
+
+Allowing compensation requires the off-diagonal information again. The final $2\times2$ example illustrates this distinction.
 
 #### Differentiate the saturating penalty
 

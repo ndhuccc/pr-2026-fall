@@ -157,6 +157,8 @@ $\{0,1\}^p$ has $2^p$ corners: the corners of a $p$-dimensional cube, a **hyperc
 1. If we label the unrealized code 101 as A or as B, do the predictions on inputs change? Hint: ask whether any input receives 101.
 2. With the second labelling, can changing only $a_3$ remove the contradiction on the bottom face? Hint: all four bottom-face points have $y_3=0$.
 
+**Worked solution (question 1)**: (1) First ask whether any input gets 101: it needs $g_1=x_1>0$, $g_2=x_2\le0$ and $g_3=-x_1+x_2-1>0$. (2) The third gives $x_2>x_1+1>1$, which contradicts the second, $x_2\le0$, so no input gets 101. (3) Hence assigning 101 to A or to B only affects an input that does not exist, and every prediction stays the same.
+
 **Worked solution (question 2)**: ① Symbolic form: both sums equal $a_1+a_2+2a_0$. ② Substitute $y_3=0$: $a_3\cdot0=0$, so $a_3$ vanishes. ③ Result: both sums are independent of $a_3$ and the contradiction remains. ④ Check: for $a_3=100$ both sums are unchanged.
 
 ## Terminology and source
