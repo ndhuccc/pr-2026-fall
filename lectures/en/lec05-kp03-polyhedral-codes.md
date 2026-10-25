@@ -161,7 +161,7 @@ $\{0,1\}^p$ has $2^p$ corners: the corners of a $p$-dimensional cube, a **hyperc
 
 **Worked solution (question 2)**: ① Symbolic form: both sums equal $a_1+a_2+2a_0$. ② Substitute $y_3=0$: $a_3\cdot0=0$, so $a_3$ vanishes. ③ Result: both sums are independent of $a_3$ and the contradiction remains. ④ Check: for $a_3=100$ both sums are unchanged.
 
-## Terminology and source
+## Terms and source
 
 | Term | Meaning |
 |---|---|

@@ -157,15 +157,17 @@ def main():
     has_symtab = bool(re.search(r"符號表|符號說明|Symbol table|Notation|\|\s*(符號|Symbol)\s*\|", text))
     if n_inline >= 20 and not has_symtab: W("L14", f"{n_inline} inline formulas but no symbol table (symbol, meaning, dimension, where defined)")
     # L15 glossary
-    gl = text.split("## 術語與來源")[-1] if "## 術語與來源" in text else (text.split("## Terms and source")[-1] if "## Terms and source" in text else "")
+    GL_HEAD = re.compile(r"^## (?:術語與來源|術語|Terms and sources?|Glossary[^\n]*|Terminology[^\n]*)\s*$", re.M)
+    _gm = GL_HEAD.search(text)
+    gl = text[_gm.end():] if _gm else ""
     gl_terms = re.findall(r"^\|\s*([^|\n]+?)\s*\|", gl, flags=re.M)
     gl_text = gl
-    bold_terms = [t.strip() for t in re.findall(r"\*\*([^*\n]{2,30})\*\*\s*[:：]", body.split("## 術語與來源")[0].split("## Terms and source")[0])]
+    bold_terms = [t.strip() for t in re.findall(r"\*\*([^*\n]{2,30})\*\*\s*[:：]", body[:(GL_HEAD.search(body).start() if GL_HEAD.search(body) else len(body))])]
     label_words = re.compile(r"怎麼|為什麼|如何|推導|驗算|設定|設計|結果|限制|關係|回顧|演算法|數值|追蹤|檢查|問題|符號|做法|做法|兩個|三個|四個|你需要|本講義|網路|映射的|收斂|階段|Check|How |Why |Derivation|Relation|Result|Limit|Setup|Algorithm|Question|Meaning|Convergence|recalled|Prerequisite|Four things|Three things|Symbol|Fixed|Effect|What |A hand", re.I)
     stop = re.compile(r"^(白話說明|一句話重點|正式定義|例子|常見迷思|小練習|題|做法|結果|意思|設定|Plain|One-sentence|Formal|Example|Common|Practice|Question|Method|Results?|Meaning|Setup|Check|核對|怎麼記|To remember|實驗細節|Experiment details|答|解)")
     bold_terms = [t for t in dict.fromkeys(bold_terms) if not stop.match(t) and not label_words.search(t) and "$" not in t and not re.match(r"^[□\s\d]+$", t)]
     miss_b = [t for t in bold_terms if t not in gl_text]
-    acr = set(re.findall(r"\b[A-Z][A-Za-z]*[A-Z]{1,}[A-Za-z]*\b|\b[A-Z]{2,6}\b", re.sub(r"\$[^$]*\$", "", body.split("## 術語與來源")[0].split("## Terms and source")[0])))
+    acr = set(re.findall(r"\b[A-Z][A-Za-z]*[A-Z]{1,}[A-Za-z]*\b|\b[A-Z]{2,6}\b", re.sub(r"\$[^$]*\$", "", body[:(GL_HEAD.search(body).start() if GL_HEAD.search(body) else len(body))])))
     acr -= {"KP", "XOR", "AND", "OR", "NOT", "TP", "FP", "FN", "TN", "RBF", "SVM", "MLP", "II", "PDF", "CART", "LMS", "IRLS", "KKT", "RKHS", "SVR"} if False else {"KP", "AND", "OR", "NOT", "PDF", "XOR", "SVM", "AdaBoost", "RBF", "MLP", "PNN", "MSE", "EM"}
     miss_a = sorted(a for a in acr if a not in gl_text)
     if bold_terms and len(miss_b) / len(bold_terms) > 0.4: W("L15", f"glossary lists only {len(bold_terms)-len(miss_b)}/{len(bold_terms)} bold-defined terms; missing e.g. {miss_b[:4]}")
