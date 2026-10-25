@@ -52,7 +52,9 @@ def norm_tex(s):
 
 def lecture_inventory(path):
     text = open(path, encoding="utf-8").read()
-    figs = re.findall(r"\*\*圖說 `([^`]+)`\*\*", text)
+    figs = re.findall(r"(?:\*\*)?(?:圖說|Figure|Caption)\s*`([^`]+)`", text)
+    for m in re.findall(r"!\[[^\]]*\]\([^)]*/([^/)]+?)\.(?:png|svg|jpg)\)", text):
+        if m not in figs: figs.append(m)
     formulas = []
     for block in re.findall(r"\$\$(.*?)\$\$", text, re.S):
         for piece in re.split(r",\s*\\qquad|\\qquad|,\s*\\quad", block):
@@ -79,7 +81,7 @@ def main():
     ap.add_argument("--max-pages-per-kp", type=int, default=0, help="optional page limit per unit (U1 warns only); default 0 = no limit (the 6-page guideline was withdrawn on 2026-10-25)")
     ap.add_argument("--source", action="append", default=[], help="source text file(s): O2 warns when pages repeat long runs of the source (14+ identical CJK characters)")
     ap.add_argument("--narrative", action="store_true", help="require a bridge node (name contains 'bridge') on every content page and speaker notes that link to the previous and next page (R1, R3); see .agents/skills/NARRATIVE.md")
-    ap.add_argument("--terms", help="term registry JSON (CLARITY.md C12): {\"term\": {\"aliases\": [...]}}; every term needs a card node named 'term:<term>' on or before its first use, and on a main-line page if any main-line page uses it (J1-J3)")
+    ap.add_argument("--terms", help="term registry JSON (CLARITY.md C12): {\"term\": {\"aliases\": [synonyms only], \"co_defined\": [related terms defined on the same card]}}; every term needs a card node named 'term:<term>' on or before its first use, and on a main-line page if any main-line page uses it (J1-J3)")
     ap.add_argument("--outline", action="store_true", help="print the title chain and bridge line of every page, per unit, for the reading test (NARRATIVE.md section 5)")
     ap.add_argument("--kps", type=int, help="number of knowledge points; with --minutes, prints the per-KP budget")
     ap.add_argument("--level", choices=sorted(LEVEL_LIMITS), help="teaching level (see .agents/skills/LEVELS.md): warns when a page exceeds the level's display-formula and body-text budget (Q1, Q2)")
@@ -167,6 +169,24 @@ def main():
             if y + h > H + 1: F("B3", f"{nid} extends below the page ({y + h:.0f}>720)")
             x = n["transform"]["x"] % PITCH
             if x + n["width"] > W + 1: F("B3", f"{nid} extends past the page width")
+
+    # ------------------------------------------------------------ B10 overlap between text boxes, B11 control characters
+    for sid, sc in S.items():
+        if sid == root: continue
+        pages = {}
+        for nid in sc["nodeIds"]:
+            n = N[nid]
+            if n["type"] not in ("text", "shape") or not n.get("text"): continue
+            if re.search("[\t\f\b\a\v\r]", n["text"]):
+                F("B11", f"{nid} contains a control character (a TeX backslash such as \\tfrac or \\frac lost its escape): {n['text'][:40]!r}")
+            pages.setdefault(int(n["transform"]["x"] // PITCH), []).append((nid, n))
+        for lst in pages.values():
+            for i in range(len(lst)):
+                for j in range(i + 1, len(lst)):
+                    (ia, a_), (ib, b_) = lst[i], lst[j]
+                    ox = min(a_["transform"]["x"] + a_["width"], b_["transform"]["x"] + b_["width"]) - max(a_["transform"]["x"], b_["transform"]["x"])
+                    oy = min(a_["transform"]["y"] + a_["height"], b_["transform"]["y"] + b_["height"]) - max(a_["transform"]["y"], b_["transform"]["y"])
+                    if ox > 5 and oy > 5: F("B10", f"{ia} and {ib} overlap by {oy:.0f} units (a long title or a tall card pushes into the next box)")
 
     # ------------------------------------------------------------ B9 frame style (the legibility rule)
     for fid, fr in frames.items():
@@ -367,12 +387,17 @@ def main():
             for n in pages.get(key, []):
                 if n.get("name", "").startswith("term:"): cards.setdefault(n["name"][5:], i)
         for term, info in reg.items():
-            names = [term] + list((info or {}).get("aliases", []))
+            co = list((info or {}).get("co_defined", []))
+            names = [term] + list((info or {}).get("aliases", [])) + co
             uses = [i for i, (key, t) in enumerate(page_list) if any(nm.lower() in (t["label"] + "\n" + ptext(key)).lower() for nm in names)]
             if term not in cards:
                 F("J1", f"term {term!r} has no definition card (a node named 'term:{term}' with a plain-language definition and its meaning in the running example)")
                 continue
             ci = cards[term]
+            card_txt = "\n".join(n.get("text", "") for n in pages.get(page_list[ci][0], []) if n.get("name") == "term:" + term).lower()
+            for c_ in co:
+                if c_.lower() not in card_txt:
+                    F("J4", f"term {term!r} is registered as co-defining {c_!r}, but its card on page {ci + 1} does not define {c_!r} in its text: give {c_!r} its own card or put its definition on this card")
             early = [i for i in uses if i < ci]
             if early:
                 F("J2", f"term {term!r} is used on page {early[0] + 1} ({page_list[early[0]][1]['label']!r}) before its definition card on page {ci + 1}")

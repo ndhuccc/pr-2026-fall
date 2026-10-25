@@ -141,12 +141,17 @@ def main():
                 idx = int((key["transform"]["x"] + (0 if n["type"] == "connector" else key["width"] / 2)) // PITCH)
                 groups.setdefault(idx, []).append(nid)
             for idx, ids in sorted(groups.items()):
-                pg.set_content(page_html(N, ids, idx * PITCH), wait_until="load")
-                try:
-                    pg.wait_for_function("window.__done===true", timeout=20000)
-                except Exception:
-                    errors.append(f"KaTeX did not finish on {sid}#{idx + 1} (network?)")
-                pg.wait_for_timeout(200)
+                for attempt in range(3):      # a slow or loaded machine can screenshot before KaTeX finished: retry until no raw $...$ is left
+                    pg.set_content(page_html(N, ids, idx * PITCH), wait_until="load")
+                    try:
+                        pg.wait_for_function("window.__done===true", timeout=30000)
+                    except Exception:
+                        pass
+                    pg.wait_for_timeout(300)
+                    raw = pg.evaluate("(document.body.innerText.match(/\\$[^$\\n]{1,60}\\$/g)||[]).length")
+                    if not raw: break
+                else:
+                    errors.append(f"KaTeX left raw $...$ on {sid}#{idx + 1} after 3 tries: this preview must not be used for review")
                 name = f"{sid}_p{idx + 1}"
                 meas = pg.evaluate(MEASURE)
                 slack[name] = meas
