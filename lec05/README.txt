@@ -74,5 +74,7 @@ KP04、KP05 中文版與英文版（2026-10-25，依新規範重做，分開製�
 KP04（三層感知器：逐碼偵測再合併）：materials/lec05-kp04-three-layer-perceptron-zh-download.zip、-en-download.zip；同批檔案也單獨放在 materials/lec05-kp04-three-layer-perceptron-zh.*、-en.*。
 KP05（構造式方法：從訓練點長出網路）：materials/lec05-kp05-constructive-methods-zh-download.zip、-en-download.zip；同批檔案也單獨放在 materials/lec05-kp05-constructive-methods-zh.*、-en.*。
 各 11 頁（主線 8 頁＋延伸 3 頁），每頁配代數與幾何對照圖；簡報通過 audit_deck.py --monolingual（FAIL 0）、check_slides.py，講義通過 audit_lecture.py（FAIL 0）。
-冷讀者檢查（獨立子代理，模型模擬）：KP04 一輪 4/5、KP05 一輪 3.5/5，已修正主要缺失，第二輪尚未做；KP05 p8（最近鄰）與主線關係較薄，必要時可移到延伸。詳見各 -review.zip 內 COLD_READER.md。
+冷讀者檢查（獨立子代理，模型模擬）：KP04 一輪 4/5、KP05 一輪 3.5/5，已修正主要缺失，第二輪尚未做；KP05 p8（最近鄰）已依教授指示移到延伸。詳見各 -review.zip 內 COLD_READER.md。
 至此 KP01–KP05 都已依新規範重做；舊的中英對照版保留不動，待教師決定後再刪。原生 JianBauDau 播放與 PDF 匯出尚未驗收。
+
+KP05 調整(2026-10-25):依教授指示,把原第 8 頁「最近鄰」移到延伸;主線 7 頁、延伸 4 頁,「先固定架構再學權重」的下一個 KP 問題改放主線最後一頁。簡報、講義與下載包已重新產生。
