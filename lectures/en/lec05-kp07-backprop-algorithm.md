@@ -179,7 +179,7 @@ Figure `lec05-kp07-frozen`: look at the nine frozen weights, then at the four ou
 1. What is the output-layer $\delta_o$? Hint: $\delta_o=(\text{target}-o)f'(v_o)$ and $f'(v_o)=o(1-o)$.
 2. What are the updates of the three output weights?
 
-Figure `lec05-kp07-practice-forward`: the forward pass of the sample $(0,0)$.Look at the two hidden outputs of sample $(0,0)$, then at the gap between the final output 0.2578 and the target 0.〔功能：1, 2〕
+Figure `lec05-kp07-practice-forward`: the forward pass of the sample $(0,0)$. Look at the two hidden outputs of sample $(0,0)$, then at the gap between the final output 0.2578 and the target 0. [Function: 1, 2]
 
 ![Practice forward](../../assets/figures/lec05-kp07-practice-forward.png)
 

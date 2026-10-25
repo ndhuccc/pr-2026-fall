@@ -42,7 +42,7 @@
 
 **Formal definition**: let $X=\{(\mathbf x_n,c_n)\}_{n=1}^N$ be a finite labelled set with $c_n\in\{0,1\}$. Here $z_1=f(x_1+x_2-0.5)$, where $f(t)=1$ if $t>0$ and 0 otherwise.
 
-Figure `lec05-kp05-master`: above the orange line is the 1 group; only $(0,0)$ in the lower left is in the 0 group.Look at the 1 group above the orange line first, then at $(0,0)$ alone in the 0 group.〔功能：1, 3〕
+Figure `lec05-kp05-master`: above the orange line is the 1 group; only $(0,0)$ in the lower left is in the 0 group. Look at the 1 group above the orange line first, then at $(0,0)$ alone in the 0 group. [Function: 1, 3]
 
 ![The master unit makes two groups](../../assets/figures/lec05-kp05-master.png)
 
@@ -50,7 +50,7 @@ Figure `lec05-kp05-master`: above the orange line is the 1 group; only $(0,0)$ i
 
 **Mixed group**: an output group that contains points of both classes. $(0,0)$ alone is in the 0 group (B, correct). The 1 group is $(0,1)$, $(1,0)$ and $(1,1)$, all called A: the two A are right and the B at $(1,1)$ is wrong. The master gets 3 points right.
 
-Figure `lec05-kp05-mixed`: red rings mark the three points of the mixed group.Look at the three points circled in red, then at the fact that they hold both A and B.〔功能：1〕
+Figure `lec05-kp05-mixed`: red rings mark the three points of the mixed group. Look at the three points circled in red, then at the fact that they hold both A and B. [Function: 1]
 
 ![The mixed group](../../assets/figures/lec05-kp05-mixed.png)
 
@@ -60,7 +60,7 @@ Figure `lec05-kp05-mixed`: red rings mark the three points of the mixed group.Lo
 
 **Example** [added]: take $z_2=f(1.5-x_1-x_2)$, whose line $x_1+x_2=1.5$ lies exactly between $(1,1)$ and $(0,1),(1,0)$: $(0,1)$ and $(1,0)$ score $0.5$ and get bit 1; $(1,1)$ scores $-0.5$ and gets bit 0. $(0,0)$ is not in the mixed group and takes no part in training; its $z_2=f(1.5)=1$ is just a value computed along the way. This is a mechanism demonstration, not a recorded run of a training algorithm.
 
-Figure `lec05-kp05-anc`: the solid line is the master unit, the violet dashed line is the ancillary unit.Look at the solid line (master unit) first, then at the purple dashed line (ancillary unit) between $(1,1)$ and the other two points.〔功能：1, 3〕
+Figure `lec05-kp05-anc`: the solid line is the master unit, the violet dashed line is the ancillary unit. Look at the solid line (master unit) first, then at the purple dashed line (ancillary unit) between $(1,1)$ and the other two points. [Function: 1, 3]
 
 ![The ancillary unit](../../assets/figures/lec05-kp05-anc.png)
 
@@ -77,7 +77,7 @@ Figure `lec05-kp05-anc`: the solid line is the master unit, the violet dashed li
 
 Purification does not require one code per class: B occupying the two codes 01 and 10 is fine.
 
-Figure `lec05-kp05-codes`: next to each point is its two-bit code.Look at the two-bit code beside each point, then at the two A points sharing 11.〔功能：1〕
+Figure `lec05-kp05-codes`: next to each point is its two-bit code. Look at the two-bit code beside each point, then at the two A points sharing 11. [Function: 1]
 
 ![Codes of the four points](../../assets/figures/lec05-kp05-codes.png)
 
@@ -85,7 +85,7 @@ Figure `lec05-kp05-codes`: next to each point is its two-bit code.Look at the tw
 
 The new master unit is $z_1+z_2-1.5$, above 0 means A: 11 gives $1+1-1.5=0.5$, A; 01 gives $-0.5$ and 10 gives $-0.5$, B. All four points are right; merging the two A points at 11 is harmless because they are the same class.
 
-Figure `lec05-kp05-code-plane`: the new $(z_1,z_2)$ plane; the two A points merge at 11 and 00 has no point.Look at the new $(z_1,z_2)$ plane, then at the two A points merged at 11 and no point at 00, and finally find the line separating A from B.〔功能：1, 3〕
+Figure `lec05-kp05-code-plane`: the new $(z_1,z_2)$ plane; the two A points merge at 11 and 00 has no point. Look at the new $(z_1,z_2)$ plane, then at the two A points merged at 11 and no point at 00, and finally find the line separating A from B. [Function: 1, 3]
 
 ![The new plane of codes](../../assets/figures/lec05-kp05-code-plane.png)
 
@@ -100,7 +100,7 @@ $$
 
 This condition is required by the cited construction, is not a general result verified by this example, and is not proved here; here $C$ rises from 3 to 4. An integer cannot increase forever, so the process stops. Note that 3→0 counts points in the mixed group, not an error rate. This is the stopping reason when the conditions hold, not a claim that every nonseparable subgroup can be perfectly separated.
 
-Figure `lec05-kp05-progress`: red is the number of points in the mixed group, blue is the number of correct points, the dashed line is $N=4$; the values are computed for this example, not an empirical curve from the source.Look at the red mixed-group count falling, then at the blue correct count rising; the dashed line is $N=4$.〔功能：2〕
+Figure `lec05-kp05-progress`: red is the number of points in the mixed group, blue is the number of correct points, the dashed line is $N=4$; the values are computed for this example, not an empirical curve from the source. Look at the red mixed-group count falling, then at the blue correct count rising; the dashed line is $N=4$. [Function: 2]
 
 ![Numbers of progress](../../assets/figures/lec05-kp05-progress.png)
 
@@ -110,7 +110,7 @@ When two identical inputs carry different labels, a deterministic network has on
 
 **Common misconception**: since all training points end up right, new data will be right as well. All correct concerns only the points given; it guarantees neither correct answers at unseen locations nor a small network.
 
-Figure `lec05-kp05-conflict`: a circle and a square on the same location with opposite labels.Look at the circle and the square at the same location, then think how one input could be right for both A and B.〔功能：1〕
+Figure `lec05-kp05-conflict`: a circle and a square on the same location with opposite labels. Look at the circle and the square at the same location, then think how one input could be right for both A and B. [Function: 1]
 
 ![Contradictory labels](../../assets/figures/lec05-kp05-conflict.png)
 
@@ -126,14 +126,14 @@ $$
 
 With $\mathbf u=(0,0)$ and $\mathbf v=(1,0)$ this gives $2x_1=1$, that is $x_1=0.5$. This is only one pairwise comparison, not a full nearest-neighbour network experiment. $N$ points have at most $N(N-1)/2$ pairs, so comparisons can grow quadratically; this does not mean all must be kept and it is not a minimal network size.
 
-Figure `lec05-kp05-nearest`: two training points $u$, $v$ and their perpendicular bisector $x_1=0.5$.Look at the two training points $u$ and $v$, then at the perpendicular bisector $x_1=0.5$ between them: every point on it is equidistant from both.〔功能：1, 3〕
+Figure `lec05-kp05-nearest`: two training points $u$, $v$ and their perpendicular bisector $x_1=0.5$. Look at the two training points $u$ and $v$, then at the perpendicular bisector $x_1=0.5$ between them: every point on it is equidistant from both. [Function: 1, 3]
 
 ![Perpendicular bisector](../../assets/figures/lec05-kp05-nearest.png)
 
 
 **Three layers suffice, which is not a bound on the growth**: inputs after the first layer are binary codes, and KP04's detectors plus OR can classify the purified codes, so a suitable three-layer representation is enough; but a layer-by-layer growth procedure is not guaranteed to stop within three layers. Existence and a depth guarantee for a procedure are not the same theorem.
 
-Figure `lec05-kp05-layers`: inputs of later layers are binary codes and detectors plus OR are enough; the growth procedure has no stated bound on the number of layers.Look at the inputs of the later layers being binary codes, then at detectors plus OR being enough; the growing procedure gives no layer limit.〔功能：1〕
+Figure `lec05-kp05-layers`: inputs of later layers are binary codes and detectors plus OR are enough; the growth procedure has no stated bound on the number of layers. Look at the inputs of the later layers being binary codes, then at detectors plus OR being enough; the growing procedure gives no layer limit. [Function: 1]
 
 ![Three layers suffice](../../assets/figures/lec05-kp05-layers.png)
 
@@ -150,7 +150,7 @@ Figure `lec05-kp05-layers`: inputs of later layers are binary codes and detector
 
 **Worked solution (question 2)**: the same input gives the same output, so a deterministic network gives one answer and cannot be right for both A and B.
 
-Figure `lec05-kp05-groups`: left, grouped by the master bit; right, grouped by the full code.Look at the groups by master bit on the left (mixed), then at the groups by full code on the right (all pure).〔功能：1, 2〕
+Figure `lec05-kp05-groups`: left, grouped by the master bit; right, grouped by the full code. Look at the groups by master bit on the left (mixed), then at the groups by full code on the right (all pure). [Function: 1, 2]
 
 ![Group comparison](../../assets/figures/lec05-kp05-groups.png)
 

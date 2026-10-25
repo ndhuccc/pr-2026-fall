@@ -48,7 +48,7 @@
 
 **Example**: for this lecture we designed $J=\tfrac12(w_1^2+20w_2^2)$ to show the mechanism: curvature 20 along $w_2$ and 1 along $w_1$, start $(-4,1)$, $\mu=0.08$. Plain gradient descent needs 100 steps to reach $|w|<0.001$ and swings along $w_2$ (program).
 
-Figure `lec05-kp08-valley`: contours and the path of plain gradient descent.Look at the very flat elliptical contours first, then at the path of plain gradient descent swinging up and down along $w_2$.〔功能：1, 3〕
+Figure `lec05-kp08-valley`: contours and the path of plain gradient descent. Look at the very flat elliptical contours first, then at the path of plain gradient descent swinging up and down along $w_2$. [Function: 1, 3]
 
 ![Narrow valley](../../assets/figures/lec05-kp08-valley.png)
 
@@ -58,7 +58,7 @@ Steep direction: the gradient of $w_2$ is $20w_2$, so $w_2\leftarrow w_2-0.08\cd
 
 **The dilemma**: $\mu$ must stay below $2/20=0.1$ or $w_2$ swings ever wider; with $\mu=0.12$ the norm $|w|$ exceeds $10^8$ after 60 steps. But such a small step makes $w_1$ slow.
 
-Figure `lec05-kp08-zigzag`: $w_1$ and $w_2$ over the first 15 steps.Look at $w_2$ changing sign each step and shrinking only to 0.6 times, then at $w_1$ moving in one direction and shrinking only 8% per step.〔功能：2〕
+Figure `lec05-kp08-zigzag`: $w_1$ and $w_2$ over the first 15 steps. Look at $w_2$ changing sign each step and shrinking only to 0.6 times, then at $w_1$ moving in one direction and shrinking only 8% per step. [Function: 2]
 
 ![Swinging](../../assets/figures/lec05-kp08-zigzag.png)
 
@@ -76,7 +76,7 @@ $g$ is the gradient and $\alpha$ the momentum factor, 0.1 to 0.8 in practice; $\
 
 **By hand** ($\mu=0.08$, $\alpha=0.6$): step 1 is $(0.32,-1.6)$ and $w=(-3.68,-0.6)$; step 2 is $0.6\times(0.32,-1.6)-0.08\times(-3.68,-12)=(0.4864,0)$, so the two pulls on $w_2$ (inertia $-0.96$, gradient $+0.96$) cancel exactly. Step 3 is $(0.5473,0.96)$ and $w=(-2.646,0.36)$.
 
-Figure `lec05-kp08-mom-steps`: table of the first three momentum steps.Look at the updates of steps 1, 2 and 3, then at the inertia and gradient of $w_2$ cancelling exactly in step 2.〔功能：2〕
+Figure `lec05-kp08-mom-steps`: table of the first three momentum steps. Look at the updates of steps 1, 2 and 3, then at the inertia and gradient of $w_2$ cancelling exactly in step 2. [Function: 2]
 
 ![First three momentum steps](../../assets/figures/lec05-kp08-mom-steps.png)
 
@@ -86,7 +86,7 @@ Figure `lec05-kp08-mom-steps`: table of the first three momentum steps.Look at t
 
 Unrolled over $T$ steps: $\Delta w(T)=-\mu\sum_{t}\alpha^{t}g(T-t)+\alpha^{T}\Delta w(0)$ and the last term is near 0 after a few steps. With an unchanging gradient (the flat direction) the total weight is $1+\alpha+\alpha^2+\cdots=1/(1-\alpha)$, which enlarges the learning rate by $1/(1-\alpha)$: 2.5 times for $\alpha=0.6$ and 5 times for $\alpha=0.8$ (checked with a fixed gradient over 80 steps). When the gradient alternates in sign (the steep direction) the weighted average cancels it. One mechanism, fast where it can be and steady where it must be.
 
-Figure `lec05-kp08-expo`: weights $0.6^t$ and $0.8^t$ and the total weight under a fixed gradient.Look at $0.6^t$ and $0.8^t$ decaying with $t$, then at the total weight under a constant gradient approaching 2.5 and 5.〔功能：2〕
+Figure `lec05-kp08-expo`: weights $0.6^t$ and $0.8^t$ and the total weight under a fixed gradient. Look at $0.6^t$ and $0.8^t$ decaying with $t$, then at the total weight under a constant gradient approaching 2.5 and 5. [Function: 2]
 
 ![Exponentially weighted average](../../assets/figures/lec05-kp08-expo.png)
 
@@ -94,7 +94,7 @@ Figure `lec05-kp08-expo`: weights $0.6^t$ and $0.8^t$ and the total weight under
 
 Same start and same $\mu=0.08$: plain needs 100 steps and momentum with $\alpha=0.6$ needs 28 (program). The red path swings along $w_2$ many times while the green one shrinks the swing faster and also moves faster along $w_1$. The price is one more stored array for the previous update and one more knob $\alpha$.
 
-Figure `lec05-kp08-two-paths`: comparison of the two paths.Look at the red (plain) path swinging many times along $w_2$, then at the green (momentum) swing shrinking faster.〔功能：1, 2〕
+Figure `lec05-kp08-two-paths`: comparison of the two paths. Look at the red (plain) path swinging many times along $w_2$, then at the green (momentum) swing shrinking faster. [Function: 1, 2]
 
 ![Two paths](../../assets/figures/lec05-kp08-two-paths.png)
 
@@ -108,7 +108,7 @@ Figure `lec05-kp08-two-paths`: comparison of the two paths.Look at the red (plai
 
 $\alpha\ge0.9$ is slower than no momentum: too much inertia overshoots the valley floor and rocks like a pendulum before it stops. In practice 0.1 to 0.8 is common, the best value depends on the problem and must be tried, and the source reports speed-ups of 2 times or more.
 
-Figure `lec05-kp08-alpha-curve`: steps needed for each $\alpha$.Look at the curve lowest near $\alpha=0.6$, then at it climbing above the $\alpha=0$ level for $\alpha\ge0.9$.〔功能：2〕
+Figure `lec05-kp08-alpha-curve`: steps needed for each $\alpha$. Look at the curve lowest near $\alpha=0.6$, then at it climbing above the $\alpha=0$ level for $\alpha\ge0.9$. [Function: 2]
 
 ![The best alpha](../../assets/figures/lec05-kp08-alpha-curve.png)
 
@@ -132,7 +132,7 @@ Typical values $r_i=1.05$, $r_d=0.7$, $c=1.04$ (source). The rule is asymmetric:
 
 From $\mu_0=0.08$, already near the best, adaptive is hardly better than plain.
 
-Figure `lec05-kp08-adaptive`: semi-log curve of $|w|$ against steps.Look at the semi-log $|w|$ curves from the three start values $\mu_0$, then at the adaptive curve still converging from $\mu_0=0.12$.〔功能：2〕
+Figure `lec05-kp08-adaptive`: semi-log curve of $|w|$ against steps. Look at the semi-log $|w|$ curves from the three start values $\mu_0$, then at the adaptive curve still converging from $\mu_0=0.12$. [Function: 2]
 
 ![Adaptive learning rate](../../assets/figures/lec05-kp08-adaptive.png)
 
@@ -158,7 +158,7 @@ $$
 
 But every slice of this example is exactly a parabola, ideal for quickprop; real costs are not quadratic. Every speed-up costs extra complexity.
 
-Figure `lec05-kp08-compare`: steps of the five methods.Look at the heights (steps) of the five bars, then note that quickprop is shortest but assumes every slice is a parabola.〔功能：2〕
+Figure `lec05-kp08-compare`: steps of the five methods. Look at the heights (steps) of the five bars, then note that quickprop is shortest but assumes every slice is a parabola. [Function: 2]
 
 ![Steps of five methods](../../assets/figures/lec05-kp08-compare.png)
 
@@ -166,7 +166,7 @@ Figure `lec05-kp08-compare`: steps of the five methods.Look at the heights (step
 
 **Newton's method**: use the curvature (the Hessian matrix $H$) to compute the valley floor directly, $\Delta w=-H^{-1}g$, and a quadratic is solved in one step. Here $H=\mathrm{diag}(1,20)$ and $\Delta w=-w$, one step to the origin; the price is computing, storing and inverting the Hessian. quickprop can be seen as a one-dimensional Newton method per weight. The source also lists conjugate gradient, the Newton family, Kalman filtering and Levenberg–Marquardt, mostly needing Hessian elements; delta-delta and delta-bar-delta give every weight its own learning rate, grown when its gradient keeps its sign and shrunk when it flips.
 
-Figure `lec05-kp08-secant`: the parabola along $w_2$ and the quickprop jump.Look at the parabola along $w_2$, then at quickprop jumping to the bottom with the slopes at two points.〔功能：1, 3〕
+Figure `lec05-kp08-secant`: the parabola along $w_2$ and the quickprop jump. Look at the parabola along $w_2$, then at quickprop jumping to the bottom with the slopes at two points. [Function: 1, 3]
 
 ![The quickprop jump](../../assets/figures/lec05-kp08-secant.png)
 
@@ -175,7 +175,7 @@ Figure `lec05-kp08-secant`: the parabola along $w_2$ and the quickprop jump.Look
 1. What is the gradient $g=(w_1,20w_2)$ here?
 2. What are the update $\Delta w(3)=0.6\,\Delta w(2)-0.08\,g(3)$ and the new $w$ after step 3?
 
-Figure `lec05-kp08-practice`: the numbers of the first two steps and the task.Look at $w$ and the updates of the first two steps, then at the two quantities asked for.〔功能：1〕
+Figure `lec05-kp08-practice`: the numbers of the first two steps and the task. Look at $w$ and the updates of the first two steps, then at the two quantities asked for. [Function: 1]
 
 ![Practice](../../assets/figures/lec05-kp08-practice.png)
 
@@ -188,7 +188,7 @@ Figure `lec05-kp08-practice`: the numbers of the first two steps and the task.Lo
 
 **Check**: $w_2$ did not move in step 2, so its inertia is 0 in this step and the whole 0.96 of the gradient part becomes displacement.
 
-Figure `lec05-kp08-practice-sol`: the terms of step 3.Look at the inertia term of step 3, then at the gradient term, and finally at the new position given by their sum.〔功能：1, 2〕
+Figure `lec05-kp08-practice-sol`: the terms of step 3. Look at the inertia term of step 3, then at the gradient term, and finally at the new position given by their sum. [Function: 1, 2]
 
 ![Practice solution](../../assets/figures/lec05-kp08-practice-sol.png)
 
