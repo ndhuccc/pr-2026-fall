@@ -99,3 +99,7 @@ KP06(從階梯到反向傳播的梯度)中英文版(2026-10-25,依新規範,草�
 materials/lec05-kp06-backprop-gradient-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp06-backprop-gradient-zh.*、-en.*;盤點見 materials/KP06-inventory.md。
 各 11 頁(主線 8 頁＋延伸 3 頁),全程使用同一個 2–2–1 網路的真實數字(程式與數值差分核對);簡報與講義稽核 FAIL 0;冷讀者兩輪(3.5/5、4/5),見 review.zip 內 COLD_READER.md。
 另外 view-from-text/tools/check_arithmetic.py 改為能分辨「只是印出四捨五入」與真正的不一致。
+
+KP07(反向傳播的演算法)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp07-backprop-algorithm-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp07-backprop-algorithm-zh.*、-en.*;盤點見 materials/KP07-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),XOR 實驗數字全由程式重算;簡報與講義稽核 FAIL 0;冷讀者一輪(3.5/5),見 review.zip 內 COLD_READER.md。
