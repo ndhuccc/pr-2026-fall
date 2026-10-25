@@ -60,3 +60,11 @@ KP03中文版與英文版（2026-10-24，分開製作，可分別下載；草稿
 先前的中英對照版保留不動（lec05-kp03-polyhedral-codes.*）；教師決定採用哪一套後，再刪除不用的版本。
 兩個單語簡報都通過 check_slides.py 與 audit_deck.py --monolingual（FAIL 0）；兩份講義通過 audit_lecture.py --lang（FAIL 0）。
 英文版的簡報標題、術語卡、講者備註、圖的替代文字與講義全部另寫；來源包（-review.zip）含兩種語言的組裝程式與術語表。
+
+KP01、KP02 中文版與英文版（2026-10-25，依新規範重做，分開製作、可分別下載；草稿，待教師驗收）
+
+KP01（XOR 與一條線的極限）：materials/lec05-kp01-xor-zh-download.zip、-en-download.zip；同批檔案也單獨放在 materials/lec05-kp01-xor-zh.*、-en.*。
+KP02（兩層感知器）：materials/lec05-kp02-two-layer-perceptron-zh-download.zip、-en-download.zip；同批檔案也單獨放在 materials/lec05-kp02-two-layer-perceptron-zh.*、-en.*。
+各 11 頁（主線 8 頁＋延伸 3 頁），每頁配代數與幾何對照圖；簡報通過 audit_deck.py --monolingual（FAIL 0）、check_slides.py，講義通過 audit_lecture.py（FAIL 0）。
+冷讀者檢查（獨立子代理）：KP01 兩輪 4/5；KP02 一輪 3.5/5，已修標題與空心點說明，第二輪尚未做。詳見各 -review.zip 內 COLD_READER.md。
+舊的中英對照版保留不動，待教師決定後再刪。KP04、KP05 仍為舊版，下一批重做。原生 JianBauDau 播放與 PDF 匯出尚未驗收。
