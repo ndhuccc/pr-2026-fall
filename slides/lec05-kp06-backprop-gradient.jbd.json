@@ -852,7 +852,7 @@
         "textAlign": "left",
         "lineHeight": 1.25
       },
-      "text": "把前兩段合成誤差訊號 δ：輸出層的梯度就是 δ 乘上輸入"
+      "text": "把前兩段合成誤差訊號 δ：往下降要調的量就是 δ 乘上輸入"
     },
     "lec05kp06-u01-p5-bridge": {
       "id": "lec05kp06-u01-p5-bridge",

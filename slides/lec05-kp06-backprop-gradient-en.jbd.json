@@ -852,7 +852,7 @@
         "textAlign": "left",
         "lineHeight": 1.25
       },
-      "text": "Merge the first two factors into the error signal δ: the output layer's gradient is δ times the input"
+      "text": "Merge the first two factors into the error signal δ: the downhill step is δ times the input"
     },
     "lec05kp06-u01-p5-bridge": {
       "id": "lec05kp06-u01-p5-bridge",
@@ -1080,7 +1080,7 @@
         "rotation": 0
       },
       "width": 1160,
-      "height": 94,
+      "height": 96,
       "zIndex": 2,
       "locked": false,
       "style": {
@@ -1095,7 +1095,7 @@
         "borderStyle": "solid",
         "borderWidth": 2
       },
-      "text": "The output-layer weights now have $\\delta_o$. Hidden units do not see the target directly, so where do their $\\delta$ come from?",
+      "text": "The error signal gives the output-layer weights their downhill step, $\\delta_o$ times the input. Hidden units do not see the target directly, so where do their $\\delta$ come from?",
       "shapeKind": "rectangle"
     },
     "lec05kp06-u01-p6-fig1": {
@@ -1105,7 +1105,7 @@
       "sceneId": "lec05kp06-scene-u01",
       "transform": {
         "x": 7260,
-        "y": 238,
+        "y": 240,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1135,7 +1135,7 @@
       "sceneId": "lec05kp06-scene-u01",
       "transform": {
         "x": 7840,
-        "y": 238,
+        "y": 240,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1166,7 +1166,7 @@
       "sceneId": "lec05kp06-scene-u01",
       "transform": {
         "x": 7840,
-        "y": 405,
+        "y": 407,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -1197,7 +1197,7 @@
       "sceneId": "lec05kp06-scene-u01",
       "transform": {
         "x": 7840,
-        "y": 523,
+        "y": 525,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
