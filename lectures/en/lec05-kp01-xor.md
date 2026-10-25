@@ -155,13 +155,7 @@ What changes is the combination of boundaries a model may use, not another choic
 
 **Worked solution (question 1)**: ① Formula $g=x_1+x_2-1.5$, class A if $g>0$. ② Substitute the four points $(0,0),(0,1),(1,0),(1,1)$: the scores are $-1.5, -0.5, -0.5, 0.5$. ③ Only $(1,1)$ is positive, so the predictions are B, B, B, A. ④ Check: AND is B, B, B, A, all correct; for XOR the points $(0,1)$ and $(1,0)$ are predicted B and $(1,1)$ is predicted A, 3 errors.
 
-**Worked solution (questions 2 and 3)**: (1) Question 2: rule the causes out one by one. Too few samples? The four inputs are all the data, nothing is missing.
-
-Noise? The labels are taken straight from the XOR truth, so no label is wrong. Learning rate?
-
-The contradiction of section 6 holds for **any** coefficients, however they are adjusted. (2) What is left is that the shape "one line" limits the boundary, so the answer is the boundary shape. (3) Question 3: OR can.
-
-Take $g=x_1+x_2-0.5$; the four scores are $-0.5,\ 0.5,\ 0.5,\ 1.5$, the predictions B, A, A, A, equal to the OR truth. (4) XNOR has 1 at $(0,0),(1,1)$ and 0 at $(0,1),(1,0)$; the same-class points are still on the diagonals, it differs from XOR only by swapping the labels, so the same contradiction remains and one line cannot separate it. (5) Conclusion: of the three only OR is separable by one line.
+**Worked solution (questions 2 and 3)**: (1) Question 2: rule the causes out one by one. Too few samples? The four inputs are all the data, nothing is missing. Noise? The labels are taken straight from the XOR truth, so no label is wrong. Learning rate? The contradiction of section 6 holds for **any** coefficients, however they are adjusted. (2) What is left is that the shape "one line" limits the boundary, so the answer is the boundary shape. (3) Question 3: OR can. Take $g=x_1+x_2-0.5$; the four scores are $-0.5,\ 0.5,\ 0.5,\ 1.5$, the predictions B, A, A, A, equal to the OR truth. (4) XNOR has 1 at $(0,0),(1,1)$ and 0 at $(0,1),(1,0)$; the same-class points are still on the diagonals, it differs from XOR only by swapping the labels, so the same contradiction remains and one line cannot separate it. (5) Conclusion: of the three only OR is separable by one line.
 
 ![AND and XOR](../../assets/figures/lec05-kp01-and-xor.png)
 

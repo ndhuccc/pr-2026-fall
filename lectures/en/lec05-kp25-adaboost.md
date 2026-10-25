@@ -91,9 +91,7 @@ Figure `lec05-kp25-margin`: the smallest margin and test error at different roun
 
 ### 8. No panacea
 
-**Example** (designed here): data of the same kind with 15% of the training labels flipped at random; means of 5 fresh draws for 0% and 15% (so unlike the single run before; test labels are clean). Test error: clean: 14.4% (10 rounds) → 6.6% (100) → 5.5% (2000); 15% flipped: 19.1% → 18.9% → 23.3%, lowest 17.8% (30 rounds). A likely cause: the exponential loss punishes bad samples with large negative margins too much; after 2000 rounds the 15.5% flipped samples hold 36% of the weight (one run).
-
-**Common misconception**: AdaBoost never overfits; on hard tasks with a high Bayes error and noisy labels it can degrade sharply (source). **To remember**: weak classifiers + weighting the points that are wrong + a weighted vote; the weights fall out of the exponential loss and $\alpha$ is set by the weighted error.
+**Example** (designed here): data of the same kind with 15% of the training labels flipped at random; means of 5 fresh draws for 0% and 15% (so unlike the single run before; test labels are clean). Test error: clean: 14.4% (10 rounds) → 6.6% (100) → 5.5% (2000); 15% flipped: 19.1% → 18.9% → 23.3%, lowest 17.8% (30 rounds). A likely cause: the exponential loss punishes bad samples with large negative margins too much; after 2000 rounds the 15.5% flipped samples hold 36% of the weight (one run). **Common misconception**: AdaBoost never overfits; on hard tasks with a high Bayes error and noisy labels it can degrade sharply (source). **To remember**: weak classifiers + weighting the points that are wrong + a weighted vote; the weights fall out of the exponential loss and $\alpha$ is set by the weighted error.
 
 Figure `lec05-kp25-noise`: test error with clean labels and with 15% flipped.
 

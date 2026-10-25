@@ -119,9 +119,7 @@ Figure `lec05-kp02-bias-line`: the three locations and the new output line $y_2=
 
 ![Bias changed to +0.5](../../assets/figures/lec05-kp02-bias-line.png)
 
-**Worked solution of question 1**: (1) The formula is $g_{\text{out}}=y_1-y_2+0.5$. (2) Substitute the three locations: $(0,0)$: $0.5$; $(1,0)$: $1.5$; $(1,1)$: $0.5$. (3) All three scores are positive, so all four inputs are predicted A.
-
-(4) Check: XOR is B, A, A, B, so the two B inputs are predicted A: 2 errors. The bias shifted the line so it no longer separates B from A.
+**Worked solution of question 1**: (1) The formula is $g_{\text{out}}=y_1-y_2+0.5$. (2) Substitute the three locations: $(0,0)$: $0.5$; $(1,0)$: $1.5$; $(1,1)$: $0.5$. (3) All three scores are positive, so all four inputs are predicted A. (4) Check: XOR is B, A, A, B, so the two B inputs are predicted A: 2 errors. The bias shifted the line so it no longer separates B from A.
 
 **Worked solution of question 2**: (1) The merged inputs are $(0,1)$ and $(1,0)$; both have the hidden code $(1,0)$. (2) Both have the XOR truth A, and merging points of the same class causes no conflict: the output layer only has to call this code A. (3) Check: with this output line the two B points $(0,0)$ and $(1,1)$ are also called A; the cause of the errors is the bias that shifts the line, not the merge.
 

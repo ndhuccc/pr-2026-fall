@@ -68,9 +68,7 @@ Figure `lec05-kp16-ringsk`: accuracy against the number of centres $k$.
 
 ### 6. Choosing the centres
 
-**Clustering** (k-means here): split the data into $k$ groups, use each group mean as a centre and then learn $w$ with supervised least squares, a mix of unsupervised and supervised learning. **Example** (designed here): two moons of 60 points each with noise, 500 new points, $\sigma^2=0.3$, 20 repeats each. Accuracy on new points: $k=6$: 90.5% against 92.7%; $k=8$: 93.3% (sd 0.018) against 95.0% (0.004); at $k=2,4$ random is slightly higher.
-
-**Common misconception**: clustering is always more accurate than random picks. It is mainly steadier.
+**Clustering** (k-means here): split the data into $k$ groups, use each group mean as a centre and then learn $w$ with supervised least squares, a mix of unsupervised and supervised learning. **Example** (designed here): two moons of 60 points each with noise, 500 new points, $\sigma^2=0.3$, 20 repeats each. Accuracy on new points: $k=6$: 90.5% against 92.7%; $k=8$: 93.3% (sd 0.018) against 95.0% (0.004); at $k=2,4$ random is slightly higher. **Common misconception**: clustering is always more accurate than random picks. It is mainly steadier.
 
 Figure `lec05-kp16-centers`: accuracy on new points for random and k-means centres.
 
