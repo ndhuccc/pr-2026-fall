@@ -1,5 +1,8 @@
 # KP10 Network size, generalization and early stopping
 
+!!! note "Self-study"
+    This unit (KP10) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: third-year undergraduate | Self-study | English edition
 
 Read this independently with weighted scores, basic differentiation and matrices as prerequisites. New terms are introduced when needed.

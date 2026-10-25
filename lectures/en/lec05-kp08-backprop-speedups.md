@@ -1,5 +1,8 @@
 # KP08 Speeding Up Backpropagation
 
+!!! note "Self-study"
+    This unit (KP08) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: undergraduate, year 3
 >
 > Pattern Recognition | Chapter 4, §4.7

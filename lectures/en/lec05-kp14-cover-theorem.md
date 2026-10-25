@@ -1,5 +1,8 @@
 # KP14 Cover's Theorem
 
+!!! note "Self-study"
+    This unit (KP14) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: undergraduate, year 3
 >
 > Pattern Recognition | Chapter 4, §4.13

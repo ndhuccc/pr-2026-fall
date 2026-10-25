@@ -1,5 +1,8 @@
 # KP21 The Representer Theorem, Kernel Expansions and Sparsification
 
+!!! note "Self-study"
+    This unit (KP21) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: undergraduate, year 3
 >
 > Pattern Recognition | Chapter 4, §4.19.1

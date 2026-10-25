@@ -1,5 +1,8 @@
 # KP22 Robust Statistical Regression and Ridge Regression
 
+!!! note "Self-study"
+    This unit (KP22) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: undergraduate, year 3
 >
 > Pattern Recognition | Chapter 4, §4.19.2

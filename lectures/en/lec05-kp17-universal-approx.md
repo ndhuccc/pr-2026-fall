@@ -1,5 +1,8 @@
 # KP17 The Universal Approximation Theorem
 
+!!! note "Self-study"
+    This unit (KP17) is self-study: it is not taught in class, so please read it on your own.
+
 > Level: undergraduate, year 3
 >
 > Pattern Recognition | Chapter 4, §4.16
