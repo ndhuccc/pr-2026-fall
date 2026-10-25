@@ -119,3 +119,7 @@ materials/lec05-kp13-generalized-linear-zh-download.zip、-en-download.zip;同�
 KP14(Cover 定理)中英文版(2026-10-25,依新規範,草稿待教師驗收):
 materials/lec05-kp14-cover-theorem-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp14-cover-theorem-zh.*、-en.*;盤點見 materials/KP14-inventory.md。
 各 11 頁(主線 8 頁＋延伸 3 頁),全程使用小例子的真實數字(程式重算);簡報與講義稽核 FAIL 0;冷讀者一輪(3.8/5),見 review.zip 內 COLD_READER.md。
+
+KP15(多項式分類器)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp15-polynomial-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp15-polynomial-zh.*、-en.*;盤點見 materials/KP15-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),全程使用小例子的真實數字(程式重算);簡報與講義稽核 FAIL 0;冷讀者一輪(3.5/5),見 review.zip 內 COLD_READER.md。
