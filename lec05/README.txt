@@ -159,3 +159,7 @@ materials/lec05-kp23-decision-tree-zh-download.zip、-en-download.zip;同批檔�
 KP24(結合分類器)中英文版(2026-10-25,依新規範,草稿待教師驗收):
 materials/lec05-kp24-combining-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp24-combining-zh.*、-en.*;盤點見 materials/KP24-inventory.md。
 各 11 頁(主線 8 頁＋延伸 3 頁),數字皆由程式重算並標〔補充〕;簡報與講義稽核 FAIL 0;冷讀者一輪(3.8/5),見 review.zip 內 COLD_READER.md。
+
+KP25(Boosting 與 AdaBoost)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp25-adaboost-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp25-adaboost-zh.*、-en.*;盤點見 materials/KP25-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),數字皆由程式重算並標〔補充〕;簡報與講義稽核 FAIL 0;冷讀者一輪(4/5),見 review.zip 內 COLD_READER.md。
