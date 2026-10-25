@@ -94,3 +94,8 @@ KP05 調整(2026-10-25):依教授指示,把原第 8 頁「最近鄰」移到延�
 - 尚未處理(最終版冷讀者提出、影響較小):KP02 第 2 頁 g1/g2 同時當單元與線名、KP03 第 10 頁題 2 解答直接印出、KP04 第 9 頁格子需數線才能確認、圖內英文標註。修改後的最終版尚未再做一輪冷讀。
 
 最終版冷讀(2026-10-25):對修正後的最終版逐一重做冷讀(獨立子代理,模型模擬),紀錄與尚未處理的意見見 lec05/cold-reader-final.md。六份評分:KP01–KP05 各 4/5、總覽 3.5/5;未發現算式錯誤或顯示損毀。
+
+KP06(從階梯到反向傳播的梯度)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp06-backprop-gradient-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp06-backprop-gradient-zh.*、-en.*;盤點見 materials/KP06-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),全程使用同一個 2–2–1 網路的真實數字(程式與數值差分核對);簡報與講義稽核 FAIL 0;冷讀者兩輪(3.5/5、4/5),見 review.zip 內 COLD_READER.md。
+另外 view-from-text/tools/check_arithmetic.py 改為能分辨「只是印出四捨五入」與真正的不一致。
