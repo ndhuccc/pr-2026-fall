@@ -103,3 +103,7 @@ materials/lec05-kp06-backprop-gradient-zh-download.zip、-en-download.zip;同批
 KP07(反向傳播的演算法)中英文版(2026-10-25,依新規範,草稿待教師驗收):
 materials/lec05-kp07-backprop-algorithm-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp07-backprop-algorithm-zh.*、-en.*;盤點見 materials/KP07-inventory.md。
 各 11 頁(主線 8 頁＋延伸 3 頁),XOR 實驗數字全由程式重算;簡報與講義稽核 FAIL 0;冷讀者一輪(3.5/5),見 review.zip 內 COLD_READER.md。
+
+KP08(反向傳播的加速變形)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp08-backprop-speedups-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp08-backprop-speedups-zh.*、-en.*;盤點見 materials/KP08-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),全程使用同一個狹長二次谷底的真實步數(程式重算);簡報與講義稽核 FAIL 0;冷讀者一輪(4/5),見 review.zip 內 COLD_READER.md。
