@@ -143,3 +143,7 @@ materials/lec05-kp19-kernel-svm-zh-download.zip、-en-download.zip;同批檔案�
 KP20(超越 SVM:核技巧通用化與 kernel perceptron)中英文版(2026-10-25,依新規範,草稿待教師驗收):
 materials/lec05-kp20-beyond-svm-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp20-beyond-svm-zh.*、-en.*;盤點見 materials/KP20-inventory.md。
 各 11 頁(主線 8 頁＋延伸 3 頁),數字皆由程式重算並標〔補充〕;簡報與講義稽核 FAIL 0;冷讀者一輪(4/5),見 review.zip 內 COLD_READER.md。
+
+KP21(Representer 定理與稀疏化)中英文版(2026-10-25,依新規範,草稿待教師驗收):
+materials/lec05-kp21-representer-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp21-representer-zh.*、-en.*;盤點見 materials/KP21-inventory.md。
+各 11 頁(主線 8 頁＋延伸 3 頁),數字皆由程式重算並標〔補充〕;簡報與講義稽核 FAIL 0;冷讀者一輪(4/5),見 review.zip 內 COLD_READER.md。
