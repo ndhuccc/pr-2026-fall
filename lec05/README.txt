@@ -83,5 +83,5 @@ KP05 調整(2026-10-25):依教授指示,把原第 8 頁「最近鄰」移到延�
 
 章節總覽頁與舊版清理(2026-10-25,依教授指示):
 - 新增第四章路線圖(總覽,8 頁):materials/lec05-kp00-overview-zh-download.zip、-en-download.zip;同批檔案也單獨放在 materials/lec05-kp00-overview-zh.*、-en.*。每頁回顧一個知識點的問、答與留下的問題,最後一頁做整章回顧;簡報稽核 FAIL 0。
-- 已刪除 KP01–KP05 舊的中英對照版簡報(materials/lec05-kpNN-<主題>.html 與 .jbd.json 共 10 個檔);舊版的講義 PDF、閱讀 HTML、review.zip 等其他檔案保留。注意:上方 KP01 逐字稿相關說明提到的 materials/lec05-kp01-xor.jbd.json 與 .html 已不存在,可從 git 歷史(commit b1fd5e7 之前)取回。
+- 已刪除 KP01–KP05 舊的中英對照版簡報(materials/lec05-kpNN-<主題>.html 與 .jbd.json 共 10 個檔);舊版的講義 PDF、閱讀 HTML、review.zip 等其他檔案保留。注意:上方 KP01 逐字稿相關說明提到的 materials/lec05-kp01-xor.jbd.json 與 .html 已不存在,可從 git 歷史取回(例如 commit ceee760)。
 - 教授已在 JianBauDau 驗證新版簡報的播放與 PDF 匯出。
