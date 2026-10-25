@@ -1,159 +1,188 @@
-# KP10 Network size, generalization and early stopping
+# KP10 Network Size, Generalization and Early Stopping
 
 !!! note "Self-study"
     This unit (KP10) is self-study: it is not taught in class, so please read it on your own.
 
-> Level: third-year undergraduate | Self-study | English edition
+> Level: undergraduate, year 3
+>
+> Pattern Recognition | Chapter 4
 
-Read this independently with weighted scores, basic differentiation and matrices as prerequisites. New terms are introduced when needed.
-
-[Open the matching slides](../../slides/lec05-kp10-network-size-en.jbd.json) | [中文版](../lec05-kp10-network-size.md)
+[Slides: read and download](../../slides/lec05-kp10-network-size-en.jbd.json) | [中文版](../lec05-kp10-network-size.md)
 
 ## Learning objectives
 
-- Count parameters and distinguish them from units.
-- Select a checkpoint and distinguish three data roles.
-- Explain why a cell bound is not a quality guarantee.
+- Count the parameters of a given architecture and tell units from parameters.
+- Choose a training checkpoint from validation numbers and tell the three roles of data apart.
+- Explain that the geometric capacity bound is only an upper limit, not a guarantee of model quality.
 
-## KP10 Network size, generalization and early stopping
+## KP10 Network Size, Generalization and Early Stopping
 
-**One-sentence summary**：Select size and training duration using held-out evidence, not training fit alone.
+**One-sentence summary**: How large a network should be and how long it should be trained cannot be decided by the training score alone; data that did not take part in training must decide together with it.
 
-**Plain explanation**：Separate memorizing training answers from predicting new data before discussing size. Parameter counts below belong to explicit architectures, not hidden-unit counts alone.
+### Prerequisites and symbols
 
-**Formal definition**：The sections define terms, symbols and assumptions while keeping symbols consistent for the same quantity.
+**Three things you need first**:
 
-**Example**：All new worked examples are [Added] and checked in Python. Source experiment reports are identified separately.
+- **Loss and cost** (KP06, KP09): the loss is the penalty for how far a prediction is from its target; the cost is the mean of the losses.
+- **Forward pass and parameters** (KP06): every unit has weights and a bias, and training adjusts them.
+- **Hyperplane** (KP03): a line in 2-D and a plane in 3-D; the boundary of one hidden unit is a hyperplane.
 
-**Common misconception**：Fewer parameters and longer fitting do not independently guarantee better new-data performance.
+**Symbol table** (fixed for this lecture):
 
-**Practice**：The final section provides questions, hints and worked checks for use after your own attempt.
+| Symbol | Meaning | Note |
+|---|---|---|
+| $d$ | dimension of the input | $d=2$ for 2-D data |
+| $K$, $k$ | number of hidden units | $K$ (number of hyperplanes) in section 5, $k$ in section 7 |
+| $M_{\max}(K,d)$ | the most regions $K$ hyperplanes can cut in $d$ dimensions | section 5 |
+| $L$ | mean squared error | $L=\frac1N\sum_n(\hat y_n-t_n)^2$ |
+| $N$ | number of samples in this data set | |
+| $t_n,\hat y_n$ | target and prediction of sample $n$ | |
 
-### What capacity can learn
+### 1. Why control the size: first tell "memorized" from "learned"
 
-Separate memorizing training answers from predicting new data before discussing size. Parameter counts below belong to explicit architectures, not hidden-unit counts alone.
+**Plain explanation**: A high training score does not mean new data will be predicted well. Controlling the size of the network is about avoiding merely memorizing the training data.
 
-**Generalization**: Correct prediction on data not used for fitting is generalization; memorizing training answers is different.
+- **Generalization**: still predicting correctly on new data that did not take part in training; it is not memorizing the original answers.
 
-This continuous-prediction illustration exposes a trade-off also faced in classification. Find the main trend before treating sample fluctuations as rules.
+The figure is a supplementary illustration for continuous prediction, and classification faces the same trade-off: find the main trend first, then look at the small fluctuations of the samples; not every fluctuation should be treated as a rule.
 
-![A smooth sine trend and six illustrative noisy samples; the piecewise interpolant is not a fitted neural network.](../../assets/figures/lec05-kp10-trend.png)
+![The same noisy samples and the smooth trend; the broken line is only a teaching illustration, not a network training result.](../../assets/figures/lec05-kp10-trend.png)
 
-Figure `lec05-kp10-trend`：[Added] Compare the labelled alternatives, then check them against the numerical discussion. Schematic model drawings are not exact experimental traces.
+Figure `lec05-kp10-trend`: [Added] Look at the dots (noisy samples) scattered above and below a smooth curve, then at the broken line passing through every dot: it memorized the noise instead of learning the trend. The broken line is only a teaching illustration, not a network training result. [Function: 1, 2]
 
-**Free parameter**: A free parameter is an independently adjustable number; weights and biases both count.
+The next question: how many adjustable numbers does a network actually have?
 
-Use two inputs, three hidden units and one output, with dense connections and one bias per computing unit.
+### 2. Counting free parameters, underfitting and overfitting
 
-Hidden layer: $(2+1)\times3=9$. Output layer: $(3+1)\times1=4$. There are $9+4=13$ parameters, not three.
+- **Free parameter**: a number that can be changed independently during training; weights and biases both count.
 
-**Underfitting**: Underfitting means the model misses important structure and can perform poorly even on training data.
+**Counting example**: two inputs, three hidden units and one output, fully connected, every computing unit with a bias.
 
-**Overfitting**: Overfitting adapts to incidental training details at the expense of prediction on new data.
+- Hidden layer: each hidden unit has 2 weights plus 1 bias, $(2+1)\times3=9$.
+- Output layer: the output unit has 3 weights plus 1 bias, $(3+1)\times1=4$.
+- In all $9+4=13$, not just three for the three hidden units.
 
-Size alone does not prove overfitting. Data, weight magnitudes, constraints and the fitting procedure also matter.
+Two opposite failures:
 
-### Choose checkpoints using held-out data
+- **Underfitting**: the model cannot even express the main trend, and both training and new-data performance may be poor.
+- **Overfitting**: the model fits chance details of this training set and thereby hurts predictions on new data.
 
-Even a fixed architecture may adapt too closely to training data. Examine two loss curves, choose among five checkpoints, and distinguish validation from testing.
+"Larger" is not a sufficient condition for overfitting; the amount of data, the size of the weights, the way of limiting them and the training procedure all matter.
 
-**Validation set**: Validation data do not update weights; they help choose a model or training checkpoint.
+The next question: with the architecture fixed, how long should we train?
 
-**Overtraining**: Overtraining occurs when further fitting of a fixed architecture starts hurting validation performance.
+### 3. Choosing a training checkpoint with held-out data
 
-Training loss keeps falling; validation loss rises after its minimum at epoch 3. The curves need not cross or start together.
+Even with a fixed size the model can fit the training data too closely, so the training time has to be controlled separately.
 
-![Training and validation losses at five checkpoints: validation is lowest at epoch three and training at epoch five.](../../assets/figures/lec05-kp10-early.png)
+- **Validation set**: data not used to update weights but used to choose a model or a training checkpoint.
+- **Overtraining**: with the architecture fixed, later training starts to chase details of the training set and the validation performance gets worse.
+- **Early stopping**: stop training according to the validation performance and restore the best checkpoint; an implementation may tolerate a few epochs without improvement.
 
-Figure `lec05-kp10-early`：[Added] Compare the labelled alternatives, then check them against the numerical discussion. Schematic model drawings are not exact experimental traces.
+**Illustrative numbers** (hand-made teaching numbers, not experimental results): at each checkpoint compute the training loss and the validation loss.
 
-**Early stopping**: Early stopping uses validation performance and restores the best checkpoint; implementation may allow patience.
+| Epoch | 1 | 2 | 3 | 4 | 5 |
+|---|---:|---:|---:|---:|---:|
+| training loss | 0.50 | 0.30 | 0.20 | 0.15 | 0.10 |
+| validation loss | 0.55 | 0.35 | 0.25 | 0.28 | 0.40 |
 
-Validation losses at epochs 1–5 are $0.55,0.35,0.25,0.28,0.40$. The minimum is $0.25$ at epoch 3.
+- The smallest validation loss is $0.25$ at epoch 3, so the weights of epoch 3 are kept.
+- At epoch 5 the training loss is lowest, but the validation loss rises from $0.25$ to $0.40$, an increase of $0.40-0.25=0.15$.
 
-Epoch 5 has lower training loss, but validation loss rises from $0.25$ to $0.40$: $0.40-0.25=0.15$.
+Figure `lec05-kp10-early`: look at the blue line (training loss) falling all the way, then at the orange line (validation loss) lowest at epoch 3 and rising afterwards; the dashed line marks epoch 3 to be saved. The two curves need not cross, and the gap need not start from zero. [Function: 2]
 
-**Training data** fit weights to patterns.
+![Mean training and validation loss at five checkpoints; validation is lowest at epoch 3 and training at epoch 5.](../../assets/figures/lec05-kp10-early.png)
 
-**Validation data** select size, penalty strength and checkpoints without directly fitting weights.
+The next question: the validation data have been used to choose; what data should report the final score?
 
-**Test set**: reserve it for evaluation after model selection. Reusing it to choose models breaks independence; avoid duplicate-subject and temporal leakage.
+### 4. Three kinds of data, each with its own job
 
-One error among ten gives $1/10=0.1$; two give $2/10=0.2$. One case changes the estimate by ten percentage points.
+- **Training set**: used to update the weights and learn the regularities in the data.
+- **Validation set**: used to choose the size, the penalty strength and the stopping point, without directly updating weights.
+- **Test set**: used for the final evaluation after the model has been chosen. If it is looked at repeatedly to pick models it is no longer an independent check; leakage of repeated individuals or of time information must also be avoided.
 
-Repeated splits or cross-validation can support selection, but fitting and evaluation must remain separated. They do not create new independent data.
+**Numbers from small samples are coarse**: one error in ten gives an error rate $1/10=0.1$; two errors give $2/10=0.2$. One case more changes the estimate by ten percentage points.
 
-There is no best neuron count independent of the data and task.
+Repeated splits or cross-validation can help the choice, but each time the training and the evaluation must still be separated; independent data cannot be created out of nothing. So there is no "best number of neurons" apart from the amount of data and the task.
 
-### Geometric capacity versus an actual XOR construction
+**Common misconception**: fewer parameters or longer training does not by itself guarantee better accuracy on new data.
 
-Held-out selection asks about prediction, while geometry counts possible cells. XOR makes the distinction between a maximum and an actual arrangement concrete.
+The next question: can we skip training and compute an upper limit of capacity from the architecture alone?
 
-**Cell-count bound**: K hyperplanes partition d-dimensional space into at most M cells. General position attains the maximum; degenerate arrangements may not.
+### 5. The geometric capacity bound and the actual construction for XOR
 
-$M_{\max}(K,d)=\sum_{m=0}^{d}\binom{K}{m}$. K counts hidden units and d input dimensions; $\binom{K}{m}=0$ when $m>K$.
+Data selection answers "is the prediction good?", and the geometric count only answers "how many pieces can the architecture cut at most?". They are different questions.
 
-General position excludes coincidences, parallelism and excessive intersections that reduce cell count; the precise condition depends on dimension.
-
-![Maximum hyperplane cell counts versus hidden-unit count for input dimensions one, two and three.](../../assets/figures/lec05-kp10-regions.png)
-
-Figure `lec05-kp10-regions`：[Added] Compare the labelled alternatives, then check them against the numerical discussion. Schematic model drawings are not exact experimental traces.
-
-For $d=2,K=2$, $M_{\max}=1+2+1=4$. The three terms count choices of 0, 1 and 2 lines.
-
-The XOR boundaries $x_1+x_2=0.5$ and $x_1+x_2=1.5$ are parallel: three actual bands, with both A points in the middle.
-
-An upper bound of four accommodates three cells; sufficiency of two units still needs this explicit construction.
-
-![Four XOR points and two parallel boundaries enclosing the positive band; three actual cells versus a maximum of four.](../../assets/figures/lec05-kp10-xor.png)
-
-Figure `lec05-kp10-xor`：[Added] Compare the labelled alternatives, then check them against the numerical discussion. Schematic model drawings are not exact experimental traces.
-
-### Three size-selection strategies
-
-A cell bound does not find good weights. Return to practical model search and compare shrinking a network with growing one.
-
-**Analytical methods** estimate capacity using algebra or statistics, often without optimization details.
-
-**Pruning** fits a larger network, then removes less useful connections by a rule.
-
-**Constructive methods** grow units from a small architecture. All routes need validation; the next KP studies pruning.
-
-### Interpret the source demonstration within scope
-
-With capacity and selection separated, the source sine demonstration becomes a case rather than a universal setting.
-
-The source uses 15 training points and 10 independent test points for $y=\sin(2\pi x)+\epsilon$, where $\epsilon$ is observation noise.
-
-$\hat y=\sum_{j=1}^{k}v_j\tanh(a_jx+b_j)+c$. Adjustable a, b, v and c give $3k+1$ parameters; k counts hidden units.
-
-The source describes k around 3–5 as useful and possible overfitting at k=15. These are not universal choices; this training was not rerun here.
-
-### Practice and worked checks
-
-Cover the worked answers first, make both decisions, then check the numerical reasoning.
-
-Question 1: training losses are $0.40,0.20,0.10$ and validation losses $0.45,0.25,0.30$. Choose a checkpoint by the validation minimum.
-
-Question 2: count the maximum cells of three planar lines in general position using $\binom30+\binom31+\binom32$. Does parallelism attain it?
-
-1. The minimum of $0.45,0.25,0.30$ is $0.25$: retain checkpoint 2, despite lower final training loss.
-
-2. Three planar lines give $M_{\max}=1+3+3=7$. Three parallel lines give only four bands.
-
-3. Validation loss rises by $0.30-0.25=0.05$. Cell count did not enter the checkpoint comparison.
-
-#### Why does the cell count have this form?
-
-In general position the K-th hyperplane splits some existing cells. The additional pieces correspond to the cells formed by the previous K−1 hyperplanes inside this new, lower-dimensional plane. Hence
+**Formal definition (bound on the number of regions)**: $K$ hyperplanes cut $d$-dimensional space into at most
 
 $$
-R(K,d)=R(K-1,d)+R(K-1,d-1).
+M_{\max}(K,d)=\sum_{m=0}^{d}\binom{K}{m}
 $$
 
-Start from $R(0,d)=1$ and $R(K,0)=1$. Pascal's identity gives $R(K,d)=\sum_{m=0}^d\binom Km$. This counts partitions; it does not ensure that the output layer separates arbitrary cell labels.
+regions, where $\binom Km$ is the number of ways to choose $m$ out of $K$ and is 0 when $m>K$. General position (no coincident or parallel hyperplanes or many meeting at one point, which reduce the regions) reaches this maximum; degenerate arrangements may give fewer.
 
-#### An executable checkpoint check
+**Value table**:
+
+| $d$ \ $K$ | 1 | 2 | 3 | 4 |
+|---|---:|---:|---:|---:|
+| 1 | 2 | 3 | 4 | 5 |
+| 2 | 2 | 4 | 7 | 11 |
+| 3 | 2 | 4 | 8 | 15 |
+
+Example: $d=2,K=2$: $M_{\max}=1+2+1=4$; the three binomial numbers correspond to choosing 0, 1 and 2 lines.
+
+Figure `lec05-kp10-regions`: look at the number of hyperplanes $K$ on the horizontal axis, then compare the curves for different input dimensions $d$: the higher the dimension and the more lines, the faster the maximum number of regions grows. [Function: 2]
+
+![Maximum number of regions formed by K hyperplanes in general position for different input dimensions d.](../../assets/figures/lec05-kp10-regions.png)
+
+**The actual construction for XOR**: the lines $x_1+x_2=0.5$ and $x_1+x_2=1.5$ of KP01 are parallel and actually cut only three bands, the two A points living in the middle one. "The bound of four holds three" is only a capacity check; whether two units are enough must be shown by this explicit construction.
+
+Figure `lec05-kp10-xor`: look at the four XOR points, then at the two parallel lines cutting the plane into three regions, not the general-position maximum of four. [Function: 1, 3]
+
+![The four XOR points and two parallel lines; there are actually three regions, not the general-position maximum of four.](../../assets/figures/lec05-kp10-xor.png)
+
+The next question: the bound does not tell us how to find a suitable size. What strategies exist in practice?
+
+### 6. Three strategies for choosing the size
+
+- **Analytic methods**: estimate capacity with algebra or statistics, but usually ignore the actual optimization process.
+- **Pruning**: train a larger network first and then delete the less important connections by a rule (the next KP).
+- **Constructive methods**: start from a small architecture and add units step by step (KP05).
+
+All three need to be checked with validation data.
+
+### 7. Reading the scope of the source's interactive demonstration
+
+The source has a sine demonstration; we only describe its setup and do not treat one experiment as a universal best setting.
+
+- Target: $y=\sin(2\pi x)+\epsilon$, where $\epsilon$ is noise added to the observation.
+- Data: 15 training points and 10 independent test points.
+- Model: $\hat y=\sum_{j=1}^{k}v_j\tanh(a_jx+b_j)+c$, with $k$ hidden units; $a_j,b_j,v_j,c$ are all adjustable and the number of parameters is $3k+1$.
+
+The source describes $k$ of about 3 to 5 as suitable and $k=15$ as possibly overfitting. This is not a universal best value for any data, and this lecture did not rerun the training.
+
+### Extension: practice, the recurrence and a program
+
+**Practice**:
+
+1. The training losses are $0.40,0.20,0.10$ and the validation losses $0.45,0.25,0.30$. Which epoch is chosen? Hint: find the validation minimum first.
+2. What is the largest number of regions of three lines in general position in 2-D? Hint: compute $\binom30+\binom31+\binom32$; is it still this number if the three lines are parallel?
+
+**Worked solution (question 1)**: among the validation values $0.45,0.25,0.30$ the smallest is $0.25$, so epoch 2 is kept; the lower training value of the last epoch does not change the choice. The validation at epoch 3 is higher than at epoch 2 by $0.30-0.25=0.05$.
+
+**Worked solution (question 2)**: $M_{\max}=1+3+3=7$. Three parallel lines give only four bands, not reaching the bound of seven. The number of regions took no part in choosing the checkpoint.
+
+**Why the number of regions has this form**: when the $K$-th hyperplane is added in general position it cuts some existing regions in two. The newly cut parts correspond to the regions one dimension lower that the other $K-1$ hyperplanes form inside the new plane, so
+
+$$
+R(K,d)=R(K-1,d)+R(K-1,d-1),\qquad R(0,d)=1,\ R(K,0)=1 .
+$$
+
+With the Pascal relation of the binomial numbers this gives $R(K,d)=\sum_{m=0}^d\binom Km$. The derivation only counts the partition of space and does not include whether the output layer can separate arbitrary region labels.
+
+**Mean squared error**: the source's sine demonstration is continuous prediction and uses $L=\frac1N\sum_{n=1}^N(\hat y_n-t_n)^2$. Example: two errors of 1 and $-1$ give $L=(1^2+(-1)^2)/2=1$. For classification a threshold and an error rate must be specified separately, and the two must not be treated as the same quantity; the five checkpoint numbers above are a teaching supplement, not the execution result of this demonstration.
+
+**A checkpoint choice you can run yourself**:
 
 ```python
 validation = [0.55, 0.35, 0.25, 0.28, 0.40]
@@ -161,33 +190,21 @@ best_epoch = min(range(len(validation)), key=validation.__getitem__) + 1
 assert best_epoch == 3
 ```
 
-This selects from supplied checkpoints, not trained networks. Real fitting also needs saved and restored weights, a fixed data split and a specified assessment metric.
+This only selects among the supplied checkpoints and does not train a neural network. Real training must also save and restore the weights of that epoch, fix the data split and record the evaluation measure.
 
-#### What mean squared error measures
+## Terms and source
 
-The source sine example predicts continuous values with $L=\frac1N\sum_{n=1}^N(\hat y_n-t_n)^2$, where t is target, hat y prediction and N the number of examples in that split. Errors one and minus one give $L=(1^2+(-1)^2)/2=1$. Classification needs a threshold and an additional classification-error measure. The earlier five-checkpoint table is a teaching example, not an execution of the sine demo.
-
-
-## Glossary and symbol reminders
-
-| English | 中文 |
+| 中文 | English |
 |---|---|
-| Generalization | 泛化 |
-| Free parameter | 自由參數 |
-| Underfitting | 欠擬合 |
-| Overfitting | 過擬合 |
-| Validation set | 驗證集 |
-| Overtraining | 過度訓練 |
-| Early stopping | 早停 |
-| Test set | 測試集 |
-| Cell-count bound | 區域數上界 |
+| 泛化 | Generalization |
+| 自由參數 | Free parameter |
+| 欠擬合 | Underfitting |
+| 過擬合 | Overfitting |
+| 驗證集 | Validation set |
+| 過度訓練 | Overtraining |
+| 早停 | Early stopping |
+| 訓練集、測試集 | Training set, test set |
+| 區域數上界 | Cell-count bound |
+| 超平面 | Hyperplane |
 
-Read symbols by their local definitions. Distinguish weights, scores, predictions and loss; identically named hyperparameters in different experiments may have different roles.
-
-## Sources and supplementary scope
-
-- [Chapter 4, KP10](https://ndhuccc.github.io/CCC-LNS/PR_115/Ch04-nonlinear-classifiers/index.html#kp10), accessed 2026-10-25.
-- The source groups validation with testing, describes stopping at divergence and infers sufficiency from a cell bound. This material separates data roles, validation minima and constructive sufficiency. Real training losses also need not decrease monotonically.
-- Source reference code: [Mirc 89].
-- Original Figures 4.14–4.16 were inspected. New teaching diagrams do not claim to be the original figures or exact experimental curves.
-- Historical reference codes follow the source. Full papers, theorem conditions and experimental records were not all available; those limits are retained.
+Source: [Chapter 4, KP10](https://ndhuccc.github.io/CCC-LNS/PR_115/Ch04-nonlinear-classifiers/index.html#kp10) (read 2026-10-25); reference code [Mirc 89]. The source puts validation and test side by side, treats the divergence of the curves as the stopping point and infers sufficiency directly from the region bound; this lecture separately clarifies the roles of the data, the validation minimum and the explicit construction. A general training loss does not decrease monotonically epoch by epoch. The five checkpoint numbers and the practice of this lecture are [added] and were checked with Python; the curves of the source experiment were not rerun.
