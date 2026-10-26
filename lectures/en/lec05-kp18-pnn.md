@@ -47,7 +47,7 @@ The Bayes decision compares the maximum of $P(\omega_i)\,\hat p(x\mid\omega_i)$.
 
 Figure `lec05-kp18-parzen`: First look at the five one-dimensional training points (dots), each with a small blue Gaussian on it; then at the thick red line: it is the average of the five small Gaussians, the estimated density, with one peak where each group of training points is dense. [Function: 1]
 
-![Parzen estimate: five one-dimensional training points, one kernel each, averaged into the estimated density.](../../assets/figures/lec05-kp18-parzen.png)
+![Parzen estimate: five one-dimensional training points, one kernel each, averaged into the estimated density.](../../assets/figures/lec05-kp18-parzen-en.png)
 
 The next question: how does the distance inside the Gaussian turn into the "weighted sum" form of a network?
 
@@ -70,7 +70,7 @@ which for lengths all equal to 1 is $2-2x_i^Tx$.
 
 Figure `lec05-kp18-circle`: First look at the two vectors $x$ and $x_i$ on the unit circle (two arrows, both of length 1); then at the dashed line (the chord) joining the two arrow tips: its squared length is $2-2x_i^Tx=0.8$. [Function: 1]
 
-![Distance becomes inner product: two vectors on the unit circle and the chord joining them.](../../assets/figures/lec05-kp18-circle.png)
+![Distance becomes inner product: two vectors on the unit circle and the chord joining them.](../../assets/figures/lec05-kp18-circle-en.png)
 
 ### 3. The discriminant function
 
@@ -101,9 +101,9 @@ Three layers:
 
 This network needs almost no training: no gradient descent, local minima or epochs.
 
-Figure `lec05-kp18-arch`: First look at the two inputs $x_1,x_2$ on the left joined to the five hidden nodes $y_1,\dots,y_5$ in the middle (each hidden node is one training point); then at the two outputs A and B on the right: the blue $y_1,y_2,y_3$ connect only to A and the orange $y_4,y_5$ only to B. [Function: 1]
+Figure `lec05-kp18-arch`: First the two inputs $x_1,x_2$ connected to the five hidden nodes (one per training point, with the angle, $x_k^Tx$ and $y_k$ beside it); then the two outputs on the right: the blue $y_1,y_2,y_3$ connect only to A, the orange $y_4,y_5$ only to B, and class A wins 0.2943 to 0.2062. [Function: 1, 2]
 
-![Network architecture: two inputs, five hidden nodes, two outputs.](../../assets/figures/lec05-kp18-arch.png)
+![The architecture and the worked example for the 70° test vector.](../../assets/figures/lec05-kp18-arch-en.png)
 
 ### 5. A complete calculation
 
@@ -141,9 +141,9 @@ A wins ($70°$ is closer to the $60°$ and $40°$ of class A).
 
 The two classes overlap to begin with, so training accuracy does not reach 100%. At $h=0.02$ training is 95% and the new points 89.6%: the kernel is too narrow and hugs individual training points. From $h=0.1$ to 1 the new points are about 91.6%, close to the 91.9% of a single cut at $75°$. This easy example is insensitive to $h$; only a very small one hurts.
 
-Figure `lec05-kp18-hcurve`: First see that the horizontal axis is the kernel width $h$ (log scale) and there are two lines: blue for training, red for new points; then look at the dashed line (the 91.9% of a single cut): the red line hugs it from $h\ge0.1$ on, and only the far left ($h=0.02$) drops. [Function: 3]
+Figure `lec05-kp18-hcurve`: First the horizontal axis, the kernel width $h$ (log scale), and the two lines: blue is training, red is new points; then the grey line (a single cut, 91.9%): the red line hugs it for $h\ge0.1$ and only drops at the far left ($h=0.02$). [Function: 3]
 
-![Accuracy against the kernel width h.](../../assets/figures/lec05-kp18-hcurve.png)
+![Accuracy against the kernel width h.](../../assets/figures/lec05-kp18-hcurve-en.png)
 
 ### 7. How many points to keep
 
@@ -156,9 +156,9 @@ Figure `lec05-kp18-hcurve`: First see that the horizontal axis is the kernel wid
 
 This simple data does not need every point kept; keep fewer and the network is smaller. After $n\ge10$ the accuracy hardly rises any more; the main change is that it gets steadier (smaller standard deviation).
 
-Figure `lec05-kp18-nsub`: First see that the horizontal axis is the number of training points per class, the red dots are the means of the 20 sets and the black error bars the standard deviation; then look at the bars: very long at $n=2$, short from $n\ge10$. [Function: 3]
+Figure `lec05-kp18-nsub`: First the horizontal axis, the training points per class, the red dots the mean of 20 sets and the grey bars plus and minus one standard deviation; then the bars: very long for $n=2$, short from $n\ge10$. [Function: 3]
 
-![Number of training points per class and the new-point accuracy.](../../assets/figures/lec05-kp18-nsub.png)
+![Number of training points per class and the new-point accuracy.](../../assets/figures/lec05-kp18-nsub-en.png)
 
 ### 8. The cost
 
@@ -172,6 +172,10 @@ Each test needs $N\cdot l$ multiply-adds and the network stores $N\cdot l$ numbe
 
 **How to remember**: PNN = the parallel hardware version of the Parzen estimate; training = copying the data, inference = computing everything again, shifting the learning cost onto the inference cost. It and sparsification (KP21) are the two ends of a spectrum: keep everything versus keep only the support vectors (source).
 
+Figure `lec05-kp18-cost`: First the three rows on the left: training points and dimension, multiply-adds per test, memory, all growing linearly with $N$ and $l$; then the two cards on the right and the spectrum below: keeping everything (PNN) and keeping only the support vectors (KP21) are the two ends. [Function: 3]
+
+![The cost of a PNN and its place on the sparsification spectrum.](../../assets/figures/lec05-kp18-cost-en.png)
+
 ### Extension: the cost of normalization, exercises and worked solutions
 
 **The cost of normalization** (designed for this lecture): concentric rings whose two classes differ only in radius.
@@ -183,7 +187,7 @@ Normalization throws the length away; before using a PNN check that the class in
 
 Figure `lec05-kp18-rings`: First look at the left panel: two concentric rings (blue inner, orange outer); then the right panel: after normalization the two classes are mixed on the same circle and cannot be told apart. [Function: 1, 3]
 
-![The cost of normalization: concentric rings on the left, after normalization on the right.](../../assets/figures/lec05-kp18-rings.png)
+![The cost of normalization: concentric rings on the left, after normalization on the right.](../../assets/figures/lec05-kp18-rings-en.png)
 
 **Small exercises**: training vectors $x_A=(1,0)$, $x_B=(0,1)$, test vector $x=(0.8,0.6)$, priors 0.5 each; $y_k=\exp((x_k^Tx-1)/h^2)$.
 
@@ -195,6 +199,10 @@ Figure `lec05-kp18-rings`: First look at the left panel: two concentric rings (b
 **Exercise 2, worked solution**: $h=0.2$ ($h^2=0.04$): $y_A=e^{-0.2/0.04}=e^{-5}=0.0067$, $y_B=e^{-0.4/0.04}=e^{-10}=0.000045$; outputs $0.0034$ against $0.00002$, still A; the ratio goes from $0.409/0.335\approx1.22$ to about 148.
 
 **Check**: the smaller $h$, the more near training points are magnified and far ones suppressed.
+
+Figure `lec05-kp18-solution`: First exercise 1 ($h=1$: outputs 0.409 against 0.335, class A), then exercise 2 ($h=0.2$: 0.0034 against 0.00002, still A), and finally the check that the ratio goes from about 1.22 to about 148. [Function: 2]
+
+![Worked steps and answers for exercises 1 and 2.](../../assets/figures/lec05-kp18-solution-en.png)
 
 ## Terms and source
 
