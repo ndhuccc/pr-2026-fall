@@ -57,7 +57,7 @@ The most popular is the OBCT (ordinary binary classification tree): each node as
 
 Figure `lec05-kp23-partition`: look at the three regions on the left, whose edges are all parallel to the axes; then at the tree on the right, where every internal node corresponds to one cut on the left. [Function: 1, 3]
 
-![A sequence of yes-or-no questions](../../assets/figures/lec05-kp23-partition.png)
+![A sequence of yes-or-no questions](../../assets/figures/lec05-kp23-partition-en.png)
 
 The next question: to build a tree, what must be decided first?
 
@@ -76,7 +76,7 @@ The next question: to build a tree, what must be decided first?
 
 Figure `lec05-kp23-cands`: look at the 10 values, then at the 9 midpoints between neighbouring values. [Function: 1]
 
-![Candidate questions](../../assets/figures/lec05-kp23-cands.png)
+![Candidate questions](../../assets/figures/lec05-kp23-cands-en.png)
 
 The next question: with so many candidate questions, what standard picks the best one? First we need to measure "how mixed a node is".
 
@@ -134,7 +134,7 @@ Choose the question with the largest $\Delta I$.
 
 Figure `lec05-kp23-dI`: [added] first the top two rows: the 10 points of the parent are split by the question into 4 and 6 points, box width proportional to the points; then the bar below: the grey bar is $I(t)=1.522$, the two coloured pieces are what is left after the split ($0.4\times0.811=0.325$, $0.6\times1.459=0.875$), and the grey gap is $\Delta I=0.322$. The textbook prints 0.315. [Function: 1, 3]
 
-![Parent (4,4,2) split into (3,1,0) and (1,3,2); the grey bar 1.522 minus 0.325 and 0.875 leaves the gap ΔI=0.322.](../../assets/figures/lec05-kp23-dI.png)
+![Parent (4,4,2) split into (3,1,0) and (1,3,2); the grey bar 1.522 minus 0.325 and 0.875 leaves the gap ΔI=0.322.](../../assets/figures/lec05-kp23-dI-en.png)
 
 The next question: why must the children in $\Delta I$ be multiplied by their size proportions and not simply averaged?
 
@@ -230,7 +230,7 @@ Figure `lec05-kp23-var`: [added] first the points: they are training set 40 (fea
 
 Figure `lec05-kp23-bagsample`: [added] first the top row: an illustration, not experiment data. The top row is training points numbered 1 to 8; each sample draws 8 times with replacement, a repeated number means the same point was drawn several times, and the red text lists the points never drawn; each of three samples grows a tree and the three votes decide by majority. The chance that a point is never drawn is $(1-1/N)^N$, approaching $0.368$ as $N$ grows.
 
-![An illustration with 8 numbered points: three samples drawn with replacement each repeat and miss points, each grows a tree, and three votes decide by majority.](../../assets/figures/lec05-kp23-bagsample.png)
+![An illustration with 8 numbered points: three samples drawn with replacement each repeat and miss points, each grows a tree, and three votes decide by majority.](../../assets/figures/lec05-kp23-bagsample-en.png)
 
 **Experiment** (20 different training sets, seeds 100 to 119; the new data are the same 2000 points as in section 6; $B=25$ trees):
 
@@ -242,7 +242,7 @@ Figure `lec05-kp23-bagsample`: [added] first the top row: an illustration, not e
 
 Figure `lec05-kp23-bagres`: [added] first the dots and bars: each dot is one training set's accuracy on 2000 new points and the bar is the mean of the 20; the single tree is the most spread out, while bagging and the random forest sit further right with a smaller spread.
 
-![Dot plot of new-point accuracy over 20 training sets: single tree 84.4±1.4, bagging 87.7±1.1, random forest 87.8±1.1.](../../assets/figures/lec05-kp23-bagres.png)
+![Dot plot of new-point accuracy over 20 training sets: single tree 84.4±1.4, bagging 87.7±1.1, random forest 87.8±1.1.](../../assets/figures/lec05-kp23-bagres-en.png)
 
 **Why averaging helps**: a tree is hierarchical, so an error high up passes to all the leaves below; different trees err differently, and in the vote the errors cancel and the variance falls.
 
