@@ -104,7 +104,7 @@ $$
 
 Figure `lec05-kp23-entropy`: look at the entropy curve for two classes, highest (1) when they are equal and 0 when all are one class; then at where the three worked numbers fall. [Function: 1, 2]
 
-![Impurity](../../assets/figures/lec05-kp23-entropy.png)
+![Impurity](../../assets/figures/lec05-kp23-entropy-en.png)
 
 Figure `lec05-kp23-impfull`: [added] first the icons in the three columns: each column is one node, circle, square and triangle are the three classes, with the number of points and the class shares on the right; then the substitution inside each column and the large $I$: (4,4,2) gives 1.522, (1,1,1) gives 1.585 (the maximum for three classes), (5,0,0) gives 0; finally the formula and the takeaway at the bottom: the more even the classes, the larger the impurity. [Function: 1, 2]
 
@@ -214,7 +214,7 @@ The textbook says that stopping rules such as "stop when the impurity decrease i
 
 Figure `lec05-kp23-prune`: look at the number of leaves falling as $\alpha$ grows, then at the new-point accuracy rising and falling, with its peak at 10 leaves. [Function: 1, 2]
 
-![Pruning](../../assets/figures/lec05-kp23-prune.png)
+![Pruning](../../assets/figures/lec05-kp23-prune-en.png)
 
 The next question: for the same problem, does the tree look the same with another training set?
 
@@ -222,9 +222,9 @@ The next question: for the same problem, does the tree look the same with anothe
 
 **Variance** (designed here): grow an unlimited-depth tree on each of 8 training sets of the same size (seeds 40 to 47, 200 points each). The first cut (the root) always splits the second feature, but with different thresholds: 0.42, 0.11, 0.12, 0.09, 0.22, 0.26, 0.22, 0.29; the number of leaves is 22 to 33. A small difference in the data grows a different tree, which is called high variance.
 
-Figure `lec05-kp23-var`: [added] first the top panel: the points are training set 40; each red line is the first cut (second feature $\le$ threshold) of the tree grown on one training set, at heights from 0.09 to 0.42. The number line below marks the 8 thresholds, labelled by seed; two trees (seeds 44 and 46) share 0.22.
+Figure `lec05-kp23-var`: [added] first the points: they are training set 40 (feature 2 on the vertical axis); then the 8 red horizontal lines: each is the first cut (feature 2 ≤ threshold) of the tree grown on one training set, at heights from 0.09 to 0.42, with the thresholds and the 22 to 33 leaves summarised at the right. [Function: 2]
 
-![The two-moon training data with 8 red lines, each the first cut of one tree; a number line below marks the 8 thresholds and seeds, 0.09 to 0.42.](../../assets/figures/lec05-kp23-var.png)
+![The two-moon training data with 8 red lines, each the first cut of one tree; a number line below marks the 8 thresholds and seeds, 0.09 to 0.42.](../../assets/figures/lec05-kp23-var-en.png)
 
 **Bagging**: draw $B$ sets **with replacement** from the training set (each as large as the original, so some points repeat and some are not drawn), build one tree on each and finally take a majority vote. A **random forest** adds one trick to bagging: at every split only features picked at random are considered (in this experiment only 1 feature at a time).
 
@@ -263,7 +263,7 @@ Figure `lec05-kp23-bagres`: [added] first the dots and bars: each dot is one tra
 
 Figure `lec05-kp23-oblique`: look at the slanted line cutting the two classes in one stroke, then at the axis-parallel tree approximating it with steps, the more leaves the closer. [Function: 1, 3]
 
-![An oblique question](../../assets/figures/lec05-kp23-oblique.png)
+![An oblique question](../../assets/figures/lec05-kp23-oblique-en.png)
 
 **Practice**: node $t$ has 4 of $\omega_1$ and 4 of $\omega_2$; split A: Yes $(3,1)$, No $(1,3)$; split B: Yes $(2,2)$, No $(2,2)$; given $I(3,1)=0.811$.
 
