@@ -50,9 +50,9 @@ $$
 
 one layer of Gaussian hidden nodes plus a linear output. It is closely related to Parzen estimation, with almost the same form, but Parzen has one kernel per training point ($k=N$) while here $k\ll N$.
 
-Figure `lec05-kp16-bumps`: First look at the top: one sigmoid node responds high over one whole side of the line; then at the bottom: each of three Gaussians responds only near its own centre and falls to 0 away from it. [Function: 1]
+Figure `lec05-kp16-bumps`: First look at the top: a sigmoid node responds high over a whole side of the line; then the bottom: three Gaussians each respond only near their own centre and fall to 0 away from it; on the right are the RBF network formula and the definition of the radial basis function. [Function: 1]
 
-![Gaussian nodes: one sigmoid responds on the whole line at the top; three Gaussians each respond near their centre at the bottom.](../../assets/figures/lec05-kp16-bumps.png)
+![Gaussian nodes: one sigmoid responds on a whole side at the top; three Gaussians each respond near their centre below.](../../assets/figures/lec05-kp16-bumps-en.png)
 
 The next question: what do local and global look like on a two-dimensional plane?
 
@@ -69,9 +69,9 @@ The equal-output set of a sigmoid node is a hyperplane (a line in two dimensions
 |---|---:|---:|---:|---:|
 | response | 1 | 0.368 | 0.0183 | 0.000123 |
 
-Figure `lec05-kp16-contours`: First look at the left panel: the equal-output lines of the sigmoid are a family of parallel straight lines; then the right panel: those of the RBF are concentric circles around the centre. [Function: 1]
+Figure `lec05-kp16-contours`: First look at the left panel: the iso-lines of a sigmoid are parallel straight lines; then the middle panel: the iso-lines of an RBF are concentric circles around the centre; the right panel gives the Gaussian response e^(−d²) for d = 0 to 3. [Function: 1]
 
-![Local versus global: the equal-output lines of a sigmoid on the left, the concentric circles of an RBF on the right.](../../assets/figures/lec05-kp16-contours.png)
+![Local versus global: sigmoid iso-lines on the left, RBF concentric circles in the middle, the response values on the right.](../../assets/figures/lec05-kp16-contours-en.png)
 
 ### 3. XOR needs only two centres
 
@@ -88,9 +88,9 @@ Point by point:
 
 $(1,0)$ and $(0,1)$ are both mapped to $(0.368,0.368)$, that is, "folded" onto one point; one line $y_1+y_2=1$ separates the two classes.
 
-Figure `lec05-kp16-xormap`: First look at the left input plane: the two stars are the two centres and the four points are the corners of the square; then the right feature plane: the two points of the same XOR class coincide in the middle, the other two are at the two ends, and one slanted line separates them. [Function: 1, 2]
+Figure `lec05-kp16-xormap`: First look at the left original space: the two rings are the centres, the four points and the closed curve around the centres; then the middle feature space: (1,0) and (0,1) fold onto one point and a slanted line separates the classes; the table on the right lists y and g for the four points. [Function: 1, 2]
 
-![XOR with two centres: the input plane (centres as stars) and the feature plane after the mapping.](../../assets/figures/lec05-kp16-xormap.png)
+![XOR with two centres: the closed curve in the original space, the line in the feature space and the point-by-point values.](../../assets/figures/lec05-kp16-xormap-en.png)
 
 ### 4. Back in the original space
 
@@ -99,10 +99,6 @@ $g(x)=e^{-\|x-c_1\|^2}+e^{-\|x-c_2\|^2}-1=0$ is a closed curve enclosing the two
 - $(0,0)$, $(1,1)$: $g=+0.135$, inside the curve.
 - $(1,0)$, $(0,1)$: $g=-0.264$, outside the curve.
 - Far from all centres both exponential terms go to 0, so $g\to-1$; far away everything goes to the class outside the curve, a property of local response.
-
-Figure `lec05-kp16-xorcurve`: First look at the closed curve around the two centres on the original plane; then at which side of it each of the four points lies: $(0,0)$ and $(1,1)$ inside, $(1,0)$ and $(0,1)$ outside. [Function: 2]
-
-![The decision curve (a closed curve) and the four XOR points on the original plane.](../../assets/figures/lec05-kp16-xorcurve.png)
 
 The next question: the two XOR centres were chosen by hand. With a lot of data, where do the centres come from?
 
@@ -122,9 +118,9 @@ The next question: the two XOR centres were chosen by hand. With a lot of data, 
 
 The more centres, the better the inner ring can be enclosed; $k=16$ is already nearly all right.
 
-Figure `lec05-kp16-ringsk`: First see that the horizontal axis is the number of centres $k$ and the vertical axis the new-point accuracy; then that the curve climbs fast near $k=8$ and approaches 100% for $k\ge16$. [Function: 3]
+Figure `lec05-kp16-ringsk`: First see the left chart: concentric-ring data with 8 random centres; then the right chart with the number of centres k on the horizontal axis and new-point accuracy on the vertical axis: a quick rise near k = 8 and close to 100% for k ≥ 16. [Function: 3]
 
-![Accuracy against the number of centres k (concentric rings, random centres).](../../assets/figures/lec05-kp16-ringsk.png)
+![Accuracy against the number of centres k (concentric rings, random centres).](../../assets/figures/lec05-kp16-ringsk-en.png)
 
 ### 6. How to choose the centres
 
@@ -146,9 +142,9 @@ Figure `lec05-kp16-ringsk`: First see that the horizontal axis is the number of 
 
 **Common misconception**: clustering is always more accurate than random. For $k=2,4$ random is slightly higher; for $k\ge6$ clustering is higher, but the main difference is that it is steadier (a smaller standard deviation).
 
-Figure `lec05-kp16-centers`: First look at the two curves: random centres and k-means centres, with $k$ on the horizontal axis; then compare the gap at $k=6,8$ and the reversed order at $k=2,4$. [Function: 3]
+Figure `lec05-kp16-centers`: First see the left chart: two moons and the 8 k-means centres; then the two curves on the right, random centres and k-means with k on the horizontal axis; compare the gap at k = 6 and 8 and notice the reversed order at k = 2 and 4. [Function: 3]
 
-![New-point accuracy of random and k-means centres.](../../assets/figures/lec05-kp16-centers.png)
+![New-point accuracy of random and k-means centres.](../../assets/figures/lec05-kp16-centers-en.png)
 
 ### 7. The cost of locality
 
@@ -166,9 +162,9 @@ Figure `lec05-kp16-centers`: First look at the two curves: random centres and k-
 
 For comparison, a grid with 5 centres per axis needs $5^l=25$, 3125, 9,765,625 centres for $l=2,5,10$.
 
-Figure `lec05-kp16-curse`: First see that the horizontal axis is the dimension $l$ and the vertical axis the "fraction of test points with response above 0.1"; then that the curve is near 100% for small $l$, drops to 40% at $l=10$ and to 0 at $l=20$. [Function: 3]
+Figure `lec05-kp16-curse`: First see the left chart with the dimension l on the horizontal axis and the share of test points with response above 0.1 on the vertical axis: close to 100% for small l, 40% at l = 10 and 0 at l = 20; below it the median distance to the nearest centre; on the right the number of centres a grid needs. [Function: 3]
 
-![Fraction of test points with response above 0.1 against dimension l.](../../assets/figures/lec05-kp16-curse.png)
+![Share of test points with response above 0.1 against dimension l.](../../assets/figures/lec05-kp16-curse-en.png)
 
 ### 8. MLP versus RBF
 
@@ -185,6 +181,10 @@ Figure `lec05-kp16-curse`: First see that the horizontal axis is the dimension $
 
 **How to remember**: the MLP thinks "which side of a hyperplane", the RBF thinks "how close to a centre"; local learns fast, but eats dimensions.
 
+Figure `lec05-kp16-compare`: First see the two columns: MLP on the left and the RBF network on the right; then read the six rows from the argument of a node to the number of nodes needed. [Function: 2]
+
+![Six-row comparison of the MLP and the RBF network.](../../assets/figures/lec05-kp16-compare-en.png)
+
 ### Extension: other choices, exercises and worked solutions
 
 **Other ways to choose the centres** (source):
@@ -197,6 +197,10 @@ Figure `lec05-kp16-curse`: First see that the horizontal axis is the dimension $
 | orthogonal least squares | start from a large set of candidates, pick a compact set of centres by forward regression, and estimate $k$ on the way |
 | support vectors | see the RBF network as a kernel mapping; training is quadratic programming with a guaranteed global optimum, and the number of centres is set automatically |
 | growing | a new sample far from all centres and with a large error becomes a new centre |
+
+Figure `lec05-kp16-ways`: Six cards: fixed centres, trained centres, clustering, orthogonal least squares, support vectors and growing, each with a one-line description. [Function: 2]
+
+![Six ways to choose centres.](../../assets/figures/lec05-kp16-ways-en.png)
 
 **Small exercises**: $c_1=(1,1)$, $c_2=(0,0)$, $y_i=\exp(-\|x-c_i\|^2)$, $g=y_1+y_2-1$ ($g>0$ is $\omega_1$).
 
