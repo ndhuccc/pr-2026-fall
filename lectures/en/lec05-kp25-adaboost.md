@@ -53,9 +53,9 @@
 
 **Mechanism**: every round changes the distribution of sample weights, giving more weight to the hardest (misclassified) points, and the final answer is a weighted vote.
 
-Figure `lec05-kp25-weak`: First look at the 20 bars, each the test error of one stump; then compare with the dashed line at 0.5 (guessing): every bar is below it, but all between 27% and 36%, only a little better than guessing. [Function: 1, 3]
+Figure `lec05-kp25-weak`: First the 20 dots, each the test error of one stump; then the red 50% line (guessing) and the blue mean 31.6%: every stump beats guessing, but only a little. [Function: 1, 3]
 
-![Test error of the 20 stumps.](../../assets/figures/lec05-kp25-weak.png)
+![Test errors of 20 stumps, mean 31.6%.](../../assets/figures/lec05-kp25-weak-en.png)
 
 ### 2. Where the weights come from
 
@@ -72,6 +72,10 @@ $$
 
 3. $w_i$ contains neither $\alpha$ nor $\phi$: it is the sample weight.
 4. So $\phi_m$ must minimize the weighted error rate $P_m$ (weights normalized to sum 1).
+
+Figure `lec05-kp25-wts`: Follow the four steps from left to right: goal, split, name, result; $w_i$ contains neither $\alpha$ nor $\phi$, it is the sample weight. [Function: 2]
+
+![The exponential loss split stage by stage gives the sample weight w_i.](../../assets/figures/lec05-kp25-wts-en.png)
 
 ### 3. The say α
 
@@ -93,9 +97,9 @@ $$
 
 Very accurate → a big say; guessing → 0; worse than guessing ($P>0.5$) → negative, use the answer inverted.
 
-Figure `lec05-kp25-alpha`: First see that the horizontal axis is the weighted error $P$ and the vertical axis $\alpha$; then that the curve passes through $(0.5,0)$, rises on the left (small $P$) and drops to negative on the right ($P>0.5$); four points are marked: 1.099, 0.424, 0, $-0.424$. [Function: 2]
+Figure `lec05-kp25-alpha`: First the horizontal axis, the weighted error P, and the vertical axis, α; then the curve passes (0.5, 0), rises on the left and turns negative on the right; the points 1.099, 0.424, 0, −0.424 are marked. The three cards on the right give the derivation and how to read it. [Function: 2]
 
-![The say α against the weighted error.](../../assets/figures/lec05-kp25-alpha.png)
+![The voice α against the weighted error.](../../assets/figures/lec05-kp25-alpha-en.png)
 
 ### 4. The weight update
 
@@ -109,9 +113,9 @@ $w_i\leftarrow w_i\exp(-y_i\alpha_m\phi_m(x_i))/Z_m$; a wrong answer ($y\phi<0$)
 4. After normalizing: each wrong one $0.1528/0.9165=0.1667$, each right one $0.0655/0.9165=0.0714$.
 5. The three wrong ones together hold $3\times0.1667=0.5$: the next round's $\phi$ must look after them first.
 
-Figure `lec05-kp25-update`: First look at the two bars per sample: dark grey before the update (all 0.1), coloured after; then at the first 3 (red, now 0.1667) and the other 7 (green, now 0.0714). [Function: 2]
+Figure `lec05-kp25-update`: First the two bars per sample on the left: grey is before (all 0.1), colour is after; the first 3 (red) become 0.1667 and the other 7 (green) 0.0714; the right side has the three calculation steps. [Function: 2]
 
-![The 10 weights before and after the update.](../../assets/figures/lec05-kp25-update.png)
+![The 10 weights before and after the update, with the three calculation steps.](../../assets/figures/lec05-kp25-update-en.png)
 
 ### 5. The algorithm and the setting
 
@@ -138,9 +142,9 @@ Figure `lec05-kp25-update`: First look at the two bars per sample: dark grey bef
 - The training error is 0 from round 17 on.
 - After the training error reaches zero the test error keeps falling, and after about 200 rounds it stays flat near 4%; within sampling error it does not rise (400 test points, 1% is only 4 points).
 
-Figure `lec05-kp25-curve`: First see that the horizontal axis is the number of rounds (log scale) with two lines: blue the training error, red the test error; then look at the green dashed line (round 17): the blue line reaches 0 there, and the red line keeps falling slowly afterwards to about 4%. [Function: 3]
+Figure `lec05-kp25-curve`: First the horizontal axis, the rounds on a log scale, the blue training error and the red test error; then the green line (round 17): the blue line reaches 0 there and the red one keeps falling slowly to about 4%. [Function: 3]
 
-![Training and test error against the number of rounds (log axis).](../../assets/figures/lec05-kp25-curve.png)
+![Training and test error against the rounds (log axis).](../../assets/figures/lec05-kp25-curve-en.png)
 
 ### 7. The margin explanation
 
@@ -160,13 +164,17 @@ With more rounds the smallest margin is raised again and again: this is the qual
 
 **Criticism**: the bound is very loose (unless $N$ reaches tens of thousands), so it is only a qualitative explanation; stage-wise optimization is itself an implicit regularization.
 
+Figure `lec05-kp25-margin`: First the rounds on a log scale and the minimum margin: it climbs from −1.000 to +0.220; the right side gives the definition of the normalised margin, why the test error does not rise, and the limit that the bound is loose. [Function: 2]
+
+![The minimum margin rises with the rounds.](../../assets/figures/lec05-kp25-margin-en.png)
+
 ### 8. Not a cure-all
 
 **Experiment setting** (designed for this lecture, reproducible): the same kind of data, with the training labels flipped at random for 15% (the test labels are clean); 0% and 15% flips are each run 5 times, each time re-sampled (training seeds 10 to 14, test seeds 50 to 54) and averaged (so the numbers differ from the single experiments above); each round uses the best stump, 2000 rounds.
 
 | rounds | 10 | 30 | 100 | 500 | 2000 |
 |---|---:|---:|---:|---:|---:|
-| clean labels, test error | 14.4% | — | 6.6% | 5.7% | 5.5% |
+| clean labels, test error | 14.4% | — | 6.6% | 5.8% | 5.5% |
 | 15% flipped, test error | 19.1% | 17.8% | 18.9% | 21.7% | 23.3% |
 
 With 15% flipped the test error is lowest around round 30 (17.8%; a scan of every round gives about 16.5% at round 36), and afterwards rises to 23.3%.
@@ -177,9 +185,9 @@ With 15% flipped the test error is lowest around round 30 (17.8%; a scan of ever
 
 **How to remember**: weak classifier + weight the wrong points + weighted vote; the weights grow out of the exponential loss, and $\alpha$ is set by the weighted error.
 
-Figure `lec05-kp25-noise`: First look at the two lines: green for clean labels, red for 15% flipped, with the number of rounds on the horizontal axis (log scale); then at the red line: it falls to a minimum around round 30 and then rises, while the green line falls all the way to about 5.5%. [Function: 3]
+Figure `lec05-kp25-noise`: First the two lines: green for clean labels and red for 15% flipped, on a log scale of rounds; then the red line, lowest near round 30 and rising afterwards, while the green one falls to 5.5%. [Function: 3]
 
-![Test error with clean labels and with 15% flipped.](../../assets/figures/lec05-kp25-noise.png)
+![Test error with clean labels and with 15% flipped.](../../assets/figures/lec05-kp25-noise-en.png)
 
 ### Extension: a negative α, exercises and worked solutions
 
@@ -187,6 +195,10 @@ Figure `lec05-kp25-noise`: First look at the two lines: green for clean labels, 
 
 - $-0.4236\,\phi=+0.4236\,(-\phi)$, and the weighted error of $-\phi$ is 0.3.
 - The points $\phi$ gets wrong are multiplied by $e^{-0.4236}=0.6547$ (smaller) and those it gets right by $1.5275$ (larger), exactly the same as for the inverted classifier.
+
+Figure `lec05-kp25-neg`: Follow the three boxes from left to right: with P=0.7 α is negative; −0.4236φ equals +0.4236(−φ); the weight update is the same as for the reversed classifier. [Function: 2]
+
+![A negative α uses the classifier reversed.](../../assets/figures/lec05-kp25-neg-en.png)
 
 **Small exercises**: 5 samples of weight 0.2 each, $\phi$ gets 1 wrong, weighted error $P=0.2$.
 
@@ -200,6 +212,10 @@ Figure `lec05-kp25-noise`: First look at the two lines: green for clean labels, 
 1. The wrong one $0.2\times2=0.4$; each of the 4 right ones $0.2\times0.5=0.1$.
 2. $Z=0.4+4\times0.1=0.8$.
 3. Normalizing: the wrong one $0.4/0.8=0.5$, each right one $0.1/0.8=0.125$.
+
+Figure `lec05-kp25-practice-sol`: Follow the three boxes from left to right: α=0.6931; the wrong one 0.4, each right one 0.1, Z=0.8; normalised the wrong one is 0.5 and each right one 0.125. [Function: 2]
+
+![Solution: α=0.6931, the wrong one 0.5 and each right one 0.125.](../../assets/figures/lec05-kp25-practice-sol-en.png)
 
 **Check**: the sum is $0.5+4\times0.125=1$. The wrong point holds exactly half, the same rule as the 3 points holding 0.5 in section 4: after the update, the weights of the points the old $\phi$ got wrong always sum to 0.5, so the old $\phi$ has weighted error 0.5 and a new $\phi$ is needed. If the family of stumps can be inverted, the search directly picks $-\phi$ ($P=0.3$), which is why a negative $\alpha$ is rare.
 
