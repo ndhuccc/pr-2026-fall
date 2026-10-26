@@ -56,9 +56,9 @@
 - Model: an SVM with an RBF kernel (kernel $e^{-0.5\|x-z\|^2}$, $C=1$).
 - Repetition: the training set is drawn once for each random seed 0 to 19, 20 times in all, and the results are averaged.
 
-Figure `lec05-kp26-setup`: First look at the scatter plot of one training set: 1000 blue majority points centred at $(0,0)$ and 20 orange rare points centred at $(2,0)$; then see that the two clouds clearly overlap, so they cannot be separated completely; below the plot are the training, test, repetition and SVM settings. [Function: 1, 3]
+Figure `lec05-kp26-setup`: First the scatter plot of one training set: 1000 blue majority points and 20 orange rare points; the two clouds overlap clearly, so they cannot be separated completely; the cards on the right give the definition of class imbalance, the data and the model. [Function: 1, 3]
 
-![How the experiment is done: the scatter plot of one training set.](../../assets/figures/lec05-kp26-setup.png)
+![Scatter plot of one training set: 1000 majority points and 20 rare points.](../../assets/figures/lec05-kp26-setup-en.png)
 
 **Experiment details** (reproducible):
 
@@ -90,6 +90,10 @@ Precision is always computed by dividing the average counts.
 
 Accuracy hardly moves from 98.0% to 98.1% while recall goes from 0 to 5.9%: accuracy cannot see the rare class.
 
+Figure `lec05-kp26-metrics`: First the SVM's four counts on the left (TP 5.85, FN 94.15, FP 2, TN 4998), then the formulas of the three metrics on the right, finally all-majority against the SVM: accuracy 98.0% against 98.1%, recall 0 against 5.9%. [Function: 2]
+
+![The four counts and recall, precision, accuracy; all-majority compared with the SVM.](../../assets/figures/lec05-kp26-metrics-en.png)
+
 ### 3. The preference for simplicity
 
 The SVM catches only 5.85 rare points on average; the other 94 are taken for majority. Why does a classifier ignore the rare class?
@@ -116,6 +120,10 @@ The SVM catches only 5.85 rare points on average; the other 94 are taken for maj
 
 The simpler it is (small $C$, large $k$), the fewer the TP, down to always saying majority; and the accuracy stays at about 98% throughout.
 
+Figure `lec05-kp26-simple`: Two bar charts: the simpler (smaller C, larger leaves) the lower the recall, down to 0, while the accuracy in the grey boxes below stays near 98%. [Function: 2]
+
+![SVM C and decision-tree leaf-size sweeps: recall falls, accuracy stays near 98%.](../../assets/figures/lec05-kp26-simple-en.png)
+
 ### 4. Difficulty and amount of data
 
 The simpler the classifier the less it cares about 20 points. Is class imbalance always bad?
@@ -140,6 +148,10 @@ The simpler the classifier the less it cares about 20 points. Is class imbalance
 
 With only 10 rare points even the easy task does badly. In the hard task 1000 against 100 already presses recall to 14.9%.
 
+Figure `lec05-kp26-grid`: Look at the 10-cell heat map: on the easy task recall falls slowly, on the hard task it already drops to 14.9% at 1000:100 and then to about 0; the darker the cell the higher the recall. [Function: 2, 3]
+
+![A 10-cell heat map of recall against majority:rare and task difficulty.](../../assets/figures/lec05-kp26-grid-en.png)
+
 ### 5. Changing the data
 
 Imbalance is not always bad, but in the hard task 1000 against 100 presses recall to 14.9%. The first remedy is to change the data: copy the rare class or throw away majority points; what happens?
@@ -162,6 +174,10 @@ Example: oversampling recall $68.15/100=68.2\%$, precision $68.15/(68.15+605.55)
 
 **The price**: the rare class is found, but precision falls to about 10% and accuracy to 85% to 88%.
 
+Figure `lec05-kp26-data`: Three rows: plain, oversampling, undersampling; the three bars of each row are recall, precision and accuracy. The rare class is found again, but precision falls to about 10%. [Function: 2]
+
+![Recall, precision and accuracy of plain, over- and undersampling.](../../assets/figures/lec05-kp26-data-en.png)
+
 ### 6. Focused resampling
 
 Over- and undersampling are random and give many false alarms. Would it be better to throw away only the majority points far from the boundary, which carry no information anyway?
@@ -182,6 +198,10 @@ Over- and undersampling are random and give many false alarms. Would it be bette
 | accuracy | 58.0% | 97.2% | 97.6% | 98.1% | 98.1% |
 
 **Meaning**: how far to move the target distribution is an open question (source). Keeping 20 and keeping 60 differ a lot; with 20 kept there are 2126 false alarms, more than the 757 of random undersampling.
+
+Figure `lec05-kp26-focus`: The horizontal axis is the number m of majority points kept, the green line is recall and the blue one accuracy: with m=20 recall is 82.7% but accuracy only 58.0%; the larger m the closer to the plain SVM. The right side gives the method and the open problem. [Function: 2]
+
+![Focused undersampling: recall and accuracy with m majority points kept.](../../assets/figures/lec05-kp26-focus-en.png)
 
 ### 7. Changing the cost
 
@@ -206,6 +226,10 @@ Example: SVM precision $70.2/(70.2+619.3)=10.2\%$.
 
 **Summary**: changing the cost, like changing the data, raises TP and FP together and lowers precision.
 
+Figure `lec05-kp26-cost`: The five bars are the recall of the rare class and the small text on the right is precision: the higher the recall the lower the precision; the same for the SVM with a 50-times C for the rare class and for the AdaBoost weights. [Function: 2]
+
+![Changing the costs: recall and precision of the SVM with a larger rare-class C and of AdaBoost weights.](../../assets/figures/lec05-kp26-cost-en.png)
+
 ### 8. How to remember
 
 **How to remember** (source): the harm of imbalance does not come from "the numbers are different" but from the interaction of "preference for simplicity × a rare class". There are two remedies: change the data (resampling) or change the cost (weighting).
@@ -213,6 +237,10 @@ Example: SVM precision $70.2/(70.2+619.3)=10.2\%$.
 **Common misconception**: thinking high accuracy is enough. Evaluate by how many were caught and how many false alarms (recall and precision), not accuracy alone; always saying majority also gets 98.0%.
 
 **Reminder** (source): class imbalance is very important in practice; a designer must be aware of it and alert to the various remedies.
+
+Figure `lec05-kp26-recap`: From top to bottom: the harm comes from the interaction of the preference for simplicity with the rare class; the three cards are the two remedies (data, costs) and the common myth. [Function: 2]
+
+![Where the harm of class imbalance comes from, the two remedies and the common myth.](../../assets/figures/lec05-kp26-recap-en.png)
 
 ### Extension: comparing remedies, balanced accuracy and exercises
 
@@ -241,6 +269,10 @@ What to remember is the trade-off. Put the four treatments in one table, with a 
 
 Nobody clearly wins; the difference is a trade-off.
 
+Figure `lec05-kp26-table`: Recall on the horizontal axis and precision on the vertical: four treatments each for the SVM (circles) and the decision tree (squares), the higher the recall the lower the precision; the right side gives the definition of balanced accuracy and its eight values. [Function: 2]
+
+![Recall against precision for eight treatments, and the balanced accuracy.](../../assets/figures/lec05-kp26-table-en.png)
+
 **Small exercises**: 1000 negative examples and 10 positive examples (the rare class). A: always say negative; B: catches 6 of the 10 positives and falsely alarms on 40 negatives.
 
 1. What are the accuracy and recall of A and B?
@@ -255,6 +287,10 @@ Nobody clearly wins; the difference is a trade-off.
 
 - A: $(0+1)/2=0.5$.
 - B: specificity $960/1000=0.96$, $(0.6+0.96)/2=0.78$.
+
+Figure `lec05-kp26-practice-sol`: Follow the three boxes from left to right: A judges everything negative (accuracy 0.990, recall 0, balanced accuracy 0.5), B catches 6 (accuracy 0.956, balanced accuracy 0.78), then check the trade-off. [Function: 2]
+
+![Solution: accuracy, recall and balanced accuracy of A and B.](../../assets/figures/lec05-kp26-practice-sol-en.png)
 
 **Check**: A's accuracy is higher than B's, yet it caught not one rare point; B's precision is only $6/46=0.13$, which is the trade-off.
 
