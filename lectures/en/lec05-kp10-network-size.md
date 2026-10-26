@@ -46,7 +46,7 @@
 
 The figure is a supplementary illustration for continuous prediction, and classification faces the same trade-off: find the main trend first, then look at the small fluctuations of the samples; not every fluctuation should be treated as a rule.
 
-![The same noisy samples and the smooth trend; the broken line is only a teaching illustration, not a network training result.](../../assets/figures/lec05-kp10-trend.png)
+![The same noisy samples and the smooth trend; the broken line is only a teaching illustration, not a network training result.](../../assets/figures/lec05-kp10-trend-en.png)
 
 Figure `lec05-kp10-trend`: [Added] Look at the dots (noisy samples) scattered above and below a smooth curve, then at the broken line passing through every dot: it memorized the noise instead of learning the trend. The broken line is only a teaching illustration, not a network training result. [Function: 1, 2]
 
@@ -61,6 +61,10 @@ The next question: how many adjustable numbers does a network actually have?
 - Hidden layer: each hidden unit has 2 weights plus 1 bias, $(2+1)\times3=9$.
 - Output layer: the output unit has 3 weights plus 1 bias, $(3+1)\times1=4$.
 - In all $9+4=13$, not just three for the three hidden units.
+
+Figure `lec05-kp10-params`: look at the three layers of the network, then at the count on the right: hidden layer (2+1)×3=9, output layer (3+1)×1=4, total 13. [Function: 2]
+
+![2-3-1 network with 9 + 4 = 13 free parameters](../../assets/figures/lec05-kp10-params-en.png)
 
 Two opposite failures:
 
@@ -86,12 +90,16 @@ Even with a fixed size the model can fit the training data too closely, so the t
 | training loss | 0.50 | 0.30 | 0.20 | 0.15 | 0.10 |
 | validation loss | 0.55 | 0.35 | 0.25 | 0.28 | 0.40 |
 
+Figure `lec05-kp10-roles`: compare the three columns: what each set is used for and what it must not be used for. [Function: 2]
+
+![Training, validation and test sets and their jobs](../../assets/figures/lec05-kp10-roles-en.png)
+
 - The smallest validation loss is $0.25$ at epoch 3, so the weights of epoch 3 are kept.
 - At epoch 5 the training loss is lowest, but the validation loss rises from $0.25$ to $0.40$, an increase of $0.40-0.25=0.15$.
 
 Figure `lec05-kp10-early`: look at the blue line (training loss) falling all the way, then at the orange line (validation loss) lowest at epoch 3 and rising afterwards; the dashed line marks epoch 3 to be saved. The two curves need not cross, and the gap need not start from zero. [Function: 2]
 
-![Mean training and validation loss at five checkpoints; validation is lowest at epoch 3 and training at epoch 5.](../../assets/figures/lec05-kp10-early.png)
+![Mean training and validation loss at five checkpoints; validation is lowest at epoch 3 and training at epoch 5.](../../assets/figures/lec05-kp10-early-en.png)
 
 The next question: the validation data have been used to choose; what data should report the final score?
 
@@ -131,15 +139,11 @@ regions, where $\binom Km$ is the number of ways to choose $m$ out of $K$ and is
 
 Example: $d=2,K=2$: $M_{\max}=1+2+1=4$; the three binomial numbers correspond to choosing 0, 1 and 2 lines.
 
-Figure `lec05-kp10-regions`: look at the number of hyperplanes $K$ on the horizontal axis, then compare the curves for different input dimensions $d$: the higher the dimension and the more lines, the faster the maximum number of regions grows. [Function: 2]
+Figure `lec05-kp10-regions`: look at the number of hyperplanes $K$ on the horizontal axis, then compare the curves for different input dimensions $d$: the higher the dimension and the more lines, the faster the maximum number of regions grows. [Function: 2] The small panel at the bottom right shows the real XOR construction: two parallel lines cut only three regions.
 
-![Maximum number of regions formed by K hyperplanes in general position for different input dimensions d.](../../assets/figures/lec05-kp10-regions.png)
+![Maximum number of regions formed by K hyperplanes in general position for different input dimensions d.](../../assets/figures/lec05-kp10-regions-en.png)
 
 **The actual construction for XOR**: the lines $x_1+x_2=0.5$ and $x_1+x_2=1.5$ of KP01 are parallel and actually cut only three bands, the two A points living in the middle one. "The bound of four holds three" is only a capacity check; whether two units are enough must be shown by this explicit construction.
-
-Figure `lec05-kp10-xor`: look at the four XOR points, then at the two parallel lines cutting the plane into three regions, not the general-position maximum of four. [Function: 1, 3]
-
-![The four XOR points and two parallel lines; there are actually three regions, not the general-position maximum of four.](../../assets/figures/lec05-kp10-xor.png)
 
 The next question: the bound does not tell us how to find a suitable size. What strategies exist in practice?
 
@@ -150,6 +154,10 @@ The next question: the bound does not tell us how to find a suitable size. What 
 - **Constructive methods**: start from a small architecture and add units step by step (KP05).
 
 All three need to be checked with validation data.
+
+Figure `lec05-kp10-strategies`: compare the three strategies column by column; the fourth column is the source demo, not a universal optimum. [Function: 2]
+
+![Three sizing strategies and the source sine demo](../../assets/figures/lec05-kp10-strategies-en.png)
 
 ### 7. Reading the scope of the source's interactive demonstration
 
@@ -171,6 +179,10 @@ The source describes $k$ of about 3 to 5 as suitable and $k=15$ as possibly over
 **Worked solution (question 1)**: among the validation values $0.45,0.25,0.30$ the smallest is $0.25$, so epoch 2 is kept; the lower training value of the last epoch does not change the choice. The validation at epoch 3 is higher than at epoch 2 by $0.30-0.25=0.05$.
 
 **Worked solution (question 2)**: $M_{\max}=1+3+3=7$. Three parallel lines give only four bands, not reaching the bound of seven. The number of regions took no part in choosing the checkpoint.
+
+Figure `lec05-kp10-solution`: follow the three boxes left to right: pick epoch 2, count 1+3+3=7, then three parallel lines give only four bands. [Function: 3]
+
+![Worked solutions of the two exercises](../../assets/figures/lec05-kp10-solution-en.png)
 
 **Why the number of regions has this form**: when the $K$-th hyperplane is added in general position it cuts some existing regions in two. The newly cut parts correspond to the regions one dimension lower that the other $K-1$ hyperplanes form inside the new plane, so
 
