@@ -1,132 +1,208 @@
-# KP18 The Probabilistic Neural Network (PNN)
+# KP18 Probabilistic Neural Networks (PNN)
 
 > Level: undergraduate, year 3
 >
-> Pattern Recognition | Chapter 4, §4.17
+> Pattern Recognition | Chapter 4 §4.17
 
 [Slides: read and download](../../slides/lec05-kp18-pnn-en.jbd.json) | [中文版](../lec05-kp18-pnn.md)
 
 ## Learning objectives
 
-- Explain how a PNN moves the Parzen estimate into a network and how unit-norm normalization turns a distance into an inner product.
-- Write the hidden and output layers of a PNN and compute the outputs and the class on a small example.
-- Explain the cost and the limit of a PNN: a hidden layer as large as the training set and a normalization that discards the length.
+- Explain how a PNN moves the Parzen estimate into a network, and how unit-norm normalization turns a distance into an inner product.
+- Write the hidden and output layers of a PNN and compute the output and the class on a small example.
+- Explain the cost and the limits of a PNN: the hidden layer equals the training set, and normalization throws the length away.
 
-## KP18 The Probabilistic Neural Network (PNN)
+## KP18 Probabilistic Neural Networks (PNN)
 
-**One-sentence summary**: A Parzen estimate is an average of kernels, so give every training point one neuron; after normalizing the vectors to length 1 the squared distance becomes an inner product and the formula takes the form of a network. Training is copying the data, and the price is keeping every training point.
+**One-sentence summary**: A Parzen estimate is already an average of kernel functions, so give each training point one neuron; once the vectors are normalized to length 1, the squared distance becomes an inner product and the formula takes exactly the form of a network. Training is copying the data, and the price is keeping every training point.
 
-### 1. One neuron per point
+### Prerequisites and symbols
 
-**Plain explanation**: Is there a network that needs almost no training?
+**Three things you need first**:
 
-- **Parzen estimate**: a kernel (Gaussian here) on every training point, averaged to estimate the class density $\hat p(x\mid\omega)$.
-- **Kernel width $h$**: the width of the kernel; larger is smoother and smaller hugs the individual training points.
+- **Parzen estimation and Bayes decision**: put a kernel function on each training point and average them to estimate the probability density; decide the class with the largest $P(\omega)\,p(x\mid\omega)$.
+- **Inner product and length of vectors**: $x_i^Tx=\sum_jx_{ij}x_j$; the length is $\|x\|=\sqrt{x^Tx}$.
+- **RBF network** (KP16): hidden nodes are Gaussians around centres.
 
-The Bayes decision compares the largest $P(\omega_i)\,\hat p(x\mid\omega_i)$. A sum of kernels is easy to compute in parallel, so every training point gets one neuron.
+**Symbol table** (fixed for this lecture):
 
-Figure `lec05-kp18-parzen`: five one-dimensional training points with a kernel each, averaged into the estimated density.
+| Symbol | Meaning | Note |
+|---|---|---|
+| $x$, $x_i$ | the test vector, the $i$-th training vector | both normalized to length 1 first |
+| $l$ | dimension of the vectors | |
+| $N$, $N_m$ | total number of training points, number in class $m$ | |
+| $h$ | kernel width | the larger, the smoother |
+| $P(\omega_m)$ | prior probability of class $m$ | 0.5 in most examples of this lecture |
+| $y_k$ | output of the $k$-th hidden node | $y_k=\exp((x_k^Tx-1)/h^2)$ |
+| $g(\omega_m)$ | score of class $m$ | the largest gives the class |
 
-![Parzen estimate](../../assets/figures/lec05-kp18-parzen.png)
+### 1. One point, one neuron
 
-### 2. Distance becomes inner product
+**Plain-words explanation**: Is there a network that needs almost no training?
 
-**Unit-norm normalization**: divide every feature vector by its own length $\|x\|=\sqrt{\sum_jx_j^2}$ so that its length becomes 1. Expanding the squared distance
+- **Parzen estimate**: put a kernel function (here a Gaussian) on every training point and average them to estimate the probability density $\hat p(x\mid\omega)$ of each class.
+- **Kernel width $h$**: the width of the kernel function; the larger, the smoother; the smaller, the closer it hugs individual training points.
+
+The Bayes decision compares the maximum of $P(\omega_i)\,\hat p(x\mid\omega_i)$. The sum of kernel functions can be computed in parallel anyway, so each training point gets one neuron.
+
+Figure `lec05-kp18-parzen`: First look at the five one-dimensional training points (dots), each with a small blue Gaussian on it; then at the thick red line: it is the average of the five small Gaussians, the estimated density, with one peak where each group of training points is dense. [Function: 1]
+
+![Parzen estimate: five one-dimensional training points, one kernel each, averaged into the estimated density.](../../assets/figures/lec05-kp18-parzen.png)
+
+The next question: how does the distance inside the Gaussian turn into the "weighted sum" form of a network?
+
+### 2. Distance becomes an inner product
+
+- **Unit-norm normalization**: divide each feature vector by its own length $\|x\|=\sqrt{\sum_jx_j^2}$, so that the length becomes 1.
+
+Expanding the squared distance:
 
 $$
 \|x-x_i\|^2=\|x\|^2+\|x_i\|^2-2x_i^Tx,
 $$
 
-it equals $2-2x_i^Tx$ when both lengths are 1. **Example**: $x=(0.6,0.8)$, $x_i=(1,0)$: inner product $0.6$ and squared distance $2-1.2=0.8$; directly $(0.4)^2+0.8^2=0.8$, the same.
+which for lengths all equal to 1 is $2-2x_i^Tx$.
 
-Figure `lec05-kp18-circle`: two vectors on the unit circle and the chord between them.
+**Example**: $x=(0.6,0.8)$, $x_i=(1,0)$.
 
-![Distance becomes inner product](../../assets/figures/lec05-kp18-circle.png)
+1. The inner product is $x_i^Tx=0.6$, so the squared distance is $2-1.2=0.8$.
+2. Computed directly: $(0.6-1)^2+0.8^2=0.16+0.64=0.8$, the same.
 
-### 3. The discriminant
+Figure `lec05-kp18-circle`: First look at the two vectors $x$ and $x_i$ on the unit circle (two arrows, both of length 1); then at the dashed line (the chord) joining the two arrow tips: its squared length is $2-2x_i^Tx=0.8$. [Function: 1]
 
-**Formal definition**: after substituting $\|x-x_i\|^2=2-2x_i^Tx$ and dropping the common $1/((2\pi)^{l/2}h^l)$,
+![Distance becomes inner product: two vectors on the unit circle and the chord joining them.](../../assets/figures/lec05-kp18-circle.png)
+
+### 3. The discriminant function
+
+Substituting $\|x-x_i\|^2=2-2x_i^Tx$ and dropping the factor $1/((2\pi)^{l/2}h^l)$ common to all classes:
 
 $$
 g(\omega_m)=\frac{P(\omega_m)}{N_m}\sum_{i=1}^{N_m}\exp\Bigl(\frac{x_i^Tx-1}{h^2}\Bigr).
 $$
 
-Check ($h=0.8$): for the unit vector $x=(0.6,0.8)$ the distance form $\exp(-\|x-x_i\|^2/2h^2)$ and the inner-product form $\exp((x_i^Tx-1)/h^2)$ both give $0.5353$. **Common misconception**: the formula can be used without normalizing. For $x=(1.2,1.6)$, not a unit vector, the distance form gives $0.1312$ and the inner-product form $1.3668$, far apart; normalization is required.
+**Check** ($h=0.8$): the two forms, the distance form $\exp(-\|x-x_i\|^2/2h^2)$ and the inner-product form $\exp((x_i^Tx-1)/h^2)$, on two test vectors:
 
-Figure `lec05-kp18-kernels`: the two forms for a unit and a non-unit vector.
+| test vector | unit vector? | $\|x-x_i\|^2$ | distance form | inner-product form |
+|---|---|---:|---:|---:|
+| $(0.6,0.8)$, $x_i=(1,0)$ | yes | 0.8 | 0.5353 | 0.5353 |
+| $(1.2,1.6)$, $x_i=(1,0)$ | no | 2.6 | 0.1312 | 1.3668 |
 
-![The two forms](../../assets/figures/lec05-kp18-kernels.png)
+**Common misconception**: this formula can be used without normalizing. For a non-unit vector the two forms differ a lot (0.1312 against 1.3668); normalization is a necessary precondition.
 
-### 4. The architecture
+### 4. The network architecture
 
-**Probabilistic neural network** (PNN): the formula above moved into a network. The input layer has $l$ nodes; the hidden layer has $N$ nodes, the weights of node $k$ are the $k$-th training vector and its output is $y_k=\exp((x_k^Tx-1)/h^2)$; the output layer has one linear combiner per class connected only to the hidden nodes of that class: $\text{output}_m=\tfrac{P(\omega_m)}{N_m}\sum y_k$, and the largest wins. This network needs almost no training: no gradient descent, no local minima, no epochs.
+- **Probabilistic neural network** (PNN): the formula above moved into a network.
 
-Figure `lec05-kp18-arch`: two inputs, five hidden nodes and two outputs.
+Three layers:
 
-![The architecture](../../assets/figures/lec05-kp18-arch.png)
+1. **Input layer**: $l$ nodes.
+2. **Hidden layer**: $N$ nodes; the weights of the $k$-th node are the $k$-th training vector, and its output is $y_k=\exp((x_k^Tx-1)/h^2)$.
+3. **Output layer**: one linear combiner per class, connected only to the hidden nodes of that class: $\text{output}_m=\tfrac{P(\omega_m)}{N_m}\sum y_k$; the largest gives the class.
 
-### 5. A full worked example
+This network needs almost no training: no gradient descent, local minima or epochs.
 
-**Example** (designed here): class A at $20°,40°,60°$, class B at $100°,120°$, test vector at $70°$, $h=0.5$, priors 0.5. Hidden outputs $y_k$: A: $0.2396,0.5851,0.9410$; B: $0.5851,0.2396$. Outputs: A $=\tfrac{0.5}{3}\times1.7658=0.2943$; B $=\tfrac{0.5}{2}\times0.8247=0.2062$; A wins.
+Figure `lec05-kp18-arch`: First look at the two inputs $x_1,x_2$ on the left joined to the five hidden nodes $y_1,\dots,y_5$ in the middle (each hidden node is one training point); then at the two outputs A and B on the right: the blue $y_1,y_2,y_3$ connect only to A and the orange $y_4,y_5$ only to B. [Function: 1]
 
-Figure `lec05-kp18-toy`: the five hidden outputs and the two class outputs.
+![Network architecture: two inputs, five hidden nodes, two outputs.](../../assets/figures/lec05-kp18-arch.png)
 
-![A full worked example](../../assets/figures/lec05-kp18-toy.png)
+### 5. A complete calculation
 
-### 6. The kernel width
+**Setting** (designed for this lecture): vectors are given by angle, the unit vector $(\cos\theta,\sin\theta)$. Class A at $20°,40°,60°$, class B at $100°,120°$; test vector $70°$; $h=0.5$; priors 0.5 each.
 
-**Example** (designed here): two classes distinguished by direction (means $40°$ and $110°$, sd $25°$) with random lengths; 50 training and 500 new points per class, normalized and fed to a PNN. $h=0.02$ gives 95% on training (the classes overlap, so never 100%) and 89.6% on new points (hugging single points); $h=0.1\sim1$ gives about 91.6%; $h=5$ still gives 91.0%. A single cut at $75°$ gets 91.9% on new points and the PNN is close to it; this easy example is insensitive to $h$ and only a very small $h$ hurts.
+**Hidden outputs** $y_k=\exp((x_k^Tx-1)/h^2)$ with $x_k^Tx=\cos(\theta_k-70°)$:
 
-Figure `lec05-kp18-hcurve`: accuracy against the kernel width $h$.
+| class | training angle | $x_k^Tx$ | $y_k$ |
+|---|---:|---:|---:|
+| A | $20°$ | 0.6428 | 0.2396 |
+| A | $40°$ | 0.8660 | 0.5851 |
+| A | $60°$ | 0.9848 | 0.9410 |
+| B | $100°$ | 0.8660 | 0.5851 |
+| B | $120°$ | 0.6428 | 0.2396 |
 
-![The kernel width](../../assets/figures/lec05-kp18-hcurve.png)
+**Output layer**:
 
-### 7. How many points
+- A: $\tfrac{0.5}{3}\times(0.2396+0.5851+0.9410)=\tfrac{0.5}{3}\times1.7658=0.2943$.
+- B: $\tfrac{0.5}{2}\times(0.5851+0.2396)=\tfrac{0.5}{2}\times0.8247=0.2062$.
 
-The same data with $n$ training points per class, $h=0.3$, 20 random draws each. Mean accuracy on new points: $n=2$: 88.3% (sd 0.07); $n=10$: 91.8% (0.011); $n=50$: 92.0%; $n=200$: 92.0%. This easy data need not be kept in full; fewer points mean a smaller network.
+A wins ($70°$ is closer to the $60°$ and $40°$ of class A).
 
-Figure `lec05-kp18-nsub`: training points per class against accuracy on new points.
+### 6. The effect of the kernel width
 
-![How many points](../../assets/figures/lec05-kp18-nsub.png)
+**Experiment setting** (designed for this lecture, reproducible):
+
+- Data: the two classes are distinguished by "direction". The direction (angle) is normal $N(40°,25°^2)$ for class A and $N(110°,25°^2)$ for class B; the length is uniform in $[0.5,3.0]$; 50 training points per class (100 in all, seed 0) and 500 new points per class (1000 in all, seed 1).
+- Model: unit-norm normalization first, then the PNN; priors are the class proportions.
+- Baseline: a single cut at $75°$ gives 91.9% on the new points.
+
+| kernel width $h$ | 0.02 | 0.05 | 0.1 | 0.3 | 1 | 5 |
+|---|---:|---:|---:|---:|---:|---:|
+| training accuracy | 95% | 93% | 93% | 93% | 93% | 93% |
+| new-point accuracy | 89.6% | 90.9% | 91.7% | 91.6% | 91.5% | 91.0% |
+
+The two classes overlap to begin with, so training accuracy does not reach 100%. At $h=0.02$ training is 95% and the new points 89.6%: the kernel is too narrow and hugs individual training points. From $h=0.1$ to 1 the new points are about 91.6%, close to the 91.9% of a single cut at $75°$. This easy example is insensitive to $h$; only a very small one hurts.
+
+Figure `lec05-kp18-hcurve`: First see that the horizontal axis is the kernel width $h$ (log scale) and there are two lines: blue for training, red for new points; then look at the dashed line (the 91.9% of a single cut): the red line hugs it from $h\ge0.1$ on, and only the far left ($h=0.02$) drops. [Function: 3]
+
+![Accuracy against the kernel width h.](../../assets/figures/lec05-kp18-hcurve.png)
+
+### 7. How many points to keep
+
+**Experiment setting**: the same data generator; $n$ training points per class (seeds 100 to 119, 20 different training sets), $h=0.3$, and the new points are the same 1000 as above.
+
+| training points per class $n$ | 2 | 5 | 10 | 25 | 50 | 200 |
+|---|---:|---:|---:|---:|---:|---:|
+| mean new-point accuracy | 88.3% | 89.3% | 91.8% | 91.6% | 92.0% | 92.0% |
+| standard deviation | 0.070 | 0.044 | 0.011 | 0.012 | 0.007 | 0.003 |
+
+This simple data does not need every point kept; keep fewer and the network is smaller. After $n\ge10$ the accuracy hardly rises any more; the main change is that it gets steadier (smaller standard deviation).
+
+Figure `lec05-kp18-nsub`: First see that the horizontal axis is the number of training points per class, the red dots are the means of the 20 sets and the black error bars the standard deviation; then look at the bars: very long at $n=2$, short from $n\ge10$. [Function: 3]
+
+![Number of training points per class and the new-point accuracy.](../../assets/figures/lec05-kp18-nsub.png)
 
 ### 8. The cost
 
-Each test point needs $N\cdot l$ multiply-adds and $N\cdot l$ stored numbers (8 bytes each): $N=100,l=2$: 200 operations, 1.6 KB; $N=10^4,l=10$: $10^5$ operations, 0.8 MB; $N=10^6,l=100$: $10^8$ operations, 0.8 GB. **To remember**: PNN = a parallel hardware version of the Parzen estimate; training is copying data and inference computes everything, moving the learning cost to the inference cost. It sits at one end of a spectrum with sparsification (KP21): keep all against keep only the support vectors (source).
+Each test needs $N\cdot l$ multiply-adds and the network stores $N\cdot l$ numbers (8 bytes each):
 
-Figure `lec05-kp18-cost`: the cost table for work and memory.
+| training points $N$ | dimension $l$ | multiply-adds per test | memory |
+|---:|---:|---:|---:|
+| 100 | 2 | 200 | 1.6 KB |
+| $10^4$ | 10 | $10^5$ | 0.8 MB |
+| $10^6$ | 100 | $10^8$ | 0.8 GB |
 
-![The cost](../../assets/figures/lec05-kp18-cost.png)
+**How to remember**: PNN = the parallel hardware version of the Parzen estimate; training = copying the data, inference = computing everything again, shifting the learning cost onto the inference cost. It and sparsification (KP21) are the two ends of a spectrum: keep everything versus keep only the support vectors (source).
 
-### Extension: the price of normalization, practice and worked solution
+### Extension: the cost of normalization, exercises and worked solutions
 
-**The price of normalization** (designed here): concentric rings whose classes differ only in radius (about 1.0 against 2.2), 200 points each, half for training and half for testing. After normalization both classes sit on the unit circle with the same angle distribution and the PNN gets only 49.5% on new points, which is guessing. Normalization discards the length; before using a PNN check that the class information lies in the direction and not in the length.
+**The cost of normalization** (designed for this lecture): concentric rings whose two classes differ only in radius.
 
-Figure `lec05-kp18-rings`: left two concentric rings, right after normalization.
+- Data: uniform angle; radius $N(1.0,0.15^2)$ for class A and $N(2.2,0.2^2)$ for class B; 200 points per class, 400 in all (`default_rng(0)`), split at random into 200 for training and 200 for testing; $h=0.3$.
+- Result: after normalization both classes lie on the unit circle with the same angle distribution, and the PNN gets only 49.5% on the new points, which is guessing.
 
-![The price of normalization](../../assets/figures/lec05-kp18-rings.png)
+Normalization throws the length away; before using a PNN check that the class information is in the direction, not in the length.
 
-**Practice**: training vectors $x_A=(1,0)$ and $x_B=(0,1)$, test vector $x=(0.8,0.6)$, priors 0.5; $y_k=\exp((x_k^Tx-1)/h^2)$.
+Figure `lec05-kp18-rings`: First look at the left panel: two concentric rings (blue inner, orange outer); then the right panel: after normalization the two classes are mixed on the same circle and cannot be told apart. [Function: 1, 3]
+
+![The cost of normalization: concentric rings on the left, after normalization on the right.](../../assets/figures/lec05-kp18-rings.png)
+
+**Small exercises**: training vectors $x_A=(1,0)$, $x_B=(0,1)$, test vector $x=(0.8,0.6)$, priors 0.5 each; $y_k=\exp((x_k^Tx-1)/h^2)$.
 
 1. For $h=1$, which class?
-2. For $h=0.2$, which class, and how does the ratio of the outputs change?
+2. For $h=0.2$, which class? How does the ratio of the two class outputs change?
 
-Figure `lec05-kp18-practice`: the setup of the practice.
+**Exercise 1, worked solution**: $h=1$: $x_A^Tx=0.8$, $x_B^Tx=0.6$; $y_A=e^{-0.2}=0.819$, $y_B=e^{-0.4}=0.670$; outputs $0.5\times0.819=0.409$ against $0.5\times0.670=0.335$, so A.
 
-![Practice](../../assets/figures/lec05-kp18-practice.png)
+**Exercise 2, worked solution**: $h=0.2$ ($h^2=0.04$): $y_A=e^{-0.2/0.04}=e^{-5}=0.0067$, $y_B=e^{-0.4/0.04}=e^{-10}=0.000045$; outputs $0.0034$ against $0.00002$, still A; the ratio goes from $0.409/0.335\approx1.22$ to about 148.
 
-**Worked solution of questions 1 and 2**: (1) $h=1$: $x_A^Tx=0.8$ and $x_B^Tx=0.6$; $y_A=e^{-0.2}=0.819$ and $y_B=e^{-0.4}=0.670$; outputs $0.409$ against $0.335$, class A. (2) $h=0.2$: $y_A=e^{-5}=0.0067$ and $y_B=e^{-10}=0.000045$; outputs $0.0034$ against $0.00002$, still class A, with the ratio growing from 1.22 to about 148. (3) Check: the smaller the $h$ the more a near training point is magnified and a far one suppressed.
+**Check**: the smaller $h$, the more near training points are magnified and far ones suppressed.
 
-Figure `lec05-kp18-practice-sol`: the calculations for the two widths.
+## Terms and source
 
-![Practice solution](../../assets/figures/lec05-kp18-practice-sol.png)
-
-## Terms and sources
-
-| English | 中文 |
+| 中文 | English |
 |---|---|
-| Parzen estimate | Parzen 估計 |
-| Kernel width | 核寬 |
-| Unit-norm normalization | 單位範數正規化 |
-| Probabilistic neural network (PNN) | 機率神經網路 |
+| Parzen 估計 | Parzen estimate |
+| 核寬 | Kernel width |
+| 單位範數正規化 | Unit-norm normalization |
+| 機率神經網路 | Probabilistic neural network (PNN) |
 
-Source: Chapter 4 KP18, §4.17 (read 2026-10-25). The Parzen estimate and the Bayes decision, the unit-norm simplification, the discriminant, the architecture, "almost no training" with its cost and the "to remember" line follow the source; the 70° toy, the kernel-width and training-size experiments, the cost table and the failure on concentric rings were designed and recomputed for this lecture ([added], (program)).
+Source: Chapter 4 KP18, §4.17 (read 2026-10-25). The Parzen estimate and Bayes decision, the simplification by unit-norm normalization, the discriminant, the network architecture, "almost no training" and the cost, and "how to remember" follow the source; the $70°$ small example, the kernel-width and training-point-count experiments, the cost table and the failure on concentric rings were designed and recomputed for this lecture ([Supplement], computed by a program).
