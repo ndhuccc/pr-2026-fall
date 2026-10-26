@@ -57,9 +57,9 @@ Look at one connection first. Setting its weight to zero means this input no lon
 
 **Hessian**: arrange all second partial derivatives between the weights into a matrix $H$; $H_{ii}$ describes the curvature along direction $i$.
 
-Figure `lec05-kp11-curvature`: [Supplement] First look at the two loss curves: A has a smaller weight but sits on a steeper curve, B has a larger weight but a flatter curve. Then read the deletion costs marked on the figure: 2 for A, 0.01 for B. The smaller weight has the higher deletion cost. [Function: 2]
+Figure `lec05-kp11-curvature`: First look at the two local quadratic loss curves: A has weight 0.2 but a steep curve (curvature 100), B has weight 1 but a flat curve (curvature 0.02); then read the removal costs marked on the figure: 2 for A, 0.01 for B. The three cards on the right define pruning, curvature and the Hessian. The smaller weight costs more to remove. [Function: 2]
 
-![Local quadratic loss: small weight A has deletion cost 2, large weight B has 0.01.](../../assets/figures/lec05-kp11-curvature.png)
+![Local quadratic loss: small weight A has removal cost 2, large weight B has 0.01.](../../assets/figures/lec05-kp11-curvature-en.png)
 
 The next question: can we use the slope and curvature to estimate the deletion cost before actually deleting?
 
@@ -78,9 +78,9 @@ The next question: can we use the slope and curvature to estimate the deletion c
 - B: $w_B=1$, $H_{BB}=0.02$, $s_B=\frac12\times0.02\times1^2=0.01$.
 - Compare: $2/0.01=200$. By this local estimate delete B first, although its weight is larger.
 
-Figure `lec05-kp11-saliency`: [Supplement] First look at the two bars on a log axis: A's 2 is 200 times B's 0.01. Then note that B, with the larger weight, can be deleted first. [Function: 2]
+Figure `lec05-kp11-saliency`: Read the four steps on the left from top to bottom: Taylor expansion, g≈0, the diagonal approximation, and substituting δw=−w to get the saliency; then the bars for A (2) and B (0.01) on a log scale on the right, a factor of 200; the four boxes at the bottom are the conditions of this estimate. [Function: 2]
 
-![Log-scale comparison of the two hand-computed deletion costs 2 and 0.01.](../../assets/figures/lec05-kp11-saliency.png)
+![The four-step derivation of the saliency and the removal costs 2 and 0.01 of A and B on a log scale.](../../assets/figures/lec05-kp11-saliency-en.png)
 
 **Conditions of this estimate**:
 
@@ -101,6 +101,10 @@ Saliency is not a value measured after deletion, so the procedure must include r
 2. Estimate the saliency of each connection.
 3. Delete a small number of low-saliency connections.
 4. Retrain and check with validation data.
+
+Figure `lec05-kp11-flow`: Follow the four steps from left to right: train, estimate the saliency, delete a few, retrain and check on validation data, then return to step 2. [Function: 2]
+
+![The four pruning steps: train, estimate the saliency, delete a few, retrain and check.](../../assets/figures/lec05-kp11-flow-en.png)
 
 Stop according to validation performance, the allowed loss increase or the resource budget; the smaller network after deletion is not guaranteed to be more accurate every time. Methods with the full Hessian can also account for how other weights compensate, at the price of more storage and computation.
 
@@ -125,6 +129,10 @@ The first term measures the data error, $P$ is the weight penalty, and $\alpha\g
 
 This objective chooses B. With $\alpha=0$ it would choose A instead. Choose $\alpha$ with validation data; a smaller total cost does not mean the test error must be smaller.
 
+Figure `lec05-kp11-reg`: First the total-cost formula at the top, then compare the two panels: with α=0.1 A is 0.50 and B is 0.30 so B is chosen; with α=0 only the data error counts and A is chosen. [Function: 2]
+
+![Regularization: with α=0.1 model A costs 0.50 and B 0.30 so B is chosen; with α=0 only the data error counts and A is chosen.](../../assets/figures/lec05-kp11-reg-en.png)
+
 **Saturating penalty**: $\rho(w)=w^2/(\tau^2+w^2)$, where $\tau>0$ is a scale; for very large weights the penalty approaches 1, which is called saturation. The total penalty is $P=\sum_i\rho(w_i)$.
 
 Take $\tau=1$:
@@ -135,17 +143,13 @@ Take $\tau=1$:
 
 To compare against the scale use absolute values: only $|w|\ll\tau$ is the range near zero.
 
-Figure `lec05-kp11-rho`: [Supplement] First see that the curve hugs 0 for small $w$ and saturates toward 1 for large $w$, then read the three points: about 0.0385, 0.5 and 0.9 at $w=0.2$, 1 and 3. [Function: 2]
+Figure `lec05-kp11-rho`: First see the green curve hug 0 for small $w$ and saturate toward 1, then read the three points: about 0.0385, 0.5 and 0.9 at $w=0.2$, 1, 3; the orange curve is the derivative, zero at the origin, so a smooth penalty alone does not guarantee exact zero weights. [Function: 2]
 
-![Saturating penalty w squared over 1 plus w squared; about 0.0385, 0.5, 0.9 at w = 0.2, 1, 3.](../../assets/figures/lec05-kp11-rho.png)
+![The saturating penalty and its derivative; about 0.0385, 0.5, 0.9 at w = 0.2, 1, 3, and zero derivative at the origin.](../../assets/figures/lec05-kp11-rho-en.png)
 
 **Derivative**: $\rho'(w)=2\tau^2w/(\tau^2+w^2)^2$. At $w=0$ the derivative is 0, so a finite number of update steps is not guaranteed to land exactly on zero.
 
 **Weight elimination**: during training encourage shrinking, then periodically set weights below a threshold to zero or delete them. The threshold is tested as $|w_i|<\varepsilon$; $\varepsilon$ is the deletion threshold and $\tau$ is the penalty scale, and the two have different uses.
-
-Figure `lec05-kp11-gradient`: [Supplement] First see that the derivative of the saturating penalty is zero at the origin, then that it peaks somewhere in the middle; so a smooth penalty alone does not guarantee exactly-zero weights. [Function: 2]
-
-![Derivative of the saturating penalty, zero at the origin; so a smooth penalty alone does not guarantee exact zeros.](../../assets/figures/lec05-kp11-gradient.png)
 
 The next question: is a single connection enough? How do unit outputs and weight norms affect complexity?
 
@@ -158,6 +162,10 @@ One connection is not a whole unit, and one unit is not a whole signal path.
 - Deleting connections, deleting units and shrinking values are three different operations and must be recorded separately.
 
 The source quotes a result for a two-layer sigmoid network: under conditions such as a small training error and a bound on the weight norm, the complexity term contains $A^3\sqrt{\log d/N}$. $A$ is a common bound on the sum of absolute weights of each unit, $d$ is the input dimension, and $N$ is the number of samples. This is only the source's order-of-magnitude summary, not a complete probability bound. With $d,N$ fixed, doubling $A$ makes this term $2^3=8$ times larger; it must not be read directly as a classification error rate.
+
+Figure `lec05-kp11-ops`: Compare column by column: deleting a connection, deleting a unit and shrinking a value are three different operations; the right column is the source's complexity term, where doubling A gives 8 times, an order-of-magnitude summary and not a classification error rate. [Function: 2]
+
+![Deleting a connection, deleting a unit, shrinking a value, and the source's complexity term A cubed.](../../assets/figures/lec05-kp11-ops-en.png)
 
 ### 6. Cascade correlation adds new units to fit the residual
 
@@ -175,6 +183,10 @@ The new unit receives the original inputs and the earlier hidden units; train it
 
 After choosing a candidate and freezing the input side, retrain the output-side weights to reduce the squared error. This $S$ is not divided by standard deviations, so it is not a Pearson coefficient.
 
+Figure `lec05-kp11-cascade`: First the two definition cards (residual, cascade correlation), then the four steps from left to right, the two stages kept apart; the two boxes below are the teaching score S: the candidate (−1,1) gives 2 and the constant candidate gives 0. [Function: 2]
+
+![The four steps of cascade correlation and the teaching score S: the candidate (−1,1) gives 2, the constant candidate 0.](../../assets/figures/lec05-kp11-cascade-en.png)
+
 ### 7. Keeping the source's simulation report apart from this lecture's calculations
 
 Below, the source's important settings and reported numbers are kept in full. The re-sampled scatter plot only checks the distribution; the weight bars only compare the reported counts; no teaching illustration is passed off as a re-run of the original experiment.
@@ -185,9 +197,9 @@ Below, the source's important settings and reported numbers are kept in full. Th
 - 50 points per cluster, $8\times50=400$ points in total.
 - Covariance $0.08I$ per cluster ($I$ is the 2-D identity), so the standard deviation is $\sqrt{0.08}\approx0.283$, not 0.08.
 
-Figure `lec05-kp11-data`: [Supplement] First look at the positions of the eight clusters (four of A, four of B) and how they interleave. The figure is re-sampled with the same distribution settings and the fixed seed 20261025; it only checks the distribution, is not the original sample, and no network training was re-run. [Function: 1]
+Figure `lec05-kp11-data`: First look at the positions of the eight clusters (four of A, four of B) and how they interleave; the right side lists the data, the network and the two momentum settings. The figure is redrawn with the same distribution setup and the fixed seed 20261025: it only checks the distribution, is not the original sample, and no network was retrained. [Function: 1]
 
-![400 samples re-drawn from the source's eight means, 50 points each, variance 0.08, fixed seed 20261025; not the original data.](../../assets/figures/lec05-kp11-data.png)
+![400 samples re-drawn from the source's eight means, 50 points each, variance 0.08, fixed seed 20261025; not the original data.](../../assets/figures/lec05-kp11-data-en.png)
 
 **Network and training settings** (source):
 
@@ -203,9 +215,9 @@ Figure `lec05-kp11-data`: [Supplement] First look at the positions of the eight 
 - Deleted: $480-25=455$, about 94.79%.
 - The source reports improved performance, with the boundary changing from curved to nearly straight; this case does not guarantee that pruning improves generalization in general.
 
-Figure `lec05-kp11-counts`: [Supplement] First look at the two bars, 480 and 25, then read their ratio: only about 5.21% remains. The source case reports the weight count dropping from 480 to 25; this lecture does not claim to have re-run the original experiment. [Function: 2]
+Figure `lec05-kp11-counts`: First look at the three bars: 480 before pruning, 455 deleted, 25 kept, then read the proportions: about 5.21% kept and 94.79% deleted. The source case reports weights falling from 480 to 25; this lecture does not claim to have rerun the original experiment. [Function: 2]
 
-![The source case reports weights dropping from 480 to 25; no re-run of the original experiment is claimed.](../../assets/figures/lec05-kp11-counts.png)
+![The source case reports weights falling from 480 to 25; no re-run of the original experiment is claimed.](../../assets/figures/lec05-kp11-counts-en.png)
 
 **Supplementary demonstration** (not a model trained by the source): take the input score $r=x_2-0.6x_1-1$ and the continuous output $p=1/(1+e^{-r})$ with threshold 0.5. Lay a $401\times401$ grid on the 2-D plane, compute $p$ at each point and draw the contour $p=0.5$; only the class value flips between 0 and 1. The grid resolution, the threshold and the coordinate range must be recorded; a smooth picture is not a comparison of accuracy.
 
@@ -221,6 +233,10 @@ Figure `lec05-kp11-boundary`: [Supplement] First look at the slanted line (the $
 - Allowing compensation: $\Delta J=0.5-0.5\delta w_2+(\delta w_2)^2$.
 - Differentiating with respect to $\delta w_2$ gives $-0.5+2\delta w_2=0$, so $\delta w_2=0.25$; the cost is $0.5-0.125+0.0625=0.4375$, smaller than 0.5.
 
+Figure `lec05-kp11-comp`: Follow the three steps from left to right: deleting only w₁ costs 0.5; letting w₂ compensate brings a cross term; the minimum gives δw₂=0.25 and cost 0.4375. [Function: 2]
+
+![Supplementary quadratic example: deleting only w₁ costs 0.5; with w₂ compensating it drops to 0.4375.](../../assets/figures/lec05-kp11-comp-en.png)
+
 **Small exercises**:
 
 1. C has weight 0.5 and curvature 8; D has weight 2 and curvature 0.1. By saliency, which is deleted first? Hint: compute $s=Hw^2/2$ first.
@@ -232,9 +248,9 @@ Figure `lec05-kp11-boundary`: [Supplement] First look at the slanted line (the $
 
 **Check**: a larger weight can also have a smaller saliency. The next KP asks: can many connections share a few parameters from the start?
 
-Figure `lec05-kp11-saliency-practice`: [Supplement] Look at the two bars for C and D: 1 and 0.2, consistent with the solution. [Function: 2]
+Figure `lec05-kp11-solution`: Follow the three boxes from left to right: the saliencies of C and D are 1 and 0.2, so D goes first; ρ(2)=0.5 and the weight is still 2; a penalty is not a deletion. [Function: 2]
 
-![Saliencies of exercise C and D are 1 and 0.2, consistent with the solution on the same page.](../../assets/figures/lec05-kp11-saliency-practice.png)
+![Solutions of the exercises: saliencies of C and D are 1 and 0.2; ρ(2)=0.5 and the weight is still 2.](../../assets/figures/lec05-kp11-solution-en.png)
 
 **Stating the Taylor conditions in full**: write the current weight vector as $\mathbf w$ and the perturbation as $\delta\mathbf w$. If the cost is twice differentiable, nearby it can be written as
 
