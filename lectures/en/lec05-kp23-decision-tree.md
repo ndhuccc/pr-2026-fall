@@ -106,9 +106,9 @@ Figure `lec05-kp23-entropy`: look at the entropy curve for two classes, highest 
 
 ![Impurity](../../assets/figures/lec05-kp23-entropy.png)
 
-Figure `lec05-kp23-impbars`: [added] first the bars: one bar is one node, each segment one class, its width and the number inside being that class's points; then the $I$ at the right. From top to bottom the nodes get purer: (4,4,2) gives 1.522, (1,1,1) gives 1.585 (the maximum for three classes), (5,0,0) gives 0. [Function: 1, 2]
+Figure `lec05-kp23-impfull`: [added] first the icons in the three columns: each column is one node, circle, square and triangle are the three classes, with the number of points and the class shares on the right; then the substitution inside each column and the large $I$: (4,4,2) gives 1.522, (1,1,1) gives 1.585 (the maximum for three classes), (5,0,0) gives 0; finally the formula and the takeaway at the bottom: the more even the classes, the larger the impurity. [Function: 1, 2]
 
-![One bar per node, segment width = points of a class; I is 1.522, 1.585 and 0.](../../assets/figures/lec05-kp23-impbars.png)
+![Impurity of three nodes: (4,4,2) is 0.529+0.529+0.464=1.522; (1,1,1) is log₂3=1.585, the maximum for three classes; (5,0,0) is 0; the more even, the larger.](../../assets/figures/lec05-kp23-impfull-en.png)
 
 The next question: with impurity defined, how do we tell which of two questions cuts better?
 
