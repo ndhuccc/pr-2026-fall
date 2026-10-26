@@ -55,7 +55,7 @@ The SVM solution $g(x)=\sum_{i=1}^{N_s}a_iK(x,x_i)+w_0$, $a_i=\lambda_iy_i$, res
 
 Figure `lec05-kp21-sparse`: First look at the left panel: Parzen uses all 120 points as kernels (each point has a circle); then at the right panel: the SVM keeps only the 19 circled points, and the grey dots have coefficient exactly zero. [Function: 1, 3]
 
-![Sparse solution: Parzen's 120 kernels on the left, the SVM's 19 on the right.](../../assets/figures/lec05-kp21-sparse.png)
+![Sparse solution: Parzen's 120 kernels on the left, the SVM's 19 on the right.](../../assets/figures/lec05-kp21-sparse-en.png)
 
 The next question: why does the best solution only ever need kernels at the training points?
 
@@ -73,6 +73,10 @@ has, in the RKHS (the function space of the kernel), a minimizer of the form $g(
 
 The search space may be infinite-dimensional, yet the best solution has only $N$ coefficients.
 
+Figure `lec05-kp21-rep`: First the cost to minimise on the left with its two terms (regularisation term, RKHS), then the sketch on the right: one kernel on each of three training points (thin lines), added with weights into the minimiser (thick line). [Function: 2]
+
+![The Representer theorem: the minimiser is a weighted sum of N kernels on the N training points.](../../assets/figures/lec05-kp21-rep-en.png)
+
 ### 3. A numerical check
 
 - **Gram matrix** $\mathcal K$: the $N\times N$ matrix of the $K(x_i,x_j)$.
@@ -83,9 +87,13 @@ The search space may be infinite-dimensional, yet the best solution has only $N$
 - 30 two-dimensional standard normal random points with standard normal targets (`default_rng(3)`), $C=0.7$.
 - Two ways to solve: in 6 dimensions $w=(\Phi^T\Phi+CI)^{-1}\Phi^Ty$; with the kernel $a=(\mathcal K+CI)^{-1}y$.
 
-**Result**: $w$ and $\Phi^Ta$ differ by at most $1.9\times10^{-14}$; the predictions at 5 new points differ by at most $2.2\times10^{-14}$ (both rounding error).
+**Result**: $w$ and $\Phi^Ta$ differ by about $10^{-14}$ at most; the predictions at 5 new points also differ by about $10^{-14}$ at most (both rounding error; the trailing digits depend on the numerical library).
 
 $w=\sum_ja_j\phi(x_j)$ lies in the space spanned by the feature vectors of the training points; this is one special case of the theorem.
+
+Figure `lec05-kp21-repcheck`: First the setup at the top, then the two routes: route A solves for $w$ in 6 dimensions, route B solves for $a$ with the kernel; finally the two yellow boxes: the largest differences are both about $10^{-14}$ (rounding error). [Function: 2]
+
+![Solving in the 6-dimensional feature space and with the kernel give the same answer.](../../assets/figures/lec05-kp21-repcheck-en.png)
 
 ### 4. Kernel least squares
 
@@ -104,7 +112,7 @@ Substitute $g(x)=\sum_ja_jK(x,x_j)$:
 
 Figure `lec05-kp21-hand`: First look at the two black dots (targets $+1$ and $-1$) and the blue line $C=0$: the line passes exactly through both points, $g=1-2x$; then at the red line $C=1$: pulled toward zero, $g=0.2-0.6x$. [Function: 2]
 
-![Kernel least squares: g for two points, with C = 0 and C = 1.](../../assets/figures/lec05-kp21-hand.png)
+![Kernel least squares: g for two points, with C = 0 and C = 1.](../../assets/figures/lec05-kp21-hand-en.png)
 
 ### 5. Noisy data
 
@@ -122,7 +130,7 @@ Figure `lec05-kp21-hand`: First look at the two black dots (targets $+1$ and $-1
 
 Figure `lec05-kp21-sin`: First look at the nine black dots and the dashed line (the true $\sin x$); then at the red line $C=0$ through every point, the green line $C=0.1$ smoother and close to the dashed line, and the purple line $C=10$ flattened. [Function: 2]
 
-![9 points and the curves for C = 0, 0.1, 10.](../../assets/figures/lec05-kp21-sin.png)
+![9 points and the curves for C = 0, 0.1, 10.](../../assets/figures/lec05-kp21-sin-en.png)
 
 ### 6. Adding C·I
 
@@ -142,7 +150,7 @@ $a=(\mathcal K+CI)^{-1}y$. $C=0$ is kernel least squares; the larger $C$, the mo
 
 Figure `lec05-kp21-csweep`: First see that the horizontal axis is $C$ (log scale) with two lines: blue the training error, red the error against $\sin x$; then that the red line is lowest at $C=0.1$ (0.033) and both lines rise sharply for $C\ge10$. [Function: 3]
 
-![Error against C.](../../assets/figures/lec05-kp21-csweep.png)
+![Error against C.](../../assets/figures/lec05-kp21-csweep-en.png)
 
 ### 7. Where sparsity comes from
 
@@ -162,7 +170,7 @@ Sparsity is not automatic: at $\gamma=50$ there are 116 however large $C$ is; at
 
 Figure `lec05-kp21-svcount`: First see that the horizontal axis is $C$ (log scale) and the vertical axis the number of support vectors, with one line per $\gamma$; then that the green line ($\gamma=0.5$) falls all the way to 13 as $C$ grows, while the red line ($\gamma=50$) stays at 116. [Function: 3]
 
-![Number of support vectors against C.](../../assets/figures/lec05-kp21-svcount.png)
+![Number of support vectors against C.](../../assets/figures/lec05-kp21-svcount-en.png)
 
 ### 8. Routes to sparsification
 
@@ -185,7 +193,7 @@ Four routes (source):
 
 Figure `lec05-kp21-dict`: First look at the grey dots on the left (all 120 points) and the green circles (the 17 kept at threshold 0.7); then at the numbers on the right: the lower the threshold, the smaller the dictionary. [Function: 1, 3]
 
-![The 17 points kept at threshold 0.7 and the dictionary size for each threshold.](../../assets/figures/lec05-kp21-dict.png)
+![The 17 points kept at threshold 0.7 and the dictionary size for each threshold.](../../assets/figures/lec05-kp21-dict-en.png)
 
 ### Extension: fewer is not always better, exercises and worked solutions
 
@@ -210,6 +218,14 @@ The source warns that with too many support vectors generalization degrades. But
 3. $g(0)=0.8\cdot1-0.6\cdot1=0.2$; $g(1)=0.8\cdot1-0.6\cdot2=-0.4$.
 
 **Exercise 2, worked solution**: at $C=0$ they are $+1$ and $-1$ (passing exactly through), at $C=1$ they shrink to $0.2$ and $-0.4$: $C$ presses the solution toward 0; both coefficients are still nonzero.
+
+Figure `lec05-kp21-extra`: First the accuracy on new points of the four bars, then the number of support vectors on the right: $\gamma=50$ has 116 and is the worst (86.8%), but the 39 of $\gamma=0.5$, $C=1$ (97.3%) beat the 13 (95.4%). [Function: 3]
+
+![Accuracy on new points and number of support vectors for four settings.](../../assets/figures/lec05-kp21-extra-en.png)
+
+Figure `lec05-kp21-solution`: First step 1, the inverse (determinant 5), then step 2, $a=(0.8,-0.6)$, and finally step 3, $g(0)=0.2$ and $g(1)=-0.4$, compared with $+1$, $-1$ at $C=0$. [Function: 2]
+
+![Worked steps and answers for exercises 1 and 2.](../../assets/figures/lec05-kp21-solution-en.png)
 
 ## Terms and source
 
