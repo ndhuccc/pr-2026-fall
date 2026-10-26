@@ -210,7 +210,15 @@ The next question: for the same problem, does the tree look the same with anothe
 
 **Variance** (designed here): grow an unlimited-depth tree on each of 8 training sets of the same size (seeds 40 to 47, 200 points each). The first cut (the root) always splits the second feature, but with different thresholds: 0.42, 0.11, 0.12, 0.09, 0.22, 0.26, 0.22, 0.29; the number of leaves is 22 to 33. A small difference in the data grows a different tree, which is called high variance.
 
+Figure `lec05-kp23-var`: [added] first the top panel: the points are training set 40; each red line is the first cut (second feature $\le$ threshold) of the tree grown on one training set, at heights from 0.09 to 0.42. The number line below marks the 8 thresholds, labelled by seed; two trees (seeds 44 and 46) share 0.22.
+
+![The two-moon training data with 8 red lines, each the first cut of one tree; a number line below marks the 8 thresholds and seeds, 0.09 to 0.42.](../../assets/figures/lec05-kp23-var.png)
+
 **Bagging**: draw $B$ sets **with replacement** from the training set (each as large as the original, so some points repeat and some are not drawn), build one tree on each and finally take a majority vote. A **random forest** adds one trick to bagging: at every split only features picked at random are considered (in this experiment only 1 feature at a time).
+
+Figure `lec05-kp23-bagsample`: [added] first the top row: an illustration, not experiment data. The top row is training points numbered 1 to 8; each sample draws 8 times with replacement, a repeated number means the same point was drawn several times, and the red text lists the points never drawn; each of three samples grows a tree and the three votes decide by majority. The chance that a point is never drawn is $(1-1/N)^N$, approaching $0.368$ as $N$ grows.
+
+![An illustration with 8 numbered points: three samples drawn with replacement each repeat and miss points, each grows a tree, and three votes decide by majority.](../../assets/figures/lec05-kp23-bagsample.png)
 
 **Experiment** (20 different training sets, seeds 100 to 119; the new data are the same 2000 points as in section 6; $B=25$ trees):
 
@@ -219,6 +227,10 @@ The next question: for the same problem, does the tree look the same with anothe
 | a single tree (no depth limit) | $84.4\pm1.4\%$ |
 | bagging (25 trees) | $87.7\pm1.1\%$ |
 | random forest (25 trees) | $87.8\pm1.1\%$ |
+
+Figure `lec05-kp23-bagres`: [added] first the dots and bars: each dot is one training set's accuracy on 2000 new points and the bar is the mean of the 20; the single tree is the most spread out, while bagging and the random forest sit further right with a smaller spread.
+
+![Dot plot of new-point accuracy over 20 training sets: single tree 84.4±1.4, bagging 87.7±1.1, random forest 87.8±1.1.](../../assets/figures/lec05-kp23-bagres.png)
 
 **Why averaging helps**: a tree is hierarchical, so an error high up passes to all the leaves below; different trees err differently, and in the vote the errors cancel and the variance falls.
 
