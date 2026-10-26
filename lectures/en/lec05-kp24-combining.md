@@ -56,10 +56,6 @@
 
 **How to read it**: the best, 3-NN, errs on 12.2% (244 points); in 60% of these errors (146 points) at least one other classifier is right, and that is the complementary information. But the vote of the three scores only 86.2%, still below the 87.8% of 3-NN; complementary information has value only if it can be dug out.
 
-Figure `lec05-kp24-comp`: look at the accuracies of the three classifiers, then at the share of the errors of 3-NN that others get right (the complementary share) on the far right. [Function: 1, 2]
-
-![Complementary information](../../assets/figures/lec05-kp24-comp.png)
-
 The next question: several classifiers each give a set of probabilities; how do we merge them into one?
 
 ### 2. The product rule
@@ -89,10 +85,6 @@ and the class with the largest product is chosen.
 
 **Example**: two classes and three classifiers $(0.8,0.2)$, $(0.6,0.4)$, $(0.7,0.3)$: the product for $\omega_1$ is $0.8\times0.6\times0.7=0.336$ and for $\omega_2$ it is $0.2\times0.4\times0.3=0.024$, so $\omega_1$.
 
-Figure `lec05-kp24-prod`: look at the probabilities given by the three classifiers, then at the product for each class and the decision. [Function: 1, 2]
-
-![The product rule](../../assets/figures/lec05-kp24-prod.png)
-
 The next question: what do we get if the two arguments of the KL distance are swapped?
 
 ### 3. The sum rule
@@ -110,10 +102,6 @@ the arithmetic mean.
 **The same three classifiers**: the mean for $\omega_1$ is $(0.8+0.6+0.7)/3=0.70$ and for $\omega_2$ it is $0.30$, again $\omega_1$.
 
 **Comparing the two rules**: both have a rigorous information-theoretic origin and there is no theoretical ground to prefer one. The product derivation is clean but fragile when an output is near zero; in practice the sum is often more stable (source [Mill 99]).
-
-Figure `lec05-kp24-sum`: look at the probabilities of the same three classifiers, then at the mean for each class and the decision, and compare with the product rule. [Function: 1, 2]
-
-![The sum rule](../../assets/figures/lec05-kp24-sum.png)
 
 The next question: when do the two rules differ? What if one extreme classifier appears?
 
@@ -179,10 +167,6 @@ The next question: the formula is pretty, but does its premise, "independent", h
 
 **Common misconception**: as long as every classifier is better than a coin, voting approaches 100%. It depends on independence, which does not hold in practice, and the larger $L$ is, the less realistic it is (source).
 
-Figure `lec05-kp24-indep`: look at the accuracy of a single tree, then compare the prediction of the independent formula with the actual vote: the gap is large. [Function: 2]
-
-![The illusion of independence](../../assets/figures/lec05-kp24-indep.png)
-
 The next question: since independence cannot be counted on, how do we make the members differ from each other?
 
 ### 7. Making diversity
@@ -210,10 +194,6 @@ The next question: since independence cannot be counted on, how do we make the m
 
 **How to read it**: the one with the largest $V$ is not the most accurate. The 5 types include logistic, which happens to suit this data, so one cannot conclude that different classifier types are always better.
 
-Figure `lec05-kp24-div`: look at the vote accuracies of the three ways of combining, then at the $V$ of each; the two quantities need not move together. [Function: 2]
-
-![Making diversity](../../assets/figures/lec05-kp24-div.png)
-
 ### 8. The Bayesian view and what to remember
 
 **The Bayesian view**: assume the $x_j$ seen by the classifiers are independent; the Bayes rule gives
@@ -228,10 +208,6 @@ This is again the product rule, but very sensitive to errors in the posterior es
 
 **To remember**: the sum and the majority vote are the most used; there is no panacea theorem.
 
-Figure `lec05-kp24-bayes`: look at the Bayesian view leading to the product rule, then at the trade-off of the three rules under errors. [Function: 1]
-
-![The Bayesian view](../../assets/figures/lec05-kp24-bayes.png)
-
 ### Extension: the median, practice and worked solution
 
 **The median** (designed here): five classifiers give $\omega_1$ the values 0.80, 0.85, 0.75, 0.01, 0.01 (the rest to $\omega_2$).
@@ -244,24 +220,12 @@ Figure `lec05-kp24-bayes`: look at the Bayesian view leading to the product rule
 
 When outlying outputs appear, the sum is pulled away by the extreme values and the median is more robust; the source also mentions max, min and median, the reason being the chain of inequalities: product ≤ min ≤ mean ≤ max.
 
-Figure `lec05-kp24-median`: look at the two extreme 0.01 values among the five outputs, then at the results of the three rules, where only the median chooses right. [Function: 1, 2]
-
-![The median](../../assets/figures/lec05-kp24-median.png)
-
 **Practice**: each classifier is right with probability $p=0.7$, decisions are independent, and the vote is a majority of an odd number $L$.
 
 1. What is the accuracy $P_c(3)$ for $L=3$?
 2. What is the accuracy $P_c(5)$ for $L=5$? How much more than $L=3$?
 
-Figure `lec05-kp24-practice`: the setup of the practice. Look at $p=0.7$ and the independence assumption first, then at the two values of $L$ to compute. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp24-practice.png)
-
 **Worked solution of questions 1 and 2**: (1) $l_c=2$: $3\cdot0.7^2\cdot0.3+0.7^3=0.441+0.343=0.784$. (2) $l_c=3$: $10\cdot0.7^3\cdot0.3^2+5\cdot0.7^4\cdot0.3+0.7^5=0.3087+0.36015+0.16807=0.837$, which is 0.053 more than $L=3$. (3) Check: $0.7\to0.784\to0.837$ rises monotonically (under independence); real dependent classifiers do not rise that much.
-
-Figure `lec05-kp24-practice-sol`: look at the three terms added for $L=3$, then at the three terms added for $L=5$, and finally at their difference. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp24-practice-sol.png)
 
 ## Terms and source
 

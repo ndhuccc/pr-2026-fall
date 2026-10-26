@@ -128,10 +128,6 @@ Choose the question with the largest $\Delta I$.
 
 **Where it differs from the textbook**: the textbook writes $I(t_Y)=0.815$, $I(t_N)=1.472$ and $\Delta I=0.315$, which does not match its own counts (even with its printed numbers the result is only 0.312); this lecture recomputed this one split only.
 
-Figure `lec05-kp23-ex42`: look at this lecture's recomputation on the left, then at the textbook's printed numbers on the right; they differ in the second decimal. [Function: 2]
-
-![The impurity decrease](../../assets/figures/lec05-kp23-ex42.png)
-
 The next question: why must the children in $\Delta I$ be multiplied by their size proportions and not simply averaged?
 
 ### 5. Why weight
@@ -154,10 +150,6 @@ The next question: why must the children in $\Delta I$ be multiplied by their si
 - A would be chosen; one pure point is mistaken for a big improvement.
 
 **Common misconception**: a split is good as soon as a child becomes pure. Making only a very small subset pure has no real value.
-
-Figure `lec05-kp23-weight`: look at the weighted scores of A and B, B being higher; then at the unweighted scores, where A is higher instead and the order reverses. [Function: 2]
-
-![Why weight](../../assets/figures/lec05-kp23-weight.png)
 
 The next question: if we keep splitting, how large should the tree grow?
 
@@ -224,10 +216,6 @@ The next question: for the same problem, does the tree look the same with anothe
 
 **To remember**: decision tree = hierarchical, sequential hard decisions; neural network = parallel soft decisions; the MLP is better in error rate and the decision tree in training time (source).
 
-Figure `lec05-kp23-bag`: look at the 8 different root thresholds, then at the mean accuracies of the three methods, bagging and the random forest both above a single tree. [Function: 1, 2]
-
-![High variance and bagging](../../assets/figures/lec05-kp23-bag.png)
-
 ### Extension: oblique questions, practice and worked solution
 
 **An oblique question** (designed here): 300 training points are spread uniformly over $[-1,1]^2$ (random seed 5) and the class is decided by $x_1+x_2>0$; the new data are 3000 points. One oblique question $x_1+x_2\le0$ is perfectly right, but an axis-parallel tree needs many cuts to approximate the slanted line:
@@ -250,15 +238,7 @@ Figure `lec05-kp23-oblique`: look at the slanted line cutting the two classes in
 1. What is $\Delta I$ of split A?
 2. What is $\Delta I$ of split B? Which split is better?
 
-Figure `lec05-kp23-practice`: the setup of the practice. Look at the parent and the two splits first, then at the given $I(3,1)$. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp23-practice.png)
-
 **Worked solution of questions 1 and 2**: (1) $I(t)=1$; both children of A have $I=0.811$; $\Delta I=1-\tfrac48\cdot0.811-\tfrac48\cdot0.811=0.189$. (2) Both children of B are $(2,2)$ with $I=1$; $\Delta I=1-0.5-0.5=0$. (3) Check: A is better; B lowers the impurity not at all; a split into $(4,0)$ and $(0,4)$ would give $\Delta I=1$.
-
-Figure `lec05-kp23-practice-sol`: look at the computation for A first, then for B, and finally at the comparison of $\Delta I$. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp23-practice-sol.png)
 
 ## Terms and source
 

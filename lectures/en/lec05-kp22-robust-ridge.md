@@ -148,10 +148,6 @@ $$
 
 So $\epsilon$ is the knob of sparsity: the wider the tube, the more points inside it and the fewer the support vectors.
 
-Figure `lec05-kp22-svr`: look at the objective and constraints first, then at the sketch of the tube on the right: points inside have no weight and only points on the edge or outside do. [Function: 1, 3]
-
-![ε-insensitive regression](../../assets/figures/lec05-kp22-svr.png)
-
 The next question: how wide should the tube $\epsilon$ be? The wider, the sparser, but what is lost?
 
 ### 5. The effect of ε
@@ -195,10 +191,6 @@ where $y=(y_1,\dots,y_N)^T$ is the target vector and $p=(K(x,x_1),\dots,K(x,x_N)
 
 **The price**: with $\epsilon=0$ there is no point whose small error "contributes nothing", every point has a weight and sparsity is lost (the loss changed from the absolute value to the square and the constraints into equalities); there is no free lunch.
 
-Figure `lec05-kp22-ridge`: look at the objective and the closed form, then at how the two forms for the linear kernel correspond. [Function: 1]
-
-![Ridge regression](../../assets/figures/lec05-kp22-ridge.png)
-
 The next question: since ridge regression does not resist outliers, what is it good for?
 
 ### 7. Collinearity and stability
@@ -224,10 +216,6 @@ The **condition number** is the ratio of the largest to the smallest eigenvalue 
 
 This is a common numerical stabilization; the price is that the coefficients are pressed towards 0.
 
-Figure `lec05-kp22-collinear`: look at the coefficients exploding as $\mathcal C$ shrinks, then at the condition number growing with them. [Function: 2]
-
-![Collinearity and stability](../../assets/figures/lec05-kp22-collinear.png)
-
 The next question: with the four methods on the same data with an outlier, which resists what?
 
 ### 8. Comparing the four methods
@@ -245,10 +233,6 @@ The same 21 points with the outlier (section 1), slope (truth 2):
 
 **Common misconception**: ridge regression resists outliers. In fact it resists collinearity and overfitting, not outliers (slope 2.679, almost the same as the 2.686 of least squares).
 
-Figure `lec05-kp22-compare`: look at the slopes of the four methods, Huber and ε-insensitive being nearest the truth 2; then at the number of nonzero coefficients, which only ε-insensitive reduces a lot. [Function: 1, 2]
-
-![Comparing the four methods](../../assets/figures/lec05-kp22-compare.png)
-
 ### Extension: the threshold c, practice and worked solution
 
 **The Huber threshold $c$** (the same 21 points):
@@ -259,24 +243,12 @@ Figure `lec05-kp22-compare`: look at the slopes of the four methods, Huber and �
 
 With a large $c$ every error lies in the squared zone and it equals least squares; with a small $c$ the outlier is nearly ignored. $c$ must be chosen to match the noise size (here the standard deviation 0.3).
 
-Figure `lec05-kp22-csweep`: look at the slope near the least-squares 2.686 for very large $c$, then at it approaching the truth 2 as $c$ shrinks. [Function: 2]
-
-![The threshold c](../../assets/figures/lec05-kp22-csweep.png)
-
 **Practice**: residual $e=y-g(x)$; Huber with $c=1$ and ε-insensitive with $\epsilon=0.5$.
 
 1. What is the Huber loss at $e=0.5$ and at $e=3$?
 2. What is the ε-insensitive loss at $e=0.3$ and at $e=2$?
 
-Figure `lec05-kp22-practice`: the setup of the practice. Look at the two loss formulas first, then at the residuals to put in. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp22-practice.png)
-
 **Worked solution of questions 1 and 2**: (1) $e=0.5\le1$: $\tfrac12\cdot0.25=0.125$; $e=3>1$: $1\cdot3-\tfrac12=2.5$; the square $\tfrac12e^2$ would give 0.125 and 4.5. (2) $e=0.3$: $\max(0,0.3-0.5)=0$; $e=2$: $\max(0,2-0.5)=1.5$. (3) Check: for a small error Huber equals the square and ε-insensitive gives 0; for a large error both grow linearly.
-
-Figure `lec05-kp22-practice-sol`: look at the Huber computation for the two residuals first, then at the ε-insensitive computation for the two residuals. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp22-practice-sol.png)
 
 ## Terms and source
 

@@ -55,10 +55,6 @@
 
 The weight vector never has to be computed. As in KP19, $K$ must satisfy the Mercer condition.
 
-Figure `lec05-kp20-recipe`: look at the order of the three steps, then at what each step changes in the algorithm: only the places with an inner product are replaced by $K$. [Function: 1]
-
-![The three-step recipe](../../assets/figures/lec05-kp20-recipe.png)
-
 The next question: can the simplest classifier (compare the distances to the two class means) be kernelized?
 
 ### 2. The Euclidean classifier: compare the distances to the two class means
@@ -87,10 +83,6 @@ $$
 and $2\theta$ = the mean kernel value inside class 2 $-$ the mean kernel value inside class 1.
 
 **Relation to Parzen**: the two sums on the left look like a Parzen density estimate (KP18), and with a Gaussian kernel they are one. The difference is $\theta$: Parzen compares the two sums directly, while the kernelized Euclidean classifier also subtracts the threshold $\theta$.
-
-Figure `lec05-kp20-kmean`: look at the two class means in the kernel space, then at the comparison of the distances of a new point to the two means, and finally at what is left after expansion: kernel means and the threshold $\theta$. [Function: 1, 2]
-
-![The Euclidean classifier](../../assets/figures/lec05-kp20-kmean.png)
 
 The next question: does the kernelized Euclidean classifier really work? Can $\theta$ be dropped? Try concentric rings.
 
@@ -140,10 +132,6 @@ $$
 
 **Convergence**: the linear perceptron converges only when the data are linearly separable. After the kernel maps to a high dimension, by Cover's theorem (KP14) the data are very likely linearly separable.
 
-Figure `lec05-kp20-kperc`: look at the update first, then at how the update turns into counting $\alpha$, and finally at the discriminant containing only kernels. [Function: 1]
-
-![The kernel perceptron](../../assets/figures/lec05-kp20-kperc.png)
-
 The next question: with a small example, compute the discriminant value of every point.
 
 ### 5. A hand trace
@@ -173,10 +161,6 @@ $$
 **One cell checked by hand**: in round 1 at point 3 ($x_3=(0,1)$) with $\alpha=(1,0,0,0)$: $g(x_3)=\alpha_1y_1K(x_1,x_3)+\sum\alpha_jy_j=1\cdot1\cdot1+1=2$, and $y_3=-1$, so $y_3g=-2\le0$, wrong.
 
 **The final discriminant**: adding the four kernels, $g(x)=2(x_1^2-x_2^2)$. $(2,0)$ gives $+8$ and $(0,2)$ gives $-8$.
-
-Figure `lec05-kp20-trace`: look at the number of errors per round (3, 1, 0), then at the last column showing $\alpha$ going from $(0,0,0,0)$ to $(1,1,1,1)$. [Function: 1, 2]
-
-![A hand trace](../../assets/figures/lec05-kp20-trace.png)
 
 The next question: on more realistic data, how many rounds does the kernel perceptron need and how accurate is it?
 
@@ -234,10 +218,6 @@ The next question: do the four losses punish a point that is badly wrong equally
 
 **To remember**: the general recipe of the kernel trick: (1) inner products only, (2) replace the inner product by $K$, (3) express the solution as a linear combination of the training points; the weight vector never has to be computed.
 
-Figure `lec05-kp20-lossvals`: look at the three rows of $z$, then compare the four losses at the same $z$; at $z=-2$ the exponential is the largest. [Function: 2]
-
-![The character of the losses](../../assets/figures/lec05-kp20-lossvals.png)
-
 ### Extension: the logistic upper bound, practice and worked solution
 
 **The logistic loss must be normalized**: the hinge and exponential losses are never below the 0/1 loss; but the logistic $\ln(1+e^{-z})$ is only $\ln2=0.693<1$ at $z=0$, so it is not an upper bound.
@@ -255,15 +235,7 @@ Figure `lec05-kp20-logup`: look at the step of the 0/1 loss, then at the logisti
 1. Use the four kernels to compute $g(x)$ at $x=(1,2)$. Which class is it?
 2. Simplify $g$ into a formula in $x_1,x_2$ and check question 1.
 
-Figure `lec05-kp20-practice`: the setup of the practice. Look at the four points and their classes first, then at $\alpha$. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp20-practice.png)
-
 **Worked solution of questions 1 and 2**: (1) $K(x,(1,0))=4$, $K(x,(-1,0))=0$, $K(x,(0,1))=9$, $K(x,(0,-1))=1$; $\sum\alpha_iy_i=0$; $g=4+0-9-1+0=-6$, the negative class. (2) Adding the four squares, $g=2(x_1^2+1)-2(x_2^2+1)=2(x_1^2-x_2^2)$; at $x=(1,2)$: $2(1-4)=-6$, the same as question 1. (3) Check: $g>0$ means $|x_1|>|x_2|$, given to the positive class; the boundary is two oblique lines, and the four points that no line could split are separated by the kernel perceptron.
-
-Figure `lec05-kp20-practice-sol`: look at the kernel-by-kernel computation on the left, then at the simplification to $2(x_1^2-x_2^2)$ on the right; both give $-6$. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp20-practice-sol.png)
 
 ## Terms and source
 
