@@ -65,7 +65,7 @@ With three other noise draws (seeds 0, 1, 2) the slope with the outlier is 2.69,
 
 Figure `lec05-kp22-outlier`: look first at the 20 points following roughly one line, then at the outlier (star) at the upper right, and finally compare the two least-squares lines: the one with the outlier is visibly tilted up. [Function: 1, 2]
 
-![The outlier](../../assets/figures/lec05-kp22-outlier.png)
+![The outlier](../../assets/figures/lec05-kp22-outlier-en.png)
 
 The next question: can another loss keep one bad point from deciding everything?
 
@@ -91,7 +91,7 @@ Small errors ($|e|\le c$) are squared, as in least squares; large errors are mad
 
 Figure `lec05-kp22-losses`: look first at the three curves coinciding near small errors (except the ε-insensitive, which is 0 inside the tube), then at the square racing up fastest for large errors while Huber and ε-insensitive only rise linearly. [Function: 1, 2]
 
-![Robust losses](../../assets/figures/lec05-kp22-losses.png)
+![Robust losses](../../assets/figures/lec05-kp22-losses-en.png)
 
 The next question: with the Huber loss, is the fitted line really less likely to be dragged away?
 
@@ -118,7 +118,7 @@ Three noise draws (seeds 0, 1, 2): Huber slopes 2.10, 2.14, 2.13; least squares 
 
 Figure `lec05-kp22-hfit`: look at the same 21 points, then compare the two lines: the Huber line hugs the trend of the clean data and the least-squares line is pulled up by the outlier. [Function: 1, 2]
 
-![The Huber experiment](../../assets/figures/lec05-kp22-hfit.png)
+![The Huber experiment](../../assets/figures/lec05-kp22-hfit-en.png)
 
 The next question: another approach is to "ignore small errors". Why does that make the solution sparse?
 
@@ -148,6 +148,10 @@ $$
 
 So $\epsilon$ is the knob of sparsity: the wider the tube, the more points inside it and the fewer the support vectors.
 
+Figure `lec05-kp22-tube`: First the 60 sine points and the green prediction line, then the two grey tube edges above and below, and finally compare the red points (support vectors on the edge or outside) with the blue ones (inside, weight 0); the cards on the right give the SVR objective and the KKT reading. [Function: 2]
+
+![The SVR tube: points inside have no weight, only those on the edge or outside are support vectors.](../../assets/figures/lec05-kp22-tube-en.png)
+
 The next question: how wide should the tube $\epsilon$ be? The wider, the sparser, but what is lost?
 
 ### 5. The effect of ε
@@ -167,7 +171,7 @@ The next question: how wide should the tube $\epsilon$ be? The wider, the sparse
 
 Figure `lec05-kp22-eps`: look at the support-vector count falling as $\epsilon$ grows, then compare the rising MSE: the two lines trade off. [Function: 2]
 
-![The effect of ε](../../assets/figures/lec05-kp22-eps.png)
+![The effect of ε](../../assets/figures/lec05-kp22-eps-en.png)
 
 The next question: what do we get if the tube width is shrunk to 0?
 
@@ -190,6 +194,10 @@ $$
 where $y=(y_1,\dots,y_N)^T$ is the target vector and $p=(K(x,x_1),\dots,K(x,x_N))^T$. It differs from the kernel least squares of KP21 only by the term $\mathcal CI$.
 
 **The price**: with $\epsilon=0$ there is no point whose small error "contributes nothing", every point has a weight and sparsity is lost (the loss changed from the absolute value to the square and the constraints into equalities); there is no free lunch.
+
+Figure `lec05-kp22-ridge`: First the two definition cards at the top (ridge regression, closed form), then the three steps in order: start from SVR with ε=0, turn the inequalities into equalities, reach the closed form; finally the yellow and red labels: differs from KP21 by one term, and the price is lost sparsity. [Function: 3]
+
+![Three steps from SVR with ε=0 to ridge regression and its closed form.](../../assets/figures/lec05-kp22-ridge-en.png)
 
 The next question: since ridge regression does not resist outliers, what is it good for?
 
@@ -216,6 +224,10 @@ The **condition number** is the ratio of the largest to the smallest eigenvalue 
 
 This is a common numerical stabilization; the price is that the coefficients are pressed towards 0.
 
+Figure `lec05-kp22-collinear`: First the left side: the two forms give the same $w$; then the coefficients when two columns are almost identical: least squares (−170, 171), after adding a small positive number (0.49, 0.49); finally the condition number falling from $5\times10^8$ to 776. [Function: 3]
+
+![The check of the two forms of the linear kernel, and the coefficients and condition number before and after adding a small positive number in the collinear example.](../../assets/figures/lec05-kp22-collinear-en.png)
+
 The next question: with the four methods on the same data with an outlier, which resists what?
 
 ### 8. Comparing the four methods
@@ -233,6 +245,10 @@ The same 21 points with the outlier (section 1), slope (truth 2):
 
 **Common misconception**: ridge regression resists outliers. In fact it resists collinearity and overfitting, not outliers (slope 2.679, almost the same as the 2.686 of least squares).
 
+Figure `lec05-kp22-compare`: First the slopes of the four methods (truth 2), then each one's number of nonzero coefficients: least squares 2.686, Huber 2.099, ε-insensitive 2.122 (4 support vectors), ridge 2.679; ridge is almost the same as least squares. [Function: 3]
+
+![Slope and number of nonzero coefficients of the four methods on the same data with an outlier.](../../assets/figures/lec05-kp22-compare-en.png)
+
 ### Extension: the threshold c, practice and worked solution
 
 **The Huber threshold $c$** (the same 21 points):
@@ -249,6 +265,14 @@ With a large $c$ every error lies in the squared zone and it equals least square
 2. What is the ε-insensitive loss at $e=0.3$ and at $e=2$?
 
 **Worked solution of questions 1 and 2**: (1) $e=0.5\le1$: $\tfrac12\cdot0.25=0.125$; $e=3>1$: $1\cdot3-\tfrac12=2.5$; the square $\tfrac12e^2$ would give 0.125 and 4.5. (2) $e=0.3$: $\max(0,0.3-0.5)=0$; $e=2$: $\max(0,2-0.5)=1.5$. (3) Check: for a small error Huber equals the square and ε-insensitive gives 0; for a large error both grow linearly.
+
+Figure `lec05-kp22-csweep`: First the threshold $c$ from small to large, then the Huber slope rising from 2.045 to 2.686, and finally the two ends: for small $c$ the outlier is nearly ignored, for large $c$ it equals least squares. [Function: 1]
+
+![The Huber slope as the threshold c changes.](../../assets/figures/lec05-kp22-csweep-en.png)
+
+Figure `lec05-kp22-solution`: First exercise 1 for the Huber loss ($e=0.5$ gives 0.125, $e=3$ gives 2.5), then exercise 2 for the ε-insensitive loss ($e=0.3$ gives 0, $e=2$ gives 1.5), and finally check how both differ from the square. [Function: 1]
+
+![Worked steps and answers for exercises 1 and 2.](../../assets/figures/lec05-kp22-solution-en.png)
 
 ## Terms and source
 
