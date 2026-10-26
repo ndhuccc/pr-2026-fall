@@ -1,178 +1,262 @@
 # KP26 The Class Imbalance Problem
 
 > Level: undergraduate, year 3
-> 
-> Pattern Recognition | Chapter 4, §4.23
+>
+> Pattern Recognition | Chapter 4 §4.23
 
 [Slides: read and download](../../slides/lec05-kp26-imbalance-en.jbd.json) | [中文版](../lec05-kp26-imbalance.md)
 
 ## Learning objectives
 
-- Explain why class imbalance harms classifiers and why accuracy can deceive.
-- Name the data-level and the cost-sensitive cures and compare their trade-offs.
-- Compute recall, precision, accuracy and balanced accuracy from the rare points caught (TP) and the false alarms (FP), and check the numbers in a table.
+- Explain why class imbalance harms a classifier and why accuracy can deceive.
+- Name the two families of remedies, data-level and cost-sensitive, and compare their trade-offs.
+- Compute recall, precision, accuracy and balanced accuracy from the number of rare points caught (TP) and the number of false alarms (FP), and be able to check the numbers in a table.
 
 ## KP26 The Class Imbalance Problem
 
-**One-sentence summary**: When one class has ten thousand samples and another only ten, a classifier that "seeks simplicity" naturally ignores the rare class, which is often the very class we care about.
+**One-sentence summary**: When one class has ten thousand samples and the other only ten, a classifier that "seeks simplicity" will naturally ignore the rare class, and the rare class is often exactly the one we care about.
 
-### 1. How the experiment works
+### Prerequisites and symbols
 
-**Plain explanation**: The AdaBoost of KP25 degrades with noisy labels. Is a high accuracy reliable when one class has only 20 samples? First, how the experiment is made.
+**Four things you need first**:
 
-- **Class imbalance**: one class has very many samples and another very few; common in text classification, rare diseases, oil-spill detection.
+- **SVM and $C$** (KP15, KP19): $C$ is the penalty for a misclassification; the larger, the less it tolerates errors (the less regularized).
+- **Decision tree** (KP23): the minimum number of points in a leaf; the larger, the simpler the tree.
+- **AdaBoost** (KP25): samples carry weights, and a misclassified point's weight grows in the next round.
+- **Regularization and simplicity** (KP11): for generalization we demand a simple model throughout.
 
-**Data** (designed here, program-generated): majority $N((0,0),I)$, rare $N((2,0),I)$, independent coordinates, standard deviation 1; training 1000 + 20 points, one fixed test set of 5000 + 100.
+**Table of symbols and terms** (fixed for this lecture):
 
-**Model and repeats**: RBF-kernel SVM ($e^{-0.5\|x-z\|^2}$, $C=1$); one training set per random seed 0 to 19, 20 runs, averaged.
+| Symbol | Meaning | Note |
+|---|---|---|
+| TP | number of rare points caught | rare points judged rare |
+| FN | number of rare points missed | rare points judged majority; with 100 rare test points, $\text{FN}=100-\text{TP}$ |
+| FP | number of false alarms | majority points judged rare |
+| TN | number of majority points judged right | with 5000 majority test points, $\text{TN}=5000-\text{FP}$ |
+| recall | fraction of rare points caught | $\text{TP}/(\text{TP}+\text{FN})$ |
+| precision | fraction of points judged rare that really are rare | $\text{TP}/(\text{TP}+\text{FP})$ |
+| accuracy | fraction of all points judged right | $(\text{TP}+\text{TN})/\text{total}$ |
+| specificity | fraction of majority points judged right | $\text{TN}/(\text{TN}+\text{FP})$ |
+| balanced accuracy | the mean of recall and specificity | extension |
+| majority:rare | ratio of the two class sizes in the training set | for example 1000:20 |
 
-Figure `lec05-kp26-setup`: Scatter of one training set: 1000 blue majority points centred at (0,0) and 20 orange rare points centred at (2,0), overlapping; below it the training, test, repeat count and RBF SVM parameters.
+### 1. How the experiment is done
 
-![How the experiment works](../../assets/figures/lec05-kp26-setup.png)
+**Plain-words explanation**: The AdaBoost of KP25 degrades when the labels are noisy. When one class has only 20 samples, is even "high accuracy" reliable? First see how all the numbers of this lecture were obtained.
 
-**Experiment details** (reproducible): implemented with scikit-learn in Python (SVC, DecisionTreeClassifier, AdaBoostClassifier, version 1.9.1 defaults except as listed). On pages 1 to 3 and 5 to 7 the test set is fixed at 5000 + 100 (random seed 998) and the training sets use seeds 0 to 19; the sampling of oversampling and undersampling reuses the training seed. On page 4 the test set is fixed at 2000 + 2000 (seed 997) and the training sets again use seeds 0 to 19, 20 runs, with the class centres differing only along the $x_1$ axis by 4 or 1.5. The tree is CART (Gini impurity, random seed 0); AdaBoost uses depth-1 decision stumps, 100 rounds and learning rate 1. The SVM class weights are $n/(2n_c)$: rare $1020/(2\times 20)=25.5$, majority $1020/(2\times 1000)=0.51$, a ratio of 50. A mean count is the mean of 20 integer counts, so it can have decimals (for example 5.85 = 117 / 20). TP in each cell of page 4 (of 2000 rare test points): easy task 1950.9, 1831.8, 1335.1, 1561.1, 863.8; hard task 1571.65, 298, 0.35, 0.65, 0.
+- **Class imbalance**: one class has very many samples and the other very few; common in text classification, rare diseases and oil-slick detection.
 
-### 2. From counts to measures
+**Data** (designed for this lecture, generated by a program):
 
-**Plain explanation**: Every number comes from this experiment: 20 rare points among 1000 majority ones, tested on 5100 new points where the rare class is only 2%. How is a classifier scored?
+- The majority class is drawn from $N((0,0),I)$ and the rare class from $N((2,0),I)$, the two coordinates independent with standard deviation 1.
+- Training: 1000+20 points; the test set is one fixed set of 5000+100 points (random seed 998).
 
-- **Recall**: share of the 100 rare points caught, $=\text{TP}/100$; **precision**: share of points called rare that are, $=\text{TP}/(\text{TP}+\text{FP})$. TP: rare points caught; FP: false alarms.
+**Model and repetition**:
 
-**Accuracy** $=(\text{TP}+\text{TN})/5100$, $\text{TN}=5000-\text{FP}$. **Always the majority**: TP 0, FP 0, recall $0/100=0$, accuracy $5000/5100=98.0\%$.
+- Model: an SVM with an RBF kernel (kernel $e^{-0.5\|x-z\|^2}$, $C=1$).
+- Repetition: the training set is drawn once for each random seed 0 to 19, 20 times in all, and the results are averaged.
 
-**Example** (SVM, mean of 20 runs): TP 5.85, FP 2; recall $5.85/100=5.9\%$, precision $5.85/(5.85+2)=74.5\%$, accuracy $(5.85+4998)/5100=98.1\%$.
+Figure `lec05-kp26-setup`: First look at the scatter plot of one training set: 1000 blue majority points centred at $(0,0)$ and 20 orange rare points centred at $(2,0)$; then see that the two clouds clearly overlap, so they cannot be separated completely; below the plot are the training, test, repetition and SVM settings. [Function: 1, 3]
 
-Figure `lec05-kp26-metrics`: From counts to measures: always the majority has TP 0 and FP 0, recall 0 and accuracy 98.0%; the SVM mean of 20 runs has TP 5.85 and FP 2, recall 5.9%, precision 74.5% and accuracy 98.1%, with the substituted formulas.
+![How the experiment is done: the scatter plot of one training set.](../../assets/figures/lec05-kp26-setup.png)
 
-![From counts to measures](../../assets/figures/lec05-kp26-metrics.png)
+**Experiment details** (reproducible):
 
-### 3. The simplicity preference
+- Implementation: Python scikit-learn (SVC, DecisionTreeClassifier, AdaBoostClassifier, version 1.9.1 defaults except as listed below).
+- Test sets: sections 2, 3, 5, 6, 7 and the extension use the fixed 5000+100 set (seed 998), with training sets from seeds 0 to 19; the over- and undersampling draws reuse the training seed. The test set of section 4 is a fixed 2000+2000 (seed 997), with training sets again from seeds 0 to 19 (20 runs), and the two class centres differ only along the $x_1$ axis, by 4 (easy) or 1.5 (hard).
+- Decision tree: CART (Gini impurity, random seed 0). AdaBoost: depth-1 stumps as weak classifiers, 100 rounds, learning rate 1.
+- The SVM class weights are $n/(2n_c)$: rare class $1020/(2\times20)=25.5$, majority class $1020/(2\times1000)=0.51$, a ratio of 50.
+- The average counts are means of 20 integer counts, so they have decimals (for example 5.85 = 117/20).
 
-**Plain explanation**: The SVM catches only 5.85 rare points on average and treats the other 94 as majority. Why does a classifier ignore the rare class?
+### 2. From counts to metrics
 
-**Reasoning** (source): for generalization we ask for simple classifiers (regularization, pruning); a simple hypothesis ignores rare cases, and ignoring 20 points barely changes the total cost.
+The previous section buries 20 rare points among 1000 majority points; among the 5100 test points the rare ones are only 2%. How do we judge a classifier?
 
-**SVM**: $C$ penalizes a misclassified point (KP15). $C=0.01$, $0.1$: TP 0, FP 0; $C=1$: TP 5.85; $C=100$: TP 16.85, FP 10.9. Recall $=\text{TP}/100$; accuracy about 98%.
+**Formulas of the metrics** (100 rare test points, 5000 majority test points):
 
-**Tree** (CART, at least $k$ points per leaf): $k=1$: TP 23.25, FP 73.1; $k=5$: 21, 29.85; $k=20$: 9.45, 12.55; $k=50$: 0, 0.
+- recall $=\text{TP}/100$.
+- precision $=\text{TP}/(\text{TP}+\text{FP})$.
+- accuracy $=(\text{TP}+\text{TN})/5100$ with $\text{TN}=5000-\text{FP}$.
 
-Figure `lec05-kp26-simple`: SVM TP is 0, 0, 5.85, 13.45 and 16.85 for C of 0.01, 0.1, 1, 10 and 100; tree TP is 23.25, 21, 9.45 and 0 for minimum leaf sizes 1, 5, 20 and 50; the table also lists FP, recall and accuracy.
+**Example 1: always say majority**. TP 0, FP 0, so recall $0/100=0$ and accuracy $5000/5100=98.0\%$.
 
-![The simplicity preference](../../assets/figures/lec05-kp26-simple.png)
+**Example 2: the SVM (average counts over 20 runs)**. TP 5.85, FP 2:
 
-### 4. Difficulty and data size
+1. Recall $5.85/100=5.9\%$.
+2. Precision $5.85/(5.85+2)=74.5\%$.
+3. Accuracy $(5.85+4998)/5100=98.1\%$ ($\text{TN}=5000-2=4998$).
 
-**Plain explanation**: The simpler the classifier, the less it cares about 20 points. Is it always bad whenever the classes are imbalanced?
+Precision is always computed by dividing the average counts.
 
-**Source** (Japkowicz): a large imbalance need not hurt; read it with task difficulty and training size. An easy task or much data may be fine; a hard task or too few points makes even a small imbalance fatal.
+Accuracy hardly moves from 98.0% to 98.1% while recall goes from 0 to 5.9%: accuracy cannot see the rare class.
 
-**How** (designed here): RBF SVM ($C=1$, $\gamma=0.5$); training majority:rare $=100{:}100$, $1000{:}100$, $1000{:}10$, $10000{:}100$, $10000{:}10$; fixed test 2000 + 2000, recall $=\text{TP}/2000$; centres 4 (easy) or 1.5 (hard) apart.
+### 3. The preference for simplicity
 
-**Results**: easy-task recall 97.5, 91.6, 66.8, 78.1, 43.2%; hard task 78.6, 14.9, 0, 0, 0%. With 10 rare points even the easy task does poorly.
+The SVM catches only 5.85 rare points on average; the other 94 are taken for majority. Why does a classifier ignore the rare class?
 
-Figure `lec05-kp26-grid`: Rare-class recall (TP over 2000): easy task 97.5% at 100:100 and 66.8% at 1000:10; hard task 14.9% at 1000:100 and about 0% for the other imbalanced settings; each cell shows its TP.
+**Reasoning** (source): for generalization we demand a simple classifier all along (regularization, pruning); a simple hypothesis does not spend effort on rare cases, and ignoring 20 points barely changes the overall cost.
 
-![Difficulty and data size](../../assets/figures/lec05-kp26-grid.png)
+**SVM** (the larger $C$, the less regularized):
+
+| $C$ | 0.01 | 0.1 | 1 | 10 | 100 |
+|---|---:|---:|---:|---:|---:|
+| TP | 0 | 0 | 5.85 | 13.45 | 16.85 |
+| FP | 0 | 0 | 2 | 7.35 | 10.9 |
+| recall | 0% | 0% | 5.9% | 13.5% | 16.9% |
+| accuracy | 98.0% | 98.0% | 98.1% | 98.2% | 98.2% |
+
+**Decision tree** (CART, at least $k$ points per leaf; the larger $k$, the simpler):
+
+| $k$ | 1 | 5 | 20 | 50 |
+|---|---:|---:|---:|---:|
+| TP | 23.25 | 21 | 9.45 | 0 |
+| FP | 73.1 | 29.85 | 12.55 | 0 |
+| recall | 23.3% | 21.0% | 9.5% | 0% |
+| accuracy | 97.1% | 97.9% | 98.0% | 98.0% |
+
+The simpler it is (small $C$, large $k$), the fewer the TP, down to always saying majority; and the accuracy stays at about 98% throughout.
+
+### 4. Difficulty and amount of data
+
+The simpler the classifier the less it cares about 20 points. Is class imbalance always bad?
+
+**Source** (Japkowicz): a large imbalance is not necessarily harmful; it must be seen together with task difficulty and the number of training points. For an easy task or a lot of data it may be fine; for a hard task (overlapping classes) or too few points even a small imbalance can be fatal.
+
+**Experiment setting** (designed for this lecture):
+
+- The same RBF SVM ($C=1$, $\gamma=0.5$); the training set is changed to majority:rare $=100{:}100$, $1000{:}100$, $1000{:}10$, $10000{:}100$, $10000{:}10$.
+- The test set is fixed at 2000+2000, and recall $=\text{TP}/2000$.
+- In the easy task the two centres differ by 4, in the hard task by 1.5.
+
+**Result**: recall of the rare class (the mean TP is in brackets, out of 2000 rare test points):
+
+| majority:rare | easy task | hard task |
+|---|---:|---:|
+| 100:100 | 97.5% (1950.9) | 78.6% (1571.65) |
+| 1000:100 | 91.6% (1831.8) | 14.9% (298) |
+| 1000:10 | 66.8% (1335.1) | 0.0% (0.35) |
+| 10000:100 | 78.1% (1561.1) | 0.0% (0.65) |
+| 10000:10 | 43.2% (863.8) | 0.0% (0) |
+
+With only 10 rare points even the easy task does badly. In the hard task 1000 against 100 already presses recall to 14.9%.
 
 ### 5. Changing the data
 
-**Plain explanation**: Imbalance is not always bad, but on a hard task 1000 to 100 presses the recall to 14.9%. The first cure changes the data: copy the rare class or drop majority points, with what result?
+Imbalance is not always bad, but in the hard task 1000 against 100 presses recall to 14.9%. The first remedy is to change the data: copy the rare class or throw away majority points; what happens?
 
-**Method**: oversampling draws 980 more from the 20 rare points with replacement, so training becomes 1000 + 1000; undersampling keeps 20 of the 1000 majority points at random without replacement, so training becomes 20 + 20. The same SVM ($C=1$).
+**What is done**:
 
-**Results** (TP / FP): plain 5.85 / 2; oversampling 68.15 / 605.55; undersampling 77.05 / 756.7. Example: oversampling recall $68.15/100=68.2\%$, precision $68.15/(68.15+605.55)=10.1\%$.
+- **Oversampling**: draw 980 more from the 20 rare points with replacement, so the training set becomes 1000+1000.
+- **Undersampling**: keep only 20 of the 1000 majority points, drawn at random without replacement, so the training set becomes 20+20.
+- The same SVM ($C=1$), the data and test set of section 1.
 
-**Price**: the rare class is found, but precision drops to about 10% and accuracy to 85% to 88%.
+**Result** (mean of 20 runs):
 
-Figure `lec05-kp26-data`: Data-level cures: plain SVM TP 5.85, FP 2; oversampling 68.15, 605.55; undersampling 77.05, 756.7; the table also lists training size, recall, precision and accuracy.
+| Treatment | training set | TP | FP | recall | precision | accuracy |
+|---|---|---:|---:|---:|---:|---:|
+| plain | 1000+20 | 5.85 | 2 | 5.9% | 74.5% | 98.1% |
+| oversampling | 1000+1000 | 68.15 | 605.55 | 68.2% | 10.1% | 87.5% |
+| undersampling | 20+20 | 77.05 | 756.7 | 77.1% | 9.2% | 84.7% |
 
-![Changing the data](../../assets/figures/lec05-kp26-data.png)
+Example: oversampling recall $68.15/100=68.2\%$, precision $68.15/(68.15+605.55)=10.1\%$.
+
+**The price**: the rare class is found, but precision falls to about 10% and accuracy to 85% to 88%.
 
 ### 6. Focused resampling
 
-**Plain explanation**: Oversampling and undersampling were random, with many false alarms. Would it be better to drop only the majority points far from the boundary, which carry no information?
+Over- and undersampling are random and give many false alarms. Would it be better to throw away only the majority points far from the boundary, which carry no information anyway?
 
-**Method**: delete points far from the boundary (source). Steps: a first SVM ($C=1$) scores the 1000 majority points; keep the $m$ with the largest scores (most like the rare class), retrain on 20 rare + $m$; $m=20,60,100,200$.
+**What is done** (focused undersampling, source). The concrete steps in this lecture:
 
-**Results** (TP / FP / accuracy): 20 kept: 82.7 / 2126.05 / 58.0%; 60: 11.45 / 55.5 / 97.2%; 100: 8.3 / 32.55 / 97.6%; 200: 5.95 / 2 / 98.1%; all 1000 = plain SVM.
+1. First train an SVM ($C=1$) on the 20+1000 points.
+2. Compute the decision values of the 1000 majority points and keep the $m$ with the largest values (the most rare-like).
+3. Retrain with the 20 rare points plus these $m$; $m=20,60,100,200$.
 
-**Meaning**: the right target distribution is open (source): 20 vs 60 kept differ hugely; 2126 false alarms at 20 kept, 757 for random undersampling.
+**Result**:
 
-Figure `lec05-kp26-focus`: Focused undersampling keeping 20, 60, 100 and 200 majority points: TP 82.7, 11.45, 8.3 and 5.95, FP 2126.05, 55.5, 32.55 and 2, with recall and accuracy; the last row is the plain SVM keeping all.
+| majority points kept $m$ | 20 | 60 | 100 | 200 | 1000 (plain SVM) |
+|---|---:|---:|---:|---:|---:|
+| TP | 82.7 | 11.45 | 8.3 | 5.95 | 5.85 |
+| FP | 2126.05 | 55.5 | 32.55 | 2 | 2 |
+| recall | 82.7% | 11.5% | 8.3% | 6.0% | 5.9% |
+| accuracy | 58.0% | 97.2% | 97.6% | 98.1% | 98.1% |
 
-![Focused resampling](../../assets/figures/lec05-kp26-focus.png)
+**Meaning**: how far to move the target distribution is an open question (source). Keeping 20 and keeping 60 differ a lot; with 20 kept there are 2126 false alarms, more than the 757 of random undersampling.
 
 ### 7. Changing the cost
 
-**Plain explanation**: Focused undersampling: how many to keep is hard, and 20 kept gave 2126 false alarms. What does the cost-sensitive cure, changing the classifier and not the data, achieve?
+How many to keep in focused undersampling is hard to fix. What does a cost-sensitive remedy, which leaves the data alone and changes the classifier, give?
 
-**Method** (source): weight the rare class more. SVM: rare-class $C$ 50 times larger (weights 25.5 vs 0.51); AdaBoost: 100 stumps, rare initial weight $\times w$, $w=1,10,50$, then normalized.
+**What is done** (source):
 
-**SVM**: TP 70.2, FP 619.3; recall 70.2%, precision $70.2/(70.2+619.3)=10.2\%$.
+- SVM: the $C$ of the minority class is set to 50 times that of the majority class (weights 25.5 against 0.51).
+- AdaBoost: 100 stumps, the initial weight of the minority class multiplied by $w=1,10,50$ and then normalized (the weights of KP25 were designed for hard samples anyway).
 
-**AdaBoost** (TP / FP): $w=1$: 20.1 / 16.65; $w=10$: 48.3 / 160.65; $w=50$: 61.9 / 373.75. Recall 20.1%, 48.3%, 61.9%; precision 54.7%, 23.1%, 14.2%.
+**Result** (mean of 20 runs):
 
-Figure `lec05-kp26-cost`: Cost-sensitive: the SVM with a 50 times rare-class C has TP 70.2 and FP 619.3; AdaBoost with w of 1, 10 and 50 has TP 20.1, 48.3 and 61.9 and FP 16.65, 160.65 and 373.75.
+| Classifier and setting | TP | FP | recall | precision |
+|---|---:|---:|---:|---:|
+| SVM, plain | 5.85 | 2 | 5.9% | 74.5% |
+| SVM, minority $C$ 50 times | 70.2 | 619.3 | 70.2% | 10.2% |
+| AdaBoost, $w=1$ | 20.1 | 16.65 | 20.1% | 54.7% |
+| AdaBoost, $w=10$ | 48.3 | 160.65 | 48.3% | 23.1% |
+| AdaBoost, $w=50$ | 61.9 | 373.75 | 61.9% | 14.2% |
 
-![Changing the cost](../../assets/figures/lec05-kp26-cost.png)
+Example: SVM precision $70.2/(70.2+619.3)=10.2\%$.
 
-### 8. To remember
+**Summary**: changing the cost, like changing the data, raises TP and FP together and lowers precision.
 
-**Plain explanation**: Changing the cost, like changing the data, raised TP and FP together and cut precision. What should be remembered, and how should one evaluate?
+### 8. How to remember
 
-**To remember** (source): the harm does not come from the numbers being different but from the interaction of the simplicity preference with the rare class. Two cures: change the data (resampling) or change the cost (weighting).
+**How to remember** (source): the harm of imbalance does not come from "the numbers are different" but from the interaction of "preference for simplicity × a rare class". There are two remedies: change the data (resampling) or change the cost (weighting).
 
-**Common misconception**: a high accuracy is enough. Evaluate by looking at recall and precision, not only accuracy; always saying the majority also scores 98.0%.
+**Common misconception**: thinking high accuracy is enough. Evaluate by how many were caught and how many false alarms (recall and precision), not accuracy alone; always saying majority also gets 98.0%.
 
-**Reminder** (source): class imbalance matters a great deal in practice; a designer must be aware of it and alert to the cures.
+**Reminder** (source): class imbalance is very important in practice; a designer must be aware of it and alert to the various remedies.
 
-Figure `lec05-kp26-recap`: The key points of class imbalance: the harm comes from the simplicity preference times the rare class; the two cures are changing the data or the cost; look at recall and precision.
+### Extension: comparing remedies, balanced accuracy and exercises
 
-![To remember](../../assets/figures/lec05-kp26-recap.png)
+What to remember is the trade-off. Put the four treatments in one table, with a metric that can see the rare class; does one clearly win?
 
-### Extension: comparing the cures, balanced accuracy and practice
+- **Balanced accuracy** $=(\text{recall}+\text{specificity})/2$, with specificity $=\text{TN}/5000$ (the fraction of majority points judged right). Always saying majority gives $(0+1)/2=0.50$.
+- Example: the plain SVM $(0.0585+4998/5000)/2=0.53$.
 
-**comparing the cures and balanced accuracy**
+**SVM** (TP / FP / recall / precision / accuracy / balanced accuracy):
 
-**Plain explanation**: What to remember is the trade-off. With the four treatments in one table and a measure that sees the rare class, does any clearly win?
+| Treatment | TP | FP | recall | precision | accuracy | balanced accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| plain | 5.85 | 2 | 6% | 75% | 98% | 0.53 |
+| oversampling | 68.15 | 605.55 | 68% | 10% | 88% | 0.78 |
+| undersampling | 77.05 | 756.7 | 77% | 9% | 85% | 0.81 |
+| cost-sensitive | 70.2 | 619.3 | 70% | 10% | 87% | 0.79 |
 
-**Formal definition**: balanced accuracy $=(\text{recall}+\text{specificity})/2$, specificity $=\text{TN}/5000$; always the majority $(0+1)/2=0.50$. Example: plain SVM $(0.0585+4998/5000)/2=0.53$.
+**Decision tree** (at least 5 points per leaf):
 
-**SVM** (TP / FP / balanced accuracy): plain 5.85 / 2 / 0.53; oversampling 68.15 / 605.55 / 0.78; undersampling 77.05 / 756.7 / 0.81; cost-sensitive 70.2 / 619.3 / 0.79.
+| Treatment | TP | FP | recall | precision | accuracy | balanced accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| plain | 21 | 29.85 | 21% | 41% | 98% | 0.60 |
+| oversampling | 33.75 | 101.45 | 34% | 25% | 97% | 0.66 |
+| undersampling | 77.85 | 912.6 | 78% | 8% | 82% | 0.80 |
+| cost-sensitive | 43.15 | 227.7 | 43% | 16% | 94% | 0.69 |
 
-**Tree** (min leaf 5): plain 21 / 29.85 / 0.60; oversampling 33.75 / 101.45 / 0.66; undersampling 77.85 / 912.6 / 0.80; cost-sensitive 43.15 / 227.7 / 0.69. None clearly wins.
+Nobody clearly wins; the difference is a trade-off.
 
-Figure `lec05-kp26-table`: Table of TP, FP, recall, precision, accuracy and balanced accuracy for four treatments of an SVM and a decision tree: SVM balanced accuracy 0.53, 0.78, 0.81 and 0.79.
+**Small exercises**: 1000 negative examples and 10 positive examples (the rare class). A: always say negative; B: catches 6 of the 10 positives and falsely alarms on 40 negatives.
 
-![Extension: comparing the cures and balanced accuracy](../../assets/figures/lec05-kp26-table.png)
+1. What are the accuracy and recall of A and B?
+2. What are the balanced accuracies of A and B?
 
-**practice**
+**Exercise 1, worked solution**:
 
-**Plain explanation**: Balanced accuracy leaves always saying the majority at 0.50. Back to the definitions: compute by hand the measures of A, which says majority for everyone, and of B, which catches 6: what are they?
+- A: TP 0, FN 10, FP 0, TN 1000; accuracy $1000/1010=0.990$, recall 0.
+- B: TP 6, FN 4, FP 40, TN 960; accuracy $966/1010=0.956$, recall $6/10=0.6$.
 
-**Practice** (setup): 1000 negatives and 10 positives (the rare class). A says negative for everyone; B catches 6 of the 10 positives and raises 40 false alarms.
+**Exercise 2, worked solution**:
 
-**Question 1**: what are the accuracy and recall of A and B?
+- A: $(0+1)/2=0.5$.
+- B: specificity $960/1000=0.96$, $(0.6+0.96)/2=0.78$.
 
-**Question 2**: what are the balanced accuracies of A and B?
-
-Figure `lec05-kp26-practice`: Practice figure: 1000 negatives and 10 positives; A says negative for everyone and B catches 6 with 40 false alarms.
-
-![Extension: practice](../../assets/figures/lec05-kp26-practice.png)
-
-**solution**
-
-**Plain explanation**: The practice asked for the accuracy, recall and balanced accuracy of A and B. Worked out in full, what are the answers?
-
-**Question 1**: A: TP 0, FN 10, FP 0, TN 1000; accuracy $1000/1010=0.990$, recall 0. B: TP 6, FN 4, FP 40, TN 960; accuracy $966/1010=0.956$, recall 0.6.
-
-**Question 2**: A: $(0+1)/2=0.5$. B: specificity $960/1000=0.96$, $(0.6+0.96)/2=0.78$.
-
-**Check**: A has the higher accuracy yet catches no rare point; B has a precision of only $6/46=0.13$, which is the trade-off.
-
-Figure `lec05-kp26-practice-sol`: A: accuracy 0.990, recall 0 and balanced accuracy 0.5; B: accuracy 0.956, recall 0.6 and balanced accuracy 0.78.
-
-![Extension: solution](../../assets/figures/lec05-kp26-practice-sol.png)
+**Check**: A's accuracy is higher than B's, yet it caught not one rare point; B's precision is only $6/46=0.13$, which is the trade-off.
 
 ## Terms and source
 
@@ -180,5 +264,11 @@ Figure `lec05-kp26-practice-sol`: A: accuracy 0.990, recall 0 and balanced accur
 |---|---|
 | 類別不平衡 | Class imbalance |
 | 召回率 | Recall |
+| 精確率 | Precision |
+| 特異度 | Specificity |
+| 平衡準確率 | Balanced accuracy |
+| 過採樣 | Oversampling |
+| 欠採樣 | Undersampling |
+| 代價敏感 | Cost-sensitive |
 
-Source: Chapter 4, KP26, §4.23 (read 2026-10-25). That class imbalance harms classifiers, that the harm comes from the interaction of the simplicity preference with the rare class, that it must be read with task difficulty and data size, the data-level and cost-sensitive cures, focused resampling, the open problem of the target distribution and the 'to remember' line follow the source; the experiment setup, the count formulas of the measures, the sweeps of $C$ and leaf size, the difficulty and data-size table, the comparison of the cures, balanced accuracy and the practice were designed and recomputed for this lecture ([added], (program-computed)); the data generator, parameters, seeds and repeats are on page 1 and the count formulas on page 2.
+Source: Chapter 4 KP26, §4.23 (read 2026-10-25). Class imbalance harming a classifier, the harm coming from the interaction of the preference for simplicity and the rare class, the need to read it together with task difficulty and data size, the two families of data-level and cost-sensitive remedies, focused resampling, the target distribution being an open problem, and "how to remember" follow the source; the experiment setting, the count formulas of the metrics, the sweeps of $C$ and leaf size, the difficulty-and-data-size table, the comparison of the remedies, balanced accuracy and the exercises were designed for this lecture and recomputed by a program ([Supplement], computed by a program); the data generator, parameters, seeds and repetitions are in section 1 and the count formulas in section 2.
