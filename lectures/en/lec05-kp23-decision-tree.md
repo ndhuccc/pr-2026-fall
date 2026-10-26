@@ -106,6 +106,10 @@ Figure `lec05-kp23-entropy`: look at the entropy curve for two classes, highest 
 
 ![Impurity](../../assets/figures/lec05-kp23-entropy.png)
 
+Figure `lec05-kp23-impbars`: [added] first the bars: one bar is one node, each segment one class, its width and the number inside being that class's points; then the $I$ at the right. From top to bottom the nodes get purer: (4,4,2) gives 1.522, (1,1,1) gives 1.585 (the maximum for three classes), (5,0,0) gives 0. [Function: 1, 2]
+
+![One bar per node, segment width = points of a class; I is 1.522, 1.585 and 0.](../../assets/figures/lec05-kp23-impbars.png)
+
 The next question: with impurity defined, how do we tell which of two questions cuts better?
 
 ### 4. The impurity decrease
@@ -127,6 +131,10 @@ Choose the question with the largest $\Delta I$.
 - $\Delta I=1.522-0.4\times0.811-0.6\times1.459=0.322$.
 
 **Where it differs from the textbook**: the textbook writes $I(t_Y)=0.815$, $I(t_N)=1.472$ and $\Delta I=0.315$, which does not match its own counts (even with its printed numbers the result is only 0.312); this lecture recomputed this one split only.
+
+Figure `lec05-kp23-dI`: [added] first the top two rows: the 10 points of the parent are split by the question into 4 and 6 points, box width proportional to the points; then the bar below: the grey bar is $I(t)=1.522$, the two coloured pieces are what is left after the split ($0.4\times0.811=0.325$, $0.6\times1.459=0.875$), and the grey gap is $\Delta I=0.322$. The textbook prints 0.315. [Function: 1, 3]
+
+![Parent (4,4,2) split into (3,1,0) and (1,3,2); the grey bar 1.522 minus 0.325 and 0.875 leaves the gap ΔI=0.322.](../../assets/figures/lec05-kp23-dI.png)
 
 The next question: why must the children in $\Delta I$ be multiplied by their size proportions and not simply averaged?
 
