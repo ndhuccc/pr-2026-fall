@@ -145,9 +145,9 @@ The next question: why must the children in $\Delta I$ be multiplied by their si
 - Split A: Yes $(1,0)$, No $(4,5)$.
 - Split B: Yes $(4,1)$, No $(1,4)$.
 
-Figure `lec05-kp23-split`: [Supplement] First look at the parent node at the top, 10 points (5 blue circles, 5 orange squares) in a row; then at split A: the width of each dashed box is proportional to the number of points, the leftmost holds one point which is pure, and the 9 points on the right (4 blue, 5 orange) are still mixed; finally split B: two groups of 5 with impurity 0.722 each. [Function: 1, 2]
+Figure `lec05-kp23-wfull`: [added] first the parent at the top (10 points, I=1); then which two piles split A and split B make and the I of each; then compare the two rows below: weighted, A gets 0.108 and B 0.278, so B is picked; plain average, A gets 0.504 and B still 0.278, so A is wrongly picked. [Function: 1, 3]
 
-![A parent of 10 points split by A into 1 pure point and 9 mixed points, and by B into two groups of 5; box width is proportional to the number of points.](../../assets/figures/lec05-kp23-split.png)
+![Why weight by points: split A isolates 1 pure point and 9 points, split B makes two piles of 5; weighted, ΔI is 0.108 for A and 0.278 for B, pick B; plain average gives A 0.504, wrongly picked.](../../assets/figures/lec05-kp23-wfull-en.png)
 
 **Weighted** (the right way):
 
@@ -182,6 +182,10 @@ The next question: if we keep splitting, how large should the tree grow?
 | 12 (no limit) | 24 | 200 | 1702 | 85.1% |
 
 **How to read it**: with more leaves the training correct count rises all the way to 200/200 (100%), while new points stay at about 85%. A tree that is too big is learning the details of the training set.
+
+Figure `lec05-kp23-dfull`: [added] first the two trees: a shallow tree (depth 1, 2 leaves) and a deep tree (depth 12, 24 leaves, tree shape is a sketch); then the training and new-data accuracy and the gap of each: shallow 76.5% and 73.3% (gap 3.2 points), deep 100% and 85.1% (gap 14.9). [Function: 1, 3]
+
+![Training and new-data accuracy of a shallow and a deep tree: shallow 153/200 and 1466/2000, deep 200/200 and 1702/2000; gaps 3.2 and 14.9 points.](../../assets/figures/lec05-kp23-dfull-en.png)
 
 Figure `lec05-kp23-depth`: look at the training accuracy rising to 100% with depth, then at the new-point accuracy, which stalls around depth 8. [Function: 1, 2]
 
