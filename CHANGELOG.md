@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-26 — [更新] 發佈 KP12(權重共享與轉換不變性)新版簡報(中英文):用 view-from-text-v2 規劃頁面後製作,17 頁降為 8 頁(主線 5、延伸 3),每頁以一張原生資訊圖為主(格子運算圖、參數計數、三條路線、平移與旋轉的幾何、解題步驟);講義同步換圖(中英各一份,同一份規格輸出)。技能 view-from-text-v2 版型庫擴充為 12 組(新增 grid_flow、columns_text、bars_compare、tree_diagram、network_layers、quadrant_2x2、concept_card、equation_parts),附 `layout_gallery.py` 範例與 `kp12_specs.py`、`kp12_plan.json` 驗收樣本;同步 course-template 與 idl-2026-fall。
+
 - 2026-10-26 — [更新] 新增技能 `view-from-text-v2`(一頁一圖版):講義轉簡報時先規劃頁面(`plan_pages.py` 檢查每個講義小節都被涵蓋、哪些圖可涵蓋多個小節)、可擴充的版型庫(`columns_compare`、`two_options`、`before_after`、`steps_flow`、`freeform`,加零件庫與擴充說明 `LAYOUTS.md`)、同一份 spec 輸出簡報原生節點與講義 PNG。KP23 作為驗收樣本:三張資訊圖改由版型函式產生;合併重複頁(剩餘不純度橫條、加權算式表、樹要多大的數字表併入前一張圖),簡報由 19 頁降到 16 頁,講義同步換圖(加權、樹要多大各一張,中英文各一份)。
 
 - 2026-10-26 — [更新] KP23「不純度算例」改為一頁一圖的原生資訊圖(教授指定為 view-from-text 的目標輸出):三欄彩色面板(圖示、KaTeX 代入式、大字結果、一句評語)、公式列(定義 I(t)、pᵢ、t)與一句結論,取代三張文字卡;講義同步換圖(中英各一張)。技能新增「一頁一圖」版型規則(CLARITY C23)與參考範例 `tools/deckkit/example_infographic.py`;nativefig 新增圓角、矩形內文字、KaTeX 文字節點。
