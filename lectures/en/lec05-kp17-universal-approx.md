@@ -56,6 +56,10 @@ It holds for polynomials (the Weierstrass theorem), one-layer sigmoid networks a
 
 Universal approximation is the ticket to enter, not an advantage; the difference is the speed.
 
+Figure `lec05-kp17-entry`: First see the three cards: polynomial, one-layer sigmoid network and RBF network, each stating what it can approximate and how fast the error falls; then read the definitions below: the universal approximation theorem and the compact set. All three hold, so universal approximation is the entry ticket, not an edge. [Function: 2]
+
+![The entry ticket for three approximators: polynomial error about r to the power -2/l, one-layer sigmoid network about 1/k, RBF network also a universal approximator.](../../assets/figures/lec05-kp17-entry-en.png)
+
 ### 2. The guarantee for polynomials
 
 **Weierstrass theorem**: for a continuous function $g$ on a compact set $S$ and any $\epsilon>0$, there is a polynomial $\phi$ of order $r$ with
@@ -71,11 +75,11 @@ $$
 | largest error | 0.998 | 0.198 | 0.0152 | 0.000607 | 0.000015 | $2.5\times10^{-7}$ |
 
 - The largest error is the worst point of the whole interval, not the mean.
-- Orders $2m-1$ and $2m$ have the same error: with $t=2x-1$, the even part of the target is only $t^2$ plus a constant, which $r=2$ already fits, and after that everything depends on the odd orders.
+- From $r=3$ on, orders $2m-1$ and $2m$ ($m\ge2$) have the same error ($r=1$ gives 0.998 and $r=2$ gives 0.948): with $t=2x-1$, the even part of the target is only $t^2$ plus a constant, which $r=2$ already fits, and after that everything depends on the odd orders.
 
-Figure `lec05-kp17-polyerr`: First see that the horizontal axis is the order and the vertical axis the largest error (log scale); then that the curve falls all the way, each odd order and the next even order joined into one step, each step dropping about one to two orders of magnitude. [Function: 3]
+Figure `lec05-kp17-polyerr`: First see that the horizontal axis is the degree and the vertical axis is the max error (log scale); then see the curve fall steadily, with degrees 3 and 4, 5 and 6, ... forming one step each, about one to two orders of magnitude per step; on the right are the Weierstrass theorem and the definition of the max error. [Function: 3]
 
-![Largest error of the polynomial against the order.](../../assets/figures/lec05-kp17-polyerr.png)
+![Polynomial max error against degree: 0.998 at r = 1 and 2.5×10⁻⁷ at r = 11.](../../assets/figures/lec05-kp17-polyerr-en.png)
 
 ### 3. The Runge phenomenon
 
@@ -92,9 +96,9 @@ Figure `lec05-kp17-polyerr`: First see that the horizontal axis is the order and
 
 Interpolation gets worse with the order; least squares falls slowly but steadily. The source also notes that high-order polynomials suffer from rounding errors in the repeated products and from too many free parameters; the compromise is piecewise approximation.
 
-Figure `lec05-kp17-runge`: First look at the Runge function and the two order-12 polynomials; then see that the one through the equally spaced points swings wildly at both ends, while the least-squares one hugs the target. [Function: 2]
+Figure `lec05-kp17-runge`: First look at the Runge function (dashed) and the two degree-12 polynomials; then see the red curve through equally spaced points swing wildly at both ends while the blue least-squares curve hugs the target; the table on the right lists the max error for degrees 4 to 20. [Function: 2]
 
-![The Runge function and two order-12 polynomials.](../../assets/figures/lec05-kp17-runge.png)
+![The Runge function and two degree-12 polynomials; interpolation at r = 20 has max error 59.8, least squares 0.0139.](../../assets/figures/lec05-kp17-runge-en.png)
 
 ### 4. Sigmoid networks
 
@@ -114,9 +118,9 @@ can approximate a continuous function on a compact set to any error.
 |---|---:|---:|---:|---:|---:|---:|
 | largest error (best start) | 0.819 | 0.0142 | 0.0056 | 0.0058 | 0.0045 | 0.0011 |
 
-Figure `lec05-kp17-mlpfit`: First look at the target wave (one full sine plus a slow rise); then at the three fits $k=1,2,4$: $k=1$ is crude, $k=2$ is already close, $k=4$ almost coincides. [Function: 2]
+Figure `lec05-kp17-mlpfit`: First look at the target wave (dashed); then the three fits k = 1, 2, 4: k = 1 is rough, k = 2 is already close and k = 4 almost coincides; on the right are the formula, the definition of the squashing function and the max error for k = 1 to 8. [Function: 2]
 
-![The target wave and the fits for k = 1, 2, 4.](../../assets/figures/lec05-kp17-mlpfit.png)
+![The target wave and the fits for k = 1, 2, 4; max errors 0.819, 0.0142, 0.0058.](../../assets/figures/lec05-kp17-mlpfit-en.png)
 
 ### 5. A fair comparison in one dimension
 
@@ -130,9 +134,9 @@ Compare "the same number of parameters": an order-$r$ polynomial has $r+1$ param
 
 With 7 parameters they are about equal; with more parameters the polynomial is much smaller. The network's advantage is not on a smooth one-dimensional target; the rate difference of the theorem only shows in high dimensions.
 
-Figure `lec05-kp17-equal`: First look at the three groups (7, 13, 19 parameters), each with two bars: polynomial and network; then compare the last two groups: the polynomial's bar is much lower (the vertical axis is log scale). [Function: 2]
+Figure `lec05-kp17-equal`: First see the left chart: one dimension with the same number of parameters (7, 13, 19), two bars per group, polynomial and network, on a log scale; then the right chart: new-point error on a 5-D ridge function, where the four blue bars (polynomial) are all above 0.2 and the three network bars fall below 0.0001. Raise the dimension and the winner flips. [Function: 3]
 
-![Largest error for the same number of parameters.](../../assets/figures/lec05-kp17-equal.png)
+![Left: max error with the same number of parameters in one dimension; right: new-point error on a 5-D ridge function.](../../assets/figures/lec05-kp17-equal-en.png)
 
 The next question: how does this comparison change as the dimension rises?
 
@@ -156,10 +160,6 @@ The next question: how does this comparison change as the dimension rises?
 
 **Note**: this target has exactly the shape of the network, a design that favours the network, and normal inputs are not a compact set; the example only shows how unfriendly a "ridge function" is to polynomials in high dimensions.
 
-Figure `lec05-kp17-ridge`: First see that the horizontal axis is the seven models (polynomial $r=1,2,3,5$ and network $k=1,2,4$; the second line of each label is the parameter count) and the vertical axis the new-point error (log scale); then compare the four blue bars (polynomials), all above 0.2, with the three red bars (networks), all pressed below 0.0001. [Function: 3]
-
-![New-point error of polynomials and networks on a 5-dimensional ridge function.](../../assets/figures/lec05-kp17-ridge.png)
-
 ### 7. Rates
 
 **Rates** (Barron 93, source):
@@ -175,9 +175,9 @@ Figure `lec05-kp17-ridge`: First see that the horizontal axis is the seven model
 
 This is a worst-case asymptotic rate, not a measurement; smooth targets (such as section 2) can be much faster, and $r$ and $k$ are not a parameter-by-parameter comparison.
 
-Figure `lec05-kp17-halving`: First see that the horizontal axis is the dimension $l$ and the vertical axis "growth needed to halve the error" (log scale); then that the blue bars (polynomial) shoot up to 1024 as the dimension grows, while the red bars (network) are always 2. [Function: 2]
+Figure `lec05-kp17-halving`: First read the two rate formulas on the left: polynomial O(r^(-2/l)) and network O(1/k); then in the right chart the horizontal axis is the dimension l and the vertical axis is the growth needed to halve the error (log scale): the blue bars (polynomial) climb to 1024 while the red bars (network) stay at 2. [Function: 2]
 
-![Growth needed to halve the error.](../../assets/figures/lec05-kp17-halving.png)
+![Growth needed to halve the error: polynomial 2^(l/2) is 2, 5.7, 32, 1024; the network always 2.](../../assets/figures/lec05-kp17-halving-en.png)
 
 ### 8. Why, and at what cost
 
@@ -186,11 +186,15 @@ Figure `lec05-kp17-halving`: First see that the horizontal axis is the dimension
 
 The source says every expansion on a fixed basis is doomed to an error that falls more slowly as the dimension grows.
 
+Figure `lec05-kp17-basis`: First see the left card: a fixed basis, six monomials that never change with the data; then the right card: a data-adaptive basis, three hidden nodes whose weights w are learned from the data. [Function: 2]
+
+![A fixed basis versus a data-adaptive basis.](../../assets/figures/lec05-kp17-basis-en.png)
+
 **The cost**: the optimization turns from linear to nonlinear. On the same data, with $k=2$ and 8 random starts (seeds 0 to 7): 5 have a largest error below 0.1 and 3 get stuck near 0.82 (computed by a program).
 
-Figure `lec05-kp17-restarts`: First see that the horizontal axis is the eight random starts, each with two bars: $k=2$ (blue) and $k=3$ (purple); then count only the blue bars: five below the dashed line at 0.1, three stuck near 0.82. [Function: 3]
+Figure `lec05-kp17-restarts`: First see that the horizontal axis is the eight random starts, two bars per start: k = 2 (blue) and k = 3 (violet), with the k = 2 errors listed above the chart; then count the blue bars: five fall below the dashed line 0.1 and three get stuck near 0.82. [Function: 3]
 
-![Largest error of 8 random starts.](../../assets/figures/lec05-kp17-restarts.png)
+![Max error of eight random starts.](../../assets/figures/lec05-kp17-restarts-en.png)
 
 ### Extension: several layers are more efficient, exercises and worked solutions
 
@@ -206,9 +210,9 @@ Figure `lec05-kp17-restarts`: First see that the horizontal axis is the eight ra
 
 The source says that using more than one hidden layer may reach the same accuracy with fewer neurons.
 
-Figure `lec05-kp17-hat`: First look at the broken lines after stacking the hat function one, two and three times: each extra layer doubles the number of teeth; then at the node-count comparison below the plot. [Function: 2]
+Figure `lec05-kp17-hat`: First look at the broken lines after stacking the hat function once, twice and three times: each extra layer doubles the segments (2, 4, 8); then the table below: a deep network needs 2n nodes against 2ⁿ−1 for one hidden layer (20 against 1023 at n = 10). [Function: 2]
 
-![The hat function stacked in layers, and the node counts.](../../assets/figures/lec05-kp17-hat.png)
+![Stacked hat functions and node counts.](../../assets/figures/lec05-kp17-hat-en.png)
 
 **Small exercises**:
 
