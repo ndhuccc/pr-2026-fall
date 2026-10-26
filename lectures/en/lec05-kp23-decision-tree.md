@@ -137,6 +137,10 @@ The next question: why must the children in $\Delta I$ be multiplied by their si
 - Split A: Yes $(1,0)$, No $(4,5)$.
 - Split B: Yes $(4,1)$, No $(1,4)$.
 
+Figure `lec05-kp23-split`: [Supplement] First look at the parent node at the top, 10 points (5 blue circles, 5 orange squares) in a row; then at split A: the width of each dashed box is proportional to the number of points, the leftmost holds one point which is pure, and the 9 points on the right (4 blue, 5 orange) are still mixed; finally split B: two groups of 5 with impurity 0.722 each. [Function: 1, 2]
+
+![A parent of 10 points split by A into 1 pure point and 9 mixed points, and by B into two groups of 5; box width is proportional to the number of points.](../../assets/figures/lec05-kp23-split.png)
+
 **Weighted** (the right way):
 
 - A: $\Delta I=1-\tfrac1{10}\cdot0-\tfrac9{10}\cdot0.991=0.108$.
@@ -148,6 +152,10 @@ The next question: why must the children in $\Delta I$ be multiplied by their si
 - A: $1-(0+0.991)/2=0.504$.
 - B: $0.278$.
 - A would be chosen; one pure point is mistaken for a big improvement.
+
+Figure `lec05-kp23-wbars`: [Supplement] First the grey bar: length 1 is the parent's impurity; the colour is the impurity left after the split (each piece = share of points × the child's $I$, teal for the "yes" child, violet for the "no" child); the grey gap is $\Delta I$. Then compare the two groups: weighted, A's gap is only 0.108 and B's is 0.278; unweighted, A's gap becomes 0.504, fooled by one pure point. [Function: 2, 3]
+
+![Four horizontal bars: the grey bar is the parent impurity 1, the colour is what is left after the split and the gap is ΔI; weighted A 0.108 and B 0.278, unweighted A 0.504 and B 0.278.](../../assets/figures/lec05-kp23-wbars.png)
 
 **Common misconception**: a split is good as soon as a child becomes pure. Making only a very small subset pure has no real value.
 
