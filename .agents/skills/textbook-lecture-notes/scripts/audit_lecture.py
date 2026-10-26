@@ -26,7 +26,7 @@ Added 2026-10-26 (readability for weak-background readers, see CLARITY.md C19 an
   L20 skipped-step wording ("顯然", "易知", "不難看出", "obviously" ...)
   L21 teaching text too short (under 1200 zh characters / 700 en words, math and captions excluded)
   L22 a defined term is used before its definition (headings, objectives and the one-sentence summary are exempt)
-  L23 figure files that are text cards (almost no filled shapes; only text and thin lines); needs Pillow and numpy; FAIL when over 40% of the figures
+  L23 figure files that are text cards (almost no filled shapes and no long lines or shapes, only short text strokes); needs Pillow, numpy and scipy; FAIL when over 40% of the figures
 Usage:  py .agents/skills/textbook-lecture-notes/scripts/audit_lecture.py lectures/lecNN.md
 Exit code 1 when there is a FAIL.
 """
@@ -255,7 +255,12 @@ def main():
             m_ = np.abs(a_ - a_[0, 0]).sum(2) > 60
             if m_.sum() == 0: continue
             er = np.asarray(Image.fromarray((m_ * 255).astype("uint8")).filter(ImageFilter.MinFilter(7))).astype(bool)
-            if er.sum() / m_.sum() < 0.02: flagged.append(os.path.basename(pth))
+            if er.sum() / m_.sum() >= 0.02: continue
+            from scipy import ndimage as ndi
+            lab, n_ = ndi.label(ndi.binary_dilation(m_, iterations=2))
+            area = np.bincount(lab.ravel())[1:]
+            big = sum(ar for sl, ar in zip(ndi.find_objects(lab), area) if max(sl[0].stop - sl[0].start, sl[1].stop - sl[1].start) >= 120)
+            if big / max(1, area.sum()) < 0.30: flagged.append(os.path.basename(pth))
         if flagged:
             msg = f"{len(flagged)} of {len(paths)} figures look like text cards (almost no filled shapes, only text and thin lines): {flagged[:4]}; put the content in the text (table, numbered steps, formula) or draw a real figure (CLARITY.md C20)"
             (F if len(flagged) > 0.4 * len(paths) else W)("L23", msg)

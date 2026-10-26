@@ -39,10 +39,6 @@ Figure `lec05-kp15-terms`: the six boxes of the order-2 expansion.
 
 Take only $y=(x_1,x_2,x_1x_2)$: $(0,0)\to(0,0,0)$, $(0,1)\to(0,1,0)$, $(1,0)\to(1,0,0)$, $(1,1)\to(1,1,1)$. The plane $y_1+y_2-2y_3-\tfrac14=0$ gives back $g=-\tfrac14+x_1+x_2-2x_1x_2$ and the four values $-0.25,+0.75,+0.75,-0.25$ all have the right sign. One interaction term $x_1x_2$ solves XOR (the constant may be $-\tfrac14$ or the $-0.5$ of KP13).
 
-Figure `lec05-kp15-xor`: new coordinates, $g$ and class of the four points.
-
-![XOR and the interaction term](../../assets/figures/lec05-kp15-xor.png)
-
 ### 3. Hyperbolas
 
 $g=0$ means $x_1+x_2-2x_1x_2=\tfrac14$, a pair of hyperbola branches. A ($g>0$) is the band holding $(0,1)$ and $(1,0)$; B is the two corners holding $(0,0)$ and $(1,1)$. **Example**: at $(0.5,0.5)$, $g=-0.25+1-0.5=+0.25$, on the A side. The same rule is a plane in three dimensions and curved in two.
@@ -60,10 +56,6 @@ k=\frac{(l+r)!}{r!\,l!}.
 $$
 
 Check: $l=2,r=2$: $4!/(2!\,2!)=6$; $l=3,r=2$: $5!/(2!\,3!)=10$. For $l=2$, $r=1..5$ gives 3, 6, 10, 15 and 21 terms.
-
-Figure `lec05-kp15-kcount`: the term count for $l=2$ and $r=1..5$.
-
-![Term count](../../assets/figures/lec05-kp15-kcount.png)
 
 ### 5. Combinatorial explosion
 
@@ -101,24 +93,12 @@ Figure `lec05-kp15-cond`: the condition number of the design matrix against the 
 
 **Kernel preview**: $l=2$, order 2, $x=(1,2)$, $z=(3,-1)$: $(1+x\cdot z)^2=(1+3-2)^2=4$. The other side maps $x$ to $\varphi(x)=(1,\sqrt2x_1,\sqrt2x_2,x_1^2,x_2^2,\sqrt2x_1x_2)$ and term by term $1+6-4+9+4-12=4$, the same. The left side takes one inner product and one power; for $l=10,r=10$ the right side is a 184,756-term inner product. Kernel methods (KP19) exist to avoid this explosion.
 
-Figure `lec05-kp15-kernel`: the same number computed two ways.
-
-![Kernel preview](../../assets/figures/lec05-kp15-kernel.png)
-
 **Practice**:
 
 1. For $l=4$ inputs and order at most $r=3$, how many terms $k$?
 2. With $g=-\tfrac14+x_1+x_2-2x_1x_2$, which class is the point $(1.5,1.5)$ ($g>0$ is A)?
 
-Figure `lec05-kp15-practice`: the setup of the practice.
-
-![Practice](../../assets/figures/lec05-kp15-practice.png)
-
 **Worked solution of questions 1 and 2**: (1) $k=7!/(3!\,4!)=5040/(6\cdot24)=35$. (2) $g(1.5,1.5)=-0.25+3-4.5=-1.75<0$, class B. (3) Check: 35 is exactly $\binom{7}{3}$ and the point lies in the upper-right B region, the same region as $(1,1)$.
-
-Figure `lec05-kp15-practice-sol`: the term count and $g$.
-
-![Practice solution](../../assets/figures/lec05-kp15-practice-sol.png)
 
 ## Terms and sources
 

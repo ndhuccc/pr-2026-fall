@@ -78,10 +78,6 @@ For $l=2$, $N=1,\dots,8$:
 | $O(N,2)$ | 2 | 4 | 8 | 14 | 22 | 32 | 44 | 58 |
 | $2^N$ | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 |
 
-Figure `lec05-kp14-count`: First look at the two rows of numbers, $O(N,2)$ above and $2^N$ below; then see that from $N=4$ on the rows part: 14 against 16, and the gap keeps widening. [Function: 2]
-
-![Table comparing O(N,2) and 2 to the power N.](../../assets/figures/lec05-kp14-count.png)
-
 ### 3. The probability of separability
 
 With random labels all $2^N$ labelings are equally likely, so the probability of separability is
@@ -208,28 +204,16 @@ Figure `lec05-kp14-gen`: First look at the "training" bar: all right; then the "
 
 For $l=1,\dots,5$ we get $O=8,32,128,512,2048$.
 
-Figure `lec05-kp14-proof`: First look at the row of $O$ values for each of $l=1$ to 5, then at the explanation of the symmetry: the two halves are equal. [Function: 2]
-
-![O for l = 1 to 5 and the symmetry explanation.](../../assets/figures/lec05-kp14-proof.png)
-
 **Small exercises**: $N=5$ points in general position.
 
 1. For $l=2$, what are $O(5,2)$ and $P$? Hint: $\binom{4}{i}=1,4,6,4,1$.
 2. Raise to $l=3$; what is $P$?
-
-Figure `lec05-kp14-practice`: First look at the setting of the exercise: $N=5$, with $l=2$ and $l=3$; compute it yourself before comparing with the solution. [Function: 1]
-
-![The setting of the exercise.](../../assets/figures/lec05-kp14-practice.png)
 
 **Exercises 1 and 2, worked solutions**:
 
 1. $O(5,2)=2(1+4+6)=22$, $P=22/32=0.6875$.
 2. $O(5,3)=2(1+4+6+4)=30$, $P=30/32=0.9375$.
 3. Check: 22 agrees with the table of section 2; one more dimension raises the probability of separability from 0.6875 to 0.9375.
-
-Figure `lec05-kp14-practice-sol`: First look at $O$ and $P$ for each of the two dimensions: 22 with 0.6875 and 30 with 0.9375; then compare the two: one more dimension adds 0.25 to the probability. [Function: 2]
-
-![O and P for the two dimensions.](../../assets/figures/lec05-kp14-practice-sol.png)
 
 ## Terms and source
 

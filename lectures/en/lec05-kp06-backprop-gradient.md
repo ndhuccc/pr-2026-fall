@@ -215,10 +215,6 @@ Figure `lec05-kp06-saturation`: look at the three bars on a logarithmic scale: t
 1. What are the error $e$ and the output-layer $\delta_o$? Hint: $e=$ target $-$ output, and $f'(v_o)=0.249$ stays.
 2. In which direction and by how much does each of the three output weights move ($\eta=0.3$)?
 
-Figure `lec05-kp06-practice-net`: the same network with the target changed to 0. Look at the target first, then think in which direction the output 0.471 should go. [Function: 1]
-
-![The practice network](../../assets/figures/lec05-kp06-practice-net.png)
-
 **Worked solution of questions 1 and 2**: (1) $e=0-0.471=-0.471$, $\delta_o=-0.471\times0.249=-0.1173$. (2) $\Delta w=0.3\times(-0.1173)\times\text{input}$: bias $-0.0352$, $w_{o1}$ $-0.0185$, $w_{o2}$ $-0.0158$, all three go down. (3) Check: the output 0.471 must fall towards 0, so all output weights should fall, the opposite of the signs for target 1.
 
 Figure `lec05-kp06-practice-sol`: look at the three bars, all negative, so all three output weights go down. [Function: 1, 2]

@@ -111,10 +111,6 @@ The four XOR points $(0,0),(0,1),(1,0),(1,1)$; the class "the two coordinates di
 
 One plane separates the four points. KP02 combined two lines; here it is one fixed mapping plus one plane.
 
-Figure `lec05-kp13-xor`: Read the table row by row: $x_1,x_2$ of the four XOR points, the new coordinate $y_3=x_1x_2$ and $g$; then look at the last column of classes: the signs of $g=\pm0.5$ match classes A and B. [Function: 2]
-
-![The new coordinates and g of the four XOR points.](../../assets/figures/lec05-kp13-xor.png)
-
 The next question: the mapping is fixed, so how are the three weights $w_0,w_1,w_2$ computed rather than guessed by eye?
 
 ### 5. How the weights are computed
@@ -213,10 +209,6 @@ Figure `lec05-kp13-count`: First look at the three bars (log axis): input dimens
 1. Which class do $(1,1)$, $(3,0)$ and $(0,-2.5)$ belong to?
 2. What shape is $g=0$ in the $x$ plane?
 
-Figure `lec05-kp13-practice`: First read the setting on the figure: features $y=(x_1^2,x_2^2)$ and $g=y_1+y_2-4$; then decide the classes of the three listed points yourself and describe the shape of $g=0$, before comparing with the solution. [Function: 1]
-
-![The setting of the exercise.](../../assets/figures/lec05-kp13-practice.png)
-
 **Exercise 1, worked solution**:
 
 - $(1,1)$: $1+1-4=-2$, B.
@@ -224,10 +216,6 @@ Figure `lec05-kp13-practice`: First read the setting on the figure: features $y=
 - $(0,-2.5)$: $0+6.25-4=2.25$, A.
 
 **Exercise 2, worked solution**: $g=0$ means $x_1^2+x_2^2=4$, a circle of radius 2: a straight line in $y$ space, curved in $x$ space.
-
-Figure `lec05-kp13-practice-sol`: First read the working and the $g$ value of each of the three points ($-2$, $5$, $2.25$) and the decided class; then read the bottom line: $g=0$ is equivalent to $x_1^2+x_2^2=4$, a circle of radius 2 (B inside, A outside). [Function: 2]
-
-![Working and g values of the three exercise points and the equation of the decision circle.](../../assets/figures/lec05-kp13-practice-sol.png)
 
 ## Terms and source
 

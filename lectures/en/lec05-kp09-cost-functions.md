@@ -78,9 +78,18 @@ The sign follows KP06 ($\delta=-\partial J/\partial net$); the source writes $\h
 
 **Numbers**: at $net=-10$ the squared-error $\delta=0.00005$ and the cross-entropy $\delta=1.0000$.
 
-Figure `lec05-kp09-delta-table`: $\hat y$ and the two $\delta$ at different $net$. Look at $net$ and $\hat y$ in each row, then compare the last two columns: the cross-entropy $\delta$ is not pressed down. [Function: 2]
+With target $y=1$:
 
-![Table of the two deltas](../../assets/figures/lec05-kp09-delta-table.png)
+| $net$ | $\hat y$ | $\delta$ of squared error | $\delta$ of cross-entropy |
+|---:|---:|---:|---:|
+| $-10$ | 0.00005 | 0.00005 | 1.0000 |
+| $-5$ | 0.0067 | 0.00660 | 0.9933 |
+| $-2$ | 0.1192 | 0.09248 | 0.8808 |
+| $0$ | 0.5000 | 0.12500 | 0.5000 |
+| $2$ | 0.8808 | 0.01252 | 0.1192 |
+| $5$ | 0.9933 | 0.00004 | 0.0067 |
+
+The cross-entropy $\delta$ is not squeezed; squared error gives almost no signal at $net=-10$.
 
 ### 4. Training compared
 
@@ -109,10 +118,6 @@ Figure `lec05-kp09-train`: the output of the point $x=2$ against epochs. Look at
 - The four cross-entropies add up to $0.105+0.223+0.357+0.105=0.790$, the same.
 
 Minimizing cross-entropy is maximizing likelihood.
-
-Figure `lec05-kp09-likelihood`: probabilities and $-\ln$ of four samples. Look at the probability of each target for the four samples, then at the sum of the four $-\ln$ equalling the $-\ln$ of the product. [Function: 1, 2]
-
-![Likelihood](../../assets/figures/lec05-kp09-likelihood.png)
 
 ### 6. softmax
 
@@ -187,10 +192,6 @@ Figure `lec05-kp09-init`: epochs needed from seven starts (log axis). Look at th
 1. What is $\hat y=\sigma(-4)$?
 2. What are the squared-error $\delta=(1-\hat y)\,\hat y(1-\hat y)$ and the cross-entropy $\delta=1-\hat y$, and how many times larger is the cross-entropy one?
 
-Figure `lec05-kp09-practice`: the setup of the practice. Look at the target and $net=-4$, then think how close to 0 $\hat y$ will be. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp09-practice.png)
-
 **Worked solution (question 1)**: $\hat y=1/(1+e^{4})=0.0180$.
 
 **Worked solution (question 2)**:
@@ -200,10 +201,6 @@ Figure `lec05-kp09-practice`: the setup of the practice. Look at the target and 
 - Ratio $0.9820/0.01735=56.6$.
 
 **Check**: the ratio is exactly $1/[\hat y(1-\hat y)]$ and grows as the output gets more extreme; at $net=-10$ it is about 22000.
-
-Figure `lec05-kp09-practice-sol`: the two $\delta$ and the ratio. Look at the formulas of the two $\delta$, then at the final ratio 56.6. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp09-practice-sol.png)
 
 ## Terms and sources
 

@@ -226,10 +226,6 @@ Figure `lec05-kp11-boundary`: [Supplement] First look at the slanted line (the $
 1. C has weight 0.5 and curvature 8; D has weight 2 and curvature 0.1. By saliency, which is deleted first? Hint: compute $s=Hw^2/2$ first.
 2. Take $\tau=2$, $w=2$ and compute $\rho(w)$. Does this mean the weight has been deleted? Hint: tell the penalty apart from the actual operation.
 
-Figure `lec05-kp11-rho-practice`: [Supplement] The exercise uses penalty scale $\tau=2$, with the curve $w^2/(4+w^2)$. Look at the curve first, then find the point $w=2$. [Function: 2]
-
-![Exercise penalty scale tau = 2, curve w squared over 4 plus w squared.](../../assets/figures/lec05-kp11-rho-practice.png)
-
 **Exercise 1, worked solution**: $s_C=\frac12\times8\times0.5^2=1$; $s_D=\frac12\times0.1\times2^2=0.2$. By the estimate, delete D first.
 
 **Exercise 2, worked solution**: $\rho(2)=2^2/(2^2+2^2)=4/8=0.5$. The weight is still 2; only actually setting it to zero or removing it counts as deletion.

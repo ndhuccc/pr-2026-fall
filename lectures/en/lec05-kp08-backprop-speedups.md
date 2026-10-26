@@ -76,9 +76,13 @@ $g$ is the gradient and $\alpha$ the momentum factor, 0.1 to 0.8 in practice; $\
 
 **By hand** ($\mu=0.08$, $\alpha=0.6$): step 1 is $(0.32,-1.6)$ and $w=(-3.68,-0.6)$; step 2 is $0.6\times(0.32,-1.6)-0.08\times(-3.68,-12)=(0.4864,0)$, so the two pulls on $w_2$ (inertia $-0.96$, gradient $+0.96$) cancel exactly. Step 3 is $(0.5473,0.96)$ and $w=(-2.646,0.36)$.
 
-Figure `lec05-kp08-mom-steps`: table of the first three momentum steps. Look at the updates of steps 1, 2 and 3, then at the inertia and gradient of $w_2$ cancelling exactly in step 2. [Function: 2]
+| Step $t$ | Gradient $g$ | Update $\Delta w$ | $w$ after |
+|---|---|---|---|
+| 1 | $(-4,\,20)$ | $(0.32,\,-1.6)$ | $(-3.68,\,-0.6)$ |
+| 2 | $(-3.68,\,-12)$ | $(0.4864,\,0)$ | $(-3.194,\,-0.6)$ |
+| 3 | $(-3.19,\,-12)$ | $(0.5473,\,0.96)$ | $(-2.646,\,0.36)$ |
 
-![First three momentum steps](../../assets/figures/lec05-kp08-mom-steps.png)
+Start $w=(-4,1)$，$\Delta w(t)=0.6\,\Delta w(t-1)-0.08\,g(t)$。
 
 ### 4. Why it works: an exponentially weighted average of past gradients
 
@@ -175,10 +179,6 @@ Figure `lec05-kp08-secant`: the parabola along $w_2$ and the quickprop jump. Loo
 1. What is the gradient $g=(w_1,20w_2)$ here?
 2. What are the update $\Delta w(3)=0.6\,\Delta w(2)-0.08\,g(3)$ and the new $w$ after step 3?
 
-Figure `lec05-kp08-practice`: the numbers of the first two steps and the task. Look at $w$ and the updates of the first two steps, then at the two quantities asked for. [Function: 1]
-
-![Practice](../../assets/figures/lec05-kp08-practice.png)
-
 **Worked solution (question 1)**: $g=(-3.1936,\,20\times(-0.6))=(-3.1936,-12)$.
 
 **Worked solution (question 2)**:
@@ -187,10 +187,6 @@ Figure `lec05-kp08-practice`: the numbers of the first two steps and the task. L
 - $w=(-3.1936+0.5473,\,-0.6+0.96)=(-2.6463,0.36)$.
 
 **Check**: $w_2$ did not move in step 2, so its inertia is 0 in this step and the whole 0.96 of the gradient part becomes displacement.
-
-Figure `lec05-kp08-practice-sol`: the terms of step 3. Look at the inertia term of step 3, then at the gradient term, and finally at the new position given by their sum. [Function: 1, 2]
-
-![Practice solution](../../assets/figures/lec05-kp08-practice-sol.png)
 
 ## Terms and sources
 
