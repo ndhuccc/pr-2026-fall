@@ -26,6 +26,7 @@ Added 2026-10-26 (readability for weak-background readers, see CLARITY.md C19 an
   L20 skipped-step wording ("顯然", "易知", "不難看出", "obviously" ...)
   L21 teaching text too short (under 1200 zh characters / 700 en words, math and captions excluded)
   L22 a defined term is used before its definition (headings, objectives and the one-sentence summary are exempt)
+  L23 figure files that are text cards (almost no filled shapes; only text and thin lines); needs Pillow and numpy; FAIL when over 40% of the figures
 Usage:  py .agents/skills/textbook-lecture-notes/scripts/audit_lecture.py lectures/lecNN.md
 Exit code 1 when there is a FAIL.
 """
@@ -239,6 +240,27 @@ def main():
             if text[line_start:line_start + 3] == "###": continue
             early.append(t)
     if early: W("L22", f"term(s) used before their definition: {early[:5]}")
+
+    # L23 text-card figures (images that carry only text and thin lines)
+    try:
+        import os
+        import numpy as np
+        from PIL import Image, ImageFilter
+        base = os.path.dirname(os.path.abspath(args.lecture))
+        paths = [os.path.normpath(os.path.join(base, m)) for m in re.findall(r"!\[[^\]]*\]\(([^)\s]+\.png)\)", text)]
+        flagged = []
+        for pth in paths:
+            if not os.path.exists(pth): continue
+            a_ = np.asarray(Image.open(pth).convert("RGB")).astype(int)
+            m_ = np.abs(a_ - a_[0, 0]).sum(2) > 60
+            if m_.sum() == 0: continue
+            er = np.asarray(Image.fromarray((m_ * 255).astype("uint8")).filter(ImageFilter.MinFilter(7))).astype(bool)
+            if er.sum() / m_.sum() < 0.02: flagged.append(os.path.basename(pth))
+        if flagged:
+            msg = f"{len(flagged)} of {len(paths)} figures look like text cards (almost no filled shapes, only text and thin lines): {flagged[:4]}; put the content in the text (table, numbered steps, formula) or draw a real figure (CLARITY.md C20)"
+            (F if len(flagged) > 0.4 * len(paths) else W)("L23", msg)
+    except ImportError:
+        pass
 
     if args.source:
         cj = re.compile(r"[㐀-鿿豈-﫿]")
