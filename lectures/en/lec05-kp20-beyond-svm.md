@@ -55,6 +55,10 @@
 
 The weight vector never has to be computed. As in KP19, $K$ must satisfy the Mercer condition.
 
+Figure `lec05-kp20-recipe`: First the definition of kernelization at the top, then the three steps in order: only inner products, inner products to kernels, a linear combination; finally the two reminders: the weight vector is never computed and the kernel must satisfy the Mercer condition. [Function: 1]
+
+![The three-step recipe of kernelization.](../../assets/figures/lec05-kp20-recipe-en.png)
+
 The next question: can the simplest classifier (compare the distances to the two class means) be kernelized?
 
 ### 2. The Euclidean classifier: compare the distances to the two class means
@@ -84,6 +88,10 @@ and $2\theta$ = the mean kernel value inside class 2 $-$ the mean kernel value i
 
 **Relation to Parzen**: the two sums on the left look like a Parzen density estimate (KP18), and with a Gaussian kernel they are one. The difference is $\theta$: Parzen compares the two sums directly, while the kernelized Euclidean classifier also subtracts the threshold $\theta$.
 
+Figure `lec05-kp20-kmean`: First the two classes, their means $\mu_1$, $\mu_2$ and the new point $\phi(x)$ (closer to $\mu_2$) on the left; then the three derivation steps on the right and the rule at the bottom. [Function: 1]
+
+![The kernelized Euclidean classifier: the two class means in kernel space and the three derivation steps.](../../assets/figures/lec05-kp20-kmean-en.png)
+
 The next question: does the kernelized Euclidean classifier really work? Can $\theta$ be dropped? Try concentric rings.
 
 ### 3. Comparison on concentric rings
@@ -101,9 +109,9 @@ The next question: does the kernelized Euclidean classifier really work? Can $\t
 
 **Common misconception**: the two sums look like a Parzen estimate, so comparing the two sums directly is a Parzen classifier and needs no threshold. In fact without $\theta$ it is much worse: "≈ Parzen" must not ignore it.
 
-Figure `lec05-kp20-kmeanres`: look at the four bars, the linear one about half and the quadratic and Gaussian ones above 94%; then compare the rightmost bar without $\theta$, which falls to about 80%. [Function: 2]
+Figure `lec05-kp20-ringcmp`: First the concentric-ring data and the four methods at the top left, then the result table at the top right: the Gaussian kernel reaches 97.4% and drops to 79.8% without $\theta$; finally the two panels below: why kernel space helps, and how $\theta$ makes up the difference of the in-class kernel averages (0.212 against 0.477). [Function: 2]
 
-![Comparison on concentric rings](../../assets/figures/lec05-kp20-kmeanres.png)
+![Comparison on concentric rings: the four methods and the role of the threshold θ.](../../assets/figures/lec05-kp20-ringcmp-en.png)
 
 The next question: the Euclidean classifier is simple. Can a more learning-like algorithm such as the perceptron also be kernelized?
 
@@ -131,6 +139,10 @@ $$
 4. Stop when a whole round has no error.
 
 **Convergence**: the linear perceptron converges only when the data are linearly separable. After the kernel maps to a high dimension, by Cover's theorem (KP14) the data are very likely linearly separable.
+
+Figure `lec05-kp20-kperc`: First the three boxes in the top row: the linear perceptron's update, $w$ as a combination of training points, and the kernel perceptron's discriminant; then the four-step algorithm and the convergence note below. [Function: 2]
+
+![The kernel perceptron: from the update rule to a kernel-only discriminant, and the four-step algorithm.](../../assets/figures/lec05-kp20-kperc-en.png)
 
 The next question: with a small example, compute the discriminant value of every point.
 
@@ -162,6 +174,10 @@ $$
 
 **The final discriminant**: adding the four kernels, $g(x)=2(x_1^2-x_2^2)$. $(2,0)$ gives $+8$ and $(0,2)$ gives $-8$.
 
+Figure `lec05-kp20-trace`: First the four XOR-type points at the top left and the kernel matrix $G$ below; then the round-by-round table on the right, where red rows are mistakes; finally $\alpha=(1,1,1,1)$ and $g(x)=2(x_1^2-x_2^2)$. [Function: 2]
+
+![Four XOR-type points, the kernel matrix and the round-by-round trace.](../../assets/figures/lec05-kp20-trace-en.png)
+
 The next question: on more realistic data, how many rounds does the kernel perceptron need and how accurate is it?
 
 ### 6. The rings experiment
@@ -179,7 +195,7 @@ The next question: on more realistic data, how many rounds does the kernel perce
 
 Figure `lec05-kp20-epochs`: look at the number of rounds on a logarithmic axis, then at how the errors per round fall; the curve for standard deviation 0.25 drags on for a long time. [Function: 2]
 
-![The rings experiment](../../assets/figures/lec05-kp20-epochs.png)
+![The rings experiment](../../assets/figures/lec05-kp20-epochs-en.png)
 
 The next question: where do the perceptron and the SVM differ? Look at the loss each one minimizes.
 
@@ -198,7 +214,7 @@ A **loss function** gives every $z$ a penalty, and the character of the algorith
 
 Figure `lec05-kp20-losses`: look at the heights of the four curves on the $z>0$ side (right) first, then at which one rises fastest on the $z<0$ side (wrong). [Function: 1, 2]
 
-![Loss functions](../../assets/figures/lec05-kp20-losses.png)
+![Loss functions](../../assets/figures/lec05-kp20-losses-en.png)
 
 The next question: do the four losses punish a point that is badly wrong equally hard?
 
@@ -228,7 +244,7 @@ After dividing by $\ln2$ it is exactly 1 at $z=0$ and $\ge1$ for all $z\le0$, wh
 
 Figure `lec05-kp20-logup`: look at the step of the 0/1 loss, then at the logistic dipping below the step at $z=0$, and finally at the curve divided by $\ln2$ lying above the step. [Function: 1, 2]
 
-![The logistic upper bound](../../assets/figures/lec05-kp20-logup.png)
+![The logistic upper bound](../../assets/figures/lec05-kp20-logup-en.png)
 
 **Practice**: the points $(1,0)+$, $(-1,0)+$, $(0,1)-$, $(0,-1)-$, $K=(x^Tz+1)^2$ and $\alpha=(1,1,1,1)$.
 
@@ -236,6 +252,10 @@ Figure `lec05-kp20-logup`: look at the step of the 0/1 loss, then at the logisti
 2. Simplify $g$ into a formula in $x_1,x_2$ and check question 1.
 
 **Worked solution of questions 1 and 2**: (1) $K(x,(1,0))=4$, $K(x,(-1,0))=0$, $K(x,(0,1))=9$, $K(x,(0,-1))=1$; $\sum\alpha_iy_i=0$; $g=4+0-9-1+0=-6$, the negative class. (2) Adding the four squares, $g=2(x_1^2+1)-2(x_2^2+1)=2(x_1^2-x_2^2)$; at $x=(1,2)$: $2(1-4)=-6$, the same as question 1. (3) Check: $g>0$ means $|x_1|>|x_2|$, given to the positive class; the boundary is two oblique lines, and the four points that no line could split are separated by the kernel perceptron.
+
+Figure `lec05-kp20-solution`: First step 1, the four kernel values of exercise 1 and $g=-6$, then step 2, the simplification to $2(x_1^2-x_2^2)$, and finally the check that both ways give $-6$. [Function: 2]
+
+![Worked steps and answers for exercises 1 and 2.](../../assets/figures/lec05-kp20-solution-en.png)
 
 ## Terms and source
 

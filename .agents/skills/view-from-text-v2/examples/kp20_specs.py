@@ -228,3 +228,39 @@ def solution():
         "takeaway": tr("兩種算法都得 −6；g>0 就是 |x₁|>|x₂|，邊界是兩條斜線。", "Both ways give −6; g>0 means |x₁|>|x₂|, and the boundary is two diagonal lines."),
     }
     return "steps_flow", spec
+
+
+def ringcmp():
+    def circ(f, cx, cy, r, color, sw=2): f.rect(cx - r, cy - r, 2 * r, 2 * r, stroke=color, sw=sw, radius=r)
+    R = _cmp(); m1, m2 = R[2][1], R[2][2]; a = [r[0] for r in R]; d1, d2 = hu(m1, 3), hu(m2, 3); th2 = hu(float(d2) - float(d1), 3); th = hu((float(d2) - float(d1)) / 2, 4)
+    f = NFig("lec05-kp20-ringcmp", 1160, 452, T(tr(f"同心環上比較（標準差 0.25，訓練每類 60 點種子 1，新資料每類 500 點共 1000 點種子 2）：線性核判對 {a[0]}／1000（{hu(a[0]/10,1)}%）、二次核 {a[1]}（{hu(a[1]/10,1)}%）、高斯核保留 θ {a[2]}（{hu(a[2]/10,1)}%）、高斯核拿掉 θ {a[3]}（{hu(a[3]/10,1)}%）；拿掉 θ 少判對 {a[2]-a[3]} 點。類內核值平均：外環（類 1）{d1}、內環（類 2）{d2}，2θ≈{th2}。",
+                                                                       f"Comparison on concentric rings (standard deviation 0.25, 60 training points per class with seed 1, 500 new points per class, 1000 in all, with seed 2): the linear kernel gets {a[0]} of 1000 right ({hu(a[0]/10,1)}%), the quadratic kernel {a[1]} ({hu(a[1]/10,1)}%), the Gaussian kernel with θ {a[2]} ({hu(a[2]/10,1)}%), the Gaussian kernel without θ {a[3]} ({hu(a[3]/10,1)}%); dropping θ costs {a[2]-a[3]} points. In-class kernel averages: outer ring (class 1) {d1}, inner ring (class 2) {d2}, so 2θ≈{th2}.")))
+    header_chip(f, 0, 0, 560, 32, "blue", T(tr("① 同一批資料，比四種方法", "① One data set, four methods")), size=17); panel(f, 0, 36, 560, 222, "blue")
+    cx, cy, sc = 135, 136, 35
+    circ(f, cx, cy, 2 * sc - 12, tint("blue", 0.5), 2); circ(f, cx, cy, 2 * sc + 12, tint("blue", 0.5), 2); circ(f, cx, cy, 2 * sc, solid("blue"), 2)
+    circ(f, cx, cy, sc - 10, tint("red", 0.6), 2); circ(f, cx, cy, sc + 10, tint("red", 0.6), 2); circ(f, cx, cy, sc, solid("red"), 2)
+    f.line(cx - 78, cy - 58, cx + 70, cy + 52, "MUT", 3); f.ellipse(cx, cy, 10, "TXT")
+    f.text(10, 62, T(tr("外環：+1\n平均半徑 2", "outer: +1\nmean radius 2")), "TXT", 16, True, "left", w=140); f.text(174, 62, T(tr("內環：-1\n平均半徑 1", "inner: -1\nmean radius 1")), "TXT", 16, True, "left", w=124)
+    f.text(10, 236, T(tr("一條直線，難以分開內外環\n幾何示意，非實驗散點或精確邊界", "one line cannot separate inner from outer\nsketch only, not experiment points")), "MUT", 16, False, "left", w=285)
+    f.rect(300, 46, 250, 204, fill=tint("grey", 0.25), radius=10); f.text(314, 64, T(tr("實驗設定", "Experiment setup")), "TXT", 16, True, "left", w=232)
+    f.text(314, 156, T(tr("角度均勻隨機\n半徑常態分布，標準差 0.25\n訓練：每類 60 點（種子 1）\n新資料：每類 500 點（種子 2）\n兩類原空間平均都近圓心", "angles uniformly random\nradii normal, standard deviation 0.25\ntraining: 60 per class (seed 1)\nnew data: 500 per class (seed 2)\nboth class means near the origin")), "TXT", 16, False, "left", w=232)
+    header_chip(f, 580, 0, 580, 32, "green", T(tr("② 新資料的分類結果", "② Classification of new data")), size=17); panel(f, 580, 36, 580, 222, "green")
+    f.rect(596, 44, 552, 26, fill=tint("blue", 0.3), radius=4)
+    for x, w, h in ((600, 260, tr("歐氏分類器使用方式", "Euclidean classifier variant")), (870, 130, tr("判對／1000", "right / 1000")), (1010, 130, tr("準確率", "accuracy"))): f.text(x + w / 2, 57, T(h), "TXT", 16, True, w=w)
+    rows = [(tr("線性核", "linear kernel"), a[0], "grey"), (tr("二次核", "quadratic kernel"), a[1], "grey"), (tr("高斯核（保留 θ）", "Gaussian (with θ)"), a[2], "green"), (tr("高斯核（拿掉 θ）", "Gaussian (without θ)"), a[3], "orange")]
+    for i, (nm, v, role) in enumerate(rows):
+        y = 74 + i * 28; f.rect(596, y, 552, 26, fill=tint(role, 0.28 if role != "grey" else 0.12), radius=4)
+        f.text(730, y + 13, T(nm), "TXT", 16, True, w=260); f.text(935, y + 13, str(v), "TXT", 16, True, w=130); f.text(1075, y + 13, hu(v / 10, 1) + "%", "TXT", 16, True, w=130)
+    f.rect(596, 188, 552, 46, fill=tint("yellow", 0.2), radius=10)
+    f.text(872, 200, T(tr(f"拿掉 θ：少判對 {a[2]-a[3]} 點，下降 {hu((a[2]-a[3])/10,1)} 個百分點", f"without θ: {a[2]-a[3]} fewer right, down {hu((a[2]-a[3])/10,1)} points")), "TXT", 16, True, w=540)
+    f.text(872, 220, f"{hu(a[2]/10,1)}% → {hu(a[3]/10,1)}%", "TXT", 20, True, w=540)
+    f.text(872, 246, "二次核 $K=(x^Tz+1)^2$；高斯核 $K=\\exp(-0.5\\|x-z\\|^2)$" if True else "", "TXT", 16, w=552, math=True)
+    header_chip(f, 0, 272, 560, 32, "orange", T(tr("為什麼核化有幫助？", "Why does kernelization help?")), size=17); panel(f, 0, 308, 560, 112, "orange")
+    f.text(14, 364, T(tr("原空間：兩類平均都接近圓心，只比到平均的距離，很難辨別內外。\n核空間：核函數給出映射後的相似度，不必真的算出高維座標；\n二次核與高斯核都大幅改善新資料準確率。", "original space: both class means sit near the origin, so\ndistances to the means can hardly tell inside from outside.\nkernel space: similarities after the mapping, no high-dimensional\ncoordinates needed; the quadratic and Gaussian kernels both help a lot.")), "TXT", 16, False, "left", w=535)
+    header_chip(f, 580, 272, 580, 32, "violet", T(tr("③ θ 補上兩類自身的差異", "③ θ makes up for the classes' own difference")), size=17); panel(f, 580, 308, 580, 112, "violet")
+    f.rect(596, 316, 300, 52, fill=tint("violet", 0.2), radius=6)
+    f.text(606, 329, T(tr(f"外環（類 1）：核值平均 ≈ {d1}", f"outer: kernel avg ≈ {d1}")), "TXT", 16, False, "left", w=286); f.text(606, 355, T(tr(f"內環（類 2）：核值平均 ≈ {d2}", f"inner: kernel avg ≈ {d2}")), "TXT", 16, False, "left", w=286)
+    f.text(1030, 344, f"$2\\theta\\approx{d2}-{d1}={th2}$\n$\\theta\\approx{th}$", "TXT", 16, w=260, math=True)
+    f.text(596, 396, T(tr("類內核值平均：同一類訓練點彼此核相似度的平均；\n兩類不同，θ 不能直接刪掉。", "in-class kernel average: mean similarity among one class's\ntraining points; the classes differ, so θ cannot be dropped.")), "TXT", 16, False, "left", w=555)
+    f.text(580, 438, T(tr("本講義設計的單組資料實驗，未重複抽樣；不代表所有資料皆有相同排名。", "One experiment designed for this lecture, drawn once; it does not mean every data set ranks the same.")), "MUT", 16, w=1140)
+    return f
