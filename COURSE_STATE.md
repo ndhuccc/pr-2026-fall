@@ -229,3 +229,4 @@
 - 2026-10-27 10:21 — 更新 SOP:AGENTS.md §5.11 改指向 view-from-text-v3,v3 SKILL.md 規則段改為現況(支援漸層、陰影、透明度、多邊形);course-template、idl-2026-fall 同步 AGENTS.md(含 §5.12 第 6 項標題長度規則)。
 - 2026-10-27 11:10 — KP14 簡報以 view-from-text-v3 重做並發佈(內容頁 9 頁,中英文版),講義換圖;v3 已重做:KP14–KP18、KP20、KP22;下一步 KP13,再 KP00–KP09(仍為 v1)。
 - 2026-10-27 12:12 — KP13 簡報以 view-from-text-v3 重做並發佈(內容頁 9 頁,中英文版),講義換圖;v3 已重做:KP13–KP18、KP20、KP22;下一步 KP00–KP09(仍為 v1),等教授決定順序。
+- 2026-10-27 12:16 — 補齊 v3 技能交接資料:SKILL.md 加環境準備、發佈細節與互動節奏;DESIGN.md 加稽核常見錯誤;新增 tools/sheet.py、tools/make_specs.py 與 KP13–KP15 的 caps、map 範本;textbook-lecture-notes 補圖的來源說明;my-jarvis 新增 todo 交接文件。
