@@ -47,9 +47,9 @@
 - Any single threshold (with its direction) gets at most 5 of the 7 right (a program tries every threshold).
 - Reason: A lies on both sides of B, and the size of $x$ alone cannot show "on both sides".
 
-Figure `lec05-kp13-sandwich`: First look at the seven points on the line: A on the two sides, B in the middle; then look at the best single threshold marked on the figure, which gets only 5 right. [Function: 1]
+Figure `lec05-kp13-sandwich`: First see the seven points on the number line: A on both sides and B in the middle; then see the best single threshold x = 1.5 as the yellow dashed line, with the two mistakes ringed in red: only 5 are right. [Function: 1]
 
-![Sandwiched classes: two classes on a one-dimensional line and the best single threshold.](../../assets/figures/lec05-kp13-sandwich.png)
+![Sandwiched classes: seven points on a number line and the best single threshold x = 1.5, which gets only 5 of 7 right.](../../assets/figures/lec05-kp13-sandwich-en.png)
 
 The next question: can we change the coordinate so that the two classes sit "one on each side"?
 
@@ -66,9 +66,9 @@ Take $y=(x,x^2)$ and compute point by point:
 
 A's $y_2$ are all at least 4 and B's at most 1; the horizontal line $y_2=2.5$ separates the two classes, which is a linear classifier in the new coordinates.
 
-Figure `lec05-kp13-lift`: First look at where the seven points go after being lifted to $(x,x^2)$: A above, B below; then see that the horizontal line $y_2=2.5$ separates the two groups. [Function: 1, 2]
+Figure `lec05-kp13-lift`: First see the table of (x, x²) point by point on the left; then see the seven points lifted to (x, x²) on the right: A above, B below, and one horizontal line y₂ = 2.5 separates the two groups. [Function: 1, 2]
 
-![After lifting the points to (x, x squared), a horizontal line separates them.](../../assets/figures/lec05-kp13-lift.png)
+![The seven points lifted to (x, x²) are separated by the horizontal line y₂ = 2.5: every A has y₂ ≥ 4 and every B has y₂ ≤ 1.](../../assets/figures/lec05-kp13-lift-en.png)
 
 The next question: what is this horizontal line when we look back at the original $x$ axis?
 
@@ -91,9 +91,9 @@ First raise the dimension with fixed nonlinear $f_i$, then design an ordinary li
 
 It can also be read the other way: if the original space is split by a nonlinear hypersurface $g(x)=0$, writing $g$ as a linear combination of the $f_i$ is the classical problem of approximating a function by interpolation (source).
 
-Figure `lec05-kp13-curve`: First look at the parabola $g(x)=-2.5+x^2$ and the seven points; then at its two crossings with the $x$ axis, $\pm1.58$: outside, $g>0$ is A; in the middle, $g<0$ is B. [Function: 2]
+Figure `lec05-kp13-curve`: First see the parabola g(x) = −2.5 + x² and the seven points; then see its two crossings with the x axis at ±1.58: outside, g > 0 is A, and in the middle g < 0 is B; the right side gives the definition of a generalized linear classifier and the three-step derivation. [Function: 2]
 
-![Curved when seen back in x: g(x) = -2.5 + x squared and the seven points.](../../assets/figures/lec05-kp13-curve.png)
+![Back in x it is curved: g(x) = −2.5 + x² with the seven points, boundary at x = ±1.58.](../../assets/figures/lec05-kp13-curve-en.png)
 
 ### 4. XOR once more
 
@@ -110,6 +110,10 @@ The four XOR points $(0,0),(0,1),(1,0),(1,1)$; the class "the two coordinates di
 | $(1,1)$ | 1 | $-0.5$ |
 
 One plane separates the four points. KP02 combined two lines; here it is one fixed mapping plus one plane.
+
+Figure `lec05-kp13-xor`: First see the left: the four XOR points cannot be separated in the original coordinates; then see the middle: after adding y₃ = x₁x₂, a side view (x₁ + x₂ against y₃) shows one line separating A from B; the table on the right computes g = x₁ + x₂ − 2y₃ − 0.5 point by point: −0.5, +0.5, +0.5, −0.5. [Function: 2]
+
+![After adding the coordinate y₃ = x₁x₂ to the four XOR points, g = x₁ + x₂ − 2y₃ − 0.5 takes the values −0.5, +0.5, +0.5, −0.5 and one plane separates the classes.](../../assets/figures/lec05-kp13-xor-en.png)
 
 The next question: the mapping is fixed, so how are the three weights $w_0,w_1,w_2$ computed rather than guessed by eye?
 
@@ -128,9 +132,9 @@ Each row of $\Phi$ is $(1,f_1,\dots,f_k)$ of one sample; in $t$, A is $+1$ and B
 - The sign of each of the seven $g$ equals its target, so all seven are right (computed by a program).
 - Note that it differs from the hand-set $(-2.5,0,1)$ of section 3; both separate the points, because least squares seeks "the smallest squared error", not "the boundary farthest from the points".
 
-Figure `lec05-kp13-fit`: First look at the $g$ values of the seven points and compare each sign with its target: all agree; then look at the weights marked on the figure, $w=(-0.810,0,0.238)$. [Function: 2]
+Figure `lec05-kp13-fit`: First see the normal equation on the left with the shape of Φ and t and the solved w = (−0.810, 0, 0.238); then see the g values of the seven points on the right compared sign by sign: all match the targets. [Function: 2]
 
-![Least-squares weights: the g values of the seven points.](../../assets/figures/lec05-kp13-fit.png)
+![Least-squares weights w = (−0.810, 0, 0.238): the g values of the seven points all have the sign of their target.](../../assets/figures/lec05-kp13-fit-en.png)
 
 ### 6. Concentric rings
 
@@ -151,9 +155,9 @@ Straight-line features are no better than guessing. For the quadratic features $
 
 **Common misconception**: after raising the dimension the boundary becomes a straight line. It is a plane of the new space; back in the original space it is a circle.
 
-Figure `lec05-kp13-rings`: First look at the two rings of points and the green decision circle; then read the three lines below the plot: straight-line features 51%, quadratic features 99.5%, circle radius 1.71. [Function: 1, 3]
+Figure `lec05-kp13-rings`: First see the two rings of points on the left with the green decision circle; then read the table on the right: linear features 102 right (51%), quadratic features 199 right (99.5%), a circle of radius about 1.71, and the numbers of quadratic features 5, 65, 5150. [Function: 1, 3]
 
-![Scatter plot of the concentric rings with the decision circle of radius 1.71: 51% with straight-line features, 99.5% with quadratic features.](../../assets/figures/lec05-kp13-rings.png)
+![Concentric rings with the decision circle of radius about 1.71: linear features 51%, quadratic features 99.5%.](../../assets/figures/lec05-kp13-rings-en.png)
 
 ### 7. Several classes
 
@@ -165,9 +169,9 @@ For $M$ classes, design $M$ weight vectors $w_r$ and choose the class with the l
 - The targets are one-hot (the target vector of class $r$ has a 1 only in position $r$), the features are $(1,x,x^2)$, and least squares solves three sets of weights: all nine are right.
 - With only $(1,x)$: just 7 are right; for the middle class only $x=0$ is right (there the three $g$ tie at $1/3$ and the middle class is taken).
 
-Figure `lec05-kp13-multi`: First look at the three $g$ curves: in each stretch the highest curve is the decided class; then check whether the nine points fall in the stretch where their own class is highest. [Function: 2]
+Figure `lec05-kp13-multi`: First see the three g curves, where the highest curve in each stretch is the chosen class (the strip at the bottom); then see whether the nine points fall in the stretch of their own class; the right side gives the method and result: all nine right, and only 7 with just (1, x). [Function: 2]
 
-![Several classes: three g curves and nine points.](../../assets/figures/lec05-kp13-multi.png)
+![Multi-class: three g curves and nine points; all nine right with (1, x, x²), only 7 with just (1, x).](../../assets/figures/lec05-kp13-multi-en.png)
 
 ### 8. Contrast: projection pursuit
 
@@ -182,9 +186,13 @@ So it is not linear in $w$ and needs a two-stage alternating optimization (sourc
 
 **How to remember**: generalized linear = fixed mapping + learnable linear layer; multilayer perceptron = learnable mapping + learnable linear layer.
 
-Figure `lec05-kp13-pp`: First look at the two rows of block diagrams: in the upper row the mapping $f_i$ is fixed and only $w$ is learned; in the lower row the direction $w_i$ is learned first and then passed through $f_i$; then read the doubling test at the bottom: the generalized linear classifier doubles exactly, projection pursuit does not. [Function: 2]
+Figure `lec05-kp13-pp`: First see the two rows of block diagrams: in the top row the mapping fᵢ is fixed and only w is learned; in the bottom row the direction wᵢ is learned and then the function fᵢ is fitted; then read the doubling test on the right: the generalized linear classifier exactly doubles and projection pursuit does not (f(2) = 0.881 against 2f(1) = 1.462). [Function: 2]
 
-![Generalized linear versus projection pursuit: block diagrams of the two structures and the doubling test.](../../assets/figures/lec05-kp13-pp.png)
+![Generalized linear versus projection pursuit: block diagrams of the two structures and the doubling test.](../../assets/figures/lec05-kp13-pp-en.png)
+
+Figure `lec05-kp13-practice`: The left is Q1: (1,1) is B and (3,0), (0,−2.5) are A; the right is Q2: g = 0 is a circle of radius 2, each with its check. [Function: 3]
+
+![Two exercises with worked answers: the classes of three points and the circle g = 0.](../../assets/figures/lec05-kp13-practice-en.png)
 
 ### Extension: number of coordinates, exercises and worked solutions
 
@@ -199,10 +207,6 @@ $$
 | Number of quadratic features $k$ | 5 | 65 | 5150 |
 
 Does raising the dimension really help? The source answers with Cover's theorem (KP14); the two kinds of mappings, polynomial and RBF, are in KP15 and KP16.
-
-Figure `lec05-kp13-count`: First look at the three bars (log axis): input dimensions 2, 10, 100 give 5, 65, 5150 quadratic features; then note that the dimension grows 50 times while the number of features grows about 1000 times. [Function: 2]
-
-![Number of quadratic features as the input dimension grows (log axis).](../../assets/figures/lec05-kp13-count.png)
 
 **Small exercises**: features $y=(x_1^2,x_2^2)$, $g=y_1+y_2-4$ ($g>0$ is A).
 
