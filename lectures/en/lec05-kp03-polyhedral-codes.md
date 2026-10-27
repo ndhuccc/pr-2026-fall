@@ -140,13 +140,11 @@ The next question: with another labelling, can this cut still separate?
 
 Now let A = {000, 110, 111} and B the rest. The four corners of the bottom face ($y_3=0$) have A at 000 and 110 and B at 010 and 100, alternating along the diagonals. In the input plane these four corners correspond to the four cells cut by the two coordinate axes, just as in the XOR of KP01. The labelling is **nonseparable**, and it is a **counterexample** to the claim that any union of cells can be separated.
 
-Figure `lec05-kp03-plane-to-face` and `lec05-kp03-obstruction`: The left figure colors the plane with the second labelling; the cube on the right has its bottom face colored the same way; the small figure flattens the bottom face, A at 000 and 110, B at 010 and 100, alternating along the diagonals. Look at the left figure first, then at the four bottom corners of the cube, and finally at the flattened face. [Function: 1, 3]
-
-The next question: how do we prove that no cut can separate them?
+Figure `lec05-kp03-plane-to-face`: The left figure colors the plane with the second labelling; the cube on the right has its bottom face colored the same way; the flattened face shows A at 000 and 110, B at 010 and 100, alternating along the diagonals. [Function: 1, 3]
 
 ![The plane and the bottom face](../../assets/figures/lec05-kp03-plane-to-face.png)
 
-![The four bottom corners](../../assets/figures/lec05-kp03-obstruction.png)
+The next question: how do we prove that no cut can separate them?
 
 ### 8. Proof by the shared midpoint
 
@@ -156,9 +154,9 @@ The next question: how do we prove that no cut can separate them?
 
 Geometrically, the diagonal of A (000 to 110) and the diagonal of B (010 to 100) meet at the midpoint $M=(\tfrac12,\tfrac12,0)$. Since $q$ is linear, $q(M)=\frac{a_1+a_2+2a_0}{2}$ is both the average of the two A scores (positive) and the average of the two B scores (nonpositive).
 
-![The diagonals share a midpoint](../../assets/figures/lec05-kp03-midpoint.png)
-
 Figure `lec05-kp03-midpoint`: look at the two diagonals, then at them meeting at the same midpoint $M$; $q(M)$ cannot be both positive and at most 0. [Function: 2, 3]
+
+![The diagonals share a midpoint](../../assets/figures/lec05-kp03-midpoint.png)
 
 The next question: if this cut is not enough, what then?
 
@@ -180,9 +178,9 @@ $$
 
 $\{0,1\}^p$ has $2^p$ corners: the corners of a $p$-dimensional cube, a **hypercube**.
 
-![From a segment to a cube](../../assets/figures/lec05-kp03-hypercubes.png)
-
 Figure `lec05-kp03-hypercubes`: look at the 2 corners of a segment, then at the 4 corners of a square and the 8 corners of a cube: each added bit doubles the number of corners. [Function: 1, 3]
+
+![From a segment to a cube](../../assets/figures/lec05-kp03-hypercubes.png)
 
 ### Practice
 
