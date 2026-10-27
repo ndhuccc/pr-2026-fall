@@ -63,9 +63,9 @@ $w_1,w_2$ are coefficients and $w_0$ is a constant that shifts the line. A posit
 
 **Example**: For OR take $w_1=w_2=1,\ w_0=-0.5$, that is $g=x_1+x_2-0.5$. The four scores are $-0.5, 0.5, 0.5, 1.5$; the last three are positive, so they are class A, exactly OR.
 
-![OR and its boundary](../../assets/figures/lec05-kp01-or-line.png)
-
 Figure `lec05-kp01-or-line`: Look at the boundary $x_1+x_2=0.5$ first and then at the tinted positive side (arrow); each point shows its score, and all three A points are on the positive side. [Function: 1, 3]
+
+![OR and its boundary](../../assets/figures/lec05-kp01-or-line.png)
 
 The next question: what happens when the same line is used on XOR?
 
@@ -88,17 +88,17 @@ $$
 
 This is the result of one line only and does not rule out other lines.
 
-![XOR with the same line](../../assets/figures/lec05-kp01-xor-check.png)
-
 Figure `lec05-kp01-xor-check`: look at the positions and labels of the four points, then at the grey line: it puts $(0,1),(1,0)$ and $(1,1)$ on the same side, and $(1,1)$ is B. [Function: 1, 3]
+
+![XOR with the same line](../../assets/figures/lec05-kp01-xor-check.png)
 
 The next question: would another line do better?
 
 ### 4. Three other lines: 2, 3 and 1 errors
 
-![Three candidate lines](../../assets/figures/lec05-kp01-attempts.png)
-
 Figure `lec05-kp01-attempts`: look at where the three lines are, then at the red circles in each panel: the wrong points are 2, 3 and 1. [Function: 1]
+
+![Three candidate lines](../../assets/figures/lec05-kp01-attempts.png)
 
 | Score | Predictions (in the order $(0,0),(0,1),(1,0),(1,1)$) | Errors |
 |---|---|---:|
@@ -128,9 +128,9 @@ $$
 
 Geometrically the two A points form a diagonal with midpoint $M=(\tfrac12,\tfrac12)$. Since $g$ is linear, $g(M)=\frac{w_1+w_2+2w_0}{2}$ is exactly the average of the two scores and is positive too.
 
-![The A diagonal and its midpoint](../../assets/figures/lec05-kp01-diag-a.png)
-
 Figure `lec05-kp01-diag-a`: look at the diagonal joining the two A points, then at its midpoint $M$; $g(M)$ is the average of the two end scores, so it is positive. [Function: 2, 3]
+
+![The A diagonal and its midpoint](../../assets/figures/lec05-kp01-diag-a.png)
 
 The next question: what condition do the two B points give?
 
@@ -150,9 +150,9 @@ $$
 
 Both sums are the **same expression**; A demands that it be greater than 0 and B that it be at most 0, a contradiction. Hence no coefficients classify every point correctly: this rules out every line, not just the plotted candidates. Geometrically the two diagonals share the midpoint $M$: $g(M)$ would be the average of the A scores and also the average of the B scores, impossible to be both positive and at most 0.
 
-![The diagonals share a midpoint](../../assets/figures/lec05-kp01-diag-both.png)
-
 Figure `lec05-kp01-diag-both`: look at the two diagonals, then at them meeting at the same midpoint $M$; $g(M)$ cannot be both positive and at most 0. [Function: 2, 3]
+
+![The diagonals share a midpoint](../../assets/figures/lec05-kp01-diag-both.png)
 
 The next question: if every line fails, does more training help?
 
@@ -162,9 +162,9 @@ The next question: if every line fails, does more training help?
 
 **Representational capacity**: whether the shape of the boundary can express the answer at all. Whether training finds the best line and whether the best line is good enough are different questions.
 
-![Errors against training](../../assets/figures/lec05-kp01-best.png)
-
 Figure `lec05-kp01-best`: This is a schematic, not an experiment. Look at the errors falling with training, then at the dashed line 0, which is never reached. [Function: 1]
+
+![Errors against training](../../assets/figures/lec05-kp01-best.png)
 
 ### 8. Change the boundaries: two lines make a strip
 
@@ -174,9 +174,9 @@ $$
 \widehat y=1\quad\Longleftrightarrow\quad 0.5<s\le1.5.
 $$
 
-![The strip between two lines](../../assets/figures/lec05-kp01-strip.png)
-
 Figure `lec05-kp01-strip`: Look at the slanted strip enclosed by two parallel lines, then at the two A points inside it and the two B points outside. [Function: 1, 3] Two parallel lines enclose a slanted strip with both A points inside and both B points outside. This verifies only the four Boolean points and does not define a unique extension of XOR to the continuous plane.
+
+![The strip between two lines](../../assets/figures/lec05-kp01-strip.png)
 
 What changes is the combination of boundaries a model may use, not another choice of old coefficients. The next KP asks how neurons can carry out these two decisions.
 
@@ -184,9 +184,9 @@ What changes is the combination of boundaries a model may use, not another choic
 
 **Code**: Compute each score, predict with "score > 0" and compare with the true labels. Include boundary points in tests so that code and text use the same inequality. The half-integers here are exactly representable; general real data still need care with floating-point errors.
 
-![Points on the boundary](../../assets/figures/lec05-kp01-ties.png)
-
 Figure `lec05-kp01-ties`: look at the points exactly on the boundary, then at how the predictions differ between writing $>$ and $\ge$. [Function: 1, 2]
+
+![Points on the boundary](../../assets/figures/lec05-kp01-ties.png)
 
 **Practice**:
 
@@ -209,9 +209,9 @@ Figure `lec05-kp01-ties`: look at the points exactly on the boundary, then at ho
 - XNOR cannot: it has 1 at $(0,0),(1,1)$ and 0 at $(0,1),(1,0)$; the same-class points are still on the diagonals, it differs from XOR only by swapping the labels, so the same contradiction remains.
 - Conclusion: of the three only OR is separable by one line.
 
-![AND and XOR](../../assets/figures/lec05-kp01-and-xor.png)
-
 Figure `lec05-kp01-and-xor`: look at AND all right with the same line on the left, then at XOR with 3 errors on the right. [Function: 1, 2]
+
+![AND and XOR](../../assets/figures/lec05-kp01-and-xor.png)
 
 ## Terms and source
 
