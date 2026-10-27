@@ -44,11 +44,9 @@
 - **Step rule**: a score greater than 0 gives 1; anything else gives 0 (a score of exactly 0 also gives 0).
 - **Bit**: a point on the **positive side** of a line (the side where the score is greater than 0, called a half-space in mathematics) gets 1, otherwise 0.
 
-Figure `lec05-kp03-two-spaces`: The input plane is on the left and the cube of 3-bit codes on the right. Look at the input plane on the left, then at the cube of 3-bit codes on the right; compare the three stars: every point ends up at one corner of the cube. [Function: 1, 3]
+Figure `lec05-kp03-two-spaces`: First see the input plane with its three points on the left, then the cube of three-bit codes in the middle, and finally match the three marks: every point ends up in one corner of the cube; the right gives the definitions of score, step rule, bit and code. [Function: 1, 3]
 
-The next question: what cells do three concrete lines cut the plane into?
-
-![The input plane and the code cube](../../assets/figures/lec05-kp03-two-spaces.png)
+![Input plane and code cube: points ①②③ have codes 110, 000, 011 and each lives in one corner of the cube.](../../assets/figures/lec05-kp03-two-spaces-en.png)
 
 ### 2. Three lines cut seven cells, each with its own code
 
@@ -63,9 +61,9 @@ $$
 
 **Example**: At $(1,1)$ the scores are $g_1=1$, $g_2=1$ and $g_3=-1+1-1=-1$, so the bits are $1,1,0$ ($-1\le0$ gives 0) and the code is **110**.
 
-Figure `lec05-kp03-regions`: Read the three orange boundaries and the arrows toward the positive sides, then the code of each cell. Seven codes occur and 101 does not. Points on a line follow the step rule and receive 0. [Function: 1, 3]
+Figure `lec05-kp03-regions`: First see the three orange boundaries and the arrows beside them (pointing to the side of positive scores), then read the three-bit code of each plot; the right computes the code 110 of the point (1, 1). Seven codes occur and 101 does not. A point on a line gets 0 by the step rule. [Function: 1, 3]
 
-![Three boundaries produce seven realized codes](../../assets/figures/lec05-kp03-regions.png)
+![Three lines g₁ = x₁, g₂ = x₂, g₃ = −x₁ + x₂ − 1 cut seven plots; seven codes occur and 101 does not.](../../assets/figures/lec05-kp03-regions-en.png)
 
 ### 3. Why no point receives code 101
 
@@ -77,9 +75,9 @@ Three bits allow 8 codes but the plane shows only 7 cells. Code 101 would need a
 
 Conditions 1 and 2 give $x_2\le0<x_1+1$, so condition 3 cannot hold.
 
-Figure `lec05-kp03-no101`: Look at the first three panels, each showing the region of one condition, then at the fourth, which stacks the three and they have no common part. [Function: 1, 3]
+Figure `lec05-kp03-no101`: First see in the first three panels the region of each condition, then in the fourth panel the three stacked with no common part; below are the reasoning for the contradiction and the definitions of realized and unrealized codes. [Function: 1, 3]
 
-![The three conditions do not overlap](../../assets/figures/lec05-kp03-no101.png)
+![The three conditions of code 101, x₁ > 0, x₂ ≤ 0, x₂ > x₁ + 1, have no common part.](../../assets/figures/lec05-kp03-no101-en.png)
 
 - **Realized code**: a code received by at least one input point (7 of them).
 - **Unrealized code**: a code that can be written down but that no input point receives (101).
@@ -90,9 +88,9 @@ This is **not** "data not yet collected": however much data you gather, 101 neve
 
 The 8 codes of three bits are exactly the coordinates $(y_1,y_2,y_3)$ of the 8 corners of a cube. With more bits we get a higher-dimensional cube (a hypercube). The cube contains continuous points, but the step rule outputs only corners and never fills the inside.
 
-Figure `lec05-kp03-cube`: Look at the colours of the eight corners, which match the cells of section 2, then at 101, a hollow circle that no input reaches. [Added figure] [Function: 1, 3]
+Figure `lec05-kp03-cube`: First see the colors of the eight corners, which match the cells of the plane in section 2; then see that 101 is a hollow circle that no input reaches; the right explains the output score and the single cut. [Function: 1, 3]
 
-![The code cube](../../assets/figures/lec05-kp03-cube.png)
+![Code cube: 8 corners for the 8 codes, 101 hollow; the plane q = 0 of the output score splits the corners into two sides.](../../assets/figures/lec05-kp03-cube-en.png)
 
 **Output score**:
 
@@ -118,21 +116,17 @@ Take the source's output score $q=-y_1-y_2+y_3+0.5$ and substitute corner by cor
 
 The score at 101 is $-1-0+1+0.5=0.5$, but no input receives it, so it does not affect the classification. When all of A lies on one side of a plane and all of B on the other, the labelling is **linearly separable**.
 
-Figure `lec05-kp03-cube-cut`: Look at the plane $q=0$ first, then at A (circles) above it and B (squares) below; each corner shows its code and score. [Function: 2, 3]
+Figure `lec05-kp03-cube-cut`: First see the cut q = 0, then see A (circles) on one side and B (squares) on the other; each corner shows its code and score, and the right is the corner-by-corner score table. [Function: 2, 3]
 
-The next question: cut back into the input plane, what does region A look like?
-
-![The cut q=0 and the corner scores](../../assets/figures/lec05-kp03-cube-cut.png)
+![The cut q = 0 and the corner scores: A at 000, 001, 011 and B at 010, 100, 110, 111, separated by one cut.](../../assets/figures/lec05-kp03-cube-cut-en.png)
 
 ### 6. Back in the plane: region A is three cells joined, with a notch
 
 Class A is the **union** of the cells 000, 001 and 011 (several cells merged into one region). A region is **convex** if the segment between any two of its points stays inside it. Take $P(-0.15,-1)$ and $Q(-0.15,2)$: both lie in region A, but segment $PQ$ passes through the B point $R(-0.15,0.62)$, so region A is **not convex** [Added].
 
-Figure `lec05-kp03-union-gap`: Look at blue region A and orange region B on the left, then at the dashed line (joining two A points) crossing B; on the right is the cube under the same cut. [Function: 1, 3]
+Figure `lec05-kp03-union-gap`: First see the blue region A and the orange region B, then the dashed line PQ through region B (the segment between two A points); the right gives the definitions of union and convex and the myth. [Function: 1, 3]
 
-The next question: with another labelling, can this cut still separate?
-
-![Region A is three cells joined](../../assets/figures/lec05-kp03-union-gap.png)
+![Region A is the union of 000, 001, 011, and the segment PQ passes through the B plot at R, so it is not convex.](../../assets/figures/lec05-kp03-union-gap-en.png)
 
 **Common misconception**: "One code cell is convex, so a two-layer network can classify only convex regions." The first half holds, the second does not: the last layer may accept several codes, so its region is a union of cells that can have a notch or even be disconnected.
 
@@ -140,9 +134,9 @@ The next question: with another labelling, can this cut still separate?
 
 Now let A = {000, 110, 111} and B the rest. The four corners of the bottom face ($y_3=0$) have A at 000 and 110 and B at 010 and 100, alternating along the diagonals. In the input plane these four corners correspond to the four cells cut by the two coordinate axes, just as in the XOR of KP01. The labelling is **nonseparable**, and it is a **counterexample** to the claim that any union of cells can be separated.
 
-Figure `lec05-kp03-plane-to-face`: The left figure colors the plane with the second labelling; the cube on the right has its bottom face colored the same way; the flattened face shows A at 000 and 110, B at 010 and 100, alternating along the diagonals. [Function: 1, 3]
+Figure `lec05-kp03-plane-to-face`: First see the plane colored by the second labelling on the left, then the four bottom corners of the cube in the middle, and finally the flattened bottom face on the right: A at 000, 110 and B at 010, 100, alternating along the diagonal. [Function: 1, 3]
 
-![The plane and the bottom face](../../assets/figures/lec05-kp03-plane-to-face.png)
+![Second labelling A = {000, 110, 111}: the four bottom corners alternate A and B along the diagonal, and XOR returns.](../../assets/figures/lec05-kp03-plane-to-face-en.png)
 
 The next question: how do we prove that no cut can separate them?
 
@@ -154,9 +148,9 @@ The next question: how do we prove that no cut can separate them?
 
 Geometrically, the diagonal of A (000 to 110) and the diagonal of B (010 to 100) meet at the midpoint $M=(\tfrac12,\tfrac12,0)$. Since $q$ is linear, $q(M)=\frac{a_1+a_2+2a_0}{2}$ is both the average of the two A scores (positive) and the average of the two B scores (nonpositive).
 
-Figure `lec05-kp03-midpoint`: look at the two diagonals, then at them meeting at the same midpoint $M$; $q(M)$ cannot be both positive and at most 0. [Function: 2, 3]
+Figure `lec05-kp03-midpoint`: First see the two diagonals, then see that they meet at the same midpoint M; the derivation on the right shows that q(M) cannot be both positive and at most 0. [Function: 2, 3]
 
-![The diagonals share a midpoint](../../assets/figures/lec05-kp03-midpoint.png)
+![The diagonals 000—110 and 010—100 share the midpoint M: a₁ + a₂ + 2a₀ must be both > 0 and ≤ 0.](../../assets/figures/lec05-kp03-midpoint-en.png)
 
 The next question: if this cut is not enough, what then?
 
@@ -164,9 +158,9 @@ The next question: if this cut is not enough, what then?
 
 A two-layer network is a row of lines (the hidden layer) plus one output plane (the output layer). What is blocked is **this fixed set of lines plus this one cut**, not every two-layer network: with other lines the codes differ and so does the counterexample. The repair, in intuition: any single corner can be cut off by a plane, so cut each target corner separately and merge the results; that is what one more layer does.
 
-Figure `lec05-kp03-slice-corner`: Three planes cut off the corners 110, 111 and 000 (for example the plane $y_1+y_2-y_3=1.5$ cuts off only 110). Look at which corner each of the three planes cuts off, then at how together they recognize the whole set A. [Added figure] [Function: 1, 3]
+Figure `lec05-kp03-slice-corner`: First see which target corner each of the three cubes cuts off (green stars: 110, 111, 000) with the planes y₁ + y₂ − y₃ = 1.5, y₁ + y₂ + y₃ = 2.5, −y₁ − y₂ − y₃ = −0.5; then see that together they recognise the whole A set. [Function: 1, 3]
 
-![Cutting off single corners](../../assets/figures/lec05-kp03-slice-corner.png)
+![Cutting off single corners: three planes cut off only 110, 111, 000.](../../assets/figures/lec05-kp03-slice-corner-en.png)
 
 ### Extension: the general form
 
@@ -178,9 +172,13 @@ $$
 
 $\{0,1\}^p$ has $2^p$ corners: the corners of a $p$-dimensional cube, a **hypercube**.
 
-Figure `lec05-kp03-hypercubes`: look at the 2 corners of a segment, then at the 4 corners of a square and the 8 corners of a cube: each added bit doubles the number of corners. [Function: 1, 3]
+Figure `lec05-kp03-hypercubes`: First see the 2 corners of a segment, then the 4 corners of a square and the 8 corners of a cube, doubling with every extra bit; the right gives the general form. [Function: 1, 3]
 
-![From a segment to a cube](../../assets/figures/lec05-kp03-hypercubes.png)
+![From a segment to a cube: 2, 4, 8 corners; codes of p lines live in 2ᵖ corners.](../../assets/figures/lec05-kp03-hypercubes-en.png)
+
+Figure `lec05-kp03-practice`: The left is Q1: no input gets 101, so assigning A or B changes no prediction; the right is Q2: both sums are independent of a₃ and the contradiction stays, each with its check. [Function: 1, 2]
+
+![Two exercises with worked answers: 101 changes no prediction; changing only a₃ cannot remove the bottom-face contradiction.](../../assets/figures/lec05-kp03-practice-en.png)
 
 ### Practice
 
