@@ -74,6 +74,7 @@ def main():
         sh(f"git pull -q --rebase origin main; git add .agents/skills/view-from-text-v3/examples; git commit -q -m '同步 {kp.upper()} 範例檔\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01VtCC9aDbSiytjfhjv3FCFV'; git push -q origin main", cwd=R)
     sh(f"git pull -q --rebase origin main; git add logs; git commit -q -m '記錄 {kp.upper()} 簡報重做發佈\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01VtCC9aDbSiytjfhjv3FCFV'; git push -q origin main", cwd=JARVIS)
     print("PUBLISHED", kp, sh("git status -sb | head -1").strip())
+os.chdir(REPO)
 acquire()
 try: main()
 finally: shutil.rmtree(LOCK, ignore_errors=True)

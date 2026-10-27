@@ -76,6 +76,8 @@ JianBauDau 取消了每個 Frame 上方給 KP 標題的標題區,並新增四項
 | N3 / X3 數字沒有算式 | 頁面出現數字卻沒有「=」的代入步驟或〔程式計算〕標記 | 頁面上寫標記 `〔程式計算〕`(英文 `(computed)`,不要被換行拆開),或寫出算式 |
 | G3 Unicode 上下標 | 圖內用了 ², ₁ 等 | 可接受(WARN);公式一律 KaTeX |
 | PNG 圖畫不出公式 | 講義 PNG 用 matplotlib mathtext | 用 `\leq`(不用 `\le`)、`\frac`(不用 `\dfrac`)、`\sqrt{2}`(不用 `\sqrt2`)、不用 `\tfrac`、`bmatrix`、`\iff` |
+| 講義 PNG 失敗(`\\iff`、`\\begin{cases}`、`\\mathbf x`) | matplotlib mathtext 不支援 | 用 `\\Leftrightarrow`、分行寫兩條公式、`\\mathbf{x}` |
+| 發佈後圖說重複 | 舊講義是「圖片在前、圖說在後」,`insert_figs.py` 只認「圖說在前」 | 發佈前先把該講義的圖說區塊調成圖說在前(中英都要),單獨提交(發佈鎖內)再發佈 |
 | 公式框高度 overflow(差幾單位) | `\frac` 的高度估計 | 縮小字級或加大 `formula` 的 `h`;差 < 10 且畫面無問題可接受 |
 | 文字 < 16px 的 lint | svg 文字或小標籤 | 全部 ≥ 16 |
 | 背景跑超過 2 分鐘 | `run_unit.sh` 約 3 分鐘 | `nohup bash -c '...' &` 背景執行,輪詢 `run.log` 直到出現 `screenshots:`;不要用 `pkill -f`(會殺掉自己) |
