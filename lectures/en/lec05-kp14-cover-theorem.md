@@ -49,9 +49,9 @@
 - Four points (the corners of a square): $2^4=16$ labelings, of which 14 are separable.
 - The 2 non-separable ones have the diagonal points in the same class: XOR and its opposite XNOR. Call the corners top-left A, bottom-left B, top-right C, bottom-right D; the two labelings are "A and D in one class, B and C in the other", and the one with the class names swapped.
 
-Figure `lec05-kp14-dichotomy`: First look at the 16 small panels, each one a labeling; then count the green frames (separable) and the red frames (not separable): 14 green, 2 red. [Function: 1]
+Figure `lec05-kp14-dichotomy`: First see the 16 small panels on the left, each one a labeling of the four corners of a square; then count the green frames (separable) and red frames (not separable): 14 green and 2 red, the red ones being the diagonal XOR and XNOR; the right side defines the dichotomy. [Function: 1]
 
-![The 16 labelings: green frames separable, red frames not.](../../assets/figures/lec05-kp14-dichotomy.png)
+![The 16 labelings of the four corners of a square: 14 green ones are separable, the 2 red ones (XOR and XNOR) are not.](../../assets/figures/lec05-kp14-dichotomy-en.png)
 
 The next question: is there a formula that gives the number of separable labelings of $N$ points in $l$ dimensions at once?
 
@@ -78,6 +78,10 @@ For $l=2$, $N=1,\dots,8$:
 | $O(N,2)$ | 2 | 4 | 8 | 14 | 22 | 32 | 44 | 58 |
 | $2^N$ | 2 | 4 | 8 | 16 | 32 | 64 | 128 | 256 |
 
+Figure `lec05-kp14-formula`: First see Cover's formula and the definition of general position on the left, with the two examples N = 4 giving 14 and N = 3 giving 8; then see the table on the right for l = 2 and N = 1 to 8: O against 2 to the N, which starts to fall short at N = 4. [Function: 2]
+
+![Cover's formula O(N, l) = 2 Σ C(N−1, i), and O for l = 2, N = 1 to 8: 2, 4, 8, 14, 22, 32, 44, 58.](../../assets/figures/lec05-kp14-formula-en.png)
+
 ### 3. The probability of separability
 
 With random labels all $2^N$ labelings are equally likely, so the probability of separability is
@@ -94,9 +98,9 @@ Two dimensions ($l=2$), $N=1,\dots,10$:
 
 As soon as $N$ exceeds $l+1=3$ the probability starts to fall; at $N=6$ it is exactly one half.
 
-Figure `lec05-kp14-prob`: First see that the probability is 1 for $N=1$ to 3; then that the curve falls all the way afterwards and crosses 0.5 at $N=6$. [Function: 2]
+Figure `lec05-kp14-prob`: First see the left chart: the horizontal axis is the number of points N and the vertical axis the separability probability, equal to 1 for N = 1 to 3; then see the curve fall steadily and pass 0.5 at N = 6; the right shows the formula P = O/2ᴺ and a few values. [Function: 2]
 
-![Probability of separability for N = 1 to 10 when l = 2.](../../assets/figures/lec05-kp14-prob.png)
+![Separability probability for l = 2 and N = 1 to 10: 1 for N ≤ 3, 0.5 at N = 6, 0.090 at N = 10.](../../assets/figures/lec05-kp14-prob-en.png)
 
 The next question: what does this falling curve look like in higher dimensions?
 
@@ -116,9 +120,9 @@ Let $N=r(l+1)$, where $r$ is "the number of points divided by the degrees of fre
 
 The larger $l$ is, the closer $r=1.5$ is to 1 and $r=2.5$ to 0: the curve looks more like a step, and the step is always at $r=2$.
 
-Figure `lec05-kp14-curves`: First see that each curve is $P$ against $r$ for one $l$; then that all curves pass through the point $(2,1/2)$, and the larger $l$ is, the steeper the curve. [Function: 2]
+Figure `lec05-kp14-curves`: First see the left chart: each curve is P against r for one l; then see that every curve passes (2, ½) and the larger l is, the steeper the curve; the right shows the four-step derivation of why one half, and P at r = 1.5 and 2.5. [Function: 2]
 
-![P against r for different l, all passing through (2, 1/2).](../../assets/figures/lec05-kp14-curves.png)
+![P against r = N/(l + 1) for l = 1, 3, 9, 19, 49, 99, all passing through (2, 1/2).](../../assets/figures/lec05-kp14-curves-en.png)
 
 ### 5. A random experiment
 
@@ -137,9 +141,9 @@ The formula is theory; now the measurement.
 
 The standard error of 1500 trials is about $\sqrt{0.25/1500}\approx0.013$ (near probability 0.5; about 0.009 for $N=4$), so both gaps are about one standard error or less (computed by a program).
 
-Figure `lec05-kp14-mc`: First look at the two groups of bars, $N=4$ and $N=6$, each with a "formula" bar and a "measured" bar; then compare the heights of the two bars: nearly the same. [Function: 3]
+Figure `lec05-kp14-mc`: First see the two groups of bars, N = 4 and N = 6, each with a formula bar and a measured bar; then compare their heights: nearly the same; the right shows the setup and the gaps 0.010 and 0.003. [Function: 3]
 
-![Comparison of the formula and the random experiment.](../../assets/figures/lec05-kp14-mc.png)
+![Formula against random trials: 0.875 against 0.865 at N = 4 and 0.500 against 0.503 at N = 6.](../../assets/figures/lec05-kp14-mc-en.png)
 
 ### 6. The effect of raising the dimension
 
@@ -156,9 +160,9 @@ Figure `lec05-kp14-mc`: First look at the two groups of bars, $N=4$ and $N=6$, e
 
 The 0.494 and the 0.503 of section 5 are two different samples under the same condition; the gap is within sampling error, and both agree with the formula's 0.5.
 
-Figure `lec05-kp14-lift`: First see that the bar before lifting is about one half, then that the bar after lifting reaches the top (1.0); the only difference between them is the three quadratic coordinates added. [Function: 2]
+Figure `lec05-kp14-lift`: First see the bars before lifting at about one half (0.494), then the bars after lifting at the top (1.000); the right shows the three added quadratic coordinates and N = 6 ≤ l + 1 = 6. [Function: 2]
 
-![Fraction separable before and after raising the dimension.](../../assets/figures/lec05-kp14-lift.png)
+![Separable fraction at N = 6 before and after lifting: 0.494 at l = 2 and 1.000 at l = 5.](../../assets/figures/lec05-kp14-lift-en.png)
 
 ### 7. How many dimensions are enough
 
@@ -172,9 +176,9 @@ Fix $N=100$ and change the dimension $l$:
 
 To separate all random labels by raising the dimension, the dimension must reach more than about half the amount of data.
 
-Figure `lec05-kp14-need`: First see that the horizontal axis is the dimension $l$ and the vertical axis the probability of separability; then that the curve crosses 0.5 near $l=49$ and quickly climbs to nearly 1. [Function: 2]
+Figure `lec05-kp14-need`: First see the left chart: the horizontal axis is the dimension l and the vertical axis the separability probability; then see the curve pass 0.5 near l = 49 and climb quickly toward 1; the right lists the values for l = 40 to 68. [Function: 2]
 
-![Probability of separability against dimension l for N = 100.](../../assets/figures/lec05-kp14-need.png)
+![Separability probability against dimension l at N = 100: 0.5 at l = 49 and 0.9999 at l = 68.](../../assets/figures/lec05-kp14-need-en.png)
 
 ### 8. Separable is not the same as generalizing
 
@@ -189,9 +193,13 @@ Figure `lec05-kp14-need`: First see that the horizontal axis is the dimension $l
 
 Raising the dimension only guarantees that the training data can be separated; only data with a pattern lets you learn something, and generalization has to be looked at separately (Chapter 5).
 
-Figure `lec05-kp14-gen`: First look at the "training" bar: all right; then the "new data" bar: about 50%. The same classifier, two very different numbers. [Function: 3]
+Figure `lec05-kp14-gen`: First see the training bar: all correct; then see the new-data bar: about 50%; the right shows the setup and the result. The same classifier, two very different numbers. [Function: 3]
 
-![Accuracy on training data and on new data.](../../assets/figures/lec05-kp14-gen.png)
+![The same classifier: 100% on training and 50.4% on new data.](../../assets/figures/lec05-kp14-gen-en.png)
+
+Figure `lec05-kp14-practice`: The left is Q1: O(5, 2) = 22 and P = 0.6875; the right is Q2: raising l to 3 gives O(5, 3) = 30 and P = 0.9375, each with its check. [Function: 3]
+
+![Two exercises with worked answers: O(5, 2) = 22, P = 0.6875; O(5, 3) = 30, P = 0.9375.](../../assets/figures/lec05-kp14-practice-en.png)
 
 ### Extension: why one half, exercises and worked solutions
 
