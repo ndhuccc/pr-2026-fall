@@ -50,9 +50,9 @@ $$
 - **Output layer**: the unit that makes the final classification from the codes.
 - **Two-layer network**: hidden layer plus output layer; the inputs only supply coordinates and are not a layer.
 
-Figure `lec05-kp02-net-wiring`: inputs $x_1,x_2$ feed two hidden units $g_1$ (teal) and $g_2$ (violet), each giving one bit, which feed one output unit. Each unit computes a score and its boundary is a line in the plane. Look at the inputs on the left, then at the two hidden units in the middle, and finally at the output unit on the right. [Function: 1]
+Figure `lec05-kp02-net-wiring`: First see the wiring on the left: inputs x1, x2 feed two hidden units (teal, violet), each giving one bit, which feed the output unit; then see the terms on the right: hidden layer, output layer, two-layer network. [Function: 1]
 
-![Wiring of the network](../../assets/figures/lec05-kp02-net-wiring.png)
+![Wiring of the two-layer network: g1 = x1 + x2 - 0.5, g2 = x1 + x2 - 1.5, output score g_out = y1 - y2 - 0.5.](../../assets/figures/lec05-kp02-net-wiring-en.png)
 
 The next question: how does each hidden unit turn a score into a bit?
 
@@ -67,9 +67,9 @@ $$
 
 Every point gets two bits $y_1,y_2$; the next section walks one point through and then names this pair of bits. The next question: walk a concrete point through.
 
-Figure `lec05-kp02-input-sides`: the same picture with the positive side of each line shaded and marked by an arrow; where the colours overlap, both lines are on the positive side. Look at the arrow beside each line (the positive side), then at the region where the colours overlap. [Function: 1, 3]
+Figure `lec05-kp02-input-sides`: First see the left plot: the positive side of each line is shaded and marked by an arrow, and where the colours overlap both lines are positive; then see the step rule on the right: a positive score gives 1, otherwise 0. [Function: 1, 3]
 
-![Positive sides of the two lines](../../assets/figures/lec05-kp02-input-sides.png)
+![The positive sides of the lines x1 + x2 = 0.5 and 1.5, and the step rule y_j = 1 if g_j > 0, otherwise 0.](../../assets/figures/lec05-kp02-input-sides-en.png)
 
 ### 3. Walk the point $(0,1)$ through
 
@@ -79,9 +79,9 @@ Figure `lec05-kp02-input-sides`: the same picture with the positive side of each
 - Into the second line: $g_2=0+1-1.5=-0.5\le 0$, so $y_2=0$.
 - The two bits written together, $\mathbf y=[y_1,y_2]=(1,0)$, form the **hidden code**, like two position labels attached to the point. The flow reads top to bottom: input, two scores, step rule, hidden code. The next question: what code does each of the four input points get?
 
-Figure `lec05-kp02-bits-example`: the star is the point $(0,1)$, labelled with its two scores and two bits. Look at the two scores of the star, then at the two bits they become through the step. [Function: 1, 2]
+Figure `lec05-kp02-bits-example`: First see the input (0, 1) on top, then the score and bit of each line: g1 = 0.5 gives y1 = 1 and g2 = -0.5 gives y2 = 0; finally see the combined hidden code (1, 0), with the small plot marking the point. [Function: 1, 2]
 
-![Walk-through](../../assets/figures/lec05-kp02-bits-example.png)
+![Walking (0, 1) through: g1 = 0.5 > 0 so y1 = 1; g2 = -0.5 <= 0 so y2 = 0; hidden code (1, 0).](../../assets/figures/lec05-kp02-bits-example-en.png)
 
 ### 4. The four codes: $(0,0)$, $(1,0)$, $(1,0)$, $(1,1)$
 
@@ -94,9 +94,9 @@ Figure `lec05-kp02-bits-example`: the star is the point $(0,1)$, labelled with i
 
 The two lines cut the plane into three bands with codes $(0,0)$, $(1,0)$, $(1,1)$; both A points sit in the middle band. The next question: how does the output layer classify these three codes?
 
-Figure `lec05-kp02-bands`: three bands, each labelled with its code; both A points lie in the $(1,0)$ band. Look at the three bands, read the code of each, and find which one holds the two A points. [Function: 1, 3]
+Figure `lec05-kp02-bands`: First see the table on the left: the scores, codes and XOR classes of the four points; then see the three bands on the right, each labelled with its code, with both A points inside the (1, 0) band. [Function: 1, 3]
 
-![Three bands](../../assets/figures/lec05-kp02-bands.png)
+![Codes of the four points: (0,0) -> (0,0), (0,1) -> (1,0), (1,0) -> (1,0), (1,1) -> (1,1); the three bands have codes (0,0), (1,0), (1,1).](../../assets/figures/lec05-kp02-bands-en.png)
 
 ### 5. In the plane of codes, one line separates A from B
 
@@ -108,25 +108,25 @@ $$
 
 **Where the output line comes from**: set $g_{\text{out}}=0$ and rearrange to $y_2=y_1-0.5$, a line in the hidden space. $g_{\text{out}}>0$ is equivalent to $y_2<y_1-0.5$, that is, the point lies **below** this line, and the decision is A. Merging the two A points does not matter, because they are the same class.
 
-Figure `lec05-kp02-hidden-plane`: the location $(0,1)$ is hollow because no input lands there; the output line separates $(1,0)$ from the other two locations. Look at the three locations, then at the two sides of the output line. [Function: 1, 3]
+Figure `lec05-kp02-hidden-plane`: First see the left plot: three positions ((1, 0) is where two inputs merged and the hollow (0, 1) has no input) and the output line y2 = y1 - 0.5; then see on the right how the output line arises. [Function: 1, 3]
 
-![Hidden space](../../assets/figures/lec05-kp02-hidden-plane.png)
+![Hidden space: B at (0,0) and (1,1), A at (1,0); output line y2 = y1 - 0.5 with A below it.](../../assets/figures/lec05-kp02-hidden-plane-en.png)
 
 ### 6. Output layer check: predictions $(0,1,1,0)$ are exactly XOR
 
 $(0,0)$: $0-0-0.5=-0.5$, predict B. $(1,0)$: $1-0-0.5=0.5$, predict A (both A inputs). $(1,1)$: $1-1-0.5=-0.5$, predict B. The predictions for the four inputs are $(0,1,1,0)$: 4 of 4 correct. This checks these four points; it is not an accuracy on new data.
 
-Figure `lec05-kp02-hidden-scores`: the output scores at the three locations; only $(1,0)$ is positive. Look at the scores at the three locations, then check the decision that goes with each sign. [Function: 2]
+Figure `lec05-kp02-hidden-scores`: First see the output scores of the three positions on the left, where only (1, 0) is positive; then see the point-by-point check of the four inputs on the right, where the predictions (0, 1, 1, 0) agree with XOR. [Function: 2]
 
-![Output scores](../../assets/figures/lec05-kp02-hidden-scores.png)
+![Output scores: -0.5 at (0,0), 0.5 at (1,0), -0.5 at (1,1); the predictions (0, 1, 1, 0) of the four inputs are all correct.](../../assets/figures/lec05-kp02-hidden-scores-en.png)
 
 ### 7. Back in the original plane: the whole network is the strip between two lines
 
 $y_1=1$ and $y_2=0$ means $x_1+x_2>0.5$ and $x_1+x_2\le 1.5$. This is the strip of the previous KP: the hidden layer makes the two decisions and the output layer asks for both.
 
-Figure `lec05-kp02-strip-net`: both A points inside the strip, both B points outside. Look at the strip between the two lines, then compare the points inside and outside it. [Function: 1, 3]
+Figure `lec05-kp02-strip-net`: First see the left plot: the strip between the two lines, with the two A points inside and the two B points outside; then see the derivation on the right: y1 = 1 and y2 = 0 means 0.5 < x1 + x2 <= 1.5. [Function: 1, 3]
 
-![Strip selected by the network](../../assets/figures/lec05-kp02-strip-net.png)
+![The strip 0.5 < x1 + x2 <= 1.5 selected by the network: the two A points (x1 + x2 = 1) are inside and the two B points (0 and 2) are outside.](../../assets/figures/lec05-kp02-strip-net-en.png)
 
 ### 8. Merging the same class is fine; merging different classes is not
 
@@ -134,9 +134,9 @@ Here the two A points merge and the output layer still separates them.
 
 **Common misconception**: treating the hidden bits as class probabilities, or assuming any merge is harmless. But if points of different classes receive the same code, no output line can separate them and later decisions cannot recover. Note that $y_1,y_2$ are only "on the positive side?" bits, not class probabilities. This construction only proves that XOR can be represented; for other tasks, first check that the hidden codes can be separated by the output layer.
 
-Figure `lec05-kp02-merge-bad`: schematic with an A and a B both at $(1,1)$, the conflict marked by a red ring. Look at the two points at the same location, then at the conflict marked by the red ring. [Function: 1]
+Figure `lec05-kp02-merge-bad`: First see the left: two A points merge into the same code (1, 0), the output layer calls it A and both are right; then see the schematic on the right: A and B share (1, 1), so one must be wrong. [Function: 1]
 
-![Merging different classes](../../assets/figures/lec05-kp02-merge-bad.png)
+![Merging same-class points is harmless (two A points at (1, 0)); merging different classes (schematic: A and B at (1, 1)) makes the output layer wrong on one.](../../assets/figures/lec05-kp02-merge-bad-en.png)
 
 The next KP asks: with more hidden lines, can any labelling be separated?
 
@@ -147,23 +147,23 @@ The next KP asks: with more hidden lines, can any labelling be separated?
 1. What are the predictions for the four inputs? Hint: recompute only the output scores.
 2. Which different inputs are merged, and why does the merge cause no conflict? Hint: look at their labels.
 
-Figure `lec05-kp02-bias-line`: the three locations and the new output line $y_2=y_1+0.5$. Look at the new output line, then at which side each of the three locations is on. [Function: 1, 3]
+Figure `lec05-kp02-bias-line`: First see the question and worked solution on the left: with constant +0.5 the three scores are 0.5, 1.5, 0.5; then see the new output line y2 = y1 + 0.5 on the right, with all three positions on the positive side. [Function: 1, 3]
 
-![Bias changed to +0.5](../../assets/figures/lec05-kp02-bias-line.png)
+![Exercise 1: g_out = y1 - y2 + 0.5 is 0.5, 1.5, 0.5 at (0,0), (1,0), (1,1); output line y2 = y1 + 0.5.](../../assets/figures/lec05-kp02-bias-line-en.png)
 
 **Worked solution of question 1**: (1) The formula is $g_{\text{out}}=y_1-y_2+0.5$. (2) Substitute the three locations: $(0,0)$: $0.5$; $(1,0)$: $1.5$; $(1,1)$: $0.5$. (3) All three scores are positive, so all four inputs are predicted A. (4) Check: XOR is B, A, A, B, so the two B inputs are predicted A: 2 errors. The bias shifted the line so it no longer separates B from A.
 
 **Worked solution of question 2**: (1) The merged inputs are $(0,1)$ and $(1,0)$; both have the hidden code $(1,0)$. (2) Both have the XOR truth A, and merging points of the same class causes no conflict: the output layer only has to call this code A. (3) Check: with this output line the two B points $(0,0)$ and $(1,1)$ are also called A; the cause of the errors is the bias that shifts the line, not the merge.
 
-Figure `lec05-kp02-bias-plus`: the two B locations marked by red rings as errors. Look at the three locations all on the positive side, then at the errors marked by red rings. [Function: 1, 2]
+Figure `lec05-kp02-bias-plus`: First see the question 2 and its worked solution on the left; then see on the right the three positions and verdicts of the four inputs: the two B points are called A because of the shifted line, not the merge. [Function: 1, 2]
 
-![Result with bias +0.5](../../assets/figures/lec05-kp02-bias-plus.png)
+![Exercise 2: (0,1) and (1,0) share code (1,0) and are both A, so no conflict; all three positions are called A and the two B points are wrong.](../../assets/figures/lec05-kp02-bias-plus-en.png)
 
 **The steps cannot be removed** [added]: without the steps, $y_1=x_1+x_2-0.5$ and $y_2=x_1+x_2-1.5$; substituting into $g_{\text{out}}=y_1-y_2-0.5$ gives $(x_1+x_2-0.5)-(x_1+x_2-1.5)-0.5=0.5$, independent of $x$, so every point is predicted A and XOR has 2 errors. A combination of linear expressions is linear again, so the nonlinearity has to come from the steps.
 
-Figure `lec05-kp02-no-step`: the whole plane predicts A, the two B points marked by red rings. Look at the whole plane in one colour, then at the errors marked by red rings. [Function: 1, 2]
+Figure `lec05-kp02-no-step`: First see the derivation on the left: without the step g_out simplifies to the constant 0.5; then see the right plot: the whole plane predicts A and the two B points are marked wrong with red rings. [Function: 1, 2]
 
-![No steps](../../assets/figures/lec05-kp02-no-step.png)
+![Without the step: g_out = (x1 + x2 - 0.5) - (x1 + x2 - 1.5) - 0.5 = 0.5, every point is called A and XOR gets 2 wrong.](../../assets/figures/lec05-kp02-no-step-en.png)
 
 ## Terms and sources
 
