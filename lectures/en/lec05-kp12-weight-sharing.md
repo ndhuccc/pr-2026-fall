@@ -54,9 +54,9 @@
 - Shifting $x$ right by two columns gives $Tx$, with the stroke in column 3, not cut off.
 - The window moves one cell at a time with no padding, so there are $4\times4=16$ legal top-left positions.
 
-Figure `lec05-kp12-idea`: [Supplement] First look at the first row: the yellow frame is one 3×3 window (the receptive field) on the 6×6 image, the shared kernel K has 1s in its middle column, and the window scores $1+1+1=3$; then the second row: the same three-cell stroke shifts right by two columns, and what we want is an unchanged class, not unchanged numbers. [Function: 1, 2]
+Figure `lec05-kp12-idea`: [Supplement] First see the left: the yellow frame is a 3×3 window (receptive field) on a 6×6 image, and the same three-cell stroke is shifted two columns right; the right shows the shared kernel K (ones in the middle column) and the window score 1 + 1 + 1 = 3. We want the class to stay, not every number. [Function: 1, 2]
 
-![A 6×6 image with one window, the 3×3 shared kernel, the score 3, and the stroke shifted by two columns.](../../assets/figures/lec05-kp12-idea-en.png)
+![A window on a 6×6 image, the 3×3 shared kernel, score 3, and the stroke shifted two columns right.](../../assets/figures/lec05-kp12-idea-en.png)
 
 
 One position sees nine numbers; different positions see different data but can use the same decision rule.
@@ -83,9 +83,9 @@ $$
 2. The overlap of the window rows $i$ to $i+2$ with the stroke rows 1 to 3 is $2,3,2,1$ for $i=0,1,2,3$; that is the first column $2,3,2,1$.
 3. After the shift the stroke is in column 3 and only windows with $j=2$ touch it; the pattern of scores is the same, the position moves from column 0 to column 2.
 
-Figure `lec05-kp12-maps`: [Supplement] First look at the two rows: the same kernel applied to x and to Tx gives feature maps whose bright column is column 0 for F(x) and column 2 for F(Tx); then the right-hand readout: both maximums are $z=3$. The response moves with the stroke (equivariance); the readout does not change (invariance). [Function: 2]
+Figure `lec05-kp12-maps`: [Supplement] First see the two 4×4 feature maps on the left: F(x) is bright in column 0 (2, 3, 2, 1) and F(Tx) in column 2; then see the maximum on the right, z = 3 for both. The response moves with the stroke (equivariance) and the read-out does not change with position (invariance). [Function: 2]
 
-![Two 4×4 feature maps whose bright column moves from column 0 to column 2, both with maximum 3.](../../assets/figures/lec05-kp12-maps-en.png)
+![Two 4×4 feature maps whose bright part moves from column 0 to column 2, both with maximum 3.](../../assets/figures/lec05-kp12-maps-en.png)
 
 - **Translation equivariance**: when the input is shifted, the output is shifted in the corresponding way, written $F(Tx)=TF(x)$. Usually $F(Tx)\ne F(x)$ here, because the high-score position changed.
 - **Max pooling**: take only the maximum of the whole feature map, $z=\max_{i,j}F(x)_{ij}$. Here $z=3$ before and after the shift.
@@ -118,9 +118,13 @@ This reduction needs "the sharing assumption fits the task"; fewer parameters do
 
 If some paths also have an activation, its derivative is already inside $\delta_p$ and must not be left out or counted twice.
 
-Figure `lec05-kp12-count`: [Supplement] First look at the two 4×4 arrays of small squares: on the left every position owns 10 parameters ($16\times10=160$), on the right all positions share one set ($9+1=10$); then the three boxes below: the shared gradient, the numeric example $0.2\times3+(-0.1)\times1=0.5$ and the update $k=1-0.1\times0.5=0.95$. [Function: 1, 3]
+Figure `lec05-kp12-count`: [Supplement] First see the left: every position has its own 10 parameters, 16 × 10 = 160; then the right: all positions share one set, 9 + 1 = 10. All sixteen positions are still computed. [Function: 1, 3]
 
-![Parameters 160 without sharing and 10 with it, the shared gradient and the update of k.](../../assets/figures/lec05-kp12-count-en.png)
+![160 parameters without sharing and 10 with sharing.](../../assets/figures/lec05-kp12-count-en.png)
+
+Figure `lec05-kp12-grad`: [Supplement] First see the formula on top: the shared gradient is the sum of δ times x over positions; then the two products 0.6 and −0.1 with total gradient 0.5; the right updates k = 1 − 0.1 × 0.5 = 0.95. [Function: 2, 3]
+
+![Shared gradient 0.2×3 + (−0.1)×1 = 0.5 and the update k = 0.95.](../../assets/figures/lec05-kp12-grad-en.png)
 
 The next question: besides sharing, what other routes lead to invariance to shifts?
 
@@ -134,9 +138,9 @@ Local sharing is only one architectural prior. A real system can combine the thr
 | Architectural constraint | shared weights plus suitable pooling, stating which computations must be the same | holds only for compatible transformations |
 | Data augmentation | create more training examples with reasonable transformations | finite examples usually do not guarantee invariance under all transformations |
 
-Figure `lec05-kp12-routes`: [Supplement] First look at the three column headings (invariant features, architecture constraint, data augmentation); then compare the how and the risk of each. [Function: 1, 2]
+Figure `lec05-kp12-routes`: [Supplement] First see the three column titles (invariant features, architectural constraints, data augmentation); then compare the method and the risk in each column. [Function: 1, 2]
 
-![Three routes to invariance with their approach and risk.](../../assets/figures/lec05-kp12-routes-en.png)
+![The method and risk of the three routes to invariance.](../../assets/figures/lec05-kp12-routes-en.png)
 
 ### 5. Geometric sharing in higher-order input products
 
@@ -148,9 +152,9 @@ Multiplying two pixels brings "the geometric relation of a pair of positions" in
 
 **Under a shift, what stays the same?** Adding the same displacement $t$ to both end points leaves the difference vector unchanged: $(p_k+t)-(p_j+t)=p_k-p_j$. So the pairs that can share a coefficient are those with the same displacement vector.
 
-Figure `lec05-kp12-geometry`: [Supplement] First look at the left panel: the two blue lines both have displacement (1,1) and can share, the orange line has displacement (2,2) and cannot although the slope is equal; then the middle circle: (1,0) and (0,1) both have length 1; finally the right panel: the squared norm is the same but a linear term makes the two scores differ. [Function: 2]
+Figure `lec05-kp12-geometry`: [Supplement] First see the left: both blue lines have displacement (1,1) and can share; the orange line has displacement (2,2), same slope but no sharing; then see the circle on the right: (1,0) and (0,1) both have length 1. [Function: 2]
 
-![Pairs with equal displacement share, pairs with equal length share, and a symmetric square term does not make the whole model symmetric.](../../assets/figures/lec05-kp12-geometry-en.png)
+![Pixel pairs with equal displacement can share, and so can pairs of equal length.](../../assets/figures/lec05-kp12-geometry-en.png)
 
 So "the same slope is enough" is too rough; for the whole model to be invariant, the single-pixel terms, the boundary handling and the read-out must also meet the same symmetry requirement.
 
@@ -176,6 +180,10 @@ A special sum of squares needs only one extra coefficient, but "one term has the
 
 Next step: first ask "which transformation should keep the label", then decide the features, the sharing rule and the read-out; do not only ask "is sharing always better".
 
+Figure `lec05-kp12-square`: [Supplement] First see the model on top, v = b + Σaᵢxᵢ + cΣxᵢ²; then see that (1,0) and (0,1) both have sum of squares 1, but with a = (1,0) the scores b + 1 + c and b + c differ: one symmetric term does not make the model symmetric. [Function: 2]
+
+![The square-term case: equal sums of squares, but the linear term gives the two points different scores.](../../assets/figures/lec05-kp12-square-en.png)
+
 ### 7. Small exercises and a parameter-count check
 
 Change the image size and compute again, then describe the output with the "equivariance" and "invariance" formulas, checking that you keep the number of positions apart from the number of parameters.
@@ -193,13 +201,9 @@ Change the image size and compute again, then describe the output with the "equi
 
 **Exercise 2, worked solution**: A high-score position that moves with the input is equivariance; only with suitable pooling and under the conditions can an invariant feature follow.
 
-Figure `lec05-kp12-maps-practice`: [Supplement] The exercise puts the same three-cell stroke in an 8×8 image and shifts it right by two columns; the figure shows 6×6 feature maps. First see that the bright cells on the left and right differ by two columns, then compare the two maxima, both 3. [Function: 2]
+Figure `lec05-kp12-solution`: [Supplement] The left is Q1: an 8×8 input gives a 6×6 feature map, 360 parameters without sharing and 10 with it; the right is Q2: F(Tx) = TF(x), equivariance. [Function: 2]
 
-![The 8 by 8 exercise gives 6 by 6 feature maps; the maximum is 3 before and after the shift.](../../assets/figures/lec05-kp12-maps-practice.png)
-
-Figure `lec05-kp12-solution`: [Supplement] Read the three boxes from left to right: the number of positions $6\times6=36$, not shared $36\times10=360$, shared $9+1=10$. [Function: 2]
-
-![Solution of exercise 1 in three boxes: 36 positions, 360 parameters, 10 parameters.](../../assets/figures/lec05-kp12-solution-en.png)
+![Solutions: 36 positions, 360 parameters, 10 parameters; a high-score position that moves with the input is equivariance.](../../assets/figures/lec05-kp12-solution-en.png)
 
 ### Extension: exact window computation, boundaries and gradient
 
@@ -223,6 +227,10 @@ $$
 $$
 
 Under a locally linear score, the second factor is the input $x_p$ at that position (see section 3).
+
+Figure `lec05-kp12-exact`: [Supplement] First see the exact window formula r_ij and the chain rule of the shared gradient on the left; then the three boundary cases of a finite grid on the right: the object leaving the frame, incompatible padding or stride, and rotation needing interpolation. [Function: 2]
+
+![The exact shared-window formula and the boundary cases of a finite grid.](../../assets/figures/lec05-kp12-exact-en.png)
 
 ## Terms and source
 
