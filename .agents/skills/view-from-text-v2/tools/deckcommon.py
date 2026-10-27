@@ -1,7 +1,23 @@
 """Shared helpers for the KP decks: one script builds the zh, en (or bilingual) deck, switched by KP_LANG."""
 import json, os, re, sys
 os.environ.setdefault("DECK_WORK", os.getcwd())
-sys.path.insert(0, "/home/user/pr-2026-fall/.agents/skills/view-from-text/tools/deckkit")
+from pathlib import Path
+
+def _skills_root():
+    if os.environ.get("COURSE_SKILLS"):
+        root = Path(os.environ["COURSE_SKILLS"]).expanduser().resolve()
+    elif os.environ.get("COURSE_REPO"):
+        root = Path(os.environ["COURSE_REPO"]).expanduser().resolve() / ".agents/skills"
+    else:
+        root = next((parent / ".agents/skills"
+                     for start in (Path(__file__).resolve().parent, Path.cwd())
+                     for parent in (start, *start.parents)
+                     if (parent / ".agents/skills").is_dir()), None)
+    if root is None or not (root / "view-from-text/tools/deckkit").is_dir():
+        raise RuntimeError("Cannot locate course skills; set COURSE_REPO or COURSE_SKILLS")
+    return root
+
+sys.path.insert(0, str(_skills_root() / "view-from-text/tools/deckkit"))
 import kit
 from kit import AUX, EDGE, MAIN, OK, REF, WARN
 VIO, ROSE = "#a98bd0", "#d08bb0"

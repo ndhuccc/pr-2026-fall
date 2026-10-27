@@ -3,7 +3,9 @@ import os, sys, math
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "tools")); sys.path.insert(0, HERE)
-KATEX = "file:///home/user/pr-2026-fall/.agents/skills/slides-to-html/node_modules/katex/dist"
+from pathlib import Path
+_SK = Path(os.environ.get("COURSE_SKILLS") or (Path(os.environ["COURSE_REPO"]) / ".agents/skills" if os.environ.get("COURSE_REPO") else Path(__file__).resolve().parents[2]))
+KATEX = Path(os.environ.get("KATEX_DIR", _SK / "slides-to-html/node_modules/katex/dist")).resolve().as_uri()
 ROLE = {"blue": (106, 159, 214), "orange": (217, 119, 87), "green": (125, 187, 140), "yellow": (224, 200, 95), "grey": (183, 176, 165), "violet": (169, 139, 208)}
 rgb = lambda r: "rgb(%d,%d,%d)" % ROLE[r]; rgba = lambda r, a: "rgba(%d,%d,%d,%s)" % (*ROLE[r], a)
 L = {
