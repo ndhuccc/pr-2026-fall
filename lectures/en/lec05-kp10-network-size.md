@@ -46,10 +46,6 @@
 
 The figure is a supplementary illustration for continuous prediction, and classification faces the same trade-off: find the main trend first, then look at the small fluctuations of the samples; not every fluctuation should be treated as a rule.
 
-![The same noisy samples and the smooth trend; the broken line is only a teaching illustration, not a network training result.](../../assets/figures/lec05-kp10-trend-en.png)
-
-Figure `lec05-kp10-trend`: [Added] Look at the dots (noisy samples) scattered above and below a smooth curve, then at the broken line passing through every dot: it memorized the noise instead of learning the trend. The broken line is only a teaching illustration, not a network training result. [Function: 1, 2]
-
 Figure `lec05-kp10-trend`: First see the yellow dots (10 noisy samples) scattered around the smooth green curve, then see the red dashed polyline pass through every point: it memorized the noise instead of learning the pattern. The polyline is only a teaching illustration, not a trained network. [Function: 1, 2]
 
 ![The same noisy samples and the smooth trend; the polyline is only a teaching illustration, not a network training result.](../../assets/figures/lec05-kp10-trend-en.png)
