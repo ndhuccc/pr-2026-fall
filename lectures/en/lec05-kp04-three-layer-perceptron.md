@@ -44,11 +44,9 @@
 
 - **Target code**: the code of a corner labelled A, here 000, 110 and 111.
 
-Figure `lec05-kp04-cube-target`: look at the blue circles (A) and orange squares (B) first, then at the red dashed bottom face, where A and B alternate along the diagonals; the hollow 101 is never reached by any input. [Function: 1, 3]
+Figure `lec05-kp04-cube-target`: First see the positions of the blue circles (A) and orange squares (B), then see the bottom face framed by the red dashed line: A and B alternate along its diagonal; no input reaches the hollow circle 101. [Function: 1, 3]
 
-The next question: instead of one cut, in how many steps?
-
-![Target codes and the bottom face](../../assets/figures/lec05-kp04-cube-target.png)
+![The cube's 8 corners: A is 000, 110, 111, and A and B alternate on the bottom face, so one cut fails.](../../assets/figures/lec05-kp04-cube-target-en.png)
 
 ### 2. Three steps: code, one detector per target code, A if any detector fires
 
@@ -58,9 +56,9 @@ The next question: instead of one cut, in how many steps?
 
 The two-layer network of the previous KP had only the first layer and the output layer, without the detector layer in between.
 
-Figure `lec05-kp04-stages`: look at the input first, then at the three stages code, detectors and OR merge, each using only the result of the previous stage. [Function: 1]
+Figure `lec05-kp04-stages`: First see the input, then the three stages of code, detectors and OR merge, each taking only the result of the previous one. [Function: 1]
 
-![The four stages of the network](../../assets/figures/lec05-kp04-stages.png)
+![Three steps: input, then the first hidden layer making the code, the detectors of the second hidden layer, the OR merge of the output layer, then A or B.](../../assets/figures/lec05-kp04-stages-en.png)
 
 ### 3. Detect 110: every wrong bit costs 1 point
 
@@ -80,11 +78,9 @@ The detector outputs the bit $b_t=f(h_t)$: $b_t=1$ if $h_t>0$ and $b_t=0$ otherw
 
 **Example**: 110 has two ones, $h_{110}=y_1+y_2-y_3-1.5$; $y=110$ gives $0.5$ and $y=010$ gives $-0.5$.
 
-Figure `lec05-kp04-cube-one`: look at the score beside each corner for the 110 detector, then find the only positive one, the star (110 itself). [Function: 1, 2]
+Figure `lec05-kp04-cube-one`: First see the score of the 110 detector next to each corner, then find the only positive one, the green dot (110 itself); the right gives the derivation of h = 0.5 − m and the scores for m = 0 to 3. [Function: 1, 2]
 
-The next question: how about the other target codes?
-
-![Scores of the 110 detector](../../assets/figures/lec05-kp04-cube-one.png)
+![Scores of the 110 detector: 110 scores +0.5, one bit off −0.5, two off −1.5 and three off −2.5.](../../assets/figures/lec05-kp04-cube-one-en.png)
 
 ### 4. The same recipe gives three detectors for 000, 110 and 111
 
@@ -94,9 +90,9 @@ $$
 
 000 has no ones so its bias is $-(0-0.5)=+0.5$; 111 has three ones so its bias is $-2.5$. Each detector scores $+0.5$ at its own corner.
 
-Figure `lec05-kp04-three-det`: look at the target code each of the three cubes marks with a star, then compare: each detector's positive score is only at its own corner. [Function: 1, 3]
+Figure `lec05-kp04-three-det`: First see the formulas of the three detectors on the left, then the table of their scores on the eight codes on the right: a positive score appears only at its own corner. [Function: 1, 3]
 
-![Three detectors](../../assets/figures/lec05-kp04-three-det.png)
+![Three detectors h₀₀₀, h₁₁₀, h₁₁₁: each scores +0.5 at 000, 110, 111 respectively.](../../assets/figures/lec05-kp04-three-det-en.png)
 
 ### 5. Code 110 arrives: only the 110 detector fires
 
@@ -106,11 +102,9 @@ Substituting $y=(1,1,0)$:
 - Turned into bits $b_t=f(h_t)$: $(b_{000},b_{110},b_{111})=(0,1,0)$.
 - The output layer adds the bits and subtracts $0.5$: $0+1+0-0.5=0.5>0$, so A.
 
-Figure `lec05-kp04-net-110`: look at the orange lines (the path that fires), then read the score and bit in each node. [Function: 1, 2]
+Figure `lec05-kp04-net-110`: First see the orange lines (the active path), then read the score and bit inside each node: h₁₁₀ = +0.5 fires and the output q = 0.5 gives A. [Function: 1, 2]
 
-The next question: how does the output layer treat all firing cases uniformly?
-
-![110 passing through the network](../../assets/figures/lec05-kp04-net-110.png)
+![Code 110 through the network: scores −1.5, +0.5, −0.5, bits (0,1,0), and q = 0.5 > 0 gives A.](../../assets/figures/lec05-kp04-net-110-en.png)
 
 ### 6. One rule merges them: fired count $k$ minus 0.5, above 0 means A
 
@@ -121,25 +115,25 @@ The output score is $q=b_{000}+b_{110}+b_{111}-0.5=k-0.5$, where $b_t$ is the 0/
 - This is an OR merge.
 - Every code fires at most one detector, so only $k=0$ or $1$ occurs.
 
-Figure `lec05-kp04-or-line`: look at the zero on the number line between $k=0$ and $k=1$, then at B on the left and A on the right. [Function: 1, 2]
+Figure `lec05-kp04-or-line`: First see the zero on the number line between k = 0 and k = 1, then B on the left and A on the right; the table on the right lists q for k = 0 to 3. [Function: 1, 2]
 
-![The OR merge on a number line](../../assets/figures/lec05-kp04-or-line.png)
+![OR merge: q = k − 0.5, with k = 0 called B and k ≥ 1 called A.](../../assets/figures/lec05-kp04-or-line-en.png)
 
 ### 7. All eight corners: only 000, 110 and 111 give A
 
 Do not check only the successful inputs. For $010$ the three detector scores are $-0.5,\ -0.5,\ -1.5$, all bits are 0, the output is $-0.5$ and the answer is B. The unrealized code 101 also gives all zeros, so B; no input ever gets it, so it does not affect classification.
 
-Figure `lec05-kp04-firing`: look at each row as one code, then at the bits of the three detectors; only 000, 110 and 111 make their own detector fire and give A. [Function: 1, 2]
+Figure `lec05-kp04-firing`: First see that each row is one code, then the bits of the three detectors; only 000, 110, 111 each fire their own detector and are called A. [Function: 1, 2]
 
-![Check table for the eight codes](../../assets/figures/lec05-kp04-firing.png)
+![Check table of the eight codes: only 000, 110, 111 are A, and the unused code 101 is B.](../../assets/figures/lec05-kp04-firing-en.png)
 
 ### 8. Back in the input plane: the network gets the three cells 000, 110 and 111 right
 
 The A region is the union of the cells 000, 110 and 111 (110 and 111 are neighbours) with the B cell 010 between them; one cut could not do this and the three-layer network does.
 
-Figure `lec05-kp04-plane-final`: look at the blue A region and the orange B region first, then at the A circles and the B square: all correct. [Function: 1, 3]
+Figure `lec05-kp04-plane-final`: First see the blue A region and the orange B region, then the A circles and B square in the figure: all are classified right; the table on the right lists the code and output of the four points. [Function: 1, 3]
 
-![The A region in the input plane](../../assets/figures/lec05-kp04-plane-final.png)
+![Input plane: three lines cut 8 code regions, the A region is the union of 000, 110, 111, and all four points are right.](../../assets/figures/lec05-kp04-plane-final-en.png)
 
 **Common misconception**: believing that because a three-layer construction exists, the network has learned the weights or is the smallest possible. The construction only proves that this is enough; how the weights come from labelled points is the question of the next KP.
 
@@ -147,24 +141,20 @@ Figure `lec05-kp04-plane-final`: look at the blue A region and the orange B regi
 
 **Overlapping rectangles** [added]: two overlapping rectangles use 4 lines each, so 8 lines cut the plane into cells; A covers 7 of them and needs 7 detectors with this recipe, not 2. The number of original rectangles is not the number of codes after subdivision; the recipe is unchanged.
 
-Figure `lec05-kp04-refine`: look at the orange and purple rectangles, then count the cells numbered 1 to 7: each cell is a code region. [Function: 1, 3]
+Figure `lec05-kp04-refine`: First see the orange and purple rectangles, then count the cells numbered 1 to 7: each cell is one code region and needs one of the 7 detectors. [Function: 1, 3]
 
-![Cells after subdivision](../../assets/figures/lec05-kp04-refine.png)
+![Cells after refining: two overlapping rectangles split into 7 cells, needing 7 detectors.](../../assets/figures/lec05-kp04-refine-en.png)
 
 **Practice**:
 
 1. Write the detector $h_{011}$ for $011$ and compute its score at $y=011$ and $y=111$. Hint: weight $+1$ where the target bit is 1, $-1$ where it is 0, bias $-(\text{number of ones}-0.5)$.
 2. What is the score at $y=010$? Hint: guess first with "every wrong bit costs 1", then substitute to check.
 
-Figure `lec05-kp04-cube-011`: look at the star (target code 011), then think how many bits each corner differs from it. [Function: 1]
-
-![Practice cube](../../assets/figures/lec05-kp04-cube-011.png)
-
 **Worked solution of questions 1 and 2**: (1) Formula: 011 has two ones, the weights are $(-1,+1,+1)$ and the bias is $-(2-0.5)=-1.5$, so $h_{011}=-y_1+y_2+y_3-1.5$. (2) Substitute: $y=011$: $0+1+1-1.5=0.5$; $y=111$: $-1+1+1-1.5=-0.5$. (3) Decision: 011 outputs 1 and 111 outputs 0. (4) Question 2: 010 is one bit from 011, so the score is $0.5-1=-0.5$; substituting $0+1+0-1.5=-0.5$ agrees.
 
-Figure `lec05-kp04-cube-011-scores`: look at the score beside each corner for the 011 detector, then check that only 011 is positive. [Function: 1, 2]
+Figure `lec05-kp04-cube-011-scores`: The left is Q1: h₀₁₁ = −y₁ + y₂ + y₃ − 1.5, scoring +0.5 at y = 011 and −0.5 at y = 111; the right is Q2: the score at 010 is −0.5 by both ways, each with its check. [Function: 1, 2]
 
-![Scores of the 011 detector](../../assets/figures/lec05-kp04-cube-011-scores.png)
+![Two exercises with worked answers: the formula and scores of the 011 detector, and the score −0.5 at 010.](../../assets/figures/lec05-kp04-cube-011-scores-en.png)
 
 ## Terms and sources
 
