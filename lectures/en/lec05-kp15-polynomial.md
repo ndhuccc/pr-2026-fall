@@ -50,9 +50,9 @@ $$
 
 The new coordinates are $y=[x_1,x_2,x_1x_2,x_1^2,x_2^2]$, 6 terms with the bias; $g=w^Ty+w_0$ is linear in the 6 weights.
 
-Figure `lec05-kp15-terms`: First look at the six blocks, each one a term: the bias, two first-order terms, one interaction term, two square terms; then count them: 6 in all. [Function: 1]
+Figure `lec05-kp15-terms`: First see the formula on top: g(x) for two inputs at second order has 6 terms; then see the six blocks below, with the interaction term x1x2 in orange; the right side defines the polynomial classifier and the interaction term. [Function: 1]
 
-![The six blocks of the second-order expansion.](../../assets/figures/lec05-kp15-terms.png)
+![Two inputs, second order: bias, two linear terms, one interaction term and two square terms, 6 terms in all.](../../assets/figures/lec05-kp15-terms-en.png)
 
 The next question: which of these six terms matters most for XOR?
 
@@ -84,9 +84,9 @@ $g=0$ is $x_1+x_2-2x_1x_2=\tfrac14$, a pair of hyperbola branches.
 
 **Example**: for $(0.5,0.5)$, $g=-0.25+1-0.5=+0.25$, on the A side. The same rule is a plane in three dimensions and curved in two.
 
-Figure `lec05-kp15-hyper`: First look at the two curved boundary lines; then see on which side each XOR point falls: $(0,1)$ and $(1,0)$ in the band, $(0,0)$ and $(1,1)$ in the two corners. [Function: 2]
+Figure `lec05-kp15-hyper`: First see the table on the left: after adding x1x2 the four XOR points give g equal to -0.25, +0.75, +0.75, -0.25; then see the right: the hyperbola cuts the plane into two corners and a band, with (0,1) and (1,0) in the band and (0,0) and (1,1) in the corners. [Function: 2]
 
-![The decision boundary (a pair of hyperbolas) and the two classes of points.](../../assets/figures/lec05-kp15-hyper.png)
+![The g values of the four XOR points and the two regions cut by the hyperbola: g = 1/4 - 2uv.](../../assets/figures/lec05-kp15-hyper-en.png)
 
 ### 4. How many terms in all
 
@@ -107,6 +107,10 @@ For $l=2$, $r=1,\dots,5$:
 |---|---:|---:|---:|---:|---:|
 | terms $k$ | 3 | 6 | 10 | 15 | 21 |
 
+Figure `lec05-kp15-kcount`: First see the formula k = (l + r)! / (r! l!) on the left with its two checks; then see the bars on the right: for l = 2 and r = 1 to 5 the counts are 3, 6, 10, 15, 21. [Function: 2]
+
+![The term-count formula and the counts 3, 6, 10, 15, 21 for l = 2 and r = 1 to 5.](../../assets/figures/lec05-kp15-kcount-en.png)
+
 ### 5. The combinatorial explosion
 
 $l=10,r=10$ gives $k=184{,}756$ terms.
@@ -118,9 +122,9 @@ $l=10,r=10$ gives $k=184{,}756$ terms.
 
 It is slow only when the inputs are few: for $l=2$, even $r=10$ is only 66 terms. This foreshadows the "curse of dimensionality" of Chapter 5 (source).
 
-Figure `lec05-kp15-explode`: First see that the horizontal axis is the order and the vertical axis the number of terms (log axis); then compare the lines: the more inputs, the higher the line and the faster it climbs. [Function: 2]
+Figure `lec05-kp15-explode`: First see the left chart: the horizontal axis is the degree and the vertical axis the number of terms (log scale), with three lines for l = 2, 10 and 100; the more inputs, the higher and faster the line climbs, and l = 10, r = 10 gives 184,756 terms. Then see the memory on the right: Φ about 1.48 GB and ΦᵀΦ about 273 GB. [Function: 2]
 
-![Number of terms against order (log axis).](../../assets/figures/lec05-kp15-explode.png)
+![Number of terms against degree (log scale), and the memory at l = 10, r = 10: Φ about 1.48 GB and ΦᵀΦ about 273 GB.](../../assets/figures/lec05-kp15-explode-en.png)
 
 ### 6. Memory
 
@@ -132,10 +136,6 @@ Figure `lec05-kp15-explode`: First see that the horizontal axis is the order and
 | $\Phi^T\Phi$ (used by the normal equation of KP13) | $k\times k$ | about 273 GB |
 
 An ordinary computer's memory cannot hold it (computed by a program).
-
-Figure `lec05-kp15-memory`: First look at the two bars (log axis): $\Phi$ about 1.48 GB, $\Phi^T\Phi$ about 273 GB; then compare them: about 185 times apart. [Function: 2]
-
-![Memory requirements (log axis).](../../assets/figures/lec05-kp15-memory.png)
 
 The next question: the number of terms explodes, but how powerful is a high-order polynomial?
 
@@ -159,9 +159,9 @@ The next question: the number of terms explodes, but how powerful is a high-orde
 
 A low-order polynomial already bends a half-moon boundary: $r=3$ is about 8 percentage points better than a straight line.
 
-Figure `lec05-kp15-moons`: First look at the two curves (training and new-point accuracy) against the order 1 to 10; then at the new-point curve: it peaks near $r=3$ and then falls. The next section explains why. [Function: 3]
+Figure `lec05-kp15-boundary`: First see the left chart: the solid curve is the r = 3 boundary, the dashed line is r = 1, and the blue and orange dots are the two training classes; then see the table on the right: r = 3 reaches 93.2% on new points and the line 84.9%. [Function: 3]
 
-![Training and new-point accuracy for orders 1 to 10.](../../assets/figures/lec05-kp15-moons.png)
+![Two moons with the r = 3 boundary (solid), the r = 1 line (dashed), and the terms and accuracy for r = 1 to 5.](../../assets/figures/lec05-kp15-boundary-en.png)
 
 ### 8. Too high an order
 
@@ -184,9 +184,17 @@ The same experiment, going to higher orders:
 - Training accuracy reaches 100% while the new points drop to 55.5%, close to guessing.
 - The numerics also get worse: the larger the condition number, the more the same tiny error is magnified.
 
-Figure `lec05-kp15-cond`: First see that the horizontal axis is the order and the vertical axis the condition number of the design matrix (semi-log); then that the curve climbs all the way: each extra order multiplies the condition number by roughly a fixed factor. [Function: 2]
+Figure `lec05-kp15-overfit`: First see the left chart: the horizontal axis is the degree from 1 to 10, the blue line is training and the red line is new points; new points peak near r = 3 (93.2%) and then fall to 55.5% while training climbs to 100%. Then see the right: the condition number rises from 3.44×10⁴ at r = 6 to 8.72×10⁸ at r = 10, and the definition of overfitting. [Function: 3]
 
-![Condition number of the design matrix against order (semi-log).](../../assets/figures/lec05-kp15-cond.png)
+![Training and new-point accuracy for degrees 1 to 10, and the condition numbers at r = 6, 8, 9, 10.](../../assets/figures/lec05-kp15-overfit-en.png)
+
+Figure `lec05-kp15-kernel`: First see the left: directly (1 + x·z)² = 4; then see the right: build the 6 new coordinates and add the term-by-term products, 1 + 6 - 4 + 9 + 4 - 12 = 4, the same result. [Function: 2]
+
+![Kernel preview: directly (1 + x·z)² = 4, the same as the sum of the 6 term-by-term products.](../../assets/figures/lec05-kp15-kernel-en.png)
+
+Figure `lec05-kp15-practice`: The left is Q1: k = C(7, 3) = 35 terms; the right is Q2: g(1.5, 1.5) = -1.75 < 0, class B, each with its check. [Function: 3]
+
+![Two exercises with worked answers: k = 35 terms; g(1.5, 1.5) = -1.75, class B.](../../assets/figures/lec05-kp15-practice-en.png)
 
 ### Extension: not building new coordinates, exercises and worked solutions
 
