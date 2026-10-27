@@ -56,9 +56,9 @@ Figure `lec05-kp01-xor-check`: look at the positions of the four points, A on on
 
 This chapter has five knowledge points, one after the other. Each starts from the question left by the previous one.
 
-Figure `lec05-kp00-map`: from top to bottom are KP01 to KP05, with the question left at each step beside the arrows. Follow the arrows first, then go back to the name of each box. [Function: 1]
+Figure `lec05-kp00-map`: From left to right are KP01 to KP05, with the question each KP leaves over below it, which is the starting point of the next KP. Follow the arrows first, then look back at the name of each box. [Function: 1]
 
-![The roadmap of the chapter](../../assets/figures/lec05-kp00-map.png)
+![Roadmap of the chapter: KP01 one line is not enough, KP02 encode first then classify, KP03 codes and limits, KP04 detect code by code, KP05 grow a network from points; the question each leaves over leads to the next.](../../assets/figures/lec05-kp00-map-en.png)
 
 ### 3. The question, answer and what is left for the five knowledge points
 
