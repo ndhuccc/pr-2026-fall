@@ -50,8 +50,11 @@ def course_lock(repo):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    for flag in ("unit-dir", "kp", "pages", "lecture", "map", "caps"):
+    for flag in ("unit-dir", "kp", "pages", "lecture"):
         parser.add_argument("--" + flag, required=True)
+    parser.add_argument("--map", default="map.json")
+    parser.add_argument("--caps", default="caps.json")
+    parser.add_argument("--lecture-figures", choices=("auto", "preserve", "regenerate"), default="auto")
     for flag in ("remove", "en-before", "changelog", "state", "log"):
         parser.add_argument("--" + flag, default="")
     parser.add_argument("--repo", help="Defaults to this tool's course repository")
@@ -69,6 +72,13 @@ def main(argv=None):
         parser.error("--kp and --lecture refer to different units")
     if not args.pages.isdigit() or int(args.pages) < 1:
         parser.error("--pages must be a positive integer")
+    zh_md, en_md = repo / f"lectures/{stem}.md", repo / f"lectures/en/{stem}.md"
+    layout = "split" if en_md.is_file() else "bilingual"
+    figures = args.lecture_figures
+    if figures == "auto":
+        figures = "regenerate" if layout == "split" else "preserve"
+    if layout == "bilingual" and figures == "regenerate":
+        parser.error("A bilingual lecture keeps approved figures; use --lecture-figures preserve")
     others = [repo_root(path) for path in args.sync_to]
     if repo in others or len(set(others)) != len(others):
         parser.error("--sync-to must name distinct additional repositories")
@@ -78,7 +88,9 @@ def main(argv=None):
     removed = [name for name in args.remove.split(",") if name]
     if any(Path(name).name != name or not name.startswith(prefix + "-") or not name.endswith(".png") for name in removed):
         parser.error("--remove must contain PNG basenames belonging to the selected unit")
-    plan = dict(repo=str(repo), lecture=stem, prefix=prefix,
+    if figures == "preserve" and removed:
+        parser.error("--remove cannot be used while preserving lecture figures")
+    plan = dict(repo=str(repo), lecture=stem, prefix=prefix, lecture_layout=layout, lecture_figures=figures,
                 slides=[f"slides/{stem}.jbd.json", f"slides/{stem}-en.jbd.json"],
                 log_file=str(log) if log else None, sync_to=list(map(str, others)),
                 remove=removed)
@@ -88,14 +100,14 @@ def main(argv=None):
         return 0
     tools = repo / ".agents/skills/view-from-text-v3/tools"
     sources = [unit / f"W_{lang}/draft.jbd.json" for lang in ("zh", "en")]
-    sources += [unit / args.map, unit / args.caps, unit / f"{kp}_pages.py",
-                unit / f"{kp}_text.py", unit / f"{kp}_nums.py"]
+    sources += [unit / f"{kp}_pages.py", unit / f"{kp}_text.py", unit / f"{kp}_nums.py"]
+    if figures == "regenerate":
+        sources += [unit / args.map, unit / args.caps]
     for path in sources:
         if not path.is_file():
             parser.error(f"Missing input: {path}")
-    zh_md, en_md = repo / f"lectures/{stem}.md", repo / f"lectures/en/{stem}.md"
-    if not zh_md.is_file() or not en_md.is_file():
-        parser.error("Both approved lecture files must exist in the selected course")
+    if not zh_md.is_file():
+        parser.error("The approved lecture must exist in the selected course")
     for target in [repo] + others:
         if run(target, "git", "status", "--porcelain").stdout.strip():
             parser.error(f"Working tree is not clean: {target}")
@@ -104,27 +116,28 @@ def main(argv=None):
         run(repo, "git", "pull", "--rebase", "origin", "main")
         for lang, suffix in (("zh", ""), ("en", "-en")):
             shutil.copy(unit / f"W_{lang}/draft.jbd.json", repo / f"slides/{stem}{suffix}.jbd.json")
-        run(repo, sys.executable, tools / "make_specs.py", unit, kp, args.pages,
-            "--repo", repo, "--lecture", lecture_prefix(stem))
-        run(repo, sys.executable, "-W", "ignore", tools / "gen_figs.py",
-            unit / f"{kp}_specs.py", unit / args.map, repo / "assets/figures")
-        for name in removed:
-            fid = name[:-4]
-            for path in (zh_md, en_md):
-                text = path.read_text(encoding="utf-8")
-                pattern = r"(圖說|Figure) \x60%s\x60.*?%s(-en)?\.png\)\n\n?" % (re.escape(fid), re.escape(fid.split(kp + "-")[-1]))
-                path.write_text(re.sub(pattern, "", text, flags=re.S), encoding="utf-8")
-        caps = json.loads((unit / args.caps).read_text(encoding="utf-8"))
-        translations = dict(pair.split("=", 1) for pair in args.en_before.split(";") if pair)
-        for caption in caps:
-            caption.setdefault("before_en", translations.get(caption["before"], caption["before"]))
-        cap_path = Path(temporary) / "captions.json"
-        cap_path.write_text(json.dumps(caps, ensure_ascii=False), encoding="utf-8")
-        run(repo, sys.executable, tools / "insert_figs.py", cap_path, zh_md, en_md, "--prefix", prefix)
-        for name in removed:
-            path = repo / "assets/figures" / name
-            if path.exists():
-                run(repo, "git", "rm", "--", path)
+        if figures == "regenerate":
+            run(repo, sys.executable, tools / "make_specs.py", unit, kp, args.pages,
+                "--repo", repo, "--lecture", lecture_prefix(stem))
+            run(repo, sys.executable, "-W", "ignore", tools / "gen_figs.py",
+                unit / f"{kp}_specs.py", unit / args.map, repo / "assets/figures")
+            for name in removed:
+                fid = name[:-4]
+                for path in (zh_md, en_md):
+                    text = path.read_text(encoding="utf-8")
+                    pattern = r"(圖說|Figure) \x60%s\x60.*?%s(-en)?\.png\)\n\n?" % (re.escape(fid), re.escape(fid.split(kp + "-")[-1]))
+                    path.write_text(re.sub(pattern, "", text, flags=re.S), encoding="utf-8")
+            caps = json.loads((unit / args.caps).read_text(encoding="utf-8"))
+            translations = dict(pair.split("=", 1) for pair in args.en_before.split(";") if pair)
+            for caption in caps:
+                caption.setdefault("before_en", translations.get(caption["before"], caption["before"]))
+            cap_path = Path(temporary) / "captions.json"
+            cap_path.write_text(json.dumps(caps, ensure_ascii=False), encoding="utf-8")
+            run(repo, sys.executable, tools / "insert_figs.py", cap_path, zh_md, en_md, "--prefix", prefix)
+            for name in removed:
+                path = repo / "assets/figures" / name
+                if path.exists():
+                    run(repo, "git", "rm", "--", path)
         run(repo, sys.executable, repo / "scripts/check_slides.py",
             repo / f"slides/{stem}.jbd.json", repo / f"slides/{stem}-en.jbd.json")
         run(repo, sys.executable, repo / "scripts/build_docs.py")
@@ -138,8 +151,9 @@ def main(argv=None):
                 archived.append(destination)
         for source_name, suffix in ((args.caps, "caps.json"), (args.map, "map.json")):
             destination = examples / f"{kp}_{suffix}"
-            shutil.copy(unit / source_name, destination)
-            archived.append(destination)
+            if (unit / source_name).is_file():
+                shutil.copy(unit / source_name, destination)
+                archived.append(destination)
         if args.changelog:
             path = repo / "CHANGELOG.md"
             lines = path.read_text(encoding="utf-8").splitlines(keepends=True)

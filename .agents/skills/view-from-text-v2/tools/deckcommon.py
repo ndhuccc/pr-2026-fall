@@ -4,8 +4,8 @@ os.environ.setdefault("DECK_WORK", os.getcwd())
 from pathlib import Path
 
 def _skills_root():
-    if os.environ.get("COURSE_SKILLS"):
-        root = Path(os.environ["COURSE_SKILLS"]).expanduser().resolve()
+    if os.environ.get("COURSE_SKILLS") or os.environ.get("SKILLS_DIR"):
+        root = Path(os.environ.get("COURSE_SKILLS") or os.environ["SKILLS_DIR"]).expanduser().resolve()
     elif os.environ.get("COURSE_REPO"):
         root = Path(os.environ["COURSE_REPO"]).expanduser().resolve() / ".agents/skills"
     else:

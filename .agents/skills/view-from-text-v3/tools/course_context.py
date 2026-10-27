@@ -60,6 +60,7 @@ def load_unit(filename):
             skills = root / ".agents" / "skills"
             os.environ["COURSE_REPO"] = str(root)
             os.environ["COURSE_SKILLS"] = str(skills)
+            os.environ["SKILLS_DIR"] = str(skills)
             for part in ("view-from-text/tools/deckkit", "view-from-text-v2/tools",
                          "view-from-text-v2/examples", "view-from-text-v3/tools"):
                 sys.path.insert(0, str(skills / part))

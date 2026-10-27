@@ -13,10 +13,10 @@ description: Turn a lecture into a JianBauDau deck of native-node information gr
 
 - 預設課程是**本技能所在的課程資料夾**，由程式位置向上尋找 .agents/skills；不以其他課程名稱或固定電腦路徑為預設。
 - 可用 --repo <課程根目錄> 明確選課，或設定 COURSE_REPO。指令列 --repo 優先。
-- new_unit.py 的 --lecture lecNN 必填；完整講義檔名由發布時的 --lecture lecNN-kpNN-主題 指定，工具檢查章節與 KP 一致。
+- new_unit.py 必須以 --lecture lecNN 指定章節（相容明確設定的 LEC 環境變數）；完整講義檔名由發布時的 --lecture lecNN-kpNN-主題 指定，工具檢查章節與 KP 一致。
 - 新單元的 course-unit.json 保存課程根目錄、章節與課名；產生的程式依此載入。課程搬家後可更新設定檔或以 COURSE_REPO 指向新位置。
 - 中文課名取自本課 semester.toml，缺少時讀 COURSE_STATE.md 的課程欄；英文課名只使用明確設定的 course_name_en（或 extra.course_name_en），缺少時省略課名前綴。可用 --course-zh／--course-en 覆寫。
-- 工具執行時將 COURSE_SKILLS 指向本課 .agents/skills。複製舊範例到課程以外的工作目錄時，先設定 COURSE_REPO 或 COURSE_SKILLS。
+- 工具執行時將 COURSE_SKILLS 指向本課 .agents/skills，並相容既有腳本的 SKILLS_DIR。複製舊範例到課程以外的工作目錄時，先設定 COURSE_REPO 或 COURSE_SKILLS。
 - examples/ 是歷史教材設計範例；其中的 PR 課名與 lec05 是範例內容，不是新課程的預設。新教材以本課已核准講義為準。
 
 ## 流程（每個單元 KP）
@@ -38,6 +38,8 @@ description: Turn a lecture into a JianBauDau deck of native-node information gr
 
 ## 發布
 
+**依本課講義結構處理**：有 lectures/en/<講義檔名>.md 時，處理中英分檔及雙語配圖；僅有 lectures/<講義檔名>.md 時，視為中英同檔，預設保留既有核准配圖，不要求新增 lectures/en/。IDL 已核准的 Matplotlib 圖維持原樣。預覽會列出 lecture_layout 與 lecture_figures；可用 --lecture-figures preserve 明確保留配圖。
+
 在已核准的課程工作副本執行：
 
     python3 tools/publish_unit.py --unit-dir <工作目錄> --kp kpNN --pages <頁數> \
@@ -50,7 +52,7 @@ description: Turn a lecture into a JianBauDau deck of native-node information gr
 實際發布會：
 1. 檢查本課工作副本及必要輸入；以依課程根目錄計算的發布鎖避免同課同時寫入。
 2. 把 W_zh/draft.jbd.json、W_en/draft.jbd.json 放到本課 slides/<講義檔名>.jbd.json 與 <講義檔名>-en.jbd.json。
-3. 使用本課 tools/make_specs.py、gen_figs.py 產生雙語講義 PNG，並以 insert_figs.py 更新本課雙語講義圖說。圖說包含讀圖指引、〔功能：N〕與完整 alt 數字。
+3. 講義中英分檔且需重製配圖時，使用本課 tools/make_specs.py、gen_figs.py 產生雙語講義 PNG，並以 insert_figs.py 更新圖說；中英同檔時保留既有配圖。圖說包含讀圖指引、〔功能：N〕與完整 alt 數字。
 4. 檢查這兩份簡報，建置網站；失敗就停止，不提交推送。
 5. 保存本單元的數字、頁面、文字、圖說及映射範例，更新本課 CHANGELOG.md、COURSE_STATE.md，提交推送 main。
 6. 檔名或內容配置有變動時，先依 AGENTS.md 同步 schedule.md 及連結，確保檢查的是最終版本。
@@ -92,4 +94,4 @@ description: Turn a lecture into a JianBauDau deck of native-node information gr
     python3 -m unittest discover -s .agents/skills/view-from-text-v3/tests -v
     bash -n .agents/skills/view-from-text-v3/tools/run_unit.sh
 
-測試只用臨時課程資料夾與標準函式庫，驗證兩課路徑、章節、工作目錄搬移、單頁圖規格、雙語圖說與 dry-run 無寫入；不執行教材發布。GitHub 的 v3-portability 工作流程使用相同檢查。
+測試只用臨時課程資料夾與標準函式庫，驗證兩課路徑、章節、中英同檔／分檔、保留核准配圖、工作目錄搬移、單頁圖規格、雙語圖說與 dry-run 無寫入；不執行教材發布。GitHub 的 v3-portability 工作流程使用相同檢查。

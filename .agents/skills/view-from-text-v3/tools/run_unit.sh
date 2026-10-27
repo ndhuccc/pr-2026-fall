@@ -8,6 +8,7 @@ COURSE_REPO=$(cd "${COURSE_REPO:-$DEFAULT_REPO}" && pwd) || exit 1
 export COURSE_REPO
 SK="$COURSE_REPO/.agents/skills"
 export COURSE_SKILLS="$SK"
+export SKILLS_DIR="$SK"  # compatibility with existing unit scripts
 KP=$1; DK=$2; cd "$KP" || exit 1
 for f in *_text.py $DK.py; do python3 -c "import ast,sys;ast.parse(open('$f').read())" || { echo "SYNTAX ERROR in $f"; exit 1; }; done
 export KATEX_DIR="${KATEX_DIR:-$SK/slides-to-html/node_modules/katex/dist}"

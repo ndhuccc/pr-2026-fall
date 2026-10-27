@@ -14,12 +14,14 @@ def main(argv=None):
     parser.add_argument("kp")
     parser.add_argument("zh")
     parser.add_argument("en")
-    parser.add_argument("--lecture", required=True, help="Lecture prefix, for example lec07")
+    parser.add_argument("--lecture", default=os.environ.get("LEC"), help="Lecture prefix, for example lec07; LEC is a legacy alias")
     parser.add_argument("--repo", help="Course repository; defaults to this tool's repository")
     parser.add_argument("--course-zh")
     parser.add_argument("--course-en")
     args = parser.parse_args(argv)
     root = repo_root(args.repo)
+    if not args.lecture:
+        parser.error("--lecture is required (or set LEC explicitly)")
     lecture = lecture_prefix(args.lecture)
     kp = args.kp.lower()
     if not re.fullmatch(r"kp\d+", kp):

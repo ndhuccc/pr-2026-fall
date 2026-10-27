@@ -19,7 +19,7 @@ class CoursePaths(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.base = Path(self.temp.name)
         self.env = {k: v for k, v in os.environ.items()
-                    if k not in ("COURSE_REPO", "COURSE_SKILLS", "PYTHONPATH")}
+                    if k not in ("COURSE_REPO", "COURSE_SKILLS", "SKILLS_DIR", "LEC", "PYTHONPATH")}
         self.env["PYTHONDONTWRITEBYTECODE"] = "1"
 
     def course(self, name, title):
@@ -159,6 +159,34 @@ class CoursePaths(unittest.TestCase):
         self.assertIn("lec08-kp03-overview.png", zh.read_text(encoding="utf-8"))
         self.assertIn("lec08-kp03-overview-en.png", en.read_text(encoding="utf-8"))
 
+    def test_publication_follows_single_or_split_lecture_layout(self):
+        for name, split in (("idl", False), ("pr", True)):
+            with self.subTest(course=name):
+                root = self.course(name, name)
+                lecture = root / "lectures/lec08-kp03-topic.md"
+                lecture.parent.mkdir()
+                lecture.write_text("Approved bilingual lecture\n", encoding="utf-8")
+                if split:
+                    english = root / "lectures/en/lec08-kp03-topic.md"
+                    english.parent.mkdir()
+                    english.write_text("Approved English lecture\n", encoding="utf-8")
+                result = self.execute(TOOLS / "publish_unit.py", "--repo", root,
+                                      "--unit-dir", self.base / "not-created", "--kp", "kp03",
+                                      "--pages", "1", "--lecture", "lec08-kp03-topic", "--dry-run")
+                plan = json.loads(result.stdout)
+                self.assertEqual(plan["lecture_layout"], "split" if split else "bilingual")
+                self.assertEqual(plan["lecture_figures"], "regenerate" if split else "preserve")
+                self.assertEqual(lecture.read_text(encoding="utf-8"), "Approved bilingual lecture\n")
+
+    def test_bilingual_lecture_cannot_accidentally_replace_figures(self):
+        root = self.course("idl", "深度學習導論")
+        result = self.execute(TOOLS / "publish_unit.py", "--repo", root,
+                              "--unit-dir", self.base, "--kp", "kp03", "--pages", "1",
+                              "--lecture", "lec08-kp03-topic", "--lecture-figures", "regenerate",
+                              "--dry-run", check=False)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("keeps approved figures", result.stderr)
+
     def test_python_sources_parse_and_runtime_paths_are_portable(self):
         paths = list(SKILL.rglob("*.py"))
         paths += [SKILL.parent / "view-from-text-v2/tools/deckcommon.py",
@@ -169,6 +197,7 @@ class CoursePaths(unittest.TestCase):
                 ast.parse(source, filename=str(path))
                 self.assertNotIn("/home/" + "user/pr-2026-fall", source)
                 self.assertNotIn("/tmp/" + "claude-", source)
+                self.assertNotIn("/workspace/" + "idl-2026-fall", source)
 
 
 if __name__ == "__main__":

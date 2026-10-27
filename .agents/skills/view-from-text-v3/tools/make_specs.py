@@ -21,7 +21,7 @@ def main(argv=None):
         parser.error("Use KPNN and a positive page count")
     config_file = directory / "course-unit.json"
     config = json.loads(config_file.read_text(encoding="utf-8")) if config_file.is_file() else {}
-    value = args.lecture or config.get("lecture")
+    value = args.lecture or config.get("lecture") or os.environ.get("LEC")
     if not value:
         parser.error("--lecture is required when course-unit.json is absent")
     lecture = lecture_prefix(value)
