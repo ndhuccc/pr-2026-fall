@@ -51,9 +51,9 @@
 
 The step function has slope 0 everywhere except at the jump, and at the jump there is no slope. Without a slope, gradient descent cannot start.
 
-Figure `lec05-kp06-step-slope`: look at the upper plot first: the step has slope 0 everywhere and no slope at the jump; then the lower plot: the sigmoid has a tangent of slope 0.25 in the middle. The figure shows why a step cannot use gradients. [Function: 1]
+Figure `lec05-kp06-step-slope`: First see the left chart: both flat parts of the step have slope 0 and the jump has no slope; then the right chart: the sigmoid has a tangent of slope 0.25 at x = 0. This shows why the step cannot be used with gradients. [Function: 1]
 
-![The slopes of a step and a sigmoid](../../assets/figures/lec05-kp06-step-slope.png)
+![The step has slope 0 everywhere and none at the jump; the sigmoid has a tangent of slope 0.25 at x = 0.](../../assets/figures/lec05-kp06-step-slope-en.png)
 
 The next question: can the step be rounded off so that every point has a slope?
 
@@ -71,9 +71,9 @@ A **sigmoid** squeezes any number into the range 0 to 1. The larger $a$ is, the 
 
 **Common misconception**: the closer to a step the better. In fact the larger $a$ is, the narrower and higher the peak of the slope, and on both sides the slope is almost 0, so training with gradients gets harder. Also, once we leave the step, the geometric statement of KP03, "map to the vertices of a cube", no longer holds, and correct classification is carried by the cost function.
 
-Figure `lec05-kp06-sigmoid-a`: look at the upper row of three sigmoids ($a=0.7,2,8$) and the dashed step: a larger $a$ hugs the step; then look at the lower row of slopes: the peak gets narrower. [Function: 1, 2]
+Figure `lec05-kp06-sigmoid-a`: First see the three sigmoids (a = 0.7, 2, 8) in the middle against the dashed step, the larger a the closer to the step; then the slopes on the right, whose peaks a/4 = 0.175, 0.5, 2 get narrower. [Function: 1, 2]
 
-![The effect of the slope parameter a](../../assets/figures/lec05-kp06-sigmoid-a.png)
+![Sigmoids and slopes for a = 0.7, 2, 8; the slope peaks 0.175, 0.5, 2 get narrower.](../../assets/figures/lec05-kp06-sigmoid-a-en.png)
 
 The next question: with slopes available, how do we know how much to change a weight? Walk through a small network first.
 
@@ -96,9 +96,9 @@ Computation:
 - Output unit: $v_o=-0.20+0.50\cdot0.525-0.40\cdot0.450=-0.118$, $o=f(-0.118)=0.471$.
 - Error and cost: $e=1-0.471=0.529$, $E=\tfrac12e^2=0.140$.
 
-Figure `lec05-kp06-net-forward`: look first at the weights written beside the lines and the bias above; then follow the arrows through the three numbers $x\to y\to o$. [Function: 1]
+Figure `lec05-kp06-net-forward`: First see the weights beside the lines and the biases beside the units, then follow x → y → o through the three numbers 0.525, 0.450, 0.471; the right side shows the computation, E = 0.140. [Function: 1]
 
-![The forward pass](../../assets/figures/lec05-kp06-net-forward.png)
+![The 2–2–1 network and forward pass: y₁ = 0.525, y₂ = 0.450, o = 0.471, E = 0.140.](../../assets/figures/lec05-kp06-net-forward-en.png)
 
 The next question: the output 0.471 is 0.529 short of the target 1. In which direction, and by how much, should each weight change?
 
@@ -118,9 +118,9 @@ $$
 
 Multiplying: $(-0.529)\times0.249\times0.525=-0.069$. The gradient is negative, which means that making $w_{o1}$ larger makes $E$ smaller.
 
-Figure `lec05-kp06-chain`: look at the three arrows $w\to v\to o\to E$, each labelled with one slope; then at the product of the three on the right, $-0.069$. [Function: 1, 2]
+Figure `lec05-kp06-chain`: First see the three arrows w → v → o → E with one slope under each: 0.525, 0.249, −0.529; then the product of the three at the bottom, −0.069. [Function: 1, 2]
 
-![The chain rule](../../assets/figures/lec05-kp06-chain.png)
+![The chain rule splits the gradient of w(o1) into three slopes: −0.529 × 0.249 × 0.525 = −0.069.](../../assets/figures/lec05-kp06-chain-en.png)
 
 The next question: multiplying three slopes for every weight is tedious. Can the first two be combined and computed once?
 
@@ -141,9 +141,9 @@ $$
 
 **Note on the sign** [Added]: the source writes $\delta$ both as $\partial E/\partial v$ and as "the error times the slope", which differ by a sign. This lecture defines $\delta=-\partial E/\partial v$ throughout, so the gradient is $-\delta\times$input and the update adds $\eta\,\delta\times$input.
 
-Figure `lec05-kp06-out-bars`: look at the three bars, each the update $\eta\delta\times$input of one output weight; then note that all three are positive, because the target 1 is above the output 0.471 and all three weights should grow. [Function: 1, 2]
+Figure `lec05-kp06-out-bars`: First see the three bars, each the update ηδ × input of one output weight (+0.0396, +0.0208, +0.0178); then note all three are positive because the target 1 is above the output 0.471. [Function: 1, 2]
 
-![The updates of the output layer](../../assets/figures/lec05-kp06-out-bars.png)
+![Updates of the three output weights: +0.0396, +0.0208, +0.0178.](../../assets/figures/lec05-kp06-out-bars-en.png)
 
 The next question: a hidden unit is not connected to the target directly. Where does its $\delta$ come from?
 
@@ -162,9 +162,9 @@ $$
 - $\delta_1=f'(v_1)\,\delta_o\,w_{o1}=0.2494\times0.1319\times0.50=0.0164$.
 - $\delta_2=f'(v_2)\,\delta_o\,w_{o2}=0.2475\times0.1319\times(-0.40)=-0.0131$. $w_{o2}$ is negative, so $\delta_2<0$.
 
-Figure `lec05-kp06-net-backward`: look at the red lines, the path of the error going back from the output; then compare the signs of the weights on the two paths: hidden unit 2 goes through a negative weight, so $\delta_2$ is negative. [Function: 1]
+Figure `lec05-kp06-net-backward`: First see the red dashed lines, the path of the error back from the output; then compare the signs of the weights on the two paths: hidden unit 2 uses a negative weight, so δ₂ = −0.0131 is negative. [Function: 1]
 
-![Backpropagation](../../assets/figures/lec05-kp06-net-backward.png)
+![δ passed back along the weights: δₒ = 0.1319, δ₁ = 0.0164, δ₂ = −0.0131.](../../assets/figures/lec05-kp06-net-backward-en.png)
 
 The next question: all nine weights now have their $\delta$. Does one update really lower the cost?
 
@@ -186,9 +186,9 @@ In the table each row is one weight: "input" is what this weight multiplies, "gr
 
 $x_2=0$, so the two $x_2$ weights do not move this time. A forward pass with the new weights gives the output $o=0.4857$ (was $0.4706$) and $E=0.1322$ (was $0.1401$). One step is a small step; many repeats are needed to get near the target.
 
-Figure `lec05-kp06-before-after`: look at the output on the left, which moved a small step from 0.471 towards the target 1; then at the cost on the right, which fell from 0.140 to 0.132. [Function: 1, 2]
+Figure `lec05-kp06-before-after`: First see the table of the nine weights with old value, input, δ, gradient, update and new value on the left; then the right: the output goes from 0.4706 to 0.4857 and the cost from 0.1401 to 0.1322. [Function: 1, 2]
 
-![Before and after the update](../../assets/figures/lec05-kp06-before-after.png)
+![The nine-weight update table; output 0.4706 → 0.4857 and cost 0.1401 → 0.1322.](../../assets/figures/lec05-kp06-before-after-en.png)
 
 The next question: how can we be sure the gradients in the table are not wrong?
 
@@ -198,17 +198,17 @@ Add and subtract a tiny $\varepsilon=10^{-6}$ to one weight and see how $E$ chan
 
 This is the most common debugging method when writing backpropagation code. The next KP writes the whole procedure as an algorithm.
 
-Figure `lec05-kp06-numcheck`: look at the bars, the $-\delta\times$input (the gradient) of the nine weights; then at the dots, the slopes by differences. They coincide, so the backpropagation formulas are right. [Function: 2]
+Figure `lec05-kp06-numcheck`: First see the bars, which are −δ × input (the gradient) of the nine weights; then the dots, the slopes from differences. They coincide, differing by at most about 3.8×10⁻¹¹, so the backpropagation formulas are right. [Function: 2]
 
-![The numerical check](../../assets/figures/lec05-kp06-numcheck.png)
+![−δ × input and the central-difference slopes of the nine weights coincide, with a largest gap of about 3.8×10⁻¹¹.](../../assets/figures/lec05-kp06-numcheck-en.png)
 
 ### Extension: saturation, practice and worked solution
 
 **Saturation of the slope**: at $x=3$, $f'(3)=a\,f(1-f)$: $a=0.7$ gives $0.068$, $a=2$ gives $0.0049$ and $a=8$ gives $3\times10^{-10}$. With a large $a$, a point not far from the centre already enters "saturation": $\delta$ is multiplied by a slope of almost 0 and the weights hardly move. So $a$ is taken of moderate size.
 
-Figure `lec05-kp06-saturation`: look at the three bars on a logarithmic scale: the larger $a$ is, the smaller the slope at $x=3$, by several orders of magnitude. [Function: 2]
+Figure `lec05-kp06-saturation`: First see the three log-scale bars: the larger a, the smaller the slope at x = 3: 0.068, 0.0049, 3×10⁻¹⁰, about 8 orders of magnitude; the right explains that δ times an almost-zero slope barely moves the weights. [Function: 2]
 
-![Saturation of the slope](../../assets/figures/lec05-kp06-saturation.png)
+![f′ at x = 3 for a = 0.7, 2, 8 is 0.068, 0.0049, 3×10⁻¹⁰.](../../assets/figures/lec05-kp06-saturation-en.png)
 
 **Practice**: keep this example ($a=1$, $\eta=0.3$) and change only the target from 1 to 0; the forward pass stays the same.
 
@@ -217,9 +217,9 @@ Figure `lec05-kp06-saturation`: look at the three bars on a logarithmic scale: t
 
 **Worked solution of questions 1 and 2**: (1) $e=0-0.471=-0.471$, $\delta_o=-0.471\times0.249=-0.1173$. (2) $\Delta w=0.3\times(-0.1173)\times\text{input}$: bias $-0.0352$, $w_{o1}$ $-0.0185$, $w_{o2}$ $-0.0158$, all three go down. (3) Check: the output 0.471 must fall towards 0, so all output weights should fall, the opposite of the signs for target 1.
 
-Figure `lec05-kp06-practice-sol`: look at the three bars, all negative, so all three output weights go down. [Function: 1, 2]
+Figure `lec05-kp06-practice-sol`: The left is Q1: e = −0.471 and δ = −0.1173; the right is Q2: bias −0.0352, w₁ −0.0185, w₂ −0.0158, all moving down, each with its check. [Function: 1, 2]
 
-![The practice solution](../../assets/figures/lec05-kp06-practice-sol.png)
+![Two exercises with worked answers: δ = −0.1173; updates −0.0352, −0.0185, −0.0158.](../../assets/figures/lec05-kp06-practice-sol-en.png)
 
 ## Terms and source
 
