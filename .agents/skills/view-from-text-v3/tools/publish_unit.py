@@ -43,7 +43,7 @@ def main():
     print(sh(f"{ins} {d}/{A.caps} {zh_md} {en_md} --prefix {pre}", check=False).strip().splitlines()[-1])   # zh done; en may stop at a heading it cannot find
     caps = open(f"{d}/{A.caps}").read()
     for pair in [p for p in A.en_before.split(";") if p]:
-        z, e = pair.split("="); caps = caps.replace(f'"before":"{z}"', f'"before":"{e}"')
+        z, e = pair.split("="); caps = re.sub(r'("before"\s*:\s*")' + re.escape(z) + '"', lambda m: m.group(1) + e + '"', caps)
     open("/tmp/_caps_en.json", "w").write(caps)
     print(sh(f"{ins} /tmp/_caps_en.json {zh_md} {en_md} --prefix {pre}").strip().splitlines()[-1])
     for x in rm:
