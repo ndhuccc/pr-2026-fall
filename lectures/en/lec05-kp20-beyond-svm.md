@@ -174,9 +174,13 @@ $$
 
 **The final discriminant**: adding the four kernels, $g(x)=2(x_1^2-x_2^2)$. $(2,0)$ gives $+8$ and $(0,2)$ gives $-8$.
 
-Figure `lec05-kp20-trace`: First the four XOR-type points at the top left and the kernel matrix $G$ below; then the round-by-round table on the right, where red rows are mistakes; finally $\alpha=(1,1,1,1)$ and $g(x)=2(x_1^2-x_2^2)$. [Function: 2]
+Figure `lec05-kp20-trace`: First see the left chart: four XOR-type points (blue circles +1, orange squares −1); then the kernel matrix G in the middle with row 1 boxed in green; on the right is the rule, and below it the check of round 1, point 3: g = 2, y·g = −2, a mistake, so α₃ becomes 1. [Function: 2]
 
-![Four XOR-type points, the kernel matrix and the round-by-round trace.](../../assets/figures/lec05-kp20-trace-en.png)
+![Hand trace (1): four XOR-type points, the kernel matrix, the rule and one checked cell.](../../assets/figures/lec05-kp20-trace-en.png)
+
+Figure `lec05-kp20-trace2`: First see the step-by-step table on the left: red rows are mistakes and the orange cell is the α that was increased in that step; round 3 is all correct, so α = (1, 1, 1, 1) and the algorithm stops; then the right side: the final g(x) = 2(x₁² − x₂²) and its regions in the plane, with the boundary two slanted lines |x₁| = |x₂| that no straight line can match. [Function: 2]
+
+![Hand trace (2): the twelve-step trace, the final discriminant and its regions.](../../assets/figures/lec05-kp20-trace2-en.png)
 
 The next question: on more realistic data, how many rounds does the kernel perceptron need and how accurate is it?
 
