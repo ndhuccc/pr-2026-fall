@@ -131,7 +131,7 @@ Typical values $r_i=1.05$, $r_d=0.7$, $c=1.04$ (source). The rule is asymmetric:
 | Start $\mu_0$ | Plain gradient descent | Adaptive |
 |---:|---|---|
 | 0.02 | 411 steps | 61 steps |
-| 0.12 | blows up | rejects 12 steps, converges in 95 |
+| 0.12 | blows up | converges in 95 steps in all (12 of them rejected) |
 | 0.08 | 100 steps | 93 steps |
 
 From $\mu_0=0.08$, already near the best, adaptive is hardly better than plain.
