@@ -303,7 +303,7 @@ gh workflow run deploy-site.yml                                    # 第一次�
 - 問:這週的投影片是哪一種格式?是 JianBauDau 編輯器匯出的 JSON,還是 PPTX、PDF 或 HTML?
 - 若由 agent 產生投影片:先確認**教材程度**(預設承襲該講義的程度,見 `.agents/skills/LEVELS.md`)。
 - 作法:依 `slides/FORMATS.md` 命名為 `lecNN.<格式>`(JSON 為 `lecNN.jbd.json`),放進 `slides/`。同一週可以放多種格式。
-- 若要從講義產生 JianBauDau 投影片草稿(完整 `lecNN.jbd.json`),依 `.agents/skills/view-from-text/SKILL.md`。產出後仍須執行下方的 `check_slides.py` 檢查,並請老師在 JianBauDau 中逐頁確認排版。
+- 若要從講義產生 JianBauDau 投影片草稿(完整 `lecNN.jbd.json`),依 `.agents/skills/view-from-text-v3/SKILL.md`(先規劃頁面,用 HTML 設計資訊圖再轉成原生節點,稽核後傳中英文截圖,老師說「發佈」才寫入;可用整頁排版、透明度、漸層、陰影、多邊形與曲線路徑;`view-from-text` 與 `view-from-text-v2` 為舊版,僅作備援)。產出後仍須執行下方的 `check_slides.py` 檢查,並請老師在 JianBauDau 中逐頁確認排版。
 - 若是 JianBauDau JSON,執行 `python3 scripts/check_slides.py`。**FAIL 必須修正**(例如匯入用的 page spec、孤兒節點、`asset:` 伺服器參照);**WARN 請逐項告知老師確認**(講者備註、電子郵件、疑似學號、檔案大小)。
 - 提醒老師:課程網站是公開網址,`slides/` 內的檔案不需登入即可下載;講者備註會一起給學生。
 - 同步:`schedule.md` 或 `lectures/lecNN.md` 的投影片連結(依 §5.12,連結要指向實際存在的檔案);網站下載頁由 `build_docs.py` 自動產生,不需手動維護。
