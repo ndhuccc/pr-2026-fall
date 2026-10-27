@@ -46,6 +46,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-10-27 16:45 — v3 課程路徑修正最終驗證完成：本課 12 項回歸測試與 Shell 語法檢查全部通過（https://github.com/ndhuccc/pr-2026-fall/actions/runs/40475501465）；IDL 同版 12 項亦通過（https://github.com/ndhuccc/idl-2026-fall/actions/runs/40475460437）。涵蓋課程／章節切換、含空格路徑、搬移覆寫、中英同檔／分檔與保留配圖、dry-run 無檔案與 Git 寫入。實際教材發布與瀏覽器驗收未執行；網站自動建置仍由既有流程處理。本次紀錄只補驗證證據，程式版本未改。
+
 - 2026-10-27 16:42 — 完成 view-from-text-v3 課程路徑整合：預設跟隨本課工具位置，支援 --repo／COURSE_REPO、明確章節與本課課名；保留 LEC／SKILLS_DIR 舊腳本相容性。發布自動判別中英同檔／分檔；中英同檔保留核准配圖，無須建立 lectures/en/。跨課同步與日誌須明確指定，dry-run 只讀。新增 12 項路徑、講義結構與預覽測試；PR 初版 10 項與 Shell 語法已通過（https://github.com/ndhuccc/pr-2026-fall/actions/runs/40474873911），本次最終版本待 Actions 查核。IDL 同時新增的第6週 KP04 教材及紀錄保留，僅修正其範例的機器固定路徑。Codex 雲端執行環境無法啟動，未在此執行 Python、瀏覽器或教材發布。
 
 - 2026-10-27 16:38 — 依教師要求修正 view-from-text-v3 的跨課程可攜性：工具預設依本課位置解析路徑，支援 --repo／COURSE_REPO；新單元明確指定章節並讀取本課名稱；修正產生器、範例及相依 deckcommon 的 PR 絕對路徑；發布預設僅寫本課，跨課同步與日誌改為明確參數；dry-run 只列計畫。新增 10 項標準函式庫回歸測試與只讀 v3-portability 工作流程。當前 Codex 雲端執行環境無法啟動，本機 Python／瀏覽器與教材發布未執行；測試執行結果待 GitHub Actions 查核。
