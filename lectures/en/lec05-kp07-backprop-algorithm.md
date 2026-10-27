@@ -63,29 +63,25 @@
 
 Repeat steps 2 to 4 until stopping.
 
-Figure `lec05-kp07-loop`: look at the order of the four steps, then at one pass over the $N=4$ samples being one epoch, and finally at the loop repeating from step 2 until stopping. [Function: 1]
+Figure `lec05-kp07-loop`: First see the four step boxes: 1 start values once, then 2 forward, 3 backward and 4 update repeated until it stops; then the definitions of epoch and batch training with the batch update formula on the right. [Function: 1]
 
-The next question: walk the first epoch through with concrete weights.
-
-![Training loop](../../assets/figures/lec05-kp07-loop.png)
+![The training loop: start values once, then forward, backward and update repeated; the right side shows epoch and the batch update formula.](../../assets/figures/lec05-kp07-loop-en.png)
 
 ### 2. Epoch 1: the four points go forward first
 
 Take the initial weights of the source's interactive example (bias, $x_1$, $x_2$): hidden unit 1 $(-2,5,5)$, unit 2 $(-7,5,5)$, output $(-2,8,-12)$. The outputs: $(0,0)$ gives $0.2578$ and $(1,1)$ gives $0.0043$ (target 0); $(0,1)$ and $(1,0)$ give $0.9851$ (target 1). The cost $J$ is the mean of $\tfrac12(\text{target}-o)^2$ over the four samples, $J=0.0084$ (program). All four are already on the right side of 0.5.
 
-Figure `lec05-kp07-epoch1-forward`: look at the hidden outputs of the four inputs, then at the final outputs: all four are already on the right side of 0.5. [Function: 2]
+Figure `lec05-kp07-epoch1-forward`: First see the 2–2–1 network with its nine start weights on the left; then the table on the right: the four outputs 0.2578, 0.9851, 0.9851, 0.0043 average to J = 0.00837, all on the correct side of 0.5. [Function: 2]
 
-![Epoch 1 forward](../../assets/figures/lec05-kp07-epoch1-forward.png)
+![The 2–2–1 network with start weights; the four outputs 0.2578, 0.9851, 0.9851, 0.0043 and J = 0.00837.](../../assets/figures/lec05-kp07-epoch1-forward-en.png)
 
 ### 3. Epoch 1: backward and update
 
 The output $\delta_o$ of each sample: $-0.0493$ for $(0,0)$, about $+0.0002$ each for $(0,1)$ and $(1,0)$, about $-0.00002$ for $(1,1)$. Sum the four "$\delta\times$ input" terms, divide by 4 and multiply by $\eta=1.5$ to update the nine weights once: output bias $-0.0183$, hidden unit 1 bias $-0.0155$, the rest smaller. After one epoch $J$ goes from $0.00837$ to $0.00799$ (program), a small step.
 
-Figure `lec05-kp07-epoch1-update`: look at the shading of the nine cells (size of the update), then find the two darkest (the output bias and the bias of hidden unit 1). [Function: 2]
+Figure `lec05-kp07-epoch1-update`: First see the output-layer δ of the four samples on the left: only (0, 0) is −0.0493 and the rest are tiny; then the shading of the nine cells on the right, darkest at the output bias −0.0183 and the hidden-1 bias −0.0155; J falls from 0.00837 to 0.00799. [Function: 2]
 
-The next question: one step is this small; how many epochs are needed?
-
-![Epoch 1 update](../../assets/figures/lec05-kp07-epoch1-update.png)
+![Output-layer δ of −0.0493, +0.0002, +0.0002, −0.00002; of the nine updates the output bias −0.0183 is the largest.](../../assets/figures/lec05-kp07-epoch1-update-en.png)
 
 ### 4. J falls slowly to the bar
 
@@ -97,11 +93,9 @@ The next question: one step is this small; how many epochs are needed?
 
 It falls below the threshold only at epoch 3707, when the four outputs are $0.029$, $0.982$, $0.982$, $0.010$ (program).
 
-Figure `lec05-kp07-curve`: look at the $J$ curve falling steadily on a log axis, then at the horizontal stop threshold $0.0002$ crossed at epoch 3707. [Function: 2]
+Figure `lec05-kp07-curve`: First see the log-log curve of J falling slowly (0.00175 at epoch 100, 0.00046 at epoch 1000); then the dashed bar 0.0002 crossed at epoch 3707. [Function: 2]
 
-The next question: can the learning rate be raised to speed this up?
-
-![J curve](../../assets/figures/lec05-kp07-curve.png)
+![J against epoch: 0.00799, 0.00567, 0.00175, 0.00046, below 0.0002 at epoch 3707.](../../assets/figures/lec05-kp07-curve-en.png)
 
 ### 5. The learning-rate dilemma
 
@@ -117,21 +111,17 @@ The source says the best $\eta$ depends on the shape of the cost in weight space
 
 **Common misconception**: a larger learning rate is always better. Too large a step overshoots or even diverges; here a larger $\eta$ is faster only within a range.
 
-Figure `lec05-kp07-eta-bars`: look at the bars getting shorter as $\eta$ grows on a log axis, then notice that for a too large $\eta$ (200) there is no bar because training fails. [Function: 2]
+Figure `lec05-kp07-eta-bars`: First see the log-scale bars shrink as η grows: 55,607, 11,121, 3,707, 1,853, 926, 185, 53; then note that η = 200 has no valid bar: J grows in the first two steps and training fails. [Function: 3]
 
-The next question: how should the start weights be chosen? Is all zeros fine?
-
-![Learning rate and epochs](../../assets/figures/lec05-kp07-eta-bars.png)
+![Epochs needed against η: from 55,607 down to 53, and failure at η = 200.](../../assets/figures/lec05-kp07-eta-bars-en.png)
 
 ### 6. The start cannot be all zeros
 
 **Initialization**: before training every weight gets a start value, usually small random values (from a pseudo-random generator). With all weights 0, every output is 0.5, the output-layer $\delta$ of the four samples cancel, the hidden $\delta$ is multiplied by the output weights (0), so every gradient is exactly 0 and $J=0.125$ never moves (program). With another 20 random starts (random seeds 0 to 19, every weight uniform in $\pm0.5$) and $\eta=1.5$, all reach $J<0.0002$, in 10890 to 23926 epochs.
 
-Figure `lec05-kp07-zero-init`: look at the all-zero curve lying flat at 0.125, then at the source's start-value curve falling steadily. [Function: 2]
+Figure `lec05-kp07-zero-init`: First see the all-zero start's J curve flat at 0.125 and the source start's curve falling; the right side explains that the output δ of ±0.125 cancel so every gradient is 0. [Function: 3]
 
-The next question: with larger random values, does training always arrive?
-
-![All-zero start](../../assets/figures/lec05-kp07-zero-init.png)
+![An all-zero start keeps J at 0.125; 20 small random starts all reach the bar.](../../assets/figures/lec05-kp07-zero-init-en.png)
 
 ### 7. Local minimum
 
@@ -142,11 +132,9 @@ The next question: with larger random values, does training always arrive?
 - Start A (seed 0) stalls at $J=0.0626$ with outputs $0.01$, $0.99$, $0.5$, $0.5$ and a gradient norm of only $3\times10^{-5}$; 60000 more epochs do not move it.
 - Start B (seed 4) converges in 8203 epochs (program).
 
-Figure `lec05-kp07-stuck`: look at the curve of start A stalling at $J=0.0626$, then at the curve of start B falling to the threshold. [Function: 2]
+Figure `lec05-kp07-stuck`: First see start A's curve stop at J = 0.0626, then start B's curve reach the bar at epoch 8203; on the right: 176 of 300 starts reach it and 124 do not. [Function: 3]
 
-The next question: updating after every sample, can it jump out?
-
-![Stuck start](../../assets/figures/lec05-kp07-stuck.png)
+![Start A stalls at J = 0.0626 and start B converges at epoch 8203; 176 of 300 starts reach the bar.](../../assets/figures/lec05-kp07-stuck-en.png)
 
 ### 8. Per-sample updates
 
@@ -162,17 +150,17 @@ With the source's weights, the epochs of the three setups:
 
 Pattern mode and batch with $\eta=6$ are almost the same, so the speed gain of pattern mode is mostly step size. On stuck start A pattern mode (fixed order or shuffled each epoch) is still at $J\approx0.063$ after 20000 epochs; it did not escape here. "May" is no guarantee (program).
 
-Figure `lec05-kp07-batch-pattern`: look at the epochs of the three setups (pattern 924, batch $\eta=1.5$ at 3707, batch $\eta=6$ at 926), then at start A still stuck in pattern mode. [Function: 2]
+Figure `lec05-kp07-batch-pattern`: First see the three bars: pattern η = 1.5 takes 924, batch η = 1.5 takes 3,707 and batch η = 6 takes 926; then on the right start A is still at J ≈ 0.063 after 20000 epochs of pattern training. [Function: 3]
 
-![Batch and pattern](../../assets/figures/lec05-kp07-batch-pattern.png)
+![Pattern 924, batch η = 1.5 3,707 and batch η = 6 926 epochs; start A stays stuck under pattern training.](../../assets/figures/lec05-kp07-batch-pattern-en.png)
 
 ### Extension: frozen weights, practice and worked solution
 
 **Frozen weights**: after training the weights are no longer updated and classifying needs only multiply-adds and the sigmoid. Here the nine weights are hidden 1 $(-2.862,5.465,5.465)$, hidden 2 $(-7.843,4.636,4.636)$, output $(-3.989,9.089,-11.977)$; each input costs 6 multiply-adds and 3 sigmoids, and the four outputs are $0.0292$, $0.9821$, $0.9821$, $0.0103$. Units of one layer are independent and can run in parallel, with optical, VLSI and dedicated neurocomputer implementations (source).
 
-Figure `lec05-kp07-frozen`: look at the nine frozen weights, then at the four outputs: two near 0 and two near 1. [Function: 1, 2]
+Figure `lec05-kp07-frozen`: First see the nine frozen weights on the left; then the four outputs on the right: two near 0 (0.0292, 0.0103) and two near 1 (0.9821). Each input needs 6 multiplications and 3 sigmoids. [Function: 1]
 
-![Frozen weights](../../assets/figures/lec05-kp07-frozen.png)
+![The nine frozen weights and the four outputs 0.0292, 0.9821, 0.9821, 0.0103.](../../assets/figures/lec05-kp07-frozen-en.png)
 
 **Practice**: with the initial weights, pattern mode on the sample $(0,0)$ only (target 0), $\eta=1.5$. The forward pass gives $h_1=0.1192$, $h_2=0.0009$, $o=0.2578$.
 
@@ -189,9 +177,9 @@ Figure `lec05-kp07-frozen`: look at the nine frozen weights, then at the four ou
 
 **Check**: the target is 0 and the output 0.2578 is too high, so the output weights go down; hidden unit 1 has $\delta=-0.0414$ and its bias changes by $-0.0622$.
 
-Figure `lec05-kp07-practice-sol`: look at the three bars, all negative, so all three output weights go down. [Function: 1, 2]
+Figure `lec05-kp07-practice-sol`: The left is Q1: δ = −0.0493; the right is Q2: bias −0.0740, weight from h₁ −0.0088 and from h₂ −0.0001, each with its check. [Function: 1, 2]
 
-![Practice solution](../../assets/figures/lec05-kp07-practice-sol.png)
+![Two exercises with worked answers: δ = −0.0493; updates −0.0740, −0.0088, −0.0001.](../../assets/figures/lec05-kp07-practice-sol-en.png)
 
 ## Terms and sources
 
