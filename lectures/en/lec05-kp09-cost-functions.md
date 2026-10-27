@@ -44,9 +44,9 @@
 - **Unfair**: errors are squared before summing, so big errors dominate. Errors $0.9$ and $0.1$ differ 9 times, but squared they are $0.81$ and $0.01$, 81 times.
 - **It can stall**: when the output $\hat y$ is wrong at an extreme (target 1, output $0.001$) the squared error is only $0.499$ and never grows, so gradient descent can get stuck (source citing Witt 00). Contrast: another loss, $-\ln\hat y$, is $6.908$ at $\hat y=0.001$.
 
-Figure `lec05-kp09-loss`: both losses against the output for target 1. Look at the squared-error curve for target 1 rising only to 0.5 as the output approaches 0, then at the $-\ln\hat y$ curve shooting up. [Function: 1, 2]
+Figure `lec05-kp09-loss`: First see the squared-error curve for target 1 rise only to 0.499 as the output approaches 0; then see the other curve, −ln ŷ, shoot up to 6.908; the right side lists the two faults of the squared error: unfair and getting stuck. [Function: 1, 2]
 
-![Two losses](../../assets/figures/lec05-kp09-loss.png)
+![The two losses against the output ŷ for target 1: at ŷ = 0.001 the squared error is 0.499 and −ln ŷ is 6.908.](../../assets/figures/lec05-kp09-loss-en.png)
 
 ### 2. The plateau: δ goes to 0 when the output is wrong at an extreme
 
@@ -54,9 +54,9 @@ Figure `lec05-kp09-loss`: both losses against the output for target 1. Look at t
 
 For a single sigmoid output with squared error, $\delta=(y-\hat y)\,\hat y(1-\hat y)$. The closer $\hat y$ is to 0 or 1 the smaller the slope $\hat y(1-\hat y)$, squeezing even a big error into a small signal. With target $y=1$ and $net=-10$, $\hat y=0.000045$, the error is almost 1 and $\delta=0.000045$.
 
-Figure `lec05-kp09-mse-delta`: the squared-error $\delta$ against the weighted sum $net$. Look at $\delta$ almost 0 for very negative or very positive $net$, then at the narrow middle stretch where it is large enough. [Function: 2]
+Figure `lec05-kp09-mse-delta`: First see δ almost 0 when net is very negative or very positive (the plateaus on both sides); then see that only a small middle stretch has a large δ; the right gives the formula δ = (y − ŷ)ŷ(1 − ŷ) and δ = 0.000045 at net = −10. [Function: 2]
 
-![Squared-error delta](../../assets/figures/lec05-kp09-mse-delta.png)
+![Squared-error δ against net (target 1): plateaus on both sides, and only 0.000045 at net = −10.](../../assets/figures/lec05-kp09-mse-delta-en.png)
 
 ### 3. Cross-entropy: cancel the slope
 
@@ -91,6 +91,10 @@ With target $y=1$:
 
 The cross-entropy $\delta$ is not squeezed; squared error gives almost no signal at $net=-10$.
 
+Figure `lec05-kp09-delta-table`: First see the three-step derivation of the cross-entropy on the left: the partial derivative, the sigmoid slope, and the chain rule where ŷ(1 − ŷ) cancels; then see the two δ for y = 1 and net from −10 to 5 on the right: the cross-entropy δ is not squeezed. [Function: 2]
+
+![The three-step derivation for the cross-entropy and the two δ for net = −10 to 5: 0.00005 against 1.0000 at net = −10.](../../assets/figures/lec05-kp09-delta-table-en.png)
+
 ### 4. Training compared
 
 **Experiment setup** (designed here, implemented in a program):
@@ -105,9 +109,9 @@ The cross-entropy $\delta$ is not squeezed; squared error gives almost no signal
 
 **Common misconception**: only cross-entropy can classify correctly. Both costs end up correct; the difference is the speed from a very wrong start.
 
-Figure `lec05-kp09-train`: the output of the point $x=2$ against epochs. Look at the output of the point $x=2$ rising with epochs, cross-entropy passing 0.5 quickly, then at squared error lingering near the start. [Function: 2]
+Figure `lec05-kp09-train`: First see the output at x = 2 rise with the epoch: the cross-entropy passes 0.5 at epoch 5 and the squared error only at epoch 85; the right shows the setup and the common myth. [Function: 2]
 
-![Training compared](../../assets/figures/lec05-kp09-train.png)
+![The output at x = 2 against the epoch: all four points are right after 5 epochs for the cross-entropy and 85 for the squared error.](../../assets/figures/lec05-kp09-train-en.png)
 
 ### 5. Likelihood: cross-entropy is the negative log-likelihood
 
@@ -118,6 +122,10 @@ Figure `lec05-kp09-train`: the output of the point $x=2$ against epochs. Look at
 - The four cross-entropies add up to $0.105+0.223+0.357+0.105=0.790$, the same.
 
 Minimizing cross-entropy is maximizing likelihood.
+
+Figure `lec05-kp09-likelihood`: First see the four samples on the left: output, target, probability of the target and −ln; then see the two green results: the product 0.4536 and −ln = 0.7905 equal the sum of the four cross-entropies. [Function: 2]
+
+![Likelihood of four samples: the probabilities multiply to 0.4536 and −ln 0.4536 = 0.7905, equal to the sum of the four cross-entropies.](../../assets/figures/lec05-kp09-likelihood-en.png)
 
 ### 6. softmax
 
@@ -136,9 +144,9 @@ every output lies between 0 and 1 and they sum to exactly 1.
 - With target $y=(1,0,0)$: $J=-\ln0.659=0.417$.
 - The $\delta_k=y_k-\hat y_k=(0.341,-0.242,-0.099)$ needed by backpropagation equals numerical differences (program check).
 
-Figure `lec05-kp09-softmax`: bars of $v$, $\hat y$ and $\delta$. Look at the three bars of $v$, then at $\hat y$ after softmax (summing to 1), and finally at $\delta$ (positive for the target class, negative for the rest). [Function: 1, 2]
+Figure `lec05-kp09-softmax`: First see the three bars of v, then ŷ after the softmax (summing to 1), and finally δ (positive for the target class, negative for the rest); the right shows the step-by-step calculation. [Function: 1, 2]
 
-![softmax](../../assets/figures/lec05-kp09-softmax.png)
+![v = (2, 1, 0.1) through the softmax gives ŷ = (0.659, 0.242, 0.099) and δ = (0.341, −0.242, −0.099).](../../assets/figures/lec05-kp09-softmax-en.png)
 
 ### 7. Discriminative learning
 
@@ -149,9 +157,9 @@ Figure `lec05-kp09-softmax`: bars of $v$, $\hat y$ and $\delta$. Look at the thr
 
 The contrast changes both the output and the cost; the error rate itself is not differentiable, so a smooth version is used, with a risk of local minima (source, which also mentions deterministic annealing).
 
-Figure `lec05-kp09-lsfit`: seven points and the two boundaries. Look at the outlier $x=40$ flattening the least-squares line, then at the two cuts: squared error at 1.40 and cross-entropy at 0. [Function: 1, 3]
+Figure `lec05-kp09-lsfit`: First see the outlier x = 40 flatten the least-squares line in the left chart; then see the two boundaries in the zoom on the right: the squared-error cut at 1.40 (x = 1 wrong) and the cross-entropy cut at 0. [Function: 1, 3]
 
-![An outlier tilts the boundary](../../assets/figures/lec05-kp09-lsfit.png)
+![The outlier bends the boundary: squared-error cut at 1.40, cross-entropy cut near 0.](../../assets/figures/lec05-kp09-lsfit-en.png)
 
 ### 8. Bayesian training
 
@@ -168,9 +176,9 @@ Figure `lec05-kp09-lsfit`: seven points and the two boundaries. Look at the outl
 
  Price: a high-dimensional integral is expensive; the source reminds us that replacing least squares often gives no real gain in practice.
 
-Figure `lec05-kp09-posterior`: the posterior for different $n$. Look at the wide bell for $n=0$ (the prior), then at the bell narrowing and its centre moving towards 1.5 as $n$ grows. [Function: 1, 2]
+Figure `lec05-kp09-posterior`: First see the wide bell of n = 0 (the prior), then see the bell narrow and its centre move toward 1.5 as n grows; the right gives the table of posterior standard deviation and mean. [Function: 1, 2]
 
-![Posterior](../../assets/figures/lec05-kp09-posterior.png)
+![The posterior: for n = 0, 1, 5, 20 the standard deviation is 2, 0.894, 0.436, 0.222 and the mean 0, 1.2, 1.43, 1.48.](../../assets/figures/lec05-kp09-posterior-en.png)
 
 ### Extension: worse starts, practice and worked solution
 
@@ -183,9 +191,9 @@ Figure `lec05-kp09-posterior`: the posterior for different $n$. Look at the wide
 
 The squared-error $\delta$ shrinks exponentially as the start gets worse and the epochs grow roughly exponentially; the cross-entropy $\delta$ stays near 1.
 
-Figure `lec05-kp09-init`: epochs needed from seven starts (log axis). Look at the squared-error points climbing on a log axis, then at the cross-entropy points staying almost flat. [Function: 2]
+Figure `lec05-kp09-init`: First see the squared-error points climb on the log scale, then see the cross-entropy points stay almost flat; the right explains why the gap keeps growing. [Function: 2]
 
-![Worse starts](../../assets/figures/lec05-kp09-init.png)
+![Epochs needed as the start gets worse: at w = −10, 88,141 for the squared error and 14 for the cross-entropy.](../../assets/figures/lec05-kp09-init-en.png)
 
 **Practice**: a single sigmoid output, target 1, $net=-4$.
 
@@ -201,6 +209,10 @@ Figure `lec05-kp09-init`: epochs needed from seven starts (log axis). Look at th
 - Ratio $0.9820/0.01735=56.6$.
 
 **Check**: the ratio is exactly $1/[\hat y(1-\hat y)]$ and grows as the output gets more extreme; at $net=-10$ it is about 22000.
+
+Figure `lec05-kp09-practice`: The left is Q1: ŷ = 0.0180 at net = −4; the right is Q2: squared-error δ = 0.01735, cross-entropy δ = 0.9820 and a factor of 56.6, each with its check. [Function: 3]
+
+![Two exercises with worked answers: ŷ = 0.0180 and a δ ratio of 56.6.](../../assets/figures/lec05-kp09-practice-en.png)
 
 ## Terms and sources
 
