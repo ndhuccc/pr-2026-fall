@@ -140,7 +140,7 @@ The next question: with larger random values, does training always arrive?
 **Experiment setup**: 300 random starts (seeds 0 to 299, every weight uniform in $\pm3$), $\eta=3$, at most 20000 epochs. Result: 176 succeed and 124 do not. 
 
 - Start A (seed 0) stalls at $J=0.0626$ with outputs $0.01$, $0.99$, $0.5$, $0.5$ and a gradient norm of only $3\times10^{-5}$; 60000 more epochs do not move it.
-- Start B (seed 4) converges in 8204 epochs (program).
+- Start B (seed 4) converges in 8203 epochs (program).
 
 Figure `lec05-kp07-stuck`: look at the curve of start A stalling at $J=0.0626$, then at the curve of start B falling to the threshold. [Function: 2]
 
