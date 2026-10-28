@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-29 01:40 — [更新] 同步 idl-2026-fall 的技能:slides-to-html 轉換器補上逐項揭示(initiallyHidden 與 reveal,同一頁多個步驟原本都只顯示第一步)、多邊形與折線、漸層、填色透明度、陰影;page-to-teaching-diagram 與 prompt-to-jbd-page 更新圖解規則。先前在 9b66bdc 做過同一組轉換器修正、隨後在 c8ca6d0 還原,本次以 idl-2026-fall 驗證過的版本取代。
+
 - 2026-10-28 12:08 — [新增] 技能 prompt-to-jbd-page(提示詞直接設計成原生簡報頁,依賴同層的 image-to-jbd-page);image-to-jbd-page 加入互相指路與補充規則說明。
 - 2026-10-28 05:26 — [更新] 技能 image-to-jbd-page 換成改良版:非 16:9 原圖等比例置中不裁切、重複插頁自動避開節點 ID 衝突(舊版會覆蓋)、新增回歸測試與 agents 設定。
 - 2026-10-27 21:36 — [新增] 技能 image-to-jbd-page:把圖片精準復現成 JianBauDau 原生簡報頁(建頁庫、量測、插入/取代頁、並排比對);自給自足,可打包給其他 agent。
