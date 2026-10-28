@@ -122,6 +122,59 @@ function renderMarkdown(raw, { inline = false } = {}) {
 // ---------- 版面常數(來自 JianBauDau 原始碼) ----------
 const HOOKS = 16, CURVE_OFFSET = 0.18, LABEL_OFFSET = 12, ARROW_ASPECT = 1.35;
 const ARROW_MULT = { small: 5, medium: 8, large: 12 };
+
+// ---- 填色透明度、漸層、陰影、多邊形/折線(JianBauDau 新增的繪圖效果)----
+function colorA(c, a) {
+  if (a === undefined || a >= 1 || !c || c === 'transparent') return c;
+  let m = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(c.trim());
+  if (m) { let h = m[1]; if (h.length === 3) h = [...h].map((x) => x + x).join(''); return `rgba(${parseInt(h.slice(0, 2), 16)},${parseInt(h.slice(2, 4), 16)},${parseInt(h.slice(4, 6), 16)},${a})`; }
+  m = /^rgba?\(([^)]+)\)$/i.exec(c.trim());
+  if (m) { const p = m[1].split(',').map((x) => x.trim()); return `rgba(${p[0]},${p[1]},${p[2]},${num((p[3] === undefined ? 1 : parseFloat(p[3])) * a)})`; }
+  return c;
+}
+const hasGrad = (st) => typeof st.gradientTo === 'string' && st.gradientTo !== '';
+function gradStops(st) {
+  const op = st.fillOpacity ?? 1;
+  const mid = (Array.isArray(st.gradientStops) ? st.gradientStops : []).filter((g) => Number.isFinite(g.offset) && g.color)
+    .map((g) => ({ o: Math.min(0.99, Math.max(0.01, g.offset)), c: g.color })).sort((a, b) => a.o - b.o).slice(0, 8);
+  return [{ o: 0, c: st.fill || '#ffffff' }, ...mid, { o: 1, c: st.gradientTo }].map((g) => ({ o: g.o, c: colorA(g.c, op) }));
+}
+// CSS 背景(矩形、文字卡片):漸層或帶透明度的純色
+function bgCss(st) {
+  if (hasGrad(st)) {
+    const stops = gradStops(st).map((g) => `${g.c} ${num(g.o * 100)}%`).join(',');
+    return st.gradientType === 'radial' ? `radial-gradient(ellipse closest-side,${stops})` : `linear-gradient(${st.gradientAngle ?? 180}deg,${stops})`;
+  }
+  return st.fill && st.fill !== 'transparent' ? colorA(st.fill, st.fillOpacity) : null;
+}
+function shadowCss(st) {
+  if (!st.shadowColor) return null;
+  return `filter:drop-shadow(${st.shadowOffsetX ?? 0}px ${st.shadowOffsetY ?? 4}px ${Math.max(0, st.shadowBlur ?? 8)}px ${colorA(st.shadowColor, st.shadowOpacity)})`;
+}
+// SVG 填色:漸層放進 <defs>,回傳 { fill, defs }
+let gradSeq = 0;
+function svgFill(st) {
+  if (hasGrad(st)) {
+    const id = `g${++gradSeq}`, stops = gradStops(st).map((g) => `<stop offset="${num(g.o)}" stop-color="${g.c.startsWith('rgba') ? g.c.replace(/rgba\(([^,]+),([^,]+),([^,]+),([^)]+)\)/, 'rgb($1,$2,$3)') : g.c}" stop-opacity="${g.c.startsWith('rgba') ? g.c.replace(/.*,([^)]+)\)$/, '$1') : 1}"/>`).join('');
+    if (st.gradientType === 'radial') return { fill: `url(#${id})`, defs: `<defs><radialGradient id="${id}" cx="0.5" cy="0.5" r="0.5">${stops}</radialGradient></defs>` };
+    const a = ((st.gradientAngle ?? 180) * Math.PI) / 180, dx = Math.sin(a), dy = -Math.cos(a);
+    return { fill: `url(#${id})`, defs: `<defs><linearGradient id="${id}" x1="${num(0.5 - dx / 2)}" y1="${num(0.5 - dy / 2)}" x2="${num(0.5 + dx / 2)}" y2="${num(0.5 + dy / 2)}">${stops}</linearGradient></defs>` };
+  }
+  return { fill: st.fill && st.fill !== 'transparent' ? colorA(st.fill, st.fillOpacity) : 'none', defs: '' };
+}
+// polygon / polyline 的路徑:座標 0~100;smooth 的點用 Catmull-Rom 曲線穿過,其餘為尖角
+function pathD(pts, closed) {
+  const n = pts.length, P = (i) => (closed ? pts[(i + n) % n] : pts[Math.min(n - 1, Math.max(0, i))]);
+  let d = `M${num(pts[0].x)} ${num(pts[0].y)}`;
+  const segs = closed ? n : n - 1;
+  for (let i = 0; i < segs; i++) {
+    const p0 = P(i - 1), p1 = P(i), p2 = P(i + 1), p3 = P(i + 2);
+    const c1 = pts[i % n].smooth ? { x: p1.x + (p2.x - p0.x) / 6, y: p1.y + (p2.y - p0.y) / 6 } : p1;
+    const c2 = P(i + 1).smooth ? { x: p2.x - (p3.x - p1.x) / 6, y: p2.y - (p3.y - p1.y) / 6 } : p2;
+    d += (!pts[i % n].smooth && !P(i + 1).smooth) ? ` L${num(p2.x)} ${num(p2.y)}` : ` C${num(c1.x)} ${num(c1.y)} ${num(c2.x)} ${num(c2.y)} ${num(p2.x)} ${num(p2.y)}`;
+  }
+  return d + (closed ? ' Z' : '');
+}
 const SHAPES = {
   triangle: '50,4 96,94 4,94', diamond: '50,3 97,50 50,97 3,50', pentagon: '50,3 97,37 79,95 21,95 3,37',
   star: '50,3 61,35 97,35 68,56 79,93 50,70 21,93 32,56 3,35 39,35', arrow: '3,27 61,27 61,5 97,50 61,95 61,73 3,73',
@@ -251,34 +304,51 @@ function convert(file, outFile) {
   function sceneInner(sceneId, depth, seen) {
     const list = (byScene.get(sceneId) || []).filter((n) => n.type !== 'connector').sort((a, b) => (a.zIndex ?? 0) - (b.zIndex ?? 0));
     const wires = [], labels = [], parts = [];
+    const push = (n, h) => parts.push(n.initiallyHidden ? h.replace('class="n ', 'class="n hid ') : h);
     for (const n of byScene.get(sceneId) || []) if (n.type === 'connector') wires.push(connectorSvg(n, nodes, labels));
     for (const n of list) {
       const { css, st } = boxCss(n);
-      if (st.fill && st.fill !== 'transparent' && n.type !== 'frame') css.push(`background:${st.fill}`);
+      const bgc = n.type !== 'frame' ? bgCss(st) : null;
+      if (bgc) css.push(`background:${bgc}`);
+      const shc = shadowCss(st);
+      if (shc) css.push(shc);
       const bwid = st.borderWidth ?? 1;
       if (st.stroke && st.stroke !== 'transparent' && (n.type !== 'text')) css.push(`border:${bwid}px ${st.borderStyle || 'solid'} ${st.stroke}`);
       if (st.radius) css.push(`border-radius:${st.radius}px`);
       if (n.type === 'text') {
-        parts.push(`<div class="n text" data-n="${escAttr(n.id)}" style="${css.join(';')}"><div class="copy" style="${escAttr(copyCss(n, false))}">${renderMarkdown(n.text || '')}</div></div>`);
+        push(n, `<div class="n text" data-n="${escAttr(n.id)}" style="${css.join(';')}"><div class="copy" style="${escAttr(copyCss(n, false))}">${renderMarkdown(n.text || '')}</div></div>`);
       } else if (n.type === 'shape') {
         const kind = n.shapeKind || 'rectangle';
         if (kind === 'rectangle') {
-          css.push('box-shadow:0 18px 30px rgba(106,64,46,.16)');
-          parts.push(`<div class="n shape" data-n="${escAttr(n.id)}" style="${css.join(';')}"><div class="copy shape-label" style="${escAttr(copyCss(n, true))}">${renderMarkdown(n.text || '')}</div></div>`);
+          if (!shc) css.push('box-shadow:0 18px 30px rgba(106,64,46,.16)');
+          push(n, `<div class="n shape" data-n="${escAttr(n.id)}" style="${css.join(';')}"><div class="copy shape-label" style="${escAttr(copyCss(n, true))}">${renderMarkdown(n.text || '')}</div></div>`);
         } else {
           const bg = css.filter((c) => !/^(background|border|box-shadow)/.test(c));
           const stroke = st.stroke && st.stroke !== 'transparent' ? st.stroke : 'none';
           const sw = Math.max(1, st.borderWidth ?? 1);
-          const shapeSvg = kind === 'ellipse'
-            ? `<ellipse cx="50" cy="50" rx="47" ry="47" fill="${st.fill || 'none'}" stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"${DASH[st.borderStyle] ? ` stroke-dasharray="${DASH[st.borderStyle]}"` : ''}/>`
-            : SHAPES[kind] ? `<polygon points="${SHAPES[kind]}" fill="${st.fill || 'none'}" stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"${DASH[st.borderStyle] ? ` stroke-dasharray="${DASH[st.borderStyle]}"` : ''}/>` : '';
-          parts.push(`<div class="n shape" data-n="${escAttr(n.id)}" style="${bg.join(';')}"><svg class="shape-visual" viewBox="0 0 100 100" preserveAspectRatio="none">${shapeSvg}</svg><div class="copy shape-label" style="${escAttr(copyCss(n, true))}">${renderMarkdown(n.text || '')}</div></div>`);
+          const dash = DASH[st.borderStyle] ? ` stroke-dasharray="${DASH[st.borderStyle]}"` : '';
+          const sf = svgFill(st), sattr = `stroke="${stroke}" stroke-width="${sw}" vector-effect="non-scaling-stroke"${dash}`;
+          let shapeSvg = '', vb = '0 0 100 100';
+          if (kind === 'ellipse') shapeSvg = `<ellipse cx="50" cy="50" rx="47" ry="47" fill="${sf.fill}" ${sattr}/>`;
+          else if (kind === 'polygon' || kind === 'polyline') {
+            const pts = n.polygonPoints;
+            const ok = Array.isArray(pts) && pts.length >= (kind === 'polygon' ? 3 : 2) && pts.length <= 200 && pts.every((q) => Number.isFinite(q.x) && Number.isFinite(q.y));
+            if (ok) {
+              // 用節點自己的像素當座標系,線寬才會跟著畫面縮放、不被拉扁
+              vb = `0 0 ${num(n.width)} ${num(n.height)}`;
+              const px = pts.map((q) => ({ x: q.x * n.width / 100, y: q.y * n.height / 100, smooth: q.smooth === true }));
+              shapeSvg = `<path d="${pathD(px, kind === 'polygon')}" fill="${kind === 'polyline' && !(st.fill && st.fill !== 'transparent') ? 'none' : sf.fill}" stroke="${stroke}" stroke-width="${st.borderWidth ?? 1}"${dash} stroke-linecap="round" stroke-linejoin="round"/>`;
+            }
+            else warn.add(`${kind} 頂點不合規格(退回矩形):${n.id}`);
+          } else if (SHAPES[kind]) shapeSvg = `<polygon points="${SHAPES[kind]}" fill="${sf.fill}" ${sattr}/>`;
+          shapeSvg = sf.defs + shapeSvg;
+          push(n, `<div class="n shape" data-n="${escAttr(n.id)}" style="${bg.join(';')}"><svg class="shape-visual" viewBox="${vb}" preserveAspectRatio="none">${shapeSvg}</svg><div class="copy shape-label" style="${escAttr(copyCss(n, true))}">${renderMarkdown(n.text || '')}</div></div>`);
         }
       } else if (n.type === 'image') {
         const src = n.image?.src || '';
         if (!/^(data:|https?:)/.test(src)) { warn.add('有圖片參照 asset: 或相對路徑,無法內嵌,已略過'); continue; }
         const inner = src.startsWith('data:') ? `<img data-i="${imgRef(src)}" alt="${escAttr(n.image.alt || '')}" style="object-fit:${n.image.fit || 'contain'}">` : `<img src="${escAttr(src)}" alt="${escAttr(n.image.alt || '')}" style="object-fit:${n.image.fit || 'contain'}">`;
-        parts.push(`<div class="n img" style="${css.join(';')}">${inner}</div>`);
+        push(n, `<div class="n img" data-n="${escAttr(n.id)}" style="${css.join(';')}">${inner}</div>`);
       } else if (n.type === 'frame') {
         const f = n.frame || {};
         const pad = f.padding ?? 18;
@@ -291,7 +361,7 @@ function convert(file, outFile) {
           const inner = sceneInner(f.childSceneId, depth + 1, new Set([...seen, f.childSceneId]));
           prev = `<div class="fprev" style="left:${pad}px;top:${pad}px;width:${num(pw)}px;height:${num(ph)}px;${f.clip === false ? '' : 'overflow:hidden'}"><div class="world" style="transform:${cam(child.camera, pw, ph)}">${inner}</div></div>`;
         }
-        parts.push(`<div class="n frame" style="${fcss.join(';')}">${prev}<div class="flabel" style="color:${st.textColor || '#f2ede4'};font-size:${st.fontSize ?? 22}px">${esc(n.text || '').replace(/\n/g, '<br>')}</div></div>`);
+        push(n, `<div class="n frame" data-n="${escAttr(n.id)}" style="${fcss.join(';')}">${prev}<div class="flabel" style="color:${st.textColor || '#f2ede4'};font-size:${st.fontSize ?? 22}px">${esc(n.text || '').replace(/\n/g, '<br>')}</div></div>`);
       } else {
         warn.add(`略過不支援的節點類型:${n.type}`);
       }
@@ -299,25 +369,49 @@ function convert(file, outFile) {
     return `<svg class="wires">${wires.join('')}</svg>${parts.join('')}${labels.join('')}`;
   }
 
-  // 每個「步驟會前往的畫布」做成一層;步驟只切換層與鏡頭
+  // 步驟實際前往的畫布:enter-frame 前往框的子畫布,其餘為 target.sceneId
+  const destScene = (s) => {
+    const t = s.target;
+    if (t.kind === 'enter-frame') { const f = nodes[t.frameId]; return f?.frame?.childSceneId || t.sceneId; }
+    return t.sceneId;
+  };
   const layerIds = [];
-  for (const s of steps) if (!layerIds.includes(s.target.sceneId)) layerIds.push(s.target.sceneId);
+  for (const s of steps) { const id = destScene(s); if (!layerIds.includes(id)) layerIds.push(id); }
   const layersHtml = layerIds.map((id, i) => `<div class="layer" id="L${i}"><div class="world">${sceneInner(id, 0, new Set([id]))}</div></div>`).join('\n');
+
+  // 自動框景(scene-overview / focus-node):算出涵蓋範圍,留邊距後換成「中心點 + 縮放」
+  const frameBox = (list) => {
+    if (!list.length) return null;
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    for (const n of list) { x0 = Math.min(x0, n.transform.x); y0 = Math.min(y0, n.transform.y); x1 = Math.max(x1, n.transform.x + n.width); y1 = Math.max(y1, n.transform.y + n.height); }
+    return { x: (x0 + x1) / 2, y: (y0 + y1) / 2, z: Math.min(1280 / Math.max(1, x1 - x0), 720 / Math.max(1, y1 - y0)) * 0.88 };
+  };
 
   const auds = [];
   const stepData = steps.map((s) => {
-    if (s.target.kind !== 'scene-point') warn.add(`步驟目標類型 ${s.target.kind} 未支援,以預設鏡頭顯示`);
-    const sc = scenes[s.target.sceneId];
-    const p = s.target.point || sc?.camera || { x: 0, y: 0 };
+    const t = s.target, destId = destScene(s);
+    const sc = scenes[destId];
+    let p = t.point || sc?.camera || { x: 0, y: 0 }, zoom = t.zoom ?? sc?.camera?.zoom ?? 1;
+    if (t.kind === 'scene-overview') {
+      const b = frameBox((byScene.get(destId) || []).filter((n) => n.type !== 'connector' && !n.initiallyHidden));
+      if (b) { p = { x: b.x, y: b.y }; zoom = b.z; }
+    } else if (t.kind === 'focus-node') {
+      const b = nodes[t.nodeId] ? frameBox([nodes[t.nodeId]]) : null;
+      if (b) { p = { x: b.x, y: b.y }; zoom = b.z; } else warn.add(`focus-node 找不到節點 ${t.nodeId},以預設鏡頭顯示`);
+    } else if (t.kind === 'enter-frame') {
+      p = sc?.camera || { x: 0, y: 0 }; zoom = sc?.camera?.zoom ?? 1;
+    } else if (t.kind !== 'scene-point') warn.add(`步驟目標類型 ${t.kind} 未支援,以預設鏡頭顯示`);
     let aud = -1;
     if (s.narration?.src && s.narration.src.startsWith('data:')) { aud = auds.length; auds.push(s.narration.src); }
     else if (s.narration?.src) warn.add('有語音參照 asset: 或網址,無法內嵌,已略過');
+    const rv = s.reveal;
     return {
       label: s.label || '', notes: s.speakerNotes || '', tr: s.narration?.transcript || '', aud,
-      layer: layerIds.indexOf(s.target.sceneId),
-      x: p.x, y: p.y, z: s.target.zoom ?? sc?.camera?.zoom ?? 1, r: s.target.rotation ?? 0,
-      vw: s.target.referenceViewport?.width || 1280, vh: s.target.referenceViewport?.height || 720,
+      layer: layerIds.indexOf(destId),
+      x: p.x, y: p.y, z: zoom, r: t.rotation ?? 0,
+      vw: t.referenceViewport?.width || 1280, vh: t.referenceViewport?.height || 720,
       ms: s.durationMs ?? 900, ease: s.easing || 'smooth',
+      rv: rv ? { after: rv.timing !== 'with-camera', enter: (rv.enter || []).map((e) => ({ id: e.nodeId, fx: e.effect || 'fade', dl: e.delayMs || 0, du: e.durationMs ?? 400 })), exit: rv.exitNodeIds || [] } : null,
     };
   });
   if (!stepData.length) throw new Error('簡報沒有任何步驟');
@@ -344,6 +438,7 @@ html,body{margin:0;height:100%;background:#0f0f0d;color:#f2ede4;font-family:${DE
 .world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
 .wires{position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;z-index:1}
 .n{position:absolute;display:flex;border:1px solid transparent}
+.n.hid{opacity:0;visibility:hidden}
 .n.text{align-items:flex-start;justify-content:flex-start}
 .n.shape{align-items:center;justify-content:center}
 .n.img{overflow:hidden}.n.img img{width:100%;height:100%;display:block}
@@ -415,6 +510,27 @@ function playAudio(){
   audio.onended=()=>{if(v)v.classList.remove('on')};audio.play().catch(()=>{if(v)v.classList.remove('on')});
 }
 function esc(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+// 逐項揭示:initiallyHidden 的節點,依 0..i 步驟(同一畫布)的 reveal.enter / exitNodeIds 累計出可見集合
+const HID=new Set([...document.querySelectorAll('.n.hid[data-n]')].map(e=>e.dataset.n));
+const TRK=new Set(HID);STEPS.forEach(t=>t.rv&&t.rv.exit.forEach(id=>TRK.add(id)));
+function reveal(i,animate){
+  if(!TRK.size)return;
+  const s=STEPS[i],shown=new Set([...TRK].filter(id=>!HID.has(id)));
+  for(let k=0;k<=i;k++){const r=STEPS[k].rv;if(!r||STEPS[k].layer!==s.layer)continue;r.enter.forEach(e=>shown.add(e.id));r.exit.forEach(id=>shown.delete(id))}
+  const ent=new Map((animate&&s.rv?s.rv.enter:[]).map(e=>[e.id,e]));
+  layers[s.layer].querySelectorAll('.n[data-n]').forEach(el=>{
+    const id=el.dataset.n;if(!TRK.has(id))return;
+    el.getAnimations().forEach(a=>a.cancel());
+    if(shown.has(id)){
+      el.classList.remove('hid');
+      const e=ent.get(id);
+      if(e&&e.fx!=='none'){
+        const base=(s.rv.after?s.ms:0)+e.dl;
+        el.animate(e.fx==='scale'?[{opacity:0,transform:'scale(.6)'},{opacity:1,transform:'scale(1)'}]:[{opacity:0},{opacity:1}],{duration:e.du,delay:base,fill:'backwards',easing:'ease-out'});
+      }
+    }else el.classList.add('hid');
+  });
+}
 function go(i,instant){
   i=Math.max(0,Math.min(STEPS.length-1,i));
   const s=STEPS[i],prev=cur>=0?STEPS[cur]:null;
@@ -424,6 +540,7 @@ function go(i,instant){
   if(instant||!prev||prev.layer!==s.layer){w.style.transition='none';w.style.transform=t;void w.offsetWidth}
   else{w.style.transition='transform '+s.ms+'ms '+(EASE[s.ease]||EASE.smooth);w.style.transform=t}
   layers.forEach((l,j)=>l.classList.toggle('on',j===s.layer));
+  reveal(i,!instant&&prev&&i===cur+1);
   cur=i;stopAudio();
   cnt.textContent=(i+1)+' / '+STEPS.length;lab.textContent=s.label;
   notes.innerHTML=(s.notes?'<h4>講者備註</h4>'+esc(s.notes):'')+(s.tr?'<h4>語音逐字稿</h4>'+esc(s.tr):'');
