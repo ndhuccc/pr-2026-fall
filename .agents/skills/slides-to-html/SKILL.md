@@ -46,8 +46,7 @@ node .agents/skills/slides-to-html/scripts/jbd_to_html.mjs --out-dir <輸出資�
 
 | 項目 | 處理方式 |
 |---|---|
-| 鏡頭 | 每個步驟是畫布上的一個鏡頭(位置、縮放、旋轉);同一畫布內平移縮放有動畫,換畫布用淡入淡出。支援 `scene-point`、`scene-overview`(框住該畫布全部內容,留約 12% 邊距)、`focus-node`(框住該節點)、`enter-frame`(進入框的子畫布)。 |
-| 逐項揭示 | 支援 `initiallyHidden` 與步驟的 `reveal`(`enter` 淡入/縮放、`delayMs`、`durationMs`、`timing`;`exitNodeIds` 退場)。一頁有多個步驟時,每按一次顯示該步驟累計後的內容;往回退則還原到該步驟當時的狀態。 |
+| 鏡頭 | 每個步驟是畫布上的一個鏡頭(位置、縮放、旋轉);同一畫布內平移縮放有動畫,換畫布用淡入淡出。 |
 | 文字、圖形 | 位置、大小、填色、邊框、圓角、字級、對齊、行高照原樣;圖形文字垂直置中、內距 12。 |
 | Markdown | 標題、清單、粗斜體、程式碼、引用、表格;單一換行視為換行;不允許原始 HTML,連結只保留 http/https/mailto。 |
 | 公式 | `$…$`、`$$…$$`,配對規則與 JianBauDau 相同;轉換時用 KaTeX 排好。 |
@@ -56,13 +55,11 @@ node .agents/skills/slides-to-html/scripts/jbd_to_html.mjs --out-dir <輸出資�
 | 巢狀畫布 | 框(frame)內顯示子畫布的即時預覽(最深 4 層)。 |
 | 圖片、語音 | 內嵌 `data:` 資料,各存一份(同一張圖出現多處不會讓檔案變大)。 |
 | 其他圖形 | 橢圓、三角形、菱形、五邊形、星形、箭頭用 SVG 畫。 |
-| 多邊形、折線 | `polygon`(封閉)與 `polyline`(開放、只描邊)用 SVG 路徑畫;`smooth` 曲線點以 Catmull-Rom 曲線穿過,尖角與曲線點可混用;線寬以像素計、會隨畫面縮放,支援虛線、圓形線端。 |
-| 填色效果 | `fillOpacity`(只影響填色)、線性/徑向/多色漸層(`gradientTo`、`gradientAngle`、`gradientType`、`gradientStops`)、沿輪廓的陰影(`shadowColor`、`shadowOpacity`、`shadowBlur`、`shadowOffsetX/Y`)。 |
 
 **與原播放器的差異**(已知,可接受):
 
 - 不支援 `video`、`embed`、`group` 節點,轉換時印警告並略過。
-- `scene-overview`、`focus-node` 的框景範圍是依節點外框估算(邊距約 12%),與播放器可能有些微差異。
+- 步驟目標若不是 `scene-point`(例如指向某個節點),以預設鏡頭顯示並印警告。
 - `asset:` 參照(只存在編輯器內)無法內嵌,圖片與語音會被略過並印警告;用 JianBauDau 的 **Export** 匯出的檔案不會有這種參照。
 - 圖形內的文字若超出方框,字級會自動縮小(最小 60%)以免被截掉。
 - 開啟頁面時沒有播放器的「Open-Frame 標題列」,第一步(根畫布)顯示框內的子畫布即時預覽。
