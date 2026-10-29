@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-29 — [更正] 同步 idl-2026-fall 的 slides-to-html 轉換器:修正 KP 標題頁看不到標題(置中大標題、隱藏不完整預覽)。
+
 - 2026-10-29 — [更新] 同步 idl-2026-fall 的技能 page-to-teaching-diagram:新增品質門檻第 8 條「示意圖是主軸,文字是配角」(每頁圖形佔主要版面、不得只有文字卡片)。
 
 - 2026-10-29 01:40 — [更新] 同步 idl-2026-fall 的技能:slides-to-html 轉換器補上逐項揭示(initiallyHidden 與 reveal,同一頁多個步驟原本都只顯示第一步)、多邊形與折線、漸層、填色透明度、陰影;page-to-teaching-diagram 與 prompt-to-jbd-page 更新圖解規則。先前在 9b66bdc 做過同一組轉換器修正、隨後在 c8ca6d0 還原,本次以 idl-2026-fall 驗證過的版本取代。
