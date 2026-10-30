@@ -46,6 +46,7 @@
 
 ## 決策與異動紀錄
 
+- 2026-10-30 17:55 — 老師決定:製作簡報預設用 `page-to-teaching-diagram`,指定時才用 `view-from-text-v3`,且要求做簡報時先說明差別並問是否採用預設。已寫入 `AGENTS.md` §5.11。
 - 2026-10-27 16:45 — v3 課程路徑修正最終驗證完成：本課 12 項回歸測試與 Shell 語法檢查全部通過（https://github.com/ndhuccc/pr-2026-fall/actions/runs/40475501465）；IDL 同版 12 項亦通過（https://github.com/ndhuccc/idl-2026-fall/actions/runs/40475460437）。涵蓋課程／章節切換、含空格路徑、搬移覆寫、中英同檔／分檔與保留配圖、dry-run 無檔案與 Git 寫入。實際教材發布與瀏覽器驗收未執行；網站自動建置仍由既有流程處理。本次紀錄只補驗證證據，程式版本未改。
 
 - 2026-10-27 16:42 — 完成 view-from-text-v3 課程路徑整合：預設跟隨本課工具位置，支援 --repo／COURSE_REPO、明確章節與本課課名；保留 LEC／SKILLS_DIR 舊腳本相容性。發布自動判別中英同檔／分檔；中英同檔保留核准配圖，無須建立 lectures/en/。跨課同步與日誌須明確指定，dry-run 只讀。新增 12 項路徑、講義結構與預覽測試；PR 初版 10 項與 Shell 語法已通過（https://github.com/ndhuccc/pr-2026-fall/actions/runs/40474873911），本次最終版本待 Actions 查核。IDL 同時新增的第6週 KP04 教材及紀錄保留，僅修正其範例的機器固定路徑。Codex 雲端執行環境無法啟動，未在此執行 Python、瀏覽器或教材發布。
