@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-30 — [更新] 同步 idl-2026-fall:prompt-to-jbd-page 新增稽核第 12 項(原生連接線)與第 13 項(泡泡、想法雲與文字框);`tools/check_deck_quality.py` 新增連接線統計、泡泡與想法雲大小、空文字節點與超出頁面檢查。
+
 - 2026-10-30 — [更新] 同步 idl-2026-fall:slides-to-html 轉換器(連接線與標籤依 reveal 顯示)與 prompt-to-jbd-page 檢查工具(依鏡頭位置分頁)。
 
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的 prompt-to-jbd-page:新增 JianBauDau 功能清單(references/feature-catalog.md)與稽核第 11 項「功能涵蓋」,檢查工具同步。
