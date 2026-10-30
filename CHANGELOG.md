@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-30 — [更新] 同步 idl-2026-fall 的 prompt-to-jbd-page:新增 JianBauDau 功能清單(references/feature-catalog.md)與稽核第 11 項「功能涵蓋」,檢查工具同步。
+
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的 prompt-to-jbd-page:新增活潑元素與 reveal 稽核項目及檢查工具。
 
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的技能整理:課堂簡報製作流程與檢查工具搬到 prompt-to-jbd-page,page-to-teaching-diagram 只留圖解規則。
