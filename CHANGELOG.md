@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-30 — [更新] 同步 idl-2026-fall 的技能整理:課堂簡報製作流程與檢查工具搬到 prompt-to-jbd-page,page-to-teaching-diagram 只留圖解規則。
+
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的技能 page-to-teaching-diagram:新增「課堂簡報製作流程與版面經驗」與檢查工具 tools/check_deck_quality.py。
 
 - 2026-10-29 — [更正] 同步 idl-2026-fall 的 slides-to-html 轉換器:修正 KP 標題頁看不到標題(置中大標題、隱藏不完整預覽)。
