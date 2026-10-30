@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-10-30 — [更新] 同步 idl-2026-fall:slides-to-html 轉換器(連接線與標籤依 reveal 顯示)與 prompt-to-jbd-page 檢查工具(依鏡頭位置分頁)。
+
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的 prompt-to-jbd-page:新增 JianBauDau 功能清單(references/feature-catalog.md)與稽核第 11 項「功能涵蓋」,檢查工具同步。
 
 - 2026-10-30 — [更新] 同步 idl-2026-fall 的 prompt-to-jbd-page:新增活潑元素與 reveal 稽核項目及檢查工具。
