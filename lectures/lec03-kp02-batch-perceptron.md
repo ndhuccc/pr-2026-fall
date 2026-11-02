@@ -10,6 +10,8 @@
 >
 > Source: §3.3, KP02, including its teaching notes and interactive code. Accessed October 16, 2026, Asia/Taipei.
 
+[JianBauDau 簡報](../slides/lec03-kp02-batch-perceptron.jbd.json) · [漫畫版](../slides/lec03-kp02-batch-perceptron-with-comics.jbd.json)
+
 ## 學習目標（Learning objectives）
 
 用誤判集合算出一次批次修正，檢查修正後的分數。

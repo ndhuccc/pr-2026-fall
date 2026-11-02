@@ -10,6 +10,8 @@
 >
 > Source: §3.3, KP05, including its teaching notes and interactive code. Accessed October 16, 2026, Asia/Taipei.
 
+[JianBauDau 簡報](../slides/lec03-kp05-neuron-pocket.jbd.json) · [漫畫版](../slides/lec03-kp05-neuron-pocket-with-comics.jbd.json)
+
 ## 學習目標（Learning objectives）
 
 區分預測與訓練，保存已觀察到的最佳權重。

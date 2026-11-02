@@ -10,6 +10,8 @@
 >
 > Source: §3.3, KP04, including its teaching notes and interactive code. Accessed October 16, 2026, Asia/Taipei.
 
+[JianBauDau 簡報](../slides/lec03-kp04-online-perceptron.jbd.json) · [漫畫版](../slides/lec03-kp04-online-perceptron-with-comics.jbd.json)
+
 ## 學習目標（Learning objectives）
 
 逐筆更新原例四點，判斷完整無更新的一輪。
