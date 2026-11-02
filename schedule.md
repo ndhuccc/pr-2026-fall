@@ -63,5 +63,27 @@
 - KP25 Boosting and AdaBoost: Turning Weak into Strong:[Lecture](lectures/en/lec05-kp25-adaboost.md) · [Slides](slides/lec05-kp25-adaboost-en.jbd.json)
 - KP26 The Class Imbalance Problem:[Lecture](lectures/en/lec05-kp26-imbalance.md) · [Slides](slides/lec05-kp26-imbalance-en.jbd.json)
 
+## 英文版簡報(English slides, week 3)
+
+第 3 週(Linear Classifiers)的導學版簡報另有英文版(含英文配音),內容與上表中文版對應;目前只有簡報,尚無英文講義。
+
+- KP01 Score, Normal Vector and Distance:[Slides](slides/lec03-kp01-pilot-en.jbd.json)
+- KP02 Batch Perceptron:[Slides](slides/lec03-kp02-batch-perceptron-en.jbd.json)
+- KP03 Perceptron Convergence Proof:[Slides](slides/lec03-kp03-convergence-en.jbd.json)
+- KP04 Online Perceptron:[Slides](slides/lec03-kp04-online-perceptron-en.jbd.json)
+- KP05 Neuron and Pocket Algorithm:[Slides](slides/lec03-kp05-neuron-pocket-en.jbd.json)
+- KP06 Kesler Construction:[Slides](slides/lec03-kp06-kesler-en.jbd.json)
+- KP07 Least Squares and Orthogonal Projection:[Slides](slides/lec03-kp07-mse-projection-en.jbd.json)
+- KP08 LMS Algorithm:[Slides](slides/lec03-kp08-lms-en.jbd.json)
+- KP09 Least-Squares Solution:[Slides](slides/lec03-kp09-least-squares-en.jbd.json)
+- KP10 Conditional Mean and Best Prediction:[Slides](slides/lec03-kp10-conditional-mean-en.jbd.json)
+- KP11 Conditional Mean and Posterior Probability:[Slides](slides/lec03-kp11-mse-posterior-en.jbd.json)
+- KP12 Bias and Variance:[Slides](slides/lec03-kp12-bias-variance-en.jbd.json)
+- KP13 Logistic Regression:[Slides](slides/lec03-kp13-logistic-en.jbd.json)
+- KP14 Hard-Margin Support Vector Machine:[Slides](slides/lec03-kp14-hard-margin-en.jbd.json)
+- KP15 Soft-Margin Support Vector Machine:[Slides](slides/lec03-kp15-soft-margin-en.jbd.json)
+- KP16 Multiclass and Error-Correcting Output Codes:[Slides](slides/lec03-kp16-multiclass-ecoc-en.jbd.json)
+
 > 重要日期若有異動,請同步更新 [`CHANGELOG.md`](CHANGELOG.md)。
+
 
