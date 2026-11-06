@@ -106,6 +106,16 @@ nav:
           - KP24 結合分類器: lectures/lec05-kp24-combining.md
           - KP25 Boosting 與 AdaBoost: lectures/lec05-kp25-adaboost.md
           - KP26 類別不平衡: lectures/lec05-kp26-imbalance.md
+      - 第 10 週 Week 10:
+          - KP01 特徵生成動機: lectures/lec10-kp01-feature-generation-motivation.md
+          - KP02 基底、投影與重建: lectures/lec10-kp02-basis-projection.md
+          - KP03 主成分分析: lectures/lec10-kp03-pca-klt.md
+          - KP04 奇異值分解: lectures/lec10-kp04-svd.md
+          - KP05 非負矩陣分解: lectures/lec10-kp05-nmf.md
+          - KP06 非線性降維與流形: lectures/lec10-kp06-manifold.md
+          - KP07 核主成分分析: lectures/lec10-kp07-kernel-pca.md
+          - KP08 拉普拉斯特徵映射: lectures/lec10-kp08-laplacian-eigenmaps.md
+          - KP09 局部重建與圖距離: lectures/lec10-kp09-lle-isomap.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md

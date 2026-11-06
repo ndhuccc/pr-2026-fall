@@ -22,7 +22,9 @@
 | 7 | 10/19 | Feature Selection and Generation (1) – Feature Selection Methods | | |
 | 8 | 10/26 | 放假(光復節補假) | | 無上課 |
 | 9 | 11/02 | 期中考 Midterm Exam | | 期中考 |
-| 10 | 11/09 | Feature Selection and Generation (2) – PCA & LDA | | HW01 截止 |
+| 10 | 11/09 | Feature Generation I (1) – 動機與線性表示（基底、投影、KLT／PCA、SVD） | [KP01 特徵生成動機](lectures/lec10-kp01-feature-generation-motivation.md)；[KP02 基底、投影與重建](lectures/lec10-kp02-basis-projection.md)；[KP03 主成分分析](lectures/lec10-kp03-pca-klt.md)；[KP04 奇異值分解](lectures/lec10-kp04-svd.md) | KP01–KP04；HW01 截止 |
+| 10 | 11/09 | Feature Generation I (2) – 非負與非線性表示（NMF、流形、Kernel PCA） | [KP05 非負矩陣分解](lectures/lec10-kp05-nmf.md)；[KP06 非線性降維與流形](lectures/lec10-kp06-manifold.md)；[KP07 核主成分分析](lectures/lec10-kp07-kernel-pca.md) | KP05–KP07 |
+| 10 | 11/09 | Feature Generation I (3) – 圖方法（Laplacian Eigenmaps、LLE、ISOMAP） | [KP08 拉普拉斯特徵映射](lectures/lec10-kp08-laplacian-eigenmaps.md)；[KP09 局部重建與圖距離](lectures/lec10-kp09-lle-isomap.md) | KP08–KP09 |
 | 11 | 11/16 | Template Matching (1) – Matching Techniques & Distance Measures | | |
 | 12 | 11/23 | Template Matching (2) – Dynamic Time Warping | | |
 | 13 | 11/30 | Context-Dependent Classification (1) – Markov Models | | |

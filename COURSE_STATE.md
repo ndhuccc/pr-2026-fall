@@ -31,6 +31,9 @@
 
 ## 待辦事項
 
+- [x] Feature Generation I：KP01–KP09 九份本機講義草稿完成，已整合第 10 週課表並完成本批驗證。
+- [ ] 教師內容審閱 Feature Generation I 全九單元；本輪已授權講義提交推送，接續使用 jbd-maker 最新技能製作原生簡報。
+
 - [ ] 第2週 KP09漫畫版：在可開本機檔案的簡報島／播放器驗證Open、17張漫畫播放、reticle與PDF；目前Chrome擴充功能檔案存取權限阻擋。完整設計稽核差異見漫畫REPORT。
 
 - [ ] 第2週 KP08 漫畫版：原生 Open／12張漫畫播放／PDF 驗收仍待完成；本次兩種檔案選擇操作均逾時。原稿概念差異及設計稽核結果見漫畫 REPORT.md。
@@ -45,6 +48,14 @@
 - [ ] 尚待確認 PDF 匯出與編輯器 Scene mode 的 reticle 顯示；播放器的雙尺寸逐頁檢查已完成。
 
 ## 決策與異動紀錄
+
+- 2026-11-06 17:49 — 教師明確要求先將九份講義提交推送至本課程，再以 jbd-maker 新版技能製作各 KP 原生簡報。講義位於 `lectures/lec10-kp01-*.md` 至 `lec10-kp09-*.md`，20 圖及 3 支重建腳本位於 `assets/figures/`；課表中文短標題與生成的第 10 週導覽已對齊。同步前完整 `build_docs.py` 及 MkDocs 建置成功，未見 WARNING／ERROR；既有 INFO 提示保留。講義原有稽核 WARN 及試讀限制不因提交授權而視為解決。原生簡報將使用 jbd-maker 遠端最新 reasoning-led-teaching-deck 2.3.0，製作及驗收另行記錄。
+
+- 2026-11-06 17:38 — 教師要求「繼續完成其他KP的講義」，依已核准範圍完成 KP03–KP09（A03、A04、A06–A10）：七份繁中英講義、14 張原創科學圖、共同重建腳本、22 題練習與解答；KP01、KP02 原稿與 80 份既有講義均以雜湊核對未改。七份新 PDF 共 60 頁，全九單元合併 PDF 共 95 頁，附章節書籤、內部連結、閱讀站與 150 分鐘教師指引。190 項數值／程式／資產／原檔保留核對（含 80 份既有講義雜湊）及 200 組雙語正文配對通過；七份文字稽核各 FAIL 0／WARN 3（語言與術語標題識別誤報，見報告）。隔離閱讀站嚴格建置、桌面／手機／列印檢查完成；全課程網站未部署，既有稽核基線仍有 13 份含 FAIL，未宣稱已修復。第 10 週課表按實際九份講義分三列，保留 11/09 日期與 HW01 截止備註。所有算例標示補充；未執行獨立代理冷讀或真人試讀。仍是本機待審稿，未提交、推送、發布。交付包：`/workspace/scratch/pr-feature-generation-remaining/delivery/PR-Feature-Generation-I-KP01-KP09-review.zip`；合併 PDF 與驗證報告同在 `/workspace/scratch/pr-feature-generation-remaining/`。
+
+- 2026-11-06 16:17 — 教師接續指定「Kp01」，完成 `lectures/lec10-kp01-feature-generation-motivation.md`、3 張圖及可重建腳本；以四筆構造資料說明平均與差值保留的資訊、可逆表示、重建與分類目標差異、訓練資料限定的驗證流程，附 4 題解答與 KP02 入口。43 項數值／內容核對、53 組中英正文配對通過，講義 FAIL 0／WARN 3（語言與術語識別誤報已核對）；試閱站桌面、手機與 17 頁 PDF 已檢視。KP02 與其餘既有教材未修改，未把接續製作視為 KP02 已驗收。未執行獨立冷讀或真人試讀；尚未提交、推送、發布，待審閱後整合課表。雲端交付位置：`/workspace/scratch/pr-feature-generation-kp01/`。
+
+- 2026-11-06 15:04 — Feature Generation I 講義規劃已由教師確認：來源 A01、A02、A03、A04、A06、A07、A08、A09、A10，研究生程度、中英對照、一週約 150 分鐘；先試做 KP02「基底、投影與重建」。本機新增 `lectures/lec10-kp02-basis-projection.md`、3 張圖及重建腳本，47 項獨立精確數值檢查與 65 組中英段落核對通過，講義稽核 FAIL 0／WARN 3（雙語句長與術語表識別誤報，已另行核對）。試閱頁桌面、手機與 PDF 已檢查；未做獨立代理冷讀或真人試讀。待教師確認試做稿後接續其餘 8 個單元、整合課表與正式網站。本次僅本機草稿，未提交、推送或部署；KP02 單獨試做尚未列入 schedule，正式整合須在同一次提交補齊第 10 週的 KP 順序。雲端試閱與報告暫存於 `/workspace/scratch/pr-feature-generation-kp02/`。
 
 - 2026-10-31 — 依老師要求,JianBauDau 播放器下載連結改為 1.0.5(`ndhuccc/IDL115` 的 `player-v1.0.5`,已確認兩個安裝檔可下載):`scripts/build_docs.py` 的 `PLAYER_URL`、投影片下載頁顯示版本與 `slides/FORMATS.md` 同步更新。
 - 2026-10-31 — 依老師要求,JianBauDau 播放器下載連結改為 1.0.4(`ndhuccc/IDL115` 的 `player-v1.0.4`,已確認兩個安裝檔可下載):`scripts/build_docs.py` 的 `PLAYER_URL`、投影片下載頁顯示版本與 `slides/FORMATS.md` 同步更新。
