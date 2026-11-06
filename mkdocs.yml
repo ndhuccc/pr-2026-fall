@@ -106,6 +106,15 @@ nav:
           - KP24 結合分類器: lectures/lec05-kp24-combining.md
           - KP25 Boosting 與 AdaBoost: lectures/lec05-kp25-adaboost.md
           - KP26 類別不平衡: lectures/lec05-kp26-imbalance.md
+      - 第 7 週 Week 7:
+          - KP00 特徵選擇路線圖: lectures/lec07-kp00-overview.md
+          - KP01 為什麼要選特徵: lectures/lec07-kp01-why-select.md
+          - KP02 前置處理: lectures/lec07-kp02-preprocessing.md
+          - KP03 統計檢定: lectures/lec07-kp03-hypothesis-tests.md
+          - KP04 ROC 曲線與 AUC: lectures/lec07-kp04-roc-auc.md
+          - KP05 可分離性分數 FDR: lectures/lec07-kp05-separability-fdr.md
+          - KP06 特徵子集選擇: lectures/lec07-kp06-subset-selection.md
+          - KP07 特徵搜尋: lectures/lec07-kp07-search.md
       - 第 10 週 Week 10:
           - KP01 特徵生成動機: lectures/lec10-kp01-feature-generation-motivation.md
           - KP02 基底、投影與重建: lectures/lec10-kp02-basis-projection.md
