@@ -350,6 +350,17 @@
     "p05-reveal-te2",
     "p05-reveal-tel2",
     "p05-reveal-gn2",
+    "p05-reveal-pt",
+    "p05-reveal-pax",
+    "p05-reveal-p05",
+    "p05-reveal-p05l",
+    "p05-reveal-pb4",
+    "p05-reveal-pl4",
+    "p05-reveal-pb5",
+    "p05-reveal-pl5",
+    "p05-reveal-pb45",
+    "p05-reveal-pl45",
+    "p05-reveal-pj",
     "p05-reveal-st",
     "p05-reveal-cc",
     "p05-reveal-m-shadow",
@@ -566,6 +577,8 @@
     "p05-reveal-cue2",
     "p05-reveal-cue3",
     "p05-reveal-cue4",
+    "p05-reveal-cue5",
+    "p05-reveal-cue6",
     "p06-search-nav",
     "p06-search-cue0",
     "p06-search-cue1",
@@ -14115,7 +14128,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "用線性判別分類器，5 折交叉驗證；另用 4000 筆新資料評估（縱軸從 0.5 起）。",
+   "text": "用線性判別分類器，5 折交叉驗證；另用 4000 筆新資料評估（左圖縱軸從 0.5 起；右圖縱軸從 0.4 起，紅虛線＝亂猜 0.5）。",
    "shapeKind": "rectangle"
   },
   "p05-reveal-ax": {
@@ -14130,7 +14143,7 @@
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 1080,
+   "width": 710,
    "height": 1,
    "zIndex": 3,
    "locked": false,
@@ -14161,13 +14174,13 @@
    "name": "p05-reveal-cv0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5920,
+    "x": 5870,
     "y": 383.99999999999994,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 176.00000000000006,
    "zIndex": 3,
    "locked": false,
@@ -14196,13 +14209,13 @@
    "name": "p05-reveal-cvl0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5906,
+    "x": 5848,
     "y": 339.99999999999994,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14235,13 +14248,13 @@
    "name": "p05-reveal-te0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6050,
+    "x": 5960,
     "y": 359.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 200.99999999999997,
    "zIndex": 3,
    "locked": false,
@@ -14270,13 +14283,13 @@
    "name": "p05-reveal-tel0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6036,
+    "x": 5938,
     "y": 315.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14309,13 +14322,13 @@
    "name": "p05-reveal-gn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5890,
+    "x": 5842,
     "y": 568,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 300,
+   "width": 232,
    "height": 48,
    "zIndex": 8,
    "locked": false,
@@ -14341,13 +14354,13 @@
    "name": "p05-reveal-cv1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6280,
+    "x": 6105,
     "y": 232.00000000000006,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 327.99999999999994,
    "zIndex": 3,
    "locked": false,
@@ -14376,13 +14389,13 @@
    "name": "p05-reveal-cvl1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6266,
+    "x": 6083,
     "y": 188.00000000000006,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14415,13 +14428,13 @@
    "name": "p05-reveal-te1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 6195,
     "y": 248.99999999999994,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 311.00000000000006,
    "zIndex": 3,
    "locked": false,
@@ -14450,13 +14463,13 @@
    "name": "p05-reveal-tel1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6396,
+    "x": 6173,
     "y": 204.99999999999994,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14489,13 +14502,13 @@
    "name": "p05-reveal-gn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6250,
+    "x": 6077,
     "y": 568,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 300,
+   "width": 232,
    "height": 48,
    "zIndex": 8,
    "locked": false,
@@ -14521,13 +14534,13 @@
    "name": "p05-reveal-cv2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6640,
+    "x": 6340,
     "y": 224.00000000000006,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 335.99999999999994,
    "zIndex": 3,
    "locked": false,
@@ -14556,13 +14569,13 @@
    "name": "p05-reveal-cvl2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6626,
+    "x": 6318,
     "y": 180.00000000000006,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14595,13 +14608,13 @@
    "name": "p05-reveal-te2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6770,
+    "x": 6430,
     "y": 239.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 110,
+   "width": 80,
    "height": 321.0,
    "zIndex": 3,
    "locked": false,
@@ -14630,13 +14643,13 @@
    "name": "p05-reveal-tel2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6756,
+    "x": 6408,
     "y": 195.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 138,
+   "width": 124,
    "height": 36,
    "zIndex": 6,
    "locked": false,
@@ -14669,13 +14682,13 @@
    "name": "p05-reveal-gn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6610,
+    "x": 6312,
     "y": 568,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 300,
+   "width": 232,
    "height": 48,
    "zIndex": 8,
    "locked": false,
@@ -14693,6 +14706,410 @@
    },
    "text": "全部 5 個特徵",
    "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pt": {
+   "id": "p05-reveal-pt",
+   "type": "text",
+   "name": "p05-reveal-pt",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6610,
+    "y": 190,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 390,
+   "height": 40,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#5b21b6",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 20.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#7c3aed",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "搭檔效應：新資料準確率",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pax": {
+   "id": "p05-reveal-pax",
+   "type": "shape",
+   "name": "p05-reveal-pax",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6610,
+    "y": 560,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 390,
+   "height": 1,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p05-reveal-p05": {
+   "id": "p05-reveal-p05",
+   "type": "shape",
+   "name": "p05-reveal-p05",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6610,
+    "y": 490.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 390,
+   "height": 1,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p05-reveal-p05l": {
+   "id": "p05-reveal-p05l",
+   "type": "text",
+   "name": "p05-reveal-p05l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6936,
+    "y": 460.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 66,
+   "height": 26,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#dc2626",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "亂猜 0.5",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pb4": {
+   "id": "p05-reveal-pb4",
+   "type": "shape",
+   "name": "p05-reveal-pb4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6640,
+    "y": 416.675,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 143.325,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientAngle": 90,
+    "shadowColor": "#2563eb",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pl4": {
+   "id": "p05-reveal-pl4",
+   "type": "text",
+   "name": "p05-reveal-pl4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6625,
+    "y": 566,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_4$\n0.60",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pb5": {
+   "id": "p05-reveal-pb5",
+   "type": "shape",
+   "name": "p05-reveal-pb5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6745,
+    "y": 497.175,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 62.82499999999999,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 31.412499999999994,
+    "borderWidth": 0,
+    "gradientTo": "#dc2626",
+    "gradientAngle": 90,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pl5": {
+   "id": "p05-reveal-pl5",
+   "type": "text",
+   "name": "p05-reveal-pl5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6730,
+    "y": 566,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_5$\n0.49",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pb45": {
+   "id": "p05-reveal-pb45",
+   "type": "shape",
+   "name": "p05-reveal-pb45",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6850,
+    "y": 232.40000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 327.59999999999997,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pl45": {
+   "id": "p05-reveal-pl45",
+   "type": "text",
+   "name": "p05-reveal-pl45",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6835,
+    "y": 566,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_4+x_5$\n0.87",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-pj": {
+   "id": "p05-reveal-pj",
+   "type": "shape",
+   "name": "p05-reveal-pj",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6804.914077990747,
+    "y": 442.6796336228103,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44.813319771490114,
+   "height": 54.49536637718967,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#16a34a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 65.98321506497646,
+     "y": 61.58268950355665,
+     "smooth": true
+    },
+    {
+     "x": 96.44834440344225,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 24.960753881618185
+    },
+    {
+     "x": 96.44834440344225,
+     "y": 0.0
+    },
+    {
+     "x": 72.71577134228535,
+     "y": 15.833268697833491
+    }
+   ],
    "initiallyHidden": true
   },
   "p05-reveal-st": {
@@ -21895,7 +22312,75 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看星形與綠框：為什麼？",
+   "text": "看右側小圖：先擺好座標與亂猜線。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-cue5": {
+   "id": "p05-reveal-cue5",
+   "type": "text",
+   "name": "p05-reveal-cue5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看 $x_4$、$x_5$ 單獨的長條。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p05-reveal-cue6": {
+   "id": "p05-reveal-cue6",
+   "type": "text",
+   "name": "p05-reveal-cue6",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看 $x_4$ 加 $x_5$：升到哪裡？",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24247,7 +24732,7 @@
   {
    "id": "p05-reveal-st4",
    "order": 32,
-   "label": "KP06 揭曉：個別前三名不是最好的三個 · 看星形與綠框：為什麼？",
+   "label": "KP06 揭曉：個別前三名不是最好的三個 · 看右側小圖：先擺好座標與亂猜線。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -24268,21 +24753,33 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p05-reveal-st",
+      "nodeId": "p05-reveal-pt",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p05-reveal-cc",
+      "nodeId": "p05-reveal-pax",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p05-reveal-cue4",
+      "nodeId": "p05-reveal-p05",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-p05l",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-cue4",
+      "effect": "fade",
+      "delayMs": 160,
       "durationMs": 300
      }
     ],
@@ -24292,8 +24789,132 @@
    }
   },
   {
-   "id": "p06-search-st0",
+   "id": "p05-reveal-st5",
    "order": 33,
+   "label": "KP06 揭曉：個別前三名不是最好的三個 · 看 $x_4$、$x_5$ 單獨的長條。",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-reveal-pb4",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-pl4",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-pb5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-pl5",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-cue5",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-reveal-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p05-reveal-st6",
+   "order": 34,
+   "label": "KP06 揭曉：個別前三名不是最好的三個 · 看 $x_4$ 加 $x_5$：升到哪裡？",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-reveal-pb45",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-pl45",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-pj",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-st",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-cc",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-reveal-cue6",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-reveal-cue5"
+    ]
+   }
+  },
+  {
+   "id": "p06-search-st0",
+   "order": 35,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 先看左邊：三欄是子集的大小，每欄的子集不只一個。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24314,7 +24935,7 @@
   },
   {
    "id": "p06-search-st1",
-   "order": 34,
+   "order": 36,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看右上：窮舉與貪婪各要評幾次（對數長條）。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24379,7 +25000,7 @@
   },
   {
    "id": "p06-search-st2",
-   "order": 35,
+   "order": 37,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看左邊紅色路線：前向每步加一個最好的。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24444,7 +25065,7 @@
   },
   {
    "id": "p06-search-st3",
-   "order": 36,
+   "order": 38,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看紅色警示：前向停在哪裡。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24491,7 +25112,7 @@
   },
   {
    "id": "p06-search-st4",
-   "order": 37,
+   "order": 39,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看紫色與綠色路線：浮動搜尋回頭修正。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24556,7 +25177,7 @@
   },
   {
    "id": "p06-search-st5",
-   "order": 38,
+   "order": 40,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看右下：選特徵放不放進驗證。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24621,7 +25242,7 @@
   },
   {
    "id": "p06-search-st6",
-   "order": 39,
+   "order": 41,
    "label": "KP06–KP07：評整組、聰明地搜、把選擇放進驗證 · 看灰框與星形：小結。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24668,7 +25289,7 @@
   },
   {
    "id": "p07-summary-st0",
-   "order": 40,
+   "order": 42,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 先看第一格：清資料。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24689,7 +25310,7 @@
   },
   {
    "id": "p07-summary-st1",
-   "order": 41,
+   "order": 43,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看第二、三格：檢定與 ROC、AUC。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24748,7 +25369,7 @@
   },
   {
    "id": "p07-summary-st2",
-   "order": 42,
+   "order": 44,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看第四、五格：FDR 與子集。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24807,7 +25428,7 @@
   },
   {
    "id": "p07-summary-st3",
-   "order": 43,
+   "order": 45,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看第六格：搜尋。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24854,7 +25475,7 @@
   },
   {
    "id": "p07-summary-st4",
-   "order": 44,
+   "order": 46,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看下面這張圖的橫條：5 個特徵各自的 AUC。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24919,7 +25540,7 @@
   },
   {
    "id": "p07-summary-st5",
-   "order": 45,
+   "order": 47,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看紅點：個別前三名選到誰。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -24972,7 +25593,7 @@
   },
   {
    "id": "p07-summary-st6",
-   "order": 46,
+   "order": 48,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看綠點：驗證選出的三個選到誰。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -25025,7 +25646,7 @@
   },
   {
    "id": "p07-summary-st7",
-   "order": 47,
+   "order": 49,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 看新資料準確率與右邊的判斷。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -25090,7 +25711,7 @@
   },
   {
    "id": "p07-summary-st8",
-   "order": 48,
+   "order": 50,
    "label": "整個特徵選擇單元：先清資料，再評特徵，最後挑一組 · 最後看藍框：下一個單元。",
    "durationMs": 300,
    "holdMs": 3500,
