@@ -211,9 +211,16 @@
     "p04-fw-wr3",
     "p04-fw-back",
     "p04-fw-bk",
-    "p04-fw-fst",
-    "p04-fw-c1",
-    "p04-fw-c2",
+    "p04-fw-cf",
+    "p04-fw-fs",
+    "p04-fw-fb",
+    "p04-fw-cfn",
+    "p04-fw-cw",
+    "p04-fw-wb",
+    "p04-fw-wc",
+    "p04-fw-wnum",
+    "p04-fw-wwn",
+    "p04-fw-cwn",
     "p04-fw-m-shadow",
     "p04-fw-m-foot-l",
     "p04-fw-m-foot-r",
@@ -257,12 +264,24 @@
     "p05-combos-r2",
     "p05-combos-r3",
     "p05-combos-ax",
+    "p05-combos-ay",
+    "p05-combos-tk0",
+    "p05-combos-gd4",
+    "p05-combos-tk4",
+    "p05-combos-gd8",
+    "p05-combos-tk8",
+    "p05-combos-gd12",
+    "p05-combos-tk12",
+    "p05-combos-yl",
     "p05-combos-bar0",
     "p05-combos-bl0",
     "p05-combos-bt0",
     "p05-combos-bar1",
     "p05-combos-bl1",
     "p05-combos-bt1",
+    "p05-combos-hl",
+    "p05-combos-brk",
+    "p05-combos-rt",
     "p05-combos-wn5",
     "p05-combos-nt",
     "p05-combos-m-shadow",
@@ -305,9 +324,17 @@
     "p06-comp-e2",
     "p06-comp-o1",
     "p06-comp-o2",
+    "p06-comp-ax4",
+    "p06-comp-ax5",
+    "p06-comp-l4",
+    "p06-comp-l5",
     "p06-comp-t1",
     "p06-comp-t2",
     "p06-comp-xa",
+    "p06-comp-dn",
+    "p06-comp-ds",
+    "p06-comp-dnl",
+    "p06-comp-dsl",
     "p06-comp-a4",
     "p06-comp-a5",
     "p06-comp-ab",
@@ -515,6 +542,12 @@
     "p10-pipe-r2",
     "p10-pipe-rr1",
     "p10-pipe-rr2",
+    "p10-pipe-chance",
+    "p10-pipe-cl",
+    "p10-pipe-wbar",
+    "p10-pipe-wbl",
+    "p10-pipe-rbar",
+    "p10-pipe-rbl",
     "p10-pipe-wn",
     "p10-pipe-ok",
     "p10-pipe-cd",
@@ -555,10 +588,48 @@
     "p11-practice1-ctx",
     "p11-practice1-q1",
     "p11-practice1-c0",
-    "p11-practice1-c1",
-    "p11-practice1-c2",
-    "p11-practice1-r1",
-    "p11-practice1-r2",
+    "p11-practice1-pool",
+    "p11-practice1-d0",
+    "p11-practice1-d1",
+    "p11-practice1-d2",
+    "p11-practice1-d3",
+    "p11-practice1-d4",
+    "p11-practice1-d5",
+    "p11-practice1-d6",
+    "p11-practice1-d7",
+    "p11-practice1-d8",
+    "p11-practice1-d9",
+    "p11-practice1-d10",
+    "p11-practice1-d11",
+    "p11-practice1-d12",
+    "p11-practice1-d13",
+    "p11-practice1-d14",
+    "p11-practice1-d15",
+    "p11-practice1-d16",
+    "p11-practice1-d17",
+    "p11-practice1-d18",
+    "p11-practice1-d19",
+    "p11-practice1-d20",
+    "p11-practice1-d21",
+    "p11-practice1-d22",
+    "p11-practice1-d23",
+    "p11-practice1-d24",
+    "p11-practice1-d25",
+    "p11-practice1-d26",
+    "p11-practice1-d27",
+    "p11-practice1-d28",
+    "p11-practice1-d29",
+    "p11-practice1-s0",
+    "p11-practice1-s1",
+    "p11-practice1-s2",
+    "p11-practice1-s3",
+    "p11-practice1-res",
+    "p11-practice1-blb",
+    "p11-practice1-bar",
+    "p11-practice1-cmb",
+    "p11-practice1-gsl",
+    "p11-practice1-ans",
+    "p11-practice1-garr",
     "p11-practice1-as",
     "p11-practice1-cm",
     "p11-practice1-m-shadow",
@@ -605,6 +676,8 @@
     "p12-practice2-b3",
     "p12-practice2-a3",
     "p12-practice2-ax",
+    "p12-practice2-n2",
+    "p12-practice2-n3",
     "p12-practice2-as",
     "p12-practice2-pk",
     "p12-practice2-m-shadow",
@@ -643,17 +716,41 @@
     "p13-summary-rule",
     "p13-summary-title",
     "p13-summary-ctx",
-    "p13-summary-ch0",
-    "p13-summary-ch1",
-    "p13-summary-ch2",
-    "p13-summary-ch3",
-    "p13-summary-ch4",
-    "p13-summary-ch5",
+    "p13-summary-zA",
+    "p13-summary-zB",
+    "p13-summary-zC",
+    "p13-summary-tA",
+    "p13-summary-tB",
+    "p13-summary-tC",
     "p13-summary-ca0",
     "p13-summary-ca1",
-    "p13-summary-ca2",
-    "p13-summary-ca3",
-    "p13-summary-ca4",
+    "p13-summary-ax",
+    "p13-summary-chance",
+    "p13-summary-cl",
+    "p13-summary-bn0",
+    "p13-summary-bn1",
+    "p13-summary-bn2",
+    "p13-summary-bn3",
+    "p13-summary-bn4",
+    "p13-summary-src1",
+    "p13-summary-src2",
+    "p13-summary-bA",
+    "p13-summary-blA",
+    "p13-summary-bB1",
+    "p13-summary-blB1",
+    "p13-summary-bB2",
+    "p13-summary-blB2",
+    "p13-summary-bC1",
+    "p13-summary-blC1",
+    "p13-summary-bC2",
+    "p13-summary-blC2",
+    "p13-summary-cA",
+    "p13-summary-cB",
+    "p13-summary-cC1",
+    "p13-summary-cC2",
+    "p13-summary-wn",
+    "p13-summary-hl",
+    "p13-summary-brk",
     "p13-summary-nxs",
     "p13-summary-next",
     "p13-summary-m-shadow",
@@ -710,20 +807,21 @@
     "p04-fw-cue2",
     "p04-fw-cue3",
     "p04-fw-cue4",
+    "p04-fw-cue5",
+    "p04-fw-cue6",
     "p05-combos-nav",
     "p05-combos-cue0",
     "p05-combos-cue1",
     "p05-combos-cue2",
     "p05-combos-cue3",
     "p05-combos-cue4",
-    "p05-combos-cue5",
-    "p05-combos-cue6",
     "p06-comp-nav",
     "p06-comp-cue0",
     "p06-comp-cue1",
     "p06-comp-cue2",
     "p06-comp-cue3",
     "p06-comp-cue4",
+    "p06-comp-cue5",
     "p07-sim-nav",
     "p07-sim-cue0",
     "p07-sim-cue1",
@@ -753,6 +851,7 @@
     "p11-practice1-cue0",
     "p11-practice1-cue1",
     "p11-practice1-cue2",
+    "p11-practice1-cue3",
     "p12-practice2-nav",
     "p12-practice2-cue0",
     "p12-practice2-cue1",
@@ -763,8 +862,7 @@
     "p13-summary-cue2",
     "p13-summary-cue3",
     "p13-summary-cue4",
-    "p13-summary-cue5",
-    "p13-summary-cue6"
+    "p13-summary-cue5"
    ]
   }
  },
@@ -5795,13 +5893,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4360,
-    "y": 112,
+    "y": 106,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 560,
-   "height": 36,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -5809,7 +5907,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 15,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -5833,13 +5931,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4360,
-    "y": 156,
+    "y": 148,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -5866,13 +5964,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4680,
-    "y": 156,
+    "y": 148,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -5899,13 +5997,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5000,
-    "y": 156,
+    "y": 148,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -5933,13 +6031,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5320,
-    "y": 156,
+    "y": 148,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -5967,7 +6065,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4600.0,
-    "y": 208.96,
+    "y": 190.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6016,7 +6114,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4920.0,
-    "y": 208.96,
+    "y": 190.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6066,7 +6164,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5240.0,
-    "y": 208.96,
+    "y": 190.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6116,13 +6214,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4360,
-    "y": 336,
+    "y": 262,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 560,
-   "height": 36,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -6130,7 +6228,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 15,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -6155,13 +6253,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4360,
-    "y": 380,
+    "y": 304,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6189,13 +6287,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4680,
-    "y": 380,
+    "y": 304,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6223,13 +6321,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5000,
-    "y": 380,
+    "y": 304,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6257,13 +6355,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5320,
-    "y": 380,
+    "y": 304,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 240,
-   "height": 120,
+   "height": 100,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6291,7 +6389,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4600.0,
-    "y": 432.96,
+    "y": 346.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6341,7 +6439,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4920.0,
-    "y": 432.96,
+    "y": 346.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6391,7 +6489,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5240.0,
-    "y": 432.96,
+    "y": 346.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6441,7 +6539,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 4923.0,
-    "y": 428.8,
+    "y": 342.8,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -6496,14 +6594,14 @@
    "name": "p04-fw-bk",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4620,
-    "y": 524,
+    "x": 4840,
+    "y": 414,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 250,
-   "height": 36,
+   "width": 240,
+   "height": 32,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -6511,7 +6609,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 14,
-    "radius": 18.0,
+    "radius": 16.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -6529,56 +6627,133 @@
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
-  "p04-fw-fst": {
-   "id": "p04-fw-fst",
-   "type": "shape",
-   "name": "p04-fw-fst",
+  "p04-fw-cf": {
+   "id": "p04-fw-cf",
+   "type": "text",
+   "name": "p04-fw-cf",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4886,
-    "y": 528,
+    "x": 4360,
+    "y": 470,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 44,
-   "height": 44,
+   "width": 150,
+   "height": 36,
    "zIndex": 6,
    "locked": false,
    "style": {
-    "fill": "#2563eb",
+    "fill": "#1e40af",
     "stroke": "transparent",
     "textColor": "#ffffff",
-    "fontSize": 16,
-    "radius": 0,
+    "fontSize": 15,
+    "radius": 18.0,
     "borderWidth": 0,
-    "gradientTo": "#1e40af",
-    "gradientAngle": 135,
     "fontWeight": 700,
-    "shadowColor": "#2563eb",
-    "shadowOpacity": 0.7,
-    "shadowBlur": 22,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
     "shadowOffsetX": 0,
-    "shadowOffsetY": 0
+    "shadowOffsetY": 8
    },
-   "text": "",
-   "shapeKind": "star",
+   "text": "Filter 花費",
+   "shapeKind": "rectangle",
    "initiallyHidden": true
   },
-  "p04-fw-c1": {
-   "id": "p04-fw-c1",
-   "type": "text",
-   "name": "p04-fw-c1",
+  "p04-fw-fs": {
+   "id": "p04-fw-fs",
+   "type": "shape",
+   "name": "p04-fw-fs",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4940,
-    "y": 520,
+    "x": 4525,
+    "y": 466,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 620,
-   "height": 70,
+   "width": 100,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1e3a8a",
+    "fontSize": 13,
+    "radius": 22.0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientAngle": 90,
+    "shadowColor": "#2563eb",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4,
+    "fontWeight": 700,
+    "textAlign": "center"
+   },
+   "text": "N 組評分",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-fb": {
+   "id": "p04-fw-fb",
+   "type": "shape",
+   "name": "p04-fw-fb",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4631,
+    "y": 466,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 104,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#14532d",
+    "fontSize": 13,
+    "radius": 22.0,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4,
+    "fontWeight": 700,
+    "textAlign": "center"
+   },
+   "text": "訓練 1 次",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-cfn": {
+   "id": "p04-fw-cfn",
+   "type": "text",
+   "name": "p04-fw-cfn",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4745,
+    "y": 466,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 815,
+   "height": 44,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6589,30 +6764,300 @@
     "radius": 20,
     "borderWidth": 0,
     "fontWeight": 700,
-    "textAlign": "left",
+    "textAlign": "center",
     "lineHeight": 1.45,
     "fontFamily": "Noto Sans CJK TC",
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "優點：快、乾淨，分類器還沒選也能先做。缺點：準則好不等於最後表現好",
+   "text": "評分 $N$ 組很快，分類器只訓練 1 次：快、乾淨；但準則好不等於最後表現好",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
-  "p04-fw-c2": {
-   "id": "p04-fw-c2",
+  "p04-fw-cw": {
+   "id": "p04-fw-cw",
    "type": "text",
-   "name": "p04-fw-c2",
+   "name": "p04-fw-cw",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4470,
-    "y": 584,
+    "x": 4360,
+    "y": 528,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 1090,
+   "width": 150,
+   "height": 36,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#92400e",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 18.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#b45309",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "Wrapper 花費",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-wb": {
+   "id": "p04-fw-wb",
+   "type": "shape",
+   "name": "p04-fw-wb",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4525,
+    "y": 524,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 880,
    "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 22.0,
+    "borderWidth": 0,
+    "gradientTo": "#d97706",
+    "gradientAngle": 90,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-wc": {
+   "id": "p04-fw-wc",
+   "type": "shape",
+   "name": "p04-fw-wc",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4525,
+    "y": 524,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 880,
+   "height": 44,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#92400e",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 9.090909090909092,
+     "y": 100.0
+    },
+    {
+     "x": 9.090909090909092,
+     "y": 0.0
+    },
+    {
+     "x": 18.181818181818183,
+     "y": 0.0
+    },
+    {
+     "x": 18.181818181818183,
+     "y": 100.0
+    },
+    {
+     "x": 27.27272727272727,
+     "y": 100.0
+    },
+    {
+     "x": 27.27272727272727,
+     "y": 0.0
+    },
+    {
+     "x": 36.36363636363637,
+     "y": 0.0
+    },
+    {
+     "x": 36.36363636363637,
+     "y": 100.0
+    },
+    {
+     "x": 45.45454545454545,
+     "y": 100.0
+    },
+    {
+     "x": 45.45454545454545,
+     "y": 0.0
+    },
+    {
+     "x": 54.54545454545454,
+     "y": 0.0
+    },
+    {
+     "x": 54.54545454545454,
+     "y": 100.0
+    },
+    {
+     "x": 63.63636363636363,
+     "y": 100.0
+    },
+    {
+     "x": 63.63636363636363,
+     "y": 0.0
+    },
+    {
+     "x": 72.72727272727273,
+     "y": 0.0
+    },
+    {
+     "x": 72.72727272727273,
+     "y": 100.0
+    },
+    {
+     "x": 81.81818181818183,
+     "y": 100.0
+    },
+    {
+     "x": 81.81818181818183,
+     "y": 0.0
+    },
+    {
+     "x": 90.9090909090909,
+     "y": 0.0
+    },
+    {
+     "x": 90.9090909090909,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p04-fw-wnum": {
+   "id": "p04-fw-wnum",
+   "type": "text",
+   "name": "p04-fw-wnum",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5415,
+    "y": 524,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 145,
+   "height": 44,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 15,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$N$ 組 ⇒ $N$ 格",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-wwn": {
+   "id": "p04-fw-wwn",
+   "type": "shape",
+   "name": "p04-fw-wwn",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5388,
+    "y": 502,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 34,
+   "height": 30,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#dc2626",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#991b1b",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "!",
+   "shapeKind": "triangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-cwn": {
+   "id": "p04-fw-cwn",
+   "type": "text",
+   "name": "p04-fw-cwn",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4525,
+    "y": 576,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1035,
+   "height": 40,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -6629,7 +7074,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "優點：貼近實際任務。缺點：每試一組要訓練一次，成本更高",
+   "text": "每一格＝一組子集的完整訓練與驗證：貼近實際任務，但成本高很多",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -7679,7 +8124,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "從 $m$ 個特徵挑 $l$ 個，共 $\\binom{m}{l}=\\dfrac{m!}{l!\\,(m-l)!}$ 組。",
+   "text": "從 $m$ 個特徵挑 $l$ 個，共 $\\binom{m}{l}=m!\\,/\\,(l!\\,(m-l)!)$ 組。",
    "shapeKind": "rectangle"
   },
   "p05-combos-c0": {
@@ -7689,13 +8134,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 5800,
-    "y": 120,
+    "y": 112,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 260,
-   "height": 190,
+   "width": 590,
+   "height": 96,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -7721,14 +8166,14 @@
    "name": "p05-combos-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6100,
-    "y": 120,
+    "x": 5800,
+    "y": 234,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 260,
-   "height": 190,
+   "width": 590,
+   "height": 96,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -7755,14 +8200,14 @@
    "name": "p05-combos-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6400,
-    "y": 120,
+    "x": 5800,
+    "y": 356,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 260,
-   "height": 190,
+   "width": 590,
+   "height": 96,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -7789,14 +8234,14 @@
    "name": "p05-combos-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6700,
-    "y": 120,
+    "x": 5800,
+    "y": 478,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 260,
-   "height": 190,
+   "width": 590,
+   "height": 96,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -7813,7 +8258,7 @@
     "gradientTo": "#f8f6ff",
     "gradientAngle": 90
    },
-   "text": "wrapper 每組要訓練一次分類器\n⇒ 不可能逐一試",
+   "text": "wrapper 每組要訓練一次分類器\n⇒ 不可能逐一試；何況 $l$ 事先常常也不知道",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -7823,14 +8268,14 @@
    "name": "p05-combos-r1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6060.0,
-    "y": 207.96,
+    "x": 6087.96,
+    "y": 208.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 37.0,
-   "height": 14.079999999999984,
+   "width": 14.080000000000041,
+   "height": 23.0,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -7845,24 +8290,24 @@
    "shapeKind": "polyline",
    "polygonPoints": [
     {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
      "x": 0.0,
-     "y": 50.0
+     "y": 44.34782608695647
     },
     {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540538,
+     "x": 50.0,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540538,
-     "y": 0.0
+     "y": 44.34782608695647
     }
    ],
    "initiallyHidden": true
@@ -7873,14 +8318,14 @@
    "name": "p05-combos-r2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360.0,
-    "y": 207.96,
+    "x": 6087.96,
+    "y": 330.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 37.0,
-   "height": 14.079999999999984,
+   "width": 14.080000000000041,
+   "height": 23.0,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -7895,24 +8340,24 @@
    "shapeKind": "polyline",
    "polygonPoints": [
     {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
      "x": 0.0,
-     "y": 50.0
+     "y": 44.34782608695647
     },
     {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540553,
+     "x": 50.0,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540553,
-     "y": 0.0
+     "y": 44.34782608695647
     }
    ],
    "initiallyHidden": true
@@ -7923,14 +8368,14 @@
    "name": "p05-combos-r3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6660.0,
-    "y": 207.96,
+    "x": 6087.96,
+    "y": 452.0,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 37.0,
-   "height": 14.079999999999984,
+   "width": 14.080000000000041,
+   "height": 23.0,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -7945,24 +8390,24 @@
    "shapeKind": "polyline",
    "polygonPoints": [
     {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
      "x": 0.0,
-     "y": 50.0
+     "y": 44.34782608695647
     },
     {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540553,
+     "x": 50.0,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 65.40540540540553,
-     "y": 0.0
+     "y": 44.34782608695647
     }
    ],
    "initiallyHidden": true
@@ -7973,13 +8418,13 @@
    "name": "p05-combos-ax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5880,
+    "x": 6500,
     "y": 590,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 640,
+   "width": 300,
    "height": 1,
    "zIndex": 3,
    "locked": false,
@@ -8002,8 +8447,313 @@
      "x": 100.0,
      "y": 0.0
     }
-   ],
-   "initiallyHidden": true
+   ]
+  },
+  "p05-combos-ay": {
+   "id": "p05-combos-ay",
+   "type": "shape",
+   "name": "p05-combos-ay",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6500,
+    "y": 140,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 450,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-combos-tk0": {
+   "id": "p05-combos-tk0",
+   "type": "text",
+   "name": "p05-combos-tk0",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6408,
+    "y": 579,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 84,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "right",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$10^{0}$",
+   "shapeKind": "rectangle"
+  },
+  "p05-combos-gd4": {
+   "id": "p05-combos-gd4",
+   "type": "shape",
+   "name": "p05-combos-gd4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6500,
+    "y": 462,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 300,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#cbd5e1",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-combos-tk4": {
+   "id": "p05-combos-tk4",
+   "type": "text",
+   "name": "p05-combos-tk4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6408,
+    "y": 451,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 84,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "right",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$10^{4}$",
+   "shapeKind": "rectangle"
+  },
+  "p05-combos-gd8": {
+   "id": "p05-combos-gd8",
+   "type": "shape",
+   "name": "p05-combos-gd8",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6500,
+    "y": 334,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 300,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#cbd5e1",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-combos-tk8": {
+   "id": "p05-combos-tk8",
+   "type": "text",
+   "name": "p05-combos-tk8",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6408,
+    "y": 323,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 84,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "right",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$10^{8}$",
+   "shapeKind": "rectangle"
+  },
+  "p05-combos-gd12": {
+   "id": "p05-combos-gd12",
+   "type": "shape",
+   "name": "p05-combos-gd12",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6500,
+    "y": 206,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 300,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#cbd5e1",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-combos-tk12": {
+   "id": "p05-combos-tk12",
+   "type": "text",
+   "name": "p05-combos-tk12",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6408,
+    "y": 195,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 84,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "right",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$10^{12}$",
+   "shapeKind": "rectangle"
+  },
+  "p05-combos-yl": {
+   "id": "p05-combos-yl",
+   "type": "text",
+   "name": "p05-combos-yl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6505,
+    "y": 99,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 330,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "組合數（對數刻度：每上一格 $\\times10$）",
+   "shapeKind": "rectangle"
   },
   "p05-combos-bar0": {
    "id": "p05-combos-bar0",
@@ -8011,14 +8761,14 @@
    "name": "p05-combos-bar0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5960,
-    "y": 531.3337873641063,
+    "x": 6550,
+    "y": 455.90579968938596,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 140,
-   "height": 58.66621263589366,
+   "width": 90,
+   "height": 134.09420031061407,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -8026,7 +8776,7 @@
     "stroke": "transparent",
     "textColor": "#1f2937",
     "fontSize": 16,
-    "radius": 29.33310631794683,
+    "radius": 40,
     "borderWidth": 0,
     "gradientTo": "#2563eb",
     "gradientAngle": 90,
@@ -8046,13 +8796,13 @@
    "name": "p05-combos-bl0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5940,
-    "y": 485.33378736410634,
+    "x": 6525,
+    "y": 409.90579968938596,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 180,
+   "width": 140,
    "height": 38,
    "zIndex": 6,
    "locked": false,
@@ -8085,13 +8835,13 @@
    "name": "p05-combos-bt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5950,
+    "x": 6525,
     "y": 596,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 170,
+   "width": 140,
    "height": 24,
    "zIndex": 8,
    "locked": false,
@@ -8117,14 +8867,14 @@
    "name": "p05-combos-bar1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6260,
-    "y": 404.6637323544053,
+    "x": 6700,
+    "y": 166.37424538149776,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 140,
-   "height": 185.33626764559472,
+   "width": 90,
+   "height": 423.62575461850224,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -8152,13 +8902,13 @@
    "name": "p05-combos-bl1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6240,
-    "y": 358.6637323544053,
+    "x": 6675,
+    "y": 120.37424538149776,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 180,
+   "width": 140,
    "height": 38,
    "zIndex": 6,
    "locked": false,
@@ -8191,13 +8941,13 @@
    "name": "p05-combos-bt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6250,
+    "x": 6675,
     "y": 596,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 170,
+   "width": 140,
    "height": 24,
    "zIndex": 8,
    "locked": false,
@@ -8217,6 +8967,129 @@
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
+  "p05-combos-hl": {
+   "id": "p05-combos-hl",
+   "type": "shape",
+   "name": "p05-combos-hl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6640,
+    "y": 455.90579968938596,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 150,
+   "height": 1,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p05-combos-brk": {
+   "id": "p05-combos-brk",
+   "type": "shape",
+   "name": "p05-combos-brk",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6671.288042459541,
+    "y": 170.37424538149776,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 13.423915080917595,
+   "height": 285.5315543078882,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 4.302906519822698
+    },
+    {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 4.302906519822698
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p05-combos-rt": {
+   "id": "p05-combos-rt",
+   "type": "text",
+   "name": "p05-combos-rt",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 6805,
+    "y": 250,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 195,
+   "height": 150,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 15,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fff5f5",
+    "gradientAngle": 90
+   },
+   "text": "差 $9.05$ 格\n（每格 $\\times10$）\n⇒ 約 $1.1\\times10^{9}$ 倍\n（十億倍）",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
   "p05-combos-wn5": {
    "id": "p05-combos-wn5",
    "type": "shape",
@@ -8224,7 +9097,7 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 6956,
-    "y": 340,
+    "y": 232,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
@@ -8259,21 +9132,21 @@
    "name": "p05-combos-nt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6560,
-    "y": 380,
+    "x": 6805,
+    "y": 412,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 440,
-   "height": 200,
+   "width": 195,
+   "height": 130,
    "zIndex": 5,
    "locked": false,
    "style": {
     "fill": "#e2e8f0",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 15,
+    "fontSize": 14,
     "radius": 20,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -8283,7 +9156,7 @@
     "gradientTo": "#f8fafc",
     "gradientAngle": 90
    },
-   "text": "縱向高度是組合數的對數（每 14 像素是 10 倍）：\n右邊那根只高約 $3$ 倍，實際是左邊的約 $10^{9}$ 倍\n\n何況 $l$ 事先常常也不知道",
+   "text": "若改用等比例尺：右柱有半面牆高，左柱連 1 像素都不到",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -10051,20 +10924,180 @@
    "text": "",
    "shapeKind": "ellipse"
   },
+  "p06-comp-ax4": {
+   "id": "p06-comp-ax4",
+   "type": "shape",
+   "name": "p06-comp-ax4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7300,
+    "y": 513.7674679981453,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 540,
+   "height": 12.465064003709358,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 50.0
+    },
+    {
+     "x": 100.0,
+     "y": 50.0
+    },
+    {
+     "x": 97.88730123989356,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 50.0
+    },
+    {
+     "x": 97.88730123989356,
+     "y": 0.0
+    }
+   ]
+  },
+  "p06-comp-ax5": {
+   "id": "p06-comp-ax5",
+   "type": "shape",
+   "name": "p06-comp-ax5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7293.767467998146,
+    "y": 130,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.465064003709273,
+   "height": 390,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 2.925275206301242
+    },
+    {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 2.925275206301242
+    }
+   ]
+  },
+  "p06-comp-l4": {
+   "id": "p06-comp-l4",
+   "type": "text",
+   "name": "p06-comp-l4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7800,
+    "y": 526,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 60,
+   "height": 26,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 18,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_4$",
+   "shapeKind": "rectangle"
+  },
+  "p06-comp-l5": {
+   "id": "p06-comp-l5",
+   "type": "text",
+   "name": "p06-comp-l5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7306,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 60,
+   "height": 26,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 18,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_5$",
+   "shapeKind": "rectangle"
+  },
   "p06-comp-t1": {
    "id": "p06-comp-t1",
    "type": "text",
    "name": "p06-comp-t1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7290,
-    "y": 150,
+    "x": 7312,
+    "y": 385,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 170,
-   "height": 36,
+   "width": 90,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -10072,7 +11105,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 14,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -10095,14 +11128,14 @@
    "name": "p06-comp-t2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7670,
-    "y": 500,
+    "x": 7680,
+    "y": 340,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 170,
-   "height": 36,
+   "width": 100,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -10110,7 +11143,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 14,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -10133,13 +11166,13 @@
    "name": "p06-comp-xa",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
-    "y": 548,
+    "x": 7310,
+    "y": 556,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 560,
+   "width": 540,
    "height": 24,
    "zIndex": 8,
    "locked": false,
@@ -10155,8 +11188,177 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "橫軸 $x_4$、縱軸 $x_5$：兩類沿斜帶排開，只在垂直於斜帶的方向分開",
+   "text": "兩類沿斜帶排開，只在垂直於斜帶的方向分開",
    "shapeKind": "rectangle"
+  },
+  "p06-comp-dn": {
+   "id": "p06-comp-dn",
+   "type": "shape",
+   "name": "p06-comp-dn",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7451.433982822018,
+    "y": 223.93398282201787,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 212.13203435596427,
+   "height": 212.13203435596427,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 98.27465289909325,
+     "y": 5.880368435476493
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 94.1196315645235,
+     "y": 1.7253471009067336
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p06-comp-ds": {
+   "id": "p06-comp-ds",
+   "type": "shape",
+   "name": "p06-comp-ds",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7465.576118445749,
+    "y": 238.07611844574882,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 183.84776310850236,
+   "height": 183.84776310850236,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#16a34a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 5
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 91.64918092003339,
+     "y": 97.54980293362357
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 97.54980293362357,
+     "y": 91.64918092003339
+    }
+   ],
+   "initiallyHidden": true
+  },
+  "p06-comp-dnl": {
+   "id": "p06-comp-dnl",
+   "type": "text",
+   "name": "p06-comp-dnl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7678,
+    "y": 168,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 190,
+   "height": 56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f8fafc",
+    "gradientAngle": 90
+   },
+   "text": "雜訊擴散方向\n（$x_4,x_5$ 同升同降）",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p06-comp-dsl": {
+   "id": "p06-comp-dsl",
+   "type": "text",
+   "name": "p06-comp-dsl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7670,
+    "y": 430,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 190,
+   "height": 56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f3fdf6",
+    "gradientAngle": 90
+   },
+   "text": "$x_4-x_5$ 方向\n兩類在這裡分開",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
   },
   "p06-comp-a4": {
    "id": "p06-comp-a4",
@@ -16324,7 +17526,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "同樣是 5 折交叉驗證，兩種流程差在「選特徵」放在哪裡。",
+   "text": "同樣是 5 折交叉驗證，兩種流程差在「選特徵」放在哪裡；右邊的長條是兩種流程算出的準確率。",
    "shapeKind": "rectangle"
   },
   "p10-pipe-wt": {
@@ -16334,13 +17536,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 13000,
-    "y": 112,
+    "y": 104,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 560,
-   "height": 36,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -16348,7 +17550,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 15,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -16372,13 +17574,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 13000,
-    "y": 156,
+    "y": 146,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16404,14 +17606,14 @@
    "name": "p10-pipe-w1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13410,
-    "y": 156,
+    "x": 13340,
+    "y": 146,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16437,14 +17639,14 @@
    "name": "p10-pipe-w2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13820,
-    "y": 156,
+    "x": 13680,
+    "y": 146,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16461,7 +17663,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "切 5 折交叉驗證\n⇒ $0.88$（虛高）",
+   "text": "切 5 折交叉驗證\n（驗證資料已被看過）",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -16471,13 +17673,13 @@
    "name": "p10-pipe-wr1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13360.0,
-    "y": 213.96,
+    "x": 13300.0,
+    "y": 193.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
+   "width": 37.0,
    "height": 14.079999999999984,
    "zIndex": 3,
    "locked": false,
@@ -16501,7 +17703,7 @@
      "y": 50.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 65.40540540540538,
      "y": 100.0
     },
     {
@@ -16509,7 +17711,7 @@
      "y": 50.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 65.40540540540538,
      "y": 0.0
     }
    ]
@@ -16520,13 +17722,13 @@
    "name": "p10-pipe-wr2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13770.0,
-    "y": 213.96,
+    "x": 13640.0,
+    "y": 193.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
+   "width": 37.0,
    "height": 14.079999999999984,
    "zIndex": 3,
    "locked": false,
@@ -16550,7 +17752,7 @@
      "y": 50.0
     },
     {
-     "x": 72.7659574468086,
+     "x": 65.40540540540553,
      "y": 100.0
     },
     {
@@ -16558,7 +17760,7 @@
      "y": 50.0
     },
     {
-     "x": 72.7659574468086,
+     "x": 65.40540540540553,
      "y": 0.0
     }
    ],
@@ -16571,13 +17773,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 13000,
-    "y": 346,
+    "y": 274,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
    "width": 560,
-   "height": 36,
+   "height": 34,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -16585,7 +17787,7 @@
     "stroke": "transparent",
     "textColor": "#ffffff",
     "fontSize": 15,
-    "radius": 18.0,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
@@ -16610,13 +17812,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 13000,
-    "y": 390,
+    "y": 316,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16643,14 +17845,14 @@
    "name": "p10-pipe-r1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13410,
-    "y": 390,
+    "x": 13340,
+    "y": 316,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16677,14 +17879,14 @@
    "name": "p10-pipe-r2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13820,
-    "y": 390,
+    "x": 13680,
+    "y": 316,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 130,
+   "width": 300,
+   "height": 110,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -16701,7 +17903,7 @@
     "gradientTo": "#f3fdf6",
     "gradientAngle": 90
    },
-   "text": "用該折驗證部分評估\n⇒ $0.49$（誠實）",
+   "text": "用該折驗證部分評估\n（驗證資料沒被看過）",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -16711,13 +17913,13 @@
    "name": "p10-pipe-rr1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13360.0,
-    "y": 447.96,
+    "x": 13300.0,
+    "y": 363.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
+   "width": 37.0,
    "height": 14.080000000000041,
    "zIndex": 3,
    "locked": false,
@@ -16741,7 +17943,7 @@
      "y": 50.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 65.40540540540538,
      "y": 100.0
     },
     {
@@ -16749,7 +17951,7 @@
      "y": 50.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 65.40540540540538,
      "y": 0.0
     }
    ],
@@ -16761,13 +17963,13 @@
    "name": "p10-pipe-rr2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13770.0,
-    "y": 447.96,
+    "x": 13640.0,
+    "y": 363.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
+   "width": 37.0,
    "height": 14.080000000000041,
    "zIndex": 3,
    "locked": false,
@@ -16791,7 +17993,7 @@
      "y": 50.0
     },
     {
-     "x": 72.7659574468086,
+     "x": 65.40540540540553,
      "y": 100.0
     },
     {
@@ -16799,10 +18001,234 @@
      "y": 50.0
     },
     {
-     "x": 72.7659574468086,
+     "x": 65.40540540540553,
      "y": 0.0
     }
    ],
+   "initiallyHidden": true
+  },
+  "p10-pipe-chance": {
+   "id": "p10-pipe-chance",
+   "type": "shape",
+   "name": "p10-pipe-chance",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14102.5,
+    "y": 140,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 300,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#111827",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p10-pipe-cl": {
+   "id": "p10-pipe-cl",
+   "type": "text",
+   "name": "p10-pipe-cl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14052.5,
+    "y": 446,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 30,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 13,
+    "radius": 15.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#475569",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "亂猜 $0.5$",
+   "shapeKind": "rectangle"
+  },
+  "p10-pipe-wbar": {
+   "id": "p10-pipe-wbar",
+   "type": "shape",
+   "name": "p10-pipe-wbar",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14010,
+    "y": 196,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 162.79999999999998,
+   "height": 36,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 18.0,
+    "borderWidth": 0,
+    "gradientTo": "#dc2626",
+    "gradientAngle": 90,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p10-pipe-wbl": {
+   "id": "p10-pipe-wbl",
+   "type": "text",
+   "name": "p10-pipe-wbl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14010,
+    "y": 152,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 80,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#991b1b",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 14,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#dc2626",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.88",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p10-pipe-rbar": {
+   "id": "p10-pipe-rbar",
+   "type": "shape",
+   "name": "p10-pipe-rbar",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14010,
+    "y": 366,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 91.1125,
+   "height": 36,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 18.0,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p10-pipe-rbl": {
+   "id": "p10-pipe-rbl",
+   "type": "text",
+   "name": "p10-pipe-rbl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14010,
+    "y": 322,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 80,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#166534",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 14,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#15803d",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.49",
+   "shapeKind": "rectangle",
    "initiallyHidden": true
   },
   "p10-pipe-wn": {
@@ -16811,21 +18237,21 @@
    "name": "p10-pipe-wn",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 14150,
-    "y": 160,
+    "x": 14142,
+    "y": 152,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 50,
-   "height": 46,
+   "width": 40,
+   "height": 36,
    "zIndex": 6,
    "locked": false,
    "style": {
     "fill": "#dc2626",
     "stroke": "transparent",
     "textColor": "#ffffff",
-    "fontSize": 16,
+    "fontSize": 14,
     "radius": 0,
     "borderWidth": 0,
     "gradientTo": "#991b1b",
@@ -16847,14 +18273,14 @@
    "name": "p10-pipe-ok",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 14150,
-    "y": 394,
+    "x": 14116,
+    "y": 322,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 50,
-   "height": 46,
+   "width": 40,
+   "height": 36,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -16883,14 +18309,14 @@
    "name": "p10-pipe-cd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 13110,
-    "y": 540,
+    "x": 13000,
+    "y": 492,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 1090,
-   "height": 80,
+   "width": 1200,
+   "height": 76,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -17973,7 +19399,7 @@
     "rotation": 0
    },
    "width": 1200,
-   "height": 66,
+   "height": 52,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -18000,13 +19426,13 @@
    "sceneId": "scene-u01",
    "transform": {
     "x": 14440,
-    "y": 260,
+    "y": 168,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 190,
+   "width": 390,
+   "height": 70,
    "zIndex": 5,
    "locked": false,
    "style": {
@@ -18023,64 +19449,1237 @@
     "gradientTo": "#f8fafc",
     "gradientAngle": 90
    },
-   "text": "公式\n$\\binom{30}{4}=\\dfrac{30!}{4!\\,26!}$",
+   "text": "公式 $\\binom{30}{4}=\\dfrac{30!}{4!\\,26!}$",
    "shapeKind": "rectangle"
   },
-  "p11-practice1-c1": {
-   "id": "p11-practice1-c1",
+  "p11-practice1-pool": {
+   "id": "p11-practice1-pool",
    "type": "text",
-   "name": "p11-practice1-c1",
+   "name": "p11-practice1-pool",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14440,
+    "y": 250,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 700,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "候選池：30 個特徵（每個圓點是一個特徵）",
+   "shapeKind": "rectangle"
+  },
+  "p11-practice1-d0": {
+   "id": "p11-practice1-d0",
+   "type": "shape",
+   "name": "p11-practice1-d0",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14450,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d1": {
+   "id": "p11-practice1-d1",
+   "type": "shape",
+   "name": "p11-practice1-d1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14489,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d2": {
+   "id": "p11-practice1-d2",
+   "type": "shape",
+   "name": "p11-practice1-d2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14528,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d3": {
+   "id": "p11-practice1-d3",
+   "type": "shape",
+   "name": "p11-practice1-d3",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14567,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d4": {
+   "id": "p11-practice1-d4",
+   "type": "shape",
+   "name": "p11-practice1-d4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14606,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d5": {
+   "id": "p11-practice1-d5",
+   "type": "shape",
+   "name": "p11-practice1-d5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14645,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d6": {
+   "id": "p11-practice1-d6",
+   "type": "shape",
+   "name": "p11-practice1-d6",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14684,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d7": {
+   "id": "p11-practice1-d7",
+   "type": "shape",
+   "name": "p11-practice1-d7",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14723,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d8": {
+   "id": "p11-practice1-d8",
+   "type": "shape",
+   "name": "p11-practice1-d8",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14762,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d9": {
+   "id": "p11-practice1-d9",
+   "type": "shape",
+   "name": "p11-practice1-d9",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14801,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d10": {
+   "id": "p11-practice1-d10",
+   "type": "shape",
+   "name": "p11-practice1-d10",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14840,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d11": {
+   "id": "p11-practice1-d11",
+   "type": "shape",
+   "name": "p11-practice1-d11",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14879,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d12": {
+   "id": "p11-practice1-d12",
+   "type": "shape",
+   "name": "p11-practice1-d12",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14918,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d13": {
+   "id": "p11-practice1-d13",
+   "type": "shape",
+   "name": "p11-practice1-d13",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14957,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d14": {
+   "id": "p11-practice1-d14",
+   "type": "shape",
+   "name": "p11-practice1-d14",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14996,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d15": {
+   "id": "p11-practice1-d15",
+   "type": "shape",
+   "name": "p11-practice1-d15",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15035,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d16": {
+   "id": "p11-practice1-d16",
+   "type": "shape",
+   "name": "p11-practice1-d16",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15074,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d17": {
+   "id": "p11-practice1-d17",
+   "type": "shape",
+   "name": "p11-practice1-d17",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15113,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d18": {
+   "id": "p11-practice1-d18",
+   "type": "shape",
+   "name": "p11-practice1-d18",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15152,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d19": {
+   "id": "p11-practice1-d19",
+   "type": "shape",
+   "name": "p11-practice1-d19",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15191,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d20": {
+   "id": "p11-practice1-d20",
+   "type": "shape",
+   "name": "p11-practice1-d20",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15230,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d21": {
+   "id": "p11-practice1-d21",
+   "type": "shape",
+   "name": "p11-practice1-d21",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15269,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d22": {
+   "id": "p11-practice1-d22",
+   "type": "shape",
+   "name": "p11-practice1-d22",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15308,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d23": {
+   "id": "p11-practice1-d23",
+   "type": "shape",
+   "name": "p11-practice1-d23",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15347,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d24": {
+   "id": "p11-practice1-d24",
+   "type": "shape",
+   "name": "p11-practice1-d24",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15386,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d25": {
+   "id": "p11-practice1-d25",
+   "type": "shape",
+   "name": "p11-practice1-d25",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15425,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d26": {
+   "id": "p11-practice1-d26",
+   "type": "shape",
+   "name": "p11-practice1-d26",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15464,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d27": {
+   "id": "p11-practice1-d27",
+   "type": "shape",
+   "name": "p11-practice1-d27",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15503,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d28": {
+   "id": "p11-practice1-d28",
+   "type": "shape",
+   "name": "p11-practice1-d28",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15542,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-d29": {
+   "id": "p11-practice1-d29",
+   "type": "shape",
+   "name": "p11-practice1-d29",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15581,
+    "y": 280,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientType": "radial",
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.25,
+    "shadowBlur": 8,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p11-practice1-s0": {
+   "id": "p11-practice1-s0",
+   "type": "text",
+   "name": "p11-practice1-s0",
    "sceneId": "scene-u01",
    "transform": {
     "x": 14850,
-    "y": 260,
+    "y": 168,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 190,
-   "zIndex": 5,
+   "width": 120,
+   "height": 70,
+   "zIndex": 6,
    "locked": false,
    "style": {
-    "fill": "#dbeafe",
+    "fill": "#1e40af",
     "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 18,
-    "radius": 20,
+    "textColor": "#ffffff",
+    "fontSize": 17,
+    "radius": 35.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
-    "lineHeight": 1.45,
+    "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f1f7ff",
-    "gradientAngle": 90
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
    },
-   "text": "約掉 $26!$\n$\\dfrac{30\\cdot29\\cdot28\\cdot27}{4\\cdot3\\cdot2\\cdot1}$\n$=\\dfrac{657,720}{24}$",
+   "text": "第 1 個\n$30$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
-  "p11-practice1-c2": {
-   "id": "p11-practice1-c2",
+  "p11-practice1-s1": {
+   "id": "p11-practice1-s1",
    "type": "text",
-   "name": "p11-practice1-c2",
+   "name": "p11-practice1-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 15260,
-    "y": 260,
+    "x": 14990,
+    "y": 168,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 360,
-   "height": 190,
+   "width": 120,
+   "height": 70,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1e40af",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 17,
+    "radius": 35.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "第 2 個\n$\\times29$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-s2": {
+   "id": "p11-practice1-s2",
+   "type": "text",
+   "name": "p11-practice1-s2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15130,
+    "y": 168,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 70,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1e40af",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 17,
+    "radius": 35.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "第 3 個\n$\\times28$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-s3": {
+   "id": "p11-practice1-s3",
+   "type": "text",
+   "name": "p11-practice1-s3",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15270,
+    "y": 168,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 70,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1e40af",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 17,
+    "radius": 35.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "第 4 個\n$\\times27$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-res": {
+   "id": "p11-practice1-res",
+   "type": "text",
+   "name": "p11-practice1-res",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 15410,
+    "y": 168,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 230,
+   "height": 70,
    "zIndex": 5,
    "locked": false,
    "style": {
     "fill": "#dcfce7",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 18,
+    "fontSize": 17,
     "radius": 20,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -18090,79 +20689,397 @@
     "gradientTo": "#f3fdf6",
     "gradientAngle": 90
    },
-   "text": "$=27,405$\n種組合",
+   "text": "= 657,720 種\n（有順序）",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
-  "p11-practice1-r1": {
-   "id": "p11-practice1-r1",
-   "type": "shape",
-   "name": "p11-practice1-r1",
+  "p11-practice1-blb": {
+   "id": "p11-practice1-blb",
+   "type": "text",
+   "name": "p11-practice1-blb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 14800.0,
-    "y": 347.96,
+    "x": 14440,
+    "y": 322,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
-   "height": 14.080000000000041,
+   "width": 1200,
+   "height": 50,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "全部「有順序」的選法 657,720 種，畫成一整條；每 $4!=24$ 格是同一組特徵的 24 種排法",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-bar": {
+   "id": "p11-practice1-bar",
+   "type": "shape",
+   "name": "p11-practice1-bar",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14440,
+    "y": 380,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 66,
    "zIndex": 3,
    "locked": false,
    "style": {
+    "fill": "#fcd34d",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 33.0,
+    "borderWidth": 0,
+    "gradientTo": "#d97706",
+    "gradientAngle": 90,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-cmb": {
+   "id": "p11-practice1-cmb",
+   "type": "shape",
+   "name": "p11-practice1-cmb",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14440,
+    "y": 380,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 66,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
     "fill": "transparent",
-    "stroke": "#334155",
+    "stroke": "#92400e",
     "textColor": "#1f2937",
     "fontSize": 16,
     "radius": 0,
-    "borderWidth": 4
+    "borderWidth": 2
    },
    "text": "",
    "shapeKind": "polyline",
    "polygonPoints": [
     {
      "x": 0.0,
-     "y": 50.0
+     "y": 100.0
     },
     {
-     "x": 100.0,
-     "y": 50.0
+     "x": 0.0,
+     "y": 0.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 4.166666666666666,
+     "y": 0.0
+    },
+    {
+     "x": 4.166666666666666,
+     "y": 100.0
+    },
+    {
+     "x": 8.333333333333332,
+     "y": 100.0
+    },
+    {
+     "x": 8.333333333333332,
+     "y": 0.0
+    },
+    {
+     "x": 12.5,
+     "y": 0.0
+    },
+    {
+     "x": 12.5,
+     "y": 100.0
+    },
+    {
+     "x": 16.666666666666664,
+     "y": 100.0
+    },
+    {
+     "x": 16.666666666666664,
+     "y": 0.0
+    },
+    {
+     "x": 20.833333333333336,
+     "y": 0.0
+    },
+    {
+     "x": 20.833333333333336,
+     "y": 100.0
+    },
+    {
+     "x": 25.0,
+     "y": 100.0
+    },
+    {
+     "x": 25.0,
+     "y": 0.0
+    },
+    {
+     "x": 29.166666666666668,
+     "y": 0.0
+    },
+    {
+     "x": 29.166666666666668,
+     "y": 100.0
+    },
+    {
+     "x": 33.33333333333333,
+     "y": 100.0
+    },
+    {
+     "x": 33.33333333333333,
+     "y": 0.0
+    },
+    {
+     "x": 37.5,
+     "y": 0.0
+    },
+    {
+     "x": 37.5,
+     "y": 100.0
+    },
+    {
+     "x": 41.66666666666667,
+     "y": 100.0
+    },
+    {
+     "x": 41.66666666666667,
+     "y": 0.0
+    },
+    {
+     "x": 45.83333333333333,
+     "y": 0.0
+    },
+    {
+     "x": 45.83333333333333,
+     "y": 100.0
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 50.0,
+     "y": 0.0
+    },
+    {
+     "x": 54.166666666666664,
+     "y": 0.0
+    },
+    {
+     "x": 54.166666666666664,
+     "y": 100.0
+    },
+    {
+     "x": 58.333333333333336,
+     "y": 100.0
+    },
+    {
+     "x": 58.333333333333336,
+     "y": 0.0
+    },
+    {
+     "x": 62.5,
+     "y": 0.0
+    },
+    {
+     "x": 62.5,
+     "y": 100.0
+    },
+    {
+     "x": 66.66666666666666,
+     "y": 100.0
+    },
+    {
+     "x": 66.66666666666666,
+     "y": 0.0
+    },
+    {
+     "x": 70.83333333333334,
+     "y": 0.0
+    },
+    {
+     "x": 70.83333333333334,
+     "y": 100.0
+    },
+    {
+     "x": 75.0,
+     "y": 100.0
+    },
+    {
+     "x": 75.0,
+     "y": 0.0
+    },
+    {
+     "x": 79.16666666666666,
+     "y": 0.0
+    },
+    {
+     "x": 79.16666666666666,
+     "y": 100.0
+    },
+    {
+     "x": 83.33333333333334,
+     "y": 100.0
+    },
+    {
+     "x": 83.33333333333334,
+     "y": 0.0
+    },
+    {
+     "x": 87.5,
+     "y": 0.0
+    },
+    {
+     "x": 87.5,
+     "y": 100.0
+    },
+    {
+     "x": 91.66666666666666,
+     "y": 100.0
+    },
+    {
+     "x": 91.66666666666666,
+     "y": 0.0
+    },
+    {
+     "x": 95.83333333333334,
+     "y": 0.0
+    },
+    {
+     "x": 95.83333333333334,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
+     "y": 100.0
     },
     {
-     "x": 72.76595744680849,
+     "x": 100.0,
      "y": 0.0
     }
    ],
    "initiallyHidden": true
   },
-  "p11-practice1-r2": {
-   "id": "p11-practice1-r2",
+  "p11-practice1-gsl": {
+   "id": "p11-practice1-gsl",
    "type": "shape",
-   "name": "p11-practice1-r2",
+   "name": "p11-practice1-gsl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 15210.0,
-    "y": 347.96,
+    "x": 14440,
+    "y": 380,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 47.0,
-   "height": 14.080000000000041,
+   "width": 50,
+   "height": 66,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 8,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.5,
+    "shadowBlur": 14,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-ans": {
+   "id": "p11-practice1-ans",
+   "type": "text",
+   "name": "p11-practice1-ans",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14560,
+    "y": 480,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 760,
+   "height": 62,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f3fdf6",
+    "gradientAngle": 90
+   },
+   "text": "每 $4!=24$ 格是同一組特徵換順序\n⇒ 657,720 ÷ 24 ＝ 27,405 種組合",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-garr": {
+   "id": "p11-practice1-garr",
+   "type": "shape",
+   "name": "p11-practice1-garr",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14492.93811934865,
+    "y": 414.4556581737287,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 296.8067786105333,
+   "height": 65.5443418262713,
    "zIndex": 3,
    "locked": false,
    "style": {
     "fill": "transparent",
-    "stroke": "#334155",
+    "stroke": "#16a34a",
     "textColor": "#1f2937",
     "fontSize": 16,
     "radius": 0,
@@ -18172,24 +21089,24 @@
    "shapeKind": "polyline",
    "polygonPoints": [
     {
-     "x": 0.0,
-     "y": 50.0
-    },
-    {
      "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 72.7659574468086,
      "y": 100.0
     },
     {
-     "x": 100.0,
-     "y": 50.0
+     "x": 0.0,
+     "y": 6.573285894788272
     },
     {
-     "x": 72.7659574468086,
+     "x": 4.702884254213255,
      "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 6.573285894788272
+    },
+    {
+     "x": 3.744345924464366,
+     "y": 21.038541378418888
     }
    ],
    "initiallyHidden": true
@@ -18200,14 +21117,14 @@
    "name": "p11-practice1-as",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 15590,
-    "y": 300,
+    "x": 15336,
+    "y": 484,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 50,
-   "height": 50,
+   "width": 54,
+   "height": 54,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -18236,21 +21153,21 @@
    "name": "p11-practice1-cm",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 14440,
-    "y": 490,
+    "x": 14540,
+    "y": 556,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 1200,
-   "height": 80,
+   "width": 1100,
+   "height": 56,
    "zIndex": 5,
    "locked": false,
    "style": {
     "fill": "#fef3c7",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 17,
+    "fontSize": 16,
     "radius": 20,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -19580,6 +22497,68 @@
     }
    ]
   },
+  "p12-practice2-n2": {
+   "id": "p12-practice2-n2",
+   "type": "text",
+   "name": "p12-practice2-n2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 16040,
+    "y": 594,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 140,
+   "height": 40,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 22,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_2$",
+   "shapeKind": "rectangle"
+  },
+  "p12-practice2-n3": {
+   "id": "p12-practice2-n3",
+   "type": "text",
+   "name": "p12-practice2-n3",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 16460,
+    "y": 594,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 140,
+   "height": 40,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 22,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$x_3$",
+   "shapeKind": "rectangle"
+  },
   "p12-practice2-as": {
    "id": "p12-practice2-as",
    "type": "shape",
@@ -20689,211 +23668,209 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "每一格是前面幾頁的結論（括號內是頁碼）；下方是下一個 KP 要回答的問題。",
+   "text": "一張圖收束整個單元：長條是各種做法的準確率，虛線是亂猜；三個區塊依序是本 KP 的三步。",
    "shapeKind": "rectangle"
   },
-  "p13-summary-ch0": {
-   "id": "p13-summary-ch0",
-   "type": "text",
-   "name": "p13-summary-ch0",
+  "p13-summary-zA": {
+   "id": "p13-summary-zA",
+   "type": "shape",
+   "name": "p13-summary-zA",
    "sceneId": "scene-u01",
    "transform": {
     "x": 17320,
-    "y": 150,
+    "y": 108,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 290,
+   "height": 458,
+   "zIndex": 1,
    "locked": false,
    "style": {
-    "fill": "#fee2e2",
+    "fill": "#fef2f2",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 15,
+    "fontSize": 16,
     "radius": 22,
     "borderWidth": 0,
-    "fontWeight": 700,
-    "textAlign": "center",
-    "lineHeight": 1.35,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#fff5f5",
-    "gradientAngle": 90
+    "gradientTo": "#fee2e2",
+    "gradientAngle": 180
    },
-   "text": "個別排序（1）\n前 $l$ 名不一定\n是最好的 $l$ 個",
+   "text": "",
    "shapeKind": "rectangle"
   },
-  "p13-summary-ch1": {
-   "id": "p13-summary-ch1",
-   "type": "text",
-   "name": "p13-summary-ch1",
+  "p13-summary-zB": {
+   "id": "p13-summary-zB",
+   "type": "shape",
+   "name": "p13-summary-zB",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17528,
-    "y": 150,
+    "x": 17620,
+    "y": 108,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 470,
+   "height": 458,
+   "zIndex": 1,
    "locked": false,
    "style": {
-    "fill": "#fef3c7",
+    "fill": "#f0fdf4",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 15,
+    "fontSize": 16,
     "radius": 22,
     "borderWidth": 0,
-    "fontWeight": 700,
-    "textAlign": "center",
-    "lineHeight": 1.35,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#fffbeb",
-    "gradientAngle": 90
+    "gradientTo": "#dcfce7",
+    "gradientAngle": 180
    },
-   "text": "扣掉相似（2–3）\n$C-\\alpha_2|\\rho|$\n仍非最佳",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
+   "text": "",
+   "shapeKind": "rectangle"
   },
-  "p13-summary-ch2": {
-   "id": "p13-summary-ch2",
-   "type": "text",
-   "name": "p13-summary-ch2",
+  "p13-summary-zC": {
+   "id": "p13-summary-zC",
+   "type": "shape",
+   "name": "p13-summary-zC",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17736,
-    "y": 150,
+    "x": 18100,
+    "y": 108,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 420,
+   "height": 458,
+   "zIndex": 1,
    "locked": false,
    "style": {
-    "fill": "#dcfce7",
+    "fill": "#fefce8",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 15,
+    "fontSize": 16,
     "radius": 22,
     "borderWidth": 0,
-    "fontWeight": 700,
-    "textAlign": "center",
-    "lineHeight": 1.35,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f3fdf6",
-    "gradientAngle": 90
+    "gradientTo": "#fef9c3",
+    "gradientAngle": 180
    },
-   "text": "整組評分（4、6、7）\nfilter 或 wrapper\n互補要整組看",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
+   "text": "",
+   "shapeKind": "rectangle"
   },
-  "p13-summary-ch3": {
-   "id": "p13-summary-ch3",
+  "p13-summary-tA": {
+   "id": "p13-summary-tA",
    "type": "text",
-   "name": "p13-summary-ch3",
+   "name": "p13-summary-tA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17944,
-    "y": 150,
+    "x": 17330,
+    "y": 114,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 270,
+   "height": 34,
+   "zIndex": 6,
    "locked": false,
    "style": {
-    "fill": "#ede9fe",
+    "fill": "#991b1b",
     "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 15,
-    "radius": 22,
+    "textColor": "#ffffff",
+    "fontSize": 14,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f8f6ff",
-    "gradientAngle": 90
+    "gradientTo": "#dc2626",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
    },
-   "text": "組合爆炸（5）\n$\\binom{100}{10}$\n$\\approx1.7\\times10^{13}$",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
+   "text": "① 個別排序（第 1–3 頁）",
+   "shapeKind": "rectangle"
   },
-  "p13-summary-ch4": {
-   "id": "p13-summary-ch4",
+  "p13-summary-tB": {
+   "id": "p13-summary-tB",
    "type": "text",
-   "name": "p13-summary-ch4",
+   "name": "p13-summary-tB",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 18152,
-    "y": 150,
+    "x": 17630,
+    "y": 114,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 450,
+   "height": 34,
+   "zIndex": 6,
    "locked": false,
    "style": {
-    "fill": "#dbeafe",
+    "fill": "#166534",
     "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 15,
-    "radius": 22,
+    "textColor": "#ffffff",
+    "fontSize": 14,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f1f7ff",
-    "gradientAngle": 90
+    "gradientTo": "#15803d",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
    },
-   "text": "特徵數（8）\n看驗證誤差\n不看訓練誤差",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
+   "text": "② 整組評分（第 4–8 頁）",
+   "shapeKind": "rectangle"
   },
-  "p13-summary-ch5": {
-   "id": "p13-summary-ch5",
+  "p13-summary-tC": {
+   "id": "p13-summary-tC",
    "type": "text",
-   "name": "p13-summary-ch5",
+   "name": "p13-summary-tC",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 18360,
-    "y": 150,
+    "x": 18110,
+    "y": 114,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 160,
-   "height": 190,
-   "zIndex": 5,
+   "width": 400,
+   "height": 34,
+   "zIndex": 6,
    "locked": false,
    "style": {
-    "fill": "#cffafe",
+    "fill": "#92400e",
     "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 15,
-    "radius": 22,
+    "textColor": "#ffffff",
+    "fontSize": 14,
+    "radius": 17.0,
     "borderWidth": 0,
     "fontWeight": 700,
     "textAlign": "center",
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f0fdff",
-    "gradientAngle": 90
+    "gradientTo": "#b45309",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
    },
-   "text": "選擇偏差（9–10）\n選特徵也是學習\n放進每一折",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
+   "text": "③ 選擇偏差（第 9–10 頁）",
+   "shapeKind": "rectangle"
   },
   "p13-summary-ca0": {
    "id": "p13-summary-ca0",
@@ -20901,14 +23878,14 @@
    "name": "p13-summary-ca0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17480.0,
-    "y": 237.96,
+    "x": 17600.0,
+    "y": 123.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 45.0,
-   "height": 14.079999999999984,
+   "width": 27.0,
+   "height": 14.079999999999998,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -20924,26 +23901,25 @@
    "polygonPoints": [
     {
      "x": 0.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
      "x": 100.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
-     "x": 71.55555555555553,
+     "x": 52.592592592592545,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
-     "x": 71.55555555555553,
+     "x": 52.592592592592545,
      "y": 0.0
     }
-   ],
-   "initiallyHidden": true
+   ]
   },
   "p13-summary-ca1": {
    "id": "p13-summary-ca1",
@@ -20951,14 +23927,14 @@
    "name": "p13-summary-ca1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17688.0,
-    "y": 237.96,
+    "x": 18080.0,
+    "y": 123.96,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 45.0,
-   "height": 14.079999999999984,
+   "width": 27.0,
+   "height": 14.079999999999998,
    "zIndex": 3,
    "locked": false,
    "style": {
@@ -20974,46 +23950,956 @@
    "polygonPoints": [
     {
      "x": 0.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
      "x": 100.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
-     "x": 71.55555555555553,
+     "x": 52.59259259259276,
      "y": 100.0
     },
     {
      "x": 100.0,
-     "y": 50.0
+     "y": 50.00000000000006
     },
     {
-     "x": 71.55555555555553,
+     "x": 52.59259259259276,
+     "y": 0.0
+    }
+   ]
+  },
+  "p13-summary-ax": {
+   "id": "p13-summary-ax",
+   "type": "shape",
+   "name": "p13-summary-ax",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17330,
+    "y": 505,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1180,
+   "height": 1,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p13-summary-chance": {
+   "id": "p13-summary-chance",
+   "type": "shape",
+   "name": "p13-summary-chance",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17330,
+    "y": 382.5,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1180,
+   "height": 1,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#111827",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p13-summary-cl": {
+   "id": "p13-summary-cl",
+   "type": "text",
+   "name": "p13-summary-cl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17332,
+    "y": 365.5,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 96,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 13,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#475569",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "亂猜 $0.5$",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bn0": {
+   "id": "p13-summary-bn0",
+   "type": "text",
+   "name": "p13-summary-bn0",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17415,
+    "y": 510,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 160,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "個別前三名",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bn1": {
+   "id": "p13-summary-bn1",
+   "type": "text",
+   "name": "p13-summary-bn1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17675,
+    "y": 510,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 160,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "驗證選出的 3 個",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bn2": {
+   "id": "p13-summary-bn2",
+   "type": "text",
+   "name": "p13-summary-bn2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17845,
+    "y": 510,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 160,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "全部 5 個",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bn3": {
+   "id": "p13-summary-bn3",
+   "type": "text",
+   "name": "p13-summary-bn3",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18135,
+    "y": 510,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 160,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "先選後驗證",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bn4": {
+   "id": "p13-summary-bn4",
+   "type": "text",
+   "name": "p13-summary-bn4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18315,
+    "y": 510,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 160,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "選擇放進每折",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-src1": {
+   "id": "p13-summary-src1",
+   "type": "text",
+   "name": "p13-summary-src1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17330,
+    "y": 536,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 750,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "模擬資料（種子 0）：4000 筆新資料的準確率",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-src2": {
+   "id": "p13-summary-src2",
+   "type": "text",
+   "name": "p13-summary-src2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18110,
+    "y": 536,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 400,
+   "height": 22,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "純雜訊資料：重複 20 次的交叉驗證平均",
+   "shapeKind": "rectangle"
+  },
+  "p13-summary-bA": {
+   "id": "p13-summary-bA",
+   "type": "shape",
+   "name": "p13-summary-bA",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17440,
+    "y": 320.94375,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 110,
+   "height": 184.05625,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#dc2626",
+    "gradientAngle": 90,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-blA": {
+   "id": "p13-summary-blA",
+   "type": "text",
+   "name": "p13-summary-blA",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17435,
+    "y": 276.94375,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#991b1b",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#dc2626",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.75",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-bB1": {
+   "id": "p13-summary-bB1",
+   "type": "shape",
+   "name": "p13-summary-bB1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17700,
+    "y": 287.25625,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 110,
+   "height": 217.74375,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-blB1": {
+   "id": "p13-summary-blB1",
+   "type": "text",
+   "name": "p13-summary-blB1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17695,
+    "y": 243.25625000000002,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#166534",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#15803d",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.89",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-bB2": {
+   "id": "p13-summary-bB2",
+   "type": "shape",
+   "name": "p13-summary-bB2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17870,
+    "y": 284.19375,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 110,
+   "height": 220.80625,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#2563eb",
+    "gradientAngle": 90,
+    "shadowColor": "#2563eb",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-blB2": {
+   "id": "p13-summary-blB2",
+   "type": "text",
+   "name": "p13-summary-blB2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17865,
+    "y": 240.19375000000002,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1e40af",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#2563eb",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.90",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-bC1": {
+   "id": "p13-summary-bC1",
+   "type": "shape",
+   "name": "p13-summary-bC1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18160,
+    "y": 289.40000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 110,
+   "height": 215.59999999999997,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#dc2626",
+    "gradientAngle": 90,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-blC1": {
+   "id": "p13-summary-blC1",
+   "type": "text",
+   "name": "p13-summary-blC1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18155,
+    "y": 245.40000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#991b1b",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#dc2626",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.88",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-bC2": {
+   "id": "p13-summary-bC2",
+   "type": "shape",
+   "name": "p13-summary-bC2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18340,
+    "y": 384.3375,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 110,
+   "height": 120.6625,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 40,
+    "borderWidth": 0,
+    "gradientTo": "#16a34a",
+    "gradientAngle": 90,
+    "shadowColor": "#16a34a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 10,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 4
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-blC2": {
+   "id": "p13-summary-blC2",
+   "type": "text",
+   "name": "p13-summary-blC2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18335,
+    "y": 340.3375,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 120,
+   "height": 34,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#166534",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 15,
+    "radius": 17.0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.35,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#15803d",
+    "gradientAngle": 135,
+    "shadowColor": "#0f172a",
+    "shadowOpacity": 0.3,
+    "shadowBlur": 16,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 8
+   },
+   "text": "0.49",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-cA": {
+   "id": "p13-summary-cA",
+   "type": "text",
+   "name": "p13-summary-cA",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17330,
+    "y": 154,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 270,
+   "height": 78,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f8fafc",
+    "gradientAngle": 90
+   },
+   "text": "個別前三名只有 $0.75$\n（重複、漏掉互補）",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-cB": {
+   "id": "p13-summary-cB",
+   "type": "text",
+   "name": "p13-summary-cB",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 17630,
+    "y": 154,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 450,
+   "height": 78,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f8fafc",
+    "gradientAngle": 90
+   },
+   "text": "整組評分：三個特徵 $0.89$ ≈ 全部五個 $0.90$\n$\\binom{100}{10}\\approx1.7\\times10^{13}$ 組不能窮舉；$l$ 看驗證誤差",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-cC1": {
+   "id": "p13-summary-cC1",
+   "type": "text",
+   "name": "p13-summary-cC1",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18105,
+    "y": 154,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 220,
+   "height": 78,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f8fafc",
+    "gradientAngle": 90
+   },
+   "text": "先選後驗證\n虛高到 $0.88$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-cC2": {
+   "id": "p13-summary-cC2",
+   "type": "text",
+   "name": "p13-summary-cC2",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18330,
+    "y": 154,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 185,
+   "height": 78,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "center",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f8fafc",
+    "gradientAngle": 90
+   },
+   "text": "放進每一折\n回到 $0.49$（虛高 $0.39$）",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-wn": {
+   "id": "p13-summary-wn",
+   "type": "shape",
+   "name": "p13-summary-wn",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18280,
+    "y": 249,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 34,
+   "height": 32,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#dc2626",
+    "stroke": "transparent",
+    "textColor": "#ffffff",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#991b1b",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#dc2626",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "!",
+   "shapeKind": "triangle",
+   "initiallyHidden": true
+  },
+  "p13-summary-hl": {
+   "id": "p13-summary-hl",
+   "type": "shape",
+   "name": "p13-summary-hl",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 18270,
+    "y": 289.40000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 180,
+   "height": 1,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3,
+    "borderStyle": "dashed"
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
      "y": 0.0
     }
    ],
    "initiallyHidden": true
   },
-  "p13-summary-ca2": {
-   "id": "p13-summary-ca2",
+  "p13-summary-brk": {
+   "id": "p13-summary-brk",
    "type": "shape",
-   "name": "p13-summary-ca2",
+   "name": "p13-summary-brk",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17896.0,
-    "y": 237.96,
+    "x": 18298.288042459542,
+    "y": 293.40000000000003,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 45.0,
-   "height": 14.079999999999984,
-   "zIndex": 3,
+   "width": 13.423915080917595,
+   "height": 90.93749999999994,
+   "zIndex": 5,
    "locked": false,
    "style": {
     "fill": "transparent",
-    "stroke": "#334155",
+    "stroke": "#dc2626",
     "textColor": "#1f2937",
     "fontSize": 16,
     "radius": 0,
@@ -21023,124 +24909,24 @@
    "shapeKind": "polyline",
    "polygonPoints": [
     {
-     "x": 0.0,
-     "y": 50.0
-    },
-    {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 71.55555555555566,
+     "x": 50.0,
      "y": 100.0
     },
     {
-     "x": 100.0,
-     "y": 50.0
+     "x": 50.0,
+     "y": 0.0
     },
     {
-     "x": 71.55555555555566,
+     "x": 100.0,
+     "y": 13.510549406422232
+    },
+    {
+     "x": 50.0,
      "y": 0.0
-    }
-   ],
-   "initiallyHidden": true
-  },
-  "p13-summary-ca3": {
-   "id": "p13-summary-ca3",
-   "type": "shape",
-   "name": "p13-summary-ca3",
-   "sceneId": "scene-u01",
-   "transform": {
-    "x": 18104.0,
-    "y": 237.96,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-   },
-   "width": 45.0,
-   "height": 14.079999999999984,
-   "zIndex": 3,
-   "locked": false,
-   "style": {
-    "fill": "transparent",
-    "stroke": "#334155",
-    "textColor": "#1f2937",
-    "fontSize": 16,
-    "radius": 0,
-    "borderWidth": 4
-   },
-   "text": "",
-   "shapeKind": "polyline",
-   "polygonPoints": [
+    },
     {
      "x": 0.0,
-     "y": 50.0
-    },
-    {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 71.55555555555566,
-     "y": 100.0
-    },
-    {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 71.55555555555566,
-     "y": 0.0
-    }
-   ],
-   "initiallyHidden": true
-  },
-  "p13-summary-ca4": {
-   "id": "p13-summary-ca4",
-   "type": "shape",
-   "name": "p13-summary-ca4",
-   "sceneId": "scene-u01",
-   "transform": {
-    "x": 18312.0,
-    "y": 237.96,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-   },
-   "width": 45.0,
-   "height": 14.079999999999984,
-   "zIndex": 3,
-   "locked": false,
-   "style": {
-    "fill": "transparent",
-    "stroke": "#334155",
-    "textColor": "#1f2937",
-    "fontSize": 16,
-    "radius": 0,
-    "borderWidth": 4
-   },
-   "text": "",
-   "shapeKind": "polyline",
-   "polygonPoints": [
-    {
-     "x": 0.0,
-     "y": 50.0
-    },
-    {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 71.55555555555566,
-     "y": 100.0
-    },
-    {
-     "x": 100.0,
-     "y": 50.0
-    },
-    {
-     "x": 71.55555555555566,
-     "y": 0.0
+     "y": 13.510549406422232
     }
    ],
    "initiallyHidden": true
@@ -21151,14 +24937,14 @@
    "name": "p13-summary-nxs",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17342,
-    "y": 398,
+    "x": 18466,
+    "y": 574,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 64,
-   "height": 64,
+   "width": 50,
+   "height": 46,
    "zIndex": 6,
    "locked": false,
    "style": {
@@ -21187,21 +24973,21 @@
    "name": "p13-summary-next",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 17320,
-    "y": 380,
+    "x": 17420,
+    "y": 574,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 1200,
-   "height": 130,
+   "width": 1036,
+   "height": 46,
    "zIndex": 5,
    "locked": false,
    "style": {
     "fill": "#dbeafe",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 19,
+    "fontSize": 17,
     "radius": 20,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -21211,7 +24997,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "下一個 KP 要問：子集太多不能窮舉；\n怎麼一步一步聰明地走？ ⇒ 前向、後向、浮動搜尋",
+   "text": "下一個 KP 要問：子集太多不能窮舉，怎麼一步一步聰明地走？ ⇒ 前向、後向、浮動搜尋",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -22935,7 +26721,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看下排後兩格與紅色虛線。",
+   "text": "看下排後兩格：訓練分類器、算驗證誤差。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -22969,7 +26755,75 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看藍框與金框：各自的優缺點。",
+   "text": "看紅色虛線：算完一組之後。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-cue5": {
+   "id": "p04-fw-cue5",
+   "type": "text",
+   "name": "p04-fw-cue5",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看下方 filter 的花費：每一格是一次分類器訓練。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p04-fw-cue6": {
+   "id": "p04-fw-cue6",
+   "type": "text",
+   "name": "p04-fw-cue6",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看下方 wrapper 的花費：格數對照。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23067,7 +26921,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第二格：$m=20$、$l=5$。",
+   "text": "看第二格與右邊第一根長條：$m=20$、$l=5$。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23101,7 +26955,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第三格：$m=100$、$l=10$。",
+   "text": "看第三格與右邊第二根長條：$m=100$、$l=10$。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23135,7 +26989,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第四格：這對 wrapper 意味著什麼？",
+   "text": "看紅色虛線與箭頭：兩根長條的高度差代表幾倍？",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23169,75 +27023,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看下方左邊的長條：$m=20,\\ l=5$ 的組合數畫在對數尺上。",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
-  },
-  "p05-combos-cue5": {
-   "id": "p05-combos-cue5",
-   "type": "text",
-   "name": "p05-combos-cue5",
-   "sceneId": "scene-u01",
-   "transform": {
-    "x": 5900,
-    "y": 630,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-   },
-   "width": 1100,
-   "height": 60,
-   "zIndex": 8,
-   "locked": false,
-   "style": {
-    "fill": "#dbeafe",
-    "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 17,
-    "radius": 18,
-    "borderWidth": 0,
-    "fontWeight": 400,
-    "textAlign": "left",
-    "lineHeight": 1.3,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f1f7ff",
-    "gradientAngle": 90
-   },
-   "text": "看右邊的長條：$m=100,\\ l=10$。",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
-  },
-  "p05-combos-cue6": {
-   "id": "p05-combos-cue6",
-   "type": "text",
-   "name": "p05-combos-cue6",
-   "sceneId": "scene-u01",
-   "transform": {
-    "x": 5900,
-    "y": 630,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-   },
-   "width": 1100,
-   "height": 60,
-   "zIndex": 8,
-   "locked": false,
-   "style": {
-    "fill": "#dbeafe",
-    "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 17,
-    "radius": 18,
-    "borderWidth": 0,
-    "fontWeight": 400,
-    "textAlign": "left",
-    "lineHeight": 1.3,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f1f7ff",
-    "gradientAngle": 90
-   },
-   "text": "看右側灰框：怎麼讀這張圖。",
+   "text": "看第四格：這對 wrapper 意味著什麼？",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23335,7 +27121,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看金框：只用 $x_4$ 會怎樣？",
+   "text": "看兩個箭頭：沿斜帶的灰虛線與垂直的綠箭頭。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23369,7 +27155,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看紅框：只用 $x_5$。",
+   "text": "看金框：只用 $x_4$ 會怎樣？",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23403,7 +27189,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看綠框：兩個一起用。",
+   "text": "看紅框：只用 $x_5$。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23411,6 +27197,40 @@
    "id": "p06-comp-cue4",
    "type": "text",
    "name": "p06-comp-cue4",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 7340,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看綠框：兩個一起用。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p06-comp-cue5": {
+   "id": "p06-comp-cue5",
+   "type": "text",
+   "name": "p06-comp-cue5",
    "sceneId": "scene-u01",
    "transform": {
     "x": 7340,
@@ -24169,7 +27989,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看上排最後一格與紅色警示。",
+   "text": "看上排最後一格與紅色長條。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24237,7 +28057,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看下排最後一格與綠色星形。",
+   "text": "看下排最後一格與綠色長條。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24336,7 +28156,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "先自己算：看題目與公式。",
+   "text": "先自己算：看題目、公式與 30 個候選特徵。",
    "shapeKind": "rectangle"
   },
   "p11-practice1-cue1": {
@@ -24369,7 +28189,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看回饋：算式與結果。",
+   "text": "看回饋：四個位置依序可選的個數。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24403,7 +28223,41 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看金框：這個數字說明什麼？",
+   "text": "看下方長條：全部有順序的選法，每 24 格是同一組。",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true
+  },
+  "p11-practice1-cue3": {
+   "id": "p11-practice1-cue3",
+   "type": "text",
+   "name": "p11-practice1-cue3",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 14540,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "看綠格與綠框：不同組合有幾種？",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24600,7 +28454,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "先看第一格：個別排序。",
+   "text": "先看整張圖：三個區塊、座標與亂猜虛線。",
    "shapeKind": "rectangle"
   },
   "p13-summary-cue1": {
@@ -24633,7 +28487,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第二格：扣掉相似度。",
+   "text": "看第一區的長條：個別前三名。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24667,7 +28521,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第三格：整組評分。",
+   "text": "看第二區的兩根長條：整組評分。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24701,7 +28555,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第四格：組合爆炸。",
+   "text": "看第三區左邊的紅條與警示：先選後驗證。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24735,7 +28589,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第五格：特徵數。",
+   "text": "看右邊的綠條與紅箭頭：選擇放進每一折。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -24769,41 +28623,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "看第六格：選擇偏差。",
-   "shapeKind": "rectangle",
-   "initiallyHidden": true
-  },
-  "p13-summary-cue6": {
-   "id": "p13-summary-cue6",
-   "type": "text",
-   "name": "p13-summary-cue6",
-   "sceneId": "scene-u01",
-   "transform": {
-    "x": 17420,
-    "y": 630,
-    "scaleX": 1,
-    "scaleY": 1,
-    "rotation": 0
-   },
-   "width": 1100,
-   "height": 60,
-   "zIndex": 8,
-   "locked": false,
-   "style": {
-    "fill": "#dbeafe",
-    "stroke": "transparent",
-    "textColor": "#1f2937",
-    "fontSize": 17,
-    "radius": 18,
-    "borderWidth": 0,
-    "fontWeight": 400,
-    "textAlign": "left",
-    "lineHeight": 1.3,
-    "fontFamily": "Noto Sans CJK TC",
-    "gradientTo": "#f1f7ff",
-    "gradientAngle": 90
-   },
-   "text": "最後看藍框：下一個 KP 的問題。",
+   "text": "最後看藍框與星形：下一個 KP 的問題。",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -25760,7 +29580,7 @@
   {
    "id": "p04-fw-st3",
    "order": 21,
-   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看下排後兩格與紅色虛線。",
+   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看下排後兩格：訓練分類器、算驗證誤差。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -25805,15 +29625,9 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p04-fw-back",
-      "effect": "fade",
-      "delayMs": 160,
-      "durationMs": 300
-     },
-     {
       "nodeId": "p04-fw-cue3",
       "effect": "fade",
-      "delayMs": 200,
+      "delayMs": 160,
       "durationMs": 300
      }
     ],
@@ -25825,7 +29639,7 @@
   {
    "id": "p04-fw-st4",
    "order": 22,
-   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看藍框與金框：各自的優缺點。",
+   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看紅色虛線：算完一組之後。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -25846,33 +29660,21 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p04-fw-bk",
+      "nodeId": "p04-fw-back",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p04-fw-fst",
+      "nodeId": "p04-fw-bk",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p04-fw-c1",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p04-fw-c2",
-      "effect": "fade",
-      "delayMs": 120,
-      "durationMs": 300
-     },
-     {
       "nodeId": "p04-fw-cue4",
       "effect": "fade",
-      "delayMs": 160,
+      "delayMs": 80,
       "durationMs": 300
      }
     ],
@@ -25882,8 +29684,138 @@
    }
   },
   {
-   "id": "p05-combos-st0",
+   "id": "p04-fw-st5",
    "order": 23,
+   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看下方 filter 的花費：每一格是一次分類器訓練。",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-fw-cf",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-fs",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-fb",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-cfn",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-cue5",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-fw-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p04-fw-st6",
+   "order": 24,
+   "label": "整組一起評：filter 與 wrapper 的流程不同 · 看下方 wrapper 的花費：格數對照。",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-fw-cw",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-wb",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-wc",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-wnum",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-wwn",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-cwn",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-fw-cue6",
+      "effect": "fade",
+      "delayMs": 240,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-fw-cue5"
+    ]
+   }
+  },
+  {
+   "id": "p05-combos-st0",
+   "order": 25,
    "label": "組合爆炸：整組評分不能每一組都試 · 先看第一格：組合數的公式。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -25904,8 +29836,8 @@
   },
   {
    "id": "p05-combos-st1",
-   "order": 24,
-   "label": "組合爆炸：整組評分不能每一組都試 · 看第二格：$m=20$、$l=5$。",
+   "order": 26,
+   "label": "組合爆炸：整組評分不能每一組都試 · 看第二格與右邊第一根長條：$m=20$、$l=5$。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -25938,9 +29870,27 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p05-combos-cue1",
+      "nodeId": "p05-combos-bar0",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-bl0",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-bt0",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-cue1",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -25951,8 +29901,8 @@
   },
   {
    "id": "p05-combos-st2",
-   "order": 25,
-   "label": "組合爆炸：整組評分不能每一組都試 · 看第三格：$m=100$、$l=10$。",
+   "order": 27,
+   "label": "組合爆炸：整組評分不能每一組都試 · 看第三格與右邊第二根長條：$m=100$、$l=10$。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -25985,9 +29935,27 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p05-combos-cue2",
+      "nodeId": "p05-combos-bar1",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-bl1",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-bt1",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-cue2",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -25998,7 +29966,72 @@
   },
   {
    "id": "p05-combos-st3",
-   "order": 26,
+   "order": 28,
+   "label": "組合爆炸：整組評分不能每一組都試 · 看紅色虛線與箭頭：兩根長條的高度差代表幾倍？",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-combos-hl",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-brk",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-rt",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-wn5",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-nt",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-combos-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-combos-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p05-combos-st4",
+   "order": 29,
    "label": "組合爆炸：整組評分不能每一組都試 · 看第四格：這對 wrapper 意味著什麼？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26032,173 +30065,14 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p05-combos-cue3",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     }
-    ],
-    "exitNodeIds": [
-     "p05-combos-cue2"
-    ]
-   }
-  },
-  {
-   "id": "p05-combos-st4",
-   "order": 27,
-   "label": "組合爆炸：整組評分不能每一組都試 · 看下方左邊的長條：$m=20,\\ l=5$ 的組合數畫在對數尺上。",
-   "durationMs": 300,
-   "holdMs": 3500,
-   "easing": "smooth",
-   "target": {
-    "kind": "scene-point",
-    "sceneId": "scene-u01",
-    "point": {
-     "x": 6400.0,
-     "y": 360
-    },
-    "zoom": 1.0,
-    "referenceViewport": {
-     "width": 1280,
-     "height": 720
-    }
-   },
-   "reveal": {
-    "timing": "after-camera",
-    "enter": [
-     {
-      "nodeId": "p05-combos-ax",
-      "effect": "fade",
-      "delayMs": 0,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-bar0",
-      "effect": "fade",
-      "delayMs": 40,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-bl0",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-bt0",
-      "effect": "fade",
-      "delayMs": 120,
-      "durationMs": 300
-     },
-     {
       "nodeId": "p05-combos-cue4",
       "effect": "fade",
-      "delayMs": 160,
+      "delayMs": 80,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
      "p05-combos-cue3"
-    ]
-   }
-  },
-  {
-   "id": "p05-combos-st5",
-   "order": 28,
-   "label": "組合爆炸：整組評分不能每一組都試 · 看右邊的長條：$m=100,\\ l=10$。",
-   "durationMs": 300,
-   "holdMs": 3500,
-   "easing": "smooth",
-   "target": {
-    "kind": "scene-point",
-    "sceneId": "scene-u01",
-    "point": {
-     "x": 6400.0,
-     "y": 360
-    },
-    "zoom": 1.0,
-    "referenceViewport": {
-     "width": 1280,
-     "height": 720
-    }
-   },
-   "reveal": {
-    "timing": "after-camera",
-    "enter": [
-     {
-      "nodeId": "p05-combos-bar1",
-      "effect": "fade",
-      "delayMs": 0,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-bl1",
-      "effect": "fade",
-      "delayMs": 40,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-bt1",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-cue5",
-      "effect": "fade",
-      "delayMs": 120,
-      "durationMs": 300
-     }
-    ],
-    "exitNodeIds": [
-     "p05-combos-cue4"
-    ]
-   }
-  },
-  {
-   "id": "p05-combos-st6",
-   "order": 29,
-   "label": "組合爆炸：整組評分不能每一組都試 · 看右側灰框：怎麼讀這張圖。",
-   "durationMs": 300,
-   "holdMs": 3500,
-   "easing": "smooth",
-   "target": {
-    "kind": "scene-point",
-    "sceneId": "scene-u01",
-    "point": {
-     "x": 6400.0,
-     "y": 360
-    },
-    "zoom": 1.0,
-    "referenceViewport": {
-     "width": 1280,
-     "height": 720
-    }
-   },
-   "reveal": {
-    "timing": "after-camera",
-    "enter": [
-     {
-      "nodeId": "p05-combos-wn5",
-      "effect": "fade",
-      "delayMs": 0,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-nt",
-      "effect": "fade",
-      "delayMs": 40,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p05-combos-cue6",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     }
-    ],
-    "exitNodeIds": [
-     "p05-combos-cue5"
     ]
    }
   },
@@ -26226,6 +30100,65 @@
   {
    "id": "p06-comp-st1",
    "order": 31,
+   "label": "互補：$x_5$ 單獨沒用，卻能消去 $x_4$ 的雜訊 · 看兩個箭頭：沿斜帶的灰虛線與垂直的綠箭頭。",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 7840.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-comp-dn",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-comp-ds",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-comp-dnl",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-comp-dsl",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-comp-cue1",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-comp-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p06-comp-st2",
+   "order": 32,
    "label": "互補：$x_5$ 單獨沒用，卻能消去 $x_4$ 的雜訊 · 看金框：只用 $x_4$ 會怎樣？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26253,20 +30186,20 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p06-comp-cue1",
+      "nodeId": "p06-comp-cue2",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
-     "p06-comp-cue0"
+     "p06-comp-cue1"
     ]
    }
   },
   {
-   "id": "p06-comp-st2",
-   "order": 32,
+   "id": "p06-comp-st3",
+   "order": 33,
    "label": "互補：$x_5$ 單獨沒用，卻能消去 $x_4$ 的雜訊 · 看紅框：只用 $x_5$。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26294,20 +30227,20 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p06-comp-cue2",
+      "nodeId": "p06-comp-cue3",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
-     "p06-comp-cue1"
+     "p06-comp-cue2"
     ]
    }
   },
   {
-   "id": "p06-comp-st3",
-   "order": 33,
+   "id": "p06-comp-st4",
+   "order": 34,
    "label": "互補：$x_5$ 單獨沒用，卻能消去 $x_4$ 的雜訊 · 看綠框：兩個一起用。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26335,20 +30268,20 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p06-comp-cue3",
+      "nodeId": "p06-comp-cue4",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
-     "p06-comp-cue2"
+     "p06-comp-cue3"
     ]
    }
   },
   {
-   "id": "p06-comp-st4",
-   "order": 34,
+   "id": "p06-comp-st5",
+   "order": 35,
    "label": "互補：$x_5$ 單獨沒用，卻能消去 $x_4$ 的雜訊 · 看紫框與星形：個別評分漏掉了什麼？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26382,20 +30315,20 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p06-comp-cue4",
+      "nodeId": "p06-comp-cue5",
       "effect": "fade",
       "delayMs": 80,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
-     "p06-comp-cue3"
+     "p06-comp-cue4"
     ]
    }
   },
   {
    "id": "p07-sim-st0",
-   "order": 35,
+   "order": 36,
    "label": "Filter 與 wrapper 實測：個別前三名 vs 驗證選出的三個 · 先看座標與題目：三組特徵、兩種準確率。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26416,7 +30349,7 @@
   },
   {
    "id": "p07-sim-st1",
-   "order": 36,
+   "order": 37,
    "label": "Filter 與 wrapper 實測：個別前三名 vs 驗證選出的三個 · 看第一組：個別分數的前三名。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26475,7 +30408,7 @@
   },
   {
    "id": "p07-sim-st2",
-   "order": 37,
+   "order": 38,
    "label": "Filter 與 wrapper 實測：個別前三名 vs 驗證選出的三個 · 看第二組：驗證選出的三個。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26534,7 +30467,7 @@
   },
   {
    "id": "p07-sim-st3",
-   "order": 38,
+   "order": 39,
    "label": "Filter 與 wrapper 實測：個別前三名 vs 驗證選出的三個 · 看第三組：全部 5 個特徵。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26593,7 +30526,7 @@
   },
   {
    "id": "p07-sim-st4",
-   "order": 39,
+   "order": 40,
    "label": "Filter 與 wrapper 實測：個別前三名 vs 驗證選出的三個 · 看綠色星形與綠框：這說明什麼？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26640,7 +30573,7 @@
   },
   {
    "id": "p08-val-st0",
-   "order": 40,
+   "order": 41,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 先看座標：橫軸特徵數，縱軸錯誤率。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26661,7 +30594,7 @@
   },
   {
    "id": "p08-val-st1",
-   "order": 41,
+   "order": 42,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 看灰色線：訓練誤差。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26708,7 +30641,7 @@
   },
   {
    "id": "p08-val-st2",
-   "order": 42,
+   "order": 43,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 看藍色線：驗證誤差。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26755,7 +30688,7 @@
   },
   {
    "id": "p08-val-st3",
-   "order": 43,
+   "order": 44,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 看金色線：新資料誤差。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26802,7 +30735,7 @@
   },
   {
    "id": "p08-val-st4",
-   "order": 44,
+   "order": 45,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 看藍色菱形與藍框：驗證誤差的最低點。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26849,7 +30782,7 @@
   },
   {
    "id": "p08-val-st5",
-   "order": 45,
+   "order": 46,
    "label": "要留幾個特徵：看驗證誤差，不看訓練誤差 · 看金框：怎麼用？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26890,7 +30823,7 @@
   },
   {
    "id": "p09-bias-st0",
-   "order": 46,
+   "order": 47,
    "label": "選特徵本身也是學習：先全資料選、再驗證，分數會虛高 · 先看座標與虛線：亂猜的準確率是 $0.5$。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26911,7 +30844,7 @@
   },
   {
    "id": "p09-bias-st1",
-   "order": 47,
+   "order": 48,
    "label": "選特徵本身也是學習：先全資料選、再驗證，分數會虛高 · 看紅色長條：先用全部資料選特徵。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -26964,7 +30897,7 @@
   },
   {
    "id": "p09-bias-st2",
-   "order": 48,
+   "order": 49,
    "label": "選特徵本身也是學習：先全資料選、再驗證，分數會虛高 · 看紅色警示與紫框：為什麼會虛高？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27011,7 +30944,7 @@
   },
   {
    "id": "p09-bias-st3",
-   "order": 49,
+   "order": 50,
    "label": "選特徵本身也是學習：先全資料選、再驗證，分數會虛高 · 看綠色長條：選擇放進每一折。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27064,7 +30997,7 @@
   },
   {
    "id": "p09-bias-st4",
-   "order": 50,
+   "order": 51,
    "label": "選特徵本身也是學習：先全資料選、再驗證，分數會虛高 · 看金框：這說明什麼？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27105,7 +31038,7 @@
   },
   {
    "id": "p10-pipe-st0",
-   "order": 51,
+   "order": 52,
    "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 先看上排前兩格：錯誤流程先選特徵。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27126,8 +31059,8 @@
   },
   {
    "id": "p10-pipe-st1",
-   "order": 52,
-   "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看上排最後一格與紅色警示。",
+   "order": 53,
+   "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看上排最後一格與紅色長條。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27160,15 +31093,27 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p10-pipe-wn",
+      "nodeId": "p10-pipe-wbar",
       "effect": "fade",
       "delayMs": 80,
       "durationMs": 300
      },
      {
-      "nodeId": "p10-pipe-cue1",
+      "nodeId": "p10-pipe-wbl",
       "effect": "fade",
       "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p10-pipe-wn",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p10-pipe-cue1",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -27179,7 +31124,7 @@
   },
   {
    "id": "p10-pipe-st2",
-   "order": 53,
+   "order": 54,
    "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看下排前兩格：正確流程。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27238,8 +31183,8 @@
   },
   {
    "id": "p10-pipe-st3",
-   "order": 54,
-   "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看下排最後一格與綠色星形。",
+   "order": 55,
+   "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看下排最後一格與綠色長條。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27272,15 +31217,27 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p10-pipe-ok",
+      "nodeId": "p10-pipe-rbar",
       "effect": "fade",
       "delayMs": 80,
       "durationMs": 300
      },
      {
-      "nodeId": "p10-pipe-cue3",
+      "nodeId": "p10-pipe-rbl",
       "effect": "fade",
       "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p10-pipe-ok",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p10-pipe-cue3",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -27291,7 +31248,7 @@
   },
   {
    "id": "p10-pipe-st4",
-   "order": 55,
+   "order": 56,
    "label": "正確的流程：選特徵發生在每一折的訓練資料之內 · 看底部灰框：程式怎麼寫。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27332,8 +31289,8 @@
   },
   {
    "id": "p11-practice1-st0",
-   "order": 56,
-   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 先自己算：看題目與公式。",
+   "order": 57,
+   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 先自己算：看題目、公式與 30 個候選特徵。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27353,8 +31310,8 @@
   },
   {
    "id": "p11-practice1-st1",
-   "order": 57,
-   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 看回饋：算式與結果。",
+   "order": 58,
+   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 看回饋：四個位置依序可選的個數。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27375,33 +31332,39 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p11-practice1-c1",
+      "nodeId": "p11-practice1-s0",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-c2",
+      "nodeId": "p11-practice1-s1",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-r1",
+      "nodeId": "p11-practice1-s2",
       "effect": "fade",
       "delayMs": 80,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-r2",
+      "nodeId": "p11-practice1-s3",
       "effect": "fade",
       "delayMs": 120,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-cue1",
+      "nodeId": "p11-practice1-res",
       "effect": "fade",
       "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-cue1",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -27412,8 +31375,8 @@
   },
   {
    "id": "p11-practice1-st2",
-   "order": 58,
-   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 看金框：這個數字說明什麼？",
+   "order": 59,
+   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 看下方長條：全部有順序的選法，每 24 格是同一組。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27434,21 +31397,27 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p11-practice1-as",
+      "nodeId": "p11-practice1-blb",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-cm",
+      "nodeId": "p11-practice1-bar",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p11-practice1-cue2",
+      "nodeId": "p11-practice1-cmb",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-cue2",
+      "effect": "fade",
+      "delayMs": 120,
       "durationMs": 300
      }
     ],
@@ -27458,8 +31427,73 @@
    }
   },
   {
+   "id": "p11-practice1-st3",
+   "order": 60,
+   "label": "練習一：從 30 個特徵挑 4 個，有幾種組合？ · 看綠格與綠框：不同組合有幾種？",
+   "durationMs": 300,
+   "holdMs": 3500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 15040.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p11-practice1-gsl",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-ans",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-garr",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-as",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-cm",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p11-practice1-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p11-practice1-cue2"
+    ]
+   }
+  },
+  {
    "id": "p12-practice2-st0",
-   "order": 59,
+   "order": 61,
    "label": "練習二：用相關修正選第二個特徵 · 先自己算：看題目與兩個候選。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27480,7 +31514,7 @@
   },
   {
    "id": "p12-practice2-st1",
-   "order": 60,
+   "order": 62,
    "label": "練習二：用相關修正選第二個特徵 · 看回饋：$x_2$ 與 $x_3$ 的綜合分數。",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27539,7 +31573,7 @@
   },
   {
    "id": "p12-practice2-st2",
-   "order": 61,
+   "order": 63,
    "label": "練習二：用相關修正選第二個特徵 · 看回饋：選誰？",
    "durationMs": 300,
    "holdMs": 3500,
@@ -27586,8 +31620,8 @@
   },
   {
    "id": "p13-summary-st0",
-   "order": 62,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 先看第一格：個別排序。",
+   "order": 64,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 先看整張圖：三個區塊、座標與亂猜虛線。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27607,8 +31641,8 @@
   },
   {
    "id": "p13-summary-st1",
-   "order": 63,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第二格：扣掉相似度。",
+   "order": 65,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第一區的長條：個別前三名。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27629,21 +31663,27 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p13-summary-ch1",
+      "nodeId": "p13-summary-bA",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-ca0",
+      "nodeId": "p13-summary-blA",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-cue1",
+      "nodeId": "p13-summary-cA",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-cue1",
+      "effect": "fade",
+      "delayMs": 120,
       "durationMs": 300
      }
     ],
@@ -27654,8 +31694,8 @@
   },
   {
    "id": "p13-summary-st2",
-   "order": 64,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第三格：整組評分。",
+   "order": 66,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第二區的兩根長條：整組評分。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27676,21 +31716,39 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p13-summary-ch2",
+      "nodeId": "p13-summary-bB1",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-ca1",
+      "nodeId": "p13-summary-blB1",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-cue2",
+      "nodeId": "p13-summary-bB2",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-blB2",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-cB",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-cue2",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -27701,8 +31759,8 @@
   },
   {
    "id": "p13-summary-st3",
-   "order": 65,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第四格：組合爆炸。",
+   "order": 67,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第三區左邊的紅條與警示：先選後驗證。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27723,21 +31781,33 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p13-summary-ch3",
+      "nodeId": "p13-summary-bC1",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-ca2",
+      "nodeId": "p13-summary-blC1",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-cue3",
+      "nodeId": "p13-summary-cC1",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-wn",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-cue3",
+      "effect": "fade",
+      "delayMs": 160,
       "durationMs": 300
      }
     ],
@@ -27748,8 +31818,8 @@
   },
   {
    "id": "p13-summary-st4",
-   "order": 66,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第五格：特徵數。",
+   "order": 68,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看右邊的綠條與紅箭頭：選擇放進每一折。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27770,21 +31840,39 @@
     "timing": "after-camera",
     "enter": [
      {
-      "nodeId": "p13-summary-ch4",
+      "nodeId": "p13-summary-bC2",
       "effect": "fade",
       "delayMs": 0,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-ca3",
+      "nodeId": "p13-summary-blC2",
       "effect": "fade",
       "delayMs": 40,
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-cue4",
+      "nodeId": "p13-summary-cC2",
       "effect": "fade",
       "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-hl",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-brk",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p13-summary-cue4",
+      "effect": "fade",
+      "delayMs": 200,
       "durationMs": 300
      }
     ],
@@ -27795,55 +31883,8 @@
   },
   {
    "id": "p13-summary-st5",
-   "order": 67,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 看第六格：選擇偏差。",
-   "durationMs": 300,
-   "holdMs": 3500,
-   "easing": "smooth",
-   "target": {
-    "kind": "scene-point",
-    "sceneId": "scene-u01",
-    "point": {
-     "x": 17920.0,
-     "y": 360
-    },
-    "zoom": 1.0,
-    "referenceViewport": {
-     "width": 1280,
-     "height": 720
-    }
-   },
-   "reveal": {
-    "timing": "after-camera",
-    "enter": [
-     {
-      "nodeId": "p13-summary-ch5",
-      "effect": "fade",
-      "delayMs": 0,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p13-summary-ca4",
-      "effect": "fade",
-      "delayMs": 40,
-      "durationMs": 300
-     },
-     {
-      "nodeId": "p13-summary-cue5",
-      "effect": "fade",
-      "delayMs": 80,
-      "durationMs": 300
-     }
-    ],
-    "exitNodeIds": [
-     "p13-summary-cue4"
-    ]
-   }
-  },
-  {
-   "id": "p13-summary-st6",
-   "order": 68,
-   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 最後看藍框：下一個 KP 的問題。",
+   "order": 69,
+   "label": "整個 KP06：挑的是一組，不是一個一個的最高分 · 最後看藍框與星形：下一個 KP 的問題。",
    "durationMs": 300,
    "holdMs": 3500,
    "easing": "smooth",
@@ -27876,14 +31917,14 @@
       "durationMs": 300
      },
      {
-      "nodeId": "p13-summary-cue6",
+      "nodeId": "p13-summary-cue5",
       "effect": "fade",
       "delayMs": 80,
       "durationMs": 300
      }
     ],
     "exitNodeIds": [
-     "p13-summary-cue5"
+     "p13-summary-cue4"
     ]
    }
   }
