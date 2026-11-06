@@ -22,9 +22,9 @@
 | 7 | 10/19 | Feature Selection and Generation (1) – Feature Selection Methods | | |
 | 8 | 10/26 | 放假(光復節補假) | | 無上課 |
 | 9 | 11/02 | 期中考 Midterm Exam | | 期中考 |
-| 10 | 11/09 | Feature Generation I (1) – 動機與線性表示（基底、投影、KLT／PCA、SVD） | [KP01 特徵生成動機](lectures/lec10-kp01-feature-generation-motivation.md)；[KP02 基底、投影與重建](lectures/lec10-kp02-basis-projection.md)；[KP03 主成分分析](lectures/lec10-kp03-pca-klt.md)；[KP04 奇異值分解](lectures/lec10-kp04-svd.md) | KP01–KP04；HW01 截止 |
-| 10 | 11/09 | Feature Generation I (2) – 非負與非線性表示（NMF、流形、Kernel PCA） | [KP05 非負矩陣分解](lectures/lec10-kp05-nmf.md)；[KP06 非線性降維與流形](lectures/lec10-kp06-manifold.md)；[KP07 核主成分分析](lectures/lec10-kp07-kernel-pca.md) | KP05–KP07 |
-| 10 | 11/09 | Feature Generation I (3) – 圖方法（Laplacian Eigenmaps、LLE、ISOMAP） | [KP08 拉普拉斯特徵映射](lectures/lec10-kp08-laplacian-eigenmaps.md)；[KP09 局部重建與圖距離](lectures/lec10-kp09-lle-isomap.md) | KP08–KP09 |
+| 10 | 11/09 | Feature Generation I (1) – 動機與線性表示（基底、投影、KLT／PCA、SVD） | [KP01 特徵生成動機](lectures/lec10-kp01-feature-generation-motivation.md) · [簡報](slides/lec10-kp01-feature-generation-motivation.jbd.json)；[KP02 基底、投影與重建](lectures/lec10-kp02-basis-projection.md) · [簡報](slides/lec10-kp02-basis-projection.jbd.json)；[KP03 主成分分析](lectures/lec10-kp03-pca-klt.md) · [簡報](slides/lec10-kp03-pca-klt.jbd.json)；[KP04 奇異值分解](lectures/lec10-kp04-svd.md) · [簡報](slides/lec10-kp04-svd.jbd.json) | KP01–KP04；HW01 截止 |
+| 10 | 11/09 | Feature Generation I (2) – 非負與非線性表示（NMF、流形、Kernel PCA） | [KP05 非負矩陣分解](lectures/lec10-kp05-nmf.md) · [簡報](slides/lec10-kp05-nmf.jbd.json)；[KP06 非線性降維與流形](lectures/lec10-kp06-manifold.md) · [簡報](slides/lec10-kp06-manifold.jbd.json)；[KP07 核主成分分析](lectures/lec10-kp07-kernel-pca.md) · [簡報](slides/lec10-kp07-kernel-pca.jbd.json) | KP05–KP07 |
+| 10 | 11/09 | Feature Generation I (3) – 圖方法（Laplacian Eigenmaps、LLE、ISOMAP） | [KP08 拉普拉斯特徵映射](lectures/lec10-kp08-laplacian-eigenmaps.md) · [簡報](slides/lec10-kp08-laplacian-eigenmaps.jbd.json)；[KP09 局部重建與圖距離](lectures/lec10-kp09-lle-isomap.md) · [簡報](slides/lec10-kp09-lle-isomap.jbd.json) | KP08–KP09 |
 | 11 | 11/16 | Template Matching (1) – Matching Techniques & Distance Measures | | |
 | 12 | 11/23 | Template Matching (2) – Dynamic Time Warping | | |
 | 13 | 11/30 | Context-Dependent Classification (1) – Markov Models | | |
@@ -32,6 +32,20 @@
 | 15 | 12/14 | Clustering (1) – K-means & Hierarchical Clustering | | |
 | 16 | 12/21 | Clustering (2) – Evaluation & Course Project Discussion | | |
 | 17 | 12/28 | 期末考 / 期末專題發表 Final Exam / Project Presentation | | 期末考(學校期末評量 12/28–31) |
+
+## 英文版簡報(English slides, week 10)
+
+第 10 週 Feature Generation I 的九個 KP 各有英文原生簡報，對應上表的繁中英講義；網站同時提供網頁版與 JBD 下載。
+
+- KP01 Feature generation: decide what to preserve:[Slides](slides/lec10-kp01-feature-generation-motivation-en.jbd.json)
+- KP02 Basis, projection and reconstruction:[Slides](slides/lec10-kp02-basis-projection-en.jbd.json)
+- KP03 Principal component analysis / KLT:[Slides](slides/lec10-kp03-pca-klt-en.jbd.json)
+- KP04 Singular value decomposition:[Slides](slides/lec10-kp04-svd-en.jbd.json)
+- KP05 Nonnegative matrix factorization:[Slides](slides/lec10-kp05-nmf-en.jbd.json)
+- KP06 Nonlinear dimensionality reduction and manifolds:[Slides](slides/lec10-kp06-manifold-en.jbd.json)
+- KP07 Kernel principal component analysis:[Slides](slides/lec10-kp07-kernel-pca-en.jbd.json)
+- KP08 Laplacian Eigenmaps:[Slides](slides/lec10-kp08-laplacian-eigenmaps-en.jbd.json)
+- KP09 Local reconstruction and graph distances: LLE / ISOMAP:[Slides](slides/lec10-kp09-lle-isomap-en.jbd.json)
 
 ## 英文版教材(English materials, weeks 5–6)
 

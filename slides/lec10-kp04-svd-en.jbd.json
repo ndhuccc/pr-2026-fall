@@ -1,0 +1,7966 @@
+{
+  "schemaVersion": 3,
+  "rootSceneId": "lesson",
+  "metadata": {
+    "title": "KP04 · Singular value decomposition",
+    "aspectRatio": "16:9",
+    "description": "Reasoning-led 2.3.1; editable native teaching deck; global manual mode; no narration.",
+    "language": "en-US"
+  },
+  "scenes": {
+    "lesson": {
+      "id": "lesson",
+      "name": "Singular value decomposition",
+      "parentFrameId": null,
+      "nodeIds": [
+        "rectangular-background",
+        "rectangular-title",
+        "rectangular-context",
+        "rectangular-source",
+        "rectangular-teacher-head",
+        "rectangular-eye-l",
+        "rectangular-eye-r",
+        "rectangular-mouth",
+        "rectangular-body",
+        "rectangular-arm-l",
+        "rectangular-arm-r",
+        "rectangular-leg-l",
+        "rectangular-leg-r",
+        "rectangular-bubble",
+        "rectangular-bubble-tail",
+        "rectangular-A",
+        "rectangular-P",
+        "rectangular-A-P",
+        "rectangular-S",
+        "rectangular-P-S",
+        "rectangular-Qt",
+        "rectangular-S-Q",
+        "rectangular-product",
+        "directions-background",
+        "directions-title",
+        "directions-context",
+        "directions-source",
+        "directions-teacher-head",
+        "directions-eye-l",
+        "directions-eye-r",
+        "directions-mouth",
+        "directions-body",
+        "directions-arm-l",
+        "directions-arm-r",
+        "directions-leg-l",
+        "directions-leg-r",
+        "directions-bubble",
+        "directions-bubble-tail",
+        "directions-q",
+        "directions-p",
+        "directions-forward",
+        "directions-rule1",
+        "directions-rule2",
+        "directions-reverse",
+        "directions-squared",
+        "factors-background",
+        "factors-title",
+        "factors-context",
+        "factors-source",
+        "factors-teacher-head",
+        "factors-eye-l",
+        "factors-eye-r",
+        "factors-mouth",
+        "factors-body",
+        "factors-arm-l",
+        "factors-arm-r",
+        "factors-leg-l",
+        "factors-leg-r",
+        "factors-bubble",
+        "factors-bubble-tail",
+        "factors-ata",
+        "factors-squares",
+        "factors-P",
+        "factors-Sigma",
+        "factors-Q",
+        "outer-products-background",
+        "outer-products-title",
+        "outer-products-context",
+        "outer-products-source",
+        "outer-products-teacher-head",
+        "outer-products-eye-l",
+        "outer-products-eye-r",
+        "outer-products-mouth",
+        "outer-products-body",
+        "outer-products-arm-l",
+        "outer-products-arm-r",
+        "outer-products-leg-l",
+        "outer-products-leg-r",
+        "outer-products-bubble",
+        "outer-products-bubble-tail",
+        "outer-products-first",
+        "outer-products-second",
+        "outer-products-A",
+        "outer-products-plus",
+        "outer-products-equals",
+        "rank-one-background",
+        "rank-one-title",
+        "rank-one-context",
+        "rank-one-source",
+        "rank-one-teacher-head",
+        "rank-one-eye-l",
+        "rank-one-eye-r",
+        "rank-one-mouth",
+        "rank-one-body",
+        "rank-one-arm-l",
+        "rank-one-arm-r",
+        "rank-one-leg-l",
+        "rank-one-leg-r",
+        "rank-one-bubble",
+        "rank-one-bubble-tail",
+        "rank-one-R",
+        "rank-one-entrywise",
+        "rank-one-square",
+        "rank-one-spectrum",
+        "rank-one-norm",
+        "pca-link-background",
+        "pca-link-title",
+        "pca-link-context",
+        "pca-link-source",
+        "pca-link-teacher-head",
+        "pca-link-eye-l",
+        "pca-link-eye-r",
+        "pca-link-mouth",
+        "pca-link-body",
+        "pca-link-arm-l",
+        "pca-link-arm-r",
+        "pca-link-leg-l",
+        "pca-link-leg-r",
+        "pca-link-bubble",
+        "pca-link-bubble-tail",
+        "pca-link-svd",
+        "pca-link-cov",
+        "pca-link-cov-map",
+        "pca-link-lambda",
+        "pca-link-scores",
+        "centering-background",
+        "centering-title",
+        "centering-context",
+        "centering-source",
+        "centering-teacher-head",
+        "centering-eye-l",
+        "centering-eye-r",
+        "centering-mouth",
+        "centering-body",
+        "centering-arm-l",
+        "centering-arm-r",
+        "centering-leg-l",
+        "centering-leg-r",
+        "centering-bubble",
+        "centering-bubble-tail",
+        "centering-X",
+        "centering-raw",
+        "centering-raw-path",
+        "centering-center",
+        "centering-center-path",
+        "limits-background",
+        "limits-title",
+        "limits-context",
+        "limits-source",
+        "limits-teacher-head",
+        "limits-eye-l",
+        "limits-eye-r",
+        "limits-mouth",
+        "limits-body",
+        "limits-arm-l",
+        "limits-arm-r",
+        "limits-leg-l",
+        "limits-leg-r",
+        "limits-bubble",
+        "limits-bubble-tail",
+        "limits-error",
+        "limits-storage",
+        "limits-applications",
+        "limits-risk",
+        "limits-risk-label",
+        "limits-numerics",
+        "new-spectrum-background",
+        "new-spectrum-title",
+        "new-spectrum-context",
+        "new-spectrum-source",
+        "new-spectrum-teacher-head",
+        "new-spectrum-eye-l",
+        "new-spectrum-eye-r",
+        "new-spectrum-mouth",
+        "new-spectrum-body",
+        "new-spectrum-arm-l",
+        "new-spectrum-arm-r",
+        "new-spectrum-leg-l",
+        "new-spectrum-leg-r",
+        "new-spectrum-bubble",
+        "new-spectrum-bubble-tail",
+        "new-spectrum-input",
+        "new-spectrum-target",
+        "new-spectrum-error",
+        "new-spectrum-eigenvalues",
+        "new-spectrum-accuracy"
+      ],
+      "background": "#f8fafc",
+      "camera": {
+        "x": 640,
+        "y": 360,
+        "zoom": 1,
+        "rotation": 0
+      }
+    }
+  },
+  "nodes": {
+    "rectangular-background": {
+      "id": "rectangular-background",
+      "type": "shape",
+      "name": "rectangular-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 0,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 1,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "rectangular-title": {
+      "id": "rectangular-title",
+      "type": "text",
+      "name": "rectangular-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 44,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 2,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Can a rectangular table be split into directions and strengths?"
+    },
+    "rectangular-context": {
+      "id": "rectangular-context",
+      "type": "text",
+      "name": "rectangular-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 46,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 3,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Use four centered observations with two features each; observations are rows and rank is two."
+    },
+    "rectangular-source": {
+      "id": "rectangular-source",
+      "type": "text",
+      "name": "rectangular-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 46,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 4,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 1/9  |  Handout §1,§2  |  Manual Next / Prev"
+    },
+    "rectangular-teacher-head": {
+      "id": "rectangular-teacher-head",
+      "type": "shape",
+      "name": "rectangular-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 67,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 5,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rectangular-eye-l": {
+      "id": "rectangular-eye-l",
+      "type": "shape",
+      "name": "rectangular-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 76,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 6,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rectangular-eye-r": {
+      "id": "rectangular-eye-r",
+      "type": "shape",
+      "name": "rectangular-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 89,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 7,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rectangular-mouth": {
+      "id": "rectangular-mouth",
+      "type": "shape",
+      "name": "rectangular-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 78,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 8,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "rectangular-body": {
+      "id": "rectangular-body",
+      "type": "text",
+      "name": "rectangular-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 73,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 9,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "rectangular-arm-l": {
+      "id": "rectangular-arm-l",
+      "type": "shape",
+      "name": "rectangular-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 61,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 10,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rectangular-arm-r": {
+      "id": "rectangular-arm-r",
+      "type": "shape",
+      "name": "rectangular-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 96,
+        "y": 651,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 13,
+      "zIndex": 11,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "rectangular-leg-l": {
+      "id": "rectangular-leg-l",
+      "type": "shape",
+      "name": "rectangular-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 74,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 12,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rectangular-leg-r": {
+      "id": "rectangular-leg-r",
+      "type": "shape",
+      "name": "rectangular-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 91,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 13,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rectangular-bubble": {
+      "id": "rectangular-bubble",
+      "type": "text",
+      "name": "rectangular-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 140,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 14,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Track factor dimensions to identify left directions, strengths, and right directions."
+    },
+    "rectangular-bubble-tail": {
+      "id": "rectangular-bubble-tail",
+      "type": "shape",
+      "name": "rectangular-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 122,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 15,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "rectangular-A": {
+      "id": "rectangular-A",
+      "type": "text",
+      "name": "rectangular-A",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 45,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 340,
+      "height": 330,
+      "zIndex": 16,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A=\\begin{bmatrix}-3&-1\\\\1&3\\\\-1&-3\\\\3&1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "rectangular-P": {
+      "id": "rectangular-P",
+      "type": "text",
+      "name": "rectangular-P",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 470,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 315,
+      "height": 135,
+      "zIndex": 17,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 33,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$P:\\ 4\\times2$",
+      "initiallyHidden": true
+    },
+    "rectangular-A-P": {
+      "id": "rectangular-A-P",
+      "type": "shape",
+      "name": "rectangular-A-P",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 385,
+        "y": 267.5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 85,
+      "height": 97.5,
+      "zIndex": 18,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 86.17514872446664,
+          "y": 4.460193668093418
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 96.8166460878706,
+          "y": 12.54801151956943
+        }
+      ]
+    },
+    "rectangular-S": {
+      "id": "rectangular-S",
+      "type": "text",
+      "name": "rectangular-S",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 870,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 320,
+      "height": 135,
+      "zIndex": 19,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 33,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$\\Sigma:\\ 2\\times2$",
+      "initiallyHidden": true
+    },
+    "rectangular-P-S": {
+      "id": "rectangular-P-S",
+      "type": "shape",
+      "name": "rectangular-P-S",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 785,
+        "y": 261.5,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 85,
+      "height": 12.0,
+      "zIndex": 20,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#166534",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 50.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 87.05882352941177,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 87.05882352941177,
+          "y": 100.0
+        }
+      ]
+    },
+    "rectangular-Qt": {
+      "id": "rectangular-Qt",
+      "type": "text",
+      "name": "rectangular-Qt",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 870,
+        "y": 430,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 320,
+      "height": 125,
+      "zIndex": 21,
+      "locked": false,
+      "style": {
+        "fill": "#ede9fe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 33,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f8f6ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$Q^T:\\ 2\\times2$",
+      "initiallyHidden": true
+    },
+    "rectangular-S-Q": {
+      "id": "rectangular-S-Q",
+      "type": "shape",
+      "name": "rectangular-S-Q",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1024.0,
+        "y": 335,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 12.0,
+      "height": 95,
+      "zIndex": 22,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#5b21b6",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 50.0,
+          "y": 0.0
+        },
+        {
+          "x": 50.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 88.42105263157895
+        },
+        {
+          "x": 50.0,
+          "y": 100.0
+        },
+        {
+          "x": 0.0,
+          "y": 88.42105263157895
+        }
+      ]
+    },
+    "rectangular-product": {
+      "id": "rectangular-product",
+      "type": "text",
+      "name": "rectangular-product",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 420,
+        "y": 450,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 390,
+      "height": 100,
+      "zIndex": 23,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 34,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A=P\\Sigma Q^T$",
+      "initiallyHidden": true
+    },
+    "directions-background": {
+      "id": "directions-background",
+      "type": "shape",
+      "name": "directions-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1440,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 24,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "directions-title": {
+      "id": "directions-title",
+      "type": "text",
+      "name": "directions-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1484,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 25,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Why are left and right directions different?"
+    },
+    "directions-context": {
+      "id": "directions-context",
+      "type": "text",
+      "name": "directions-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1486,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 26,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\mathbf q_j$ lies in the two-dimensional input space; $\\mathbf p_j$ lies in four-dimensional output space. Singular value $s_j\\ge0$."
+    },
+    "directions-source": {
+      "id": "directions-source",
+      "type": "text",
+      "name": "directions-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1486,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 27,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 2/9  |  Handout §3  |  Manual Next / Prev"
+    },
+    "directions-teacher-head": {
+      "id": "directions-teacher-head",
+      "type": "shape",
+      "name": "directions-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1507,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 28,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "directions-eye-l": {
+      "id": "directions-eye-l",
+      "type": "shape",
+      "name": "directions-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1516,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 29,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "directions-eye-r": {
+      "id": "directions-eye-r",
+      "type": "shape",
+      "name": "directions-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1529,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 30,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "directions-mouth": {
+      "id": "directions-mouth",
+      "type": "shape",
+      "name": "directions-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1518,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 31,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "directions-body": {
+      "id": "directions-body",
+      "type": "text",
+      "name": "directions-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1513,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 32,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "directions-arm-l": {
+      "id": "directions-arm-l",
+      "type": "shape",
+      "name": "directions-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1501,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 33,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "directions-arm-r": {
+      "id": "directions-arm-r",
+      "type": "shape",
+      "name": "directions-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1536,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 12,
+      "zIndex": 34,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "directions-leg-l": {
+      "id": "directions-leg-l",
+      "type": "shape",
+      "name": "directions-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1514,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 35,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "directions-leg-r": {
+      "id": "directions-leg-r",
+      "type": "shape",
+      "name": "directions-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1531,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 36,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "directions-bubble": {
+      "id": "directions-bubble",
+      "type": "text",
+      "name": "directions-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1580,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 37,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Follow the forward and transposed paths to see why squared strengths appear."
+    },
+    "directions-bubble-tail": {
+      "id": "directions-bubble-tail",
+      "type": "shape",
+      "name": "directions-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1562,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 38,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "directions-q": {
+      "id": "directions-q",
+      "type": "text",
+      "name": "directions-q",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1505,
+        "y": 210,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 300,
+      "height": 110,
+      "zIndex": 39,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$\\mathbf q_j\\in\\mathbb R^2$",
+      "initiallyHidden": true
+    },
+    "directions-p": {
+      "id": "directions-p",
+      "type": "text",
+      "name": "directions-p",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2290,
+        "y": 210,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 350,
+      "height": 110,
+      "zIndex": 40,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$s_j\\mathbf p_j\\in\\mathbb R^4$",
+      "initiallyHidden": true
+    },
+    "directions-forward": {
+      "id": "directions-forward",
+      "type": "shape",
+      "name": "directions-forward",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1805,
+        "y": 259.0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 485,
+      "height": 12.0,
+      "zIndex": 41,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 50.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 97.73195876288659,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 97.73195876288659,
+          "y": 100.0
+        }
+      ]
+    },
+    "directions-rule1": {
+      "id": "directions-rule1",
+      "type": "text",
+      "name": "directions-rule1",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1845,
+        "y": 165,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 400,
+      "height": 70,
+      "zIndex": 42,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 30,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A\\mathbf q_j=s_j\\mathbf p_j$",
+      "initiallyHidden": true
+    },
+    "directions-rule2": {
+      "id": "directions-rule2",
+      "type": "text",
+      "name": "directions-rule2",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1745,
+        "y": 365,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 670,
+      "height": 130,
+      "zIndex": 43,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}A^T\\mathbf p_j=s_j\\mathbf q_j\\\\A^T(s_j\\mathbf p_j)=s_j^2\\mathbf q_j\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "directions-reverse": {
+      "id": "directions-reverse",
+      "type": "shape",
+      "name": "directions-reverse",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1655.0,
+        "y": 314.0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 810.0,
+      "height": 12.0,
+      "zIndex": 44,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#5b21b6",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0,
+        "borderStyle": "dashed"
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 0.0,
+          "y": 50.0
+        },
+        {
+          "x": 1.3580246913580247,
+          "y": 100.0
+        },
+        {
+          "x": 0.0,
+          "y": 50.0
+        },
+        {
+          "x": 1.3580246913580247,
+          "y": 0.0
+        }
+      ]
+    },
+    "directions-squared": {
+      "id": "directions-squared",
+      "type": "text",
+      "name": "directions-squared",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 1580,
+        "y": 525,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1050,
+      "height": 75,
+      "zIndex": 45,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A^TA\\mathbf q_j=s_j^2\\mathbf q_j;\\qquad AA^T\\mathbf p_j=s_j^2\\mathbf p_j$",
+      "initiallyHidden": true
+    },
+    "factors-background": {
+      "id": "factors-background",
+      "type": "shape",
+      "name": "factors-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2880,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 46,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "factors-title": {
+      "id": "factors-title",
+      "type": "text",
+      "name": "factors-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2924,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 47,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Where do the three factors come from?"
+    },
+    "factors-context": {
+      "id": "factors-context",
+      "type": "text",
+      "name": "factors-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2926,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 48,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Use a compact real decomposition; each direction set is orthonormal. Full forms add zero directions."
+    },
+    "factors-source": {
+      "id": "factors-source",
+      "type": "text",
+      "name": "factors-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2926,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 49,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 3/9  |  Handout §2,§4  |  Manual Next / Prev"
+    },
+    "factors-teacher-head": {
+      "id": "factors-teacher-head",
+      "type": "shape",
+      "name": "factors-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2947,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 50,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "factors-eye-l": {
+      "id": "factors-eye-l",
+      "type": "shape",
+      "name": "factors-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2956,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 51,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "factors-eye-r": {
+      "id": "factors-eye-r",
+      "type": "shape",
+      "name": "factors-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2969,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 52,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "factors-mouth": {
+      "id": "factors-mouth",
+      "type": "shape",
+      "name": "factors-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2958,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 53,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "factors-body": {
+      "id": "factors-body",
+      "type": "text",
+      "name": "factors-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2953,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 54,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "factors-arm-l": {
+      "id": "factors-arm-l",
+      "type": "shape",
+      "name": "factors-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2941,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 55,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "factors-arm-r": {
+      "id": "factors-arm-r",
+      "type": "shape",
+      "name": "factors-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2976,
+        "y": 651,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 13,
+      "zIndex": 56,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "factors-leg-l": {
+      "id": "factors-leg-l",
+      "type": "shape",
+      "name": "factors-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2954,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 57,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "factors-leg-r": {
+      "id": "factors-leg-r",
+      "type": "shape",
+      "name": "factors-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2971,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 58,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "factors-bubble": {
+      "id": "factors-bubble",
+      "type": "text",
+      "name": "factors-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 3020,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 59,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Check squared strengths first, then verify factor dimensions and signs."
+    },
+    "factors-bubble-tail": {
+      "id": "factors-bubble-tail",
+      "type": "shape",
+      "name": "factors-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 3002,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 60,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "factors-ata": {
+      "id": "factors-ata",
+      "type": "text",
+      "name": "factors-ata",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2935,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 460,
+      "height": 190,
+      "zIndex": 61,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 34,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A^TA=\\begin{bmatrix}20&12\\\\12&20\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "factors-squares": {
+      "id": "factors-squares",
+      "type": "text",
+      "name": "factors-squares",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 3530,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 550,
+      "height": 185,
+      "zIndex": 62,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 27,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}\\det(A^TA-\\beta I)=(20-\\beta)^2-144=0\\\\s_1^2=32,\\quad s_2^2=8\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "factors-P": {
+      "id": "factors-P",
+      "type": "text",
+      "name": "factors-P",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 2945,
+        "y": 380,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 350,
+      "height": 210,
+      "zIndex": 63,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$P=\\frac12\\begin{bmatrix}-1&1\\\\1&1\\\\-1&-1\\\\1&-1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "factors-Sigma": {
+      "id": "factors-Sigma",
+      "type": "text",
+      "name": "factors-Sigma",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 3320,
+        "y": 415,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 370,
+      "height": 145,
+      "zIndex": 64,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\Sigma=\\begin{bmatrix}4\\sqrt2&0\\\\0&2\\sqrt2\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "factors-Q": {
+      "id": "factors-Q",
+      "type": "text",
+      "name": "factors-Q",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 3730,
+        "y": 410,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 360,
+      "height": 155,
+      "zIndex": 65,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$Q=\\frac1{\\sqrt2}\\begin{bmatrix}1&-1\\\\1&1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "outer-products-background": {
+      "id": "outer-products-background",
+      "type": "shape",
+      "name": "outer-products-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4320,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 66,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "outer-products-title": {
+      "id": "outer-products-title",
+      "type": "text",
+      "name": "outer-products-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4364,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 67,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Do two rank-one patterns recover the table?"
+    },
+    "outer-products-context": {
+      "id": "outer-products-context",
+      "type": "text",
+      "name": "outer-products-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4366,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 68,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "An outer product multiplies a column by a row. Each $s_j\\mathbf p_j\\mathbf q_j^T$ has one independent direction."
+    },
+    "outer-products-source": {
+      "id": "outer-products-source",
+      "type": "text",
+      "name": "outer-products-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4366,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 69,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 4/9  |  Handout §4  |  Manual Next / Prev"
+    },
+    "outer-products-teacher-head": {
+      "id": "outer-products-teacher-head",
+      "type": "shape",
+      "name": "outer-products-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4387,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 70,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "outer-products-eye-l": {
+      "id": "outer-products-eye-l",
+      "type": "shape",
+      "name": "outer-products-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4396,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 71,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "outer-products-eye-r": {
+      "id": "outer-products-eye-r",
+      "type": "shape",
+      "name": "outer-products-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4409,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 72,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "outer-products-mouth": {
+      "id": "outer-products-mouth",
+      "type": "shape",
+      "name": "outer-products-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4398,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 73,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "outer-products-body": {
+      "id": "outer-products-body",
+      "type": "text",
+      "name": "outer-products-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4393,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 74,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "outer-products-arm-l": {
+      "id": "outer-products-arm-l",
+      "type": "shape",
+      "name": "outer-products-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4381,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 75,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "outer-products-arm-r": {
+      "id": "outer-products-arm-r",
+      "type": "shape",
+      "name": "outer-products-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4416,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 12,
+      "zIndex": 76,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "outer-products-leg-l": {
+      "id": "outer-products-leg-l",
+      "type": "shape",
+      "name": "outer-products-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4394,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 77,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "outer-products-leg-r": {
+      "id": "outer-products-leg-r",
+      "type": "shape",
+      "name": "outer-products-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4411,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 78,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "outer-products-bubble": {
+      "id": "outer-products-bubble",
+      "type": "text",
+      "name": "outer-products-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4460,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 79,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Add corresponding entries of both patterns and check every original row."
+    },
+    "outer-products-bubble-tail": {
+      "id": "outer-products-bubble-tail",
+      "type": "shape",
+      "name": "outer-products-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4442,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 80,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "outer-products-first": {
+      "id": "outer-products-first",
+      "type": "text",
+      "name": "outer-products-first",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4370,
+        "y": 215,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 350,
+      "height": 325,
+      "zIndex": 81,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A_1=s_1\\mathbf p_1\\mathbf q_1^T=\\begin{bmatrix}-2&-2\\\\2&2\\\\-2&-2\\\\2&2\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "outer-products-second": {
+      "id": "outer-products-second",
+      "type": "text",
+      "name": "outer-products-second",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4790,
+        "y": 215,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 350,
+      "height": 325,
+      "zIndex": 82,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$R=s_2\\mathbf p_2\\mathbf q_2^T=\\begin{bmatrix}-1&1\\\\-1&1\\\\1&-1\\\\1&-1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "outer-products-A": {
+      "id": "outer-products-A",
+      "type": "text",
+      "name": "outer-products-A",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5190,
+        "y": 215,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 340,
+      "height": 325,
+      "zIndex": 83,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 30,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$A=\\begin{bmatrix}-3&-1\\\\1&3\\\\-1&-3\\\\3&1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "outer-products-plus": {
+      "id": "outer-products-plus",
+      "type": "text",
+      "name": "outer-products-plus",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 4722,
+        "y": 345,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 60,
+      "height": 60,
+      "zIndex": 84,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 40,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$+$",
+      "initiallyHidden": true
+    },
+    "outer-products-equals": {
+      "id": "outer-products-equals",
+      "type": "text",
+      "name": "outer-products-equals",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5135,
+        "y": 345,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 60,
+      "height": 60,
+      "zIndex": 85,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 40,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$=$",
+      "initiallyHidden": true
+    },
+    "rank-one-background": {
+      "id": "rank-one-background",
+      "type": "shape",
+      "name": "rank-one-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5760,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 86,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "rank-one-title": {
+      "id": "rank-one-title",
+      "type": "text",
+      "name": "rank-one-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5804,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 87,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "How much error follows from discarding a pattern?"
+    },
+    "rank-one-context": {
+      "id": "rank-one-context",
+      "type": "text",
+      "name": "rank-one-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5806,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 88,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Use the same four-by-two matrix and retain its first term. $\\|\\cdot\\|_F^2$ sums squared entries."
+    },
+    "rank-one-source": {
+      "id": "rank-one-source",
+      "type": "text",
+      "name": "rank-one-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5806,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 89,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 5/9  |  Handout §5  |  Manual Next / Prev"
+    },
+    "rank-one-teacher-head": {
+      "id": "rank-one-teacher-head",
+      "type": "shape",
+      "name": "rank-one-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5827,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 90,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rank-one-eye-l": {
+      "id": "rank-one-eye-l",
+      "type": "shape",
+      "name": "rank-one-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5836,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 91,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rank-one-eye-r": {
+      "id": "rank-one-eye-r",
+      "type": "shape",
+      "name": "rank-one-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5849,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 92,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "rank-one-mouth": {
+      "id": "rank-one-mouth",
+      "type": "shape",
+      "name": "rank-one-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5838,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 93,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "rank-one-body": {
+      "id": "rank-one-body",
+      "type": "text",
+      "name": "rank-one-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5833,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 94,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "rank-one-arm-l": {
+      "id": "rank-one-arm-l",
+      "type": "shape",
+      "name": "rank-one-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5821,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 95,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rank-one-arm-r": {
+      "id": "rank-one-arm-r",
+      "type": "shape",
+      "name": "rank-one-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5856,
+        "y": 651,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 13,
+      "zIndex": 96,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "rank-one-leg-l": {
+      "id": "rank-one-leg-l",
+      "type": "shape",
+      "name": "rank-one-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5834,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 97,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rank-one-leg-r": {
+      "id": "rank-one-leg-r",
+      "type": "shape",
+      "name": "rank-one-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5851,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 98,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "rank-one-bubble": {
+      "id": "rank-one-bubble",
+      "type": "text",
+      "name": "rank-one-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5900,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 99,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Square the residual entries, then compare their sum with the discarded squared singular value."
+    },
+    "rank-one-bubble-tail": {
+      "id": "rank-one-bubble-tail",
+      "type": "shape",
+      "name": "rank-one-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5882,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 100,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "rank-one-R": {
+      "id": "rank-one-R",
+      "type": "text",
+      "name": "rank-one-R",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 5820,
+        "y": 205,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 380,
+      "height": 335,
+      "zIndex": 101,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 32,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$R=\\begin{bmatrix}-1&1\\\\-1&1\\\\1&-1\\\\1&-1\\end{bmatrix}$",
+      "initiallyHidden": true
+    },
+    "rank-one-entrywise": {
+      "id": "rank-one-entrywise",
+      "type": "text",
+      "name": "rank-one-entrywise",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 6410,
+        "y": 195,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 540,
+      "height": 135,
+      "zIndex": 102,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 28,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$\\|R\\|_F^2=1+1+1+1+1+1+1+1=8$",
+      "initiallyHidden": true
+    },
+    "rank-one-square": {
+      "id": "rank-one-square",
+      "type": "shape",
+      "name": "rank-one-square",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 6200,
+        "y": 262.2890877296952,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 210,
+      "height": 110.21091227030479,
+      "zIndex": 103,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#166534",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.19137149485479482
+        },
+        {
+          "x": 94.0341957828072,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.19137149485479482
+        },
+        {
+          "x": 96.68566432378178,
+          "y": 9.645123340682133
+        }
+      ]
+    },
+    "rank-one-spectrum": {
+      "id": "rank-one-spectrum",
+      "type": "text",
+      "name": "rank-one-spectrum",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 6390,
+        "y": 375,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 580,
+      "height": 105,
+      "zIndex": 104,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\|A-A_1\\|_F^2=s_2^2=(2\\sqrt2)^2=8$",
+      "initiallyHidden": true
+    },
+    "rank-one-norm": {
+      "id": "rank-one-norm",
+      "type": "text",
+      "name": "rank-one-norm",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 6420,
+        "y": 515,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 530,
+      "height": 70,
+      "zIndex": 105,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 32,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\|A-A_1\\|_F=\\sqrt8=2\\sqrt2$",
+      "initiallyHidden": true
+    },
+    "pca-link-background": {
+      "id": "pca-link-background",
+      "type": "shape",
+      "name": "pca-link-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7200,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 106,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "pca-link-title": {
+      "id": "pca-link-title",
+      "type": "text",
+      "name": "pca-link-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7244,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 107,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "How do singular values connect to PCA variance?"
+    },
+    "pca-link-context": {
+      "id": "pca-link-context",
+      "type": "text",
+      "name": "pca-link-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7246,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 108,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Conditions: $A=X_c$ is centered, $n=4$, and covariance uses $1/n$."
+    },
+    "pca-link-source": {
+      "id": "pca-link-source",
+      "type": "text",
+      "name": "pca-link-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7246,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 109,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 6/9  |  Handout §6  |  Manual Next / Prev"
+    },
+    "pca-link-teacher-head": {
+      "id": "pca-link-teacher-head",
+      "type": "shape",
+      "name": "pca-link-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7267,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 110,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "pca-link-eye-l": {
+      "id": "pca-link-eye-l",
+      "type": "shape",
+      "name": "pca-link-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7276,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 111,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "pca-link-eye-r": {
+      "id": "pca-link-eye-r",
+      "type": "shape",
+      "name": "pca-link-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7289,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 112,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "pca-link-mouth": {
+      "id": "pca-link-mouth",
+      "type": "shape",
+      "name": "pca-link-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7278,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 113,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "pca-link-body": {
+      "id": "pca-link-body",
+      "type": "text",
+      "name": "pca-link-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7273,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 114,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "pca-link-arm-l": {
+      "id": "pca-link-arm-l",
+      "type": "shape",
+      "name": "pca-link-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7261,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 115,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "pca-link-arm-r": {
+      "id": "pca-link-arm-r",
+      "type": "shape",
+      "name": "pca-link-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7296,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 12,
+      "zIndex": 116,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "pca-link-leg-l": {
+      "id": "pca-link-leg-l",
+      "type": "shape",
+      "name": "pca-link-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7274,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 117,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "pca-link-leg-r": {
+      "id": "pca-link-leg-r",
+      "type": "shape",
+      "name": "pca-link-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7291,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 118,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "pca-link-bubble": {
+      "id": "pca-link-bubble",
+      "type": "text",
+      "name": "pca-link-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7340,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 119,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Trace right directions and squared strengths into the covariance decomposition."
+    },
+    "pca-link-bubble-tail": {
+      "id": "pca-link-bubble-tail",
+      "type": "shape",
+      "name": "pca-link-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7322,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 120,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "pca-link-svd": {
+      "id": "pca-link-svd",
+      "type": "text",
+      "name": "pca-link-svd",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7260,
+        "y": 200,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 430,
+      "height": 170,
+      "zIndex": 121,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$A=P\\Sigma Q^T$\n$s_1^2=32,\\quad s_2^2=8$",
+      "initiallyHidden": true
+    },
+    "pca-link-cov": {
+      "id": "pca-link-cov",
+      "type": "text",
+      "name": "pca-link-cov",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7910,
+        "y": 190,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 500,
+      "height": 190,
+      "zIndex": 122,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 30,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$C=A^TA/n$\n$=Q(\\Sigma^2/n)Q^T$",
+      "initiallyHidden": true
+    },
+    "pca-link-cov-map": {
+      "id": "pca-link-cov-map",
+      "type": "shape",
+      "name": "pca-link-cov-map",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7690,
+        "y": 279.0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 220,
+      "height": 12.0,
+      "zIndex": 123,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#166534",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 50.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 95.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 50.0
+        },
+        {
+          "x": 95.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "pca-link-lambda": {
+      "id": "pca-link-lambda",
+      "type": "text",
+      "name": "pca-link-lambda",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7890,
+        "y": 435,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 520,
+      "height": 145,
+      "zIndex": 124,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 30,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}\\lambda_j=s_j^2/n\\\\\\lambda_1=32/4=8\\\\\\lambda_2=8/4=2\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "pca-link-scores": {
+      "id": "pca-link-scores",
+      "type": "text",
+      "name": "pca-link-scores",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 7265,
+        "y": 450,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 520,
+      "height": 125,
+      "zIndex": 125,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 35,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$Z=AQ=P\\Sigma$",
+      "initiallyHidden": true
+    },
+    "centering-background": {
+      "id": "centering-background",
+      "type": "shape",
+      "name": "centering-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8640,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 126,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "centering-title": {
+      "id": "centering-title",
+      "type": "text",
+      "name": "centering-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8684,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 127,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Does decomposing raw and centered data answer the same question?"
+    },
+    "centering-context": {
+      "id": "centering-context",
+      "type": "text",
+      "name": "centering-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8686,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 128,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "SVD applies to any real rectangular matrix; PCA directions describe variation after subtracting the mean."
+    },
+    "centering-source": {
+      "id": "centering-source",
+      "type": "text",
+      "name": "centering-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8686,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 129,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 7/9  |  Handout §6,§7  |  Manual Next / Prev"
+    },
+    "centering-teacher-head": {
+      "id": "centering-teacher-head",
+      "type": "shape",
+      "name": "centering-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8707,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 130,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "centering-eye-l": {
+      "id": "centering-eye-l",
+      "type": "shape",
+      "name": "centering-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8716,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 131,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "centering-eye-r": {
+      "id": "centering-eye-r",
+      "type": "shape",
+      "name": "centering-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8729,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 132,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "centering-mouth": {
+      "id": "centering-mouth",
+      "type": "shape",
+      "name": "centering-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8718,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 133,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "centering-body": {
+      "id": "centering-body",
+      "type": "text",
+      "name": "centering-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8713,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 134,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "centering-arm-l": {
+      "id": "centering-arm-l",
+      "type": "shape",
+      "name": "centering-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8701,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 135,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "centering-arm-r": {
+      "id": "centering-arm-r",
+      "type": "shape",
+      "name": "centering-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8736,
+        "y": 651,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 13,
+      "zIndex": 136,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "centering-leg-l": {
+      "id": "centering-leg-l",
+      "type": "shape",
+      "name": "centering-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8714,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 137,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "centering-leg-r": {
+      "id": "centering-leg-r",
+      "type": "shape",
+      "name": "centering-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8731,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 138,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "centering-bubble": {
+      "id": "centering-bubble",
+      "type": "text",
+      "name": "centering-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8780,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 139,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Compare a raw-data path with a centered-data path and identify which geometry each describes."
+    },
+    "centering-bubble-tail": {
+      "id": "centering-bubble-tail",
+      "type": "shape",
+      "name": "centering-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8762,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 140,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "centering-X": {
+      "id": "centering-X",
+      "type": "text",
+      "name": "centering-X",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8700,
+        "y": 290,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 280,
+      "height": 150,
+      "zIndex": 141,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 42,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$X$",
+      "initiallyHidden": true
+    },
+    "centering-raw": {
+      "id": "centering-raw",
+      "type": "text",
+      "name": "centering-raw",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 9290,
+        "y": 195,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 530,
+      "height": 135,
+      "zIndex": 142,
+      "locked": false,
+      "style": {
+        "fill": "#ede9fe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 27,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f8f6ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Direct SVD\nApproximate raw matrix $X$",
+      "initiallyHidden": true
+    },
+    "centering-raw-path": {
+      "id": "centering-raw-path",
+      "type": "shape",
+      "name": "centering-raw-path",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8980,
+        "y": 260.2565505123662,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 310,
+      "height": 104.74344948763382,
+      "zIndex": 143,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#5b21b6",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 2.1418518280693917
+        },
+        {
+          "x": 96.02339130783812,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 2.1418518280693917
+        },
+        {
+          "x": 97.2386034050707,
+          "y": 10.877390853813214
+        }
+      ]
+    },
+    "centering-center": {
+      "id": "centering-center",
+      "type": "text",
+      "name": "centering-center",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 9290,
+        "y": 420,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 530,
+      "height": 135,
+      "zIndex": 144,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$A=X-\\mathbf1\\mu^T$\nRight singular directions are PCA directions",
+      "initiallyHidden": true
+    },
+    "centering-center-path": {
+      "id": "centering-center-path",
+      "type": "shape",
+      "name": "centering-center-path",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 8980,
+        "y": 365.0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 310,
+      "height": 124.03753363391615,
+      "zIndex": 145,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#166534",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 98.76042872760272
+        },
+        {
+          "x": 97.41123369269835,
+          "y": 91.00252656913594
+        },
+        {
+          "x": 100.0,
+          "y": 98.76042872760272
+        },
+        {
+          "x": 95.98862192756461,
+          "y": 100.0
+        }
+      ]
+    },
+    "limits-background": {
+      "id": "limits-background",
+      "type": "shape",
+      "name": "limits-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10080,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 146,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "limits-title": {
+      "id": "limits-title",
+      "type": "text",
+      "name": "limits-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10124,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 147,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "What does optimal low rank actually guarantee?"
+    },
+    "limits-context": {
+      "id": "limits-context",
+      "type": "text",
+      "name": "limits-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10126,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 148,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Compare matrices with rank at most $m$, rather than all classifiers or nonlinear representations."
+    },
+    "limits-source": {
+      "id": "limits-source",
+      "type": "text",
+      "name": "limits-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10126,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 149,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 8/9  |  Handout §3,§8  |  Manual Next / Prev"
+    },
+    "limits-teacher-head": {
+      "id": "limits-teacher-head",
+      "type": "shape",
+      "name": "limits-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10147,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 150,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "limits-eye-l": {
+      "id": "limits-eye-l",
+      "type": "shape",
+      "name": "limits-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10156,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 151,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "limits-eye-r": {
+      "id": "limits-eye-r",
+      "type": "shape",
+      "name": "limits-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10169,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 152,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "limits-mouth": {
+      "id": "limits-mouth",
+      "type": "shape",
+      "name": "limits-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10158,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 153,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "limits-body": {
+      "id": "limits-body",
+      "type": "text",
+      "name": "limits-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10153,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 154,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "limits-arm-l": {
+      "id": "limits-arm-l",
+      "type": "shape",
+      "name": "limits-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10141,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 155,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "limits-arm-r": {
+      "id": "limits-arm-r",
+      "type": "shape",
+      "name": "limits-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10176,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 12,
+      "zIndex": 156,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "limits-leg-l": {
+      "id": "limits-leg-l",
+      "type": "shape",
+      "name": "limits-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10154,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 157,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "limits-leg-r": {
+      "id": "limits-leg-r",
+      "type": "shape",
+      "name": "limits-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10171,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 158,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "limits-bubble": {
+      "id": "limits-bubble",
+      "type": "text",
+      "name": "limits-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10220,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 159,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Separate error, storage, and task criteria and inspect their conditions."
+    },
+    "limits-bubble-tail": {
+      "id": "limits-bubble-tail",
+      "type": "shape",
+      "name": "limits-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10202,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 160,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "limits-error": {
+      "id": "limits-error",
+      "type": "text",
+      "name": "limits-error",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10140,
+        "y": 180,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 600,
+      "height": 115,
+      "zIndex": 161,
+      "locked": false,
+      "style": {
+        "fill": "#dcfce7",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f3fdf6",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$A_m=\\sum_{j=1}^m s_j\\mathbf p_j\\mathbf q_j^T$\n$\\|A-A_m\\|_F^2=\\sum_{j>m}s_j^2$",
+      "initiallyHidden": true
+    },
+    "limits-storage": {
+      "id": "limits-storage",
+      "type": "text",
+      "name": "limits-storage",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10140,
+        "y": 345,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 600,
+      "height": 115,
+      "zIndex": 162,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 27,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$m(n+d+1)<nd$\nneeded for a direct parameter-count saving",
+      "initiallyHidden": true
+    },
+    "limits-applications": {
+      "id": "limits-applications",
+      "type": "text",
+      "name": "limits-applications",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10870,
+        "y": 190,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 410,
+      "height": 190,
+      "zIndex": 163,
+      "locked": false,
+      "style": {
+        "fill": "#ede9fe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 26,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f8f6ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Latent semantic indexing (LSI)\nRetrieval / compression / recommendation",
+      "initiallyHidden": true
+    },
+    "limits-risk": {
+      "id": "limits-risk",
+      "type": "shape",
+      "name": "limits-risk",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10815,
+        "y": 415,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 32,
+      "height": 32,
+      "zIndex": 164,
+      "locked": false,
+      "style": {
+        "fill": "#991b1b",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#991b1b",
+        "shadowColor": "#991b1b",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "initiallyHidden": true,
+      "shapeKind": "triangle"
+    },
+    "limits-risk-label": {
+      "id": "limits-risk-label",
+      "type": "text",
+      "name": "limits-risk-label",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10870,
+        "y": 410,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 410,
+      "height": 100,
+      "zIndex": 165,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#991b1b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 22,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "A weak signal can matter; individual distances and labels have no automatic guarantee.",
+      "initiallyHidden": true
+    },
+    "limits-numerics": {
+      "id": "limits-numerics",
+      "type": "text",
+      "name": "limits-numerics",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 10160,
+        "y": 510,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1120,
+      "height": 105,
+      "zIndex": 166,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}\\mathbb R:\\ A=P\\Sigma Q^T,\\ A^TA\\mathbf q_j=s_j^2\\mathbf q_j\\\\\\mathbb C:\\ A=P\\Sigma Q^H,\\ A^HA\\mathbf q_j=s_j^2\\mathbf q_j\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "new-spectrum-background": {
+      "id": "new-spectrum-background",
+      "type": "shape",
+      "name": "new-spectrum-background",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11520,
+        "y": 0,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1280,
+      "height": 720,
+      "zIndex": 167,
+      "locked": false,
+      "style": {
+        "fill": "#f8fafc",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "rectangle"
+    },
+    "new-spectrum-title": {
+      "id": "new-spectrum-title",
+      "type": "text",
+      "name": "new-spectrum-title",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11564,
+        "y": 18,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 64,
+      "zIndex": 168,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 31,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Calculate truncation costs for a new spectrum"
+    },
+    "new-spectrum-context": {
+      "id": "new-spectrum-context",
+      "type": "text",
+      "name": "new-spectrum-context",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11566,
+        "y": 87,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1186,
+      "height": 65,
+      "zIndex": 169,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "New centered data have $n=9$ observations and singular values $6,2,1$ in descending order."
+    },
+    "new-spectrum-source": {
+      "id": "new-spectrum-source",
+      "type": "text",
+      "name": "new-spectrum-source",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11566,
+        "y": 696,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1190,
+      "height": 20,
+      "zIndex": 170,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#334155",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 12,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "PR · KP04 · 9/9  |  Handout §9  |  Manual Next / Prev"
+    },
+    "new-spectrum-teacher-head": {
+      "id": "new-spectrum-teacher-head",
+      "type": "shape",
+      "name": "new-spectrum-teacher-head",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11587,
+        "y": 625,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 35,
+      "height": 35,
+      "zIndex": 171,
+      "locked": false,
+      "style": {
+        "fill": "#9a3412",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "new-spectrum-eye-l": {
+      "id": "new-spectrum-eye-l",
+      "type": "shape",
+      "name": "new-spectrum-eye-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11596,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 172,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "new-spectrum-eye-r": {
+      "id": "new-spectrum-eye-r",
+      "type": "shape",
+      "name": "new-spectrum-eye-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11609,
+        "y": 636,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 4,
+      "height": 4,
+      "zIndex": 173,
+      "locked": false,
+      "style": {
+        "fill": "#334155",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "",
+      "shapeKind": "ellipse"
+    },
+    "new-spectrum-mouth": {
+      "id": "new-spectrum-mouth",
+      "type": "shape",
+      "name": "new-spectrum-mouth",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11598,
+        "y": 649,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 1,
+      "zIndex": 174,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 2,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "new-spectrum-body": {
+      "id": "new-spectrum-body",
+      "type": "text",
+      "name": "new-spectrum-body",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11593,
+        "y": 660,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 24,
+      "height": 23,
+      "zIndex": 175,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": ""
+    },
+    "new-spectrum-arm-l": {
+      "id": "new-spectrum-arm-l",
+      "type": "shape",
+      "name": "new-spectrum-arm-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11581,
+        "y": 664,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 13,
+      "height": 10,
+      "zIndex": 176,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "new-spectrum-arm-r": {
+      "id": "new-spectrum-arm-r",
+      "type": "shape",
+      "name": "new-spectrum-arm-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11616,
+        "y": 651,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 16,
+      "height": 13,
+      "zIndex": 177,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#1e40af",
+        "borderWidth": 4,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 100.0
+        },
+        {
+          "x": 100.0,
+          "y": 0.0
+        }
+      ]
+    },
+    "new-spectrum-leg-l": {
+      "id": "new-spectrum-leg-l",
+      "type": "shape",
+      "name": "new-spectrum-leg-l",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11594,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 5,
+      "height": 10,
+      "zIndex": 178,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 100.0,
+          "y": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "new-spectrum-leg-r": {
+      "id": "new-spectrum-leg-r",
+      "type": "shape",
+      "name": "new-spectrum-leg-r",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11611,
+        "y": 682,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 6,
+      "height": 10,
+      "zIndex": 179,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "#334155",
+        "borderWidth": 3,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 0
+      },
+      "text": "",
+      "shapeKind": "polyline",
+      "polygonPoints": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 100.0,
+          "y": 100.0
+        }
+      ]
+    },
+    "new-spectrum-bubble": {
+      "id": "new-spectrum-bubble",
+      "type": "text",
+      "name": "new-spectrum-bubble",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11660,
+        "y": 622,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 1092,
+      "height": 63,
+      "zIndex": 180,
+      "locked": false,
+      "style": {
+        "fill": "#cffafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#155e75",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 20,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f0fdff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Retain two terms: find total squared error and mean squared error per observation and covariance eigenvalues. Does this guarantee better classification?"
+    },
+    "new-spectrum-bubble-tail": {
+      "id": "new-spectrum-bubble-tail",
+      "type": "shape",
+      "name": "new-spectrum-bubble-tail",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11642,
+        "y": 645,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": -90
+      },
+      "width": 17,
+      "height": 17,
+      "zIndex": 181,
+      "locked": false,
+      "style": {
+        "fill": "#155e75",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#18344b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 25,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#155e75",
+        "shadowColor": "#155e75",
+        "shadowOpacity": 0.15,
+        "shadowBlur": 14,
+        "shadowOffsetY": 0
+      },
+      "text": "",
+      "shapeKind": "triangle"
+    },
+    "new-spectrum-input": {
+      "id": "new-spectrum-input",
+      "type": "text",
+      "name": "new-spectrum-input",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11580,
+        "y": 210,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 500,
+      "height": 170,
+      "zIndex": 182,
+      "locked": false,
+      "style": {
+        "fill": "#dbeafe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#1e40af",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 33,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f1f7ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "$(s_1,s_2,s_3)=(6,2,1)$\n$n=9,\\quad m=2$",
+      "initiallyHidden": true
+    },
+    "new-spectrum-target": {
+      "id": "new-spectrum-target",
+      "type": "text",
+      "name": "new-spectrum-target",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 12240,
+        "y": 210,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 460,
+      "height": 170,
+      "zIndex": 183,
+      "locked": false,
+      "style": {
+        "fill": "#ede9fe",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#5b21b6",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18,
+        "gradientTo": "#f8f6ff",
+        "gradientAngle": 45,
+        "shadowColor": "#0f172a",
+        "shadowOpacity": 0.12,
+        "shadowBlur": 12,
+        "shadowOffsetY": 5
+      },
+      "text": "Keep the first two terms\nDiscard the third",
+      "initiallyHidden": true
+    },
+    "new-spectrum-error": {
+      "id": "new-spectrum-error",
+      "type": "text",
+      "name": "new-spectrum-error",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 11580,
+        "y": 450,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 500,
+      "height": 135,
+      "zIndex": 184,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 33,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}\\mathrm{SSE}=1^2=1\\\\\\mathrm{MSE}=1/9\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "new-spectrum-eigenvalues": {
+      "id": "new-spectrum-eigenvalues",
+      "type": "text",
+      "name": "new-spectrum-eigenvalues",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 12170,
+        "y": 435,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 570,
+      "height": 160,
+      "zIndex": 185,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#166534",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 29,
+        "fontWeight": 500,
+        "lineHeight": 1.15,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "$\\begin{gathered}(\\lambda_1,\\lambda_2,\\lambda_3)=(6^2,2^2,1^2)/9\\\\=(4,4/9,1/9)\\end{gathered}$",
+      "initiallyHidden": true
+    },
+    "new-spectrum-accuracy": {
+      "id": "new-spectrum-accuracy",
+      "type": "text",
+      "name": "new-spectrum-accuracy",
+      "sceneId": "lesson",
+      "transform": {
+        "x": 12220,
+        "y": 565,
+        "scaleX": 1,
+        "scaleY": 1,
+        "rotation": 0
+      },
+      "width": 450,
+      "height": 40,
+      "zIndex": 186,
+      "locked": false,
+      "style": {
+        "fill": "transparent",
+        "stroke": "transparent",
+        "borderWidth": 0,
+        "textColor": "#991b1b",
+        "fontFamily": "Noto Sans CJK TC",
+        "fontSize": 21,
+        "fontWeight": 500,
+        "lineHeight": 1.28,
+        "textAlign": "center",
+        "radius": 18
+      },
+      "text": "Classification improvement still needs evidence.",
+      "initiallyHidden": true
+    }
+  },
+  "steps": [
+    {
+      "id": "rectangular-input",
+      "order": 0,
+      "label": "Can a rectangular table be split into directions and strengths? · input",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 640,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rectangular-A",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rectangular-left",
+      "order": 1,
+      "label": "Can a rectangular table be split into directions and strengths? · left",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 640,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rectangular-P",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "rectangular-A-P",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rectangular-strength",
+      "order": 2,
+      "label": "Can a rectangular table be split into directions and strengths? · strength",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 640,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rectangular-S",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "rectangular-P-S",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rectangular-right",
+      "order": 3,
+      "label": "Can a rectangular table be split into directions and strengths? · right",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 640,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rectangular-Qt",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "rectangular-S-Q",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "rectangular-product",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "directions-forward",
+      "order": 4,
+      "label": "Why are left and right directions different? · forward",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 2080,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "directions-q",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "directions-p",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "directions-forward",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "directions-rule1",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "directions-transpose",
+      "order": 5,
+      "label": "Why are left and right directions different? · transpose",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 2080,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "directions-rule2",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "directions-reverse",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "directions-squared",
+      "order": 6,
+      "label": "Why are left and right directions different? · squared",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 2080,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "directions-squared",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "factors-spectrum",
+      "order": 7,
+      "label": "Where do the three factors come from? · spectrum",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 3520,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "factors-ata",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "factors-squares",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "factors-left",
+      "order": 8,
+      "label": "Where do the three factors come from? · left",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 3520,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "factors-P",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "factors-right-strength",
+      "order": 9,
+      "label": "Where do the three factors come from? · right-strength",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 3520,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "factors-Sigma",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "factors-Q",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "outer-products-first",
+      "order": 10,
+      "label": "Do two rank-one patterns recover the table? · first",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 4960,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "outer-products-first",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "outer-products-second",
+      "order": 11,
+      "label": "Do two rank-one patterns recover the table? · second",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 4960,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "outer-products-second",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "outer-products-sum",
+      "order": 12,
+      "label": "Do two rank-one patterns recover the table? · sum",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 4960,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "outer-products-A",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "outer-products-plus",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "outer-products-equals",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rank-one-residual",
+      "order": 13,
+      "label": "How much error follows from discarding a pattern? · residual",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 6400,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rank-one-R",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rank-one-square",
+      "order": 14,
+      "label": "How much error follows from discarding a pattern? · square",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 6400,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rank-one-entrywise",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "rank-one-square",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rank-one-spectrum",
+      "order": 15,
+      "label": "How much error follows from discarding a pattern? · spectrum",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 6400,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rank-one-spectrum",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "rank-one-norm",
+      "order": 16,
+      "label": "How much error follows from discarding a pattern? · norm",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 6400,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "rank-one-norm",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "pca-link-svd",
+      "order": 17,
+      "label": "How do singular values connect to PCA variance? · svd",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 7840,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "pca-link-svd",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "pca-link-covariance",
+      "order": 18,
+      "label": "How do singular values connect to PCA variance? · covariance",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 7840,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "pca-link-cov",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "pca-link-cov-map",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "pca-link-values",
+      "order": 19,
+      "label": "How do singular values connect to PCA variance? · values",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 7840,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "pca-link-lambda",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "pca-link-scores",
+      "order": 20,
+      "label": "How do singular values connect to PCA variance? · scores",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 7840,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "pca-link-scores",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "centering-input",
+      "order": 21,
+      "label": "Does decomposing raw and centered data answer the same question? · input",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 9280,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "centering-X",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "centering-raw",
+      "order": 22,
+      "label": "Does decomposing raw and centered data answer the same question? · raw",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 9280,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "centering-raw",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "centering-raw-path",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "centering-center",
+      "order": 23,
+      "label": "Does decomposing raw and centered data answer the same question? · center",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 9280,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "centering-center",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "centering-center-path",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "limits-error",
+      "order": 24,
+      "label": "What does optimal low rank actually guarantee? · error",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 10720,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "limits-error",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "limits-storage",
+      "order": 25,
+      "label": "What does optimal low rank actually guarantee? · storage",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 10720,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "limits-storage",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "limits-task",
+      "order": 26,
+      "label": "What does optimal low rank actually guarantee? · task",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 10720,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "limits-applications",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "limits-risk",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "limits-risk-label",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "limits-numerics",
+      "order": 27,
+      "label": "What does optimal low rank actually guarantee? · numerics",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 10720,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "limits-numerics",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "new-spectrum-attempt",
+      "order": 28,
+      "label": "Calculate truncation costs for a new spectrum · attempt",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 12160,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "new-spectrum-input",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "new-spectrum-target",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    },
+    {
+      "id": "new-spectrum-feedback",
+      "order": 29,
+      "label": "Calculate truncation costs for a new spectrum · feedback",
+      "target": {
+        "kind": "scene-point",
+        "sceneId": "lesson",
+        "point": {
+          "x": 12160,
+          "y": 360
+        },
+        "zoom": 1,
+        "referenceViewport": {
+          "width": 1280,
+          "height": 720
+        }
+      },
+      "durationMs": 180,
+      "holdMs": 4500,
+      "easing": "smooth",
+      "reveal": {
+        "timing": "after-camera",
+        "enter": [
+          {
+            "nodeId": "new-spectrum-error",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "new-spectrum-eigenvalues",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          },
+          {
+            "nodeId": "new-spectrum-accuracy",
+            "effect": "fade",
+            "delayMs": 0,
+            "durationMs": 100
+          }
+        ],
+        "exitNodeIds": []
+      }
+    }
+  ]
+}
