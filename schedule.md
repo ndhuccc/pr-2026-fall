@@ -33,6 +33,8 @@
 | 16 | 12/21 | Clustering (2) – Evaluation & Course Project Discussion | | |
 | 17 | 12/28 | 期末考 / 期末專題發表 Final Exam / Project Presentation | | 期末考(學校期末評量 12/28–31) |
 
+> 第 10 週簡報已更新為 reasoning-led-teaching-deck 2.4.1 重製審閱稿（KP01–KP09，中英文共 18 份）。KP01 已補「資料外洩」說明，KP01、KP02 已修正公式排版；最終教學稽核尚待完成。
+
 ## 英文版簡報(English slides, week 10)
 
 第 10 週 Feature Generation I 的九個 KP 各有英文原生簡報，對應上表的繁中英講義；網站同時提供網頁版與 JBD 下載。
