@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 10:22（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec07-kp01-why-select.jbd.json。來源任務 `kp01-deck`（確認：使用者 2026-11-08 於對話看過預覽後說「推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-08 09:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 10 份成品配送到本課程：lectures/lec07-kp01-why-select.md、lectures/en/lec07-kp01-why-select.md、assets/figures/lec07-kp01-why-select-f1-cost.png、assets/figures/lec07-kp01-why-select-f1-cost-en.png、assets/figures/lec07-kp01-why-select-f2-redundant.png、assets/figures/lec07-kp01-why-select-f2-redundant-en.png、assets/figures/lec07-kp01-why-select-f3-ratio.png、assets/figures/lec07-kp01-why-select-f3-ratio-en.png、assets/figures/lec07-kp01-why-select-f4-noise.png、assets/figures/lec07-kp01-why-select-f4-noise-en.png。來源任務 `lecture`（確認：使用者 2026-11-08 看過中文講義後指示：也要製作英文版，然後配送到 pr-2026-fall）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-08 09:11（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 3 份成品配送到本課程：slides/lec03-kp14-hard-margin-expert.jbd.json、slides/lec03-kp15-soft-margin-expert.jbd.json、slides/lec03-kp16-multiclass-ecoc-expert.jbd.json。來源任務 `kp14-kp16-expert-first`（確認：使用者 2026-11-08 指示:先做測試配送,先不要替換舊版(測試用,不是『確認無誤』)）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
