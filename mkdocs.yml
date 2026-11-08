@@ -21,6 +21,7 @@ plugins:
 # LaTeX:搭配 .site_src/javascripts/mathjax.js
 markdown_extensions:
   - admonition
+  - attr_list
   - tables
   - toc:
       permalink: true
@@ -30,6 +31,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+
+extra_css:
+  - stylesheets/self-study.css
 
 extra_javascript:
   - javascripts/mathjax.js

@@ -323,7 +323,8 @@ gh workflow run deploy-site.yml                                    # 第一次�
 4. **網站選單由 `schedule.md` 產生**:沒有列進進度表的講義會被歸到選單的「其他 Others」。所以每份講義都要在 `schedule.md` 至少出現一次,選單的各週底下不應出現「其他」。
 5. **不要自己改週次與日期**(放假週、期中期末也不動),除非老師明確要求;要改時照 §5.4 辦理。
 6. **講義標題格式統一(左側選單用的就是這個文字)**:進度表裡講義連結的文字就是網站左側各週次的選單標題。**所有**講義一律寫 `KPNN 標題`——`KP` 加兩位數編號、一個半形空格、中文短標題(名詞片語,約 4–12 字,不寫成完整句子或結論句;完整標題留在講義內文 H1);「投影片下載」頁的教材名稱也取自這裡,漫畫版自動加註「(漫畫版)」;每一週的編號都從 KP01 起,依該週在進度表出現的順序遞增(整份講義如導論也算一個 KP);不用冒號、不加「(試做)」「(草稿)」之類的標註、不附英文。同一門課所有週次格式一致,不同課程也用同一格式。建置時 `scripts/sync_nav.py` 會自動檢查這條規則(含編號與檔名是否一致、是否列入進度表),有問題會顯示「[警告] 講義標題格式」;`python3 scripts/sync_nav.py --strict` 有問題時會以非 0 結束。
-7. **驗證與記錄**:`python3 scripts/build_docs.py && mkdocs build` 無 ERROR 與 WARNING(特別是失效連結);在 `CHANGELOG.md` 記一行(類型「更新」),並更新 `COURSE_STATE.md`。
+7. **自主學習 KP 用紫色字標示**:老師指定哪些 KP 是自主學習後,在 `schedule.md` 該 KP 的**講義連結與簡報連結**(中文表格與英文清單中的連結皆是)後面各加 `{ .self-study }`,例如 `[KP08 反向傳播的加速](lectures/lec05-kp08-backprop-speedups.md){ .self-study } · [簡報](slides/lec05-kp08-backprop-speedups.jbd.json){ .self-study }`。建置時 `scripts/build_docs.py` 會自動讓表格連結與左側選單的對應標題變紫色(表格上方已有圖例)。不要自己判斷哪些是自主學習;老師撤銷時刪除該標記。備註欄仍可寫「KPxx 為自主學習」。
+8. **驗證與記錄**:`python3 scripts/build_docs.py && mkdocs build` 無 ERROR 與 WARNING(特別是失效連結);在 `CHANGELOG.md` 記一行(類型「更新」),並更新 `COURSE_STATE.md`。
 
 ---
 

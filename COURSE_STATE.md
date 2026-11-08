@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08（Asia/Taipei）— 新增「自主學習 KP 以紫色字標示」機制：`mkdocs.yml` 開啟 `attr_list`、加入 `stylesheets/self-study.css`；`scripts/build_docs.py` 新增 `write_self_study_css()`（掃 `schedule.md` 的 `{ .self-study }` 產生樣式，含左側選單）。已標第 5、6 週 8 個 KP（講義、簡報、英文清單），其餘週待教師指定後由 agent 依 AGENTS.md §5.12 第 7 點標示。本機建置與畫面確認通過，尚未推送。
+
 - 2026-11-08 10:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec07-kp01-why-select-en.jbd.json。來源任務 `kp01-deck`（確認：使用者 2026-11-08 於對話看過英文版預覽後說「無誤」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-08 10:22（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec07-kp01-why-select.jbd.json。來源任務 `kp01-deck`（確認：使用者 2026-11-08 於對話看過預覽後說「推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。

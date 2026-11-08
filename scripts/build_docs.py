@@ -398,6 +398,25 @@ def publish_due_solutions(stage: Path, today: dt.date, dates: dict[str, dt.date]
     return released
 
 
+SELF_STUDY_COLOR = "#7c3aed"
+
+
+def write_self_study_css(stage: Path) -> None:
+    """自主學習的知識點用紫色字顯示。
+
+    標記來源:schedule.md 的連結後面加 ``{ .self-study }``(attr_list)。這裡掃出這些講義的檔名,
+    產生 stylesheets/self-study.css,讓左側選單中對應的講義標題也變紫色。
+    """
+    text = (ROOT / "schedule.md").read_text(encoding="utf-8")
+    stems = sorted(set(re.findall(r"\]\(lectures/(?:en/)?(lec[0-9A-Za-z._-]*)\.md\)\{ \.self-study \}", text)))
+    rules = [f".md-typeset .self-study, .md-typeset a.self-study {{ color: {SELF_STUDY_COLOR}; font-weight: 600; }}"]
+    for st in stems:
+        rules.append(f'.md-nav__link[href*="{st}"], .md-nav__link[href*="{st}"] .md-ellipsis {{ color: {SELF_STUDY_COLOR}; }}')
+    css = stage / "stylesheets"
+    css.mkdir(exist_ok=True)
+    (css / "self-study.css").write_text("\n".join(rules) + "\n", encoding="utf-8")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--today", help="模擬今天日期(YYYY-MM-DD),預設為設定時區的今天")
@@ -426,6 +445,8 @@ def main() -> int:
     js = STAGE / "javascripts"
     js.mkdir(exist_ok=True)
     (js / "mathjax.js").write_text(MATHJAX_JS, encoding="utf-8")
+
+    write_self_study_css(STAGE)
 
     print(f"今天:{today}｜複製 {n} 個檔案｜已釋出解答:{released or '無'}")
     return 0
