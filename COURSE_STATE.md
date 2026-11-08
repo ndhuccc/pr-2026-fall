@@ -53,6 +53,10 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 08:47（Asia/Taipei）— 更正:`README.md` 是網站首頁(學生看得到),老師決定中央工廠＋配送的說明只放在 `AGENTS.md` §5.11,已從 `README.md` 移除該段。
+
+- 2026-11-08 08:31（Asia/Taipei）— 老師決定:講義與簡報改由 jbd-maker 中央工廠製作,確認無誤後再配送到本課程。本 repo 製作類技能已停用(`image-to-jbd-page`、`prompt-to-jbd-page`、`self-study-teaching-deck`、`view-from-text`、`-v2`、`-v3`:加 `DISABLED.md` 並在 `SKILL.md` 的 `description` 標示,未刪檔);`AGENTS.md` §5.11 與 `README.md` 改寫為新流程;檢查腳本(`check_slides.py`、`slides-to-html`、`build_docs.py`)照舊使用。`.github/workflows/v3-portability.yml` 仍引用 `view-from-text-v3`,本次未改,是否移除待老師決定。`textbook-lecture-notes`、`diagram-design`、`page-to-teaching-diagram`、`slides-to-four-panel-comics` 本次未動。
+
 - 2026-11-07 15:56（Asia/Taipei）— 依教師「把這些簡報推送到 pr-2026-fall github repo 內正確的目錄下」明確授權，更新 `slides/lec10-kp01-*.jbd.json` 至 `lec10-kp09-*.jbd.json` 的中英文共18份原生檔（reasoning-led-teaching-deck 2.4.1；324頁、1504停點）。KP01 使用 week10-v06/native v5，含「資料外洩」定義與 LaTeX 修正；KP02 使用 week10-v07/native v4，含 Step 32 等 LaTeX 修正；KP03–KP09 使用 week10-v04/native v3。18份課程副本與各自最新已檢查來源 SHA-256 完全相同，對應原生播放器報告共3026次前進／返回／循環觀察通過；未修改來源教學內容或轉場。課程格式 FAIL 0；6則 WARN 已逐項核對：KP05 中英的 `H@H.T`／`X@H.T`、KP09 中英的 `A@A.T` 是 NumPy 矩陣乘法，KP05 中英的 `212217858` 是損失值 `0.212217858` 的小數尾碼，均非電子郵件或學號。既有課表18條連結沿用，另明示本批為審閱稿。**最終 F 教學稽核仍有304個教學頁項目未執行**；教師暫不啟動獨立圖像／遷移盲審子代理，真人學習驗證未做，故本次授權同步不代表教學驗收通過。本機來源與雜湊明細：`/workspace/jbd-maker/outputs/pr-2026-fall/week10-v08/github-sync/source-manifest.json`。本輪課程 HTML 轉換18份成功，瀏覽器逐節點核對7426個文字節點及3026個前進／返回／循環揭示狀態全部通過（0公式錯誤、0圖片失敗、0外部請求、0自動縮字）；KP01 Step 61、KP02 Step 32 中英文另存截圖，中文截圖已檢視。網站18份HTML／JBD的課表與下載連結、JBD雜湊全數通過。`build_docs.py` 與一般 `mkdocs build` 成功；`mkdocs build --strict` 因遠端基線既有第7週KP01的3則失效連結警告未通過（導覽、講義連結、簡報連結），本次保留原有檔案與連結。doctor 前後同為第2週舊漫畫版的20個既有FAIL，新增FAIL 0。依教師明確授權提交推送main；遠端提交與自動部署結果以同步後實際回讀為準。
 
 
