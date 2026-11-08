@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-11-09 — [更新] 第 3 週 KP01–KP16 的英文版簡報改為 expert-first 新版（jbd-maker 製作，教師指示配送），取代 `slides/lec03-kpNN-*-en.jbd.json`；舊版另存於 `archive/slides-v1/`（不刪除）。至此第 3 週中英文簡報皆為新版。
+
 - 2026-11-08 — [更新] 第 3 週 KP14–KP16 的 expert-first 中文簡報改用正式檔名，取代舊中文版；舊版另存於 `archive/slides-v1/`。
 
 - 2026-11-08 — [更新] 第 3 週 KP01–KP13 的中文簡報改為 expert-first 新版（jbd-maker 製作，教師確認後配送），取代 `slides/lec03-kpNN-*.jbd.json`（中文）；舊版另存於 `archive/slides-v1/`（不刪除）。英文版 `-en` 尚未重製，維持舊版。
