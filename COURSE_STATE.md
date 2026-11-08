@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 12:28（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp01-pilot.jbd.json。來源任務 `kp01-kp04-expert-first`（確認：使用者 2026-11-08 說「推送到課程網站正確目錄」並選『取代舊中文版、舊版另存備份』『KP01–KP13 全部』）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-08（Asia/Taipei）— 新增「自主學習 KP 以紫色字標示」機制：`mkdocs.yml` 開啟 `attr_list`、加入 `stylesheets/self-study.css`；`scripts/build_docs.py` 新增 `write_self_study_css()`（掃 `schedule.md` 的 `{ .self-study }` 產生樣式，含左側選單）。已標第 5、6 週 8 個 KP（講義、簡報、英文清單），其餘週待教師指定後由 agent 依 AGENTS.md §5.12 第 7 點標示。本機建置與畫面確認通過。已推送（e3b5d7b）後，教師發現「投影片下載」頁表格未變色；`write_slides_index()` 改為依 `self_study_stems()` 標紫並加圖例，本機畫面確認通過，待推送。
 
 - 2026-11-08 10:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec07-kp01-why-select-en.jbd.json。來源任務 `kp01-deck`（確認：使用者 2026-11-08 於對話看過英文版預覽後說「無誤」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
