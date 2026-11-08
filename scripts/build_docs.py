@@ -190,6 +190,15 @@ def schedule_kp_labels() -> dict[str, str]:
     return {m.group(2): m.group(1) for m in pat.finditer(p.read_text(encoding="utf-8"))}
 
 
+def self_study_stems() -> set[str]:
+    """schedule.md 中連結後面標了 ``{ .self-study }`` 的講義檔名(不含 .md),即自主學習的 KP。"""
+    p = ROOT / "schedule.md"
+    if not p.exists():
+        return set()
+    text = p.read_text(encoding="utf-8")
+    return set(re.findall(r"\]\(lectures/(?:en/)?(lec[0-9A-Za-z._-]*)\.md\)\{ \.self-study \}", text))
+
+
 def schedule_weeks() -> dict[str, int]:
     """從 schedule.md 的表格列取得 {講義 stem: 週次};同一份 lecNN 檔可橫跨兩週(例如第 5、6 週)。"""
     p = ROOT / "schedule.md"
@@ -282,6 +291,7 @@ def write_slides_index(stage: Path, generated: frozenset[str] | set[str] = froze
     lecture_re = re.compile(r"^(lec\d{2})(?:-([a-z0-9][a-z0-9-]*))?\.(jbd\.json|pptx|pdf|html)$")
     kp_labels = schedule_kp_labels()
     sched_week = schedule_weeks()
+    study = self_study_stems()
     weeks: dict[str, dict[str, list[tuple[str, str]]]] = {}
     others: list[str] = []
     for p in sorted(base.iterdir()):
@@ -309,7 +319,8 @@ def write_slides_index(stage: Path, generated: frozenset[str] | set[str] = froze
              "←→ 或空白鍵換頁,F 全螢幕,N 顯示講者備註),以及 **JBD**(JianBauDau 原生檔 `.jbd.json`,"
              "用 JianBauDau 播放器開啟或繼續編輯)。PPTX、PDF 可直接用一般軟體開啟。", "",
              "同一週可以有多份教材:沒有後綴的是該週正課,"
-             "有後綴的(例如 `lec02-parameter-estimation`)是補充或自主學習教材。", ""]
+             "有後綴的(例如 `lec02-parameter-estimation`)是補充或自主學習教材。",
+             "", '<span class="self-study">紫色字</span> = 自主學習的知識點(其餘為課堂講授)。', ""]
     if has_json:  # 有 JBD 檔可下載時,一併提供播放器
         lines += ["## JianBauDau 播放器", "",
                   f"- [下載 JianBauDau 播放器 1.0.5(Windows,.exe)]({PLAYER_URL})",
@@ -331,9 +342,11 @@ def write_slides_index(stage: Path, generated: frozenset[str] | set[str] = froze
                 lab = slide_label(stem, kp_labels)
                 return lab[1] if lab[0] else "~~" + stem
 
-            def cell(items: list[tuple[str, str]]) -> str:
+            def cell(items: list[tuple[str, str]], is_study: bool = False) -> str:
+                cls = ' class="self-study"' if is_study else ""
+                tail = "{ .self-study }" if is_study else ""
                 return " · ".join(
-                    f'<a href="{n}" download>JBD</a>' if f == "jbd.json" else f"[{SLIDE_SHORT.get(f, f)}]({n})"
+                    f'<a{cls} href="{n}" download>JBD</a>' if f == "jbd.json" else f"[{SLIDE_SHORT.get(f, f)}]({n}){tail}"
                     for f, n in sorted(items, key=lambda t: t[0])) or "—"
 
             for stem in sorted((x for x in weeks[wk] if x not in en_stems), key=order):
@@ -343,7 +356,10 @@ def write_slides_index(stage: Path, generated: frozenset[str] | set[str] = froze
                 if en_title:
                     label += "<br>" + en_title + ("(Comics)" if stem.endswith("-with-comics") else "")
                 en_items = weeks[wk].get(en_of.get(stem, "\0"), [])
-                lines.append(f"    | {label} | {cell(weeks[wk][stem])} | {cell(en_items)} |")
+                is_study = core_stem in study
+                if is_study:
+                    label = f'<span class="self-study">{label}</span>'
+                lines.append(f"    | {label} | {cell(weeks[wk][stem], is_study)} | {cell(en_items, is_study)} |")
             lines.append("")
     if others:
         lines += ["## 其他檔案", ""] + [f"- [{name}]({name})" for name in others] + [""]
@@ -407,8 +423,7 @@ def write_self_study_css(stage: Path) -> None:
     標記來源:schedule.md 的連結後面加 ``{ .self-study }``(attr_list)。這裡掃出這些講義的檔名,
     產生 stylesheets/self-study.css,讓左側選單中對應的講義標題也變紫色。
     """
-    text = (ROOT / "schedule.md").read_text(encoding="utf-8")
-    stems = sorted(set(re.findall(r"\]\(lectures/(?:en/)?(lec[0-9A-Za-z._-]*)\.md\)\{ \.self-study \}", text)))
+    stems = sorted(self_study_stems())
     rules = [f".md-typeset .self-study, .md-typeset a.self-study {{ color: {SELF_STUDY_COLOR}; font-weight: 600; }}"]
     for st in stems:
         rules.append(f'.md-nav__link[href*="{st}"], .md-nav__link[href*="{st}"] .md-ellipsis {{ color: {SELF_STUDY_COLOR}; }}')
