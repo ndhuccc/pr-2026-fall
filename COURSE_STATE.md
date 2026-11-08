@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 12:28（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp04-online-perceptron.jbd.json。來源任務 `kp01-kp04-expert-first`（確認：使用者 2026-11-08 說「推送到課程網站正確目錄」並選『取代舊中文版、舊版另存備份』『KP01–KP13 全部』）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-08 12:28（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp03-convergence.jbd.json。來源任務 `kp01-kp04-expert-first`（確認：使用者 2026-11-08 說「推送到課程網站正確目錄」並選『取代舊中文版、舊版另存備份』『KP01–KP13 全部』）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-08 12:28（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp02-batch-perceptron.jbd.json。來源任務 `kp01-kp04-expert-first`（確認：使用者 2026-11-08 說「推送到課程網站正確目錄」並選『取代舊中文版、舊版另存備份』『KP01–KP13 全部』）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
