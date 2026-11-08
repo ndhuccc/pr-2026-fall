@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 14:02（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 9 份成品配送到本課程：slides/lec10-kp01-feature-generation-motivation.jbd.json、slides/lec10-kp02-basis-projection.jbd.json、slides/lec10-kp03-pca-klt.jbd.json、slides/lec10-kp04-svd.jbd.json、slides/lec10-kp05-nmf.jbd.json、slides/lec10-kp06-manifold.jbd.json、slides/lec10-kp07-kernel-pca.jbd.json、slides/lec10-kp08-laplacian-eigenmaps.jbd.json、slides/lec10-kp09-lle-isomap.jbd.json。來源任務 `expert-first`（確認：Professor 2026-11-08: push and publish; replace nine Chinese decks, retain English）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-09 — 第 3 週 KP01–KP16 英文簡報（jbd-maker week03-v14／v15／v16／v17，expert-first）經教師指示配送並取代 `slides/` 同名 `-en` 檔；舊版備份於 `archive/slides-v1/`。KP09、KP11、KP13 的 check_slides WARN 為小數（非學號）。譯文未經英文母語者審稿。
 
 - 2026-11-08 12:51（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：lectures/en/lec07-kp00-overview.md、lectures/en/lec07-kp02-preprocessing.md、lectures/en/lec07-kp03-hypothesis-tests.md、lectures/en/lec07-kp04-roc-auc.md、lectures/en/lec07-kp05-separability-fdr.md、lectures/en/lec07-kp06-subset-selection.md、lectures/en/lec07-kp07-search.md。來源任務 `en-lectures`（確認：使用者 2026-11-08 於對話指示「推送並且配送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
@@ -333,3 +335,9 @@
 - 2026-10-27 15:14 — KP07 簡報以 v3 重做並發佈(內容頁 10 頁,中英文版),講義換圖;下一步 KP06
 - 2026-10-27 15:36 — KP06 簡報以 v3 重做並發佈(內容頁 10 頁,中英文版),講義換圖;agentA 負責的 KP08、KP07、KP06 已全部完成
 - 2026-10-27 15:38 — 第 5 章 KP00–KP18、KP20、KP22 簡報均已用 view-from-text-v3 重做並發佈(KP00–KP09、KP10–KP12 由四個子代理與主 agent 平行完成);仍為 v2:KP19、KP21、KP23–KP26(教授未要求重做)。publish_unit 的標題取代改為不受空格影響。
+
+### 2026-11-08 Week10 expert-first Chinese replacement
+- Replaced only nine Chinese KP01-KP09 native decks, 98 pages / 109 teaching stops. English decks unchanged.
+- User authorized push/publication and explicitly chose replacement. Previous versions remain in Git history.
+- Author self-review: 209 native forward/back observations, 122 numerical assertions; plan/contract/hash checks passed. This is NOT independent blind review or real learner validation. Native wrap/jump unsupported; voice/PDF/video not validated.
+- Production evidence remains in jbd-maker outputs/pr-2026-fall/week10-v09/expert-first; not published as course materials.
