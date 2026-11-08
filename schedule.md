@@ -37,6 +37,19 @@
 
 > 第 10 週簡報已更新為 reasoning-led-teaching-deck 2.4.1 重製審閱稿（KP01–KP09，中英文共 18 份）。KP01 已補「資料外洩」說明，KP01、KP02 已修正公式排版；最終教學稽核尚待完成。
 
+## 英文版教材與簡報(English materials, week 7)
+
+第 7 週 Feature Selection 的英文講義與英文原生簡報，內容與上表中文版對應；KP01 目前只有英文簡報。
+
+- KP00 Feature selection roadmap:[Lecture](lectures/en/lec07-kp00-overview.md) · [Slides](slides/lec07-kp00-overview-en.jbd.json)
+- KP01 Why select features:[Slides](slides/lec07-kp01-why-select-en.jbd.json)
+- KP02 Preprocessing:[Lecture](lectures/en/lec07-kp02-preprocessing.md) · [Slides](slides/lec07-kp02-preprocessing-en.jbd.json)
+- KP03 Hypothesis tests:[Lecture](lectures/en/lec07-kp03-hypothesis-tests.md) · [Slides](slides/lec07-kp03-hypothesis-tests-en.jbd.json)
+- KP04 ROC curve and AUC:[Lecture](lectures/en/lec07-kp04-roc-auc.md) · [Slides](slides/lec07-kp04-roc-auc-en.jbd.json)
+- KP05 Separability scores: FDR and scatter matrices:[Lecture](lectures/en/lec07-kp05-separability-fdr.md) · [Slides](slides/lec07-kp05-separability-fdr-en.jbd.json)
+- KP06 Feature subset selection:[Lecture](lectures/en/lec07-kp06-subset-selection.md) · [Slides](slides/lec07-kp06-subset-selection-en.jbd.json)
+- KP07 Feature search:[Lecture](lectures/en/lec07-kp07-search.md) · [Slides](slides/lec07-kp07-search-en.jbd.json)
+
 ## 英文版簡報(English slides, week 10)
 
 第 10 週 Feature Generation I 的九個 KP 各有英文原生簡報，對應上表的繁中英講義；網站同時提供網頁版與 JBD 下載。

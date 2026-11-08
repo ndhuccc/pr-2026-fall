@@ -53,6 +53,10 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 12:51（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：lectures/en/lec07-kp00-overview.md、lectures/en/lec07-kp02-preprocessing.md、lectures/en/lec07-kp03-hypothesis-tests.md、lectures/en/lec07-kp04-roc-auc.md、lectures/en/lec07-kp05-separability-fdr.md、lectures/en/lec07-kp06-subset-selection.md、lectures/en/lec07-kp07-search.md。來源任務 `en-lectures`（確認：使用者 2026-11-08 於對話指示「推送並且配送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
+- 2026-11-08 12:51（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：slides/lec07-kp00-overview-en.jbd.json、slides/lec07-kp02-preprocessing-en.jbd.json、slides/lec07-kp03-hypothesis-tests-en.jbd.json、slides/lec07-kp04-roc-auc-en.jbd.json、slides/lec07-kp05-separability-fdr-en.jbd.json、slides/lec07-kp06-subset-selection-en.jbd.json、slides/lec07-kp07-search-en.jbd.json。來源任務 `en-decks`（確認：使用者 2026-11-08 於對話指示「推送並且配送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-08 — 第 3 週 KP01–KP13 中文簡報（jbd-maker week03-v11／v12／v13，expert-first）經教師指示配送並取代 `slides/` 同名中文檔；舊版備份於 `archive/slides-v1/`。英文版仍是舊版，待重製。KP09、KP11、KP13 的 check_slides WARN 為小數（非學號），已確認。
 
 - 2026-11-08 12:29（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp13-logistic.jbd.json。來源任務 `kp09-kp13-expert-first`（確認：使用者 2026-11-08 說「推送到課程網站正確目錄」並選『取代舊中文版、舊版另存備份』『KP01–KP13 全部』）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
