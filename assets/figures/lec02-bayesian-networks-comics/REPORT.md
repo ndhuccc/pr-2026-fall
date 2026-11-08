@@ -5,7 +5,7 @@
 - 輸入：`slides/lec02-bayesian-networks.jbd.json`，schema v3，29 steps、227 nodes。
 - 來源 commit：`1daf147e0066eb7dc7d6adf1cd0e8aec0e85a2ac`。
 - 來源 SHA-256：`f1d5a501a6ca7af3f28ce45e9ee4566201336e3cc19eadf685a3c30ffcd4e0e9`。
-- [漫畫版簡報](../../../slides/lec02-bayesian-networks-with-comics.jbd.json)：41 steps、239 nodes，圖片已內嵌。
+- [漫畫版簡報](../../../slides/comics/lec02-bayesian-networks-with-comics.jbd.json)：41 steps、239 nodes，圖片已內嵌。
 - [離線圖集](index.html)｜[分鏡與完整提示詞](PROMPTS.md)。
 - 已讀程序：教授助理範本 `workflows/course-materials.md` 的 W04；本課程 `.agents/skills/slides-to-four-panel-comics/SKILL.md` 與 jbd-format／comic-prompt 參考文件。沿用已讀課程規範、PORTABILITY、QUALITY 與 imagegen 技能。
 - 本次只新增衍生漫畫版及相關連結／紀錄；原簡報與講義正文均保留。前一份單純貝氏漫畫產物仍保留。

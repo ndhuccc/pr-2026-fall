@@ -5,7 +5,7 @@
 - 輸入：`slides/lec02-naive-bayes-and-nn.jbd.json`，schema v3，38 steps、303 nodes。
 - 來源 commit：`1daf147e0066eb7dc7d6adf1cd0e8aec0e85a2ac`。
 - 來源 SHA-256：`3d3ac7a1041d41c99fa1156a2372c917b80f731fce13e99923a5f234a2bd9b20`。
-- 輸出：[漫畫版簡報](../../../slides/lec02-naive-bayes-and-nn-with-comics.jbd.json)，52 steps、317 nodes；圖片已內嵌，無外部圖片網址依賴。
+- 輸出：[漫畫版簡報](../../../slides/comics/lec02-naive-bayes-and-nn-with-comics.jbd.json)，52 steps、317 nodes；圖片已內嵌，無外部圖片網址依賴。
 - [離線漫畫圖集](index.html)｜[完整分鏡與提示詞](PROMPTS.md)。
 - 已讀流程：教授助理範本的 `workflows/course-materials.md`（W04）及主技能；實際執行使用本課程 `.agents/skills/slides-to-four-panel-comics/SKILL.md`、兩份 references、原插頁程式；另讀課程規範、PORTABILITY、QUALITY 與 imagegen 技能。
 - 程度：承接現有研究所教材，對話以初學者可懂的繁體中文表達；保留原講義與原簡報。

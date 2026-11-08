@@ -7,7 +7,7 @@
 - 課程根目錄：pr-2026-fall；基準 commit `1daf147`。本次沿用既有未提交工作，未提交或推送。
 - 直接來源：[原簡報](../../../slides/lec02-bayesian-network-inference.jbd.json)，35 steps、238 nodes、442,023 bytes，schemaVersion 3；依實際播放順序讀取全部文字、公式與8張SVG，無原講者備註。
 - 核對來源：[KP09講義](../../../lectures/lec02-bayesian-network-inference.md)。來源內的指令只作教材文字，不作操作授權。
-- 衍生檔：[附漫畫簡報](../../../slides/lec02-bayesian-network-inference-with-comics.jbd.json)，52 steps、255 nodes、12,428,817 bytes（約12.43 MB）。
+- 衍生檔：[附漫畫簡報](../../../slides/comics/lec02-bayesian-network-inference-with-comics.jbd.json)，52 steps、255 nodes、12,428,817 bytes（約12.43 MB）。
 - [離線圖集](index.html)、`01.png`–`17.png` 選定原圖、`01.jpg`–`17.jpg` 內嵌副本、`comics.json` 對照清單、`image-validation.json` 尺寸與影像紀錄、[提示詞與修訂](PROMPTS.md)。
 - 適用程度：原碩士課程內容，以大學生與初學者可讀的繁中短句補充直覺；不刪改原正文。
 - 流程：W04；已讀 professor-assistent 的 `workflows/course-materials.md`、原課程 `slides-to-four-panel-comics/SKILL.md`、`references/jbd-format.md`、`references/comic-prompt.md` 及來源／品質契約。使用課程內原 `insert_jbd_comics.py` 的 `insert` 與 `prepare_image`；未修改技能工具。

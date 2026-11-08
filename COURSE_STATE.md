@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-08 08:55（Asia/Taipei）— 依老師指示下架「漫畫版」簡報:將 `slides/` 頂層 19 份 `*-with-comics.jbd.json` 以 `git mv` 移到不發佈的 `slides/comics/`(檔案與歷史保留,可搬回);移除 `schedule.md` 與 `lectures/` 中指向它們的連結(四格漫畫圖集頁與報告仍保留,連結改指向 `slides/comics/`)。IDL 課程沒有標為漫畫版的已發布簡報,未動。`schedule.md` 內 `slides/lec07-kp01-why-select.jbd.json` 連結的檔案不存在,為本次之前就有的問題,未處理。
+
 - 2026-11-08 08:47（Asia/Taipei）— 更正:`README.md` 是網站首頁(學生看得到),老師決定中央工廠＋配送的說明只放在 `AGENTS.md` §5.11,已從 `README.md` 移除該段。
 
 - 2026-11-08 08:31（Asia/Taipei）— 老師決定:講義與簡報改由 jbd-maker 中央工廠製作,確認無誤後再配送到本課程。本 repo 製作類技能已停用(`image-to-jbd-page`、`prompt-to-jbd-page`、`self-study-teaching-deck`、`view-from-text`、`-v2`、`-v3`:加 `DISABLED.md` 並在 `SKILL.md` 的 `description` 標示,未刪檔);`AGENTS.md` §5.11 與 `README.md` 改寫為新流程;檢查腳本(`check_slides.py`、`slides-to-html`、`build_docs.py`)照舊使用。`.github/workflows/v3-portability.yml` 仍引用 `view-from-text-v3`,本次未改,是否移除待老師決定。`textbook-lecture-notes`、`diagram-design`、`page-to-teaching-diagram`、`slides-to-four-panel-comics` 本次未動。

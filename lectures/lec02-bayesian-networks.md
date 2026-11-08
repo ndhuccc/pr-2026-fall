@@ -8,9 +8,9 @@
 
 Slides: [JianBauDau JSON](../slides/lec02-bayesian-networks.jbd.json) (open with the JianBauDau editor or player).
 
-四格漫畫版：[JianBauDau JSON](../slides/lec02-bayesian-networks-with-comics.jbd.json)（保留原頁，加入12張繁體中文漫畫）｜[漫畫圖集](../assets/figures/lec02-bayesian-networks-comics/index.html)｜[分鏡與驗證報告](../assets/figures/lec02-bayesian-networks-comics/REPORT.md)。
+四格漫畫圖集：[漫畫圖集](../assets/figures/lec02-bayesian-networks-comics/index.html)｜[分鏡與驗證報告](../assets/figures/lec02-bayesian-networks-comics/REPORT.md)。
 
-Comic edition: [JianBauDau JSON](../slides/lec02-bayesian-networks-with-comics.jbd.json), preserving the original pages and adding 12 Traditional-Chinese comics. See the [report](../assets/figures/lec02-bayesian-networks-comics/REPORT.md) for source distinctions and pending validation.
+Comic gallery: see the [report](../assets/figures/lec02-bayesian-networks-comics/REPORT.md) for source distinctions and pending validation.
 
 本講義處理課程網頁 2.7 節的第一個知識點。前一講（`lec02.md`）談的是貝氏決策理論與高斯分類器。這裡接著問：當特徵不只一兩個，而要一起描述整個聯合分布時，該怎麼做才不會爆炸。
 

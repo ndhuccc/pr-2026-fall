@@ -8,9 +8,9 @@
 
 Slides: [JianBauDau JSON](../slides/lec02-naive-bayes-and-nn.jbd.json) (open with the JianBauDau editor or player).
 
-四格漫畫版：[JianBauDau JSON](../slides/lec02-naive-bayes-and-nn-with-comics.jbd.json)（保留原頁，加入 14 張繁體中文漫畫）｜[漫畫圖集](../assets/figures/lec02-naive-bayes-and-nn-comics/index.html)。原生播放驗收與完整設計稽核狀態見[驗證報告](../assets/figures/lec02-naive-bayes-and-nn-comics/REPORT.md)。
+四格漫畫圖集：[漫畫圖集](../assets/figures/lec02-naive-bayes-and-nn-comics/index.html)。原生播放驗收與完整設計稽核狀態見[驗證報告](../assets/figures/lec02-naive-bayes-and-nn-comics/REPORT.md)。
 
-Comic edition: [JianBauDau JSON](../slides/lec02-naive-bayes-and-nn-with-comics.jbd.json), with the original pages and 14 Traditional-Chinese comics. See the [validation report](../assets/figures/lec02-naive-bayes-and-nn-comics/REPORT.md) for pending playback and design checks.
+Comic gallery: see the [validation report](../assets/figures/lec02-naive-bayes-and-nn-comics/REPORT.md) for pending playback and design checks.
 
 本講義涵蓋課程網頁第 2.5–2.6 節的兩個知識點。第一個是**單純貝氏分類器（naive Bayes classifier）**：它用一個大膽的獨立假設，把指數成長的估計量壓回線性。第二個是**最近鄰居法則（nearest-neighbour rule）**：它完全不估計機率密度，直接讓鄰居投票。
 
