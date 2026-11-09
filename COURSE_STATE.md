@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-09（Asia/Taipei）— 依 §5.12 更新 `schedule.md` 第 3 週三列的備註，反映已配送的新版簡報（推導頁與配音）；講義與簡報連結未變且皆指向現存檔案；英文版簡報尚未含新增推導頁，已在英文版說明註記。教師指示：「同步進度表」。
+
 - 2026-11-09 10:08（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 12 份成品配送到本課程：slides/lec03-kp01-pilot.jbd.json、slides/lec03-kp02-batch-perceptron.jbd.json、slides/lec03-kp03-convergence.jbd.json、slides/lec03-kp07-mse-projection.jbd.json、slides/lec03-kp08-lms.jbd.json、slides/lec03-kp09-least-squares.jbd.json、slides/lec03-kp11-mse-posterior.jbd.json、slides/lec03-kp12-bias-variance.jbd.json、slides/lec03-kp13-logistic.jbd.json、slides/lec03-kp14-hard-margin.jbd.json、slides/lec03-kp15-soft-margin.jbd.json、slides/lec03-kp16-multiclass-ecoc.jbd.json。來源任務 `voiced-delivery-holdcap`（確認：使用者 2026-11-09 於對話要求「改正過得簡報送到課程repo」，並回答配送方式「解除30秒限制」（改以 holdMs 封頂 30000 ms 配送含配音版））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-09 10:08（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 12 份成品配送到本課程：slides/lec03-kp01-pilot.jbd.json、slides/lec03-kp02-batch-perceptron.jbd.json、slides/lec03-kp03-convergence.jbd.json、slides/lec03-kp07-mse-projection.jbd.json、slides/lec03-kp08-lms.jbd.json、slides/lec03-kp09-least-squares.jbd.json、slides/lec03-kp11-mse-posterior.jbd.json、slides/lec03-kp12-bias-variance.jbd.json、slides/lec03-kp13-logistic.jbd.json、slides/lec03-kp14-hard-margin.jbd.json、slides/lec03-kp15-soft-margin.jbd.json、slides/lec03-kp16-multiclass-ecoc.jbd.json。來源任務 `voiced-delivery-holdcap`（確認：使用者 2026-11-09 於對話要求「改正過得簡報送到課程repo」，並回答配送方式「解除30秒限制」（改以 holdMs 封頂 30000 ms 配送含配音版））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
