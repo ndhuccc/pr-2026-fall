@@ -5446,7 +5446,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1.5",
+      "text": "$-1.5$",
       "shapeKind": "rectangle",
       "id": "p02-center-tk5",
       "name": "p02-center-tk5",
@@ -5477,7 +5477,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1",
+      "text": "$-1$",
       "shapeKind": "rectangle",
       "id": "p02-center-tk10",
       "name": "p02-center-tk10",
@@ -5508,7 +5508,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-0.5",
+      "text": "$-0.5$",
       "shapeKind": "rectangle",
       "id": "p02-center-tk15",
       "name": "p02-center-tk15",
@@ -5539,7 +5539,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "0",
+      "text": "$0$",
       "shapeKind": "rectangle",
       "id": "p02-center-tk20",
       "name": "p02-center-tk20",
@@ -5586,7 +5586,7 @@
     "p02-center-ttruth": {
       "type": "text",
       "transform": {
-        "x": 3480,
+        "x": 3192,
         "y": 383.0,
         "scaleX": 1,
         "scaleY": 1,
@@ -7043,7 +7043,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1.5",
+      "text": "$-1.5$",
       "shapeKind": "rectangle",
       "id": "p03-spread-tk5",
       "name": "p03-spread-tk5",
@@ -7074,7 +7074,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1",
+      "text": "$-1$",
       "shapeKind": "rectangle",
       "id": "p03-spread-tk10",
       "name": "p03-spread-tk10",
@@ -7105,7 +7105,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-0.5",
+      "text": "$-0.5$",
       "shapeKind": "rectangle",
       "id": "p03-spread-tk15",
       "name": "p03-spread-tk15",
@@ -7136,7 +7136,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "0",
+      "text": "$0$",
       "shapeKind": "rectangle",
       "id": "p03-spread-tk20",
       "name": "p03-spread-tk20",
@@ -7183,7 +7183,7 @@
     "p03-spread-ttruth": {
       "type": "text",
       "transform": {
-        "x": 4920,
+        "x": 4632,
         "y": 383.0,
         "scaleX": 1,
         "scaleY": 1,
@@ -8173,7 +8173,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1.5",
+      "text": "$-1.5$",
       "shapeKind": "rectangle",
       "id": "p04-split-tk5",
       "name": "p04-split-tk5",
@@ -8204,7 +8204,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1",
+      "text": "$-1$",
       "shapeKind": "rectangle",
       "id": "p04-split-tk10",
       "name": "p04-split-tk10",
@@ -8235,7 +8235,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-0.5",
+      "text": "$-0.5$",
       "shapeKind": "rectangle",
       "id": "p04-split-tk15",
       "name": "p04-split-tk15",
@@ -8266,7 +8266,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "0",
+      "text": "$0$",
       "shapeKind": "rectangle",
       "id": "p04-split-tk20",
       "name": "p04-split-tk20",
@@ -8462,7 +8462,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "某一批 -0.636",
+      "text": "某一批 $-0.636$",
       "shapeKind": "rectangle",
       "id": "p04-split-tgs",
       "name": "p04-split-tgs",

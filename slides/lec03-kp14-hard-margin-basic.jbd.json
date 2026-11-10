@@ -742,8 +742,8 @@
     "p00-recall-tline": {
       "type": "text",
       "transform": {
-        "x": 162,
-        "y": 548,
+        "x": 292,
+        "y": 118,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
@@ -6027,7 +6027,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-2",
+      "text": "$-2$",
       "shapeKind": "rectangle",
       "id": "p04-wall-tk0",
       "name": "p04-wall-tk0",
@@ -6058,7 +6058,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1",
+      "text": "$-1$",
       "shapeKind": "rectangle",
       "id": "p04-wall-tk1",
       "name": "p04-wall-tk1",
@@ -6089,7 +6089,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "0",
+      "text": "$0$",
       "shapeKind": "rectangle",
       "id": "p04-wall-tk2",
       "name": "p04-wall-tk2",
@@ -6120,7 +6120,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "1",
+      "text": "$1$",
       "shapeKind": "rectangle",
       "id": "p04-wall-tk3",
       "name": "p04-wall-tk3",
@@ -6151,7 +6151,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "2",
+      "text": "$2$",
       "shapeKind": "rectangle",
       "id": "p04-wall-tk4",
       "name": "p04-wall-tk4",
@@ -8427,7 +8427,7 @@
         "gradientTo": "#ecfdf5",
         "gradientAngle": 90
       },
-      "text": "代數字：$\\alpha$ 都取 $\\tfrac14$，$\\tfrac14(1,1) + \\tfrac14(1,-1) + \\tfrac14(1,-1) + \\tfrac14(1,1) = (1,0)$。",
+      "text": "代數字：$\\alpha$ 都取 $\\tfrac14$：\n$\\tfrac14\\big[(1,1)+(1,-1)+(1,-1)+(1,1)\\big]=(1,0)$。",
       "shapeKind": "rectangle",
       "id": "p04-lagrange-n9",
       "name": "p04-lagrange-n9",
@@ -9258,13 +9258,13 @@
     "p05-dual-tr": {
       "type": "text",
       "transform": {
-        "x": 10242,
-        "y": 548,
+        "x": 10440,
+        "y": 598,
         "scaleX": 1,
         "scaleY": 1,
         "rotation": 0
       },
-      "width": 440,
+      "width": 425,
       "height": 26,
       "zIndex": 6,
       "locked": false,
@@ -9272,7 +9272,7 @@
         "fill": "transparent",
         "stroke": "transparent",
         "textColor": "#7c3aed",
-        "fontSize": 17,
+        "fontSize": 16,
         "radius": 0,
         "borderWidth": 0,
         "fontWeight": 700,
@@ -10462,7 +10462,7 @@
         "gradientTo": "#ecfdf5",
         "gradientAngle": 90
       },
-      "text": "只有 ②、④ 各出力 $\\tfrac12$：$\\tfrac12(1,-1)+\\tfrac12(1,1)=(1,0)$。",
+      "text": "只有 ②、④ 各出力 $\\tfrac12$：\n$\\tfrac12(1,-1)+\\tfrac12(1,1)=(1,0)$。",
       "shapeKind": "rectangle",
       "id": "p06-nonunique-c2",
       "name": "p06-nonunique-c2",
@@ -11825,7 +11825,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-3",
+      "text": "$-3$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk0",
       "name": "p08-practice-tk0",
@@ -11856,7 +11856,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-2",
+      "text": "$-2$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk1",
       "name": "p08-practice-tk1",
@@ -11887,7 +11887,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "-1",
+      "text": "$-1$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk2",
       "name": "p08-practice-tk2",
@@ -11918,7 +11918,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "0",
+      "text": "$0$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk3",
       "name": "p08-practice-tk3",
@@ -11949,7 +11949,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "1",
+      "text": "$1$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk4",
       "name": "p08-practice-tk4",
@@ -11980,7 +11980,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "2",
+      "text": "$2$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk5",
       "name": "p08-practice-tk5",
@@ -12011,7 +12011,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "3",
+      "text": "$3$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk6",
       "name": "p08-practice-tk6",
@@ -12042,7 +12042,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "4",
+      "text": "$4$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk7",
       "name": "p08-practice-tk7",
@@ -12073,7 +12073,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "5",
+      "text": "$5$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk8",
       "name": "p08-practice-tk8",
@@ -12104,7 +12104,7 @@
         "lineHeight": 1.1,
         "fontFamily": "Noto Sans CJK TC"
       },
-      "text": "6",
+      "text": "$6$",
       "shapeKind": "rectangle",
       "id": "p08-practice-tk9",
       "name": "p08-practice-tk9",
