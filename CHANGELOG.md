@@ -4,6 +4,8 @@
 
 ## 2026 秋季
 
+- 2026-11-10 — [更新] 第 3 週 KP12、KP14 基礎版簡報（`slides/lec03-kp12-bias-variance-basic.jbd.json`、`slides/lec03-kp14-hard-margin-basic.jbd.json`）依 jbd-maker 新檢查修正版面：負數刻度改為 LaTeX、標籤移到不被線條穿過的位置、長公式手動分行；旁白與配音不變，取代同名檔（配送 commit f617b58，舊版在 git 歷史 8cd1cdd）。未改週次、日期與連結。
+
 - 2026-11-10 — [更新] 第 3 週新增 KP12、KP14 的「基礎版」中文簡報（`slides/lec03-kp12-bias-variance-basic.jbd.json`、`slides/lec03-kp14-hard-margin-basic.jbd.json`；jbd-maker 證據先行試驗製作，公式一律 LaTeX，含逐步配音；配送 commit 6183ea0），與原版並存；`schedule.md` 第 3 週兩列加上連結與備註。未改週次與日期。
 
 - 2026-11-09 — [更新] 第 3 週進度表（`schedule.md`）依實際簡報內容更新：KP01–KP03、KP07–KP09、KP11–KP16 中文簡報已補核心公式推導頁並含逐步配音（jbd-maker 製作；配送 commit e07e18e，取代同名檔，舊版保留在 git 歷史 4e59289）；英文版尚未同步新增頁。簡報連結皆指向現存檔案，未改週次與日期。
