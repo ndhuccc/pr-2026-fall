@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-11 08:33（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp12-bias-variance-basic.jbd.json。來源任務 `learning-first-skill-pilot-v01`（確認：使用者 2026-11-11 於對話回覆「好，配送並推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-10 18:42（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp12-bias-variance-basic.jbd.json、slides/lec03-kp14-hard-margin-basic.jbd.json。來源任務 `learning-first-skill-pilot-v01`（確認：使用者 2026-11-10 於對話回覆「好，配送並推送」（確認以 KP12 配音版 v6、KP14 基礎版配音版 v5 取代課程 repo 同名的基礎版簡報））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-10 11:49（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp12-bias-variance-basic.jbd.json、slides/lec03-kp14-hard-margin-basic.jbd.json。來源任務 `learning-first-skill-pilot-v01`（確認：使用者 2026-11-10 於對話要求「以新技能製作的圖型識別第三章的簡報配送到github課程網站」，選擇並存另取檔名、先改 LaTeX 並重新配音，並回答「好，配送並推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
