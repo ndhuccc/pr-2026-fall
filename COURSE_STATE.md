@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-12 — 依老師要求，投影片下載頁更新為 JianBauDau Player 1.0.6（`ndhuccc/IDL115` 的 `player-v1.0.6`），同時提供免安裝版與安裝版；同步 `scripts/build_docs.py`、`slides/FORMATS.md` 與異動紀錄。兩個公開下載均已實際下載並核對 SHA-256；本機網站建置及產出的下載連結檢查通過。執行檔來源與測試紀錄見 Release 的 `build-report.json`。
+
 - 2026-11-11 08:33（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp12-bias-variance-basic.jbd.json。來源任務 `learning-first-skill-pilot-v01`（確認：使用者 2026-11-11 於對話回覆「好，配送並推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-10 18:42（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp12-bias-variance-basic.jbd.json、slides/lec03-kp14-hard-margin-basic.jbd.json。來源任務 `learning-first-skill-pilot-v01`（確認：使用者 2026-11-10 於對話回覆「好，配送並推送」（確認以 KP12 配音版 v6、KP14 基礎版配音版 v5 取代課程 repo 同名的基礎版簡報））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
