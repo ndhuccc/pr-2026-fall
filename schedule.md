@@ -1,7 +1,7 @@
 # 週次進度表(Schedule)
 
 學期:2026 秋季｜第 1 週起始日:2026-09-07｜本學期共 17 週
-依教學計畫表(115 學年第 1 學期)編寫。因兩個週一放假,期中前的 Bayes 與 Linear 兩組單元各合併為一次課。
+依教學計畫表(115 學年第 1 學期)編寫。因兩個週一放假,期中前的 Bayes 與 Linear 兩組單元各合併為一次課;第 11 週的樣板匹配(原第 11、12 週)合併為一次課,其後單元各提前一週。
 
 <span class="self-study">紫色字</span> = 自主學習的知識點(其餘為課堂講授)。
 
@@ -27,12 +27,14 @@
 | 10 | 11/09 | Feature Generation I (1) – 動機與線性表示（基底、投影、KLT／PCA、SVD） | [KP01 特徵生成動機](lectures/lec10-kp01-feature-generation-motivation.md) · [簡報](slides/lec10-kp01-feature-generation-motivation.jbd.json)；[KP02 基底、投影與重建](lectures/lec10-kp02-basis-projection.md) · [簡報](slides/lec10-kp02-basis-projection.jbd.json)；[KP03 主成分分析](lectures/lec10-kp03-pca-klt.md) · [簡報](slides/lec10-kp03-pca-klt.jbd.json)；[KP04 奇異值分解](lectures/lec10-kp04-svd.md) · [簡報](slides/lec10-kp04-svd.jbd.json) | KP01–KP04；HW01 截止 |
 | 10 | 11/09 | Feature Generation I (2) – 非負與非線性表示（NMF、流形、Kernel PCA） | [KP05 非負矩陣分解](lectures/lec10-kp05-nmf.md) · [簡報](slides/lec10-kp05-nmf.jbd.json)；[KP06 非線性降維與流形](lectures/lec10-kp06-manifold.md) · [簡報](slides/lec10-kp06-manifold.jbd.json)；[KP07 核主成分分析](lectures/lec10-kp07-kernel-pca.md) · [簡報](slides/lec10-kp07-kernel-pca.jbd.json) | KP05–KP07 |
 | 10 | 11/09 | Feature Generation I (3) – 圖方法（Laplacian Eigenmaps、LLE、ISOMAP） | [KP08 拉普拉斯特徵映射](lectures/lec10-kp08-laplacian-eigenmaps.md) · [簡報](slides/lec10-kp08-laplacian-eigenmaps.jbd.json)；[KP09 局部重建與圖距離](lectures/lec10-kp09-lle-isomap.md) · [簡報](slides/lec10-kp09-lle-isomap.jbd.json) | KP08–KP09 |
-| 11 | 11/16 | Template Matching (1) – Matching Techniques & Distance Measures | | |
-| 12 | 11/23 | Template Matching (2) – Dynamic Time Warping | | |
-| 13 | 11/30 | Context-Dependent Classification (1) – Markov Models | | |
-| 14 | 12/07 | Context-Dependent Classification (2) – Hidden Markov Models | | |
-| 15 | 12/14 | Clustering (1) – K-means & Hierarchical Clustering | | |
-| 16 | 12/21 | Clustering (2) – Evaluation & Course Project Discussion | | |
+| 11 | 11/16 | Template Matching (1) – Matching Techniques & Distance Measures(序列樣板匹配:動機、格網路徑與代價、Bellman 動態規劃、編輯距離) | [KP01 為什麼不能直接相減](lectures/lec11-kp01-motivation.md)；[KP02 格網、路徑與代價](lectures/lec11-kp02-grid-path.md)；[KP03 Bellman 最適性原理與動態規劃](lectures/lec11-kp03-dp-bellman.md)；[KP04 編輯距離](lectures/lec11-kp04-edit-distance.md) | KP01–KP04;合併原計畫第 11、12 週,共 11 個知識點分三段;KP01–KP06 為必學,KP07–KP11 為自主學習 |
+| 11 | 11/16 | Template Matching (2) – Dynamic Time Warping(動態時間校正:語音辨識的問題設定與特徵、端點／全域／局部限制) | [KP05 DTW：語音的問題設定與特徵](lectures/lec11-kp05-dtw-setup.md)；[KP06 DTW 的限制條件](lectures/lec11-kp06-dtw-constraints.md) | KP05–KP06 |
+| 11 | 11/16 | Template Matching (3) – Correlation, Deformable Templates & Retrieval(互相關與加速、可變形樣板、內容檢索與相關性回饋) | [KP07 互相關樣板匹配](lectures/lec11-kp07-cross-correlation.md){ .self-study }；[KP08 相關匹配的計算加速](lectures/lec11-kp08-correlation-speedup.md){ .self-study }；[KP09 可變形樣板：內部與外部能量](lectures/lec11-kp09-deformable-energy.md){ .self-study }；[KP10 可變形樣板的三要素與公式](lectures/lec11-kp10-deformable-formulas.md){ .self-study }；[KP11 內容檢索與相關性回饋](lectures/lec11-kp11-retrieval-feedback.md){ .self-study } | KP07–KP11;全部為自主學習 |
+| 12 | 11/23 | Context-Dependent Classification (1) – Markov Models | | 原第 13 週,提前一週 |
+| 13 | 11/30 | Context-Dependent Classification (2) – Hidden Markov Models | | 原第 14 週,提前一週 |
+| 14 | 12/07 | Clustering (1) – K-means & Hierarchical Clustering | | 原第 15 週,提前一週 |
+| 15 | 12/14 | Clustering (2) – Evaluation & Course Project Discussion | | 原第 16 週,提前一週 |
+| 16 | 12/21 | 彈性週(期末複習與專題準備) | | 因第 11、12 週合併而空出;老師 2026-11-12 決定先標為彈性週 |
 | 17 | 12/28 | 期末考 / 期末專題發表 Final Exam / Project Presentation | | 期末考(學校期末評量 12/28–31) |
 
 > 第 10 週簡報已更新為 reasoning-led-teaching-deck 2.4.1 重製審閱稿（KP01–KP09，中英文共 18 份）。KP01 已補「資料外洩」說明，KP01、KP02 已修正公式排版；最終教學稽核尚待完成。
