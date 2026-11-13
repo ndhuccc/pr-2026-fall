@@ -141,6 +141,14 @@ nav:
           - KP09 可變形樣板：內部與外部能量: lectures/lec11-kp09-deformable-energy.md
           - KP10 可變形樣板的三要素與公式: lectures/lec11-kp10-deformable-formulas.md
           - KP11 內容檢索與相關性回饋: lectures/lec11-kp11-retrieval-feedback.md
+      - 第 12 週 Week 12:
+          - KP01 相鄰觀測的相依: lectures/lec12-kp01-context.md
+          - KP02 序列的貝氏分類器: lectures/lec12-kp02-sequence-bayes.md
+          - KP03 一階馬可夫鏈: lectures/lec12-kp03-markov-chain.md
+          - KP04 Viterbi 演算法: lectures/lec12-kp04-viterbi.md
+          - KP05 Viterbi 手算實例: lectures/lec12-kp05-viterbi-example.md
+          - KP06 符號間干擾與群集: lectures/lec12-kp06-equalization-isi.md
+          - KP07 狀態與有限狀態機: lectures/lec12-kp07-state-fsm.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
