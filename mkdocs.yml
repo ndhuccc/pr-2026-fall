@@ -157,6 +157,15 @@ nav:
           - KP05 Baum-Welch 重估: lectures/lec13-kp05-baum-welch.md
           - KP06 Viterbi 重估: lectures/lec13-kp06-viterbi-reestimation.md
           - KP07 連續觀測與高斯混合: lectures/lec13-kp07-continuous-hmm.md
+      - 第 14 週 Week 14:
+          - KP01 K 平均分群: lectures/lec14-kp01-kmeans.md
+          - KP02 K 中心點分群: lectures/lec14-kp02-kmedoids.md
+          - KP03 階層凝聚分群: lectures/lec14-kp03-hierarchical-gas.md
+          - KP04 連結法與更新公式: lectures/lec14-kp04-linkage.md
+          - KP05 單調性與圖論方法: lectures/lec14-kp05-monotonicity-graph.md
+          - KP06 共表型矩陣與分裂法: lectures/lec14-kp06-cophenetic-divisive.md
+          - KP07 切樹的層級選擇: lectures/lec14-kp07-cut-level.md
+          - KP08 大資料階層分群: lectures/lec14-kp08-large-data-hierarchical.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
