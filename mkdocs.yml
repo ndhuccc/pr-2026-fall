@@ -166,6 +166,14 @@ nav:
           - KP06 共表型矩陣與分裂法: lectures/lec14-kp06-cophenetic-divisive.md
           - KP07 切樹的層級選擇: lectures/lec14-kp07-cut-level.md
           - KP08 大資料階層分群: lectures/lec14-kp08-large-data-hierarchical.md
+      - 第 15 週 Week 15:
+          - KP01 分群效度的檢定架構: lectures/lec15-kp01-validity-intro.md
+          - KP02 外部準則: lectures/lec15-kp02-external-indices.md
+          - KP03 內部準則: lectures/lec15-kp03-internal-indices.md
+          - KP04 相對準則: lectures/lec15-kp04-relative-criteria.md
+          - KP05 修正 Hubert 與 Dunn 指標: lectures/lec15-kp05-dunn-hubert.md
+          - KP06 DB 指標與資訊準則: lectures/lec15-kp06-db-information.md
+          - KP07 分群傾向: lectures/lec15-kp07-clustering-tendency.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
