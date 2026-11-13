@@ -149,6 +149,14 @@ nav:
           - KP05 Viterbi 手算實例: lectures/lec12-kp05-viterbi-example.md
           - KP06 符號間干擾與群集: lectures/lec12-kp06-equalization-isi.md
           - KP07 狀態與有限狀態機: lectures/lec12-kp07-state-fsm.md
+      - 第 13 週 Week 13:
+          - KP01 隱藏狀態的直覺: lectures/lec13-kp01-hidden-states.md
+          - KP02 HMM 的正式定義: lectures/lec13-kp02-hmm-definition.md
+          - KP03 前向後向遞迴: lectures/lec13-kp03-forward-backward.md
+          - KP04 最佳路徑辨識: lectures/lec13-kp04-best-path.md
+          - KP05 Baum-Welch 重估: lectures/lec13-kp05-baum-welch.md
+          - KP06 Viterbi 重估: lectures/lec13-kp06-viterbi-reestimation.md
+          - KP07 連續觀測與高斯混合: lectures/lec13-kp07-continuous-hmm.md
   - 作業 Assignments:
       - 作業繳交說明 Submission Guide: assignments/README.md
       - 請 AI agent 協助 AI Agent Prompt: assignments/ai-agent-prompt.md
