@@ -197,7 +197,10 @@ def self_study_stems() -> set[str]:
     if not p.exists():
         return set()
     text = p.read_text(encoding="utf-8")
-    return set(re.findall(r"\]\(lectures/(?:en/)?(lec[0-9A-Za-z._-]*)\.md\)\{ \.self-study \}", text))
+    stems = set(re.findall(r"\]\(lectures/(?:en/)?(lec[0-9A-Za-z._-]*)\.md\)\{ \.self-study \}", text))
+    # 沒有對應講義的簡報(例如第 3 週的基礎版簡報)只有簡報連結帶標記,也算自主學習。
+    stems |= set(re.findall(r"\]\(slides/(lec[0-9A-Za-z._-]*?)\.jbd\.json\)\{ \.self-study \}", text))
+    return stems
 
 
 def schedule_weeks() -> dict[str, int]:
