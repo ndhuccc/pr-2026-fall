@@ -267,13 +267,17 @@ def deck_english_title(stem: str) -> str:
 
 
 def slide_label(stem: str, kp_labels: dict[str, str]) -> tuple[str, str]:
-    """投影片檔的顯示名稱與排序鍵:優先用進度表的「KPNN 標題」,漫畫版加註。"""
-    base, comics = (stem[: -len("-with-comics")], True) if stem.endswith("-with-comics") else (stem, False)
+    """投影片檔的顯示名稱與排序鍵:優先用進度表的「KPNN 標題」,漫畫版、基礎版加註。"""
+    base, note, rank = stem, "", "0"
+    for suffix, text, r in (("-with-comics", "漫畫版", "1"), ("-basic", "基礎版", "2")):
+        if stem.endswith(suffix):
+            base, note, rank = stem[: -len(suffix)], text, r
+            break
     label = kp_labels.get(base) or lecture_title(base)
     if not label:
         return "", stem
     key = label if label.startswith("KP") else "~" + label
-    return (f"{label}(漫畫版)" if comics else label), key + ("1" if comics else "0")
+    return (f"{label}({note})" if note else label), key + rank
 
 
 HTML_SKILL = ROOT / ".agents" / "skills" / "slides-to-html"
