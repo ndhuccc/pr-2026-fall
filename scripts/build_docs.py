@@ -236,7 +236,9 @@ def deck_english_title(stem: str) -> str:
         title = json.loads(p.read_text(encoding="utf-8")).get("metadata", {}).get("title", "")
     except (OSError, ValueError):
         return ""
-    return re.sub(r"^KP\d{2}\s+", "", str(title).strip())
+    title = re.sub(r"^KP\d{2}\s+", "", str(title).strip())
+    # 標題常帶「 | Guided study」之類後綴;表格儲存格裡的豎線會被當成欄位分隔,整列錯位,所以只取前半段,殘留的豎線一律轉義。
+    return title.split(" | ")[0].replace("|", "\\|")
 
 
 def slide_label(stem: str, kp_labels: dict[str, str]) -> tuple[str, str]:
