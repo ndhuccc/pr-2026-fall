@@ -587,6 +587,73 @@
     "p06-pythagoras-cue2",
     "p06-pythagoras-cue3",
     "p06-pythagoras-cue4",
+    "p07-multiout-bg",
+    "p07-multiout-rule",
+    "p07-multiout-title",
+    "p07-multiout-ctx",
+    "p07-multiout-src",
+    "p07-multiout-plbg",
+    "p07-multiout-axx",
+    "p07-multiout-axy",
+    "p07-multiout-tx",
+    "p07-multiout-ty",
+    "p07-multiout-d0",
+    "p07-multiout-d1",
+    "p07-multiout-d2",
+    "p07-multiout-d3",
+    "p07-multiout-d4",
+    "p07-multiout-d5",
+    "p07-multiout-tcl",
+    "p07-multiout-ln0",
+    "p07-multiout-ln1",
+    "p07-multiout-ln2",
+    "p07-multiout-tw",
+    "p07-multiout-st",
+    "p07-multiout-c0",
+    "p07-multiout-c1",
+    "p07-multiout-c2",
+    "p07-multiout-c3",
+    "p07-multiout-c4",
+    "p07-multiout-c5",
+    "p07-multiout-cue0",
+    "p07-multiout-cue1",
+    "p07-multiout-cue2",
+    "p07-multiout-cue3",
+    "p07-multiout-cue4",
+    "p07-multiout-cue5",
+    "p07-multiout-m-shadow",
+    "p07-multiout-m-foot-l",
+    "p07-multiout-m-foot-r",
+    "p07-multiout-m-body",
+    "p07-multiout-m-belly",
+    "p07-multiout-m-bow-l",
+    "p07-multiout-m-bow-r",
+    "p07-multiout-m-bow-c",
+    "p07-multiout-m-arm-r",
+    "p07-multiout-m-hand-r",
+    "p07-multiout-m-arm-l",
+    "p07-multiout-m-hand-l",
+    "p07-multiout-m-ear-l",
+    "p07-multiout-m-ear-r",
+    "p07-multiout-m-head",
+    "p07-multiout-m-face",
+    "p07-multiout-m-cap-base",
+    "p07-multiout-m-cap-top",
+    "p07-multiout-m-tassel",
+    "p07-multiout-m-knot",
+    "p07-multiout-m-eye-l",
+    "p07-multiout-m-pupil-l",
+    "p07-multiout-m-glint-l",
+    "p07-multiout-m-eye-r",
+    "p07-multiout-m-pupil-r",
+    "p07-multiout-m-glint-r",
+    "p07-multiout-m-brow-l",
+    "p07-multiout-m-brow-r",
+    "p07-multiout-m-cheek-l",
+    "p07-multiout-m-cheek-r",
+    "p07-multiout-m-mouth",
+    "p07-multiout-m-mark",
+    "p07-multiout-nav",
     "p07-caveats-nav",
     "p07-caveats-cue0",
     "p07-caveats-cue1",
@@ -683,7 +750,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -722,7 +789,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "A 1-D feature $x$. The target is $y=+1$ (positive) or $-1$ (negative). Use a line through the origin $\\widehat y=w\\,x$ to approximate these targets.",
+   "text": "A one-dimensional feature $x$. The target is $y=+1$ (positive) or $-1$ (negative). Use a line through the origin $\\widehat y=w\\,x$ to approximate these targets.",
    "shapeKind": "rectangle"
   },
   "p01-closeness-src": {
@@ -745,7 +812,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -2954,7 +3021,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -3016,7 +3083,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -4053,7 +4120,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "Lowest point: slope $=0$, i.e. $Rw=p$, so $w^{\\ast}=p/R=0.694$, $J_{\\min}=0.491$. This is the normal equation.",
+   "text": "Lowest point: slope $=0$, that is $Rw=p$, so $w^{\\ast}=p/R=0.694$, $J_{\\min}=0.491$. This is the normal equation.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -5926,7 +5993,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Adding the three: constant + falling line + rising parabola = a bowl. The bottom is where the two forces balance: $-2p+2Rw=0$.",
+   "text": "Adding the three: constant + falling line + rising parabola: a bowl. The bottom is where the two forces balance: $-2p+2Rw=0$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -6937,7 +7004,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 20,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -6945,7 +7012,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions",
+   "text": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions",
    "shapeKind": "rectangle"
   },
   "p04-orthogonal-ctx": {
@@ -6999,7 +7066,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -7007,7 +7074,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: KP07 lecture §3–§4 3-D example; $\\mathbf b_1,\\mathbf b_2,\\mathbf y$ follow the lecture's initial values. Note: the two columns of $X$ are bases, not two feature coordinates of a single sample.",
+   "text": "Source: KP07 lecture §3–§4 three-dimensional example; $\\mathbf b_1,\\mathbf b_2,\\mathbf y$ follow the lecture's initial values. Note: the two columns of $X$ are bases, not two feature coordinates of a single sample.",
    "shapeKind": "rectangle"
   },
   "p04-orthogonal-pl": {
@@ -7328,7 +7395,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "$\\widehat{\\mathbf y}$ can only be a linear combination of $\\mathbf b_1,\\mathbf b_2$, i.e. lie in the gray plane. The target $\\mathbf y$ is off the plane. Where is the point in the plane nearest to $\\mathbf y$?",
+   "text": "$\\widehat{\\mathbf y}$ can only be a linear combination of $\\mathbf b_1,\\mathbf b_2$, that is lie in the gray plane. The target $\\mathbf y$ is off the plane. Where is the point in the plane nearest to $\\mathbf y$?",
    "shapeKind": "rectangle"
   },
   "p04-orthogonal-c1": {
@@ -8731,7 +8798,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 15,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -8739,7 +8806,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "$\\widehat{\\mathbf y}=X\\mathbf w$, $X=[\\mathbf b_1\\;\\mathbf b_2]$. Normal equation $X^TX\\,\\mathbf w=X^T\\mathbf y$. (Here $\\mathbf w$ is 2 coefficients, while $\\mathbf y,\\widehat{\\mathbf y}$ are 3-D vectors.)",
+   "text": "$\\widehat{\\mathbf y}=X\\mathbf w$, $X=[\\mathbf b_1\\;\\mathbf b_2]$. Normal equation $X^TX\\,\\mathbf w=X^T\\mathbf y$. (Here $\\mathbf w$ is 2 coefficients, while $\\mathbf y,\\widehat{\\mathbf y}$ are three-dimensional vectors.)",
    "shapeKind": "rectangle"
   },
   "p05-coeff-src": {
@@ -8762,7 +8829,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -9494,7 +9561,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Residual $\\mathbf e=\\mathbf y-\\widehat{\\mathbf y}=(0,0,1.25)$, $\\|\\mathbf e\\|^2=1.25^2=1.5625$. The coefficients are 2-D, the projection point is 3-D; do not mix them up.",
+   "text": "Residual $\\mathbf e=\\mathbf y-\\widehat{\\mathbf y}=(0,0,1.25)$, $\\|\\mathbf e\\|^2=1.25^2=1.5625$. The coefficients are two-dimensional, the projection point is three-dimensional; do not mix them up.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -10505,7 +10572,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -10567,7 +10634,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -12114,7 +12181,7 @@
    "name": "p07-caveats-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12141,7 +12208,7 @@
    "name": "p07-caveats-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12168,7 +12235,7 @@
    "name": "p07-caveats-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -12182,7 +12249,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -12199,7 +12266,7 @@
    "name": "p07-caveats-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12221,7 +12288,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Back to page 1's 1-D data. Add one point far to the right with target $+1$ too, $x=8$: it is also \"correct\", but what happens to the best line?",
+   "text": "Back to page 1's one-dimensional data. Add one point far to the right with target $+1$ too, $x=8$: it is also \"correct\", but what happens to the best line?",
    "shapeKind": "rectangle"
   },
   "p07-caveats-src": {
@@ -12230,7 +12297,7 @@
    "name": "p07-caveats-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -12244,7 +12311,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -12261,7 +12328,7 @@
    "name": "p07-caveats-olbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8726,
+    "x": 10166,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -12288,7 +12355,7 @@
    "name": "p07-caveats-olax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740,
+    "x": 10180,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -12325,7 +12392,7 @@
    "name": "p07-caveats-olay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740,
+    "x": 10180,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -12362,7 +12429,7 @@
    "name": "p07-caveats-olxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8710.0,
+    "x": 10150.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12393,7 +12460,7 @@
    "name": "p07-caveats-olxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8800.90909090909,
+    "x": 10240.90909090909,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12424,7 +12491,7 @@
    "name": "p07-caveats-olxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8891.818181818182,
+    "x": 10331.818181818182,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12455,7 +12522,7 @@
    "name": "p07-caveats-olxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8982.727272727272,
+    "x": 10422.727272727272,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12486,7 +12553,7 @@
    "name": "p07-caveats-olxt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9073.636363636364,
+    "x": 10513.636363636364,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12517,7 +12584,7 @@
    "name": "p07-caveats-olxt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9164.545454545454,
+    "x": 10604.545454545454,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -12548,7 +12615,7 @@
    "name": "p07-caveats-olgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740,
+    "x": 10180,
     "y": 410.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12585,7 +12652,7 @@
    "name": "p07-caveats-olyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684,
+    "x": 10124,
     "y": 401.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12616,7 +12683,7 @@
    "name": "p07-caveats-olgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740,
+    "x": 10180,
     "y": 310.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12653,7 +12720,7 @@
    "name": "p07-caveats-olyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684,
+    "x": 10124,
     "y": 301.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12684,7 +12751,7 @@
    "name": "p07-caveats-olgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740,
+    "x": 10180,
     "y": 210.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12721,7 +12788,7 @@
    "name": "p07-caveats-olyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684,
+    "x": 10124,
     "y": 201.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12752,7 +12819,7 @@
    "name": "p07-caveats-olxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8940,
+    "x": 10380,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -12783,7 +12850,7 @@
    "name": "p07-caveats-olyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8746,
+    "x": 10186,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -12814,7 +12881,7 @@
    "name": "p07-caveats-op0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8753.727272727272,
+    "x": 10193.727272727272,
     "y": 402.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12844,7 +12911,7 @@
    "name": "p07-caveats-op1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8785.545454545454,
+    "x": 10225.545454545454,
     "y": 402.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12874,7 +12941,7 @@
    "name": "p07-caveats-op2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8831.0,
+    "x": 10271.0,
     "y": 402.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12904,7 +12971,7 @@
    "name": "p07-caveats-op3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8813.818181818182,
+    "x": 10253.818181818182,
     "y": 202.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12938,7 +13005,7 @@
    "name": "p07-caveats-op4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8863.818181818182,
+    "x": 10303.818181818182,
     "y": 202.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12972,7 +13039,7 @@
    "name": "p07-caveats-op5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8895.636363636364,
+    "x": 10335.636363636364,
     "y": 202.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13006,7 +13073,7 @@
    "name": "p07-caveats-l1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740.0,
+    "x": 10180.0,
     "y": -314.6056782334383,
     "scaleX": 1,
     "scaleY": 1,
@@ -13043,7 +13110,7 @@
    "name": "p07-caveats-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -13076,7 +13143,7 @@
    "name": "p07-caveats-out",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9184.545454545454,
+    "x": 10624.545454545454,
     "y": 200.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13111,7 +13178,7 @@
    "name": "p07-caveats-l2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8740.0,
+    "x": 10180.0,
     "y": 151.3420528859824,
     "scaleX": 1,
     "scaleY": 1,
@@ -13149,7 +13216,7 @@
    "name": "p07-caveats-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -13183,7 +13250,7 @@
    "name": "p07-caveats-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 288,
     "scaleX": 1,
     "scaleY": 1,
@@ -13217,7 +13284,7 @@
    "name": "p07-caveats-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 402,
     "scaleX": 1,
     "scaleY": 1,
@@ -13251,7 +13318,7 @@
    "name": "p07-caveats-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9816,
+    "x": 11256,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -13287,7 +13354,7 @@
    "name": "p07-caveats-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 496,
     "scaleX": 1,
     "scaleY": 1,
@@ -13321,7 +13388,7 @@
    "name": "p07-caveats-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -13348,7 +13415,7 @@
    "name": "p07-caveats-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -13375,7 +13442,7 @@
    "name": "p07-caveats-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -13402,7 +13469,7 @@
    "name": "p07-caveats-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -13429,7 +13496,7 @@
    "name": "p07-caveats-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -13456,7 +13523,7 @@
    "name": "p07-caveats-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13483,7 +13550,7 @@
    "name": "p07-caveats-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13510,7 +13577,7 @@
    "name": "p07-caveats-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -13537,7 +13604,7 @@
    "name": "p07-caveats-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13578,7 +13645,7 @@
    "name": "p07-caveats-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.62,
+    "x": 10129.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -13605,7 +13672,7 @@
    "name": "p07-caveats-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -13646,7 +13713,7 @@
    "name": "p07-caveats-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8722.38,
+    "x": 10162.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -13673,7 +13740,7 @@
    "name": "p07-caveats-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -13700,7 +13767,7 @@
    "name": "p07-caveats-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -13727,7 +13794,7 @@
    "name": "p07-caveats-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -13754,7 +13821,7 @@
    "name": "p07-caveats-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13781,7 +13848,7 @@
    "name": "p07-caveats-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -13808,7 +13875,7 @@
    "name": "p07-caveats-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13835,7 +13902,7 @@
    "name": "p07-caveats-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -13872,7 +13939,7 @@
    "name": "p07-caveats-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -13899,7 +13966,7 @@
    "name": "p07-caveats-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8709.78,
+    "x": 10149.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -13926,7 +13993,7 @@
    "name": "p07-caveats-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.14,
+    "x": 10153.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -13953,7 +14020,7 @@
    "name": "p07-caveats-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.98,
+    "x": 10153.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -13980,7 +14047,7 @@
    "name": "p07-caveats-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.3,
+    "x": 10131.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -14007,7 +14074,7 @@
    "name": "p07-caveats-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8694.66,
+    "x": 10134.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -14034,7 +14101,7 @@
    "name": "p07-caveats-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.5,
+    "x": 10135.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -14061,7 +14128,7 @@
    "name": "p07-caveats-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -14098,7 +14165,7 @@
    "name": "p07-caveats-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -14135,7 +14202,7 @@
    "name": "p07-caveats-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -14162,7 +14229,7 @@
    "name": "p07-caveats-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -14189,7 +14256,7 @@
    "name": "p07-caveats-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.48,
+    "x": 10143.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -14216,7 +14283,7 @@
    "name": "p07-caveats-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.8,
+    "x": 10158.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14247,7 +14314,7 @@
    "name": "p08-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14274,7 +14341,7 @@
    "name": "p08-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -14301,7 +14368,7 @@
    "name": "p08-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -14315,7 +14382,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -14323,7 +14390,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Practice: bases (1,0,0), (0,1,0), target (2,−1,3): find the coefficients, projection and residual",
+   "text": "Practice: bases (1,0,0), (0,1,0), target (2,$−1$,3): find the coefficients, projection and residual",
    "shapeKind": "rectangle"
   },
   "p08-practice-ctx": {
@@ -14332,7 +14399,7 @@
    "name": "p08-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14363,7 +14430,7 @@
    "name": "p08-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -14394,7 +14461,7 @@
    "name": "p08-practice-pl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10162.568521192781,
+    "x": 11602.568521192781,
     "y": 338.20981870389943,
     "scaleX": 1,
     "scaleY": 1,
@@ -14440,7 +14507,7 @@
    "name": "p08-practice-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10310.0,
+    "x": 11750.0,
     "y": 400.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14489,7 +14556,7 @@
    "name": "p08-practice-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10310.0,
+    "x": 11750.0,
     "y": 309.39658396674196,
     "scaleX": 1,
     "scaleY": 1,
@@ -14538,7 +14605,7 @@
    "name": "p08-practice-e1t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10456.953893117887,
+    "x": 11896.953893117887,
     "y": 434.97694655894315,
     "scaleX": 1,
     "scaleY": 1,
@@ -14569,7 +14636,7 @@
    "name": "p08-practice-e2t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10327.30302149885,
+    "x": 11767.30302149885,
     "y": 283.39658396674196,
     "scaleX": 1,
     "scaleY": 1,
@@ -14600,7 +14667,7 @@
    "name": "p08-practice-ay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10310.0,
+    "x": 11750.0,
     "y": 211.83730974760414,
     "scaleX": 1,
     "scaleY": 1,
@@ -14649,7 +14716,7 @@
    "name": "p08-practice-ayt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10548.604764736921,
+    "x": 11988.604764736921,
     "y": 189.83730974760414,
     "scaleX": 1,
     "scaleY": 1,
@@ -14680,7 +14747,7 @@
    "name": "p08-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10670,
+    "x": 12110,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -14713,7 +14780,7 @@
    "name": "p08-practice-hy",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10532.604764736921,
+    "x": 11972.604764736921,
     "y": 548.5573091511443,
     "scaleX": 1,
     "scaleY": 1,
@@ -14748,7 +14815,7 @@
    "name": "p08-practice-es",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10540.604764736921,
+    "x": 11980.604764736921,
     "y": 211.83730974760414,
     "scaleX": 1,
     "scaleY": 1,
@@ -14787,7 +14854,7 @@
    "name": "p08-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10670,
+    "x": 12110,
     "y": 234,
     "scaleX": 1,
     "scaleY": 1,
@@ -14821,7 +14888,7 @@
    "name": "p08-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10670,
+    "x": 12110,
     "y": 342,
     "scaleX": 1,
     "scaleY": 1,
@@ -14855,7 +14922,7 @@
    "name": "p08-practice-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11256,
+    "x": 12696,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -14891,7 +14958,7 @@
    "name": "p08-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10670,
+    "x": 12110,
     "y": 452,
     "scaleX": 1,
     "scaleY": 1,
@@ -14925,7 +14992,7 @@
    "name": "p08-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -14952,7 +15019,7 @@
    "name": "p08-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14979,7 +15046,7 @@
    "name": "p08-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15006,7 +15073,7 @@
    "name": "p08-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -15033,7 +15100,7 @@
    "name": "p08-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -15060,7 +15127,7 @@
    "name": "p08-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15087,7 +15154,7 @@
    "name": "p08-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15114,7 +15181,7 @@
    "name": "p08-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -15141,7 +15208,7 @@
    "name": "p08-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124.16,
+    "x": 11564.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15182,7 +15249,7 @@
    "name": "p08-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.62,
+    "x": 11569.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -15209,7 +15276,7 @@
    "name": "p08-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -15250,7 +15317,7 @@
    "name": "p08-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10162.38,
+    "x": 11602.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -15277,7 +15344,7 @@
    "name": "p08-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -15304,7 +15371,7 @@
    "name": "p08-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -15331,7 +15398,7 @@
    "name": "p08-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15358,7 +15425,7 @@
    "name": "p08-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15385,7 +15452,7 @@
    "name": "p08-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -15412,7 +15479,7 @@
    "name": "p08-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15439,7 +15506,7 @@
    "name": "p08-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -15476,7 +15543,7 @@
    "name": "p08-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -15503,7 +15570,7 @@
    "name": "p08-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10149.78,
+    "x": 11589.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15530,7 +15597,7 @@
    "name": "p08-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.14,
+    "x": 11593.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -15557,7 +15624,7 @@
    "name": "p08-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.98,
+    "x": 11593.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15584,7 +15651,7 @@
    "name": "p08-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10131.3,
+    "x": 11571.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15611,7 +15678,7 @@
    "name": "p08-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134.66,
+    "x": 11574.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -15638,7 +15705,7 @@
    "name": "p08-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.5,
+    "x": 11575.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15665,7 +15732,7 @@
    "name": "p08-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -15702,7 +15769,7 @@
    "name": "p08-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -15739,7 +15806,7 @@
    "name": "p08-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15766,7 +15833,7 @@
    "name": "p08-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15793,7 +15860,7 @@
    "name": "p08-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.48,
+    "x": 11583.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -15820,7 +15887,7 @@
    "name": "p08-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.8,
+    "x": 11598.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15851,7 +15918,7 @@
    "name": "p09-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11520,
+    "x": 12960,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15878,7 +15945,7 @@
    "name": "p09-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15905,7 +15972,7 @@
    "name": "p09-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -15919,7 +15986,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -15936,7 +16003,7 @@
    "name": "p09-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15958,7 +16025,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Recall along the 3-D example; the five conclusions of this KP are on the right.",
+   "text": "Recall along the three-dimensional example; the five conclusions of this KP are on the right.",
    "shapeKind": "rectangle"
   },
   "p09-summary-pl": {
@@ -15967,7 +16034,7 @@
    "name": "p09-summary-pl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11692.322925614979,
+    "x": 13132.322925614979,
     "y": 272.3224751890816,
     "scaleX": 1,
     "scaleY": 1,
@@ -16013,7 +16080,7 @@
    "name": "p09-summary-b1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11750.0,
+    "x": 13190.0,
     "y": 400.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16062,7 +16129,7 @@
    "name": "p09-summary-b2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11750.0,
+    "x": 13190.0,
     "y": 338.02361332501977,
     "scaleX": 1,
     "scaleY": 1,
@@ -16111,7 +16178,7 @@
    "name": "p09-summary-ay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11750.0,
+    "x": 13190.0,
     "y": 223.87264114149554,
     "scaleX": 1,
     "scaleY": 1,
@@ -16160,7 +16227,7 @@
    "name": "p09-summary-hy",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11976.89532398317,
+    "x": 13416.89532398317,
     "y": 360.50597422630386,
     "scaleX": 1,
     "scaleY": 1,
@@ -16194,7 +16261,7 @@
    "name": "p09-summary-es",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11983.89532398317,
+    "x": 13423.89532398317,
     "y": 223.87264114149554,
     "scaleX": 1,
     "scaleY": 1,
@@ -16232,7 +16299,7 @@
    "name": "p09-summary-r1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11983.89532398317,
+    "x": 13423.89532398317,
     "y": 351.41904092080534,
     "scaleX": 1,
     "scaleY": 1,
@@ -16273,7 +16340,7 @@
    "name": "p09-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -16307,7 +16374,7 @@
    "name": "p09-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -16341,7 +16408,7 @@
    "name": "p09-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -16375,7 +16442,7 @@
    "name": "p09-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -16409,7 +16476,7 @@
    "name": "p09-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -16443,7 +16510,7 @@
    "name": "p09-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -16474,7 +16541,7 @@
    "name": "p09-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -16505,7 +16572,7 @@
    "name": "p09-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -16541,7 +16608,7 @@
    "name": "p09-summary-s3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -16572,7 +16639,7 @@
    "name": "p09-summary-s4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -16603,7 +16670,7 @@
    "name": "p09-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11562.48,
+    "x": 13002.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -16630,7 +16697,7 @@
    "name": "p09-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11587.68,
+    "x": 13027.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -16657,7 +16724,7 @@
    "name": "p09-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -16684,7 +16751,7 @@
    "name": "p09-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.84,
+    "x": 13005.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -16711,7 +16778,7 @@
    "name": "p09-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -16738,7 +16805,7 @@
    "name": "p09-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11586.0,
+    "x": 13026.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16765,7 +16832,7 @@
    "name": "p09-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16792,7 +16859,7 @@
    "name": "p09-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11583.9,
+    "x": 13023.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16819,7 +16886,7 @@
    "name": "p09-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11603.64,
+    "x": 13043.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16860,7 +16927,7 @@
    "name": "p09-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11609.94,
+    "x": 13049.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16887,7 +16954,7 @@
    "name": "p09-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11559.12,
+    "x": 12999.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16928,7 +16995,7 @@
    "name": "p09-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11554.5,
+    "x": 12994.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16955,7 +17022,7 @@
    "name": "p09-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11604.9,
+    "x": 13044.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16982,7 +17049,7 @@
    "name": "p09-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11557.86,
+    "x": 12997.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -17009,7 +17076,7 @@
    "name": "p09-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11561.64,
+    "x": 13001.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17036,7 +17103,7 @@
    "name": "p09-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566.26,
+    "x": 13006.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -17063,7 +17130,7 @@
    "name": "p09-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -17090,7 +17157,7 @@
    "name": "p09-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11568.36,
+    "x": 13008.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17117,7 +17184,7 @@
    "name": "p09-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -17154,7 +17221,7 @@
    "name": "p09-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11567.1,
+    "x": 13007.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -17181,7 +17248,7 @@
    "name": "p09-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17246,7 +17313,7 @@
    "name": "p09-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17311,7 +17378,7 @@
    "name": "p09-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -17348,7 +17415,7 @@
    "name": "p09-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -17385,7 +17452,7 @@
    "name": "p09-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11598.6,
+    "x": 13038.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17412,7 +17479,7 @@
    "name": "p09-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.0,
+    "x": 13005.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17439,7 +17506,7 @@
    "name": "p09-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -17466,7 +17533,7 @@
    "name": "p09-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11579.28,
+    "x": 13019.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -17515,7 +17582,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 01/09 · 1 From separating to approximating · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 01/10 · 1 From separating to approximating · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-closeness-cue0": {
@@ -17715,7 +17782,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 02/09 · 2 The normal equation · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 02/10 · 2 The normal equation · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-bowl-cue0": {
@@ -17915,7 +17982,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 03/09 · 2 The normal equation · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 03/10 · 2 The normal equation · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-expand-cue0": {
@@ -18115,7 +18182,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 04/09 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 04/10 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-orthogonal-cue0": {
@@ -18315,7 +18382,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 05/09 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 05/10 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-coeff-cue0": {
@@ -18515,7 +18582,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 06/09 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 06/10 · 3 Orthogonality and projection · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-pythagoras-cue0": {
@@ -18693,7 +18760,7 @@
    "name": "p07-caveats-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -18715,7 +18782,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 07/09 · 4 Limits and multiple outputs · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 08/10 · 4 Limits and multiple outputs · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-caveats-cue0": {
@@ -18724,7 +18791,7 @@
    "name": "p07-caveats-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18757,7 +18824,7 @@
    "name": "p07-caveats-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18781,7 +18848,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the big blue point: x=8, target +1.",
+   "text": "    See the big blue point: x=8, target $+1$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -18791,7 +18858,7 @@
    "name": "p07-caveats-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18825,7 +18892,7 @@
    "name": "p07-caveats-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18859,7 +18926,7 @@
    "name": "p07-caveats-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18893,7 +18960,7 @@
    "name": "p08-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -18915,7 +18982,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 08/09 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 09/10 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-practice-cue0": {
@@ -18924,7 +18991,7 @@
    "name": "p08-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18957,7 +19024,7 @@
    "name": "p08-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18991,7 +19058,7 @@
    "name": "p08-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19025,7 +19092,7 @@
    "name": "p08-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19059,7 +19126,7 @@
    "name": "p09-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11670,
+    "x": 13110,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -19081,7 +19148,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 09/09 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 10/10 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p09-summary-cue0": {
@@ -19090,7 +19157,7 @@
    "name": "p09-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19123,7 +19190,7 @@
    "name": "p09-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19157,7 +19224,7 @@
    "name": "p09-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19191,7 +19258,7 @@
    "name": "p09-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19225,7 +19292,7 @@
    "name": "p09-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19259,7 +19326,7 @@
    "name": "p09-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19317,6 +19384,2066 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p07-multiout-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 8640,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-bg",
+   "name": "p07-multiout-bg",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 8680,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-rule",
+   "name": "p07-multiout-rule",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-title": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-title",
+   "name": "p07-multiout-title",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "With $M$ classes the target is a one-hot vector $\\mathbf y$ ($1$ for the correct class, $0$ elsewhere); each column $\\mathbf w_i$ of $W$ holds the weights of class $i$.",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-ctx",
+   "name": "p07-multiout-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-src": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP07 lecture §5 (multiple outputs can be split); the example is a $6$-point, $3$-class demo added here (scalar feature, through the origin), recomputed independently. Added page: the original deck covered this in one sentence, restored from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-src",
+   "name": "p07-multiout-src",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 8690,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-plbg",
+   "name": "p07-multiout-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-axx": {
+   "type": "shape",
+   "transform": {
+    "x": 8710,
+    "y": 450,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 445,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p07-multiout-axx",
+   "name": "p07-multiout-axx",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-axy": {
+   "type": "shape",
+   "transform": {
+    "x": 8870,
+    "y": 150,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 350,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ],
+   "id": "p07-multiout-axy",
+   "name": "p07-multiout-axy",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-tx": {
+   "type": "text",
+   "transform": {
+    "x": 9130,
+    "y": 456,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "x",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-tx",
+   "name": "p07-multiout-tx",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-ty": {
+   "type": "text",
+   "transform": {
+    "x": 8878,
+    "y": 142,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Target / output",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-ty",
+   "name": "p07-multiout-ty",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d0": {
+   "type": "shape",
+   "transform": {
+    "x": 8712,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d0",
+   "name": "p07-multiout-d0",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d1": {
+   "type": "shape",
+   "transform": {
+    "x": 8787.0,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d1",
+   "name": "p07-multiout-d1",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d2": {
+   "type": "shape",
+   "transform": {
+    "x": 8862,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d2",
+   "name": "p07-multiout-d2",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d3": {
+   "type": "shape",
+   "transform": {
+    "x": 8937.0,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d3",
+   "name": "p07-multiout-d3",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d4": {
+   "type": "shape",
+   "transform": {
+    "x": 9012,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d4",
+   "name": "p07-multiout-d4",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-d5": {
+   "type": "shape",
+   "transform": {
+    "x": 9087.0,
+    "y": 162.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p07-multiout-d5",
+   "name": "p07-multiout-d5",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-tcl": {
+   "type": "text",
+   "transform": {
+    "x": 8720,
+    "y": 190,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 440,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Dots: the target $1$ of each point in its own class; blue: class 1, orange: class 2, green: class 3",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-tcl",
+   "name": "p07-multiout-tcl",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-ln0": {
+   "type": "shape",
+   "transform": {
+    "x": 8705.0,
+    "y": 352.7368421052631,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 277.5,
+   "height": 163.57894736842104,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#2563eb",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p07-multiout-ln0",
+   "name": "p07-multiout-ln0",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-ln1": {
+   "type": "shape",
+   "transform": {
+    "x": 8705.0,
+    "y": 427.89473684210526,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 277.5,
+   "height": 54.5263157894737,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p07-multiout-ln1",
+   "name": "p07-multiout-ln1",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-ln2": {
+   "type": "shape",
+   "transform": {
+    "x": 8798.75,
+    "y": 339.4736842105263,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 183.75,
+   "height": 180.5263157894737,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#16a34a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p07-multiout-ln2",
+   "name": "p07-multiout-ln2",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-tw": {
+   "type": "text",
+   "transform": {
+    "x": 8710,
+    "y": 222,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 330,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#334155",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Three lines: slopes $w=-0.316$, $0.105$, $0.526$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-tw",
+   "name": "p07-multiout-tw",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-st": {
+   "type": "shape",
+   "transform": {
+    "x": 9118,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p07-multiout-st",
+   "name": "p07-multiout-st",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c0": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 57,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 15,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$\\|\\mathbf y-W^T\\mathbf x\\|^2=\\sum_{i=1}^M(y_i-\\mathbf w_i^T\\mathbf x)^2$, so $E\\|\\mathbf y-W^T\\mathbf x\\|^2=\\sum_{i=1}^ME\\left[(y_i-\\mathbf w_i^T\\mathbf x)^2\\right]$. The squared length of a vector is the sum of its squared coordinates.",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-c0",
+   "name": "p07-multiout-c0",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c1": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 185,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 58,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Term $i$ contains only $\\mathbf w_i$ and the terms share no weights, so each can be minimized separately: solve the normal equation $R_x\\mathbf w_i=\\mathbf p_i$ once per class, with $\\mathbf p_i=E[\\mathbf x\\,y_i]$; all classes share the same $R_x$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-c1",
+   "name": "p07-multiout-c1",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c2": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 253,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 57,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "Example: a scalar feature $x$ through the origin, six points $x=-1,-0.5,0,0.5,1,1.5$ belonging to classes $1,1,2,2,3,3$ in order. We get $R=E[x^2]=0.7917$, $p_1=-0.25$, $p_2=0.0833$, $p_3=0.4167$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-c2",
+   "name": "p07-multiout-c2",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c3": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 320,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 49,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "The best slope per class is $w_i=p_i/R$: $-0.3158$, $0.1053$, $0.5263$. Each line fits only its own one-hot column.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-c3",
+   "name": "p07-multiout-c3",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c4": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 379,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 52,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "The minimum error per class is $E[y_i^2]-p_i^2/R$: $0.2544$, $0.3246$, $0.1140$, summing to $0.6930$, the minimum total error of the whole vector target: minimizing separately or jointly gives the same answer.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-c4",
+   "name": "p07-multiout-c4",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-c5": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 441,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 49,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 11,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "But remember: it splits because the squared norm adds coordinate by coordinate; the three outputs still share the same data and the same $R_x$. The best projection does not guarantee the fewest errors, and it needs finite second moments.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-c5",
+   "name": "p07-multiout-c5",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the formula: the squared length of a vector is the sum of squared coordinates.",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-cue0",
+   "name": "p07-multiout-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: solve once per class.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-cue1",
+   "name": "p07-multiout-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green card: the inputs of the six points and three classes.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-cue2",
+   "name": "p07-multiout-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the three lines: the best slope of each class.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-cue3",
+   "name": "p07-multiout-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the orange card: the three minimum errors add up.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-cue4",
+   "name": "p07-multiout-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-cue5": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: when it splits, and the limits.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-multiout-cue5",
+   "name": "p07-multiout-cue5",
+   "sceneId": "scene-u01"
+  },
+  "p07-multiout-m-shadow": {
+   "id": "p07-multiout-m-shadow",
+   "type": "shape",
+   "name": "p07-multiout-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8682.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-foot-l": {
+   "id": "p07-multiout-m-foot-l",
+   "type": "shape",
+   "name": "p07-multiout-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8707.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-foot-r": {
+   "id": "p07-multiout-m-foot-r",
+   "type": "shape",
+   "name": "p07-multiout-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-body": {
+   "id": "p07-multiout-m-body",
+   "type": "shape",
+   "name": "p07-multiout-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-multiout-m-belly": {
+   "id": "p07-multiout-m-belly",
+   "type": "shape",
+   "name": "p07-multiout-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-bow-l": {
+   "id": "p07-multiout-m-bow-l",
+   "type": "shape",
+   "name": "p07-multiout-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8706.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-bow-r": {
+   "id": "p07-multiout-m-bow-r",
+   "type": "shape",
+   "name": "p07-multiout-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8697.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-bow-c": {
+   "id": "p07-multiout-m-bow-c",
+   "type": "shape",
+   "name": "p07-multiout-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8703.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-arm-r": {
+   "id": "p07-multiout-m-arm-r",
+   "type": "shape",
+   "name": "p07-multiout-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8684.16,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.400000000000006,
+   "height": 10.920000000000073,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.53846153846138
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-multiout-m-hand-r": {
+   "id": "p07-multiout-m-hand-r",
+   "type": "shape",
+   "name": "p07-multiout-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.619999999999,
+    "y": 633.62,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-arm-l": {
+   "id": "p07-multiout-m-arm-l",
+   "type": "shape",
+   "name": "p07-multiout-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8723.64,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 79.99999999999994,
+     "y": 100.0
+    }
+   ]
+  },
+  "p07-multiout-m-hand-l": {
+   "id": "p07-multiout-m-hand-l",
+   "type": "shape",
+   "name": "p07-multiout-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8722.380000000001,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-ear-l": {
+   "id": "p07-multiout-m-ear-l",
+   "type": "shape",
+   "name": "p07-multiout-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8724.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-ear-r": {
+   "id": "p07-multiout-m-ear-r",
+   "type": "shape",
+   "name": "p07-multiout-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8677.86,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-head": {
+   "id": "p07-multiout-m-head",
+   "type": "shape",
+   "name": "p07-multiout-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8681.64,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-face": {
+   "id": "p07-multiout-m-face",
+   "type": "shape",
+   "name": "p07-multiout-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8686.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-cap-base": {
+   "id": "p07-multiout-m-cap-base",
+   "type": "shape",
+   "name": "p07-multiout-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-multiout-m-cap-top": {
+   "id": "p07-multiout-m-cap-top",
+   "type": "shape",
+   "name": "p07-multiout-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8688.36,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-multiout-m-tassel": {
+   "id": "p07-multiout-m-tassel",
+   "type": "shape",
+   "name": "p07-multiout-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p07-multiout-m-knot": {
+   "id": "p07-multiout-m-knot",
+   "type": "shape",
+   "name": "p07-multiout-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8687.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-eye-l": {
+   "id": "p07-multiout-m-eye-l",
+   "type": "shape",
+   "name": "p07-multiout-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8709.779999999999,
+    "y": 610.0999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.92,
+   "height": 10.92,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-pupil-l": {
+   "id": "p07-multiout-m-pupil-l",
+   "type": "shape",
+   "name": "p07-multiout-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8713.14,
+    "y": 610.1,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-glint-l": {
+   "id": "p07-multiout-m-glint-l",
+   "type": "shape",
+   "name": "p07-multiout-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8713.98,
+    "y": 610.94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-eye-r": {
+   "id": "p07-multiout-m-eye-r",
+   "type": "shape",
+   "name": "p07-multiout-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8691.3,
+    "y": 610.0999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.92,
+   "height": 10.92,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-pupil-r": {
+   "id": "p07-multiout-m-pupil-r",
+   "type": "shape",
+   "name": "p07-multiout-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8694.66,
+    "y": 610.1,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-glint-r": {
+   "id": "p07-multiout-m-glint-r",
+   "type": "shape",
+   "name": "p07-multiout-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.5,
+    "y": 610.94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-brow-l": {
+   "id": "p07-multiout-m-brow-l",
+   "type": "shape",
+   "name": "p07-multiout-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8711.04,
+    "y": 601.7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-multiout-m-brow-r": {
+   "id": "p07-multiout-m-brow-r",
+   "type": "shape",
+   "name": "p07-multiout-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8692.560000000001,
+    "y": 601.7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-multiout-m-cheek-l": {
+   "id": "p07-multiout-m-cheek-l",
+   "type": "shape",
+   "name": "p07-multiout-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8718.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-cheek-r": {
+   "id": "p07-multiout-m-cheek-r",
+   "type": "shape",
+   "name": "p07-multiout-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-mouth": {
+   "id": "p07-multiout-m-mouth",
+   "type": "shape",
+   "name": "p07-multiout-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8703.48,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 5.04,
+   "height": 5.88,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-multiout-m-mark": {
+   "id": "p07-multiout-m-mark",
+   "type": "text",
+   "name": "p07-multiout-m-mark",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8718.8,
+    "y": 577.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 28,
+   "height": 28,
+   "zIndex": 9,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#f59e0b",
+    "fontSize": 22,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "?",
+   "shapeKind": "rectangle"
+  },
+  "p07-multiout-nav": {
+   "type": "text",
+   "transform": {
+    "x": 8790,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP07 · 07/10 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p07-multiout-nav",
+   "name": "p07-multiout-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -19346,7 +21473,7 @@
    "order": 1,
    "label": "When classes overlap and cannot be separated, ask instead: how close can the output get to the target ±1? · See the scatter first: the points overlap and cannot",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19367,7 +21494,7 @@
    "order": 2,
    "label": "When classes overlap and cannot be separated, ask instead: how close can the output get to the target ±1? · See the green line: the closest-fitting line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19414,7 +21541,7 @@
    "order": 3,
    "label": "When classes overlap and cannot be separated, ask instead: how close can the output get to the target ±1? · See the orange dashed lines: residuals of the positi",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19473,7 +21600,7 @@
    "order": 4,
    "label": "When classes overlap and cannot be separated, ask instead: how close can the output get to the target ±1? · See the orange dashed lines: residuals of the negati",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19532,7 +21659,7 @@
    "order": 5,
    "label": "When classes overlap and cannot be separated, ask instead: how close can the output get to the target ±1? · See the gold star: classification looks at the sign ",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19579,7 +21706,7 @@
    "order": 6,
    "label": "Why w≈0.694? Plot J against w: it is a bowl; the slope at the bottom is 0 · See the axes and the question: where is the bottom of the bowl?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19600,7 +21727,7 @@
    "order": 7,
    "label": "Why w≈0.694? Plot J against w: it is a bowl; the slope at the bottom is 0 · See the blue curve: J(w).",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19647,7 +21774,7 @@
    "order": 8,
    "label": "Why w≈0.694? Plot J against w: it is a bowl; the slope at the bottom is 0 · See the orange point and line: the slope at w=0.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19700,7 +21827,7 @@
    "order": 9,
    "label": "Why w≈0.694? Plot J against w: it is a bowl; the slope at the bottom is 0 · See the red point: the bottom, where the slope is 0.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19753,7 +21880,7 @@
    "order": 10,
    "label": "Why w≈0.694? Plot J against w: it is a bowl; the slope at the bottom is 0 · See the gold star: the vector case.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19800,7 +21927,7 @@
    "order": 11,
    "label": "J is really a sum of three terms: a constant, a line and a parabola · See the question and the position of the first small plot.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19821,7 +21948,7 @@
    "order": 12,
    "label": "J is really a sum of three terms: a constant, a line and a parabola · See blue: term 1, the constant.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19880,7 +22007,7 @@
    "order": 13,
    "label": "J is really a sum of three terms: a constant, a line and a parabola · See green: term 2, the line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19939,7 +22066,7 @@
    "order": 14,
    "label": "J is really a sum of three terms: a constant, a line and a parabola · See red: term 3, the parabola.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19998,7 +22125,7 @@
    "order": 15,
    "label": "J is really a sum of three terms: a constant, a line and a parabola · See the gold star: adding them.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20043,9 +22170,9 @@
   {
    "id": "p04-orthogonal-st0",
    "order": 16,
-   "label": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the gray plane and the two bases first.",
+   "label": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the gray plane and the two bases first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20064,9 +22191,9 @@
   {
    "id": "p04-orthogonal-st1",
    "order": 17,
-   "label": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the red arrow: the target is off the plan",
+   "label": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the red arrow: the target is off the plan",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20117,9 +22244,9 @@
   {
    "id": "p04-orthogonal-st2",
    "order": 18,
-   "label": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the green point and the orange dashed lin",
+   "label": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the green point and the orange dashed lin",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20176,9 +22303,9 @@
   {
    "id": "p04-orthogonal-st3",
    "order": 19,
-   "label": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the red right-angle marks: the residual i",
+   "label": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the red right-angle marks: the residual i",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20229,9 +22356,9 @@
   {
    "id": "p04-orthogonal-st4",
    "order": 20,
-   "label": "In 3-D: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the gold star: back to zero gradient.",
+   "label": "In three-dimensional: the best prediction is a projection; the residual is perpendicular to the plane of all usable directions · See the gold star: back to zero gradient.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20278,7 +22405,7 @@
    "order": 21,
    "label": "Compute the projection's coefficients: solve the 2×2 normal equation · See the two bases in the plane and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20299,7 +22426,7 @@
    "order": 22,
    "label": "Compute the projection's coefficients: solve the 2×2 normal equation · See the gold formulas: X^T X and X^T y.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20340,7 +22467,7 @@
    "order": 23,
    "label": "Compute the projection's coefficients: solve the 2×2 normal equation · See the green formula and the thick arrows: the two coefficients.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20387,7 +22514,7 @@
    "order": 24,
    "label": "Compute the projection's coefficients: solve the 2×2 normal equation · See the purple arrow and the green point: combined.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20440,7 +22567,7 @@
    "order": 25,
    "label": "Compute the projection's coefficients: solve the 2×2 normal equation · See the gold star: the residual.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20487,7 +22614,7 @@
    "order": 26,
    "label": "Why is the projection nearest? Any other point in the plane only makes the error larger · See the three points first: projection, another prediction, target.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20508,7 +22635,7 @@
    "order": 27,
    "label": "Why is the projection nearest? Any other point in the plane only makes the error larger · See the orange dashed line: the residual.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20555,7 +22682,7 @@
    "order": 28,
    "label": "Why is the projection nearest? Any other point in the plane only makes the error larger · See the purple line: the distance within the plane.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20602,7 +22729,7 @@
    "order": 29,
    "label": "Why is the projection nearest? Any other point in the plane only makes the error larger · See the red dashed line and the right angle: the Pythagorean relation.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20655,7 +22782,7 @@
    "order": 30,
    "label": "Why is the projection nearest? Any other point in the plane only makes the error larger · See the gold star: the projection is smallest.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20698,11 +22825,11 @@
    }
   },
   {
-   "id": "p07-caveats-st0",
+   "id": "p07-multiout-st0",
    "order": 31,
-   "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the original line and six points first.",
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · First, the formula: the squared length of a vector is the sum of squared coordinates.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20719,17 +22846,273 @@
    }
   },
   {
-   "id": "p07-caveats-st1",
+   "id": "p07-multiout-st1",
    "order": 32,
-   "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the big blue point: x=8, target +1.",
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · See the blue card: solve once per class.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-multiout-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-multiout-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p07-multiout-st2",
+   "order": 33,
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · See the green card: the inputs of the six points and three classes.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-multiout-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-multiout-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p07-multiout-st3",
+   "order": 34,
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · See the three lines: the best slope of each class.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-multiout-ln0",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-ln1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-ln2",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-tw",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-c3",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-multiout-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p07-multiout-st4",
+   "order": 35,
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · See the orange card: the three minimum errors add up.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-multiout-c4",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-cue4",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-multiout-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p07-multiout-st5",
+   "order": 36,
+   "label": "Multiple outputs: one-hot targets split $M$ classes into $M$ independent scalar problems · See the gold star: when it splits, and the limits.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-multiout-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-c5",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-multiout-cue5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-multiout-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p07-caveats-st0",
+   "order": 37,
+   "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the original line and six points first.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p07-caveats-st1",
+   "order": 38,
+   "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the big blue point: x=8, target $+1$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20767,16 +23150,16 @@
   },
   {
    "id": "p07-caveats-st2",
-   "order": 33,
+   "order": 39,
    "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the orange line: re-fit the best.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20814,16 +23197,16 @@
   },
   {
    "id": "p07-caveats-st3",
-   "order": 34,
+   "order": 40,
    "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the red note: squared error is sensitive t",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20855,16 +23238,16 @@
   },
   {
    "id": "p07-caveats-st4",
-   "order": 35,
+   "order": 41,
    "label": "The best projection does not mean no error, nor the fewest misclassifications: outliers can pull the line askew · See the gold star: summary and multiple output",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20902,16 +23285,16 @@
   },
   {
    "id": "p08-practice-st0",
-   "order": 36,
-   "label": "Practice: bases (1,0,0), (0,1,0), target (2,−1,3): find the coefficients, projection and residual · Work it out first: see the two axes in the plane and the tar",
+   "order": 42,
+   "label": "Practice: bases (1,0,0), (0,1,0), target (2,$−1$,3): find the coefficients, projection and residual · Work it out first: see the two axes in the plane and the tar",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20923,16 +23306,16 @@
   },
   {
    "id": "p08-practice-st1",
-   "order": 37,
-   "label": "Practice: bases (1,0,0), (0,1,0), target (2,−1,3): find the coefficients, projection and residual · See feedback (a)(b): coefficients and projection.",
+   "order": 43,
+   "label": "Practice: bases (1,0,0), (0,1,0), target (2,$−1$,3): find the coefficients, projection and residual · See feedback (a)(b): coefficients and projection.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20970,16 +23353,16 @@
   },
   {
    "id": "p08-practice-st2",
-   "order": 38,
-   "label": "Practice: bases (1,0,0), (0,1,0), target (2,−1,3): find the coefficients, projection and residual · See feedback (c): residual and inner products.",
+   "order": 44,
+   "label": "Practice: bases (1,0,0), (0,1,0), target (2,$−1$,3): find the coefficients, projection and residual · See feedback (c): residual and inner products.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21017,16 +23400,16 @@
   },
   {
    "id": "p08-practice-st3",
-   "order": 39,
-   "label": "Practice: bases (1,0,0), (0,1,0), target (2,−1,3): find the coefficients, projection and residual · See feedback: why this one is simpler.",
+   "order": 45,
+   "label": "Practice: bases (1,0,0), (0,1,0), target (2,$−1$,3): find the coefficients, projection and residual · See feedback: why this one is simpler.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21064,16 +23447,16 @@
   },
   {
    "id": "p09-summary-st0",
-   "order": 40,
+   "order": 46,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the left first: the plane, target, proje",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21085,16 +23468,16 @@
   },
   {
    "id": "p09-summary-st1",
-   "order": 41,
+   "order": 47,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the arrow: approximating.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21132,16 +23515,16 @@
   },
   {
    "id": "p09-summary-st2",
-   "order": 42,
+   "order": 48,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the diamond: normal equation.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21179,16 +23562,16 @@
   },
   {
    "id": "p09-summary-st3",
-   "order": 43,
+   "order": 49,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the star: projection and orthogonality.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21226,16 +23609,16 @@
   },
   {
    "id": "p09-summary-st4",
-   "order": 44,
+   "order": 50,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the red triangle: limits.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21273,16 +23656,16 @@
   },
   {
    "id": "p09-summary-st5",
-   "order": 45,
+   "order": 51,
    "label": "Summary: J is a bowl, the lowest point has slope 0, the prediction is a projection, the residual is perpendicular · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,

@@ -495,6 +495,62 @@
     "p02-eight-two-cue2",
     "p02-eight-two-cue3",
     "p02-eight-two-cue4",
+    "p03-identity-bg",
+    "p03-identity-rule",
+    "p03-identity-title",
+    "p03-identity-ctx",
+    "p03-identity-src",
+    "p03-identity-plbg",
+    "p03-identity-tA",
+    "p03-identity-tB",
+    "p03-identity-a1",
+    "p03-identity-a2",
+    "p03-identity-b1",
+    "p03-identity-b2",
+    "p03-identity-tt",
+    "p03-identity-st",
+    "p03-identity-c0",
+    "p03-identity-c1",
+    "p03-identity-c2",
+    "p03-identity-c3",
+    "p03-identity-c4",
+    "p03-identity-cue0",
+    "p03-identity-cue1",
+    "p03-identity-cue2",
+    "p03-identity-cue3",
+    "p03-identity-cue4",
+    "p03-identity-m-shadow",
+    "p03-identity-m-foot-l",
+    "p03-identity-m-foot-r",
+    "p03-identity-m-body",
+    "p03-identity-m-belly",
+    "p03-identity-m-bow-l",
+    "p03-identity-m-bow-r",
+    "p03-identity-m-bow-c",
+    "p03-identity-m-arm-l",
+    "p03-identity-m-hand-l",
+    "p03-identity-m-arm-r",
+    "p03-identity-m-hand-r",
+    "p03-identity-m-ear-l",
+    "p03-identity-m-ear-r",
+    "p03-identity-m-head",
+    "p03-identity-m-face",
+    "p03-identity-m-cap-base",
+    "p03-identity-m-cap-top",
+    "p03-identity-m-tassel",
+    "p03-identity-m-knot",
+    "p03-identity-m-eye-l",
+    "p03-identity-m-pupil-l",
+    "p03-identity-m-glint-l",
+    "p03-identity-m-eye-r",
+    "p03-identity-m-pupil-r",
+    "p03-identity-m-glint-r",
+    "p03-identity-m-brow-l",
+    "p03-identity-m-brow-r",
+    "p03-identity-m-cheek-l",
+    "p03-identity-m-cheek-r",
+    "p03-identity-m-mouth",
+    "p03-identity-nav",
     "p03-parabola-nav",
     "p03-parabola-cue0",
     "p03-parabola-cue1",
@@ -607,7 +663,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -615,7 +671,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability",
+   "text": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability",
    "shapeKind": "rectangle"
   },
   "p01-indicator-ctx": {
@@ -669,7 +725,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -1196,7 +1252,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "So KP10's conclusion applies directly: under squared loss the best $g_i(\\mathbf x)$ is $E[y_i\\mid\\mathbf x]=P(\\omega_i\\mid\\mathbf x)$. Learning \"the mean of 0/1\" means learning the posterior probability.",
+   "text": "So KP10's conclusion applies directly: under squared loss the best $g_i(\\mathbf x)$ is $E[y_i\\mid\\mathbf x]=P(\\omega_i\\mid\\mathbf x)$. Learning \"the mean of $0$/$1$\" means learning the posterior probability.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -2269,7 +2325,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -2597,7 +2653,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Reporting $1$ pays $0.04=(1-0.8)^2$ more. The goal is not to output the right class for every record but to reflect \"under the same conditions the class is uncertain\": the two 0s really do happen.",
+   "text": "Reporting $1$ costs an extra $0.04=(1-0.8)^2$. The goal is not to output the correct class every time but to reflect that under the same conditions the class is uncertain: those $2$ zeros really do happen.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -3540,7 +3596,7 @@
    "name": "p03-parabola-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2880,
+    "x": 4320,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -3567,7 +3623,7 @@
    "name": "p03-parabola-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2920,
+    "x": 4360,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -3594,7 +3650,7 @@
    "name": "p03-parabola-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2920,
+    "x": 4360,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -3608,7 +3664,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -3616,7 +3672,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p)",
+   "text": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p)",
    "shapeKind": "rectangle"
   },
   "p03-parabola-ctx": {
@@ -3625,7 +3681,7 @@
    "name": "p03-parabola-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2920,
+    "x": 4360,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -3647,7 +3703,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "For a 0/1 target, $E[(g-y)^2\\mid\\mathbf x]=(g-p)^2+p(1-p)$. Here $p=0.8$: $(g-0.8)^2+0.16$.",
+   "text": "For a $0$/$1$ target, $E[(g-y)^2\\mid\\mathbf x]=(g-p)^2+p(1-p)$. Here $p=0.8$: $(g-0.8)^2+0.16$.",
    "shapeKind": "rectangle"
   },
   "p03-parabola-src": {
@@ -3656,7 +3712,7 @@
    "name": "p03-parabola-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -3670,7 +3726,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -3678,7 +3734,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: KP11 lecture §2: $E[(g_i-y_i)^2\\mid\\mathbf x]=(g_i-p_i)^2+p_i(1-p_i)$, the second term being the conditional variance of a 0/1 variable; numbers use $p=0.8$, recomputed by build_kp11_en.py.",
+   "text": "Source: KP11 lecture §2: $E[(g_i-y_i)^2\\mid\\mathbf x]=(g_i-p_i)^2+p_i(1-p_i)$, the second term being the conditional variance of a $0$/$1$ variable; numbers use $p=0.8$, recomputed by build_kp11_en.py.",
    "shapeKind": "rectangle"
   },
   "p03-parabola-plbg": {
@@ -3687,7 +3743,7 @@
    "name": "p03-parabola-plbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2976,
+    "x": 4416,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -3714,7 +3770,7 @@
    "name": "p03-parabola-plax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -3751,7 +3807,7 @@
    "name": "p03-parabola-play",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -3788,7 +3844,7 @@
    "name": "p03-parabola-plxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2999.230769230769,
+    "x": 4439.2307692307695,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -3819,7 +3875,7 @@
    "name": "p03-parabola-plxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3195.3846153846152,
+    "x": 4635.384615384615,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -3850,7 +3906,7 @@
    "name": "p03-parabola-plxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3391.5384615384614,
+    "x": 4831.538461538461,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -3881,7 +3937,7 @@
    "name": "p03-parabola-plgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 470.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -3918,7 +3974,7 @@
    "name": "p03-parabola-plyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2934,
+    "x": 4374,
     "y": 461.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -3949,7 +4005,7 @@
    "name": "p03-parabola-plgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 406.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -3986,7 +4042,7 @@
    "name": "p03-parabola-plyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2934,
+    "x": 4374,
     "y": 397.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4017,7 +4073,7 @@
    "name": "p03-parabola-plgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 342.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4054,7 +4110,7 @@
    "name": "p03-parabola-plyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2934,
+    "x": 4374,
     "y": 333.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4085,7 +4141,7 @@
    "name": "p03-parabola-plgy3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 278.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4122,7 +4178,7 @@
    "name": "p03-parabola-plyt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2934,
+    "x": 4374,
     "y": 269.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4153,7 +4209,7 @@
    "name": "p03-parabola-plgy4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2990,
+    "x": 4430,
     "y": 214.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4190,7 +4246,7 @@
    "name": "p03-parabola-plyt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2934,
+    "x": 4374,
     "y": 205.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4221,7 +4277,7 @@
    "name": "p03-parabola-plxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3200,
+    "x": 4640,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -4252,7 +4308,7 @@
    "name": "p03-parabola-plyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2996,
+    "x": 4436,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -4283,7 +4339,7 @@
    "name": "p03-parabola-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3550,
+    "x": 4990,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -4316,7 +4372,7 @@
    "name": "p03-parabola-par",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3009.6153846153848,
+    "x": 4449.615384615385,
     "y": 187.59999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -4586,7 +4642,7 @@
    "name": "p03-parabola-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3550,
+    "x": 4990,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -4620,7 +4676,7 @@
    "name": "p03-parabola-dm",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3333.076923076923,
+    "x": 4773.076923076923,
     "y": 408.8,
     "scaleX": 1,
     "scaleY": 1,
@@ -4655,7 +4711,7 @@
    "name": "p03-parabola-fl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3009.6153846153848,
+    "x": 4449.615384615385,
     "y": 418.8,
     "scaleX": 1,
     "scaleY": 1,
@@ -4694,7 +4750,7 @@
    "name": "p03-parabola-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3550,
+    "x": 4990,
     "y": 306,
     "scaleX": 1,
     "scaleY": 1,
@@ -4728,7 +4784,7 @@
    "name": "p03-parabola-d1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3412.5384615384614,
+    "x": 4852.538461538461,
     "y": 397.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4763,7 +4819,7 @@
    "name": "p03-parabola-d0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3216.3846153846152,
+    "x": 4656.384615384615,
     "y": 381.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -4798,7 +4854,7 @@
    "name": "p03-parabola-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3550,
+    "x": 4990,
     "y": 406,
     "scaleX": 1,
     "scaleY": 1,
@@ -4832,7 +4888,7 @@
    "name": "p03-parabola-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4056,
+    "x": 5496,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -4868,7 +4924,7 @@
    "name": "p03-parabola-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3550,
+    "x": 4990,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -4902,7 +4958,7 @@
    "name": "p03-parabola-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2922.48,
+    "x": 4362.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -4929,7 +4985,7 @@
    "name": "p03-parabola-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2947.68,
+    "x": 4387.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -4956,7 +5012,7 @@
    "name": "p03-parabola-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2929.2,
+    "x": 4369.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -4983,7 +5039,7 @@
    "name": "p03-parabola-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2925.84,
+    "x": 4365.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -5010,7 +5066,7 @@
    "name": "p03-parabola-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2935.08,
+    "x": 4375.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -5037,7 +5093,7 @@
    "name": "p03-parabola-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2946.0,
+    "x": 4386.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -5064,7 +5120,7 @@
    "name": "p03-parabola-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2937.6,
+    "x": 4377.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -5091,7 +5147,7 @@
    "name": "p03-parabola-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2943.9,
+    "x": 4383.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -5118,7 +5174,7 @@
    "name": "p03-parabola-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2963.64,
+    "x": 4403.639999999999,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -5159,7 +5215,7 @@
    "name": "p03-parabola-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2981.7,
+    "x": 4421.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -5186,7 +5242,7 @@
    "name": "p03-parabola-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2924.16,
+    "x": 4364.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -5227,7 +5283,7 @@
    "name": "p03-parabola-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2920.38,
+    "x": 4360.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -5254,7 +5310,7 @@
    "name": "p03-parabola-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2964.9,
+    "x": 4404.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -5281,7 +5337,7 @@
    "name": "p03-parabola-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2917.86,
+    "x": 4357.860000000001,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -5308,7 +5364,7 @@
    "name": "p03-parabola-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2921.64,
+    "x": 4361.639999999999,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -5335,7 +5391,7 @@
    "name": "p03-parabola-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2926.26,
+    "x": 4366.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -5362,7 +5418,7 @@
    "name": "p03-parabola-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2935.08,
+    "x": 4375.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -5389,7 +5445,7 @@
    "name": "p03-parabola-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2928.36,
+    "x": 4368.360000000001,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -5416,7 +5472,7 @@
    "name": "p03-parabola-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2929.2,
+    "x": 4369.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -5453,7 +5509,7 @@
    "name": "p03-parabola-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2927.1,
+    "x": 4367.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -5480,7 +5536,7 @@
    "name": "p03-parabola-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2950.2,
+    "x": 4390.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -5507,7 +5563,7 @@
    "name": "p03-parabola-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2953.56,
+    "x": 4393.5599999999995,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -5534,7 +5590,7 @@
    "name": "p03-parabola-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2954.4,
+    "x": 4394.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -5561,7 +5617,7 @@
    "name": "p03-parabola-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2931.72,
+    "x": 4371.719999999999,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -5588,7 +5644,7 @@
    "name": "p03-parabola-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2935.08,
+    "x": 4375.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -5615,7 +5671,7 @@
    "name": "p03-parabola-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2935.92,
+    "x": 4375.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -5642,7 +5698,7 @@
    "name": "p03-parabola-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2951.04,
+    "x": 4391.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -5679,7 +5735,7 @@
    "name": "p03-parabola-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2932.56,
+    "x": 4372.5599999999995,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -5716,7 +5772,7 @@
    "name": "p03-parabola-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2958.6,
+    "x": 4398.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -5743,7 +5799,7 @@
    "name": "p03-parabola-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2925.0,
+    "x": 4365.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -5770,7 +5826,7 @@
    "name": "p03-parabola-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 2939.7,
+    "x": 4379.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -5835,7 +5891,7 @@
    "name": "p04-multiclass-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4320,
+    "x": 5760,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -5862,7 +5918,7 @@
    "name": "p04-multiclass-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -5889,7 +5945,7 @@
    "name": "p04-multiclass-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -5903,7 +5959,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -5911,7 +5967,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Multiclass: total squared loss = approximation term + fixed term; a linear model lowers only the former",
+   "text": "Multiclass: total squared loss: approximation term + fixed term; a linear model lowers only the former",
    "shapeKind": "rectangle"
   },
   "p04-multiclass-ctx": {
@@ -5920,7 +5976,7 @@
    "name": "p04-multiclass-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -5951,7 +6007,7 @@
    "name": "p04-multiclass-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -5982,7 +6038,7 @@
    "name": "p04-multiclass-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4380,
+    "x": 5820,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -6015,13 +6071,13 @@
    "name": "p04-multiclass-sa",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4380,
+    "x": 5820,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 560,
+   "width": 360,
    "height": 22,
    "zIndex": 8,
    "locked": false,
@@ -6029,7 +6085,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 14,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -6047,7 +6103,7 @@
    "name": "p04-multiclass-fa",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4450,
+    "x": 5890,
     "y": 232,
     "scaleX": 1,
     "scaleY": 1,
@@ -6075,7 +6131,7 @@
    "name": "p04-multiclass-fat",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 238,
     "scaleX": 1,
     "scaleY": 1,
@@ -6107,7 +6163,7 @@
    "name": "p04-multiclass-sb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4380,
+    "x": 5820,
     "y": 296,
     "scaleX": 1,
     "scaleY": 1,
@@ -6139,7 +6195,7 @@
    "name": "p04-multiclass-fb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4450,
+    "x": 5890,
     "y": 328,
     "scaleX": 1,
     "scaleY": 1,
@@ -6167,7 +6223,7 @@
    "name": "p04-multiclass-ab",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4822.0,
+    "x": 6262.0,
     "y": 328,
     "scaleX": 1,
     "scaleY": 1,
@@ -6195,7 +6251,7 @@
    "name": "p04-multiclass-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4380,
+    "x": 5820,
     "y": 392,
     "scaleX": 1,
     "scaleY": 1,
@@ -6229,7 +6285,7 @@
    "name": "p04-multiclass-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4980,
+    "x": 6420,
     "y": 392,
     "scaleX": 1,
     "scaleY": 1,
@@ -6263,7 +6319,7 @@
    "name": "p04-multiclass-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5496,
+    "x": 6936,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -6299,7 +6355,7 @@
    "name": "p04-multiclass-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4380,
+    "x": 5820,
     "y": 498,
     "scaleX": 1,
     "scaleY": 1,
@@ -6333,7 +6389,7 @@
    "name": "p04-multiclass-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4362.48,
+    "x": 5802.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -6360,7 +6416,7 @@
    "name": "p04-multiclass-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4387.68,
+    "x": 5827.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -6387,7 +6443,7 @@
    "name": "p04-multiclass-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -6414,7 +6470,7 @@
    "name": "p04-multiclass-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.84,
+    "x": 5805.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -6441,7 +6497,7 @@
    "name": "p04-multiclass-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -6468,7 +6524,7 @@
    "name": "p04-multiclass-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4386.0,
+    "x": 5826.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -6495,7 +6551,7 @@
    "name": "p04-multiclass-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4377.6,
+    "x": 5817.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -6522,7 +6578,7 @@
    "name": "p04-multiclass-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4383.9,
+    "x": 5823.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -6549,7 +6605,7 @@
    "name": "p04-multiclass-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4403.64,
+    "x": 5843.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -6590,7 +6646,7 @@
    "name": "p04-multiclass-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4421.7,
+    "x": 5861.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -6617,7 +6673,7 @@
    "name": "p04-multiclass-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4364.16,
+    "x": 5804.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -6658,7 +6714,7 @@
    "name": "p04-multiclass-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360.38,
+    "x": 5800.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -6685,7 +6741,7 @@
    "name": "p04-multiclass-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4404.9,
+    "x": 5844.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -6712,7 +6768,7 @@
    "name": "p04-multiclass-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4357.86,
+    "x": 5797.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -6739,7 +6795,7 @@
    "name": "p04-multiclass-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4361.64,
+    "x": 5801.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -6766,7 +6822,7 @@
    "name": "p04-multiclass-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4366.26,
+    "x": 5806.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -6793,7 +6849,7 @@
    "name": "p04-multiclass-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -6820,7 +6876,7 @@
    "name": "p04-multiclass-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4368.36,
+    "x": 5808.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -6847,7 +6903,7 @@
    "name": "p04-multiclass-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -6884,7 +6940,7 @@
    "name": "p04-multiclass-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4367.1,
+    "x": 5807.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -6911,7 +6967,7 @@
    "name": "p04-multiclass-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390.2,
+    "x": 5830.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -6938,7 +6994,7 @@
    "name": "p04-multiclass-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4393.56,
+    "x": 5833.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -6965,7 +7021,7 @@
    "name": "p04-multiclass-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4394.4,
+    "x": 5834.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -6992,7 +7048,7 @@
    "name": "p04-multiclass-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4371.72,
+    "x": 5811.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -7019,7 +7075,7 @@
    "name": "p04-multiclass-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -7046,7 +7102,7 @@
    "name": "p04-multiclass-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.92,
+    "x": 5815.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -7073,7 +7129,7 @@
    "name": "p04-multiclass-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4391.04,
+    "x": 5831.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -7110,7 +7166,7 @@
    "name": "p04-multiclass-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4372.56,
+    "x": 5812.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -7147,7 +7203,7 @@
    "name": "p04-multiclass-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4398.6,
+    "x": 5838.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -7174,7 +7230,7 @@
    "name": "p04-multiclass-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.0,
+    "x": 5805.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -7201,7 +7257,7 @@
    "name": "p04-multiclass-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4379.7,
+    "x": 5819.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -7266,7 +7322,7 @@
    "name": "p05-fit-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5760,
+    "x": 7200,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -7293,7 +7349,7 @@
    "name": "p05-fit-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -7320,7 +7376,7 @@
    "name": "p05-fit-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -7334,7 +7390,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -7351,7 +7407,7 @@
    "name": "p05-fit-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -7382,7 +7438,7 @@
    "name": "p05-fit-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -7396,7 +7452,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -7413,7 +7469,7 @@
    "name": "p05-fit-fpbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5846,
+    "x": 7286,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -7440,7 +7496,7 @@
    "name": "p05-fit-fpax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -7477,7 +7533,7 @@
    "name": "p05-fit-fpay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -7514,7 +7570,7 @@
    "name": "p05-fit-fpxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5857.777777777777,
+    "x": 7297.777777777777,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -7545,7 +7601,7 @@
    "name": "p05-fit-fpxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5968.888888888889,
+    "x": 7408.888888888889,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -7576,7 +7632,7 @@
    "name": "p05-fit-fpxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6080.0,
+    "x": 7520.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -7607,7 +7663,7 @@
    "name": "p05-fit-fpxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6191.111111111111,
+    "x": 7631.111111111111,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -7638,7 +7694,7 @@
    "name": "p05-fit-fpxt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6302.222222222223,
+    "x": 7742.222222222223,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -7669,7 +7725,7 @@
    "name": "p05-fit-fpgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 447.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -7706,7 +7762,7 @@
    "name": "p05-fit-fpyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804,
+    "x": 7244,
     "y": 438.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -7737,7 +7793,7 @@
    "name": "p05-fit-fpgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 332.85714285714283,
     "scaleX": 1,
     "scaleY": 1,
@@ -7774,7 +7830,7 @@
    "name": "p05-fit-fpyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804,
+    "x": 7244,
     "y": 323.85714285714283,
     "scaleX": 1,
     "scaleY": 1,
@@ -7805,7 +7861,7 @@
    "name": "p05-fit-fpgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 218.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -7842,7 +7898,7 @@
    "name": "p05-fit-fpyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804,
+    "x": 7244,
     "y": 209.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -7873,7 +7929,7 @@
    "name": "p05-fit-fpxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6060,
+    "x": 7500,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -7904,7 +7960,7 @@
    "name": "p05-fit-fpyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5866,
+    "x": 7306,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -7935,7 +7991,7 @@
    "name": "p05-fit-u1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 218.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -7973,7 +8029,7 @@
    "name": "p05-fit-u0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 447.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -8011,7 +8067,7 @@
    "name": "p05-fit-u1t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5868,
+    "x": 7308,
     "y": 196.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -8042,7 +8098,7 @@
    "name": "p05-fit-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 7850,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -8075,7 +8131,7 @@
    "name": "p05-fit-pc",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5876.666666666667,
+    "x": 7316.666666666667,
     "y": 219.425118283043,
     "scaleX": 1,
     "scaleY": 1,
@@ -8385,7 +8441,7 @@
    "name": "p05-fit-pd0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5881.777777777777,
+    "x": 7321.777777777777,
     "y": 425.5402192819592,
     "scaleX": 1,
     "scaleY": 1,
@@ -8420,7 +8476,7 @@
    "name": "p05-fit-pd4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6104.0,
+    "x": 7544.0,
     "y": 258.2857142857143,
     "scaleX": 1,
     "scaleY": 1,
@@ -8455,7 +8511,7 @@
    "name": "p05-fit-pd8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6326.222222222223,
+    "x": 7766.222222222223,
     "y": 213.6132660282676,
     "scaleX": 1,
     "scaleY": 1,
@@ -8490,7 +8546,7 @@
    "name": "p05-fit-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 7850,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -8514,7 +8570,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "The blue S-shaped curve is the posterior probability, and the three blue points mark the posterior at x=−2, 2, 6. The probability slowly rises to 1 but never exceeds it.",
+   "text": "The blue S-shaped curve is the posterior probability, and the three blue points mark the posterior at x=$−2$, 2, 6. The probability slowly rises to 1 but never exceeds it.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -8524,7 +8580,7 @@
    "name": "p05-fit-ln",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5876.666666666667,
+    "x": 7316.666666666667,
     "y": 175.02617035214632,
     "scaleX": 1,
     "scaleY": 1,
@@ -8562,7 +8618,7 @@
    "name": "p05-fit-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 7850,
     "y": 306,
     "scaleX": 1,
     "scaleY": 1,
@@ -8596,7 +8652,7 @@
    "name": "p05-fit-rg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6316.222222222223,
+    "x": 7756.222222222223,
     "y": 164.9127380978308,
     "scaleX": 1,
     "scaleY": 1,
@@ -8624,7 +8680,7 @@
    "name": "p05-fit-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 7850,
     "y": 402,
     "scaleX": 1,
     "scaleY": 1,
@@ -8658,7 +8714,7 @@
    "name": "p05-fit-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6936,
+    "x": 8376,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -8694,7 +8750,7 @@
    "name": "p05-fit-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6410,
+    "x": 7850,
     "y": 502,
     "scaleX": 1,
     "scaleY": 1,
@@ -8728,7 +8784,7 @@
    "name": "p05-fit-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5802.48,
+    "x": 7242.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -8755,7 +8811,7 @@
    "name": "p05-fit-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5827.68,
+    "x": 7267.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -8782,7 +8838,7 @@
    "name": "p05-fit-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -8809,7 +8865,7 @@
    "name": "p05-fit-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.84,
+    "x": 7245.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -8836,7 +8892,7 @@
    "name": "p05-fit-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -8863,7 +8919,7 @@
    "name": "p05-fit-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5826.0,
+    "x": 7266.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -8890,7 +8946,7 @@
    "name": "p05-fit-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5817.6,
+    "x": 7257.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -8917,7 +8973,7 @@
    "name": "p05-fit-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5823.9,
+    "x": 7263.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -8944,7 +9000,7 @@
    "name": "p05-fit-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5843.64,
+    "x": 7283.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -8985,7 +9041,7 @@
    "name": "p05-fit-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5861.7,
+    "x": 7301.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -9012,7 +9068,7 @@
    "name": "p05-fit-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804.16,
+    "x": 7244.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -9053,7 +9109,7 @@
    "name": "p05-fit-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800.38,
+    "x": 7240.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -9080,7 +9136,7 @@
    "name": "p05-fit-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5844.9,
+    "x": 7284.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -9107,7 +9163,7 @@
    "name": "p05-fit-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5797.86,
+    "x": 7237.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -9134,7 +9190,7 @@
    "name": "p05-fit-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5801.64,
+    "x": 7241.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -9161,7 +9217,7 @@
    "name": "p05-fit-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5806.26,
+    "x": 7246.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -9188,7 +9244,7 @@
    "name": "p05-fit-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -9215,7 +9271,7 @@
    "name": "p05-fit-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5808.36,
+    "x": 7248.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9242,7 +9298,7 @@
    "name": "p05-fit-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -9279,7 +9335,7 @@
    "name": "p05-fit-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5807.1,
+    "x": 7247.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -9306,7 +9362,7 @@
    "name": "p05-fit-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5830.2,
+    "x": 7270.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -9333,7 +9389,7 @@
    "name": "p05-fit-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5833.56,
+    "x": 7273.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -9360,7 +9416,7 @@
    "name": "p05-fit-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5834.4,
+    "x": 7274.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -9387,7 +9443,7 @@
    "name": "p05-fit-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5811.72,
+    "x": 7251.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -9414,7 +9470,7 @@
    "name": "p05-fit-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -9441,7 +9497,7 @@
    "name": "p05-fit-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.92,
+    "x": 7255.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -9468,7 +9524,7 @@
    "name": "p05-fit-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5831.04,
+    "x": 7271.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -9505,7 +9561,7 @@
    "name": "p05-fit-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5812.56,
+    "x": 7252.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -9542,7 +9598,7 @@
    "name": "p05-fit-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5838.6,
+    "x": 7278.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -9569,7 +9625,7 @@
    "name": "p05-fit-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.0,
+    "x": 7245.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -9596,7 +9652,7 @@
    "name": "p05-fit-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5819.7,
+    "x": 7259.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -9661,7 +9717,7 @@
    "name": "p06-coding-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7200,
+    "x": 8640,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9688,7 +9744,7 @@
    "name": "p06-coding-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -9715,7 +9771,7 @@
    "name": "p06-coding-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -9729,7 +9785,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -9746,7 +9802,7 @@
    "name": "p06-coding-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -9777,7 +9833,7 @@
    "name": "p06-coding-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -9791,7 +9847,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -9808,7 +9864,7 @@
    "name": "p06-coding-nb0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -9835,7 +9891,7 @@
    "name": "p06-coding-nx0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300,
+    "x": 8740,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -9872,7 +9928,7 @@
    "name": "p06-coding-nl0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7270,
+    "x": 8710,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -9894,7 +9950,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "0/1 coding: $E[y\\mid\\mathbf x]=p$",
+   "text": "$0$/$1$ coding: $E[y\\mid\\mathbf x]=p$",
    "shapeKind": "rectangle"
   },
   "p06-coding-nb1": {
@@ -9903,7 +9959,7 @@
    "name": "p06-coding-nb1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 300,
     "scaleX": 1,
     "scaleY": 1,
@@ -9930,7 +9986,7 @@
    "name": "p06-coding-nx1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300,
+    "x": 8740,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -9967,7 +10023,7 @@
    "name": "p06-coding-nl1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7270,
+    "x": 8710,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -9998,7 +10054,7 @@
    "name": "p06-coding-a0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7448.571428571428,
+    "x": 8888.571428571428,
     "y": 222,
     "scaleX": 1,
     "scaleY": 1,
@@ -10029,7 +10085,7 @@
    "name": "p06-coding-a5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7820.0,
+    "x": 9260.0,
     "y": 222,
     "scaleX": 1,
     "scaleY": 1,
@@ -10060,7 +10116,7 @@
    "name": "p06-coding-a10",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8191.428571428572,
+    "x": 9631.428571428572,
     "y": 222,
     "scaleX": 1,
     "scaleY": 1,
@@ -10091,7 +10147,7 @@
    "name": "p06-coding-b0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7386.666666666667,
+    "x": 8826.666666666668,
     "y": 362,
     "scaleX": 1,
     "scaleY": 1,
@@ -10122,7 +10178,7 @@
    "name": "p06-coding-b1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7820.0,
+    "x": 9260.0,
     "y": 362,
     "scaleX": 1,
     "scaleY": 1,
@@ -10153,7 +10209,7 @@
    "name": "p06-coding-b2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8253.333333333334,
+    "x": 9693.333333333334,
     "y": 362,
     "scaleX": 1,
     "scaleY": 1,
@@ -10184,7 +10240,7 @@
    "name": "p06-coding-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -10217,7 +10273,7 @@
    "name": "p06-coding-p08",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8052.857142857143,
+    "x": 9492.857142857143,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
@@ -10252,7 +10308,7 @@
    "name": "p06-coding-p06",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8090.0,
+    "x": 9530.0,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -10287,7 +10343,7 @@
    "name": "p06-coding-cv",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8062.857142857143,
+    "x": 9502.857142857143,
     "y": 222,
     "scaleX": 1,
     "scaleY": 1,
@@ -10337,7 +10393,7 @@
    "name": "p06-coding-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -10371,7 +10427,7 @@
    "name": "p06-coding-ov",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8323.819315467765,
+    "x": 9763.819315467765,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
@@ -10406,7 +10462,7 @@
    "name": "p06-coding-ovl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8211.42857142857,
+    "x": 9651.42857142857,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -10445,7 +10501,7 @@
    "name": "p06-coding-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7860,
+    "x": 9300,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -10479,7 +10535,7 @@
    "name": "p06-coding-wi",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 520,
     "scaleX": 1,
     "scaleY": 1,
@@ -10510,7 +10566,7 @@
    "name": "p06-coding-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7312,
+    "x": 8752,
     "y": 512,
     "scaleX": 1,
     "scaleY": 1,
@@ -10544,7 +10600,7 @@
    "name": "p06-coding-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7242.48,
+    "x": 8682.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -10571,7 +10627,7 @@
    "name": "p06-coding-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7267.68,
+    "x": 8707.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -10598,7 +10654,7 @@
    "name": "p06-coding-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -10625,7 +10681,7 @@
    "name": "p06-coding-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.84,
+    "x": 8685.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -10652,7 +10708,7 @@
    "name": "p06-coding-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -10679,7 +10735,7 @@
    "name": "p06-coding-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7266.0,
+    "x": 8706.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -10706,7 +10762,7 @@
    "name": "p06-coding-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7257.6,
+    "x": 8697.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -10733,7 +10789,7 @@
    "name": "p06-coding-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.9,
+    "x": 8703.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -10760,7 +10816,7 @@
    "name": "p06-coding-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7244.16,
+    "x": 8684.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -10801,7 +10857,7 @@
    "name": "p06-coding-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.62,
+    "x": 8689.619999999999,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -10828,7 +10884,7 @@
    "name": "p06-coding-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7283.64,
+    "x": 8723.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -10869,7 +10925,7 @@
    "name": "p06-coding-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7282.38,
+    "x": 8722.380000000001,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -10896,7 +10952,7 @@
    "name": "p06-coding-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7284.9,
+    "x": 8724.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10923,7 +10979,7 @@
    "name": "p06-coding-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7237.86,
+    "x": 8677.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10950,7 +11006,7 @@
    "name": "p06-coding-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7241.64,
+    "x": 8681.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10977,7 +11033,7 @@
    "name": "p06-coding-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7246.26,
+    "x": 8686.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -11004,7 +11060,7 @@
    "name": "p06-coding-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -11031,7 +11087,7 @@
    "name": "p06-coding-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7248.36,
+    "x": 8688.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11058,7 +11114,7 @@
    "name": "p06-coding-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -11095,7 +11151,7 @@
    "name": "p06-coding-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7247.1,
+    "x": 8687.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -11122,7 +11178,7 @@
    "name": "p06-coding-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7269.78,
+    "x": 8709.779999999999,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -11149,7 +11205,7 @@
    "name": "p06-coding-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.14,
+    "x": 8713.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -11176,7 +11232,7 @@
    "name": "p06-coding-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.98,
+    "x": 8713.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -11203,7 +11259,7 @@
    "name": "p06-coding-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7251.3,
+    "x": 8691.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -11230,7 +11286,7 @@
    "name": "p06-coding-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7254.66,
+    "x": 8694.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -11257,7 +11313,7 @@
    "name": "p06-coding-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.5,
+    "x": 8695.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -11284,7 +11340,7 @@
    "name": "p06-coding-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7271.04,
+    "x": 8711.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -11321,7 +11377,7 @@
    "name": "p06-coding-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7252.56,
+    "x": 8692.560000000001,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -11358,7 +11414,7 @@
    "name": "p06-coding-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.6,
+    "x": 8718.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -11385,7 +11441,7 @@
    "name": "p06-coding-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.0,
+    "x": 8685.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -11412,7 +11468,7 @@
    "name": "p06-coding-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.48,
+    "x": 8703.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -11439,7 +11495,7 @@
    "name": "p06-coding-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.8,
+    "x": 8718.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -11470,7 +11526,7 @@
    "name": "p07-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11497,7 +11553,7 @@
    "name": "p07-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -11524,7 +11580,7 @@
    "name": "p07-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -11538,7 +11594,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -11555,7 +11611,7 @@
    "name": "p07-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -11586,7 +11642,7 @@
    "name": "p07-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -11617,7 +11673,7 @@
    "name": "p07-practice-nbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -11644,7 +11700,7 @@
    "name": "p07-practice-nax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 330,
     "scaleX": 1,
     "scaleY": 1,
@@ -11681,7 +11737,7 @@
    "name": "p07-practice-nt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8867.142857142857,
+    "x": 10307.142857142857,
     "y": 338,
     "scaleX": 1,
     "scaleY": 1,
@@ -11712,7 +11768,7 @@
    "name": "p07-practice-nt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9260.0,
+    "x": 10700.0,
     "y": 338,
     "scaleX": 1,
     "scaleY": 1,
@@ -11743,7 +11799,7 @@
    "name": "p07-practice-nt10",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9652.857142857143,
+    "x": 11092.857142857143,
     "y": 338,
     "scaleX": 1,
     "scaleY": 1,
@@ -11774,7 +11830,7 @@
    "name": "p07-practice-bar0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8857.142857142857,
+    "x": 10297.142857142857,
     "y": 258.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11801,7 +11857,7 @@
    "name": "p07-practice-bt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8827.142857142857,
+    "x": 10267.142857142857,
     "y": 234.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11832,7 +11888,7 @@
    "name": "p07-practice-bar1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9642.857142857143,
+    "x": 11082.857142857143,
     "y": 162.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11859,7 +11915,7 @@
    "name": "p07-practice-bt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9612.857142857143,
+    "x": 11052.857142857143,
     "y": 138.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11890,7 +11946,7 @@
    "name": "p07-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -11923,7 +11979,7 @@
    "name": "p07-practice-fu",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9423.142857142857,
+    "x": 10863.142857142857,
     "y": 334,
     "scaleX": 1,
     "scaleY": 1,
@@ -11954,13 +12010,13 @@
    "name": "p07-practice-fut",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9337.142857142857,
+    "x": 10807.142857142857,
     "y": 362,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 200,
+   "width": 140,
    "height": 20,
    "zIndex": 8,
    "locked": false,
@@ -11968,7 +12024,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#92400e",
-    "fontSize": 13,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -11986,7 +12042,7 @@
    "name": "p07-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 400,
     "scaleX": 1,
     "scaleY": 1,
@@ -12020,7 +12076,7 @@
    "name": "p07-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 400,
     "scaleX": 1,
     "scaleY": 1,
@@ -12054,7 +12110,7 @@
    "name": "p07-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 500,
     "scaleX": 1,
     "scaleY": 1,
@@ -12088,7 +12144,7 @@
    "name": "p07-practice-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9816,
+    "x": 11256,
     "y": 516,
     "scaleX": 1,
     "scaleY": 1,
@@ -12124,7 +12180,7 @@
    "name": "p07-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -12151,7 +12207,7 @@
    "name": "p07-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -12178,7 +12234,7 @@
    "name": "p07-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -12205,7 +12261,7 @@
    "name": "p07-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -12232,7 +12288,7 @@
    "name": "p07-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -12259,7 +12315,7 @@
    "name": "p07-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12286,7 +12342,7 @@
    "name": "p07-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12313,7 +12369,7 @@
    "name": "p07-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -12340,7 +12396,7 @@
    "name": "p07-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12381,7 +12437,7 @@
    "name": "p07-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.62,
+    "x": 10129.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -12408,7 +12464,7 @@
    "name": "p07-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -12449,7 +12505,7 @@
    "name": "p07-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8722.38,
+    "x": 10162.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -12476,7 +12532,7 @@
    "name": "p07-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12503,7 +12559,7 @@
    "name": "p07-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12530,7 +12586,7 @@
    "name": "p07-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12557,7 +12613,7 @@
    "name": "p07-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12584,7 +12640,7 @@
    "name": "p07-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -12611,7 +12667,7 @@
    "name": "p07-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12638,7 +12694,7 @@
    "name": "p07-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12675,7 +12731,7 @@
    "name": "p07-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -12702,7 +12758,7 @@
    "name": "p07-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8709.78,
+    "x": 10149.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12729,7 +12785,7 @@
    "name": "p07-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.14,
+    "x": 10153.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -12756,7 +12812,7 @@
    "name": "p07-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.98,
+    "x": 10153.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12783,7 +12839,7 @@
    "name": "p07-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.3,
+    "x": 10131.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12810,7 +12866,7 @@
    "name": "p07-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8694.66,
+    "x": 10134.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -12837,7 +12893,7 @@
    "name": "p07-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.5,
+    "x": 10135.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12864,7 +12920,7 @@
    "name": "p07-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -12901,7 +12957,7 @@
    "name": "p07-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -12938,7 +12994,7 @@
    "name": "p07-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12965,7 +13021,7 @@
    "name": "p07-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12992,7 +13048,7 @@
    "name": "p07-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.48,
+    "x": 10143.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -13019,7 +13075,7 @@
    "name": "p07-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.8,
+    "x": 10158.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13050,7 +13106,7 @@
    "name": "p08-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13077,7 +13133,7 @@
    "name": "p08-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -13104,7 +13160,7 @@
    "name": "p08-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -13118,7 +13174,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -13135,7 +13191,7 @@
    "name": "p08-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13166,7 +13222,7 @@
    "name": "p08-summary-spbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10166,
+    "x": 11606,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -13193,7 +13249,7 @@
    "name": "p08-summary-spax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -13230,7 +13286,7 @@
    "name": "p08-summary-spay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -13267,7 +13323,7 @@
    "name": "p08-summary-spxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10177.777777777777,
+    "x": 11617.777777777777,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -13298,7 +13354,7 @@
    "name": "p08-summary-spxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10288.888888888889,
+    "x": 11728.888888888889,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -13329,7 +13385,7 @@
    "name": "p08-summary-spxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10400.0,
+    "x": 11840.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -13360,7 +13416,7 @@
    "name": "p08-summary-spxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10511.111111111111,
+    "x": 11951.111111111111,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -13391,7 +13447,7 @@
    "name": "p08-summary-spxt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10622.222222222223,
+    "x": 12062.222222222223,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -13422,7 +13478,7 @@
    "name": "p08-summary-spgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 447.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -13459,7 +13515,7 @@
    "name": "p08-summary-spyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124,
+    "x": 11564,
     "y": 438.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -13490,7 +13546,7 @@
    "name": "p08-summary-spgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 332.85714285714283,
     "scaleX": 1,
     "scaleY": 1,
@@ -13527,7 +13583,7 @@
    "name": "p08-summary-spyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124,
+    "x": 11564,
     "y": 323.85714285714283,
     "scaleX": 1,
     "scaleY": 1,
@@ -13558,7 +13614,7 @@
    "name": "p08-summary-spgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 218.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -13595,7 +13651,7 @@
    "name": "p08-summary-spyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124,
+    "x": 11564,
     "y": 209.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -13626,7 +13682,7 @@
    "name": "p08-summary-spxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10380,
+    "x": 11820,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -13657,7 +13713,7 @@
    "name": "p08-summary-spyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10186,
+    "x": 11626,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -13688,7 +13744,7 @@
    "name": "p08-summary-u1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 218.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -13726,7 +13782,7 @@
    "name": "p08-summary-pc",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10196.666666666666,
+    "x": 11636.666666666666,
     "y": 219.425118283043,
     "scaleX": 1,
     "scaleY": 1,
@@ -14035,7 +14091,7 @@
    "name": "p08-summary-ln",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10196.666666666666,
+    "x": 11636.666666666666,
     "y": 175.02617035214632,
     "scaleX": 1,
     "scaleY": 1,
@@ -14072,7 +14128,7 @@
    "name": "p08-summary-rg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10636.222222222223,
+    "x": 12076.222222222223,
     "y": 164.9127380978308,
     "scaleX": 1,
     "scaleY": 1,
@@ -14099,7 +14155,7 @@
    "name": "p08-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -14123,7 +14179,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "0/1 (single 1) coding: $E[y_i\\mid\\mathbf x]=p_i(\\mathbf x)$, no Gaussian assumption needed",
+   "text": "$0$/$1$ (single 1) coding: $E[y_i\\mid\\mathbf x]=p_i(\\mathbf x)$, no Gaussian assumption needed",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -14133,7 +14189,7 @@
    "name": "p08-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -14167,7 +14223,7 @@
    "name": "p08-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -14201,7 +14257,7 @@
    "name": "p08-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -14235,7 +14291,7 @@
    "name": "p08-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -14269,7 +14325,7 @@
    "name": "p08-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -14300,7 +14356,7 @@
    "name": "p08-summary-s1d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -14331,7 +14387,7 @@
    "name": "p08-summary-s2d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -14367,7 +14423,7 @@
    "name": "p08-summary-s3d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -14398,7 +14454,7 @@
    "name": "p08-summary-s4d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -14429,7 +14485,7 @@
    "name": "p08-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -14456,7 +14512,7 @@
    "name": "p08-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14483,7 +14539,7 @@
    "name": "p08-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14510,7 +14566,7 @@
    "name": "p08-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14537,7 +14593,7 @@
    "name": "p08-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -14564,7 +14620,7 @@
    "name": "p08-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14591,7 +14647,7 @@
    "name": "p08-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14618,7 +14674,7 @@
    "name": "p08-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14645,7 +14701,7 @@
    "name": "p08-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14686,7 +14742,7 @@
    "name": "p08-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10169.94,
+    "x": 11609.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -14713,7 +14769,7 @@
    "name": "p08-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10119.12,
+    "x": 11559.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14754,7 +14810,7 @@
    "name": "p08-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10114.5,
+    "x": 11554.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -14781,7 +14837,7 @@
    "name": "p08-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14808,7 +14864,7 @@
    "name": "p08-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14835,7 +14891,7 @@
    "name": "p08-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14862,7 +14918,7 @@
    "name": "p08-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14889,7 +14945,7 @@
    "name": "p08-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -14916,7 +14972,7 @@
    "name": "p08-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14943,7 +14999,7 @@
    "name": "p08-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14980,7 +15036,7 @@
    "name": "p08-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -15007,7 +15063,7 @@
    "name": "p08-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15072,7 +15128,7 @@
    "name": "p08-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15137,7 +15193,7 @@
    "name": "p08-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -15174,7 +15230,7 @@
    "name": "p08-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -15211,7 +15267,7 @@
    "name": "p08-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15238,7 +15294,7 @@
    "name": "p08-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15265,7 +15321,7 @@
    "name": "p08-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -15292,7 +15348,7 @@
    "name": "p08-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10139.28,
+    "x": 11579.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -15341,7 +15397,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 01/08 · 1 Indicator coding · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 01/09 · 1 Indicator coding · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-indicator-cue0": {
@@ -15475,7 +15531,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the gold formula: average = probability.",
+   "text": "    See the gold formula: average: probability.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -15541,7 +15597,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 02/08 · 2 Loss and probability · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 02/09 · 2 Loss and probability · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-eight-two-cue0": {
@@ -15719,7 +15775,7 @@
    "name": "p03-parabola-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3030,
+    "x": 4470,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -15741,7 +15797,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 03/08 · 2 Loss and probability · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 04/09 · 2 Loss and probability · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-parabola-cue0": {
@@ -15750,7 +15806,7 @@
    "name": "p03-parabola-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15783,7 +15839,7 @@
    "name": "p03-parabola-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15817,7 +15873,7 @@
    "name": "p03-parabola-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15851,7 +15907,7 @@
    "name": "p03-parabola-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15885,7 +15941,7 @@
    "name": "p03-parabola-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 3020,
+    "x": 4460,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15919,7 +15975,7 @@
    "name": "p04-multiclass-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4470,
+    "x": 5910,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -15941,7 +15997,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 04/08 · 3 Multiclass decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 05/09 · 3 Multiclass decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-multiclass-cue0": {
@@ -15950,7 +16006,7 @@
    "name": "p04-multiclass-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -15983,7 +16039,7 @@
    "name": "p04-multiclass-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16017,7 +16073,7 @@
    "name": "p04-multiclass-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16051,7 +16107,7 @@
    "name": "p04-multiclass-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16085,7 +16141,7 @@
    "name": "p05-fit-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5910,
+    "x": 7350,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16107,7 +16163,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 05/08 · 4 Limits of linear approximation · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 06/09 · 4 Limits of linear approximation · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-fit-cue0": {
@@ -16116,7 +16172,7 @@
    "name": "p05-fit-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16149,7 +16205,7 @@
    "name": "p05-fit-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16183,7 +16239,7 @@
    "name": "p05-fit-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16217,7 +16273,7 @@
    "name": "p05-fit-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16251,7 +16307,7 @@
    "name": "p05-fit-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16285,7 +16341,7 @@
    "name": "p06-coding-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7350,
+    "x": 8790,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16307,7 +16363,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 06/08 · 5 Theoretical target and calibration · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 07/09 · 5 Theoretical target and calibration · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-coding-cue0": {
@@ -16316,7 +16372,7 @@
    "name": "p06-coding-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16349,7 +16405,7 @@
    "name": "p06-coding-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16383,7 +16439,7 @@
    "name": "p06-coding-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16417,7 +16473,7 @@
    "name": "p06-coding-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16451,7 +16507,7 @@
    "name": "p07-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16473,7 +16529,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 07/08 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 08/09 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-practice-cue0": {
@@ -16482,7 +16538,7 @@
    "name": "p07-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16515,7 +16571,7 @@
    "name": "p07-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16549,7 +16605,7 @@
    "name": "p07-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16583,7 +16639,7 @@
    "name": "p07-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16617,7 +16673,7 @@
    "name": "p08-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16639,7 +16695,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 08/08 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 09/09 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-summary-cue0": {
@@ -16648,7 +16704,7 @@
    "name": "p08-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16681,7 +16737,7 @@
    "name": "p08-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16715,7 +16771,7 @@
    "name": "p08-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16749,7 +16805,7 @@
    "name": "p08-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16783,7 +16839,7 @@
    "name": "p08-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16817,7 +16873,7 @@
    "name": "p08-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16875,6 +16931,1728 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p03-identity-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 2880,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-bg",
+   "name": "p03-identity-bg",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 2920,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-rule",
+   "name": "p03-identity-rule",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-title": {
+   "type": "text",
+   "transform": {
+    "x": 2920,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 26,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Why does squared loss split into an approximation term plus a fixed term? Derive it once",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-title",
+   "name": "p03-identity-title",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 2920,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$y$ takes only the values $0$ and $1$, with $P(y=1\\mid\\mathbf x)=p$. For any prediction $g$, what is the expected squared loss?",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-ctx",
+   "name": "p03-identity-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-src": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP11 lecture §2 ($E[(g-y)^2\\mid\\mathbf x]=(g-p)^2+p(1-p)$); the example uses the $8$/$2$ data of the last page ($p=0.8$) and $g=0.5$, recomputed independently. Added page: the original deck gave only the result, restored derivation from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-src",
+   "name": "p03-identity-src",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 2930,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-plbg",
+   "name": "p03-identity-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-tA": {
+   "type": "text",
+   "transform": {
+    "x": 2950,
+    "y": 200,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 420,
+   "height": 24,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Split by whether $y$ is $1$ or $0$ ($g=0.5$)",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-tA",
+   "name": "p03-identity-tA",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-tB": {
+   "type": "text",
+   "transform": {
+    "x": 2950,
+    "y": 340,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 420,
+   "height": 24,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Split into approximation and fixed terms ($g=0.5$)",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-tB",
+   "name": "p03-identity-tB",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-a1": {
+   "type": "shape",
+   "transform": {
+    "x": 2960,
+    "y": 232,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 320.0,
+   "height": 70,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 13,
+    "radius": 8,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "$y=1$: $0.2$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-a1",
+   "name": "p03-identity-a1",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-a2": {
+   "type": "shape",
+   "transform": {
+    "x": 3280.0,
+    "y": 232,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 80.0,
+   "height": 70,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 13,
+    "radius": 8,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "0.05",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-a2",
+   "name": "p03-identity-a2",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-b1": {
+   "type": "shape",
+   "transform": {
+    "x": 2960,
+    "y": 372,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 144.0,
+   "height": 70,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 13,
+    "radius": 8,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "0.09",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-b1",
+   "name": "p03-identity-b1",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-b2": {
+   "type": "shape",
+   "transform": {
+    "x": 3104.0,
+    "y": 372,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 256.0,
+   "height": 70,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 13,
+    "radius": 8,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "Fixed term $0.16$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-b2",
+   "name": "p03-identity-b2",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-tt": {
+   "type": "text",
+   "transform": {
+    "x": 3230.0,
+    "y": 456,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 130,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#334155",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Both are $0.25$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-tt",
+   "name": "p03-identity-tt",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-st": {
+   "type": "shape",
+   "transform": {
+    "x": 3358,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p03-identity-st",
+   "name": "p03-identity-st",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-c0": {
+   "type": "text",
+   "transform": {
+    "x": 3470,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 15,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$E[(g-y)^2\\mid\\mathbf x]=p\\,(g-1)^2+(1-p)\\,g^2$: $y=1$ has probability $p$ and then the squared loss is $(g-1)^2$; $y=0$ has probability $1-p$ and the loss is $g^2$.",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-c0",
+   "name": "p03-identity-c0",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-c1": {
+   "type": "text",
+   "transform": {
+    "x": 3470,
+    "y": 184,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 33,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Expand: $p(g^2-2g+1)+(1-p)g^2=g^2-2pg+p$. (The coefficient of $g^2$ is $p+(1-p)=1$.)",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-c1",
+   "name": "p03-identity-c1",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-c2": {
+   "type": "text",
+   "transform": {
+    "x": 3470,
+    "y": 227,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 33,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "Complete the square by adding and subtracting $p^2$: $g^2-2pg+p^2+p-p^2=(g-p)^2+p(1-p)$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-c2",
+   "name": "p03-identity-c2",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-c3": {
+   "type": "text",
+   "transform": {
+    "x": 3470,
+    "y": 270,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 54,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "Check with $p=0.8$, $g=0.5$: left side $0.8(0.5)^2+0.2(0.5)^2=0.2+0.05=0.25$; right side $(0.5-0.8)^2+0.8\\times0.2=0.09+0.16=0.25$. One total, two ways of cutting it.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-c3",
+   "name": "p03-identity-c3",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-c4": {
+   "type": "text",
+   "transform": {
+    "x": 3470,
+    "y": 334,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 52,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "The second term $p(1-p)$ is the conditional variance of a $0$/$1$ variable and does not depend on $g$; only $(g-p)^2$ varies with $g$, so the minimum is at $g=p$. The next page plots it.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-c4",
+   "name": "p03-identity-c4",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the definition of expected squared loss.",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-cue0",
+   "name": "p03-identity-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: expand.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-cue1",
+   "name": "p03-identity-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green card: complete the square.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-cue2",
+   "name": "p03-identity-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the two bars: both cuts have the same total.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-cue3",
+   "name": "p03-identity-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 3020,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: the fixed term is the conditional variance.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-identity-cue4",
+   "name": "p03-identity-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p03-identity-m-shadow": {
+   "id": "p03-identity-m-shadow",
+   "type": "shape",
+   "name": "p03-identity-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2922.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-foot-l": {
+   "id": "p03-identity-m-foot-l",
+   "type": "shape",
+   "name": "p03-identity-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2947.6800000000003,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-foot-r": {
+   "id": "p03-identity-m-foot-r",
+   "type": "shape",
+   "name": "p03-identity-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2929.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-body": {
+   "id": "p03-identity-m-body",
+   "type": "shape",
+   "name": "p03-identity-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2925.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-identity-m-belly": {
+   "id": "p03-identity-m-belly",
+   "type": "shape",
+   "name": "p03-identity-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2935.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-bow-l": {
+   "id": "p03-identity-m-bow-l",
+   "type": "shape",
+   "name": "p03-identity-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2946.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-bow-r": {
+   "id": "p03-identity-m-bow-r",
+   "type": "shape",
+   "name": "p03-identity-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2937.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-bow-c": {
+   "id": "p03-identity-m-bow-c",
+   "type": "shape",
+   "name": "p03-identity-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2943.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-arm-l": {
+   "id": "p03-identity-m-arm-l",
+   "type": "shape",
+   "name": "p03-identity-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2963.6400000000003,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.0,
+   "height": 8.399999999999977,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 52.000000000000014,
+     "y": 79.99999999999918
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-identity-m-hand-l": {
+   "id": "p03-identity-m-hand-l",
+   "type": "shape",
+   "name": "p03-identity-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2981.7,
+    "y": 636.56,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-arm-r": {
+   "id": "p03-identity-m-arm-r",
+   "type": "shape",
+   "name": "p03-identity-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2924.16,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 20.000000000000068,
+     "y": 100.0
+    }
+   ]
+  },
+  "p03-identity-m-hand-r": {
+   "id": "p03-identity-m-hand-r",
+   "type": "shape",
+   "name": "p03-identity-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2920.38,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-ear-l": {
+   "id": "p03-identity-m-ear-l",
+   "type": "shape",
+   "name": "p03-identity-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2964.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-ear-r": {
+   "id": "p03-identity-m-ear-r",
+   "type": "shape",
+   "name": "p03-identity-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2917.8599999999997,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-head": {
+   "id": "p03-identity-m-head",
+   "type": "shape",
+   "name": "p03-identity-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2921.6400000000003,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-face": {
+   "id": "p03-identity-m-face",
+   "type": "shape",
+   "name": "p03-identity-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2926.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-cap-base": {
+   "id": "p03-identity-m-cap-base",
+   "type": "shape",
+   "name": "p03-identity-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2935.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-identity-m-cap-top": {
+   "id": "p03-identity-m-cap-top",
+   "type": "shape",
+   "name": "p03-identity-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2928.3599999999997,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-identity-m-tassel": {
+   "id": "p03-identity-m-tassel",
+   "type": "shape",
+   "name": "p03-identity-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2929.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p03-identity-m-knot": {
+   "id": "p03-identity-m-knot",
+   "type": "shape",
+   "name": "p03-identity-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2927.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-eye-l": {
+   "id": "p03-identity-m-eye-l",
+   "type": "shape",
+   "name": "p03-identity-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2950.2,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-pupil-l": {
+   "id": "p03-identity-m-pupil-l",
+   "type": "shape",
+   "name": "p03-identity-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2953.56,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-glint-l": {
+   "id": "p03-identity-m-glint-l",
+   "type": "shape",
+   "name": "p03-identity-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2954.4,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-eye-r": {
+   "id": "p03-identity-m-eye-r",
+   "type": "shape",
+   "name": "p03-identity-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2931.7200000000003,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-pupil-r": {
+   "id": "p03-identity-m-pupil-r",
+   "type": "shape",
+   "name": "p03-identity-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2935.08,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-glint-r": {
+   "id": "p03-identity-m-glint-r",
+   "type": "shape",
+   "name": "p03-identity-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2935.92,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-brow-l": {
+   "id": "p03-identity-m-brow-l",
+   "type": "shape",
+   "name": "p03-identity-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2951.04,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-identity-m-brow-r": {
+   "id": "p03-identity-m-brow-r",
+   "type": "shape",
+   "name": "p03-identity-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2932.56,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-identity-m-cheek-l": {
+   "id": "p03-identity-m-cheek-l",
+   "type": "shape",
+   "name": "p03-identity-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2958.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-cheek-r": {
+   "id": "p03-identity-m-cheek-r",
+   "type": "shape",
+   "name": "p03-identity-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2925.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-identity-m-mouth": {
+   "id": "p03-identity-m-mouth",
+   "type": "shape",
+   "name": "p03-identity-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 2939.7,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.599999999999994,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 87.49999999999997,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 75.00000000000006,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 62.500000000000036,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 37.49999999999997,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 25.0,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 12.499999999999972,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-identity-nav": {
+   "type": "text",
+   "transform": {
+    "x": 3030,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP11 · 03/09 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p03-identity-nav",
+   "name": "p03-identity-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -16902,9 +18680,9 @@
   {
    "id": "p01-indicator-st0",
    "order": 1,
-   "label": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability · See the target vectors of the three kinds of samples first.",
+   "label": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability · See the target vectors of the three kinds of samples first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -16923,9 +18701,9 @@
   {
    "id": "p01-indicator-st1",
    "order": 2,
-   "label": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability · See the three bars: the three probabilities at the same input.",
+   "label": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability · See the three bars: the three probabilities at the same input.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -16988,9 +18766,9 @@
   {
    "id": "p01-indicator-st2",
    "order": 3,
-   "label": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability · See the two notes on the right: the average of y_i.",
+   "label": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability · See the two notes on the right: the average of y_i.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17047,9 +18825,9 @@
   {
    "id": "p01-indicator-st3",
    "order": 4,
-   "label": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability · See the gold formula: average = probability.",
+   "label": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability · See the gold formula: average: probability.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17088,9 +18866,9 @@
   {
    "id": "p01-indicator-st4",
    "order": 5,
-   "label": "Turn classes into 0/1 and \"average\" gets a meaning: it equals the posterior probability · See the gold star: apply KP10.",
+   "label": "Turn classes into $0$/$1$ and \"average\" gets a meaning: it equals the posterior probability · See the gold star: apply KP10.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17137,7 +18915,7 @@
    "order": 6,
    "label": "10 records: 8 are 1 and 2 are 0. What guess minimizes the squared loss? · See the 10 records and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17158,7 +18936,7 @@
    "order": 7,
    "label": "10 records: 8 are 1 and 2 are 0. What guess minimizes the squared loss? · See the gold formula: the average.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17199,7 +18977,7 @@
    "order": 8,
    "label": "10 records: 8 are 1 and 2 are 0. What guess minimizes the squared loss? · See the green formula: report 0.8.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17240,7 +19018,7 @@
    "order": 9,
    "label": "10 records: 8 are 1 and 2 are 0. What guess minimizes the squared loss? · See the red formula: report 1.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17281,7 +19059,7 @@
    "order": 10,
    "label": "10 records: 8 are 1 and 2 are 0. What guess minimizes the squared loss? · See the gold star: why the extra.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17324,11 +19102,11 @@
    }
   },
   {
-   "id": "p03-parabola-st0",
+   "id": "p03-identity-st0",
    "order": 11,
-   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p) · See the axes and the question first.",
+   "label": "Why does squared loss split into an approximation term plus a fixed term? Derive it once · First, the definition of expected squared loss.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17345,17 +19123,238 @@
    }
   },
   {
-   "id": "p03-parabola-st1",
+   "id": "p03-identity-st1",
    "order": 12,
-   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p) · See the blue curve: loss against g.",
+   "label": "Why does squared loss split into an approximation term plus a fixed term? Derive it once · See the blue card: expand.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 3520.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-identity-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-identity-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p03-identity-st2",
+   "order": 13,
+   "label": "Why does squared loss split into an approximation term plus a fixed term? Derive it once · See the green card: complete the square.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 3520.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-identity-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-identity-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p03-identity-st3",
+   "order": 14,
+   "label": "Why does squared loss split into an approximation term plus a fixed term? Derive it once · See the two bars: both cuts have the same total.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 3520.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-identity-a1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-a2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-b1",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-b2",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-tt",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-c3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-cue3",
+      "effect": "fade",
+      "delayMs": 240,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-identity-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p03-identity-st4",
+   "order": 15,
+   "label": "Why does squared loss split into an approximation term plus a fixed term? Derive it once · See the gold star: the fixed term is the conditional variance.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 3520.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-identity-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-c4",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-identity-cue4",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-identity-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p03-parabola-st0",
+   "order": 16,
+   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p) · See the axes and the question first.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p03-parabola-st1",
+   "order": 17,
+   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p) · See the blue curve: loss against g.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17393,16 +19392,16 @@
   },
   {
    "id": "p03-parabola-st2",
-   "order": 13,
-   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p) · See the green point and green dashed line: the bottom.",
+   "order": 18,
+   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p) · See the green point and green dashed line: the bottom.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 3520.0,
+     "x": 4960.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17446,16 +19445,16 @@
   },
   {
    "id": "p03-parabola-st3",
-   "order": 14,
-   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p) · See the red and orange points: reporting 1 and 0.5.",
+   "order": 19,
+   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p) · See the red and orange points: reporting 1 and 0.5.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 3520.0,
+     "x": 4960.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17499,16 +19498,16 @@
   },
   {
    "id": "p03-parabola-st4",
-   "order": 15,
-   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g = p, with height p(1−p) · See the gold star: conclusion.",
+   "order": 20,
+   "label": "Plot \"what to report\" against \"squared loss\": the bottom is at g: p, with height p(1−p) · See the gold star: conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 3520.0,
+     "x": 4960.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17546,16 +19545,16 @@
   },
   {
    "id": "p04-multiclass-st0",
-   "order": 16,
-   "label": "Multiclass: total squared loss = approximation term + fixed term; a linear model lowers only the former · See the question first: what are the two terms?",
+   "order": 21,
+   "label": "Multiclass: total squared loss: approximation term + fixed term; a linear model lowers only the former · See the question first: what are the two terms?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17567,16 +19566,16 @@
   },
   {
    "id": "p04-multiclass-st1",
-   "order": 17,
-   "label": "Multiclass: total squared loss = approximation term + fixed term; a linear model lowers only the former · See the gray bar: g exactly equals the probabilities.",
+   "order": 22,
+   "label": "Multiclass: total squared loss: approximation term + fixed term; a linear model lowers only the former · See the gray bar: g exactly equals the probabilities.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17626,16 +19625,16 @@
   },
   {
    "id": "p04-multiclass-st2",
-   "order": 18,
-   "label": "Multiclass: total squared loss = approximation term + fixed term; a linear model lowers only the former · See the second group: gray plus red.",
+   "order": 23,
+   "label": "Multiclass: total squared loss: approximation term + fixed term; a linear model lowers only the former · See the second group: gray plus red.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17685,16 +19684,16 @@
   },
   {
    "id": "p04-multiclass-st3",
-   "order": 19,
-   "label": "Multiclass: total squared loss = approximation term + fixed term; a linear model lowers only the former · See the gold star: which term the model can lower.",
+   "order": 24,
+   "label": "Multiclass: total squared loss: approximation term + fixed term; a linear model lowers only the former · See the gold star: which term the model can lower.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17732,16 +19731,16 @@
   },
   {
    "id": "p05-fit-st0",
-   "order": 20,
+   "order": 25,
    "label": "The true posterior probability is an S-shaped curve; a line can only approximate it, and may exceed 1 · See the axes and the range of probabilities first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17753,16 +19752,16 @@
   },
   {
    "id": "p05-fit-st1",
-   "order": 21,
+   "order": 26,
    "label": "The true posterior probability is an S-shaped curve; a line can only approximate it, and may exceed 1 · See the blue curve and the three points: the posterior p",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17818,16 +19817,16 @@
   },
   {
    "id": "p05-fit-st2",
-   "order": 22,
+   "order": 27,
    "label": "The true posterior probability is an S-shaped curve; a line can only approximate it, and may exceed 1 · See the orange line: the best linear approximation.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17865,16 +19864,16 @@
   },
   {
    "id": "p05-fit-st3",
-   "order": 23,
+   "order": 28,
    "label": "The true posterior probability is an S-shaped curve; a line can only approximate it, and may exceed 1 · See the red circle: x=6 exceeds 1.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17912,16 +19911,16 @@
   },
   {
    "id": "p05-fit-st4",
-   "order": 24,
+   "order": 29,
    "label": "The true posterior probability is an S-shaped curve; a line can only approximate it, and may exceed 1 · See the gold star: the limit.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17959,16 +19958,16 @@
   },
   {
    "id": "p06-coding-st0",
-   "order": 25,
+   "order": 30,
    "label": "A score is not a calibrated probability: clipping only fixes the range, and a change of coding needs conversion · See the two number lines first: the two coding",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -17980,16 +19979,16 @@
   },
   {
    "id": "p06-coding-st1",
-   "order": 26,
+   "order": 31,
    "label": "A score is not a calibrated probability: clipping only fixes the range, and a change of coding needs conversion · See the green points and arrow: the conversion",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18039,16 +20038,16 @@
   },
   {
    "id": "p06-coding-st2",
-   "order": 27,
+   "order": 32,
    "label": "A score is not a calibrated probability: clipping only fixes the range, and a change of coding needs conversion · See the red point: the score leaves the range.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18092,16 +20091,16 @@
   },
   {
    "id": "p06-coding-st3",
-   "order": 28,
+   "order": 33,
    "label": "A score is not a calibrated probability: clipping only fixes the range, and a change of coding needs conversion · See the gold triangle: clipping and the thresh",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18139,16 +20138,16 @@
   },
   {
    "id": "p07-practice-st0",
-   "order": 29,
+   "order": 34,
    "label": "Practice: p₁(x_A) = 0.7: what are the expected squared losses of predicting 0.7 and of predicting 1? · Work it out first: see the two bars and the question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18160,16 +20159,16 @@
   },
   {
    "id": "p07-practice-st1",
-   "order": 30,
+   "order": 35,
    "label": "Practice: p₁(x_A) = 0.7: what are the expected squared losses of predicting 0.7 and of predicting 1? · See feedback (a): predict 0.7.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18213,16 +20212,16 @@
   },
   {
    "id": "p07-practice-st2",
-   "order": 31,
+   "order": 36,
    "label": "Practice: p₁(x_A) = 0.7: what are the expected squared losses of predicting 0.7 and of predicting 1? · See feedback (b): predict 1.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18254,16 +20253,16 @@
   },
   {
    "id": "p07-practice-st3",
-   "order": 32,
+   "order": 37,
    "label": "Practice: p₁(x_A) = 0.7: what are the expected squared losses of predicting 0.7 and of predicting 1? · See feedback (c): the difference.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18301,16 +20300,16 @@
   },
   {
    "id": "p08-summary-st0",
-   "order": 33,
+   "order": 38,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the left first: the S-shaped curve, the orange li",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18322,16 +20321,16 @@
   },
   {
    "id": "p08-summary-st1",
-   "order": 34,
+   "order": 39,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the arrow: coding.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18369,16 +20368,16 @@
   },
   {
    "id": "p08-summary-st2",
-   "order": 35,
+   "order": 40,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the diamond: loss.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18416,16 +20415,16 @@
   },
   {
    "id": "p08-summary-st3",
-   "order": 36,
+   "order": 41,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the star: multiclass decomposition.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18463,16 +20462,16 @@
   },
   {
    "id": "p08-summary-st4",
-   "order": 37,
+   "order": 42,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the red triangle: limits.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18510,16 +20509,16 @@
   },
   {
    "id": "p08-summary-st5",
-   "order": 38,
+   "order": 43,
    "label": "Summary: squared loss targets the posterior probability; a line only approximates it and may leave [0,1] · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,

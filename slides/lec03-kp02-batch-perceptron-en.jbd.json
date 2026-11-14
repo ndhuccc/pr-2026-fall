@@ -485,6 +485,68 @@
     "p07-practice-m-cheek-r",
     "p07-practice-m-mouth",
     "p07-practice-m-mark",
+    "p08-loss-bg",
+    "p08-loss-rule",
+    "p08-loss-title",
+    "p08-loss-ctx",
+    "p08-loss-src",
+    "p08-loss-plbg",
+    "p08-loss-axm",
+    "p08-loss-axl",
+    "p08-loss-tm",
+    "p08-loss-tl",
+    "p08-loss-t0",
+    "p08-loss-tm1",
+    "p08-loss-curve",
+    "p08-loss-tcurve",
+    "p08-loss-pre",
+    "p08-loss-tpre",
+    "p08-loss-postA",
+    "p08-loss-postB",
+    "p08-loss-tpost",
+    "p08-loss-st",
+    "p08-loss-c0",
+    "p08-loss-f0",
+    "p08-loss-c1",
+    "p08-loss-c2",
+    "p08-loss-c3",
+    "p08-loss-c4",
+    "p08-loss-c5",
+    "p08-loss-cue0",
+    "p08-loss-cue1",
+    "p08-loss-cue2",
+    "p08-loss-cue3",
+    "p08-loss-cue4",
+    "p08-loss-cue5",
+    "p08-loss-m-shadow",
+    "p08-loss-m-foot-l",
+    "p08-loss-m-foot-r",
+    "p08-loss-m-body",
+    "p08-loss-m-belly",
+    "p08-loss-m-bow-l",
+    "p08-loss-m-bow-r",
+    "p08-loss-m-bow-c",
+    "p08-loss-m-arm-l",
+    "p08-loss-m-hand-l",
+    "p08-loss-m-arm-r",
+    "p08-loss-m-hand-r",
+    "p08-loss-m-ear-l",
+    "p08-loss-m-ear-r",
+    "p08-loss-m-head",
+    "p08-loss-m-face",
+    "p08-loss-m-cap-base",
+    "p08-loss-m-cap-top",
+    "p08-loss-m-tassel",
+    "p08-loss-m-knot",
+    "p08-loss-m-eye-l",
+    "p08-loss-m-eye-r",
+    "p08-loss-m-brow-l",
+    "p08-loss-m-brow-r",
+    "p08-loss-m-cheek-l",
+    "p08-loss-m-cheek-r",
+    "p08-loss-m-mouth",
+    "p08-loss-m-teeth",
+    "p08-loss-nav",
     "p08-summary-bg",
     "p08-summary-rule",
     "p08-summary-title",
@@ -682,7 +744,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "First find who is wrong: use the \"labeled score\" m = y·g",
+   "text": "First find who is wrong: use the \"labeled score\" m: y·g",
    "shapeKind": "rectangle"
   },
   "p01-who-fails-ctx": {
@@ -705,7 +767,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 15,
+    "fontSize": 13,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -713,7 +775,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Eight points: blue circles are the positive class ($y=+1$), red triangles the negative class ($y=-1$). The current boundary is $\\mathbf v_0=(1,1,-0.5)$, i.e. $g=x_1+x_2-0.5$.",
+   "text": "Eight points: blue circles are the positive class ($y=+1$), red triangles the negative class ($y=-1$). The current boundary is $\\mathbf v_0=(1,1,-0.5)$, that is $g=x_1+x_2-0.5$.",
    "shapeKind": "rectangle"
   },
   "p01-who-fails-src": {
@@ -3553,7 +3615,7 @@
     "gradientTo": "#f8f6ff",
     "gradientAngle": 90
    },
-   "text": "×: -0.5",
+   "text": "×: $-0.5$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -12900,7 +12962,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: KP02 lecture practice; answer computed by build_kp02_en.py (v=(1.3,0.65,−0.5), new scores 0.0525 and −0.2725) and recomputed independently by check_numbers_kp02.py.",
+   "text": "Source: KP02 lecture practice; answer computed by build_kp02_en.py (v=(1.3,0.65,$−0.5$), new scores 0.0525 and $−0.2725$) and recomputed independently by check_numbers_kp02.py.",
    "shapeKind": "rectangle"
   },
   "p07-practice-plbg": {
@@ -14786,7 +14848,7 @@
    "name": "p08-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14813,7 +14875,7 @@
    "name": "p08-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -14840,7 +14902,7 @@
    "name": "p08-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -14871,7 +14933,7 @@
    "name": "p08-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14902,7 +14964,7 @@
    "name": "p08-summary-plbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10133.0,
+    "x": 11573.0,
     "y": 125.99999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -14929,7 +14991,7 @@
    "name": "p08-summary-plax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10139.0,
+    "x": 11579.0,
     "y": 335,
     "scaleX": 1,
     "scaleY": 1,
@@ -14966,7 +15028,7 @@
    "name": "p08-summary-play",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10285,
+    "x": 11725,
     "y": 131.99999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -15003,7 +15065,7 @@
    "name": "p08-summary-pltx-0.5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10172.0,
+    "x": 11612.0,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -15034,7 +15096,7 @@
    "name": "p08-summary-plty-0.5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10233,
+    "x": 11673,
     "y": 421.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15065,7 +15127,7 @@
    "name": "p08-summary-pltx0.5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10362.0,
+    "x": 11802.0,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -15096,7 +15158,7 @@
    "name": "p08-summary-plty0.5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10233,
+    "x": 11673,
     "y": 231.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15127,7 +15189,7 @@
    "name": "p08-summary-plxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10473.0,
+    "x": 11913.0,
     "y": 309,
     "scaleX": 1,
     "scaleY": 1,
@@ -15158,7 +15220,7 @@
    "name": "p08-summary-plyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10293,
+    "x": 11733,
     "y": 127.99999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -15189,7 +15251,7 @@
    "name": "p08-summary-bd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10171.0,
+    "x": 11611.0,
     "y": 125.99999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -15227,7 +15289,7 @@
    "name": "p08-summary-bd1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10276.838028169013,
+    "x": 11716.838028169013,
     "y": 125.99999999999997,
     "scaleX": 1,
     "scaleY": 1,
@@ -15264,7 +15326,7 @@
    "name": "p08-summary-pt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10352.0,
+    "x": 11792.0,
     "y": 316.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -15298,7 +15360,7 @@
    "name": "p08-summary-pt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10428.0,
+    "x": 11868.0,
     "y": 212.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15332,7 +15394,7 @@
    "name": "p08-summary-pt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10371.0,
+    "x": 11811.0,
     "y": 155.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15366,7 +15428,7 @@
    "name": "p08-summary-pt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10447.0,
+    "x": 11887.0,
     "y": 288.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15400,7 +15462,7 @@
    "name": "p08-summary-pt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10236.0,
+    "x": 11676.0,
     "y": 182.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -15430,7 +15492,7 @@
    "name": "p08-summary-pt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160.0,
+    "x": 11600.0,
     "y": 287.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15460,7 +15522,7 @@
    "name": "p08-summary-pt6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10217.0,
+    "x": 11657.0,
     "y": 401.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15490,7 +15552,7 @@
    "name": "p08-summary-pt7",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10293.0,
+    "x": 11733.0,
     "y": 420.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15520,7 +15582,7 @@
    "name": "p08-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -15554,7 +15616,7 @@
    "name": "p08-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -15588,7 +15650,7 @@
    "name": "p08-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -15622,7 +15684,7 @@
    "name": "p08-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -15656,7 +15718,7 @@
    "name": "p08-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -15690,7 +15752,7 @@
    "name": "p08-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -15721,7 +15783,7 @@
    "name": "p08-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15752,7 +15814,7 @@
    "name": "p08-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -15788,7 +15850,7 @@
    "name": "p08-summary-s3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -15819,7 +15881,7 @@
    "name": "p08-summary-s4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -15850,7 +15912,7 @@
    "name": "p08-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -15877,7 +15939,7 @@
    "name": "p08-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15904,7 +15966,7 @@
    "name": "p08-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15931,7 +15993,7 @@
    "name": "p08-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -15958,7 +16020,7 @@
    "name": "p08-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -15985,7 +16047,7 @@
    "name": "p08-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16012,7 +16074,7 @@
    "name": "p08-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16039,7 +16101,7 @@
    "name": "p08-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16066,7 +16128,7 @@
    "name": "p08-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16107,7 +16169,7 @@
    "name": "p08-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10169.94,
+    "x": 11609.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16134,7 +16196,7 @@
    "name": "p08-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10119.12,
+    "x": 11559.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16175,7 +16237,7 @@
    "name": "p08-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10114.5,
+    "x": 11554.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16202,7 +16264,7 @@
    "name": "p08-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16229,7 +16291,7 @@
    "name": "p08-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16256,7 +16318,7 @@
    "name": "p08-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -16283,7 +16345,7 @@
    "name": "p08-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -16310,7 +16372,7 @@
    "name": "p08-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -16337,7 +16399,7 @@
    "name": "p08-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16364,7 +16426,7 @@
    "name": "p08-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -16401,7 +16463,7 @@
    "name": "p08-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -16428,7 +16490,7 @@
    "name": "p08-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -16493,7 +16555,7 @@
    "name": "p08-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -16558,7 +16620,7 @@
    "name": "p08-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -16595,7 +16657,7 @@
    "name": "p08-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -16632,7 +16694,7 @@
    "name": "p08-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -16659,7 +16721,7 @@
    "name": "p08-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -16686,7 +16748,7 @@
    "name": "p08-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -16713,7 +16775,7 @@
    "name": "p08-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10139.28,
+    "x": 11579.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -16762,7 +16824,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 01/08 · 1 Find the misclassified points · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 01/09 · 1 Find the misclassified points · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-who-fails-cue0": {
@@ -16962,7 +17024,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 02/08 · 2 Augmented vectors · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 02/09 · 2 Augmented vectors · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-augment-cue0": {
@@ -17196,7 +17258,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 03/08 · 3 Fixing one point at a time · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 03/09 · 3 Fixing one point at a time · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-one-point-cue0": {
@@ -17396,7 +17458,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 04/08 · 4 Batch update · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 04/09 · 4 Batch update · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-sum-cue0": {
@@ -17630,7 +17692,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 05/08 · 4 Batch update · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 05/09 · 4 Batch update · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-update-cue0": {
@@ -17830,7 +17892,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 06/08 · 5 Stopping condition · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 06/09 · 5 Stopping condition · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-stop-cue0": {
@@ -18030,7 +18092,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 07/08 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 07/09 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-practice-cue0": {
@@ -18174,7 +18236,7 @@
    "name": "p08-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -18196,7 +18258,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 08/08 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 09/09 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-summary-cue0": {
@@ -18205,7 +18267,7 @@
    "name": "p08-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18238,7 +18300,7 @@
    "name": "p08-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18272,7 +18334,7 @@
    "name": "p08-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18306,7 +18368,7 @@
    "name": "p08-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18340,7 +18402,7 @@
    "name": "p08-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18374,7 +18436,7 @@
    "name": "p08-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -18432,6 +18494,2000 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p08-loss-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 10080,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-bg",
+   "name": "p08-loss-bg",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 10120,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-rule",
+   "name": "p08-loss-rule",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-title": {
+   "type": "text",
+   "transform": {
+    "x": 10120,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Where does the update rule come from? The perceptron cost and its subgradient",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-title",
+   "name": "p08-loss-title",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 10120,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "The batch update $\\mathbf v\\leftarrow\\mathbf v+\\rho\\sum_{i\\in Y}y_i\\mathbf a_i$ is not arbitrary: it is gradient descent on the perceptron cost $J$.",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-ctx",
+   "name": "p08-loss-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-src": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP02 lecture §1.1 (formal definitions of $Y$ and $J$, and the subgradient); numbers reuse the main example $\\mathbf v_0=(1,1,-0.5)$, $\\rho=0.7$, recomputed independently. Added page: the original deck left this derivation out, restored from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-src",
+   "name": "p08-loss-src",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 10130,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 360,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-plbg",
+   "name": "p08-loss-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-axm": {
+   "type": "shape",
+   "transform": {
+    "x": 10150,
+    "y": 440,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 440,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p08-loss-axm",
+   "name": "p08-loss-axm",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-axl": {
+   "type": "shape",
+   "transform": {
+    "x": 10274,
+    "y": 150,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 290,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ],
+   "id": "p08-loss-axl",
+   "name": "p08-loss-axl",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tm": {
+   "type": "text",
+   "transform": {
+    "x": 10558,
+    "y": 446,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 30,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "m",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-tm",
+   "name": "p08-loss-tm",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tl": {
+   "type": "text",
+   "transform": {
+    "x": 10282,
+    "y": 142,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 60,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "ℓ(m)",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-tl",
+   "name": "p08-loss-tl",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-t0": {
+   "type": "text",
+   "transform": {
+    "x": 10266,
+    "y": 446,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "0",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-t0",
+   "name": "p08-loss-t0",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tm1": {
+   "type": "text",
+   "transform": {
+    "x": 10454,
+    "y": 446,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "1",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-tm1",
+   "name": "p08-loss-tm1",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-curve": {
+   "type": "shape",
+   "transform": {
+    "x": 10160.0,
+    "y": 140.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 418.0,
+   "height": 300.0,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#2563eb",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 5
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 27.272727272727273,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    }
+   ],
+   "id": "p08-loss-curve",
+   "name": "p08-loss-curve",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tcurve": {
+   "type": "text",
+   "transform": {
+    "x": 10292,
+    "y": 176,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 150,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "ℓ = max(0, −m)",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-tcurve",
+   "name": "p08-loss-tcurve",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-pre": {
+   "type": "shape",
+   "transform": {
+    "x": 10256.5,
+    "y": 407.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#dc2626",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p08-loss-pre",
+   "name": "p08-loss-pre",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tpre": {
+   "type": "text",
+   "transform": {
+    "x": 10284,
+    "y": 374,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 220,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#991b1b",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "← $A$, $B$: $m=-0.05$, $\\ell=0.05$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-tpre",
+   "name": "p08-loss-tpre",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-postA": {
+   "type": "shape",
+   "transform": {
+    "x": 10283.765,
+    "y": 432,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p08-loss-postA",
+   "name": "p08-loss-postA",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-postB": {
+   "type": "shape",
+   "transform": {
+    "x": 10342.285,
+    "y": 432,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p08-loss-postB",
+   "name": "p08-loss-postB",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-tpost": {
+   "type": "text",
+   "transform": {
+    "x": 10306,
+    "y": 404,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 300,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#166534",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "After the update, $A'$, $B'$: $m=0.0935$, $0.4015$, $\\ell=0$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-tpost",
+   "name": "p08-loss-tpost",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-st": {
+   "type": "shape",
+   "transform": {
+    "x": 10558,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p08-loss-st",
+   "name": "p08-loss-st",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c0": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 15,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Goal: make every point labeled score $m_i=y_i\\mathbf v^T\\mathbf a_i$ greater than $0$. Only points with $m_i\\le0$ pay a cost, with loss $\\ell(m)=\\max(0,-m)$ per point.",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-c0",
+   "name": "p08-loss-c0",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-f0": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 184,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 45,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$J(\\mathbf v)=\\sum_i\\max(0,-y_i\\mathbf v^T\\mathbf a_i)=\\sum_{i\\in Y(\\mathbf v)}\\delta_i\\,\\mathbf v^T\\mathbf a_i,\\quad\\delta_i=-y_i$",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-f0",
+   "name": "p08-loss-f0",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c1": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 239,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 34,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "Both $A$ and $B$ have $m=-0.05$ and each pays $0.05$: $J(\\mathbf v_0)=0.05+0.05=0.10$. The other six points have $m>0$ and pay nothing.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-c1",
+   "name": "p08-loss-c1",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c2": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 283,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 50,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "While $Y$ stays fixed, $J$ is linear in $\\mathbf v$ with gradient $\\nabla J=\\sum_{i\\in Y}\\delta_i\\mathbf a_i=-\\sum_{i\\in Y}y_i\\mathbf a_i$. At the kink ($m=0$) this vector is a valid subgradient and still a usable descent direction.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-c2",
+   "name": "p08-loss-c2",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c3": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 343,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 55,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "Step along the negative gradient: $\\mathbf v\\leftarrow\\mathbf v-\\rho\\nabla J=\\mathbf v+\\rho\\sum_{i\\in Y}y_i\\mathbf a_i$, exactly the batch update. Here $\\nabla J=-(0.6,-0.7,0)$ and $\\mathbf v_1=(1,1,-0.5)+0.7(0.6,-0.7,0)=(1.42,0.51,-0.5)$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-c3",
+   "name": "p08-loss-c3",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c4": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 408,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 34,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "After the update, $m$ for $A$ and $B$ becomes $0.0935$ and $0.4015$, both on the flat part where $\\ell=0$: $J(\\mathbf v_1)=0$, $Y=\\emptyset$, stop.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-c4",
+   "name": "p08-loss-c4",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-c5": {
+   "type": "text",
+   "transform": {
+    "x": 10670,
+    "y": 452,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 52,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "Do not use $J=0$ as the stopping rule: at $\\mathbf v=\\mathbf 0$ every $m=0$ and $J=0$, yet no point is strictly correct. Stop when $Y=\\emptyset$ (all $m>0$).",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-c5",
+   "name": "p08-loss-c5",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the goal and formula: the definition of $J$.",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-cue0",
+   "name": "p08-loss-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue polyline and red dots: $A$ and $B$ each pay $0.05$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-cue1",
+   "name": "p08-loss-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the purple note: gradient and subgradient.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-cue2",
+   "name": "p08-loss-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold formula: one negative-gradient step is the batch update.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-cue3",
+   "name": "p08-loss-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green dots: after the update $J$ drops to $0$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-cue4",
+   "name": "p08-loss-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-cue5": {
+   "type": "text",
+   "transform": {
+    "x": 10220,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star and red warning: $J=0$ is not the stopping rule.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p08-loss-cue5",
+   "name": "p08-loss-cue5",
+   "sceneId": "scene-u01"
+  },
+  "p08-loss-m-shadow": {
+   "id": "p08-loss-m-shadow",
+   "type": "shape",
+   "name": "p08-loss-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10122.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-foot-l": {
+   "id": "p08-loss-m-foot-l",
+   "type": "shape",
+   "name": "p08-loss-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10147.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-foot-r": {
+   "id": "p08-loss-m-foot-r",
+   "type": "shape",
+   "name": "p08-loss-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10129.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-body": {
+   "id": "p08-loss-m-body",
+   "type": "shape",
+   "name": "p08-loss-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10125.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p08-loss-m-belly": {
+   "id": "p08-loss-m-belly",
+   "type": "shape",
+   "name": "p08-loss-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10135.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-bow-l": {
+   "id": "p08-loss-m-bow-l",
+   "type": "shape",
+   "name": "p08-loss-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10146.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-bow-r": {
+   "id": "p08-loss-m-bow-r",
+   "type": "shape",
+   "name": "p08-loss-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10137.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-bow-c": {
+   "id": "p08-loss-m-bow-c",
+   "type": "shape",
+   "name": "p08-loss-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10143.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-arm-l": {
+   "id": "p08-loss-m-arm-l",
+   "type": "shape",
+   "name": "p08-loss-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10163.64,
+    "y": 619.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.920000000000002,
+   "height": 31.08000000000004,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 92.30769230769228,
+     "y": 54.054054054053836
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p08-loss-m-hand-l": {
+   "id": "p08-loss-m-hand-l",
+   "type": "shape",
+   "name": "p08-loss-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10169.94,
+    "y": 610.9399999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-arm-r": {
+   "id": "p08-loss-m-arm-r",
+   "type": "shape",
+   "name": "p08-loss-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10119.12,
+    "y": 619.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.239999999999995,
+   "height": 31.08000000000004,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 9.090909090909056,
+     "y": 54.054054054053836
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p08-loss-m-hand-r": {
+   "id": "p08-loss-m-hand-r",
+   "type": "shape",
+   "name": "p08-loss-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10114.5,
+    "y": 610.9399999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-ear-l": {
+   "id": "p08-loss-m-ear-l",
+   "type": "shape",
+   "name": "p08-loss-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10164.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-ear-r": {
+   "id": "p08-loss-m-ear-r",
+   "type": "shape",
+   "name": "p08-loss-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10117.86,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-head": {
+   "id": "p08-loss-m-head",
+   "type": "shape",
+   "name": "p08-loss-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10121.64,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-face": {
+   "id": "p08-loss-m-face",
+   "type": "shape",
+   "name": "p08-loss-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10126.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-cap-base": {
+   "id": "p08-loss-m-cap-base",
+   "type": "shape",
+   "name": "p08-loss-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10135.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p08-loss-m-cap-top": {
+   "id": "p08-loss-m-cap-top",
+   "type": "shape",
+   "name": "p08-loss-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10128.36,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p08-loss-m-tassel": {
+   "id": "p08-loss-m-tassel",
+   "type": "shape",
+   "name": "p08-loss-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10129.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p08-loss-m-knot": {
+   "id": "p08-loss-m-knot",
+   "type": "shape",
+   "name": "p08-loss-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10127.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-eye-l": {
+   "id": "p08-loss-m-eye-l",
+   "type": "shape",
+   "name": "p08-loss-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10151.04,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 87.50000000000003,
+     "y": 56.249999999999844
+    },
+    {
+     "x": 75.00000000000004,
+     "y": 25.000000000001844
+    },
+    {
+     "x": 62.499999999999886,
+     "y": 6.2500000000010765
+    },
+    {
+     "x": 49.999999999999915,
+     "y": 0.0
+    },
+    {
+     "x": 37.499999999999936,
+     "y": 6.2500000000010765
+    },
+    {
+     "x": 24.999999999999957,
+     "y": 25.000000000001844
+    },
+    {
+     "x": 12.499999999999979,
+     "y": 56.249999999999844
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p08-loss-m-eye-r": {
+   "id": "p08-loss-m-eye-r",
+   "type": "shape",
+   "name": "p08-loss-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10132.56,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 100.0
+    },
+    {
+     "x": 87.49999999999994,
+     "y": 56.249999999999844
+    },
+    {
+     "x": 74.99999999999997,
+     "y": 25.000000000001844
+    },
+    {
+     "x": 62.500000000000014,
+     "y": 6.2500000000010765
+    },
+    {
+     "x": 49.99999999999996,
+     "y": 0.0
+    },
+    {
+     "x": 37.499999999999986,
+     "y": 6.2500000000010765
+    },
+    {
+     "x": 24.999999999999936,
+     "y": 25.000000000001844
+    },
+    {
+     "x": 12.499999999999968,
+     "y": 56.249999999999844
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p08-loss-m-brow-l": {
+   "id": "p08-loss-m-brow-l",
+   "type": "shape",
+   "name": "p08-loss-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10151.04,
+    "y": 603.38,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p08-loss-m-brow-r": {
+   "id": "p08-loss-m-brow-r",
+   "type": "shape",
+   "name": "p08-loss-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10132.56,
+    "y": 603.38,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p08-loss-m-cheek-l": {
+   "id": "p08-loss-m-cheek-l",
+   "type": "shape",
+   "name": "p08-loss-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10158.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-cheek-r": {
+   "id": "p08-loss-m-cheek-r",
+   "type": "shape",
+   "name": "p08-loss-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10125.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-mouth": {
+   "id": "p08-loss-m-mouth",
+   "type": "shape",
+   "name": "p08-loss-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10137.6,
+    "y": 626.9,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16.8,
+   "height": 10.92,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p08-loss-m-teeth": {
+   "id": "p08-loss-m-teeth",
+   "type": "shape",
+   "name": "p08-loss-m-teeth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 10139.28,
+    "y": 627.32,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 13.44,
+   "height": 3.36,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p08-loss-nav": {
+   "type": "text",
+   "transform": {
+    "x": 10230,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP02 · 08/09 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p08-loss-nav",
+   "name": "p08-loss-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -18459,9 +20515,9 @@
   {
    "id": "p01-who-fails-st0",
    "order": 1,
-   "label": "First find who is wrong: use the \"labeled score\" m = y·g · See the eight points and the boundary: which are on the wrong side?",
+   "label": "First find who is wrong: use the \"labeled score\" m: y·g · See the eight points and the boundary: which are on the wrong side?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18480,9 +20536,9 @@
   {
    "id": "p01-who-fails-st1",
    "order": 2,
-   "label": "First find who is wrong: use the \"labeled score\" m = y·g · See the purple definition: score times label.",
+   "label": "First find who is wrong: use the \"labeled score\" m: y·g · See the purple definition: score times label.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18521,9 +20577,9 @@
   {
    "id": "p01-who-fails-st2",
    "order": 3,
-   "label": "First find who is wrong: use the \"labeled score\" m = y·g · See the red region and the two red points: the m of A and B.",
+   "label": "First find who is wrong: use the \"labeled score\" m: y·g · See the red region and the two red points: the m of A and B.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18580,9 +20636,9 @@
   {
    "id": "p01-who-fails-st3",
    "order": 4,
-   "label": "First find who is wrong: use the \"labeled score\" m = y·g · See the green region: the other six points.",
+   "label": "First find who is wrong: use the \"labeled score\" m: y·g · See the green region: the other six points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18627,9 +20683,9 @@
   {
    "id": "p01-who-fails-st4",
    "order": 5,
-   "label": "First find who is wrong: use the \"labeled score\" m = y·g · See the gold star: who asks for a correction.",
+   "label": "First find who is wrong: use the \"labeled score\" m: y·g · See the gold star: who asks for a correction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18676,7 +20732,7 @@
    "order": 6,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the question: the score has an extra \"+b\".",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18697,7 +20753,7 @@
    "order": 7,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the three blue cells: augmented sample a.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18756,7 +20812,7 @@
    "order": 8,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the three gold cells: augmented weight v.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18815,7 +20871,7 @@
    "order": 9,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the three purple cells: multiply position by position.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18868,7 +20924,7 @@
    "order": 10,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the green note: add them up.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18909,7 +20965,7 @@
    "order": 11,
    "label": "Put the intercept b into the vector too: add a feature that is always 1 · See the gold star: the benefit of augmenting.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18962,7 +21018,7 @@
    "order": 12,
    "label": "Fix only A: A becomes correct, but B gets worse · See the gray dashed old boundary with A and B.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18983,7 +21039,7 @@
    "order": 13,
    "label": "Fix only A: A becomes correct, but B gets worse · See the orange line: the boundary after fixing only A.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19030,7 +21086,7 @@
    "order": 14,
    "label": "Fix only A: A becomes correct, but B gets worse · See the green note: A's score.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19071,7 +21127,7 @@
    "order": 15,
    "label": "Fix only A: A becomes correct, but B gets worse · See the red circle: B's score.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19118,7 +21174,7 @@
    "order": 16,
    "label": "Fix only A: A becomes correct, but B gets worse · See the gold star: what to do.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19165,7 +21221,7 @@
    "order": 17,
    "label": "The batch way: add up y·a of every point in Y first · See the axes and the question: directions of the two requests.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19186,7 +21242,7 @@
    "order": 18,
    "label": "The batch way: add up y·a of every point in Y first · See the blue arrow: A's request.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19239,7 +21295,7 @@
    "order": 19,
    "label": "The batch way: add up y·a of every point in Y first · See the red arrow: B's request, attached after the blue arrow.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19292,7 +21348,7 @@
    "order": 20,
    "label": "The batch way: add up y·a of every point in Y first · See the gold arrow: the sum of the two requests.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19345,7 +21401,7 @@
    "order": 21,
    "label": "The batch way: add up y·a of every point in Y first · See the green triangle: the third component.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19392,7 +21448,7 @@
    "order": 22,
    "label": "The batch way: add up y·a of every point in Y first · See the gold star: the update rule.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19439,7 +21495,7 @@
    "order": 23,
    "label": "Update v with the combined force: are A and B now both correct? · See the old boundary and eight points, then predict the new boundary.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19460,7 +21516,7 @@
    "order": 24,
    "label": "Update v with the combined force: are A and B now both correct? · See the gold formula: the new v.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19501,7 +21557,7 @@
    "order": 25,
    "label": "Update v with the combined force: are A and B now both correct? · See the green line: the new boundary.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19548,7 +21604,7 @@
    "order": 26,
    "label": "Update v with the combined force: are A and B now both correct? · See the purple formula: new scores of A and B.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19589,7 +21645,7 @@
    "order": 27,
    "label": "Update v with the combined force: are A and B now both correct? · See the gold star: conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19636,7 +21692,7 @@
    "order": 28,
    "label": "After the update, how do we know to stop? Check whether Y is empty · See the two number lines: before and after; the red zone is m≤0.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19657,7 +21713,7 @@
    "order": 29,
    "label": "After the update, how do we know to stop? Check whether Y is empty · See before: A and B are in the red zone.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19716,7 +21772,7 @@
    "order": 30,
    "label": "After the update, how do we know to stop? Check whether Y is empty · See after: A and B cross 0.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19781,7 +21837,7 @@
    "order": 31,
    "label": "After the update, how do we know to stop? Check whether Y is empty · See the green zone after: the other six points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19828,7 +21884,7 @@
    "order": 32,
    "label": "After the update, how do we know to stop? Check whether Y is empty · See the red triangle: two warnings.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19875,7 +21931,7 @@
    "order": 33,
    "label": "Practice: change the learning rate to ρ = 0.5. Will A and B still be corrected? · Work it out first: see the old boundary, the ρ=0.7 green line and the question",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19896,7 +21952,7 @@
    "order": 34,
    "label": "Practice: change the learning rate to ρ = 0.5. Will A and B still be corrected? · See feedback (a): the new v and the orange line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19943,7 +21999,7 @@
    "order": 35,
    "label": "Practice: change the learning rate to ρ = 0.5. Will A and B still be corrected? · See feedback (b): the new scores of A and B.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -19984,7 +22040,7 @@
    "order": 36,
    "label": "Practice: change the learning rate to ρ = 0.5. Will A and B still be corrected? · See feedback (c): conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20027,11 +22083,11 @@
    }
   },
   {
-   "id": "p08-summary-st0",
+   "id": "p08-loss-st0",
    "order": 37,
-   "label": "Summary: who fails, add up the requests, update, check · See the left first: old boundary, new boundary and eight points.",
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · First, the goal and formula: the definition of $J$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20048,17 +22104,279 @@
    }
   },
   {
-   "id": "p08-summary-st1",
+   "id": "p08-loss-st1",
    "order": 38,
-   "label": "Summary: who fails, add up the requests, update, check · See the arrow: find Y.",
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · See the blue polyline and red dots: $A$ and $B$ each pay $0.05$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p08-loss-pre",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-tpre",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-c1",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-cue1",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p08-loss-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p08-loss-st2",
+   "order": 39,
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · See the purple note: gradient and subgradient.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p08-loss-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p08-loss-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p08-loss-st3",
+   "order": 40,
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · See the gold formula: one negative-gradient step is the batch update.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p08-loss-c3",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-cue3",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p08-loss-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p08-loss-st4",
+   "order": 41,
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · See the green dots: after the update $J$ drops to $0$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p08-loss-postA",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-postB",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-tpost",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-c4",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-cue4",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p08-loss-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p08-loss-st5",
+   "order": 42,
+   "label": "Where does the update rule come from? The perceptron cost and its subgradient · See the gold star and red warning: $J=0$ is not the stopping rule.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p08-loss-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-c5",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p08-loss-cue5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p08-loss-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p08-summary-st0",
+   "order": 43,
+   "label": "Summary: who fails, add up the requests, update, check · See the left first: old boundary, new boundary and eight points.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 12160.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p08-summary-st1",
+   "order": 44,
+   "label": "Summary: who fails, add up the requests, update, check · See the arrow: find Y.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20096,16 +22414,16 @@
   },
   {
    "id": "p08-summary-st2",
-   "order": 39,
+   "order": 45,
    "label": "Summary: who fails, add up the requests, update, check · See the diamond: the problem with fixing one.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20143,16 +22461,16 @@
   },
   {
    "id": "p08-summary-st3",
-   "order": 40,
+   "order": 46,
    "label": "Summary: who fails, add up the requests, update, check · See the star: batch update.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20190,16 +22508,16 @@
   },
   {
    "id": "p08-summary-st4",
-   "order": 41,
+   "order": 47,
    "label": "Summary: who fails, add up the requests, update, check · See the red triangle: stopping and warnings.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -20237,16 +22555,16 @@
   },
   {
    "id": "p08-summary-st5",
-   "order": 42,
+   "order": 48,
    "label": "Summary: who fails, add up the requests, update, check · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,

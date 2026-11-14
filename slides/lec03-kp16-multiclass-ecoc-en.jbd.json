@@ -750,6 +750,83 @@
     "p06-radius-cue2",
     "p06-radius-cue3",
     "p06-radius-cue4",
+    "p06-triangle-bg",
+    "p06-triangle-rule",
+    "p06-triangle-title",
+    "p06-triangle-ctx",
+    "p06-triangle-src",
+    "p06-triangle-plbg",
+    "p06-triangle-ax0",
+    "p06-triangle-tn0",
+    "p06-triangle-t0d0",
+    "p06-triangle-t0d1",
+    "p06-triangle-t0d2",
+    "p06-triangle-t0d3",
+    "p06-triangle-t0d4",
+    "p06-triangle-t0d5",
+    "p06-triangle-t0d6",
+    "p06-triangle-ax1",
+    "p06-triangle-tn1",
+    "p06-triangle-t1d0",
+    "p06-triangle-t1d1",
+    "p06-triangle-t1d2",
+    "p06-triangle-t1d3",
+    "p06-triangle-t1d4",
+    "p06-triangle-t1d5",
+    "p06-triangle-t1d6",
+    "p06-triangle-r1",
+    "p06-triangle-g1",
+    "p06-triangle-tg1",
+    "p06-triangle-tr1",
+    "p06-triangle-r2",
+    "p06-triangle-g2",
+    "p06-triangle-tg2",
+    "p06-triangle-tr2",
+    "p06-triangle-st",
+    "p06-triangle-c0",
+    "p06-triangle-c1",
+    "p06-triangle-c2",
+    "p06-triangle-c3",
+    "p06-triangle-c4",
+    "p06-triangle-c5",
+    "p06-triangle-cue0",
+    "p06-triangle-cue1",
+    "p06-triangle-cue2",
+    "p06-triangle-cue3",
+    "p06-triangle-cue4",
+    "p06-triangle-cue5",
+    "p06-triangle-m-shadow",
+    "p06-triangle-m-foot-l",
+    "p06-triangle-m-foot-r",
+    "p06-triangle-m-body",
+    "p06-triangle-m-belly",
+    "p06-triangle-m-bow-l",
+    "p06-triangle-m-bow-r",
+    "p06-triangle-m-bow-c",
+    "p06-triangle-m-arm-l",
+    "p06-triangle-m-hand-l",
+    "p06-triangle-m-arm-r",
+    "p06-triangle-m-hand-r",
+    "p06-triangle-m-ear-l",
+    "p06-triangle-m-ear-r",
+    "p06-triangle-m-head",
+    "p06-triangle-m-face",
+    "p06-triangle-m-cap-base",
+    "p06-triangle-m-cap-top",
+    "p06-triangle-m-tassel",
+    "p06-triangle-m-knot",
+    "p06-triangle-m-eye-l",
+    "p06-triangle-m-pupil-l",
+    "p06-triangle-m-glint-l",
+    "p06-triangle-m-eye-r",
+    "p06-triangle-m-pupil-r",
+    "p06-triangle-m-glint-r",
+    "p06-triangle-m-brow-l",
+    "p06-triangle-m-brow-r",
+    "p06-triangle-m-cheek-l",
+    "p06-triangle-m-cheek-r",
+    "p06-triangle-m-mouth",
+    "p06-triangle-nav",
     "p07-redundant-nav",
     "p07-redundant-cue0",
     "p07-redundant-cue1",
@@ -846,7 +923,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -1148,7 +1225,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1182,7 +1259,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1216,7 +1293,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1352,7 +1429,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1386,7 +1463,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1488,7 +1565,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -1556,7 +1633,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -2671,7 +2748,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -2931,7 +3008,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mc02": {
@@ -2964,7 +3041,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mr1": {
@@ -3028,7 +3105,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mc11": {
@@ -3094,7 +3171,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mr2": {
@@ -3158,7 +3235,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mc21": {
@@ -3191,7 +3268,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p02-ovr-mc22": {
@@ -4757,7 +4834,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -5306,7 +5383,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-oc11": {
@@ -5568,7 +5645,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-oc22": {
@@ -5634,7 +5711,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-oc24": {
@@ -5830,7 +5907,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-oc33": {
@@ -5896,7 +5973,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-oc35": {
@@ -5929,7 +6006,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p03-ovo-c0": {
@@ -7633,7 +7710,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -8215,7 +8292,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc12": {
@@ -8281,7 +8358,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc14": {
@@ -8347,7 +8424,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gr2": {
@@ -8411,7 +8488,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc21": {
@@ -8477,7 +8554,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc23": {
@@ -8576,7 +8653,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gr3": {
@@ -8640,7 +8717,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc31": {
@@ -8673,7 +8750,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc32": {
@@ -8706,7 +8783,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc33": {
@@ -8739,7 +8816,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc34": {
@@ -8772,7 +8849,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-gc35": {
@@ -8814,13 +8891,13 @@
    "name": "p04-decode-sl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4326,
+    "x": 4356,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 120,
+   "width": 90,
    "height": 26,
    "zIndex": 8,
    "locked": false,
@@ -8902,7 +8979,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p04-decode-sc2": {
@@ -10489,7 +10566,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -11071,7 +11148,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc12": {
@@ -11137,7 +11214,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc14": {
@@ -11203,7 +11280,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gr2": {
@@ -11267,7 +11344,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc21": {
@@ -11333,7 +11410,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc23": {
@@ -11432,7 +11509,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gr3": {
@@ -11496,7 +11573,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc31": {
@@ -11529,7 +11606,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc32": {
@@ -11562,7 +11639,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc33": {
@@ -11595,7 +11672,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc34": {
@@ -11628,7 +11705,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p05-distances-gc35": {
@@ -13575,7 +13652,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -13606,7 +13683,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 15,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -14157,7 +14234,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p06-radius-gc12": {
@@ -14223,7 +14300,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p06-radius-gc14": {
@@ -14289,7 +14366,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p06-radius-df2": {
@@ -14450,7 +14527,7 @@
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 180,
+   "width": 110,
    "height": 40,
    "zIndex": 5,
    "locked": false,
@@ -14484,7 +14561,7 @@
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 290,
+   "width": 220,
    "height": 40,
    "zIndex": 5,
    "locked": false,
@@ -14580,7 +14657,7 @@
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 290,
+   "width": 220,
    "height": 40,
    "zIndex": 5,
    "locked": false,
@@ -14614,7 +14691,7 @@
     "scaleY": 1,
     "rotation": 0
    },
-   "width": 180,
+   "width": 110,
    "height": 40,
    "zIndex": 5,
    "locked": false,
@@ -15679,7 +15756,7 @@
    "name": "p07-redundant-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15706,7 +15783,7 @@
    "name": "p07-redundant-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15733,7 +15810,7 @@
    "name": "p07-redundant-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -15747,7 +15824,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -15764,7 +15841,7 @@
    "name": "p07-redundant-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15795,7 +15872,7 @@
    "name": "p07-redundant-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -15826,7 +15903,7 @@
    "name": "p07-redundant-gh0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770,
+    "x": 10210,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -15857,7 +15934,7 @@
    "name": "p07-redundant-gh1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8832,
+    "x": 10272,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -15888,7 +15965,7 @@
    "name": "p07-redundant-gh2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8894,
+    "x": 10334,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -15919,7 +15996,7 @@
    "name": "p07-redundant-gh3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -15950,7 +16027,7 @@
    "name": "p07-redundant-gh4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9018,
+    "x": 10458,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -15981,7 +16058,7 @@
    "name": "p07-redundant-gh5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9080,
+    "x": 10520,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -16012,7 +16089,7 @@
    "name": "p07-redundant-gr0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686,
+    "x": 10126,
     "y": 203.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16043,7 +16120,7 @@
    "name": "p07-redundant-gc00",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770,
+    "x": 10210,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16076,7 +16153,7 @@
    "name": "p07-redundant-gc01",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8832,
+    "x": 10272,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16109,7 +16186,7 @@
    "name": "p07-redundant-gc02",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8894,
+    "x": 10334,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16142,7 +16219,7 @@
    "name": "p07-redundant-gc03",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16175,7 +16252,7 @@
    "name": "p07-redundant-gc04",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9018,
+    "x": 10458,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16208,7 +16285,7 @@
    "name": "p07-redundant-gc05",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9080,
+    "x": 10520,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16241,7 +16318,7 @@
    "name": "p07-redundant-gr1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686,
+    "x": 10126,
     "y": 253.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16272,7 +16349,7 @@
    "name": "p07-redundant-gc10",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770,
+    "x": 10210,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16305,7 +16382,7 @@
    "name": "p07-redundant-gc11",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8832,
+    "x": 10272,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16329,7 +16406,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc12": {
@@ -16338,7 +16415,7 @@
    "name": "p07-redundant-gc12",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8894,
+    "x": 10334,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16371,7 +16448,7 @@
    "name": "p07-redundant-gc13",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16395,7 +16472,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc14": {
@@ -16404,7 +16481,7 @@
    "name": "p07-redundant-gc14",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9018,
+    "x": 10458,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16437,7 +16514,7 @@
    "name": "p07-redundant-gc15",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9080,
+    "x": 10520,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -16461,7 +16538,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gr2": {
@@ -16470,7 +16547,7 @@
    "name": "p07-redundant-gr2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686,
+    "x": 10126,
     "y": 303.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16501,7 +16578,7 @@
    "name": "p07-redundant-gc20",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770,
+    "x": 10210,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16525,7 +16602,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc21": {
@@ -16534,7 +16611,7 @@
    "name": "p07-redundant-gc21",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8832,
+    "x": 10272,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16567,7 +16644,7 @@
    "name": "p07-redundant-gc22",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8894,
+    "x": 10334,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16591,7 +16668,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc23": {
@@ -16600,7 +16677,7 @@
    "name": "p07-redundant-gc23",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16633,7 +16710,7 @@
    "name": "p07-redundant-gc24",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9018,
+    "x": 10458,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16666,7 +16743,7 @@
    "name": "p07-redundant-gc25",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9080,
+    "x": 10520,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -16690,7 +16767,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gr3": {
@@ -16699,7 +16776,7 @@
    "name": "p07-redundant-gr3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686,
+    "x": 10126,
     "y": 353.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16730,7 +16807,7 @@
    "name": "p07-redundant-gc30",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770,
+    "x": 10210,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16754,7 +16831,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc31": {
@@ -16763,7 +16840,7 @@
    "name": "p07-redundant-gc31",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8832,
+    "x": 10272,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16787,7 +16864,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc32": {
@@ -16796,7 +16873,7 @@
    "name": "p07-redundant-gc32",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8894,
+    "x": 10334,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16820,7 +16897,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc33": {
@@ -16829,7 +16906,7 @@
    "name": "p07-redundant-gc33",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16853,7 +16930,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc34": {
@@ -16862,7 +16939,7 @@
    "name": "p07-redundant-gc34",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9018,
+    "x": 10458,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16886,7 +16963,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p07-redundant-gc35": {
@@ -16895,7 +16972,7 @@
    "name": "p07-redundant-gc35",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9080,
+    "x": 10520,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -16928,7 +17005,7 @@
    "name": "p07-redundant-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 440,
     "scaleX": 1,
     "scaleY": 1,
@@ -16961,7 +17038,7 @@
    "name": "p07-redundant-rg1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8766,
+    "x": 10206,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -16989,7 +17066,7 @@
    "name": "p07-redundant-rg3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8890,
+    "x": 10330,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -17017,7 +17094,7 @@
    "name": "p07-redundant-rg2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8828,
+    "x": 10268,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -17045,7 +17122,7 @@
    "name": "p07-redundant-rg4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8952,
+    "x": 10392,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -17073,7 +17150,7 @@
    "name": "p07-redundant-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 490,
     "scaleX": 1,
     "scaleY": 1,
@@ -17107,7 +17184,7 @@
    "name": "p07-redundant-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9290,
+    "x": 10730,
     "y": 490,
     "scaleX": 1,
     "scaleY": 1,
@@ -17141,7 +17218,7 @@
    "name": "p07-redundant-bd1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9280,
+    "x": 10720,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
@@ -17175,7 +17252,7 @@
    "name": "p07-redundant-bd2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9280,
+    "x": 10720,
     "y": 270,
     "scaleX": 1,
     "scaleY": 1,
@@ -17209,7 +17286,7 @@
    "name": "p07-redundant-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 540,
     "scaleX": 1,
     "scaleY": 1,
@@ -17243,7 +17320,7 @@
    "name": "p07-redundant-wi",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9830,
+    "x": 11270,
     "y": 440,
     "scaleX": 1,
     "scaleY": 1,
@@ -17274,7 +17351,7 @@
    "name": "p07-redundant-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9280,
+    "x": 10720,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -17308,7 +17385,7 @@
    "name": "p07-redundant-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -17335,7 +17412,7 @@
    "name": "p07-redundant-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -17362,7 +17439,7 @@
    "name": "p07-redundant-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -17389,7 +17466,7 @@
    "name": "p07-redundant-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -17416,7 +17493,7 @@
    "name": "p07-redundant-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -17443,7 +17520,7 @@
    "name": "p07-redundant-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -17470,7 +17547,7 @@
    "name": "p07-redundant-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -17497,7 +17574,7 @@
    "name": "p07-redundant-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -17524,7 +17601,7 @@
    "name": "p07-redundant-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -17565,7 +17642,7 @@
    "name": "p07-redundant-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.62,
+    "x": 10129.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -17592,7 +17669,7 @@
    "name": "p07-redundant-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -17633,7 +17710,7 @@
    "name": "p07-redundant-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8722.38,
+    "x": 10162.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -17660,7 +17737,7 @@
    "name": "p07-redundant-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -17687,7 +17764,7 @@
    "name": "p07-redundant-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -17714,7 +17791,7 @@
    "name": "p07-redundant-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17741,7 +17818,7 @@
    "name": "p07-redundant-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -17768,7 +17845,7 @@
    "name": "p07-redundant-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -17795,7 +17872,7 @@
    "name": "p07-redundant-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17822,7 +17899,7 @@
    "name": "p07-redundant-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -17859,7 +17936,7 @@
    "name": "p07-redundant-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -17886,7 +17963,7 @@
    "name": "p07-redundant-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8709.78,
+    "x": 10149.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -17913,7 +17990,7 @@
    "name": "p07-redundant-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.14,
+    "x": 10153.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -17940,7 +18017,7 @@
    "name": "p07-redundant-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.98,
+    "x": 10153.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -17967,7 +18044,7 @@
    "name": "p07-redundant-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.3,
+    "x": 10131.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -17994,7 +18071,7 @@
    "name": "p07-redundant-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8694.66,
+    "x": 10134.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -18021,7 +18098,7 @@
    "name": "p07-redundant-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.5,
+    "x": 10135.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -18048,7 +18125,7 @@
    "name": "p07-redundant-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -18085,7 +18162,7 @@
    "name": "p07-redundant-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -18122,7 +18199,7 @@
    "name": "p07-redundant-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -18149,7 +18226,7 @@
    "name": "p07-redundant-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -18176,7 +18253,7 @@
    "name": "p07-redundant-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.48,
+    "x": 10143.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -18203,7 +18280,7 @@
    "name": "p07-redundant-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.8,
+    "x": 10158.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -18234,7 +18311,7 @@
    "name": "p08-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18261,7 +18338,7 @@
    "name": "p08-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -18288,7 +18365,7 @@
    "name": "p08-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -18302,7 +18379,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -18319,7 +18396,7 @@
    "name": "p08-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -18350,7 +18427,7 @@
    "name": "p08-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -18381,7 +18458,7 @@
    "name": "p08-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 130,
     "scaleX": 1,
     "scaleY": 1,
@@ -18414,7 +18491,7 @@
    "name": "p08-practice-o0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140,
+    "x": 11580,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -18453,7 +18530,7 @@
    "name": "p08-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140,
+    "x": 11580,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -18487,7 +18564,7 @@
    "name": "p08-practice-stair",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10520,
+    "x": 11960,
     "y": 250,
     "scaleX": 1,
     "scaleY": 1,
@@ -18566,7 +18643,7 @@
    "name": "p08-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10520,
+    "x": 11960,
     "y": 420,
     "scaleX": 1,
     "scaleY": 1,
@@ -18600,7 +18677,7 @@
    "name": "p08-practice-ax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10950,
+    "x": 12390,
     "y": 330,
     "scaleX": 1,
     "scaleY": 1,
@@ -18638,7 +18715,7 @@
    "name": "p08-practice-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10936,
+    "x": 12376,
     "y": 316,
     "scaleX": 1,
     "scaleY": 1,
@@ -18669,7 +18746,7 @@
    "name": "p08-practice-c7",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11286,
+    "x": 12726,
     "y": 316,
     "scaleX": 1,
     "scaleY": 1,
@@ -18700,7 +18777,7 @@
    "name": "p08-practice-se",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11091,
+    "x": 12531,
     "y": 321,
     "scaleX": 1,
     "scaleY": 1,
@@ -18735,7 +18812,7 @@
    "name": "p08-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10930,
+    "x": 12370,
     "y": 360,
     "scaleX": 1,
     "scaleY": 1,
@@ -18769,7 +18846,7 @@
    "name": "p08-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -18796,7 +18873,7 @@
    "name": "p08-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18823,7 +18900,7 @@
    "name": "p08-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18850,7 +18927,7 @@
    "name": "p08-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -18877,7 +18954,7 @@
    "name": "p08-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -18904,7 +18981,7 @@
    "name": "p08-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18931,7 +19008,7 @@
    "name": "p08-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18958,7 +19035,7 @@
    "name": "p08-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18985,7 +19062,7 @@
    "name": "p08-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124.16,
+    "x": 11564.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -19026,7 +19103,7 @@
    "name": "p08-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.62,
+    "x": 11569.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -19053,7 +19130,7 @@
    "name": "p08-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -19094,7 +19171,7 @@
    "name": "p08-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10162.38,
+    "x": 11602.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -19121,7 +19198,7 @@
    "name": "p08-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -19148,7 +19225,7 @@
    "name": "p08-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -19175,7 +19252,7 @@
    "name": "p08-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -19202,7 +19279,7 @@
    "name": "p08-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -19229,7 +19306,7 @@
    "name": "p08-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -19256,7 +19333,7 @@
    "name": "p08-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -19283,7 +19360,7 @@
    "name": "p08-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -19320,7 +19397,7 @@
    "name": "p08-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -19347,7 +19424,7 @@
    "name": "p08-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10149.78,
+    "x": 11589.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -19374,7 +19451,7 @@
    "name": "p08-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.14,
+    "x": 11593.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -19401,7 +19478,7 @@
    "name": "p08-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.98,
+    "x": 11593.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19428,7 +19505,7 @@
    "name": "p08-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10131.3,
+    "x": 11571.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -19455,7 +19532,7 @@
    "name": "p08-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134.66,
+    "x": 11574.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -19482,7 +19559,7 @@
    "name": "p08-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.5,
+    "x": 11575.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19509,7 +19586,7 @@
    "name": "p08-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -19546,7 +19623,7 @@
    "name": "p08-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -19583,7 +19660,7 @@
    "name": "p08-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19610,7 +19687,7 @@
    "name": "p08-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19637,7 +19714,7 @@
    "name": "p08-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.48,
+    "x": 11583.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -19664,7 +19741,7 @@
    "name": "p08-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.8,
+    "x": 11598.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -19695,7 +19772,7 @@
    "name": "p09-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11520,
+    "x": 12960,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -19722,7 +19799,7 @@
    "name": "p09-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19749,7 +19826,7 @@
    "name": "p09-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -19780,7 +19857,7 @@
    "name": "p09-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -19811,7 +19888,7 @@
    "name": "p09-summary-gh0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11650,
+    "x": 13090,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19842,7 +19919,7 @@
    "name": "p09-summary-gh1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11712,
+    "x": 13152,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19873,7 +19950,7 @@
    "name": "p09-summary-gh2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11774,
+    "x": 13214,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19904,7 +19981,7 @@
    "name": "p09-summary-gh3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11836,
+    "x": 13276,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19935,7 +20012,7 @@
    "name": "p09-summary-gh4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11898,
+    "x": 13338,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19966,7 +20043,7 @@
    "name": "p09-summary-gh5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11960,
+    "x": 13400,
     "y": 164,
     "scaleX": 1,
     "scaleY": 1,
@@ -19997,7 +20074,7 @@
    "name": "p09-summary-gr0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566,
+    "x": 13006,
     "y": 203.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -20028,7 +20105,7 @@
    "name": "p09-summary-gc00",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11650,
+    "x": 13090,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20061,7 +20138,7 @@
    "name": "p09-summary-gc01",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11712,
+    "x": 13152,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20094,7 +20171,7 @@
    "name": "p09-summary-gc02",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11774,
+    "x": 13214,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20127,7 +20204,7 @@
    "name": "p09-summary-gc03",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11836,
+    "x": 13276,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20160,7 +20237,7 @@
    "name": "p09-summary-gc04",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11898,
+    "x": 13338,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20193,7 +20270,7 @@
    "name": "p09-summary-gc05",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11960,
+    "x": 13400,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20226,7 +20303,7 @@
    "name": "p09-summary-gr1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566,
+    "x": 13006,
     "y": 253.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -20257,7 +20334,7 @@
    "name": "p09-summary-gc10",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11650,
+    "x": 13090,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20290,7 +20367,7 @@
    "name": "p09-summary-gc11",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11712,
+    "x": 13152,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20314,7 +20391,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc12": {
@@ -20323,7 +20400,7 @@
    "name": "p09-summary-gc12",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11774,
+    "x": 13214,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20356,7 +20433,7 @@
    "name": "p09-summary-gc13",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11836,
+    "x": 13276,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20380,7 +20457,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc14": {
@@ -20389,7 +20466,7 @@
    "name": "p09-summary-gc14",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11898,
+    "x": 13338,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20422,7 +20499,7 @@
    "name": "p09-summary-gc15",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11960,
+    "x": 13400,
     "y": 240,
     "scaleX": 1,
     "scaleY": 1,
@@ -20446,7 +20523,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gr2": {
@@ -20455,7 +20532,7 @@
    "name": "p09-summary-gr2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566,
+    "x": 13006,
     "y": 303.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -20486,7 +20563,7 @@
    "name": "p09-summary-gc20",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11650,
+    "x": 13090,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20510,7 +20587,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc21": {
@@ -20519,7 +20596,7 @@
    "name": "p09-summary-gc21",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11712,
+    "x": 13152,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20552,7 +20629,7 @@
    "name": "p09-summary-gc22",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11774,
+    "x": 13214,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20576,7 +20653,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc23": {
@@ -20585,7 +20662,7 @@
    "name": "p09-summary-gc23",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11836,
+    "x": 13276,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20618,7 +20695,7 @@
    "name": "p09-summary-gc24",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11898,
+    "x": 13338,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20651,7 +20728,7 @@
    "name": "p09-summary-gc25",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11960,
+    "x": 13400,
     "y": 290,
     "scaleX": 1,
     "scaleY": 1,
@@ -20675,7 +20752,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gr3": {
@@ -20684,7 +20761,7 @@
    "name": "p09-summary-gr3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566,
+    "x": 13006,
     "y": 353.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -20715,7 +20792,7 @@
    "name": "p09-summary-gc30",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11650,
+    "x": 13090,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20739,7 +20816,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc31": {
@@ -20748,7 +20825,7 @@
    "name": "p09-summary-gc31",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11712,
+    "x": 13152,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20772,7 +20849,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc32": {
@@ -20781,7 +20858,7 @@
    "name": "p09-summary-gc32",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11774,
+    "x": 13214,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20805,7 +20882,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc33": {
@@ -20814,7 +20891,7 @@
    "name": "p09-summary-gc33",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11836,
+    "x": 13276,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20838,7 +20915,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc34": {
@@ -20847,7 +20924,7 @@
    "name": "p09-summary-gc34",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11898,
+    "x": 13338,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20871,7 +20948,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "−",
+   "text": "$-$",
    "shapeKind": "rectangle"
   },
   "p09-summary-gc35": {
@@ -20880,7 +20957,7 @@
    "name": "p09-summary-gc35",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11960,
+    "x": 13400,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -20913,7 +20990,7 @@
    "name": "p09-summary-rg1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11646,
+    "x": 13086,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -20940,7 +21017,7 @@
    "name": "p09-summary-rg3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11770,
+    "x": 13210,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -20967,7 +21044,7 @@
    "name": "p09-summary-rg2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11708,
+    "x": 13148,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -20994,7 +21071,7 @@
    "name": "p09-summary-rg4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11832,
+    "x": 13272,
     "y": 186,
     "scaleX": 1,
     "scaleY": 1,
@@ -21021,7 +21098,7 @@
    "name": "p09-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -21045,7 +21122,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "One binary task = assign $\\pm1$ to each class; one-vs-rest $M$ models, one-vs-one $\\binom M2$ models, both need a combining rule and tie handling",
+   "text": "One binary task: assign $\\pm1$ to each class; one-vs-rest $M$ models, one-vs-one $\\binom M2$ models, both need a combining rule and tie handling",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -21055,7 +21132,7 @@
    "name": "p09-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -21079,7 +21156,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Codeword matrix: columns = tasks, rows = codewords; decode to the row with the smallest Hamming distance",
+   "text": "Codeword matrix: columns: tasks, rows: codewords; decode to the row with the smallest Hamming distance",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -21089,7 +21166,7 @@
    "name": "p09-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -21123,7 +21200,7 @@
    "name": "p09-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -21157,7 +21234,7 @@
    "name": "p09-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -21191,7 +21268,7 @@
    "name": "p09-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -21222,7 +21299,7 @@
    "name": "p09-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -21253,7 +21330,7 @@
    "name": "p09-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -21289,7 +21366,7 @@
    "name": "p09-summary-s3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -21320,7 +21397,7 @@
    "name": "p09-summary-s4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -21351,7 +21428,7 @@
    "name": "p09-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11562.48,
+    "x": 13002.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -21378,7 +21455,7 @@
    "name": "p09-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11587.68,
+    "x": 13027.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -21405,7 +21482,7 @@
    "name": "p09-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -21432,7 +21509,7 @@
    "name": "p09-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.84,
+    "x": 13005.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -21459,7 +21536,7 @@
    "name": "p09-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -21486,7 +21563,7 @@
    "name": "p09-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11586.0,
+    "x": 13026.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -21513,7 +21590,7 @@
    "name": "p09-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -21540,7 +21617,7 @@
    "name": "p09-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11583.9,
+    "x": 13023.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21567,7 +21644,7 @@
    "name": "p09-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11603.64,
+    "x": 13043.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21608,7 +21685,7 @@
    "name": "p09-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11609.94,
+    "x": 13049.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -21635,7 +21712,7 @@
    "name": "p09-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11559.12,
+    "x": 12999.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21676,7 +21753,7 @@
    "name": "p09-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11554.5,
+    "x": 12994.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -21703,7 +21780,7 @@
    "name": "p09-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11604.9,
+    "x": 13044.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -21730,7 +21807,7 @@
    "name": "p09-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11557.86,
+    "x": 12997.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -21757,7 +21834,7 @@
    "name": "p09-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11561.64,
+    "x": 13001.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -21784,7 +21861,7 @@
    "name": "p09-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566.26,
+    "x": 13006.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -21811,7 +21888,7 @@
    "name": "p09-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -21838,7 +21915,7 @@
    "name": "p09-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11568.36,
+    "x": 13008.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -21865,7 +21942,7 @@
    "name": "p09-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -21902,7 +21979,7 @@
    "name": "p09-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11567.1,
+    "x": 13007.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -21929,7 +22006,7 @@
    "name": "p09-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -21994,7 +22071,7 @@
    "name": "p09-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -22059,7 +22136,7 @@
    "name": "p09-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -22096,7 +22173,7 @@
    "name": "p09-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -22133,7 +22210,7 @@
    "name": "p09-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11598.6,
+    "x": 13038.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -22160,7 +22237,7 @@
    "name": "p09-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.0,
+    "x": 13005.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -22187,7 +22264,7 @@
    "name": "p09-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -22214,7 +22291,7 @@
    "name": "p09-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11579.28,
+    "x": 13019.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -22263,7 +22340,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 01/09 · 1 Decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 01/10 · 1 Decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-task-cue0": {
@@ -22463,7 +22540,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 02/09 · 2 Two decompositions · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 02/10 · 2 Two decompositions · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-ovr-cue0": {
@@ -22663,7 +22740,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 03/09 · 2 Two decompositions · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 03/10 · 2 Two decompositions · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-ovo-cue0": {
@@ -22863,7 +22940,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 04/09 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 04/10 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-decode-cue0": {
@@ -22995,7 +23072,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 05/09 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 05/10 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-distances-cue0": {
@@ -23195,7 +23272,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 06/09 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 06/10 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-radius-cue0": {
@@ -23373,7 +23450,7 @@
    "name": "p07-redundant-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -23395,7 +23472,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 07/09 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 08/10 · 3 Codewords · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-redundant-cue0": {
@@ -23404,7 +23481,7 @@
    "name": "p07-redundant-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23437,7 +23514,7 @@
    "name": "p07-redundant-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23471,7 +23548,7 @@
    "name": "p07-redundant-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23505,7 +23582,7 @@
    "name": "p07-redundant-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23539,7 +23616,7 @@
    "name": "p07-redundant-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23573,7 +23650,7 @@
    "name": "p08-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -23595,7 +23672,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 08/09 · 4 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 09/10 · 4 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-practice-cue0": {
@@ -23604,7 +23681,7 @@
    "name": "p08-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23637,7 +23714,7 @@
    "name": "p08-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23671,7 +23748,7 @@
    "name": "p08-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23705,7 +23782,7 @@
    "name": "p08-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23739,7 +23816,7 @@
    "name": "p09-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11670,
+    "x": 13110,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -23761,7 +23838,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 09/09 · 5 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 10/10 · 5 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p09-summary-cue0": {
@@ -23770,7 +23847,7 @@
    "name": "p09-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23803,7 +23880,7 @@
    "name": "p09-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23837,7 +23914,7 @@
    "name": "p09-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23871,7 +23948,7 @@
    "name": "p09-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23905,7 +23982,7 @@
    "name": "p09-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23939,7 +24016,7 @@
    "name": "p09-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23997,6 +24074,2400 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p06-triangle-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 8640,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-bg",
+   "name": "p06-triangle-bg",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 8680,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-rule",
+   "name": "p06-triangle-rule",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-title": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-title",
+   "name": "p06-triangle-title",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Suppose the codeword $\\mathbf c_t$ of class $t$ is sent and the received code $\\mathbf s$ has $e$ flipped positions. Claim: whenever $2e<d_{\\min}$, decoding always returns class $t$.",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-ctx",
+   "name": "p06-triangle-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-src": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP16 lecture §5 ($d_H(\\mathbf s,\\mathbf c_k)\\ge d_{\\min}-e$ and $2e<d_{\\min}$); the example reuses the code with $d_{\\min}=3$ and is checked by enumerating all single and double bit errors. Added page: the original deck explained it by example, restored the general proof from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-src",
+   "name": "p06-triangle-src",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 8690,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-plbg",
+   "name": "p06-triangle-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-ax0": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 250,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 372.0,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p06-triangle-ax0",
+   "name": "p06-triangle-ax0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tn0": {
+   "type": "text",
+   "transform": {
+    "x": 8710,
+    "y": 172,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 400,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#334155",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Case $e=1$: the number line is the distance to the received code $\\mathbf s$",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-tn0",
+   "name": "p06-triangle-tn0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d0": {
+   "type": "text",
+   "transform": {
+    "x": 8735,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "0",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d0",
+   "name": "p06-triangle-t0d0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d1": {
+   "type": "text",
+   "transform": {
+    "x": 8795,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "1",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d1",
+   "name": "p06-triangle-t0d1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d2": {
+   "type": "text",
+   "transform": {
+    "x": 8855,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "2",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d2",
+   "name": "p06-triangle-t0d2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d3": {
+   "type": "text",
+   "transform": {
+    "x": 8915,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "3",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d3",
+   "name": "p06-triangle-t0d3",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d4": {
+   "type": "text",
+   "transform": {
+    "x": 8975,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "4",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d4",
+   "name": "p06-triangle-t0d4",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d5": {
+   "type": "text",
+   "transform": {
+    "x": 9035,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "5",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d5",
+   "name": "p06-triangle-t0d5",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t0d6": {
+   "type": "text",
+   "transform": {
+    "x": 9095,
+    "y": 258,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "6",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t0d6",
+   "name": "p06-triangle-t0d6",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-ax1": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 410,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 372.0,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p06-triangle-ax1",
+   "name": "p06-triangle-ax1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tn1": {
+   "type": "text",
+   "transform": {
+    "x": 8710,
+    "y": 332,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 400,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#334155",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Case $e=2$: the number line is the distance to the received code $\\mathbf s$",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-tn1",
+   "name": "p06-triangle-tn1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d0": {
+   "type": "text",
+   "transform": {
+    "x": 8735,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "0",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d0",
+   "name": "p06-triangle-t1d0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d1": {
+   "type": "text",
+   "transform": {
+    "x": 8795,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "1",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d1",
+   "name": "p06-triangle-t1d1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d2": {
+   "type": "text",
+   "transform": {
+    "x": 8855,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "2",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d2",
+   "name": "p06-triangle-t1d2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d3": {
+   "type": "text",
+   "transform": {
+    "x": 8915,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "3",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d3",
+   "name": "p06-triangle-t1d3",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d4": {
+   "type": "text",
+   "transform": {
+    "x": 8975,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "4",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d4",
+   "name": "p06-triangle-t1d4",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d5": {
+   "type": "text",
+   "transform": {
+    "x": 9035,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "5",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d5",
+   "name": "p06-triangle-t1d5",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-t1d6": {
+   "type": "text",
+   "transform": {
+    "x": 9095,
+    "y": 418,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 14,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "6",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-t1d6",
+   "name": "p06-triangle-t1d6",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-r1": {
+   "type": "shape",
+   "transform": {
+    "x": 8860,
+    "y": 238,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 252.0,
+   "height": 24,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fecaca",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-r1",
+   "name": "p06-triangle-r1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-g1": {
+   "type": "shape",
+   "transform": {
+    "x": 8791,
+    "y": 241,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 18,
+   "height": 18,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p06-triangle-g1",
+   "name": "p06-triangle-g1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tg1": {
+   "type": "text",
+   "transform": {
+    "x": 8770,
+    "y": 196,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 150,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#166534",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Correct codeword: distance $e=1$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-tg1",
+   "name": "p06-triangle-tg1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tr1": {
+   "type": "text",
+   "transform": {
+    "x": 8866,
+    "y": 272,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 200,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#991b1b",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Other codewords: at least $d_{\\min}-e=2$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-tr1",
+   "name": "p06-triangle-tr1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-r2": {
+   "type": "shape",
+   "transform": {
+    "x": 8800,
+    "y": 398,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 312.0,
+   "height": 24,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fecaca",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-r2",
+   "name": "p06-triangle-r2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-g2": {
+   "type": "shape",
+   "transform": {
+    "x": 8851,
+    "y": 401,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 18,
+   "height": 18,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p06-triangle-g2",
+   "name": "p06-triangle-g2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tg2": {
+   "type": "text",
+   "transform": {
+    "x": 8830,
+    "y": 356,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 150,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#166534",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Correct codeword: distance $e=2$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-tg2",
+   "name": "p06-triangle-tg2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-tr2": {
+   "type": "text",
+   "transform": {
+    "x": 8806,
+    "y": 432,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 200,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#991b1b",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Other codewords: at least $d_{\\min}-e=1$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-tr2",
+   "name": "p06-triangle-tr2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-st": {
+   "type": "shape",
+   "transform": {
+    "x": 9118,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p06-triangle-st",
+   "name": "p06-triangle-st",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c0": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 34,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$d_H(\\mathbf s,\\mathbf c_t)=e$. For every other class $k\\ne t$, $d_H(\\mathbf c_t,\\mathbf c_k)\\ge d_{\\min}$ (the definition of the minimum distance).",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-c0",
+   "name": "p06-triangle-c0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c1": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 162,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 53,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Triangle inequality $d_H(\\mathbf c_t,\\mathbf c_k)\\le d_H(\\mathbf c_t,\\mathbf s)+d_H(\\mathbf s,\\mathbf c_k)$, rearranged: $d_H(\\mathbf s,\\mathbf c_k)\\ge d_H(\\mathbf c_t,\\mathbf c_k)-e\\ge d_{\\min}-e$. Every other codeword is at least $d_{\\min}-e$ away from $\\mathbf s$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-c1",
+   "name": "p06-triangle-c1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c2": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 225,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 54,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 13,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "For the correct codeword to be nearest we need $e<d_{\\min}-e$, that is $2e<d_{\\min}$, so $e\\le\\left\\lfloor\\dfrac{d_{\\min}-1}{2}\\right\\rfloor$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-c2",
+   "name": "p06-triangle-c2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c3": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 289,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 31,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 11,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "With $d_{\\min}=3$, $e=1$: the correct codeword is at distance $1$ and the others at least $3-1=2$; the green dot is left of the red zone: always decoded correctly.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-c3",
+   "name": "p06-triangle-c3",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c4": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 330,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 49,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 11,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "With $e=2$: the correct codeword is at distance $2$ and the others at least $3-2=1$; the green dot falls into the red zone: another codeword may be nearer, so there is no guarantee. Flipping columns $2$ and $4$ on the previous page is such a case.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-c4",
+   "name": "p06-triangle-c4",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-c5": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 389,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 31,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 11,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "This is a worst-case guarantee: $2e<d_{\\min}$ suffices, but exceeding it does not always cause an error; for larger $e$ some error patterns are still decoded correctly.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-c5",
+   "name": "p06-triangle-c5",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the setup: $\\mathbf c_t$ is sent and $\\mathbf s$ is received.",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-cue0",
+   "name": "p06-triangle-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: the triangle inequality.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-cue1",
+   "name": "p06-triangle-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green card: $2e<d_{\\min}$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-cue2",
+   "name": "p06-triangle-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the first number line: $e=1$, the green dot is left of the red zone.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-cue3",
+   "name": "p06-triangle-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the second number line: $e=2$, the green dot falls into the red zone.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-cue4",
+   "name": "p06-triangle-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-cue5": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: this is a guarantee, not a certainty.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p06-triangle-cue5",
+   "name": "p06-triangle-cue5",
+   "sceneId": "scene-u01"
+  },
+  "p06-triangle-m-shadow": {
+   "id": "p06-triangle-m-shadow",
+   "type": "shape",
+   "name": "p06-triangle-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8682.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-foot-l": {
+   "id": "p06-triangle-m-foot-l",
+   "type": "shape",
+   "name": "p06-triangle-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8707.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-foot-r": {
+   "id": "p06-triangle-m-foot-r",
+   "type": "shape",
+   "name": "p06-triangle-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-body": {
+   "id": "p06-triangle-m-body",
+   "type": "shape",
+   "name": "p06-triangle-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p06-triangle-m-belly": {
+   "id": "p06-triangle-m-belly",
+   "type": "shape",
+   "name": "p06-triangle-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-bow-l": {
+   "id": "p06-triangle-m-bow-l",
+   "type": "shape",
+   "name": "p06-triangle-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8706.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-bow-r": {
+   "id": "p06-triangle-m-bow-r",
+   "type": "shape",
+   "name": "p06-triangle-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8697.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-bow-c": {
+   "id": "p06-triangle-m-bow-c",
+   "type": "shape",
+   "name": "p06-triangle-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8703.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-arm-l": {
+   "id": "p06-triangle-m-arm-l",
+   "type": "shape",
+   "name": "p06-triangle-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8723.64,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.0,
+   "height": 8.399999999999977,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 52.000000000000014,
+     "y": 79.99999999999918
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p06-triangle-m-hand-l": {
+   "id": "p06-triangle-m-hand-l",
+   "type": "shape",
+   "name": "p06-triangle-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8741.7,
+    "y": 636.56,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-arm-r": {
+   "id": "p06-triangle-m-arm-r",
+   "type": "shape",
+   "name": "p06-triangle-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8684.16,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 20.000000000000068,
+     "y": 100.0
+    }
+   ]
+  },
+  "p06-triangle-m-hand-r": {
+   "id": "p06-triangle-m-hand-r",
+   "type": "shape",
+   "name": "p06-triangle-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8680.380000000001,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-ear-l": {
+   "id": "p06-triangle-m-ear-l",
+   "type": "shape",
+   "name": "p06-triangle-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8724.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-ear-r": {
+   "id": "p06-triangle-m-ear-r",
+   "type": "shape",
+   "name": "p06-triangle-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8677.86,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-head": {
+   "id": "p06-triangle-m-head",
+   "type": "shape",
+   "name": "p06-triangle-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8681.64,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-face": {
+   "id": "p06-triangle-m-face",
+   "type": "shape",
+   "name": "p06-triangle-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8686.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-cap-base": {
+   "id": "p06-triangle-m-cap-base",
+   "type": "shape",
+   "name": "p06-triangle-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p06-triangle-m-cap-top": {
+   "id": "p06-triangle-m-cap-top",
+   "type": "shape",
+   "name": "p06-triangle-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8688.36,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p06-triangle-m-tassel": {
+   "id": "p06-triangle-m-tassel",
+   "type": "shape",
+   "name": "p06-triangle-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p06-triangle-m-knot": {
+   "id": "p06-triangle-m-knot",
+   "type": "shape",
+   "name": "p06-triangle-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8687.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-eye-l": {
+   "id": "p06-triangle-m-eye-l",
+   "type": "shape",
+   "name": "p06-triangle-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8710.2,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-pupil-l": {
+   "id": "p06-triangle-m-pupil-l",
+   "type": "shape",
+   "name": "p06-triangle-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8713.560000000001,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-glint-l": {
+   "id": "p06-triangle-m-glint-l",
+   "type": "shape",
+   "name": "p06-triangle-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8714.4,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-eye-r": {
+   "id": "p06-triangle-m-eye-r",
+   "type": "shape",
+   "name": "p06-triangle-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8691.720000000001,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-pupil-r": {
+   "id": "p06-triangle-m-pupil-r",
+   "type": "shape",
+   "name": "p06-triangle-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-glint-r": {
+   "id": "p06-triangle-m-glint-r",
+   "type": "shape",
+   "name": "p06-triangle-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.92,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-brow-l": {
+   "id": "p06-triangle-m-brow-l",
+   "type": "shape",
+   "name": "p06-triangle-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8711.04,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p06-triangle-m-brow-r": {
+   "id": "p06-triangle-m-brow-r",
+   "type": "shape",
+   "name": "p06-triangle-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8692.560000000001,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p06-triangle-m-cheek-l": {
+   "id": "p06-triangle-m-cheek-l",
+   "type": "shape",
+   "name": "p06-triangle-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8718.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-cheek-r": {
+   "id": "p06-triangle-m-cheek-r",
+   "type": "shape",
+   "name": "p06-triangle-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p06-triangle-m-mouth": {
+   "id": "p06-triangle-m-mouth",
+   "type": "shape",
+   "name": "p06-triangle-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8699.7,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.599999999999994,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 87.49999999999997,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 75.00000000000006,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 62.500000000000036,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 37.49999999999997,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 25.0,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 12.499999999999972,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p06-triangle-nav": {
+   "type": "text",
+   "transform": {
+    "x": 8790,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP16 · 07/10 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p06-triangle-nav",
+   "name": "p06-triangle-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -24026,7 +26497,7 @@
    "order": 1,
    "label": "A binary SVM answers only \"this side or that\": how do we use it for 4 classes? · See the four classes and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24047,7 +26518,7 @@
    "order": 2,
    "label": "A binary SVM answers only \"this side or that\": how do we use it for 4 classes? · See the first row: class 1 versus the rest.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24112,7 +26583,7 @@
    "order": 3,
    "label": "A binary SVM answers only \"this side or that\": how do we use it for 4 classes? · See the second row: two against two.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24177,7 +26648,7 @@
    "order": 4,
    "label": "A binary SVM answers only \"this side or that\": how do we use it for 4 classes? · See the third row: another two against two.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24242,7 +26713,7 @@
    "order": 5,
    "label": "A binary SVM answers only \"this side or that\": how do we use it for 4 classes? · See the gold star: how many groupings in all.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24289,7 +26760,7 @@
    "order": 6,
    "label": "One-vs-rest: each model asks only \"is it my class?\"; how do we combine the three scores? · See the matrix first: three one-vs-rest tasks.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24310,7 +26781,7 @@
    "order": 7,
    "label": "One-vs-rest: each model asks only \"is it my class?\"; how do we combine the three scores? · See the three bars: the three scores for the same input.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24369,7 +26840,7 @@
    "order": 8,
    "label": "One-vs-rest: each model asks only \"is it my class?\"; how do we combine the three scores? · See the green star: two models accept.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24422,7 +26893,7 @@
    "order": 9,
    "label": "One-vs-rest: each model asks only \"is it my class?\"; how do we combine the three scores? · See the gold diamond: take the maximum.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24469,7 +26940,7 @@
    "order": 10,
    "label": "One-vs-rest: each model asks only \"is it my class?\"; how do we combine the three scores? · See the red triangle: the limit of this rule.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24516,7 +26987,7 @@
    "order": 11,
    "label": "One-vs-one: one model per pair of classes; how are the results accumulated? · See the matrix first: six pairs, only two classes take part in each column.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24537,7 +27008,7 @@
    "order": 12,
    "label": "One-vs-one: one model per pair of classes; how are the results accumulated? · See the first three winners.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24596,7 +27067,7 @@
    "order": 13,
    "label": "One-vs-one: one model per pair of classes; how are the results accumulated? · See the last three winners.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24655,7 +27126,7 @@
    "order": 14,
    "label": "One-vs-one: one model per pair of classes; how are the results accumulated? · See the four bars on the right: the votes.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24720,7 +27191,7 @@
    "order": 15,
    "label": "One-vs-one: one model per pair of classes; how are the results accumulated? · See the red triangle: the tie.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24767,7 +27238,7 @@
    "order": 16,
    "label": "Treat each class's row of ±1 as a \"codeword\": given a set of outputs, which class is it decoded to? · See the matrix and the received code first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24788,7 +27259,7 @@
    "order": 17,
    "label": "Treat each class's row of ±1 as a \"codeword\": given a set of outputs, which class is it decoded to? · See the four bars: the distances from the received code to",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24853,7 +27324,7 @@
    "order": 18,
    "label": "Treat each class's row of ±1 as a \"codeword\": given a set of outputs, which class is it decoded to? · See the gold frame and the red circle: the nearest row and",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24912,7 +27383,7 @@
    "order": 19,
    "label": "How many positions do any two codewords differ in? What is the minimum distance d_min? · See the codewords on the left and the empty distance table on the right",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24933,7 +27404,7 @@
    "order": 20,
    "label": "How many positions do any two codewords differ in? What is the minimum distance d_min? · See the three distances of the first row.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24992,7 +27463,7 @@
    "order": 21,
    "label": "How many positions do any two codewords differ in? What is the minimum distance d_min? · See the other three distances.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25051,7 +27522,7 @@
    "order": 22,
    "label": "How many positions do any two codewords differ in? What is the minimum distance d_min? · See the red circles and the gold star: the minimum distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25110,7 +27581,7 @@
    "order": 23,
    "label": "How many positions do any two codewords differ in? What is the minimum distance d_min? · See the gold circle and red triangle: one correction of the lecture.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25163,7 +27634,7 @@
    "order": 24,
    "label": "A code with minimum distance 3: how many bit errors can it correct at most? · See the two nearest codewords first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25184,7 +27655,7 @@
    "order": 25,
    "label": "A code with minimum distance 3: how many bit errors can it correct at most? · See the orange frame: the columns where the two codewords differ.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25243,7 +27714,7 @@
    "order": 26,
    "label": "A code with minimum distance 3: how many bit errors can it correct at most? · See the red circle and the two bars: flip 1 column.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25302,7 +27773,7 @@
    "order": 27,
    "label": "A code with minimum distance 3: how many bit errors can it correct at most? · See the second group: flip one more column (2 in all).",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25361,7 +27832,7 @@
    "order": 28,
    "label": "A code with minimum distance 3: how many bit errors can it correct at most? · See the gold star: the condition.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25404,11 +27875,11 @@
    }
   },
   {
-   "id": "p07-redundant-st0",
+   "id": "p06-triangle-st0",
    "order": 29,
-   "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the matrix first: are any columns exactly the same?",
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · First, the setup: $\\mathbf c_t$ is sent and $\\mathbf s$ is received.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -25425,17 +27896,297 @@
    }
   },
   {
-   "id": "p07-redundant-st1",
+   "id": "p06-triangle-st1",
    "order": 30,
-   "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the blue frame: columns 1 and 3.",
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · See the blue card: the triangle inequality.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-triangle-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-triangle-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p06-triangle-st2",
+   "order": 31,
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · See the green card: $2e<d_{\\min}$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-triangle-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-triangle-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p06-triangle-st3",
+   "order": 32,
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · See the first number line: $e=1$, the green dot is left of the red zone.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-triangle-r1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-g1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-tg1",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-tr1",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-c3",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-triangle-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p06-triangle-st4",
+   "order": 33,
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · See the second number line: $e=2$, the green dot falls into the red zone.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-triangle-r2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-g2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-tg2",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-tr2",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-c4",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-cue4",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-triangle-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p06-triangle-st5",
+   "order": 34,
+   "label": "Why is $2e<d_{\\min}$ always enough? One proof by the triangle inequality · See the gold star: this is a guarantee, not a certainty.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p06-triangle-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-c5",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p06-triangle-cue5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p06-triangle-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p07-redundant-st0",
+   "order": 35,
+   "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the matrix first: are any columns exactly the same?",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p07-redundant-st1",
+   "order": 36,
+   "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the blue frame: columns 1 and 3.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25479,16 +28230,16 @@
   },
   {
    "id": "p07-redundant-st2",
-   "order": 31,
+   "order": 37,
    "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the gold frame: columns 2 and 4.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25532,16 +28283,16 @@
   },
   {
    "id": "p07-redundant-st3",
-   "order": 32,
+   "order": 38,
    "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the two bars: the minimum distance before and after removing dup",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25585,16 +28336,16 @@
   },
   {
    "id": "p07-redundant-st4",
-   "order": 33,
+   "order": 39,
    "label": "[Optional] Is a longer codeword always better? Do repeated columns count as new evidence? · See the red triangle: the limit of this conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25632,16 +28383,16 @@
   },
   {
    "id": "p08-practice-st0",
-   "order": 34,
+   "order": 40,
    "label": "Practice: M=6 classes: how many models per scheme? With d_min=7, how many errors can be corrected? · Work it out first: see the question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25653,16 +28404,16 @@
   },
   {
    "id": "p08-practice-st1",
-   "order": 35,
+   "order": 41,
    "label": "Practice: M=6 classes: how many models per scheme? With d_min=7, how many errors can be corrected? · See feedback (a): six squares.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25700,16 +28451,16 @@
   },
   {
    "id": "p08-practice-st2",
-   "order": 36,
+   "order": 42,
    "label": "Practice: M=6 classes: how many models per scheme? With d_min=7, how many errors can be corrected? · See feedback (b): the staircase together.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25747,16 +28498,16 @@
   },
   {
    "id": "p08-practice-st3",
-   "order": 37,
+   "order": 43,
    "label": "Practice: M=6 classes: how many models per scheme? With d_min=7, how many errors can be corrected? · See feedback (c): the worst case on the number line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25812,16 +28563,16 @@
   },
   {
    "id": "p09-summary-st0",
-   "order": 38,
+   "order": 44,
    "label": "Summary: tasks, combining and error correction · See the left first: the codeword matrix, the blue and gold frames are two groups of repeated columns.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25833,16 +28584,16 @@
   },
   {
    "id": "p09-summary-st1",
-   "order": 39,
+   "order": 45,
    "label": "Summary: tasks, combining and error correction · See the arrow: tasks and the two decompositions.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25880,16 +28631,16 @@
   },
   {
    "id": "p09-summary-st2",
-   "order": 40,
+   "order": 46,
    "label": "Summary: tasks, combining and error correction · See the diamond: codewords and decoding.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25927,16 +28678,16 @@
   },
   {
    "id": "p09-summary-st3",
-   "order": 41,
+   "order": 47,
    "label": "Summary: tasks, combining and error correction · See the star: distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25974,16 +28725,16 @@
   },
   {
    "id": "p09-summary-st4",
-   "order": 42,
+   "order": 48,
    "label": "Summary: tasks, combining and error correction · See the red triangle: the error-correcting radius.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -26021,16 +28772,16 @@
   },
   {
    "id": "p09-summary-st5",
-   "order": 43,
+   "order": 49,
    "label": "Summary: tasks, combining and error correction · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,

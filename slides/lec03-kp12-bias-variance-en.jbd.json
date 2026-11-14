@@ -570,6 +570,68 @@
     "p04-degrees-cue2",
     "p04-degrees-cue3",
     "p04-degrees-cue4",
+    "p05-hmatrix-bg",
+    "p05-hmatrix-rule",
+    "p05-hmatrix-title",
+    "p05-hmatrix-ctx",
+    "p05-hmatrix-src",
+    "p05-hmatrix-plbg",
+    "p05-hmatrix-axy",
+    "p05-hmatrix-th",
+    "p05-hmatrix-tk1",
+    "p05-hmatrix-bb1",
+    "p05-hmatrix-bv1",
+    "p05-hmatrix-tk3",
+    "p05-hmatrix-bb3",
+    "p05-hmatrix-bv3",
+    "p05-hmatrix-tk9",
+    "p05-hmatrix-bb9",
+    "p05-hmatrix-bv9",
+    "p05-hmatrix-st",
+    "p05-hmatrix-c0",
+    "p05-hmatrix-c1",
+    "p05-hmatrix-c2",
+    "p05-hmatrix-c3",
+    "p05-hmatrix-c4",
+    "p05-hmatrix-c5",
+    "p05-hmatrix-cue0",
+    "p05-hmatrix-cue1",
+    "p05-hmatrix-cue2",
+    "p05-hmatrix-cue3",
+    "p05-hmatrix-cue4",
+    "p05-hmatrix-cue5",
+    "p05-hmatrix-m-shadow",
+    "p05-hmatrix-m-foot-l",
+    "p05-hmatrix-m-foot-r",
+    "p05-hmatrix-m-body",
+    "p05-hmatrix-m-belly",
+    "p05-hmatrix-m-bow-l",
+    "p05-hmatrix-m-bow-r",
+    "p05-hmatrix-m-bow-c",
+    "p05-hmatrix-m-arm-l",
+    "p05-hmatrix-m-hand-l",
+    "p05-hmatrix-m-arm-r",
+    "p05-hmatrix-m-hand-r",
+    "p05-hmatrix-m-ear-l",
+    "p05-hmatrix-m-ear-r",
+    "p05-hmatrix-m-head",
+    "p05-hmatrix-m-face",
+    "p05-hmatrix-m-cap-base",
+    "p05-hmatrix-m-cap-top",
+    "p05-hmatrix-m-tassel",
+    "p05-hmatrix-m-knot",
+    "p05-hmatrix-m-eye-l",
+    "p05-hmatrix-m-pupil-l",
+    "p05-hmatrix-m-glint-l",
+    "p05-hmatrix-m-eye-r",
+    "p05-hmatrix-m-pupil-r",
+    "p05-hmatrix-m-glint-r",
+    "p05-hmatrix-m-brow-l",
+    "p05-hmatrix-m-brow-r",
+    "p05-hmatrix-m-cheek-l",
+    "p05-hmatrix-m-cheek-r",
+    "p05-hmatrix-m-mouth",
+    "p05-hmatrix-nav",
     "p05-fits-nav",
     "p05-fits-cue0",
     "p05-fits-cue1",
@@ -671,7 +733,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -733,7 +795,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -1317,7 +1379,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "Green diamond = mean prediction $\\bar g=0.7$. The red arrow is the bias $\\bar g-f=-0.3$ (squared $0.09$): the center is off the bullseye.",
+   "text": "Green diamond: mean prediction $\\bar g=0.7$. The red arrow is the bias $\\bar g-f=-0.3$ (squared $0.09$): the center is off the bullseye.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -2470,7 +2532,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -2478,7 +2540,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Squared error on a new target = squared bias + variance + noise, three parts adding up",
+   "text": "Squared error on a new target: squared bias + variance + noise, three parts adding up",
    "shapeKind": "rectangle"
   },
   "p02-decomp-ctx": {
@@ -2532,7 +2594,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -2571,7 +2633,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "One bar = risk (average squared error), split into three parts:",
+   "text": "One bar: risk (average squared error), split into three parts:",
    "shapeKind": "rectangle"
   },
   "p02-decomp-bax": {
@@ -4158,7 +4220,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -4166,7 +4228,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25",
+   "text": "Zero variance is not automatically good: a model that always predicts $0.5$ has squared bias as high as $2.25$",
    "shapeKind": "rectangle"
   },
   "p03-constant-ctx": {
@@ -4220,7 +4282,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -5228,7 +5290,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Orange line = fixed prediction $g=0.5$. Bias $\\bar g-f=0.5-(-1)=1.5$, squared $2.25$.",
+   "text": "Orange line: fixed prediction $g=0.5$. Bias $\\bar g-f=0.5-(-1)=1.5$, squared $2.25$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -5312,7 +5374,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "Red arrow = bias. The prediction does not change with the data, $\\operatorname{Var}=0$. Risk $=2.25+0+0.09=2.34$.",
+   "text": "Red arrow: bias. The prediction does not change with the data, $\\operatorname{Var}=0$. Risk $=2.25+0+0.09=2.34$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -6393,7 +6455,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -6455,7 +6517,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -7545,7 +7607,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Orange line = squared bias: $0.2207$ at degree 1, falling to $0.0063$ at degree 3, nearly $0$ at degree 9.",
+   "text": "Orange line: squared bias: $0.2207$ at degree 1, falling to $0.0063$ at degree 3, nearly $0$ at degree 9.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -7579,7 +7641,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "Blue line = variance: $0.0151$ at degree 1, $0.0277$ at degree 3, rising to $0.0666$ at degree 9.",
+   "text": "Blue line: variance: $0.0151$ at degree 1, $0.0277$ at degree 3, rising to $0.0666$ at degree 9.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -7613,7 +7675,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "Red line = total risk (including noise): $0.3258,\\ 0.1241,\\ 0.1566$ for degrees 1, 3, 9. Degree 2 ($0.3321$) is even higher than degree 1, not a smooth U.",
+   "text": "Red line: total risk (including noise): $0.3258,\\ 0.1241,\\ 0.1566$ for degrees 1, 3, 9. Degree 2 ($0.3321$) is even higher than degree 1, not a smooth U.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -7683,7 +7745,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "Green point = degree 3, the smallest total risk $0.1241$. This holds only under this design, penalty and noise; it is not \"always use cubics\".",
+   "text": "Green point: degree 3, the smallest total risk $0.1241$. This holds only under this design, penalty and noise; it is not \"always use cubics\".",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -8626,7 +8688,7 @@
    "name": "p05-fits-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5760,
+    "x": 7200,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8653,7 +8715,7 @@
    "name": "p05-fits-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -8680,7 +8742,7 @@
    "name": "p05-fits-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -8694,7 +8756,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -8711,7 +8773,7 @@
    "name": "p05-fits-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -8733,7 +8795,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "[Fixed-seed experiment] NumPy seed 20261016, 200 noise sets (std 0.3); the first 4 are shown. Gray dashed = true mean $\\sin 2\\pi x$.",
+   "text": "[Fixed-seed experiment] NumPy seed 20261016, 200 noise sets (std 0.3); the first 4 are shown. Gray dashed: true mean $\\sin 2\\pi x$.",
    "shapeKind": "rectangle"
   },
   "p05-fits-src": {
@@ -8742,7 +8804,7 @@
    "name": "p05-fits-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -8756,7 +8818,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -8773,7 +8835,7 @@
    "name": "p05-fits-q0bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5836,
+    "x": 7276,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -8800,7 +8862,7 @@
    "name": "p05-fits-q0ax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -8837,7 +8899,7 @@
    "name": "p05-fits-q0ay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -8874,7 +8936,7 @@
    "name": "p05-fits-q0xt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5832.727272727273,
+    "x": 7272.727272727273,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8905,7 +8967,7 @@
    "name": "p05-fits-q0xt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5960.0,
+    "x": 7400.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8936,7 +8998,7 @@
    "name": "p05-fits-q0xt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6087.272727272727,
+    "x": 7527.272727272727,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8967,7 +9029,7 @@
    "name": "p05-fits-q0gy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 412.3529411764706,
     "scaleX": 1,
     "scaleY": 1,
@@ -9004,7 +9066,7 @@
    "name": "p05-fits-q0yt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5794,
+    "x": 7234,
     "y": 403.3529411764706,
     "scaleX": 1,
     "scaleY": 1,
@@ -9035,7 +9097,7 @@
    "name": "p05-fits-q0gy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 330.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9072,7 +9134,7 @@
    "name": "p05-fits-q0yt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5794,
+    "x": 7234,
     "y": 321.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9103,7 +9165,7 @@
    "name": "p05-fits-q0gy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 247.6470588235294,
     "scaleX": 1,
     "scaleY": 1,
@@ -9140,7 +9202,7 @@
    "name": "p05-fits-q0yt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5794,
+    "x": 7234,
     "y": 238.6470588235294,
     "scaleX": 1,
     "scaleY": 1,
@@ -9171,7 +9233,7 @@
    "name": "p05-fits-tr0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5862.727272727273,
+    "x": 7302.727272727273,
     "y": 247.68937043053157,
     "scaleX": 1,
     "scaleY": 1,
@@ -9401,7 +9463,7 @@
    "name": "p05-fits-q1bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6186,
+    "x": 7626,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -9428,7 +9490,7 @@
    "name": "p05-fits-q1ax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -9465,7 +9527,7 @@
    "name": "p05-fits-q1ay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -9502,7 +9564,7 @@
    "name": "p05-fits-q1xt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6182.727272727273,
+    "x": 7622.727272727273,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -9533,7 +9595,7 @@
    "name": "p05-fits-q1xt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6310.0,
+    "x": 7750.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -9564,7 +9626,7 @@
    "name": "p05-fits-q1xt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6437.272727272727,
+    "x": 7877.272727272727,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -9595,7 +9657,7 @@
    "name": "p05-fits-q1gy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 412.3529411764706,
     "scaleX": 1,
     "scaleY": 1,
@@ -9632,7 +9694,7 @@
    "name": "p05-fits-q1yt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6144,
+    "x": 7584,
     "y": 403.3529411764706,
     "scaleX": 1,
     "scaleY": 1,
@@ -9663,7 +9725,7 @@
    "name": "p05-fits-q1gy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 330.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9700,7 +9762,7 @@
    "name": "p05-fits-q1yt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6144,
+    "x": 7584,
     "y": 321.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9731,7 +9793,7 @@
    "name": "p05-fits-q1gy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 247.6470588235294,
     "scaleX": 1,
     "scaleY": 1,
@@ -9768,7 +9830,7 @@
    "name": "p05-fits-q1yt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6144,
+    "x": 7584,
     "y": 238.6470588235294,
     "scaleX": 1,
     "scaleY": 1,
@@ -9799,7 +9861,7 @@
    "name": "p05-fits-tr1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6212.727272727273,
+    "x": 7652.727272727273,
     "y": 247.68937043053157,
     "scaleX": 1,
     "scaleY": 1,
@@ -10029,7 +10091,7 @@
    "name": "p05-fits-lt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5850,
+    "x": 7290,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -10060,7 +10122,7 @@
    "name": "p05-fits-lt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -10091,7 +10153,7 @@
    "name": "p05-fits-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6550,
+    "x": 7990,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -10124,7 +10186,7 @@
    "name": "p05-fits-f0_0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5862.727272727273,
+    "x": 7302.727272727273,
     "y": 268.58529379266577,
     "scaleX": 1,
     "scaleY": 1,
@@ -10358,7 +10420,7 @@
    "name": "p05-fits-f0_1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5862.727272727273,
+    "x": 7302.727272727273,
     "y": 267.5815670470804,
     "scaleX": 1,
     "scaleY": 1,
@@ -10592,7 +10654,7 @@
    "name": "p05-fits-f0_2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5862.727272727273,
+    "x": 7302.727272727273,
     "y": 261.573267930392,
     "scaleX": 1,
     "scaleY": 1,
@@ -10826,7 +10888,7 @@
    "name": "p05-fits-f0_3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5862.727272727273,
+    "x": 7302.727272727273,
     "y": 266.20993723531933,
     "scaleX": 1,
     "scaleY": 1,
@@ -11060,7 +11122,7 @@
    "name": "p05-fits-f1_0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6212.727272727273,
+    "x": 7652.727272727273,
     "y": 231.41891082323315,
     "scaleX": 1,
     "scaleY": 1,
@@ -11294,7 +11356,7 @@
    "name": "p05-fits-f1_1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6212.727272727273,
+    "x": 7652.727272727273,
     "y": 210.40378588273188,
     "scaleX": 1,
     "scaleY": 1,
@@ -11528,7 +11590,7 @@
    "name": "p05-fits-f1_2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6212.727272727273,
+    "x": 7652.727272727273,
     "y": 222.8529292147293,
     "scaleX": 1,
     "scaleY": 1,
@@ -11762,7 +11824,7 @@
    "name": "p05-fits-f1_3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6212.727272727273,
+    "x": 7652.727272727273,
     "y": 224.90570096962358,
     "scaleX": 1,
     "scaleY": 1,
@@ -11996,7 +12058,7 @@
    "name": "p05-fits-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6550,
+    "x": 7990,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -12020,7 +12082,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "Left: the four degree-1 curves nearly overlap (the 200-set average variance is about $0.015$); they have a fixed offset from the gray dashed line = bias.",
+   "text": "Left: the four degree-1 curves nearly overlap (the 200-set average variance is about $0.015$); they have a fixed offset from the gray dashed line: bias.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -12030,7 +12092,7 @@
    "name": "p05-fits-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6550,
+    "x": 7990,
     "y": 338,
     "scaleX": 1,
     "scaleY": 1,
@@ -12064,7 +12126,7 @@
    "name": "p05-fits-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6936,
+    "x": 8376,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -12100,7 +12162,7 @@
    "name": "p05-fits-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6550,
+    "x": 7990,
     "y": 466,
     "scaleX": 1,
     "scaleY": 1,
@@ -12134,7 +12196,7 @@
    "name": "p05-fits-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5802.48,
+    "x": 7242.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -12161,7 +12223,7 @@
    "name": "p05-fits-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5827.68,
+    "x": 7267.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -12188,7 +12250,7 @@
    "name": "p05-fits-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -12215,7 +12277,7 @@
    "name": "p05-fits-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.84,
+    "x": 7245.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -12242,7 +12304,7 @@
    "name": "p05-fits-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -12269,7 +12331,7 @@
    "name": "p05-fits-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5826.0,
+    "x": 7266.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12296,7 +12358,7 @@
    "name": "p05-fits-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5817.6,
+    "x": 7257.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12323,7 +12385,7 @@
    "name": "p05-fits-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5823.9,
+    "x": 7263.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -12350,7 +12412,7 @@
    "name": "p05-fits-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5843.64,
+    "x": 7283.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -12391,7 +12453,7 @@
    "name": "p05-fits-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5861.7,
+    "x": 7301.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -12418,7 +12480,7 @@
    "name": "p05-fits-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804.16,
+    "x": 7244.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -12459,7 +12521,7 @@
    "name": "p05-fits-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800.38,
+    "x": 7240.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -12486,7 +12548,7 @@
    "name": "p05-fits-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5844.9,
+    "x": 7284.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12513,7 +12575,7 @@
    "name": "p05-fits-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5797.86,
+    "x": 7237.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12540,7 +12602,7 @@
    "name": "p05-fits-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5801.64,
+    "x": 7241.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12567,7 +12629,7 @@
    "name": "p05-fits-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5806.26,
+    "x": 7246.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12594,7 +12656,7 @@
    "name": "p05-fits-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -12621,7 +12683,7 @@
    "name": "p05-fits-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5808.36,
+    "x": 7248.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12648,7 +12710,7 @@
    "name": "p05-fits-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12685,7 +12747,7 @@
    "name": "p05-fits-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5807.1,
+    "x": 7247.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -12712,7 +12774,7 @@
    "name": "p05-fits-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5830.2,
+    "x": 7270.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12739,7 +12801,7 @@
    "name": "p05-fits-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5833.56,
+    "x": 7273.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12766,7 +12828,7 @@
    "name": "p05-fits-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5834.4,
+    "x": 7274.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12793,7 +12855,7 @@
    "name": "p05-fits-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5811.72,
+    "x": 7251.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12820,7 +12882,7 @@
    "name": "p05-fits-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12847,7 +12909,7 @@
    "name": "p05-fits-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.92,
+    "x": 7255.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12874,7 +12936,7 @@
    "name": "p05-fits-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5831.04,
+    "x": 7271.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -12911,7 +12973,7 @@
    "name": "p05-fits-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5812.56,
+    "x": 7252.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -12948,7 +13010,7 @@
    "name": "p05-fits-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5838.6,
+    "x": 7278.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12975,7 +13037,7 @@
    "name": "p05-fits-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.0,
+    "x": 7245.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -13002,7 +13064,7 @@
    "name": "p05-fits-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5819.7,
+    "x": 7259.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -13067,7 +13129,7 @@
    "name": "p06-pitfalls-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7200,
+    "x": 8640,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13094,7 +13156,7 @@
    "name": "p06-pitfalls-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -13121,7 +13183,7 @@
    "name": "p06-pitfalls-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -13135,7 +13197,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -13152,7 +13214,7 @@
    "name": "p06-pitfalls-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13183,7 +13245,7 @@
    "name": "p06-pitfalls-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -13197,7 +13259,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -13214,7 +13276,7 @@
    "name": "p06-pitfalls-bbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7260,
+    "x": 8700,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -13241,7 +13303,7 @@
    "name": "p06-pitfalls-bax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7290,
+    "x": 8730,
     "y": 450,
     "scaleX": 1,
     "scaleY": 1,
@@ -13278,7 +13340,7 @@
    "name": "p06-pitfalls-bb1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300,
+    "x": 8740,
     "y": 214.70676153967696,
     "scaleX": 1,
     "scaleY": 1,
@@ -13305,7 +13367,7 @@
    "name": "p06-pitfalls-bn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7294,
+    "x": 8734,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13336,7 +13398,7 @@
    "name": "p06-pitfalls-bb2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7354,
+    "x": 8794,
     "y": 210.15880720801368,
     "scaleX": 1,
     "scaleY": 1,
@@ -13363,7 +13425,7 @@
    "name": "p06-pitfalls-bn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7348,
+    "x": 8788,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13394,7 +13456,7 @@
    "name": "p06-pitfalls-bb3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7408,
+    "x": 8848,
     "y": 360.4042898865222,
     "scaleX": 1,
     "scaleY": 1,
@@ -13421,7 +13483,7 @@
    "name": "p06-pitfalls-bn3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7402,
+    "x": 8842,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13452,7 +13514,7 @@
    "name": "p06-pitfalls-bb4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7462,
+    "x": 8902,
     "y": 355.4626028093013,
     "scaleX": 1,
     "scaleY": 1,
@@ -13479,7 +13541,7 @@
    "name": "p06-pitfalls-bn4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7456,
+    "x": 8896,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13510,7 +13572,7 @@
    "name": "p06-pitfalls-bb5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7516,
+    "x": 8956,
     "y": 354.30570565194114,
     "scaleX": 1,
     "scaleY": 1,
@@ -13537,7 +13599,7 @@
    "name": "p06-pitfalls-bn5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7510,
+    "x": 8950,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13568,7 +13630,7 @@
    "name": "p06-pitfalls-bb6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7570,
+    "x": 9010,
     "y": 347.46933901452235,
     "scaleX": 1,
     "scaleY": 1,
@@ -13595,7 +13657,7 @@
    "name": "p06-pitfalls-bn6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7564,
+    "x": 9004,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13626,7 +13688,7 @@
    "name": "p06-pitfalls-bb7",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7624,
+    "x": 9064,
     "y": 344.1981839684429,
     "scaleX": 1,
     "scaleY": 1,
@@ -13653,7 +13715,7 @@
    "name": "p06-pitfalls-bn7",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7618,
+    "x": 9058,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13684,7 +13746,7 @@
    "name": "p06-pitfalls-bb8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7678,
+    "x": 9118,
     "y": 339.32202006468003,
     "scaleX": 1,
     "scaleY": 1,
@@ -13711,7 +13773,7 @@
    "name": "p06-pitfalls-bn8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7672,
+    "x": 9112,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13742,7 +13804,7 @@
    "name": "p06-pitfalls-bb9",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7732,
+    "x": 9172,
     "y": 336.8863518368457,
     "scaleX": 1,
     "scaleY": 1,
@@ -13769,7 +13831,7 @@
    "name": "p06-pitfalls-bn9",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7726,
+    "x": 9166,
     "y": 454,
     "scaleX": 1,
     "scaleY": 1,
@@ -13800,7 +13862,7 @@
    "name": "p06-pitfalls-bcap",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7280,
+    "x": 8720,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -13822,7 +13884,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Each bar = the total risk of that degree",
+   "text": "Each bar: the total risk of that degree",
    "shapeKind": "rectangle"
   },
   "p06-pitfalls-c0": {
@@ -13831,7 +13893,7 @@
    "name": "p06-pitfalls-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7850,
+    "x": 9290,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -13864,7 +13926,7 @@
    "name": "p06-pitfalls-rg1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7292,
+    "x": 8732,
     "y": 200.15880720801368,
     "scaleX": 1,
     "scaleY": 1,
@@ -13892,7 +13954,7 @@
    "name": "p06-pitfalls-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7850,
+    "x": 9290,
     "y": 196,
     "scaleX": 1,
     "scaleY": 1,
@@ -13926,7 +13988,7 @@
    "name": "p06-pitfalls-w1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8380,
+    "x": 9820,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -13957,7 +14019,7 @@
    "name": "p06-pitfalls-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7850,
+    "x": 9290,
     "y": 308,
     "scaleX": 1,
     "scaleY": 1,
@@ -13991,7 +14053,7 @@
    "name": "p06-pitfalls-w2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8380,
+    "x": 9820,
     "y": 322,
     "scaleX": 1,
     "scaleY": 1,
@@ -14022,7 +14084,7 @@
    "name": "p06-pitfalls-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7850,
+    "x": 9290,
     "y": 420,
     "scaleX": 1,
     "scaleY": 1,
@@ -14056,7 +14118,7 @@
    "name": "p06-pitfalls-w3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8380,
+    "x": 9820,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -14087,7 +14149,7 @@
    "name": "p06-pitfalls-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8376,
+    "x": 9816,
     "y": 524,
     "scaleX": 1,
     "scaleY": 1,
@@ -14123,7 +14185,7 @@
    "name": "p06-pitfalls-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7850,
+    "x": 9290,
     "y": 532,
     "scaleX": 1,
     "scaleY": 1,
@@ -14157,7 +14219,7 @@
    "name": "p06-pitfalls-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7242.48,
+    "x": 8682.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -14184,7 +14246,7 @@
    "name": "p06-pitfalls-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7267.68,
+    "x": 8707.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14211,7 +14273,7 @@
    "name": "p06-pitfalls-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14238,7 +14300,7 @@
    "name": "p06-pitfalls-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.84,
+    "x": 8685.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14265,7 +14327,7 @@
    "name": "p06-pitfalls-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -14292,7 +14354,7 @@
    "name": "p06-pitfalls-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7266.0,
+    "x": 8706.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14319,7 +14381,7 @@
    "name": "p06-pitfalls-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7257.6,
+    "x": 8697.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14346,7 +14408,7 @@
    "name": "p06-pitfalls-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.9,
+    "x": 8703.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14373,7 +14435,7 @@
    "name": "p06-pitfalls-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7283.64,
+    "x": 8723.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14414,7 +14476,7 @@
    "name": "p06-pitfalls-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7301.7,
+    "x": 8741.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -14441,7 +14503,7 @@
    "name": "p06-pitfalls-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7244.16,
+    "x": 8684.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -14482,7 +14544,7 @@
    "name": "p06-pitfalls-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240.38,
+    "x": 8680.380000000001,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -14509,7 +14571,7 @@
    "name": "p06-pitfalls-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7284.9,
+    "x": 8724.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14536,7 +14598,7 @@
    "name": "p06-pitfalls-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7237.86,
+    "x": 8677.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14563,7 +14625,7 @@
    "name": "p06-pitfalls-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7241.64,
+    "x": 8681.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14590,7 +14652,7 @@
    "name": "p06-pitfalls-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7246.26,
+    "x": 8686.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14617,7 +14679,7 @@
    "name": "p06-pitfalls-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -14644,7 +14706,7 @@
    "name": "p06-pitfalls-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7248.36,
+    "x": 8688.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14671,7 +14733,7 @@
    "name": "p06-pitfalls-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14708,7 +14770,7 @@
    "name": "p06-pitfalls-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7247.1,
+    "x": 8687.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -14735,7 +14797,7 @@
    "name": "p06-pitfalls-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7270.2,
+    "x": 8710.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14762,7 +14824,7 @@
    "name": "p06-pitfalls-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.56,
+    "x": 8713.560000000001,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -14789,7 +14851,7 @@
    "name": "p06-pitfalls-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7274.4,
+    "x": 8714.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14816,7 +14878,7 @@
    "name": "p06-pitfalls-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7251.72,
+    "x": 8691.720000000001,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14843,7 +14905,7 @@
    "name": "p06-pitfalls-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -14870,7 +14932,7 @@
    "name": "p06-pitfalls-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.92,
+    "x": 8695.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14897,7 +14959,7 @@
    "name": "p06-pitfalls-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7271.04,
+    "x": 8711.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -14934,7 +14996,7 @@
    "name": "p06-pitfalls-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7252.56,
+    "x": 8692.560000000001,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -14971,7 +15033,7 @@
    "name": "p06-pitfalls-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.6,
+    "x": 8718.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -14998,7 +15060,7 @@
    "name": "p06-pitfalls-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.0,
+    "x": 8685.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15025,7 +15087,7 @@
    "name": "p06-pitfalls-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7259.7,
+    "x": 8699.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -15090,7 +15152,7 @@
    "name": "p07-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15117,7 +15179,7 @@
    "name": "p07-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15144,7 +15206,7 @@
    "name": "p07-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -15158,7 +15220,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -15166,7 +15228,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Practice: bias −0.4, variance 0.25, noise 0.05, what is the total risk? What about another model?",
+   "text": "Practice: bias $−0.4$, variance 0.25, noise 0.05, what is the total risk? What about another model?",
    "shapeKind": "rectangle"
   },
   "p07-practice-ctx": {
@@ -15175,7 +15237,7 @@
    "name": "p07-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15206,7 +15268,7 @@
    "name": "p07-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -15237,7 +15299,7 @@
    "name": "p07-practice-xax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8730,
+    "x": 10170,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -15274,7 +15336,7 @@
    "name": "p07-practice-xt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8710,
+    "x": 10150,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -15305,7 +15367,7 @@
    "name": "p07-practice-xt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8910.0,
+    "x": 10350.0,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -15336,7 +15398,7 @@
    "name": "p07-practice-xt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9110.0,
+    "x": 10550.0,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -15367,7 +15429,7 @@
    "name": "p07-practice-xt6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9310.0,
+    "x": 10750.0,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -15398,7 +15460,7 @@
    "name": "p07-practice-xt8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9510.0,
+    "x": 10950.0,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -15429,7 +15491,7 @@
    "name": "p07-practice-la",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -15460,7 +15522,7 @@
    "name": "p07-practice-lb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 285,
     "scaleX": 1,
     "scaleY": 1,
@@ -15491,7 +15553,7 @@
    "name": "p07-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -15524,7 +15586,7 @@
    "name": "p07-practice-a1b",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8730,
+    "x": 10170,
     "y": 236,
     "scaleX": 1,
     "scaleY": 1,
@@ -15552,7 +15614,7 @@
    "name": "p07-practice-a1v",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8890.0,
+    "x": 10330.0,
     "y": 236,
     "scaleX": 1,
     "scaleY": 1,
@@ -15580,7 +15642,7 @@
    "name": "p07-practice-a1n",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9140.0,
+    "x": 10580.0,
     "y": 236,
     "scaleX": 1,
     "scaleY": 1,
@@ -15608,7 +15670,7 @@
    "name": "p07-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 392,
     "scaleX": 1,
     "scaleY": 1,
@@ -15642,7 +15704,7 @@
    "name": "p07-practice-b2b",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8730,
+    "x": 10170,
     "y": 312,
     "scaleX": 1,
     "scaleY": 1,
@@ -15670,7 +15732,7 @@
    "name": "p07-practice-b2v",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8770.0,
+    "x": 10210.0,
     "y": 312,
     "scaleX": 1,
     "scaleY": 1,
@@ -15698,7 +15760,7 @@
    "name": "p07-practice-b2n",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9370.0,
+    "x": 10810.0,
     "y": 312,
     "scaleX": 1,
     "scaleY": 1,
@@ -15726,7 +15788,7 @@
    "name": "p07-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 392,
     "scaleX": 1,
     "scaleY": 1,
@@ -15760,7 +15822,7 @@
    "name": "p07-practice-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9816,
+    "x": 11256,
     "y": 516,
     "scaleX": 1,
     "scaleY": 1,
@@ -15796,7 +15858,7 @@
    "name": "p07-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 492,
     "scaleX": 1,
     "scaleY": 1,
@@ -15830,7 +15892,7 @@
    "name": "p07-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -15857,7 +15919,7 @@
    "name": "p07-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15884,7 +15946,7 @@
    "name": "p07-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15911,7 +15973,7 @@
    "name": "p07-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -15938,7 +16000,7 @@
    "name": "p07-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -15965,7 +16027,7 @@
    "name": "p07-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15992,7 +16054,7 @@
    "name": "p07-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16019,7 +16081,7 @@
    "name": "p07-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16046,7 +16108,7 @@
    "name": "p07-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16087,7 +16149,7 @@
    "name": "p07-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.62,
+    "x": 10129.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -16114,7 +16176,7 @@
    "name": "p07-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -16155,7 +16217,7 @@
    "name": "p07-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8722.38,
+    "x": 10162.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -16182,7 +16244,7 @@
    "name": "p07-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16209,7 +16271,7 @@
    "name": "p07-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16236,7 +16298,7 @@
    "name": "p07-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -16263,7 +16325,7 @@
    "name": "p07-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -16290,7 +16352,7 @@
    "name": "p07-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -16317,7 +16379,7 @@
    "name": "p07-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16344,7 +16406,7 @@
    "name": "p07-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -16381,7 +16443,7 @@
    "name": "p07-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -16408,7 +16470,7 @@
    "name": "p07-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8709.78,
+    "x": 10149.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16435,7 +16497,7 @@
    "name": "p07-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.14,
+    "x": 10153.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -16462,7 +16524,7 @@
    "name": "p07-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.98,
+    "x": 10153.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -16489,7 +16551,7 @@
    "name": "p07-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.3,
+    "x": 10131.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16516,7 +16578,7 @@
    "name": "p07-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8694.66,
+    "x": 10134.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -16543,7 +16605,7 @@
    "name": "p07-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.5,
+    "x": 10135.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -16570,7 +16632,7 @@
    "name": "p07-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -16607,7 +16669,7 @@
    "name": "p07-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -16644,7 +16706,7 @@
    "name": "p07-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -16671,7 +16733,7 @@
    "name": "p07-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -16698,7 +16760,7 @@
    "name": "p07-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.48,
+    "x": 10143.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -16725,7 +16787,7 @@
    "name": "p07-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.8,
+    "x": 10158.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -16756,7 +16818,7 @@
    "name": "p08-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16783,7 +16845,7 @@
    "name": "p08-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -16810,7 +16872,7 @@
    "name": "p08-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -16824,7 +16886,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -16841,7 +16903,7 @@
    "name": "p08-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -16872,7 +16934,7 @@
    "name": "p08-summary-dpbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10176,
+    "x": 11616,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -16899,7 +16961,7 @@
    "name": "p08-summary-dpax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -16936,7 +16998,7 @@
    "name": "p08-summary-dpay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -16973,7 +17035,7 @@
    "name": "p08-summary-dpxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10182.666666666666,
+    "x": 11622.666666666666,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17004,7 +17066,7 @@
    "name": "p08-summary-dpxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10239.333333333334,
+    "x": 11679.333333333334,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17035,7 +17097,7 @@
    "name": "p08-summary-dpxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10296.0,
+    "x": 11736.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17066,7 +17128,7 @@
    "name": "p08-summary-dpxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10352.666666666666,
+    "x": 11792.666666666666,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17097,7 +17159,7 @@
    "name": "p08-summary-dpxt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10409.333333333334,
+    "x": 11849.333333333334,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17128,7 +17190,7 @@
    "name": "p08-summary-dpxt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10466.0,
+    "x": 11906.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17159,7 +17221,7 @@
    "name": "p08-summary-dpxt6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10522.666666666666,
+    "x": 11962.666666666666,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17190,7 +17252,7 @@
    "name": "p08-summary-dpxt7",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10579.333333333334,
+    "x": 12019.333333333334,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17221,7 +17283,7 @@
    "name": "p08-summary-dpxt8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10636.0,
+    "x": 12076.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17252,7 +17314,7 @@
    "name": "p08-summary-dpgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 470.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17289,7 +17351,7 @@
    "name": "p08-summary-dpyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134,
+    "x": 11574,
     "y": 461.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17320,7 +17382,7 @@
    "name": "p08-summary-dpgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 381.1111111111111,
     "scaleX": 1,
     "scaleY": 1,
@@ -17357,7 +17419,7 @@
    "name": "p08-summary-dpyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134,
+    "x": 11574,
     "y": 372.1111111111111,
     "scaleX": 1,
     "scaleY": 1,
@@ -17388,7 +17450,7 @@
    "name": "p08-summary-dpgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 292.22222222222223,
     "scaleX": 1,
     "scaleY": 1,
@@ -17425,7 +17487,7 @@
    "name": "p08-summary-dpyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134,
+    "x": 11574,
     "y": 283.22222222222223,
     "scaleX": 1,
     "scaleY": 1,
@@ -17456,7 +17518,7 @@
    "name": "p08-summary-dpgy3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 203.33333333333331,
     "scaleX": 1,
     "scaleY": 1,
@@ -17493,7 +17555,7 @@
    "name": "p08-summary-dpyt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134,
+    "x": 11574,
     "y": 194.33333333333331,
     "scaleX": 1,
     "scaleY": 1,
@@ -17524,7 +17586,7 @@
    "name": "p08-summary-dpxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10400,
+    "x": 11840,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -17555,7 +17617,7 @@
    "name": "p08-summary-dpyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10196,
+    "x": 11636,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -17586,7 +17648,7 @@
    "name": "p08-summary-nz",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10190,
+    "x": 11630,
     "y": 390.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17624,7 +17686,7 @@
    "name": "p08-summary-cbias",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10212.666666666666,
+    "x": 11652.666666666666,
     "y": 273.8628673341605,
     "scaleX": 1,
     "scaleY": 1,
@@ -17689,7 +17751,7 @@
    "name": "p08-summary-cvar",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10212.666666666666,
+    "x": 11652.666666666666,
     "y": 410.78414554870653,
     "scaleX": 1,
     "scaleY": 1,
@@ -17754,7 +17816,7 @@
    "name": "p08-summary-crisk",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10212.666666666666,
+    "x": 11652.666666666666,
     "y": 174.81083964063225,
     "scaleX": 1,
     "scaleY": 1,
@@ -17819,7 +17881,7 @@
    "name": "p08-summary-dmin",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10316.0,
+    "x": 11756.0,
     "y": 349.72835678341187,
     "scaleX": 1,
     "scaleY": 1,
@@ -17853,7 +17915,7 @@
    "name": "p08-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -17877,7 +17939,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "Bias = mean prediction minus the true mean; variance = spread of predictions around their own mean; both at a fixed $x$ over retrained data",
+   "text": "Bias: mean prediction minus the true mean; variance: spread of predictions around their own mean; both at a fixed $x$ over retrained data",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -17887,7 +17949,7 @@
    "name": "p08-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -17921,7 +17983,7 @@
    "name": "p08-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -17955,7 +18017,7 @@
    "name": "p08-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -17989,7 +18051,7 @@
    "name": "p08-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -18023,7 +18085,7 @@
    "name": "p08-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -18054,7 +18116,7 @@
    "name": "p08-summary-s1d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -18085,7 +18147,7 @@
    "name": "p08-summary-s2d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -18121,7 +18183,7 @@
    "name": "p08-summary-s3d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -18152,7 +18214,7 @@
    "name": "p08-summary-s4d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -18183,7 +18245,7 @@
    "name": "p08-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -18210,7 +18272,7 @@
    "name": "p08-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18237,7 +18299,7 @@
    "name": "p08-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18264,7 +18326,7 @@
    "name": "p08-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -18291,7 +18353,7 @@
    "name": "p08-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -18318,7 +18380,7 @@
    "name": "p08-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18345,7 +18407,7 @@
    "name": "p08-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18372,7 +18434,7 @@
    "name": "p08-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18399,7 +18461,7 @@
    "name": "p08-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18440,7 +18502,7 @@
    "name": "p08-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10169.94,
+    "x": 11609.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -18467,7 +18529,7 @@
    "name": "p08-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10119.12,
+    "x": 11559.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18508,7 +18570,7 @@
    "name": "p08-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10114.5,
+    "x": 11554.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -18535,7 +18597,7 @@
    "name": "p08-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -18562,7 +18624,7 @@
    "name": "p08-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -18589,7 +18651,7 @@
    "name": "p08-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -18616,7 +18678,7 @@
    "name": "p08-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -18643,7 +18705,7 @@
    "name": "p08-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -18670,7 +18732,7 @@
    "name": "p08-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18697,7 +18759,7 @@
    "name": "p08-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -18734,7 +18796,7 @@
    "name": "p08-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -18761,7 +18823,7 @@
    "name": "p08-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -18826,7 +18888,7 @@
    "name": "p08-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -18891,7 +18953,7 @@
    "name": "p08-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -18928,7 +18990,7 @@
    "name": "p08-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -18965,7 +19027,7 @@
    "name": "p08-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -18992,7 +19054,7 @@
    "name": "p08-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19019,7 +19081,7 @@
    "name": "p08-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -19046,7 +19108,7 @@
    "name": "p08-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10139.28,
+    "x": 11579.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -19095,7 +19157,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 01/08 · 1 Bias and variance · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 01/09 · 1 Bias and variance · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-archery-cue0": {
@@ -19295,7 +19357,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 02/08 · 2 The decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 02/09 · 2 The decomposition · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-decomp-cue0": {
@@ -19495,7 +19557,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 03/08 · 3 Fixed constant model · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 03/09 · 3 Fixed constant model · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-constant-cue0": {
@@ -19695,7 +19757,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 04/08 · 4 Degree comparison · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 04/09 · 4 Degree comparison · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-degrees-cue0": {
@@ -19873,7 +19935,7 @@
    "name": "p05-fits-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5910,
+    "x": 7350,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -19895,7 +19957,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 05/08 · 5 Retrained curves · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 06/09 · 5 Retrained curves · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-fits-cue0": {
@@ -19904,7 +19966,7 @@
    "name": "p05-fits-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19937,7 +19999,7 @@
    "name": "p05-fits-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -19971,7 +20033,7 @@
    "name": "p05-fits-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20005,7 +20067,7 @@
    "name": "p05-fits-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20039,7 +20101,7 @@
    "name": "p06-pitfalls-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7350,
+    "x": 8790,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20061,7 +20123,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 06/08 · 6 Common misconceptions · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 07/09 · 6 Common misconceptions · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-pitfalls-cue0": {
@@ -20070,7 +20132,7 @@
    "name": "p06-pitfalls-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20103,7 +20165,7 @@
    "name": "p06-pitfalls-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20137,7 +20199,7 @@
    "name": "p06-pitfalls-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20171,7 +20233,7 @@
    "name": "p06-pitfalls-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20205,7 +20267,7 @@
    "name": "p06-pitfalls-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20239,7 +20301,7 @@
    "name": "p07-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20261,7 +20323,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 07/08 · 7 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 08/09 · 7 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-practice-cue0": {
@@ -20270,7 +20332,7 @@
    "name": "p07-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20303,7 +20365,7 @@
    "name": "p07-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20337,7 +20399,7 @@
    "name": "p07-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20371,7 +20433,7 @@
    "name": "p07-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20405,7 +20467,7 @@
    "name": "p08-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20427,7 +20489,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 08/08 · 8 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 09/09 · 8 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-summary-cue0": {
@@ -20436,7 +20498,7 @@
    "name": "p08-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20469,7 +20531,7 @@
    "name": "p08-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20503,7 +20565,7 @@
    "name": "p08-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20537,7 +20599,7 @@
    "name": "p08-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20571,7 +20633,7 @@
    "name": "p08-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20605,7 +20667,7 @@
    "name": "p08-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20663,6 +20725,1915 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p05-hmatrix-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 5760,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-bg",
+   "name": "p05-hmatrix-bg",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 5800,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-rule",
+   "name": "p05-hmatrix-rule",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-title": {
+   "type": "text",
+   "transform": {
+    "x": 5800,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 18,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-title",
+   "name": "p05-hmatrix-title",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 5800,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Going further: the model is linear in the training targets $\\mathbf y$, so the average effect of noise needs no simulation and can be computed directly.",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-ctx",
+   "name": "p05-hmatrix-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-src": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP12 lecture §4 (the matrix $H$ and the grid bias/variance formulas); $11$ training positions, $101$ evaluation positions, $\\lambda=10^{-9}$, $\\sigma^2=0.09$, recomputed independently with SVD and reproducing the lecture table. Added page: the original deck gave only results, restored the method from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-src",
+   "name": "p05-hmatrix-src",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 5810,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-plbg",
+   "name": "p05-hmatrix-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-axy": {
+   "type": "shape",
+   "transform": {
+    "x": 5900,
+    "y": 200,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 280,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ],
+   "id": "p05-hmatrix-axy",
+   "name": "p05-hmatrix-axy",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-th": {
+   "type": "text",
+   "transform": {
+    "x": 5830,
+    "y": 140,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 420,
+   "height": 24,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Squared bias (orange) plus variance (blue); noise $0.09$ is added on top",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-th",
+   "name": "p05-hmatrix-th",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-tk1": {
+   "type": "text",
+   "transform": {
+    "x": 5820,
+    "y": 254,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Degree $1$",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-tk1",
+   "name": "p05-hmatrix-tk1",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bb1": {
+   "type": "shape",
+   "transform": {
+    "x": 5900,
+    "y": 240,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 198.58859999999999,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bb1",
+   "name": "p05-hmatrix-bb1",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bv1": {
+   "type": "shape",
+   "transform": {
+    "x": 6098.5886,
+    "y": 240,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 13.6224,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bv1",
+   "name": "p05-hmatrix-bv1",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-tk3": {
+   "type": "text",
+   "transform": {
+    "x": 5820,
+    "y": 354,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Degree $3$",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-tk3",
+   "name": "p05-hmatrix-tk3",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bb3": {
+   "type": "shape",
+   "transform": {
+    "x": 5900,
+    "y": 340,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 5.6979,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bb3",
+   "name": "p05-hmatrix-bb3",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bv3": {
+   "type": "shape",
+   "transform": {
+    "x": 5905.6979,
+    "y": 340,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 24.9516,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bv3",
+   "name": "p05-hmatrix-bv3",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-tk9": {
+   "type": "text",
+   "transform": {
+    "x": 5820,
+    "y": 454,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Degree $9$",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-tk9",
+   "name": "p05-hmatrix-tk9",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bb9": {
+   "type": "shape",
+   "transform": {
+    "x": 5900,
+    "y": 440,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bb9",
+   "name": "p05-hmatrix-bb9",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-bv9": {
+   "type": "shape",
+   "transform": {
+    "x": 5900.0009,
+    "y": 440,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 59.956199999999995,
+   "height": 44,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 4,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-bv9",
+   "name": "p05-hmatrix-bv9",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-st": {
+   "type": "shape",
+   "transform": {
+    "x": 6238,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-st",
+   "name": "p05-hmatrix-st",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c0": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 94,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "Prediction $\\hat{\\mathbf y}_{\\rm grid}=H\\mathbf y$ with $H=BQ\\operatorname{diag}\\!\\left(\\dfrac{s_j}{s_j^2+\\lambda}\\right)U^T$. Here $V_{ij}=x_i^j$ (power matrix at the training positions), $B_{kj}=t_k^j$ (evaluation positions), $V=USQ^T$ is the singular value decomposition, and $\\lambda=10^{-9}$ is the tiny penalty kept by the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-c0",
+   "name": "p05-hmatrix-c0",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c1": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 222,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 79,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Let $\\mathbf f$ be the truth at the training positions and $\\mathbf f_{\\rm grid}$ the truth at the evaluation positions, with $K=101$. Noise has mean $0$, so the mean prediction is $H\\mathbf f$ and $\\text{grid bias}^2=\\dfrac{\\|H\\mathbf f-\\mathbf f_{\\rm grid}\\|^2}{K}$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-c1",
+   "name": "p05-hmatrix-c1",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c2": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 311,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 75,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "The noise term $\\sigma^2$ from earlier is $0.09$ in this design (standard deviation $0.3$): the prediction covariance is $\\sigma^2HH^T$, averaged over $K$ positions, $\\text{grid variance}=\\dfrac{0.09\\,\\|H\\|_F^2}{K}$; $\\|H\\|_F^2$ is the sum of squares of all matrix entries.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-c2",
+   "name": "p05-hmatrix-c2",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c3": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 396,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 48,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "Degree $1$: squared bias $0.2207$, variance $0.0151$; degree $3$: squared bias $0.0063$, variance $0.0277$. These match the earlier charts.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-c3",
+   "name": "p05-hmatrix-c3",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c4": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 454,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 50,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "Degree $9$: squared bias about $0.000001$, variance $0.0666$. Total risk is squared bias plus variance plus noise $0.09$: $0.3258$, $0.1241$, $0.1566$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-c4",
+   "name": "p05-hmatrix-c4",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-c5": {
+   "type": "text",
+   "transform": {
+    "x": 6350,
+    "y": 514,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 52,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "Limits: this is the computation for this design ($11$ training positions, $101$ evaluation positions), $\\lambda=10^{-9}$ and $\\sigma^2=0.09$, not a conclusion for all data; SVD is used to keep the high-degree power matrix numerically stable.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-c5",
+   "name": "p05-hmatrix-c5",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, where the matrix $H$ comes from.",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-cue0",
+   "name": "p05-hmatrix-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: mean prediction and bias.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-cue1",
+   "name": "p05-hmatrix-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green card: prediction covariance and variance.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-cue2",
+   "name": "p05-hmatrix-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the first two rows of bars: degree $1$ and degree $3$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-cue3",
+   "name": "p05-hmatrix-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the third row: degree $9$, and the total risk.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-cue4",
+   "name": "p05-hmatrix-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-cue5": {
+   "type": "text",
+   "transform": {
+    "x": 5900,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: the limits.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p05-hmatrix-cue5",
+   "name": "p05-hmatrix-cue5",
+   "sceneId": "scene-u01"
+  },
+  "p05-hmatrix-m-shadow": {
+   "id": "p05-hmatrix-m-shadow",
+   "type": "shape",
+   "name": "p05-hmatrix-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5802.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-foot-l": {
+   "id": "p05-hmatrix-m-foot-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5827.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-foot-r": {
+   "id": "p05-hmatrix-m-foot-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5809.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-body": {
+   "id": "p05-hmatrix-m-body",
+   "type": "shape",
+   "name": "p05-hmatrix-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5805.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p05-hmatrix-m-belly": {
+   "id": "p05-hmatrix-m-belly",
+   "type": "shape",
+   "name": "p05-hmatrix-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5815.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-bow-l": {
+   "id": "p05-hmatrix-m-bow-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5826.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-bow-r": {
+   "id": "p05-hmatrix-m-bow-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5817.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-bow-c": {
+   "id": "p05-hmatrix-m-bow-c",
+   "type": "shape",
+   "name": "p05-hmatrix-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5823.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-arm-l": {
+   "id": "p05-hmatrix-m-arm-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5843.64,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.0,
+   "height": 8.399999999999977,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 52.000000000000014,
+     "y": 79.99999999999918
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-hmatrix-m-hand-l": {
+   "id": "p05-hmatrix-m-hand-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5861.7,
+    "y": 636.56,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-arm-r": {
+   "id": "p05-hmatrix-m-arm-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5804.16,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 20.000000000000068,
+     "y": 100.0
+    }
+   ]
+  },
+  "p05-hmatrix-m-hand-r": {
+   "id": "p05-hmatrix-m-hand-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5800.38,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-ear-l": {
+   "id": "p05-hmatrix-m-ear-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5844.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-ear-r": {
+   "id": "p05-hmatrix-m-ear-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5797.86,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-head": {
+   "id": "p05-hmatrix-m-head",
+   "type": "shape",
+   "name": "p05-hmatrix-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5801.64,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-face": {
+   "id": "p05-hmatrix-m-face",
+   "type": "shape",
+   "name": "p05-hmatrix-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5806.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-cap-base": {
+   "id": "p05-hmatrix-m-cap-base",
+   "type": "shape",
+   "name": "p05-hmatrix-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5815.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p05-hmatrix-m-cap-top": {
+   "id": "p05-hmatrix-m-cap-top",
+   "type": "shape",
+   "name": "p05-hmatrix-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5808.36,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p05-hmatrix-m-tassel": {
+   "id": "p05-hmatrix-m-tassel",
+   "type": "shape",
+   "name": "p05-hmatrix-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5809.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p05-hmatrix-m-knot": {
+   "id": "p05-hmatrix-m-knot",
+   "type": "shape",
+   "name": "p05-hmatrix-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5807.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-eye-l": {
+   "id": "p05-hmatrix-m-eye-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5830.2,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-pupil-l": {
+   "id": "p05-hmatrix-m-pupil-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5833.56,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-glint-l": {
+   "id": "p05-hmatrix-m-glint-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5834.4,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-eye-r": {
+   "id": "p05-hmatrix-m-eye-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5811.72,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-pupil-r": {
+   "id": "p05-hmatrix-m-pupil-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5815.08,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-glint-r": {
+   "id": "p05-hmatrix-m-glint-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5815.92,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-brow-l": {
+   "id": "p05-hmatrix-m-brow-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5831.04,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-hmatrix-m-brow-r": {
+   "id": "p05-hmatrix-m-brow-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5812.56,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-hmatrix-m-cheek-l": {
+   "id": "p05-hmatrix-m-cheek-l",
+   "type": "shape",
+   "name": "p05-hmatrix-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5838.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-cheek-r": {
+   "id": "p05-hmatrix-m-cheek-r",
+   "type": "shape",
+   "name": "p05-hmatrix-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5805.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p05-hmatrix-m-mouth": {
+   "id": "p05-hmatrix-m-mouth",
+   "type": "shape",
+   "name": "p05-hmatrix-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 5819.7,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.599999999999994,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 87.49999999999997,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 75.00000000000006,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 62.500000000000036,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 37.49999999999997,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 25.0,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 12.499999999999972,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p05-hmatrix-nav": {
+   "type": "text",
+   "transform": {
+    "x": 5910,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP12 · 05/09 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p05-hmatrix-nav",
+   "name": "p05-hmatrix-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -20692,7 +22663,7 @@
    "order": 1,
    "label": "Fix one test input and retrain many times: the arrows' center being off is bias, their spread is variance · See the prediction axis, the bullseye and the questi",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20713,7 +22684,7 @@
    "order": 2,
    "label": "Fix one test input and retrain many times: the arrows' center being off is bias, their spread is variance · See the five blue points: the predictions of five re",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20778,7 +22749,7 @@
    "order": 3,
    "label": "Fix one test input and retrain many times: the arrows' center being off is bias, their spread is variance · See the green diamond and the red arrow: the center'",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20831,7 +22802,7 @@
    "order": 4,
    "label": "Fix one test input and retrain many times: the arrows' center being off is bias, their spread is variance · See the orange line: the spread.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20878,7 +22849,7 @@
    "order": 5,
    "label": "Fix one test input and retrain many times: the arrows' center being off is bias, their spread is variance · See the gold star: two different errors.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20923,9 +22894,9 @@
   {
    "id": "p02-decomp-st0",
    "order": 6,
-   "label": "Squared error on a new target = squared bias + variance + noise, three parts adding up · See the bar's scale and the question first.",
+   "label": "Squared error on a new target: squared bias + variance + noise, three parts adding up · See the bar's scale and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -20944,9 +22915,9 @@
   {
    "id": "p02-decomp-st1",
    "order": 7,
-   "label": "Squared error on a new target = squared bias + variance + noise, three parts adding up · See the red and blue parts: the model error.",
+   "label": "Squared error on a new target: squared bias + variance + noise, three parts adding up · See the red and blue parts: the model error.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21009,9 +22980,9 @@
   {
    "id": "p02-decomp-st2",
    "order": 8,
-   "label": "Squared error on a new target = squared bias + variance + noise, three parts adding up · See the gray part: the new target's noise.",
+   "label": "Squared error on a new target: squared bias + variance + noise, three parts adding up · See the gray part: the new target's noise.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21062,9 +23033,9 @@
   {
    "id": "p02-decomp-st3",
    "order": 9,
-   "label": "Squared error on a new target = squared bias + variance + noise, three parts adding up · See the gold formula: the sum.",
+   "label": "Squared error on a new target: squared bias + variance + noise, three parts adding up · See the gold formula: the sum.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21103,9 +23074,9 @@
   {
    "id": "p02-decomp-st4",
    "order": 10,
-   "label": "Squared error on a new target = squared bias + variance + noise, three parts adding up · See the gold star: the caveat on noise.",
+   "label": "Squared error on a new target: squared bias + variance + noise, three parts adding up · See the gold star: the caveat on noise.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21152,7 +23123,7 @@
    "order": 11,
    "label": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25 · See the axes and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21173,7 +23144,7 @@
    "order": 12,
    "label": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25 · See the blue curve and blue point: the true mean.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21226,7 +23197,7 @@
    "order": 13,
    "label": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25 · See the orange line and orange point: the fixed predicti",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21279,7 +23250,7 @@
    "order": 14,
    "label": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25 · See the red arrow: the length of the bias.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21326,7 +23297,7 @@
    "order": 15,
    "label": "Zero variance does not mean good: a model that always predicts 0.5 has a squared bias as high as 2.25 · See the gold star: conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21373,7 +23344,7 @@
    "order": 16,
    "label": "Raise the degree: squared bias falls, variance rises, total risk is smallest at degree 3 · See the axes and the gray noise line first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21394,7 +23365,7 @@
    "order": 17,
    "label": "Raise the degree: squared bias falls, variance rises, total risk is smallest at degree 3 · See the orange line: squared bias.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21441,7 +23412,7 @@
    "order": 18,
    "label": "Raise the degree: squared bias falls, variance rises, total risk is smallest at degree 3 · See the blue line: variance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21488,7 +23459,7 @@
    "order": 19,
    "label": "Raise the degree: squared bias falls, variance rises, total risk is smallest at degree 3 · See the red line: total risk.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21535,7 +23506,7 @@
    "order": 20,
    "label": "Raise the degree: squared bias falls, variance rises, total risk is smallest at degree 3 · See the green point and star: the minimum.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21584,11 +23555,11 @@
    }
   },
   {
-   "id": "p05-fits-st0",
+   "id": "p05-hmatrix-st0",
    "order": 21,
-   "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the two axes and the gray dashed line first.",
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · First, where the matrix $H$ comes from.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21605,17 +23576,285 @@
    }
   },
   {
-   "id": "p05-fits-st1",
+   "id": "p05-hmatrix-st1",
    "order": 22,
-   "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the left plot: the four degree-1 curves.",
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · See the blue card: mean prediction and bias.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-hmatrix-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-hmatrix-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p05-hmatrix-st2",
+   "order": 23,
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · See the green card: prediction covariance and variance.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-hmatrix-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-hmatrix-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p05-hmatrix-st3",
+   "order": 24,
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · See the first two rows of bars: degree $1$ and degree $3$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-hmatrix-bb1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-bv1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-bb3",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-bv3",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-c3",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-hmatrix-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p05-hmatrix-st4",
+   "order": 25,
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · See the third row: degree $9$, and the total risk.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-hmatrix-bb9",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-bv9",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-c4",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-cue4",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-hmatrix-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p05-hmatrix-st5",
+   "order": 26,
+   "label": "How the table is computed: predictions are linear combinations of the training targets, so bias and variance can be computed directly · See the gold star: the limits.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p05-hmatrix-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-c5",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p05-hmatrix-cue5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p05-hmatrix-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p05-fits-st0",
+   "order": 27,
+   "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the two axes and the gray dashed line first.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 7840.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p05-fits-st1",
+   "order": 28,
+   "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the left plot: the four degree-1 curves.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21671,16 +23910,16 @@
   },
   {
    "id": "p05-fits-st2",
-   "order": 23,
+   "order": 29,
    "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the right plot: the four degree-9 curves.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21736,16 +23975,16 @@
   },
   {
    "id": "p05-fits-st3",
-   "order": 24,
+   "order": 30,
    "label": "Same design, retrained with new noise: the line barely shakes, the degree-9 curve shakes a lot · See the gold star: one side each.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21783,16 +24022,16 @@
   },
   {
    "id": "p06-pitfalls-st0",
-   "order": 25,
+   "order": 31,
    "label": "Three misconceptions: the U shape, \"a line has zero variance\", \"interpolation has no error\" · See the total-risk bars and the question of the three statements f",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21804,16 +24043,16 @@
   },
   {
    "id": "p06-pitfalls-st1",
-   "order": 26,
+   "order": 32,
    "label": "Three misconceptions: the U shape, \"a line has zero variance\", \"interpolation has no error\" · See the red circle and red triangle: misconception one.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21857,16 +24096,16 @@
   },
   {
    "id": "p06-pitfalls-st2",
-   "order": 27,
+   "order": 33,
    "label": "Three misconceptions: the U shape, \"a line has zero variance\", \"interpolation has no error\" · See the gold diamond: misconception two.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21904,16 +24143,16 @@
   },
   {
    "id": "p06-pitfalls-st3",
-   "order": 28,
+   "order": 34,
    "label": "Three misconceptions: the U shape, \"a line has zero variance\", \"interpolation has no error\" · See the blue pentagon: misconception three.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21951,16 +24190,16 @@
   },
   {
    "id": "p06-pitfalls-st4",
-   "order": 29,
+   "order": 35,
    "label": "Three misconceptions: the U shape, \"a line has zero variance\", \"interpolation has no error\" · See the gold star: conclusion.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -21998,16 +24237,16 @@
   },
   {
    "id": "p07-practice-st0",
-   "order": 30,
-   "label": "Practice: bias −0.4, variance 0.25, noise 0.05, what is the total risk? What about another model? · Work it out first: see the scale, the labels and the questio",
+   "order": 36,
+   "label": "Practice: bias $−0.4$, variance 0.25, noise 0.05, what is the total risk? What about another model? · Work it out first: see the scale, the labels and the questio",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22019,16 +24258,16 @@
   },
   {
    "id": "p07-practice-st1",
-   "order": 31,
-   "label": "Practice: bias −0.4, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (a): the three parts of the original.",
+   "order": 37,
+   "label": "Practice: bias $−0.4$, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (a): the three parts of the original.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22078,16 +24317,16 @@
   },
   {
    "id": "p07-practice-st2",
-   "order": 32,
-   "label": "Practice: bias −0.4, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (b): the three parts of the changed model.",
+   "order": 38,
+   "label": "Practice: bias $−0.4$, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (b): the three parts of the changed model.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22137,16 +24376,16 @@
   },
   {
    "id": "p07-practice-st3",
-   "order": 33,
-   "label": "Practice: bias −0.4, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (c): comparison.",
+   "order": 39,
+   "label": "Practice: bias $−0.4$, variance 0.25, noise 0.05, what is the total risk? What about another model? · See feedback (c): comparison.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22184,16 +24423,16 @@
   },
   {
    "id": "p08-summary-st0",
-   "order": 34,
+   "order": 40,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the left first: the three curves and the minim",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22205,16 +24444,16 @@
   },
   {
    "id": "p08-summary-st1",
-   "order": 35,
+   "order": 41,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the arrow: the definition.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22252,16 +24491,16 @@
   },
   {
    "id": "p08-summary-st2",
-   "order": 36,
+   "order": 42,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the diamond: the decomposition.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22299,16 +24538,16 @@
   },
   {
    "id": "p08-summary-st3",
-   "order": 37,
+   "order": 43,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the star: the constant prediction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22346,16 +24585,16 @@
   },
   {
    "id": "p08-summary-st4",
-   "order": 38,
+   "order": 44,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the red triangle: the degree comparison.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22393,16 +24632,16 @@
   },
   {
    "id": "p08-summary-st5",
-   "order": 39,
+   "order": 45,
    "label": "Summary: bias, variance and noise add up; model complexity only changes the trade-off between the first two · See the pentagon: the next KP.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,

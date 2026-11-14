@@ -598,6 +598,73 @@
     "p06-stability-cue1",
     "p06-stability-cue2",
     "p06-stability-cue3",
+    "p07-vecstab-bg",
+    "p07-vecstab-rule",
+    "p07-vecstab-title",
+    "p07-vecstab-ctx",
+    "p07-vecstab-src",
+    "p07-vecstab-plbg",
+    "p07-vecstab-axx",
+    "p07-vecstab-axy",
+    "p07-vecstab-tx",
+    "p07-vecstab-ty",
+    "p07-vecstab-tk0",
+    "p07-vecstab-tk1",
+    "p07-vecstab-tk2",
+    "p07-vecstab-tk1y",
+    "p07-vecstab-one",
+    "p07-vecstab-cb",
+    "p07-vecstab-co",
+    "p07-vecstab-tb",
+    "p07-vecstab-to",
+    "p07-vecstab-g1",
+    "p07-vecstab-g2",
+    "p07-vecstab-r1",
+    "p07-vecstab-tr",
+    "p07-vecstab-st",
+    "p07-vecstab-c0",
+    "p07-vecstab-c1",
+    "p07-vecstab-c2",
+    "p07-vecstab-c3",
+    "p07-vecstab-c4",
+    "p07-vecstab-cue0",
+    "p07-vecstab-cue1",
+    "p07-vecstab-cue2",
+    "p07-vecstab-cue3",
+    "p07-vecstab-cue4",
+    "p07-vecstab-m-shadow",
+    "p07-vecstab-m-foot-l",
+    "p07-vecstab-m-foot-r",
+    "p07-vecstab-m-body",
+    "p07-vecstab-m-belly",
+    "p07-vecstab-m-bow-l",
+    "p07-vecstab-m-bow-r",
+    "p07-vecstab-m-bow-c",
+    "p07-vecstab-m-arm-r",
+    "p07-vecstab-m-hand-r",
+    "p07-vecstab-m-arm-l",
+    "p07-vecstab-m-hand-l",
+    "p07-vecstab-m-ear-l",
+    "p07-vecstab-m-ear-r",
+    "p07-vecstab-m-head",
+    "p07-vecstab-m-face",
+    "p07-vecstab-m-cap-base",
+    "p07-vecstab-m-cap-top",
+    "p07-vecstab-m-tassel",
+    "p07-vecstab-m-knot",
+    "p07-vecstab-m-eye-l",
+    "p07-vecstab-m-pupil-l",
+    "p07-vecstab-m-glint-l",
+    "p07-vecstab-m-eye-r",
+    "p07-vecstab-m-pupil-r",
+    "p07-vecstab-m-glint-r",
+    "p07-vecstab-m-brow-l",
+    "p07-vecstab-m-brow-r",
+    "p07-vecstab-m-cheek-l",
+    "p07-vecstab-m-cheek-r",
+    "p07-vecstab-m-mouth",
+    "p07-vecstab-m-mark",
+    "p07-vecstab-nav",
     "p07-adaline-nav",
     "p07-adaline-cue0",
     "p07-adaline-cue1",
@@ -696,7 +763,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 24,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -758,7 +825,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -2771,7 +2838,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -2833,7 +2900,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -4459,7 +4526,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -4529,7 +4596,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: KP08 lecture §2: the sign of the correction depends on both residual and feature; a negative feature reverses it. The four numbers are a teaching example ($x=\\pm2$, $e=\\pm1$).",
+   "text": "Source: KP08 lecture §2: the sign of the correction depends on both residual and feature; a negative feature reverses the correction direction. The four numbers are this page teaching example ($x=\\pm2$, $e=\\pm1$), computed by build_kp08.py.",
    "shapeKind": "rectangle"
   },
   "p03-signs-c0": {
@@ -6163,7 +6230,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -6225,7 +6292,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -7927,7 +7994,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -7989,7 +8056,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 10,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -11565,7 +11632,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -11627,7 +11694,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -12890,7 +12957,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "So: mean stability is not mean-square stability. The step must account for both; the series condition $\\sum\\rho_k=\\infty,\\sum\\rho_k^2<\\infty$ (e.g. $1/k$) guarantees convergence only under assumptions such as stable data and informative features. A fixed small step keeps jittering but can also track a slowly changing target.",
+   "text": "So: mean stability is not mean-square stability. The step must account for both; the series condition $\\sum\\rho_k=\\infty,\\sum\\rho_k^2<\\infty$ (such as $1/k$) guarantees convergence only under assumptions such as stable data and informative features. A fixed small step keeps jittering but can also track a slowly changing target.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -13826,7 +13893,7 @@
    "name": "p07-adaline-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13853,7 +13920,7 @@
    "name": "p07-adaline-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -13880,7 +13947,7 @@
    "name": "p07-adaline-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -13894,7 +13961,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -13911,7 +13978,7 @@
    "name": "p07-adaline-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13942,7 +14009,7 @@
    "name": "p07-adaline-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -13956,7 +14023,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#94a3b8",
-    "fontSize": 11,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -13973,7 +14040,7 @@
    "name": "p07-adaline-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -14006,7 +14073,7 @@
    "name": "p07-adaline-zl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8980,
+    "x": 10420,
     "y": 210,
     "scaleX": 1,
     "scaleY": 1,
@@ -14043,7 +14110,7 @@
    "name": "p07-adaline-tg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9338,
+    "x": 10778,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -14070,7 +14137,7 @@
    "name": "p07-adaline-tgt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9280,
+    "x": 10720,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -14092,7 +14159,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Target +1",
+   "text": "Target $+1$",
    "shapeKind": "rectangle"
   },
   "p07-adaline-bo": {
@@ -14101,7 +14168,7 @@
    "name": "p07-adaline-bo",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8980,
+    "x": 10420,
     "y": 232,
     "scaleX": 1,
     "scaleY": 1,
@@ -14134,7 +14201,7 @@
    "name": "p07-adaline-pl_t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 218,
     "scaleX": 1,
     "scaleY": 1,
@@ -14165,7 +14232,7 @@
    "name": "p07-adaline-pk",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 262,
     "scaleX": 1,
     "scaleY": 1,
@@ -14196,7 +14263,7 @@
    "name": "p07-adaline-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 256,
     "scaleX": 1,
     "scaleY": 1,
@@ -14230,7 +14297,7 @@
    "name": "p07-adaline-al_t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 346,
     "scaleX": 1,
     "scaleY": 1,
@@ -14244,7 +14311,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 14,
+    "fontSize": 15,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -14262,7 +14329,7 @@
    "name": "p07-adaline-lm",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 390,
     "scaleX": 1,
     "scaleY": 1,
@@ -14293,7 +14360,7 @@
    "name": "p07-adaline-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 384,
     "scaleX": 1,
     "scaleY": 1,
@@ -14327,7 +14394,7 @@
    "name": "p07-adaline-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 256,
     "scaleX": 1,
     "scaleY": 1,
@@ -14361,7 +14428,7 @@
    "name": "p07-adaline-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9816,
+    "x": 11256,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -14397,7 +14464,7 @@
    "name": "p07-adaline-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700,
+    "x": 10140,
     "y": 480,
     "scaleX": 1,
     "scaleY": 1,
@@ -14431,7 +14498,7 @@
    "name": "p07-adaline-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -14458,7 +14525,7 @@
    "name": "p07-adaline-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14485,7 +14552,7 @@
    "name": "p07-adaline-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14512,7 +14579,7 @@
    "name": "p07-adaline-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14539,7 +14606,7 @@
    "name": "p07-adaline-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -14566,7 +14633,7 @@
    "name": "p07-adaline-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14593,7 +14660,7 @@
    "name": "p07-adaline-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14620,7 +14687,7 @@
    "name": "p07-adaline-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14647,7 +14714,7 @@
    "name": "p07-adaline-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14688,7 +14755,7 @@
    "name": "p07-adaline-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8741.7,
+    "x": 10181.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -14715,7 +14782,7 @@
    "name": "p07-adaline-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -14756,7 +14823,7 @@
    "name": "p07-adaline-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680.38,
+    "x": 10120.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -14783,7 +14850,7 @@
    "name": "p07-adaline-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14810,7 +14877,7 @@
    "name": "p07-adaline-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14837,7 +14904,7 @@
    "name": "p07-adaline-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14864,7 +14931,7 @@
    "name": "p07-adaline-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14891,7 +14958,7 @@
    "name": "p07-adaline-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -14918,7 +14985,7 @@
    "name": "p07-adaline-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14945,7 +15012,7 @@
    "name": "p07-adaline-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14982,7 +15049,7 @@
    "name": "p07-adaline-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -15009,7 +15076,7 @@
    "name": "p07-adaline-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8710.2,
+    "x": 10150.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -15036,7 +15103,7 @@
    "name": "p07-adaline-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.56,
+    "x": 10153.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15063,7 +15130,7 @@
    "name": "p07-adaline-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8714.4,
+    "x": 10154.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15090,7 +15157,7 @@
    "name": "p07-adaline-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.72,
+    "x": 10131.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -15117,7 +15184,7 @@
    "name": "p07-adaline-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15144,7 +15211,7 @@
    "name": "p07-adaline-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.92,
+    "x": 10135.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15171,7 +15238,7 @@
    "name": "p07-adaline-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -15208,7 +15275,7 @@
    "name": "p07-adaline-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -15245,7 +15312,7 @@
    "name": "p07-adaline-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15272,7 +15339,7 @@
    "name": "p07-adaline-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15299,7 +15366,7 @@
    "name": "p07-adaline-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8699.7,
+    "x": 10139.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -15364,7 +15431,7 @@
    "name": "p08-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15391,7 +15458,7 @@
    "name": "p08-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15418,7 +15485,7 @@
    "name": "p08-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -15449,7 +15516,7 @@
    "name": "p08-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15480,7 +15547,7 @@
    "name": "p08-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -15511,7 +15578,7 @@
    "name": "p08-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140,
+    "x": 11580,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -15544,7 +15611,7 @@
    "name": "p08-practice-iv0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15577,7 +15644,7 @@
    "name": "p08-practice-iv1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10450,
+    "x": 11890,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15610,7 +15677,7 @@
    "name": "p08-practice-iv2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10720,
+    "x": 12160,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15643,7 +15710,7 @@
    "name": "p08-practice-iv3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10990,
+    "x": 12430,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15676,7 +15743,7 @@
    "name": "p08-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180,
+    "x": 11620,
     "y": 300,
     "scaleX": 1,
     "scaleY": 1,
@@ -15710,7 +15777,7 @@
    "name": "p08-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10570,
+    "x": 12010,
     "y": 300,
     "scaleX": 1,
     "scaleY": 1,
@@ -15744,7 +15811,7 @@
    "name": "p08-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10930,
+    "x": 12370,
     "y": 300,
     "scaleX": 1,
     "scaleY": 1,
@@ -15778,7 +15845,7 @@
    "name": "p08-practice-nb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140,
+    "x": 11580,
     "y": 400,
     "scaleX": 1,
     "scaleY": 1,
@@ -15805,7 +15872,7 @@
    "name": "p08-practice-na",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10170,
+    "x": 11610,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -15842,7 +15909,7 @@
    "name": "p08-practice-tk0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160.0,
+    "x": 11600.0,
     "y": 478,
     "scaleX": 1,
     "scaleY": 1,
@@ -15873,7 +15940,7 @@
    "name": "p08-practice-tk5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10410.0,
+    "x": 11850.0,
     "y": 478,
     "scaleX": 1,
     "scaleY": 1,
@@ -15904,7 +15971,7 @@
    "name": "p08-practice-tk10",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10660.0,
+    "x": 12100.0,
     "y": 478,
     "scaleX": 1,
     "scaleY": 1,
@@ -15935,7 +16002,7 @@
    "name": "p08-practice-tk15",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10910.0,
+    "x": 12350.0,
     "y": 478,
     "scaleX": 1,
     "scaleY": 1,
@@ -15966,7 +16033,7 @@
    "name": "p08-practice-tk20",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11160.0,
+    "x": 12600.0,
     "y": 478,
     "scaleX": 1,
     "scaleY": 1,
@@ -15997,7 +16064,7 @@
    "name": "p08-practice-ty",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10918.0,
+    "x": 12358.0,
     "y": 458,
     "scaleX": 1,
     "scaleY": 1,
@@ -16031,7 +16098,7 @@
    "name": "p08-practice-tyt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10890.0,
+    "x": 12330.0,
     "y": 420,
     "scaleX": 1,
     "scaleY": 1,
@@ -16062,7 +16129,7 @@
    "name": "p08-practice-o1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10570.0,
+    "x": 12010.0,
     "y": 460,
     "scaleX": 1,
     "scaleY": 1,
@@ -16097,7 +16164,7 @@
    "name": "p08-practice-o1t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10540.0,
+    "x": 11980.0,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -16129,7 +16196,7 @@
    "name": "p08-practice-o2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10710.0,
+    "x": 12150.0,
     "y": 460,
     "scaleX": 1,
     "scaleY": 1,
@@ -16164,7 +16231,7 @@
    "name": "p08-practice-o2t",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10690.0,
+    "x": 12130.0,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -16196,7 +16263,7 @@
    "name": "p08-practice-a4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140,
+    "x": 11580,
     "y": 524,
     "scaleX": 1,
     "scaleY": 1,
@@ -16230,7 +16297,7 @@
    "name": "p08-practice-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11256,
+    "x": 12696,
     "y": 536,
     "scaleX": 1,
     "scaleY": 1,
@@ -16266,7 +16333,7 @@
    "name": "p08-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -16293,7 +16360,7 @@
    "name": "p08-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -16320,7 +16387,7 @@
    "name": "p08-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -16347,7 +16414,7 @@
    "name": "p08-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -16374,7 +16441,7 @@
    "name": "p08-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -16401,7 +16468,7 @@
    "name": "p08-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16428,7 +16495,7 @@
    "name": "p08-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16455,7 +16522,7 @@
    "name": "p08-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -16482,7 +16549,7 @@
    "name": "p08-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124.16,
+    "x": 11564.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -16523,7 +16590,7 @@
    "name": "p08-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.62,
+    "x": 11569.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -16550,7 +16617,7 @@
    "name": "p08-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -16591,7 +16658,7 @@
    "name": "p08-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10162.38,
+    "x": 11602.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -16618,7 +16685,7 @@
    "name": "p08-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16645,7 +16712,7 @@
    "name": "p08-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -16672,7 +16739,7 @@
    "name": "p08-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -16699,7 +16766,7 @@
    "name": "p08-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -16726,7 +16793,7 @@
    "name": "p08-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -16753,7 +16820,7 @@
    "name": "p08-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16780,7 +16847,7 @@
    "name": "p08-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -16817,7 +16884,7 @@
    "name": "p08-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -16844,7 +16911,7 @@
    "name": "p08-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10149.78,
+    "x": 11589.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16871,7 +16938,7 @@
    "name": "p08-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.14,
+    "x": 11593.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -16898,7 +16965,7 @@
    "name": "p08-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.98,
+    "x": 11593.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -16925,7 +16992,7 @@
    "name": "p08-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10131.3,
+    "x": 11571.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -16952,7 +17019,7 @@
    "name": "p08-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134.66,
+    "x": 11574.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -16979,7 +17046,7 @@
    "name": "p08-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.5,
+    "x": 11575.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -17006,7 +17073,7 @@
    "name": "p08-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -17043,7 +17110,7 @@
    "name": "p08-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -17080,7 +17147,7 @@
    "name": "p08-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17107,7 +17174,7 @@
    "name": "p08-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17134,7 +17201,7 @@
    "name": "p08-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.48,
+    "x": 11583.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -17161,7 +17228,7 @@
    "name": "p08-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.8,
+    "x": 11598.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -17192,7 +17259,7 @@
    "name": "p09-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11520,
+    "x": 12960,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17219,7 +17286,7 @@
    "name": "p09-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -17246,7 +17313,7 @@
    "name": "p09-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -17260,7 +17327,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -17277,7 +17344,7 @@
    "name": "p09-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -17308,7 +17375,7 @@
    "name": "p09-summary-smbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11606,
+    "x": 13046,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -17335,7 +17402,7 @@
    "name": "p09-summary-smax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620,
+    "x": 13060,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -17372,7 +17439,7 @@
    "name": "p09-summary-smay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620,
+    "x": 13060,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -17409,7 +17476,7 @@
    "name": "p09-summary-smxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11590.0,
+    "x": 13030.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17440,7 +17507,7 @@
    "name": "p09-summary-smxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11781.666666666666,
+    "x": 13221.666666666666,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17471,7 +17538,7 @@
    "name": "p09-summary-smxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11973.333333333334,
+    "x": 13413.333333333334,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -17502,7 +17569,7 @@
    "name": "p09-summary-smgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620,
+    "x": 13060,
     "y": 470.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17539,7 +17606,7 @@
    "name": "p09-summary-smyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11564,
+    "x": 13004,
     "y": 461.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17570,7 +17637,7 @@
    "name": "p09-summary-smgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620,
+    "x": 13060,
     "y": 336.66666666666663,
     "scaleX": 1,
     "scaleY": 1,
@@ -17607,7 +17674,7 @@
    "name": "p09-summary-smyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11564,
+    "x": 13004,
     "y": 327.66666666666663,
     "scaleX": 1,
     "scaleY": 1,
@@ -17638,7 +17705,7 @@
    "name": "p09-summary-smgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620,
+    "x": 13060,
     "y": 203.33333333333331,
     "scaleX": 1,
     "scaleY": 1,
@@ -17675,7 +17742,7 @@
    "name": "p09-summary-smyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11564,
+    "x": 13004,
     "y": 194.33333333333331,
     "scaleX": 1,
     "scaleY": 1,
@@ -17706,7 +17773,7 @@
    "name": "p09-summary-smxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11780,
+    "x": 13220,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -17737,7 +17804,7 @@
    "name": "p09-summary-smyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11626,
+    "x": 13066,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -17768,7 +17835,7 @@
    "name": "p09-summary-tr",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620.0,
+    "x": 13060.0,
     "y": 181.99999999999994,
     "scaleX": 1,
     "scaleY": 1,
@@ -17806,7 +17873,7 @@
    "name": "p09-summary-l0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620.0,
+    "x": 13060.0,
     "y": 470.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17843,7 +17910,7 @@
    "name": "p09-summary-l1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620.0,
+    "x": 13060.0,
     "y": 460.7253633137219,
     "scaleX": 1,
     "scaleY": 1,
@@ -17880,7 +17947,7 @@
    "name": "p09-summary-l2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11620.0,
+    "x": 13060.0,
     "y": 441.0421355239821,
     "scaleX": 1,
     "scaleY": 1,
@@ -17917,7 +17984,7 @@
    "name": "p09-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11877.407971,
+    "x": 13317.407971,
     "y": 322.4633485333333,
     "scaleX": 1,
     "scaleY": 1,
@@ -17951,7 +18018,7 @@
    "name": "p09-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11967.6861634,
+    "x": 13407.6861634,
     "y": 233.85786093333334,
     "scaleX": 1,
     "scaleY": 1,
@@ -17985,7 +18052,7 @@
    "name": "p09-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -18019,7 +18086,7 @@
    "name": "p09-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -18053,7 +18120,7 @@
    "name": "p09-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -18087,7 +18154,7 @@
    "name": "p09-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -18121,7 +18188,7 @@
    "name": "p09-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -18155,7 +18222,7 @@
    "name": "p09-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -18186,7 +18253,7 @@
    "name": "p09-summary-s1d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -18217,7 +18284,7 @@
    "name": "p09-summary-s2d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -18253,7 +18320,7 @@
    "name": "p09-summary-s3d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -18284,7 +18351,7 @@
    "name": "p09-summary-s4d",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -18315,7 +18382,7 @@
    "name": "p09-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11562.48,
+    "x": 13002.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -18342,7 +18409,7 @@
    "name": "p09-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11587.68,
+    "x": 13027.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18369,7 +18436,7 @@
    "name": "p09-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -18396,7 +18463,7 @@
    "name": "p09-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.84,
+    "x": 13005.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -18423,7 +18490,7 @@
    "name": "p09-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -18450,7 +18517,7 @@
    "name": "p09-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11586.0,
+    "x": 13026.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18477,7 +18544,7 @@
    "name": "p09-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -18504,7 +18571,7 @@
    "name": "p09-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11583.9,
+    "x": 13023.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18531,7 +18598,7 @@
    "name": "p09-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11603.64,
+    "x": 13043.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18572,7 +18639,7 @@
    "name": "p09-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11609.94,
+    "x": 13049.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -18599,7 +18666,7 @@
    "name": "p09-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11559.12,
+    "x": 12999.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -18640,7 +18707,7 @@
    "name": "p09-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11554.5,
+    "x": 12994.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -18667,7 +18734,7 @@
    "name": "p09-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11604.9,
+    "x": 13044.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -18694,7 +18761,7 @@
    "name": "p09-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11557.86,
+    "x": 12997.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -18721,7 +18788,7 @@
    "name": "p09-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11561.64,
+    "x": 13001.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -18748,7 +18815,7 @@
    "name": "p09-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566.26,
+    "x": 13006.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -18775,7 +18842,7 @@
    "name": "p09-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -18802,7 +18869,7 @@
    "name": "p09-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11568.36,
+    "x": 13008.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18829,7 +18896,7 @@
    "name": "p09-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -18866,7 +18933,7 @@
    "name": "p09-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11567.1,
+    "x": 13007.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -18893,7 +18960,7 @@
    "name": "p09-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -18958,7 +19025,7 @@
    "name": "p09-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -19023,7 +19090,7 @@
    "name": "p09-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -19060,7 +19127,7 @@
    "name": "p09-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -19097,7 +19164,7 @@
    "name": "p09-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11598.6,
+    "x": 13038.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19124,7 +19191,7 @@
    "name": "p09-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.0,
+    "x": 13005.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19151,7 +19218,7 @@
    "name": "p09-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -19178,7 +19245,7 @@
    "name": "p09-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11579.28,
+    "x": 13019.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -19227,7 +19294,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 01/09 · 1 One sample at a time · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 01/10 · 1 One sample at a time · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-stream-cue0": {
@@ -19427,7 +19494,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 02/09 · 2 One step of computation · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 02/10 · 2 One step of computation · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-update-cue0": {
@@ -19661,7 +19728,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 03/09 · 2 One step of computation · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 03/10 · 2 One step of computation · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-signs-cue0": {
@@ -19827,7 +19894,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 04/09 · 3 Warm-up: the sample mean · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 04/10 · 3 Warm-up: the sample mean · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-mean-cue0": {
@@ -20027,7 +20094,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 05/09 · 4 Step size and trajectory · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 05/10 · 4 Step size and trajectory · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-paths-cue0": {
@@ -20227,7 +20294,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 06/09 · 4 Step size and trajectory · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 06/10 · 4 Step size and trajectory · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-stability-cue0": {
@@ -20371,7 +20438,7 @@
    "name": "p07-adaline-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20393,7 +20460,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 07/09 · 5 Difference from the perceptron · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 08/10 · 5 Difference from the perceptron · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-adaline-cue0": {
@@ -20402,7 +20469,7 @@
    "name": "p07-adaline-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20426,7 +20493,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the question and the output 0.2 and target +1 first.",
+   "text": "    See the question and the output 0.2 and target $+1$ first.",
    "shapeKind": "rectangle"
   },
   "p07-adaline-cue1": {
@@ -20435,7 +20502,7 @@
    "name": "p07-adaline-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20469,7 +20536,7 @@
    "name": "p07-adaline-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20503,7 +20570,7 @@
    "name": "p07-adaline-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20537,7 +20604,7 @@
    "name": "p07-adaline-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20571,7 +20638,7 @@
    "name": "p08-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20593,7 +20660,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 08/09 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 09/10 · 6 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-practice-cue0": {
@@ -20602,7 +20669,7 @@
    "name": "p08-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20635,7 +20702,7 @@
    "name": "p08-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20669,7 +20736,7 @@
    "name": "p08-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20703,7 +20770,7 @@
    "name": "p08-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20737,7 +20804,7 @@
    "name": "p08-practice-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20771,7 +20838,7 @@
    "name": "p08-practice-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20805,7 +20872,7 @@
    "name": "p09-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11670,
+    "x": 13110,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -20827,7 +20894,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 09/09 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 10/10 · 7 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p09-summary-cue0": {
@@ -20836,7 +20903,7 @@
    "name": "p09-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20869,7 +20936,7 @@
    "name": "p09-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20903,7 +20970,7 @@
    "name": "p09-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20937,7 +21004,7 @@
    "name": "p09-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -20971,7 +21038,7 @@
    "name": "p09-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -21005,7 +21072,7 @@
    "name": "p09-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -21063,6 +21130,2078 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p07-vecstab-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 8640,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-bg",
+   "name": "p07-vecstab-bg",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 8680,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-rule",
+   "name": "p07-vecstab-rule",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-title": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Vector case: the step-size limit is set by the largest direction",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-title",
+   "name": "p07-vecstab-title",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 8680,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "The previous page was scalar. For vector inputs, $R_x=E[\\mathbf x\\mathbf x^T]$ is the second-moment matrix of the input; its eigenvalues $\\lambda_i$ are the input energy in each direction.",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-ctx",
+   "name": "p07-vecstab-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-src": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP08 lecture §5 (linear recursion of the mean weight error and $0<\\rho<2/\\lambda_{\\max}$); the example $R_x=[[1.5,0.5],[0.5,1.5]]$ is added here, recomputed independently. Added page: the original deck gave only the scalar case, restored from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-src",
+   "name": "p07-vecstab-src",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 8690,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-plbg",
+   "name": "p07-vecstab-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-axx": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 480,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 418,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p07-vecstab-axx",
+   "name": "p07-vecstab-axx",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-axy": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 170,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 310,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p07-vecstab-axy",
+   "name": "p07-vecstab-axy",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tx": {
+   "type": "text",
+   "transform": {
+    "x": 9140,
+    "y": 454,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "ρ",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-tx",
+   "name": "p07-vecstab-tx",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-ty": {
+   "type": "text",
+   "transform": {
+    "x": 8748,
+    "y": 146,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 200,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Per-step error multiplier $|1-\\rho\\lambda|$",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-ty",
+   "name": "p07-vecstab-ty",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tk0": {
+   "type": "text",
+   "transform": {
+    "x": 8734,
+    "y": 486,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "0",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-tk0",
+   "name": "p07-vecstab-tk0",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tk1": {
+   "type": "text",
+   "transform": {
+    "x": 8924,
+    "y": 486,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "1",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-tk1",
+   "name": "p07-vecstab-tk1",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tk2": {
+   "type": "text",
+   "transform": {
+    "x": 9114,
+    "y": 486,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "2",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-tk2",
+   "name": "p07-vecstab-tk2",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tk1y": {
+   "type": "text",
+   "transform": {
+    "x": 8716,
+    "y": 290,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 20,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "1",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-tk1y",
+   "name": "p07-vecstab-tk1y",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-one": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 300,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 418.0,
+   "height": 1,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p07-vecstab-one",
+   "name": "p07-vecstab-one",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cb": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 192.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 247.0,
+   "height": 288.0,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#2563eb",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 5
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 37.5
+    },
+    {
+     "x": 38.46153846153846,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p07-vecstab-cb",
+   "name": "p07-vecstab-cb",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-co": {
+   "type": "shape",
+   "transform": {
+    "x": 8740,
+    "y": 264.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 418.0,
+   "height": 216.0,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 5
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 16.666666666666668
+    },
+    {
+     "x": 45.45454545454545,
+     "y": 100.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p07-vecstab-co",
+   "name": "p07-vecstab-co",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tb": {
+   "type": "text",
+   "transform": {
+    "x": 8990.8,
+    "y": 200,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#2563eb",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "λ = 2",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-tb",
+   "name": "p07-vecstab-tb",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-to": {
+   "type": "text",
+   "transform": {
+    "x": 9110.0,
+    "y": 240.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 70,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#d97706",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "λ = 1",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-to",
+   "name": "p07-vecstab-to",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-g1": {
+   "type": "shape",
+   "transform": {
+    "x": 8827.0,
+    "y": 472.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-g1",
+   "name": "p07-vecstab-g1",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-g2": {
+   "type": "shape",
+   "transform": {
+    "x": 8827.0,
+    "y": 382.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-g2",
+   "name": "p07-vecstab-g2",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-r1": {
+   "type": "shape",
+   "transform": {
+    "x": 8960.0,
+    "y": 220.00000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#dc2626",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-r1",
+   "name": "p07-vecstab-r1",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-tr": {
+   "type": "text",
+   "transform": {
+    "x": 8980.0,
+    "y": 220.00000000000003,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 130,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#991b1b",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "$\\rho=1.2$: $1.4$ diverges",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-tr",
+   "name": "p07-vecstab-tr",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-st": {
+   "type": "shape",
+   "transform": {
+    "x": 9118,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-st",
+   "name": "p07-vecstab-st",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-c0": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 63,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$E[\\mathbf w_k-\\mathbf w^{\\ast}]=(I-\\rho R_x)\\,E[\\mathbf w_{k-1}-\\mathbf w^{\\ast}]$: at every step the mean error vector is multiplied by the same matrix $I-\\rho R_x$.",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-c0",
+   "name": "p07-vecstab-c0",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-c1": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 191,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 53,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Along an eigenvector of $R_x$ (eigenvalue $\\lambda_i$) this matrix just multiplies the error by $1-\\rho\\lambda_i$. Every direction must converge: $|1-\\rho\\lambda_i|<1$, that is $0<\\rho<2/\\lambda_i$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-c1",
+   "name": "p07-vecstab-c1",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-c2": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 254,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 71,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "Example: $R_x=\\begin{bmatrix}1.5&0.5\\\\0.5&1.5\\end{bmatrix}$ with eigenvalues $\\lambda=2$ and $1$. The blue line ($\\lambda=2$) needs $0<\\rho<1$, the orange line ($\\lambda=1$) needs $0<\\rho<2$. The red line is $1$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-c2",
+   "name": "p07-vecstab-c2",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-c3": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 335,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 51,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "Both directions must be stable, so take the smaller limit: $0<\\rho<2/\\lambda_{\\max}=1$. At $\\rho=0.5$ the multipliers are $0$ and $0.5$, both converge; at $\\rho=1.2$ they are $1.4$ and $0.2$, and the $\\lambda=2$ direction diverges even though the other is fine.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-c3",
+   "name": "p07-vecstab-c3",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-c4": {
+   "type": "text",
+   "transform": {
+    "x": 9230,
+    "y": 396,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 49,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "The conservative bound in the source is $2/\\operatorname{tr}(R_x)$: here $\\operatorname{tr}R_x=3$, giving $2/3$, smaller than $1$. Remember that stability in the mean is not stability in mean square (previous page), which needs an even smaller step.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-c4",
+   "name": "p07-vecstab-c4",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the recursion: every step multiplies by the same matrix.",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-cue0",
+   "name": "p07-vecstab-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: each eigen-direction is multiplied by $1-\\rho\\lambda$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-cue1",
+   "name": "p07-vecstab-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the two curves: the multipliers of the two directions.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-cue2",
+   "name": "p07-vecstab-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the three dots: $\\rho=0.5$ converges, $\\rho=1.2$ diverges.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-cue3",
+   "name": "p07-vecstab-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 8780,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: the conservative bound and mean-square stability.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p07-vecstab-cue4",
+   "name": "p07-vecstab-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p07-vecstab-m-shadow": {
+   "id": "p07-vecstab-m-shadow",
+   "type": "shape",
+   "name": "p07-vecstab-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8682.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-foot-l": {
+   "id": "p07-vecstab-m-foot-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8707.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-foot-r": {
+   "id": "p07-vecstab-m-foot-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-body": {
+   "id": "p07-vecstab-m-body",
+   "type": "shape",
+   "name": "p07-vecstab-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-vecstab-m-belly": {
+   "id": "p07-vecstab-m-belly",
+   "type": "shape",
+   "name": "p07-vecstab-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-bow-l": {
+   "id": "p07-vecstab-m-bow-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8706.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-bow-r": {
+   "id": "p07-vecstab-m-bow-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8697.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-bow-c": {
+   "id": "p07-vecstab-m-bow-c",
+   "type": "shape",
+   "name": "p07-vecstab-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8703.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-arm-r": {
+   "id": "p07-vecstab-m-arm-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8684.16,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.400000000000006,
+   "height": 10.920000000000073,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.53846153846138
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-vecstab-m-hand-r": {
+   "id": "p07-vecstab-m-hand-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.619999999999,
+    "y": 633.62,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-arm-l": {
+   "id": "p07-vecstab-m-arm-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8723.64,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 79.99999999999994,
+     "y": 100.0
+    }
+   ]
+  },
+  "p07-vecstab-m-hand-l": {
+   "id": "p07-vecstab-m-hand-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8722.380000000001,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-ear-l": {
+   "id": "p07-vecstab-m-ear-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8724.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-ear-r": {
+   "id": "p07-vecstab-m-ear-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8677.86,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-head": {
+   "id": "p07-vecstab-m-head",
+   "type": "shape",
+   "name": "p07-vecstab-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8681.64,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-face": {
+   "id": "p07-vecstab-m-face",
+   "type": "shape",
+   "name": "p07-vecstab-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8686.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-cap-base": {
+   "id": "p07-vecstab-m-cap-base",
+   "type": "shape",
+   "name": "p07-vecstab-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-vecstab-m-cap-top": {
+   "id": "p07-vecstab-m-cap-top",
+   "type": "shape",
+   "name": "p07-vecstab-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8688.36,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p07-vecstab-m-tassel": {
+   "id": "p07-vecstab-m-tassel",
+   "type": "shape",
+   "name": "p07-vecstab-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8689.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p07-vecstab-m-knot": {
+   "id": "p07-vecstab-m-knot",
+   "type": "shape",
+   "name": "p07-vecstab-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8687.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-eye-l": {
+   "id": "p07-vecstab-m-eye-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8709.779999999999,
+    "y": 610.0999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.92,
+   "height": 10.92,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-pupil-l": {
+   "id": "p07-vecstab-m-pupil-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8713.14,
+    "y": 610.1,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-glint-l": {
+   "id": "p07-vecstab-m-glint-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8713.98,
+    "y": 610.94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-eye-r": {
+   "id": "p07-vecstab-m-eye-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8691.3,
+    "y": 610.0999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.92,
+   "height": 10.92,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-pupil-r": {
+   "id": "p07-vecstab-m-pupil-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8694.66,
+    "y": 610.1,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-glint-r": {
+   "id": "p07-vecstab-m-glint-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8695.5,
+    "y": 610.94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-brow-l": {
+   "id": "p07-vecstab-m-brow-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8711.04,
+    "y": 601.7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-vecstab-m-brow-r": {
+   "id": "p07-vecstab-m-brow-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8692.560000000001,
+    "y": 601.7,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p07-vecstab-m-cheek-l": {
+   "id": "p07-vecstab-m-cheek-l",
+   "type": "shape",
+   "name": "p07-vecstab-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8718.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-cheek-r": {
+   "id": "p07-vecstab-m-cheek-r",
+   "type": "shape",
+   "name": "p07-vecstab-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8685.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-mouth": {
+   "id": "p07-vecstab-m-mouth",
+   "type": "shape",
+   "name": "p07-vecstab-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8703.48,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 5.04,
+   "height": 5.88,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p07-vecstab-m-mark": {
+   "id": "p07-vecstab-m-mark",
+   "type": "text",
+   "name": "p07-vecstab-m-mark",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 8718.8,
+    "y": 577.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 28,
+   "height": 28,
+   "zIndex": 9,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#f59e0b",
+    "fontSize": 22,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "?",
+   "shapeKind": "rectangle"
+  },
+  "p07-vecstab-nav": {
+   "type": "text",
+   "transform": {
+    "x": 8790,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP08 · 07/10 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p07-vecstab-nav",
+   "name": "p07-vecstab-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -21092,7 +23231,7 @@
    "order": 1,
    "label": "With no distribution we can only go one sample at a time: each time one arrives, adjust the weight a bit · See the axes, the dashed true value and the question ",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21113,7 +23252,7 @@
    "order": 2,
    "label": "With no distribution we can only go one sample at a time: each time one arrives, adjust the weight a bit · See sample 1: blue point and orange dashed line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21166,7 +23305,7 @@
    "order": 3,
    "label": "With no distribution we can only go one sample at a time: each time one arrives, adjust the weight a bit · See the green line: after one correction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21213,7 +23352,7 @@
    "order": 4,
    "label": "With no distribution we can only go one sample at a time: each time one arrives, adjust the weight a bit · See sample 2: blue point and orange dashed line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21266,7 +23405,7 @@
    "order": 5,
    "label": "With no distribution we can only go one sample at a time: each time one arrives, adjust the weight a bit · See the dark green line and the gold star: one more c",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21319,7 +23458,7 @@
    "order": 6,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the five boxes and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21340,7 +23479,7 @@
    "order": 7,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the gold box: the prediction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21393,7 +23532,7 @@
    "order": 8,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the red box: the error.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21446,7 +23585,7 @@
    "order": 9,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the purple box: the correction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21499,7 +23638,7 @@
    "order": 10,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the green box: the new weight.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21552,7 +23691,7 @@
    "order": 11,
    "label": "One LMS step: predict with the old weight, compute the error, then correct · See the gold star: why correct this way.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21599,7 +23738,7 @@
    "order": 12,
    "label": "Which way does the correction go? Look at the sign of the feature times the sign of the error · See the four combinations and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21620,7 +23759,7 @@
    "order": 13,
    "label": "Which way does the correction go? Look at the sign of the feature times the sign of the error · See the green arrows: the two same-sign cases.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21685,7 +23824,7 @@
    "order": 14,
    "label": "Which way does the correction go? Look at the sign of the feature times the sign of the error · See the red arrows: the two opposite-sign cases.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21750,7 +23889,7 @@
    "order": 15,
    "label": "Which way does the correction go? Look at the sign of the feature times the sign of the error · See the gold star: the sign of the product decides the direction",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21797,7 +23936,7 @@
    "order": 16,
    "label": "The simplest warm-up: the same form can also compute the mean one sample at a time · See the number line and the question about three readings first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21818,7 +23957,7 @@
    "order": 17,
    "label": "The simplest warm-up: the same form can also compute the mean one sample at a time · See reading 1: the orange point is the reading, the green point the estimat",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21871,7 +24010,7 @@
    "order": 18,
    "label": "The simplest warm-up: the same form can also compute the mean one sample at a time · See reading 2: the estimate moves to the middle.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21930,7 +24069,7 @@
    "order": 19,
    "label": "The simplest warm-up: the same form can also compute the mean one sample at a time · See reading 3: the estimate does not move.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -21983,7 +24122,7 @@
    "order": 20,
    "label": "The simplest warm-up: the same form can also compute the mean one sample at a time · See the gold star: this is the mean.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22030,7 +24169,7 @@
    "order": 21,
    "label": "The same data, three fixed step sizes: how does the weight move? Does every step improve? · See the axes, the dashed true value and the question first.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22051,7 +24190,7 @@
    "order": 22,
    "label": "The same data, three fixed step sizes: how does the weight move? Does every step improve? · See the gray line: ρ=0.005.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22098,7 +24237,7 @@
    "order": 23,
    "label": "The same data, three fixed step sizes: how does the weight move? Does every step improve? · See the green line: ρ=0.08.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22145,7 +24284,7 @@
    "order": 24,
    "label": "The same data, three fixed step sizes: how does the weight move? Does every step improve? · See the orange line: ρ=0.25.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22192,7 +24331,7 @@
    "order": 25,
    "label": "The same data, three fixed step sizes: how does the weight move? Does every step improve? · See the red triangle: not every step improves.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22239,7 +24378,7 @@
    "order": 26,
    "label": "How small must the step be for stability? Mean stability and mean-square stability are two different thresholds · See the axes, the red dashed 1 and the questio",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22260,7 +24399,7 @@
    "order": 27,
    "label": "How small must the step be for stability? Mean stability and mean-square stability are two different thresholds · See the blue line: the mean's multiplier.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22313,7 +24452,7 @@
    "order": 28,
    "label": "How small must the step be for stability? Mean stability and mean-square stability are two different thresholds · See the red line: the mean-square multiplier.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22366,7 +24505,7 @@
    "order": 29,
    "label": "How small must the step be for stability? Mean stability and mean-square stability are two different thresholds · See the gold star: the two thresholds differ.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22409,11 +24548,11 @@
    }
   },
   {
-   "id": "p07-adaline-st0",
+   "id": "p07-vecstab-st0",
    "order": 30,
-   "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the question and the output 0.2 and target +1 first.",
+   "label": "Vector case: the step-size limit is set by the largest direction · First, the recursion: every step multiplies by the same matrix.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -22430,17 +24569,256 @@
    }
   },
   {
-   "id": "p07-adaline-st1",
+   "id": "p07-vecstab-st1",
    "order": 31,
-   "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the green note: the perceptron.",
+   "label": "Vector case: the step-size limit is set by the largest direction · See the blue card: each eigen-direction is multiplied by $1-\\rho\\lambda$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-vecstab-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-vecstab-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p07-vecstab-st2",
+   "order": 32,
+   "label": "Vector case: the step-size limit is set by the largest direction · See the two curves: the multipliers of the two directions.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-vecstab-cb",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-co",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-tb",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-to",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-c2",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-cue2",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-vecstab-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p07-vecstab-st3",
+   "order": 33,
+   "label": "Vector case: the step-size limit is set by the largest direction · See the three dots: $\\rho=0.5$ converges, $\\rho=1.2$ diverges.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-vecstab-g1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-g2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-r1",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-tr",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-c3",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-cue3",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-vecstab-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p07-vecstab-st4",
+   "order": 34,
+   "label": "Vector case: the step-size limit is set by the largest direction · See the gold star: the conservative bound and mean-square stability.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 9280.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p07-vecstab-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-c4",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p07-vecstab-cue4",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p07-vecstab-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p07-adaline-st0",
+   "order": 35,
+   "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the question and the output 0.2 and target $+1$ first.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p07-adaline-st1",
+   "order": 36,
+   "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the green note: the perceptron.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22478,16 +24856,16 @@
   },
   {
    "id": "p07-adaline-st2",
-   "order": 32,
+   "order": 37,
    "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the gold note: LMS.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22531,16 +24909,16 @@
   },
   {
    "id": "p07-adaline-st3",
-   "order": 33,
+   "order": 38,
    "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the purple note: why they differ.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22572,16 +24950,16 @@
   },
   {
    "id": "p07-adaline-st4",
-   "order": 34,
+   "order": 39,
    "label": "LMS (Adaline) versus the perceptron: for a correctly classified point, LMS may still update · See the gold star: implementation reminder.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22619,16 +24997,16 @@
   },
   {
    "id": "p08-practice-st0",
-   "order": 35,
+   "order": 40,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · Work it out first: see the four given numbers and the question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22640,16 +25018,16 @@
   },
   {
    "id": "p08-practice-st1",
-   "order": 36,
+   "order": 41,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · See feedback (a): the prediction.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22681,16 +25059,16 @@
   },
   {
    "id": "p08-practice-st2",
-   "order": 37,
+   "order": 42,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · See feedback (b): the residual.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22722,16 +25100,16 @@
   },
   {
    "id": "p08-practice-st3",
-   "order": 38,
+   "order": 43,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · See feedback (c): the new weight.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22763,16 +25141,16 @@
   },
   {
    "id": "p08-practice-st4",
-   "order": 39,
+   "order": 44,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · See feedback: old and new output on the number line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22822,16 +25200,16 @@
   },
   {
    "id": "p08-practice-st5",
-   "order": 40,
+   "order": 45,
    "label": "Practice: w=0.4, ρ=0.1, x=2, y=1.5: prediction, residual, new weight · See feedback (d): the new output is closer to the target.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22869,16 +25247,16 @@
   },
   {
    "id": "p09-summary-st0",
-   "order": 41,
+   "order": 46,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the left first: true-value dashed line, start, two corrections ",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22890,16 +25268,16 @@
   },
   {
    "id": "p09-summary-st1",
-   "order": 42,
+   "order": 47,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the arrow: no distribution.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22937,16 +25315,16 @@
   },
   {
    "id": "p09-summary-st2",
-   "order": 43,
+   "order": 48,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the diamond: one step of computation.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -22984,16 +25362,16 @@
   },
   {
    "id": "p09-summary-st3",
-   "order": 44,
+   "order": 49,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the star: not every step improves.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -23031,16 +25409,16 @@
   },
   {
    "id": "p09-summary-st4",
-   "order": 45,
+   "order": 50,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the red triangle: stability.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -23078,16 +25456,16 @@
   },
   {
    "id": "p09-summary-st5",
-   "order": 46,
+   "order": 51,
    "label": "Summary: with no distribution, correct step by step with the error of one sample at a time · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,

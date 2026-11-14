@@ -542,6 +542,68 @@
     "p03-distance-cue2",
     "p03-distance-cue3",
     "p03-distance-cue4",
+    "p03-foot-bg",
+    "p03-foot-rule",
+    "p03-foot-title",
+    "p03-foot-ctx",
+    "p03-foot-src",
+    "p03-foot-plbg",
+    "p03-foot-axx",
+    "p03-foot-axy",
+    "p03-foot-bd",
+    "p03-foot-tbd",
+    "p03-foot-A",
+    "p03-foot-tA",
+    "p03-foot-Ap",
+    "p03-foot-p",
+    "p03-foot-tp",
+    "p03-foot-pq",
+    "p03-foot-Aq",
+    "p03-foot-q",
+    "p03-foot-tq",
+    "p03-foot-st",
+    "p03-foot-c0",
+    "p03-foot-c1",
+    "p03-foot-c2",
+    "p03-foot-c3",
+    "p03-foot-c4",
+    "p03-foot-cue0",
+    "p03-foot-cue1",
+    "p03-foot-cue2",
+    "p03-foot-cue3",
+    "p03-foot-cue4",
+    "p03-foot-m-shadow",
+    "p03-foot-m-foot-l",
+    "p03-foot-m-foot-r",
+    "p03-foot-m-body",
+    "p03-foot-m-belly",
+    "p03-foot-m-bow-l",
+    "p03-foot-m-bow-r",
+    "p03-foot-m-bow-c",
+    "p03-foot-m-arm-l",
+    "p03-foot-m-hand-l",
+    "p03-foot-m-arm-r",
+    "p03-foot-m-hand-r",
+    "p03-foot-m-ear-l",
+    "p03-foot-m-ear-r",
+    "p03-foot-m-head",
+    "p03-foot-m-face",
+    "p03-foot-m-cap-base",
+    "p03-foot-m-cap-top",
+    "p03-foot-m-tassel",
+    "p03-foot-m-knot",
+    "p03-foot-m-eye-l",
+    "p03-foot-m-pupil-l",
+    "p03-foot-m-glint-l",
+    "p03-foot-m-eye-r",
+    "p03-foot-m-pupil-r",
+    "p03-foot-m-glint-r",
+    "p03-foot-m-brow-l",
+    "p03-foot-m-brow-r",
+    "p03-foot-m-cheek-l",
+    "p03-foot-m-cheek-r",
+    "p03-foot-m-mouth",
+    "p03-foot-nav",
     "p04-near-boundary-nav",
     "p04-near-boundary-cue0",
     "p04-near-boundary-cue1",
@@ -6327,7 +6389,7 @@
    "name": "p04-near-boundary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4320,
+    "x": 5760,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -6354,7 +6416,7 @@
    "name": "p04-near-boundary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -6381,7 +6443,7 @@
    "name": "p04-near-boundary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -6412,7 +6474,7 @@
    "name": "p04-near-boundary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -6443,7 +6505,7 @@
    "name": "p04-near-boundary-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -6474,7 +6536,7 @@
    "name": "p04-near-boundary-pmbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4410.0,
+    "x": 5850.0,
     "y": 120.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -6501,7 +6563,7 @@
    "name": "p04-near-boundary-pmax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4416.0,
+    "x": 5856.0,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -6538,7 +6600,7 @@
    "name": "p04-near-boundary-pmay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4560,
+    "x": 6000,
     "y": 126.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -6575,7 +6637,7 @@
    "name": "p04-near-boundary-pmtx-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4442,
+    "x": 5882,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -6606,7 +6668,7 @@
    "name": "p04-near-boundary-pmty-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4508,
+    "x": 5948,
     "y": 441,
     "scaleX": 1,
     "scaleY": 1,
@@ -6637,7 +6699,7 @@
    "name": "p04-near-boundary-pmtx1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4642,
+    "x": 6082,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -6668,7 +6730,7 @@
    "name": "p04-near-boundary-pmty1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4508,
+    "x": 5948,
     "y": 241,
     "scaleX": 1,
     "scaleY": 1,
@@ -6699,7 +6761,7 @@
    "name": "p04-near-boundary-pmtx2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4742,
+    "x": 6182,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -6730,7 +6792,7 @@
    "name": "p04-near-boundary-pmty2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4508,
+    "x": 5948,
     "y": 141,
     "scaleX": 1,
     "scaleY": 1,
@@ -6761,7 +6823,7 @@
    "name": "p04-near-boundary-pmxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4770.0,
+    "x": 6210.0,
     "y": 324,
     "scaleX": 1,
     "scaleY": 1,
@@ -6792,7 +6854,7 @@
    "name": "p04-near-boundary-pmyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4568,
+    "x": 6008,
     "y": 122.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -6823,7 +6885,7 @@
    "name": "p04-near-boundary-bd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4410.0,
+    "x": 5850.0,
     "y": 150.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -6860,7 +6922,7 @@
    "name": "p04-near-boundary-mA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4649,
+    "x": 6089,
     "y": 239,
     "scaleX": 1,
     "scaleY": 1,
@@ -6894,7 +6956,7 @@
    "name": "p04-near-boundary-mB",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4587.0,
+    "x": 6027.0,
     "y": 333.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -6924,7 +6986,7 @@
    "name": "p04-near-boundary-tA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4674,
+    "x": 6114,
     "y": 220,
     "scaleX": 1,
     "scaleY": 1,
@@ -6955,7 +7017,7 @@
    "name": "p04-near-boundary-tB",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4566.0,
+    "x": 6006.0,
     "y": 313.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -6986,7 +7048,7 @@
    "name": "p04-near-boundary-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4910,
+    "x": 6350,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -7019,7 +7081,7 @@
    "name": "p04-near-boundary-zb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4570.0,
+    "x": 6010.0,
     "y": 315.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -7047,7 +7109,7 @@
    "name": "p04-near-boundary-ibg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4960,
+    "x": 6400,
     "y": 196,
     "scaleX": 1,
     "scaleY": 1,
@@ -7077,7 +7139,7 @@
    "name": "p04-near-boundary-ibd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5208.10303038033,
+    "x": 6648.10303038033,
     "y": 199.10303038033004,
     "scaleX": 1,
     "scaleY": 1,
@@ -7115,7 +7177,7 @@
    "name": "p04-near-boundary-ibdt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5380,
+    "x": 6820,
     "y": 215,
     "scaleX": 1,
     "scaleY": 1,
@@ -7147,7 +7209,7 @@
    "name": "p04-near-boundary-ib",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5183.5,
+    "x": 6623.5,
     "y": 324.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -7182,7 +7244,7 @@
    "name": "p04-near-boundary-ibt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5158.5,
+    "x": 6598.5,
     "y": 339.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -7214,7 +7276,7 @@
    "name": "p04-near-boundary-izt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4970,
+    "x": 6410,
     "y": 208,
     "scaleX": 1,
     "scaleY": 1,
@@ -7246,7 +7308,7 @@
    "name": "p04-near-boundary-if",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5260.5,
+    "x": 6700.5,
     "y": 251.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -7281,7 +7343,7 @@
    "name": "p04-near-boundary-ift",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5277.5,
+    "x": 6717.5,
     "y": 232.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -7313,7 +7375,7 @@
    "name": "p04-near-boundary-iseg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5192.5,
+    "x": 6632.5,
     "y": 258.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -7352,7 +7414,7 @@
    "name": "p04-near-boundary-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4960,
+    "x": 6400,
     "y": 408,
     "scaleX": 1,
     "scaleY": 1,
@@ -7386,7 +7448,7 @@
    "name": "p04-near-boundary-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5496,
+    "x": 6936,
     "y": 512,
     "scaleX": 1,
     "scaleY": 1,
@@ -7422,7 +7484,7 @@
    "name": "p04-near-boundary-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4960,
+    "x": 6400,
     "y": 504,
     "scaleX": 1,
     "scaleY": 1,
@@ -7456,7 +7518,7 @@
    "name": "p04-near-boundary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4362.48,
+    "x": 5802.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -7483,7 +7545,7 @@
    "name": "p04-near-boundary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4387.68,
+    "x": 5827.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -7510,7 +7572,7 @@
    "name": "p04-near-boundary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -7537,7 +7599,7 @@
    "name": "p04-near-boundary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.84,
+    "x": 5805.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -7564,7 +7626,7 @@
    "name": "p04-near-boundary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -7591,7 +7653,7 @@
    "name": "p04-near-boundary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4386.0,
+    "x": 5826.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -7618,7 +7680,7 @@
    "name": "p04-near-boundary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4377.6,
+    "x": 5817.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -7645,7 +7707,7 @@
    "name": "p04-near-boundary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4383.9,
+    "x": 5823.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -7672,7 +7734,7 @@
    "name": "p04-near-boundary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4364.16,
+    "x": 5804.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -7713,7 +7775,7 @@
    "name": "p04-near-boundary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.62,
+    "x": 5809.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -7740,7 +7802,7 @@
    "name": "p04-near-boundary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4403.64,
+    "x": 5843.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -7781,7 +7843,7 @@
    "name": "p04-near-boundary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4402.38,
+    "x": 5842.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -7808,7 +7870,7 @@
    "name": "p04-near-boundary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4404.9,
+    "x": 5844.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -7835,7 +7897,7 @@
    "name": "p04-near-boundary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4357.86,
+    "x": 5797.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -7862,7 +7924,7 @@
    "name": "p04-near-boundary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4361.64,
+    "x": 5801.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -7889,7 +7951,7 @@
    "name": "p04-near-boundary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4366.26,
+    "x": 5806.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -7916,7 +7978,7 @@
    "name": "p04-near-boundary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -7943,7 +8005,7 @@
    "name": "p04-near-boundary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4368.36,
+    "x": 5808.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -7970,7 +8032,7 @@
    "name": "p04-near-boundary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -8007,7 +8069,7 @@
    "name": "p04-near-boundary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4367.1,
+    "x": 5807.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -8034,7 +8096,7 @@
    "name": "p04-near-boundary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4389.78,
+    "x": 5829.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -8061,7 +8123,7 @@
    "name": "p04-near-boundary-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4393.14,
+    "x": 5833.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -8088,7 +8150,7 @@
    "name": "p04-near-boundary-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4393.98,
+    "x": 5833.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -8115,7 +8177,7 @@
    "name": "p04-near-boundary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4371.3,
+    "x": 5811.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -8142,7 +8204,7 @@
    "name": "p04-near-boundary-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4374.66,
+    "x": 5814.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -8169,7 +8231,7 @@
    "name": "p04-near-boundary-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.5,
+    "x": 5815.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -8196,7 +8258,7 @@
    "name": "p04-near-boundary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4391.04,
+    "x": 5831.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -8233,7 +8295,7 @@
    "name": "p04-near-boundary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4372.56,
+    "x": 5812.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -8270,7 +8332,7 @@
    "name": "p04-near-boundary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4398.6,
+    "x": 5838.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -8297,7 +8359,7 @@
    "name": "p04-near-boundary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.0,
+    "x": 5805.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -8324,7 +8386,7 @@
    "name": "p04-near-boundary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4383.48,
+    "x": 5823.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -8351,7 +8413,7 @@
    "name": "p04-near-boundary-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4398.8,
+    "x": 5838.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -8382,7 +8444,7 @@
    "name": "p05-scaling-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5760,
+    "x": 7200,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8409,7 +8471,7 @@
    "name": "p05-scaling-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -8436,7 +8498,7 @@
    "name": "p05-scaling-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -8467,7 +8529,7 @@
    "name": "p05-scaling-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -8498,7 +8560,7 @@
    "name": "p05-scaling-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -8529,7 +8591,7 @@
    "name": "p05-scaling-scbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5854,
+    "x": 7294,
     "y": 138,
     "scaleX": 1,
     "scaleY": 1,
@@ -8556,7 +8618,7 @@
    "name": "p05-scaling-scax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 390.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8593,7 +8655,7 @@
    "name": "p05-scaling-scay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5975.0,
+    "x": 7415.0,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -8630,7 +8692,7 @@
    "name": "p05-scaling-scxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5955.0,
+    "x": 7395.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8661,7 +8723,7 @@
    "name": "p05-scaling-scxt0_5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6070.0,
+    "x": 7510.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8692,7 +8754,7 @@
    "name": "p05-scaling-scxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6185.0,
+    "x": 7625.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8723,7 +8785,7 @@
    "name": "p05-scaling-scxt1_5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6300.0,
+    "x": 7740.0,
     "y": 476,
     "scaleX": 1,
     "scaleY": 1,
@@ -8754,7 +8816,7 @@
    "name": "p05-scaling-scgyn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 443.3333333333333,
     "scaleX": 1,
     "scaleY": 1,
@@ -8791,7 +8853,7 @@
    "name": "p05-scaling-scytn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 434.3333333333333,
     "scaleX": 1,
     "scaleY": 1,
@@ -8822,7 +8884,7 @@
    "name": "p05-scaling-scgy0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 390.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8859,7 +8921,7 @@
    "name": "p05-scaling-scyt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 381.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8890,7 +8952,7 @@
    "name": "p05-scaling-scgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 336.66666666666663,
     "scaleX": 1,
     "scaleY": 1,
@@ -8927,7 +8989,7 @@
    "name": "p05-scaling-scyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 327.66666666666663,
     "scaleX": 1,
     "scaleY": 1,
@@ -8958,7 +9020,7 @@
    "name": "p05-scaling-scgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 283.3333333333333,
     "scaleX": 1,
     "scaleY": 1,
@@ -8995,7 +9057,7 @@
    "name": "p05-scaling-scyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 274.3333333333333,
     "scaleX": 1,
     "scaleY": 1,
@@ -9026,7 +9088,7 @@
    "name": "p05-scaling-scgy3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 230.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9063,7 +9125,7 @@
    "name": "p05-scaling-scyt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 221.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9094,7 +9156,7 @@
    "name": "p05-scaling-scgy4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 176.66666666666669,
     "scaleX": 1,
     "scaleY": 1,
@@ -9131,7 +9193,7 @@
    "name": "p05-scaling-scyt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 167.66666666666669,
     "scaleX": 1,
     "scaleY": 1,
@@ -9162,7 +9224,7 @@
    "name": "p05-scaling-scxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6130,
+    "x": 7570,
     "y": 494,
     "scaleX": 1,
     "scaleY": 1,
@@ -9193,7 +9255,7 @@
    "name": "p05-scaling-scyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5866,
+    "x": 7306,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -9224,7 +9286,7 @@
    "name": "p05-scaling-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360,
+    "x": 7800,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -9257,7 +9319,7 @@
    "name": "p05-scaling-l1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860.0,
+    "x": 7300.0,
     "y": 276.8629150101524,
     "scaleX": 1,
     "scaleY": 1,
@@ -9295,7 +9357,7 @@
    "name": "p05-scaling-dA1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6208.951839509359,
+    "x": 7648.951839509359,
     "y": 300.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9330,7 +9392,7 @@
    "name": "p05-scaling-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360,
+    "x": 7800,
     "y": 198,
     "scaleX": 1,
     "scaleY": 1,
@@ -9364,7 +9426,7 @@
    "name": "p05-scaling-l2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860.0,
+    "x": 7300.0,
     "y": 163.72583002030478,
     "scaleX": 1,
     "scaleY": 1,
@@ -9402,7 +9464,7 @@
    "name": "p05-scaling-dA2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6208.951839509359,
+    "x": 7648.951839509359,
     "y": 220.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9437,7 +9499,7 @@
    "name": "p05-scaling-vl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6218.951839509359,
+    "x": 7658.951839509359,
     "y": 230.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -9476,7 +9538,7 @@
    "name": "p05-scaling-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360,
+    "x": 7800,
     "y": 284,
     "scaleX": 1,
     "scaleY": 1,
@@ -9510,7 +9572,7 @@
    "name": "p05-scaling-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6936,
+    "x": 8376,
     "y": 396,
     "scaleX": 1,
     "scaleY": 1,
@@ -9546,7 +9608,7 @@
    "name": "p05-scaling-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360,
+    "x": 7800,
     "y": 390,
     "scaleX": 1,
     "scaleY": 1,
@@ -9580,7 +9642,7 @@
    "name": "p05-scaling-wi",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6360,
+    "x": 7800,
     "y": 510,
     "scaleX": 1,
     "scaleY": 1,
@@ -9611,7 +9673,7 @@
    "name": "p05-scaling-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6412,
+    "x": 7852,
     "y": 500,
     "scaleX": 1,
     "scaleY": 1,
@@ -9645,7 +9707,7 @@
    "name": "p05-scaling-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5802.48,
+    "x": 7242.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -9672,7 +9734,7 @@
    "name": "p05-scaling-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5827.68,
+    "x": 7267.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -9699,7 +9761,7 @@
    "name": "p05-scaling-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -9726,7 +9788,7 @@
    "name": "p05-scaling-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.84,
+    "x": 7245.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -9753,7 +9815,7 @@
    "name": "p05-scaling-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -9780,7 +9842,7 @@
    "name": "p05-scaling-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5826.0,
+    "x": 7266.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -9807,7 +9869,7 @@
    "name": "p05-scaling-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5817.6,
+    "x": 7257.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -9834,7 +9896,7 @@
    "name": "p05-scaling-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5823.9,
+    "x": 7263.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -9861,7 +9923,7 @@
    "name": "p05-scaling-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5843.64,
+    "x": 7283.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -9902,7 +9964,7 @@
    "name": "p05-scaling-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5861.7,
+    "x": 7301.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -9929,7 +9991,7 @@
    "name": "p05-scaling-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804.16,
+    "x": 7244.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -9970,7 +10032,7 @@
    "name": "p05-scaling-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800.38,
+    "x": 7240.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -9997,7 +10059,7 @@
    "name": "p05-scaling-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5844.9,
+    "x": 7284.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10024,7 +10086,7 @@
    "name": "p05-scaling-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5797.86,
+    "x": 7237.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10051,7 +10113,7 @@
    "name": "p05-scaling-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5801.64,
+    "x": 7241.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10078,7 +10140,7 @@
    "name": "p05-scaling-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5806.26,
+    "x": 7246.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -10105,7 +10167,7 @@
    "name": "p05-scaling-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -10132,7 +10194,7 @@
    "name": "p05-scaling-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5808.36,
+    "x": 7248.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -10159,7 +10221,7 @@
    "name": "p05-scaling-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10196,7 +10258,7 @@
    "name": "p05-scaling-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5807.1,
+    "x": 7247.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -10223,7 +10285,7 @@
    "name": "p05-scaling-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5830.2,
+    "x": 7270.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10250,7 +10312,7 @@
    "name": "p05-scaling-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5833.56,
+    "x": 7273.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -10277,7 +10339,7 @@
    "name": "p05-scaling-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5834.4,
+    "x": 7274.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10304,7 +10366,7 @@
    "name": "p05-scaling-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5811.72,
+    "x": 7251.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10331,7 +10393,7 @@
    "name": "p05-scaling-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -10358,7 +10420,7 @@
    "name": "p05-scaling-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.92,
+    "x": 7255.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10385,7 +10447,7 @@
    "name": "p05-scaling-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5831.04,
+    "x": 7271.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -10422,7 +10484,7 @@
    "name": "p05-scaling-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5812.56,
+    "x": 7252.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -10459,7 +10521,7 @@
    "name": "p05-scaling-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5838.6,
+    "x": 7278.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -10486,7 +10548,7 @@
    "name": "p05-scaling-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.0,
+    "x": 7245.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -10513,7 +10575,7 @@
    "name": "p05-scaling-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5819.7,
+    "x": 7259.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -10578,7 +10640,7 @@
    "name": "p06-variants-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7200,
+    "x": 8640,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -10605,7 +10667,7 @@
    "name": "p06-variants-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -10632,7 +10694,7 @@
    "name": "p06-variants-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -10654,7 +10716,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Predict: double only w, or multiply all by −2?",
+   "text": "Predict: double only w, or multiply all by $−2$?",
    "shapeKind": "rectangle"
   },
   "p06-variants-ctx": {
@@ -10663,7 +10725,7 @@
    "name": "p06-variants-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -10694,7 +10756,7 @@
    "name": "p06-variants-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -10725,7 +10787,7 @@
    "name": "p06-variants-plbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300.0,
+    "x": 8740.0,
     "y": 120.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -10752,7 +10814,7 @@
    "name": "p06-variants-plax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7306.0,
+    "x": 8746.0,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -10789,7 +10851,7 @@
    "name": "p06-variants-play",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7450,
+    "x": 8890,
     "y": 126.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -10826,7 +10888,7 @@
    "name": "p06-variants-pltx-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7332,
+    "x": 8772,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -10857,7 +10919,7 @@
    "name": "p06-variants-plty-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7398,
+    "x": 8838,
     "y": 441,
     "scaleX": 1,
     "scaleY": 1,
@@ -10888,7 +10950,7 @@
    "name": "p06-variants-pltx1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7532,
+    "x": 8972,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -10919,7 +10981,7 @@
    "name": "p06-variants-plty1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7398,
+    "x": 8838,
     "y": 241,
     "scaleX": 1,
     "scaleY": 1,
@@ -10950,7 +11012,7 @@
    "name": "p06-variants-pltx2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7632,
+    "x": 9072,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -10981,7 +11043,7 @@
    "name": "p06-variants-plty2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7398,
+    "x": 8838,
     "y": 141,
     "scaleX": 1,
     "scaleY": 1,
@@ -11012,7 +11074,7 @@
    "name": "p06-variants-plxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7660.0,
+    "x": 9100.0,
     "y": 324,
     "scaleX": 1,
     "scaleY": 1,
@@ -11043,7 +11105,7 @@
    "name": "p06-variants-plyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7458,
+    "x": 8898,
     "y": 122.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -11074,7 +11136,7 @@
    "name": "p06-variants-bd0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300.0,
+    "x": 8740.0,
     "y": 150.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11111,7 +11173,7 @@
    "name": "p06-variants-c0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7790,
+    "x": 9230,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -11144,7 +11206,7 @@
    "name": "p06-variants-mA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7539,
+    "x": 8979,
     "y": 239,
     "scaleX": 1,
     "scaleY": 1,
@@ -11178,7 +11240,7 @@
    "name": "p06-variants-tA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7564,
+    "x": 9004,
     "y": 220,
     "scaleX": 1,
     "scaleY": 1,
@@ -11209,7 +11271,7 @@
    "name": "p06-variants-bd1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300.0,
+    "x": 8740.0,
     "y": 175.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11248,7 +11310,7 @@
    "name": "p06-variants-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7790,
+    "x": 9230,
     "y": 198,
     "scaleX": 1,
     "scaleY": 1,
@@ -11272,7 +11334,7 @@
     "gradientTo": "#fffbeb",
     "gradientAngle": 90
    },
-   "text": "(a) Only $\\mathbf w$ doubled: $2x_1+2x_2-0.5=0$, i.e. $x_1+x_2=0.25$ (orange dashed). The boundary moves toward the origin; if $b$ is not scaled too it is not the same line.",
+   "text": "(a) Only $\\mathbf w$ doubled: $2x_1+2x_2-0.5=0$, that is $x_1+x_2=0.25$ (orange dashed). The boundary moves toward the origin; if $b$ is not scaled too it is not the same line.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -11282,7 +11344,7 @@
    "name": "p06-variants-hn",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300.0,
+    "x": 8740.0,
     "y": 150.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11325,7 +11387,7 @@
    "name": "p06-variants-hp",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7300.0,
+    "x": 8740.0,
     "y": 120.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -11376,7 +11438,7 @@
    "name": "p06-variants-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7790,
+    "x": 9230,
     "y": 314,
     "scaleX": 1,
     "scaleY": 1,
@@ -11410,7 +11472,7 @@
    "name": "p06-variants-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8376,
+    "x": 9816,
     "y": 436,
     "scaleX": 1,
     "scaleY": 1,
@@ -11446,7 +11508,7 @@
    "name": "p06-variants-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7790,
+    "x": 9230,
     "y": 430,
     "scaleX": 1,
     "scaleY": 1,
@@ -11480,7 +11542,7 @@
    "name": "p06-variants-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7242.48,
+    "x": 8682.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -11507,7 +11569,7 @@
    "name": "p06-variants-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7267.68,
+    "x": 8707.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -11534,7 +11596,7 @@
    "name": "p06-variants-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -11561,7 +11623,7 @@
    "name": "p06-variants-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.84,
+    "x": 8685.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -11588,7 +11650,7 @@
    "name": "p06-variants-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -11615,7 +11677,7 @@
    "name": "p06-variants-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7266.0,
+    "x": 8706.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -11642,7 +11704,7 @@
    "name": "p06-variants-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7257.6,
+    "x": 8697.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -11669,7 +11731,7 @@
    "name": "p06-variants-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.9,
+    "x": 8703.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -11696,7 +11758,7 @@
    "name": "p06-variants-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7244.16,
+    "x": 8684.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -11737,7 +11799,7 @@
    "name": "p06-variants-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.62,
+    "x": 8689.619999999999,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -11764,7 +11826,7 @@
    "name": "p06-variants-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7283.64,
+    "x": 8723.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -11805,7 +11867,7 @@
    "name": "p06-variants-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7282.38,
+    "x": 8722.380000000001,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -11832,7 +11894,7 @@
    "name": "p06-variants-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7284.9,
+    "x": 8724.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -11859,7 +11921,7 @@
    "name": "p06-variants-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7237.86,
+    "x": 8677.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -11886,7 +11948,7 @@
    "name": "p06-variants-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7241.64,
+    "x": 8681.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -11913,7 +11975,7 @@
    "name": "p06-variants-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7246.26,
+    "x": 8686.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -11940,7 +12002,7 @@
    "name": "p06-variants-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -11967,7 +12029,7 @@
    "name": "p06-variants-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7248.36,
+    "x": 8688.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11994,7 +12056,7 @@
    "name": "p06-variants-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12031,7 +12093,7 @@
    "name": "p06-variants-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7247.1,
+    "x": 8687.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -12058,7 +12120,7 @@
    "name": "p06-variants-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7269.78,
+    "x": 8709.779999999999,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12085,7 +12147,7 @@
    "name": "p06-variants-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.14,
+    "x": 8713.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -12112,7 +12174,7 @@
    "name": "p06-variants-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.98,
+    "x": 8713.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12139,7 +12201,7 @@
    "name": "p06-variants-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7251.3,
+    "x": 8691.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12166,7 +12228,7 @@
    "name": "p06-variants-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7254.66,
+    "x": 8694.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -12193,7 +12255,7 @@
    "name": "p06-variants-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.5,
+    "x": 8695.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12220,7 +12282,7 @@
    "name": "p06-variants-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7271.04,
+    "x": 8711.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -12257,7 +12319,7 @@
    "name": "p06-variants-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7252.56,
+    "x": 8692.560000000001,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -12294,7 +12356,7 @@
    "name": "p06-variants-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.6,
+    "x": 8718.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12321,7 +12383,7 @@
    "name": "p06-variants-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.0,
+    "x": 8685.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12348,7 +12410,7 @@
    "name": "p06-variants-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.48,
+    "x": 8703.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -12375,7 +12437,7 @@
    "name": "p06-variants-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.8,
+    "x": 8718.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12406,7 +12468,7 @@
    "name": "p07-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12433,7 +12495,7 @@
    "name": "p07-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12460,7 +12522,7 @@
    "name": "p07-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -12491,7 +12553,7 @@
    "name": "p07-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12522,7 +12584,7 @@
    "name": "p07-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -12553,7 +12615,7 @@
    "name": "p07-practice-ppbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8708.0,
+    "x": 10148.0,
     "y": 126.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12580,7 +12642,7 @@
    "name": "p07-practice-ppax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8714.0,
+    "x": 10154.0,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -12617,7 +12679,7 @@
    "name": "p07-practice-ppay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8890,
+    "x": 10330,
     "y": 132.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12654,7 +12716,7 @@
    "name": "p07-practice-pptx-2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8768,
+    "x": 10208,
     "y": 427,
     "scaleX": 1,
     "scaleY": 1,
@@ -12685,7 +12747,7 @@
    "name": "p07-practice-ppty-2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8838,
+    "x": 10278,
     "y": 507,
     "scaleX": 1,
     "scaleY": 1,
@@ -12716,7 +12778,7 @@
    "name": "p07-practice-pptx2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8976,
+    "x": 10416,
     "y": 427,
     "scaleX": 1,
     "scaleY": 1,
@@ -12747,7 +12809,7 @@
    "name": "p07-practice-ppty2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8838,
+    "x": 10278,
     "y": 299,
     "scaleX": 1,
     "scaleY": 1,
@@ -12778,7 +12840,7 @@
    "name": "p07-practice-ppxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9032.0,
+    "x": 10472.0,
     "y": 386,
     "scaleX": 1,
     "scaleY": 1,
@@ -12809,7 +12871,7 @@
    "name": "p07-practice-ppyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8898,
+    "x": 10338,
     "y": 128.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12840,7 +12902,7 @@
    "name": "p07-practice-bd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8708.0,
+    "x": 10148.0,
     "y": 145.5,
     "scaleX": 1,
     "scaleY": 1,
@@ -12877,7 +12939,7 @@
    "name": "p07-practice-mO",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8882,
+    "x": 10322,
     "y": 404,
     "scaleX": 1,
     "scaleY": 1,
@@ -12911,7 +12973,7 @@
    "name": "p07-practice-tO",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8902,
+    "x": 10342,
     "y": 416,
     "scaleX": 1,
     "scaleY": 1,
@@ -12942,7 +13004,7 @@
    "name": "p07-practice-mS",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8933,
+    "x": 10373,
     "y": 299,
     "scaleX": 1,
     "scaleY": 1,
@@ -12976,7 +13038,7 @@
    "name": "p07-practice-tS",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8956,
+    "x": 10396,
     "y": 276,
     "scaleX": 1,
     "scaleY": 1,
@@ -13007,7 +13069,7 @@
    "name": "p07-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9230,
+    "x": 10670,
     "y": 118,
     "scaleX": 1,
     "scaleY": 1,
@@ -13040,7 +13102,7 @@
    "name": "p07-practice-so",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8827.6,
+    "x": 10267.6,
     "y": 328.8,
     "scaleX": 1,
     "scaleY": 1,
@@ -13079,7 +13141,7 @@
    "name": "p07-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9230,
+    "x": 10670,
     "y": 238,
     "scaleX": 1,
     "scaleY": 1,
@@ -13113,7 +13175,7 @@
    "name": "p07-practice-ss",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8910.8,
+    "x": 10350.8,
     "y": 266.4,
     "scaleX": 1,
     "scaleY": 1,
@@ -13152,7 +13214,7 @@
    "name": "p07-practice-fS",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8903.8,
+    "x": 10343.8,
     "y": 259.4,
     "scaleX": 1,
     "scaleY": 1,
@@ -13187,7 +13249,7 @@
    "name": "p07-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9230,
+    "x": 10670,
     "y": 354,
     "scaleX": 1,
     "scaleY": 1,
@@ -13221,7 +13283,7 @@
    "name": "p07-practice-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9816,
+    "x": 11256,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -13257,7 +13319,7 @@
    "name": "p07-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9230,
+    "x": 10670,
     "y": 466,
     "scaleX": 1,
     "scaleY": 1,
@@ -13291,7 +13353,7 @@
    "name": "p07-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -13318,7 +13380,7 @@
    "name": "p07-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -13345,7 +13407,7 @@
    "name": "p07-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -13372,7 +13434,7 @@
    "name": "p07-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -13399,7 +13461,7 @@
    "name": "p07-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -13426,7 +13488,7 @@
    "name": "p07-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13453,7 +13515,7 @@
    "name": "p07-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13480,7 +13542,7 @@
    "name": "p07-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -13507,7 +13569,7 @@
    "name": "p07-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -13548,7 +13610,7 @@
    "name": "p07-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.62,
+    "x": 10129.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -13575,7 +13637,7 @@
    "name": "p07-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -13616,7 +13678,7 @@
    "name": "p07-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8722.38,
+    "x": 10162.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -13643,7 +13705,7 @@
    "name": "p07-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -13670,7 +13732,7 @@
    "name": "p07-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -13697,7 +13759,7 @@
    "name": "p07-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -13724,7 +13786,7 @@
    "name": "p07-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -13751,7 +13813,7 @@
    "name": "p07-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -13778,7 +13840,7 @@
    "name": "p07-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13805,7 +13867,7 @@
    "name": "p07-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -13842,7 +13904,7 @@
    "name": "p07-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -13869,7 +13931,7 @@
    "name": "p07-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8709.78,
+    "x": 10149.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -13896,7 +13958,7 @@
    "name": "p07-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.14,
+    "x": 10153.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -13923,7 +13985,7 @@
    "name": "p07-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.98,
+    "x": 10153.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -13950,7 +14012,7 @@
    "name": "p07-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.3,
+    "x": 10131.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -13977,7 +14039,7 @@
    "name": "p07-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8694.66,
+    "x": 10134.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -14004,7 +14066,7 @@
    "name": "p07-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.5,
+    "x": 10135.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -14031,7 +14093,7 @@
    "name": "p07-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -14068,7 +14130,7 @@
    "name": "p07-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -14105,7 +14167,7 @@
    "name": "p07-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -14132,7 +14194,7 @@
    "name": "p07-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -14159,7 +14221,7 @@
    "name": "p07-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.48,
+    "x": 10143.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -14186,7 +14248,7 @@
    "name": "p07-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.8,
+    "x": 10158.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14217,7 +14279,7 @@
    "name": "p08-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14244,7 +14306,7 @@
    "name": "p08-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -14271,7 +14333,7 @@
    "name": "p08-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -14302,7 +14364,7 @@
    "name": "p08-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14333,7 +14395,7 @@
    "name": "p08-summary-plbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180.0,
+    "x": 11620.0,
     "y": 120.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -14360,7 +14422,7 @@
    "name": "p08-summary-plax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10186.0,
+    "x": 11626.0,
     "y": 350,
     "scaleX": 1,
     "scaleY": 1,
@@ -14397,7 +14459,7 @@
    "name": "p08-summary-play",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10330,
+    "x": 11770,
     "y": 126.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -14434,7 +14496,7 @@
    "name": "p08-summary-pltx-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10212,
+    "x": 11652,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -14465,7 +14527,7 @@
    "name": "p08-summary-plty-1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10278,
+    "x": 11718,
     "y": 441,
     "scaleX": 1,
     "scaleY": 1,
@@ -14496,7 +14558,7 @@
    "name": "p08-summary-pltx1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10412,
+    "x": 11852,
     "y": 365,
     "scaleX": 1,
     "scaleY": 1,
@@ -14527,7 +14589,7 @@
    "name": "p08-summary-plty1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10278,
+    "x": 11718,
     "y": 241,
     "scaleX": 1,
     "scaleY": 1,
@@ -14558,7 +14620,7 @@
    "name": "p08-summary-plxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10540.0,
+    "x": 11980.0,
     "y": 324,
     "scaleX": 1,
     "scaleY": 1,
@@ -14589,7 +14651,7 @@
    "name": "p08-summary-plyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10338,
+    "x": 11778,
     "y": 122.00000000000003,
     "scaleX": 1,
     "scaleY": 1,
@@ -14620,7 +14682,7 @@
    "name": "p08-summary-bd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10180.0,
+    "x": 11620.0,
     "y": 150.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14657,7 +14719,7 @@
    "name": "p08-summary-mA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10419,
+    "x": 11859,
     "y": 239,
     "scaleX": 1,
     "scaleY": 1,
@@ -14691,7 +14753,7 @@
    "name": "p08-summary-fA",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10348.0,
+    "x": 11788.0,
     "y": 318.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14725,7 +14787,7 @@
    "name": "p08-summary-seg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10355.0,
+    "x": 11795.0,
     "y": 250,
     "scaleX": 1,
     "scaleY": 1,
@@ -14763,7 +14825,7 @@
    "name": "p08-summary-wa",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10355.0,
+    "x": 11795.0,
     "y": 270.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14812,7 +14874,7 @@
    "name": "p08-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -14846,7 +14908,7 @@
    "name": "p08-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -14880,7 +14942,7 @@
    "name": "p08-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -14914,7 +14976,7 @@
    "name": "p08-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -14948,7 +15010,7 @@
    "name": "p08-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10780,
+    "x": 12220,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -14982,7 +15044,7 @@
    "name": "p08-summary-s0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -15013,7 +15075,7 @@
    "name": "p08-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -15044,7 +15106,7 @@
    "name": "p08-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -15080,7 +15142,7 @@
    "name": "p08-summary-s3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -15111,7 +15173,7 @@
    "name": "p08-summary-s4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10724,
+    "x": 12164,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -15142,7 +15204,7 @@
    "name": "p08-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -15169,7 +15231,7 @@
    "name": "p08-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15196,7 +15258,7 @@
    "name": "p08-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -15223,7 +15285,7 @@
    "name": "p08-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -15250,7 +15312,7 @@
    "name": "p08-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -15277,7 +15339,7 @@
    "name": "p08-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15304,7 +15366,7 @@
    "name": "p08-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -15331,7 +15393,7 @@
    "name": "p08-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -15358,7 +15420,7 @@
    "name": "p08-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -15399,7 +15461,7 @@
    "name": "p08-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10169.94,
+    "x": 11609.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15426,7 +15488,7 @@
    "name": "p08-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10119.12,
+    "x": 11559.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -15467,7 +15529,7 @@
    "name": "p08-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10114.5,
+    "x": 11554.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15494,7 +15556,7 @@
    "name": "p08-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -15521,7 +15583,7 @@
    "name": "p08-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -15548,7 +15610,7 @@
    "name": "p08-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15575,7 +15637,7 @@
    "name": "p08-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15602,7 +15664,7 @@
    "name": "p08-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -15629,7 +15691,7 @@
    "name": "p08-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15656,7 +15718,7 @@
    "name": "p08-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -15693,7 +15755,7 @@
    "name": "p08-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -15720,7 +15782,7 @@
    "name": "p08-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15785,7 +15847,7 @@
    "name": "p08-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15850,7 +15912,7 @@
    "name": "p08-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -15887,7 +15949,7 @@
    "name": "p08-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -15924,7 +15986,7 @@
    "name": "p08-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15951,7 +16013,7 @@
    "name": "p08-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15978,7 +16040,7 @@
    "name": "p08-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -16005,7 +16067,7 @@
    "name": "p08-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10139.28,
+    "x": 11579.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -16054,7 +16116,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 01/08 · 1 Score and sides · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 01/09 · 1 Score and sides · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-score-sides-cue0": {
@@ -16288,7 +16350,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 02/08 · 2 w and the boundary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 02/09 · 2 w and the boundary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-normal-cue0": {
@@ -16488,7 +16550,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 03/08 · 3 From score to distance · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 03/09 · 3 From score to distance · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-distance-cue0": {
@@ -16666,7 +16728,7 @@
    "name": "p04-near-boundary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4470,
+    "x": 5910,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16688,7 +16750,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 04/08 · 3 From score to distance · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 05/09 · 3 From score to distance · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-near-boundary-cue0": {
@@ -16697,7 +16759,7 @@
    "name": "p04-near-boundary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16730,7 +16792,7 @@
    "name": "p04-near-boundary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16764,7 +16826,7 @@
    "name": "p04-near-boundary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16798,7 +16860,7 @@
    "name": "p04-near-boundary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16832,7 +16894,7 @@
    "name": "p04-near-boundary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16866,7 +16928,7 @@
    "name": "p05-scaling-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5910,
+    "x": 7350,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -16888,7 +16950,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 05/08 · 4 Scaling · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 06/09 · 4 Scaling · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-scaling-cue0": {
@@ -16897,7 +16959,7 @@
    "name": "p05-scaling-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16930,7 +16992,7 @@
    "name": "p05-scaling-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16964,7 +17026,7 @@
    "name": "p05-scaling-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -16998,7 +17060,7 @@
    "name": "p05-scaling-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17032,7 +17094,7 @@
    "name": "p05-scaling-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17066,7 +17128,7 @@
    "name": "p06-variants-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7350,
+    "x": 8790,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -17088,7 +17150,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 06/08 · 4 Scaling · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 07/09 · 4 Scaling · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-variants-cue0": {
@@ -17097,7 +17159,7 @@
    "name": "p06-variants-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17130,7 +17192,7 @@
    "name": "p06-variants-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17164,7 +17226,7 @@
    "name": "p06-variants-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17188,7 +17250,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the blue and red regions swap: everything times −2.",
+   "text": "    See the blue and red regions swap: everything times $−2$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -17198,7 +17260,7 @@
    "name": "p06-variants-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17232,7 +17294,7 @@
    "name": "p07-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -17254,7 +17316,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 07/08 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 08/09 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-practice-cue0": {
@@ -17263,7 +17325,7 @@
    "name": "p07-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17296,7 +17358,7 @@
    "name": "p07-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17330,7 +17392,7 @@
    "name": "p07-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17364,7 +17426,7 @@
    "name": "p07-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17398,7 +17460,7 @@
    "name": "p08-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -17420,7 +17482,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 08/08 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 09/09 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-summary-cue0": {
@@ -17429,7 +17491,7 @@
    "name": "p08-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17462,7 +17524,7 @@
    "name": "p08-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17496,7 +17558,7 @@
    "name": "p08-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17530,7 +17592,7 @@
    "name": "p08-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17564,7 +17626,7 @@
    "name": "p08-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17598,7 +17660,7 @@
    "name": "p08-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -17656,6 +17718,1958 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p03-foot-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 4320,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-bg",
+   "name": "p03-foot-bg",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 4360,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-rule",
+   "name": "p03-foot-rule",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-title": {
+   "type": "text",
+   "transform": {
+    "x": 4360,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "How is the foot point computed? Why is it the point on the boundary closest to $A$?",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-title",
+   "name": "p03-foot-title",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 4360,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 15,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "The last page gave $\\mathbf x=\\mathbf p+r\\mathbf n$ and $g=r\\|\\mathbf w\\|$. Reversing them gives the foot point $\\mathbf p$ from $\\mathbf x$.",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-ctx",
+   "name": "p03-foot-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-src": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: addition to KP01 lecture §4 (foot-point formula and Pythagorean proof of the nearest point); the example reuses $A=(1,1)$, $B=(0.4,0.05)$, $\\mathbf w=(1,1)$, $b=-0.5$, recomputed independently. Added page: the original deck gave only numeric foot points, so the derivation is restored from the lecture objectives.",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-src",
+   "name": "p03-foot-src",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 4370,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-plbg",
+   "name": "p03-foot-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-axx": {
+   "type": "shape",
+   "transform": {
+    "x": 4392.0,
+    "y": 430.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 323.0,
+   "height": 1,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#94a3b8",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p03-foot-axx",
+   "name": "p03-foot-axx",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-axy": {
+   "type": "shape",
+   "transform": {
+    "x": 4460.0,
+    "y": 175.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1,
+   "height": 323.0,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#94a3b8",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ],
+   "id": "p03-foot-axy",
+   "name": "p03-foot-axy",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-bd": {
+   "type": "shape",
+   "transform": {
+    "x": 4409.0,
+    "y": 294.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 187.0,
+   "height": 187.0,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#64748b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    }
+   ],
+   "id": "p03-foot-bd",
+   "name": "p03-foot-bd",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-tbd": {
+   "type": "text",
+   "transform": {
+    "x": 4390,
+    "y": 470,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 220,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#475569",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Boundary $g=0$: $x_1+x_2=0.5$",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-tbd",
+   "name": "p03-foot-tbd",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-A": {
+   "type": "shape",
+   "transform": {
+    "x": 4621.0,
+    "y": 251.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 18,
+   "height": 18,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "id": "p03-foot-A",
+   "name": "p03-foot-A",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-tA": {
+   "type": "text",
+   "transform": {
+    "x": 4644.0,
+    "y": 248.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 90,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "A(1,1)",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-tA",
+   "name": "p03-foot-tA",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-Ap": {
+   "type": "shape",
+   "transform": {
+    "x": 4502.5,
+    "y": 260.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 127.5,
+   "height": 127.5,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#16a34a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p03-foot-Ap",
+   "name": "p03-foot-Ap",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-p": {
+   "type": "shape",
+   "transform": {
+    "x": 4494.5,
+    "y": 379.5,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#16a34a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p03-foot-p",
+   "name": "p03-foot-p",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-tp": {
+   "type": "text",
+   "transform": {
+    "x": 4424.5,
+    "y": 391.5,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 130,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#166534",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "p=(0.25,0.25)",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-tp",
+   "name": "p03-foot-tp",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-pq": {
+   "type": "shape",
+   "transform": {
+    "x": 4502.5,
+    "y": 387.5,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 42.5,
+   "height": 42.5,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 4
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 0.0
+    },
+    {
+     "x": 100.0,
+     "y": 100.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p03-foot-pq",
+   "name": "p03-foot-pq",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-Aq": {
+   "type": "shape",
+   "transform": {
+    "x": 4545.0,
+    "y": 260.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 85.0,
+   "height": 170.0,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#dc2626",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ],
+   "initiallyHidden": true,
+   "id": "p03-foot-Aq",
+   "name": "p03-foot-Aq",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-q": {
+   "type": "shape",
+   "transform": {
+    "x": 4537.0,
+    "y": 422.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 16,
+   "height": 16,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#d97706",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#1e3a8a",
+    "gradientAngle": 135
+   },
+   "text": "",
+   "shapeKind": "ellipse",
+   "initiallyHidden": true,
+   "id": "p03-foot-q",
+   "name": "p03-foot-q",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-tq": {
+   "type": "text",
+   "transform": {
+    "x": 4555.0,
+    "y": 438.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 100,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#92400e",
+    "fontSize": 13,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "q=(0.5,0)",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-tq",
+   "name": "p03-foot-tq",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-st": {
+   "type": "shape",
+   "transform": {
+    "x": 4798,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p03-foot-st",
+   "name": "p03-foot-st",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-c0": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 94,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "$\\mathbf p=\\mathbf x-r\\,\\mathbf n=\\mathbf x-\\dfrac{g(\\mathbf x)}{\\|\\mathbf w\\|^2}\\,\\mathbf w$ (since $r=g/\\|\\mathbf w\\|$ and $\\mathbf n=\\mathbf w/\\|\\mathbf w\\|$). Check: $g(\\mathbf p)=g(\\mathbf x)-\\dfrac{g(\\mathbf x)}{\\|\\mathbf w\\|^2}\\|\\mathbf w\\|^2=0$, so the foot point is on the boundary.",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-c0",
+   "name": "p03-foot-c0",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-c1": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 222,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 60,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "$A$: $g(A)=1.5$, $\\|\\mathbf w\\|^2=2$, $\\mathbf p=(1,1)-\\tfrac{1.5}{2}(1,1)=(0.25,0.25)$, the same as the last page. $B$: $g(B)=-0.05$, $\\mathbf p_B=(0.4,0.05)+\\tfrac{0.05}{2}(1,1)=(0.425,0.075)$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-c1",
+   "name": "p03-foot-c1",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-c2": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 292,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 54,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "Why is $\\mathbf p$ the nearest? Take any point $\\mathbf q$ on the boundary. $\\mathbf p-\\mathbf q$ runs along the boundary, perpendicular to $\\mathbf w$, while $\\mathbf x-\\mathbf p=r\\mathbf n$ is parallel to $\\mathbf w$. The two segments are perpendicular, so by Pythagoras $\\|\\mathbf x-\\mathbf q\\|^2=\\|\\mathbf x-\\mathbf p\\|^2+\\|\\mathbf p-\\mathbf q\\|^2$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-c2",
+   "name": "p03-foot-c2",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-c3": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 356,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "Check: take $\\mathbf q=(0.5,0)$. $\\|A-\\mathbf q\\|^2=0.5^2+1^2=1.25$; $\\|A-\\mathbf p\\|^2=2(0.75)^2=1.125$; $\\|\\mathbf p-\\mathbf q\\|^2=0.25^2+0.25^2=0.125$; $1.125+0.125=1.25$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-c3",
+   "name": "p03-foot-c3",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-c4": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 422,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 54,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "The second term satisfies $\\|\\mathbf p-\\mathbf q\\|^2\\ge0$, so $\\|\\mathbf x-\\mathbf q\\|\\ge\\|\\mathbf x-\\mathbf p\\|$: the foot point is the boundary point nearest to $\\mathbf x$, at distance $|r|=|g|/\\|\\mathbf w\\|$. Equality holds only when $\\mathbf q=\\mathbf p$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-c4",
+   "name": "p03-foot-c4",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the foot-point formula.",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-cue0",
+   "name": "p03-foot-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green line and dots: the foot points of $A$ and $B$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-cue1",
+   "name": "p03-foot-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the orange and red lines: any boundary point $\\mathbf q$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-cue2",
+   "name": "p03-foot-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the purple card: check Pythagoras with $\\mathbf q=(0.5,0)$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-cue3",
+   "name": "p03-foot-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: the foot point is nearest.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p03-foot-cue4",
+   "name": "p03-foot-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p03-foot-m-shadow": {
+   "id": "p03-foot-m-shadow",
+   "type": "shape",
+   "name": "p03-foot-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4362.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-foot-l": {
+   "id": "p03-foot-m-foot-l",
+   "type": "shape",
+   "name": "p03-foot-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4387.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-foot-r": {
+   "id": "p03-foot-m-foot-r",
+   "type": "shape",
+   "name": "p03-foot-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4369.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-body": {
+   "id": "p03-foot-m-body",
+   "type": "shape",
+   "name": "p03-foot-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4365.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-foot-m-belly": {
+   "id": "p03-foot-m-belly",
+   "type": "shape",
+   "name": "p03-foot-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-bow-l": {
+   "id": "p03-foot-m-bow-l",
+   "type": "shape",
+   "name": "p03-foot-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4386.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-bow-r": {
+   "id": "p03-foot-m-bow-r",
+   "type": "shape",
+   "name": "p03-foot-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4377.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-bow-c": {
+   "id": "p03-foot-m-bow-c",
+   "type": "shape",
+   "name": "p03-foot-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4383.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-arm-l": {
+   "id": "p03-foot-m-arm-l",
+   "type": "shape",
+   "name": "p03-foot-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4403.639999999999,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.0,
+   "height": 8.399999999999977,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 52.000000000000014,
+     "y": 79.99999999999918
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-foot-m-hand-l": {
+   "id": "p03-foot-m-hand-l",
+   "type": "shape",
+   "name": "p03-foot-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4421.7,
+    "y": 636.56,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-arm-r": {
+   "id": "p03-foot-m-arm-r",
+   "type": "shape",
+   "name": "p03-foot-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4364.16,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 20.000000000000068,
+     "y": 100.0
+    }
+   ]
+  },
+  "p03-foot-m-hand-r": {
+   "id": "p03-foot-m-hand-r",
+   "type": "shape",
+   "name": "p03-foot-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4360.38,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-ear-l": {
+   "id": "p03-foot-m-ear-l",
+   "type": "shape",
+   "name": "p03-foot-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4404.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-ear-r": {
+   "id": "p03-foot-m-ear-r",
+   "type": "shape",
+   "name": "p03-foot-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4357.860000000001,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-head": {
+   "id": "p03-foot-m-head",
+   "type": "shape",
+   "name": "p03-foot-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4361.639999999999,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-face": {
+   "id": "p03-foot-m-face",
+   "type": "shape",
+   "name": "p03-foot-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4366.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-cap-base": {
+   "id": "p03-foot-m-cap-base",
+   "type": "shape",
+   "name": "p03-foot-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-foot-m-cap-top": {
+   "id": "p03-foot-m-cap-top",
+   "type": "shape",
+   "name": "p03-foot-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4368.360000000001,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p03-foot-m-tassel": {
+   "id": "p03-foot-m-tassel",
+   "type": "shape",
+   "name": "p03-foot-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4369.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p03-foot-m-knot": {
+   "id": "p03-foot-m-knot",
+   "type": "shape",
+   "name": "p03-foot-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4367.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-eye-l": {
+   "id": "p03-foot-m-eye-l",
+   "type": "shape",
+   "name": "p03-foot-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4390.2,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-pupil-l": {
+   "id": "p03-foot-m-pupil-l",
+   "type": "shape",
+   "name": "p03-foot-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4393.5599999999995,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-glint-l": {
+   "id": "p03-foot-m-glint-l",
+   "type": "shape",
+   "name": "p03-foot-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4394.4,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-eye-r": {
+   "id": "p03-foot-m-eye-r",
+   "type": "shape",
+   "name": "p03-foot-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4371.719999999999,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-pupil-r": {
+   "id": "p03-foot-m-pupil-r",
+   "type": "shape",
+   "name": "p03-foot-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-glint-r": {
+   "id": "p03-foot-m-glint-r",
+   "type": "shape",
+   "name": "p03-foot-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.92,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-brow-l": {
+   "id": "p03-foot-m-brow-l",
+   "type": "shape",
+   "name": "p03-foot-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4391.04,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-foot-m-brow-r": {
+   "id": "p03-foot-m-brow-r",
+   "type": "shape",
+   "name": "p03-foot-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4372.5599999999995,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-foot-m-cheek-l": {
+   "id": "p03-foot-m-cheek-l",
+   "type": "shape",
+   "name": "p03-foot-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4398.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-cheek-r": {
+   "id": "p03-foot-m-cheek-r",
+   "type": "shape",
+   "name": "p03-foot-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4365.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p03-foot-m-mouth": {
+   "id": "p03-foot-m-mouth",
+   "type": "shape",
+   "name": "p03-foot-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4379.7,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.599999999999994,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 87.49999999999997,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 75.00000000000006,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 62.500000000000036,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 37.49999999999997,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 25.0,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 12.499999999999972,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p03-foot-nav": {
+   "type": "text",
+   "transform": {
+    "x": 4470,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP01 · 04/09 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p03-foot-nav",
+   "name": "p03-foot-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -17685,7 +19699,7 @@
    "order": 1,
    "label": "The sign of the score decides which side of the boundary a point is on · See the plane and the question: which side are A and B on?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17706,7 +19720,7 @@
    "order": 2,
    "label": "The sign of the score decides which side of the boundary a point is on · See the green line: all points with $g=0$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17753,7 +19767,7 @@
    "order": 3,
    "label": "The sign of the score decides which side of the boundary a point is on · See the blue and red regions: the two sides.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17806,7 +19820,7 @@
    "order": 4,
    "label": "The sign of the score decides which side of the boundary a point is on · See point A: substitute into the score.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17859,7 +19873,7 @@
    "order": 5,
    "label": "The sign of the score decides which side of the boundary a point is on · See point B: substitute into the score.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17912,7 +19926,7 @@
    "order": 6,
    "label": "The sign of the score decides which side of the boundary a point is on · See the gold star: key point.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17959,7 +19973,7 @@
    "order": 7,
    "label": "How does w relate to the boundary? Walking along the boundary, w has no component · See the boundary and the question: subtract two boundary points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -17980,7 +19994,7 @@
    "order": 8,
    "label": "How does w relate to the boundary? Walking along the boundary, w has no component · See the two intercept points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18045,7 +20059,7 @@
    "order": 9,
    "label": "How does w relate to the boundary? Walking along the boundary, w has no component · See the gold arrow: displacement along the boundary.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18098,7 +20112,7 @@
    "order": 10,
    "label": "How does w relate to the boundary? Walking along the boundary, w has no component · See the red arrow and the right-angle mark.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18157,7 +20171,7 @@
    "order": 11,
    "label": "How does w relate to the boundary? Walking along the boundary, w has no component · See the purple arrow and gold star: which side does w point to?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18210,7 +20224,7 @@
    "order": 12,
    "label": "A score is not a distance: divide by the length of w to get the perpendicular distance · See A and the boundary: how far is A from the line?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18231,7 +20245,7 @@
    "order": 13,
    "label": "A score is not a distance: divide by the length of w to get the perpendicular distance · See the red dashed line: A to the foot point p.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18290,7 +20304,7 @@
    "order": 14,
    "label": "A score is not a distance: divide by the length of w to get the perpendicular distance · See the purple formula: score versus distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18331,7 +20345,7 @@
    "order": 15,
    "label": "A score is not a distance: divide by the length of w to get the perpendicular distance · See the red formula: substitute A.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18372,7 +20386,7 @@
    "order": 16,
    "label": "A score is not a distance: divide by the length of w to get the perpendicular distance · See the gold dashed line and star: distance of the origin.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18421,11 +20435,11 @@
    }
   },
   {
-   "id": "p04-near-boundary-st0",
+   "id": "p03-foot-st0",
    "order": 17,
-   "label": "B is very close to the boundary yet on the negative side: zoom in · See the whole plot: B hugs the line.",
+   "label": "How is the foot point computed? Why is it the point on the boundary closest to $A$? · First, the foot-point formula.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -18442,17 +20456,250 @@
    }
   },
   {
-   "id": "p04-near-boundary-st1",
+   "id": "p03-foot-st1",
    "order": 18,
-   "label": "B is very close to the boundary yet on the negative side: zoom in · See the gold box and the zoom box: the area to enlarge.",
+   "label": "How is the foot point computed? Why is it the point on the boundary closest to $A$? · See the green line and dots: the foot points of $A$ and $B$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-foot-Ap",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-p",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-tp",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-c1",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-cue1",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-foot-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p03-foot-st2",
+   "order": 19,
+   "label": "How is the foot point computed? Why is it the point on the boundary closest to $A$? · See the orange and red lines: any boundary point $\\mathbf q$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-foot-q",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-tq",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-pq",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-Aq",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-c2",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-cue2",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-foot-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p03-foot-st3",
+   "order": 20,
+   "label": "How is the foot point computed? Why is it the point on the boundary closest to $A$? · See the purple card: check Pythagoras with $\\mathbf q=(0.5,0)$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-foot-c3",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-cue3",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-foot-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p03-foot-st4",
+   "order": 21,
+   "label": "How is the foot point computed? Why is it the point on the boundary closest to $A$? · See the gold star: the foot point is nearest.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p03-foot-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-c4",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p03-foot-cue4",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p03-foot-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p04-near-boundary-st0",
+   "order": 22,
+   "label": "B is very close to the boundary yet on the negative side: zoom in · See the whole plot: B hugs the line.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p04-near-boundary-st1",
+   "order": 23,
+   "label": "B is very close to the boundary yet on the negative side: zoom in · See the gold box and the zoom box: the area to enlarge.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18496,16 +20743,16 @@
   },
   {
    "id": "p04-near-boundary-st2",
-   "order": 19,
+   "order": 24,
    "label": "B is very close to the boundary yet on the negative side: zoom in · See the line and B inside the zoom box.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18555,16 +20802,16 @@
   },
   {
    "id": "p04-near-boundary-st3",
-   "order": 20,
+   "order": 25,
    "label": "B is very close to the boundary yet on the negative side: zoom in · See the blue foot point and the red dashed line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18614,16 +20861,16 @@
   },
   {
    "id": "p04-near-boundary-st4",
-   "order": 21,
+   "order": 26,
    "label": "B is very close to the boundary yet on the negative side: zoom in · See the gold star: prediction and distance differ.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18661,16 +20908,16 @@
   },
   {
    "id": "p05-scaling-st0",
-   "order": 22,
+   "order": 27,
    "label": "Multiply both w and b by 2: the score doubles; what about the distance? · See the axes and the blue note.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18682,16 +20929,16 @@
   },
   {
    "id": "p05-scaling-st1",
-   "order": 23,
+   "order": 28,
    "label": "Multiply both w and b by 2: the score doubles; what about the distance? · See the blue line and point: the original score.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18735,16 +20982,16 @@
   },
   {
    "id": "p05-scaling-st2",
-   "order": 24,
+   "order": 29,
    "label": "Multiply both w and b by 2: the score doubles; what about the distance? · See the orange line and point: after multiplying by 2.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18794,16 +21041,16 @@
   },
   {
    "id": "p05-scaling-st3",
-   "order": 25,
+   "order": 30,
    "label": "Multiply both w and b by 2: the score doubles; what about the distance? · See the green note: same distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18841,16 +21088,16 @@
   },
   {
    "id": "p05-scaling-st4",
-   "order": 26,
+   "order": 31,
    "label": "Multiply both w and b by 2: the score doubles; what about the distance? · See the red triangle: a common misunderstanding.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18888,16 +21135,16 @@
   },
   {
    "id": "p06-variants-st0",
-   "order": 27,
-   "label": "Predict: double only w, or multiply all by −2? · Predict first: what does each change do?",
+   "order": 32,
+   "label": "Predict: double only w, or multiply all by $−2$? · Predict first: what does each change do?",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18909,16 +21156,16 @@
   },
   {
    "id": "p06-variants-st1",
-   "order": 28,
-   "label": "Predict: double only w, or multiply all by −2? · See the orange dashed line: only w doubled.",
+   "order": 33,
+   "label": "Predict: double only w, or multiply all by $−2$? · See the orange dashed line: only w doubled.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -18956,16 +21203,16 @@
   },
   {
    "id": "p06-variants-st2",
-   "order": 29,
-   "label": "Predict: double only w, or multiply all by −2? · See the blue and red regions swap: everything times −2.",
+   "order": 34,
+   "label": "Predict: double only w, or multiply all by $−2$? · See the blue and red regions swap: everything times $−2$.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19009,16 +21256,16 @@
   },
   {
    "id": "p06-variants-st3",
-   "order": 30,
-   "label": "Predict: double only w, or multiply all by −2? · See the gold star: summary.",
+   "order": 35,
+   "label": "Predict: double only w, or multiply all by $−2$? · See the gold star: summary.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19056,16 +21303,16 @@
   },
   {
    "id": "p07-practice-st0",
-   "order": 31,
+   "order": 36,
    "label": "Practice: 3x₁ − 4x₂ + 10 = 0. How far is the origin from the line? Which side is (1, 2) on? · Work it out first: see the line, the origin and the point (1,2).",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19077,16 +21324,16 @@
   },
   {
    "id": "p07-practice-st1",
-   "order": 32,
+   "order": 37,
    "label": "Practice: 3x₁ − 4x₂ + 10 = 0. How far is the origin from the line? Which side is (1, 2) on? · See feedback (a): the gold dashed line is the origin's distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19124,16 +21371,16 @@
   },
   {
    "id": "p07-practice-st2",
-   "order": 33,
+   "order": 38,
    "label": "Practice: 3x₁ − 4x₂ + 10 = 0. How far is the origin from the line? Which side is (1, 2) on? · See feedback (b): the red dashed line and foot point.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19177,16 +21424,16 @@
   },
   {
    "id": "p07-practice-st3",
-   "order": 34,
+   "order": 39,
    "label": "Practice: 3x₁ − 4x₂ + 10 = 0. How far is the origin from the line? Which side is (1, 2) on? · See feedback: check.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19224,16 +21471,16 @@
   },
   {
    "id": "p08-summary-st0",
-   "order": 35,
+   "order": 40,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the left first: the example's boundary, A, foot point and w.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19245,16 +21492,16 @@
   },
   {
    "id": "p08-summary-st1",
-   "order": 36,
+   "order": 41,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the arrow: score and side.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19292,16 +21539,16 @@
   },
   {
    "id": "p08-summary-st2",
-   "order": 37,
+   "order": 42,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the diamond: direction of w.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19339,16 +21586,16 @@
   },
   {
    "id": "p08-summary-st3",
-   "order": 38,
+   "order": 43,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the star: distance.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19386,16 +21633,16 @@
   },
   {
    "id": "p08-summary-st4",
-   "order": 39,
+   "order": 44,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the red triangle: scaling.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -19433,16 +21680,16 @@
   },
   {
    "id": "p08-summary-st5",
-   "order": 40,
+   "order": 45,
    "label": "Summary: score gives side, w gives direction, divide by length for distance · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,

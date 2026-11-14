@@ -177,7 +177,7 @@
 
 ## 英文版簡報(English slides, week 3)
 
-第 3 週(Linear Classifiers)的導學版簡報另有英文版(含英文配音),內容與上表中文版對應;目前只有簡報,尚無英文講義;英文版尚未含中文版新增的推導頁與配音更新。
+第 3 週(Linear Classifiers)的導學版簡報另有英文版,內容與上表中文版對應(2026-11-14 已同步中文版新增的推導頁);英文版不配音(中文版有配音);目前只有簡報,尚無英文講義。
 
 - KP01 Score, Normal Vector and Distance:[Slides](slides/lec03-kp01-pilot-en.jbd.json)
 - KP02 Batch Perceptron:[Slides](slides/lec03-kp02-batch-perceptron-en.jbd.json)

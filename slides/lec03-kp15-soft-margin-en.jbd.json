@@ -695,6 +695,64 @@
     "p03-tradeoff-cue1",
     "p03-tradeoff-cue2",
     "p03-tradeoff-cue3",
+    "p04-lagrange-bg",
+    "p04-lagrange-rule",
+    "p04-lagrange-title",
+    "p04-lagrange-ctx",
+    "p04-lagrange-src",
+    "p04-lagrange-plbg",
+    "p04-lagrange-tp",
+    "p04-lagrange-td",
+    "p04-lagrange-p1",
+    "p04-lagrange-p2",
+    "p04-lagrange-d1",
+    "p04-lagrange-d2",
+    "p04-lagrange-tq",
+    "p04-lagrange-st",
+    "p04-lagrange-c0",
+    "p04-lagrange-c1",
+    "p04-lagrange-c2",
+    "p04-lagrange-c3",
+    "p04-lagrange-c4",
+    "p04-lagrange-c5",
+    "p04-lagrange-cue0",
+    "p04-lagrange-cue1",
+    "p04-lagrange-cue2",
+    "p04-lagrange-cue3",
+    "p04-lagrange-cue4",
+    "p04-lagrange-cue5",
+    "p04-lagrange-m-shadow",
+    "p04-lagrange-m-foot-l",
+    "p04-lagrange-m-foot-r",
+    "p04-lagrange-m-body",
+    "p04-lagrange-m-belly",
+    "p04-lagrange-m-bow-l",
+    "p04-lagrange-m-bow-r",
+    "p04-lagrange-m-bow-c",
+    "p04-lagrange-m-arm-l",
+    "p04-lagrange-m-hand-l",
+    "p04-lagrange-m-arm-r",
+    "p04-lagrange-m-hand-r",
+    "p04-lagrange-m-ear-l",
+    "p04-lagrange-m-ear-r",
+    "p04-lagrange-m-head",
+    "p04-lagrange-m-face",
+    "p04-lagrange-m-cap-base",
+    "p04-lagrange-m-cap-top",
+    "p04-lagrange-m-tassel",
+    "p04-lagrange-m-knot",
+    "p04-lagrange-m-eye-l",
+    "p04-lagrange-m-pupil-l",
+    "p04-lagrange-m-glint-l",
+    "p04-lagrange-m-eye-r",
+    "p04-lagrange-m-pupil-r",
+    "p04-lagrange-m-glint-r",
+    "p04-lagrange-m-brow-l",
+    "p04-lagrange-m-brow-r",
+    "p04-lagrange-m-cheek-l",
+    "p04-lagrange-m-cheek-r",
+    "p04-lagrange-m-mouth",
+    "p04-lagrange-nav",
     "p04-soft-wall-nav",
     "p04-soft-wall-cue0",
     "p04-soft-wall-cue1",
@@ -806,7 +864,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 22,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -845,7 +903,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Six 1-D points: positive (circles) $1.6,\\,3,\\,4$; negative (triangles) $0,\\,1,\\,2.4$. The classifier is a threshold $t$; right of the threshold is judged positive.",
+   "text": "Six one-dimensional points: positive (circles) $1.6,\\,3,\\,4$; negative (triangles) $0,\\,1,\\,2.4$. The classifier is a threshold $t$; right of the threshold is judged positive.",
    "shapeKind": "rectangle"
   },
   "p01-infeasible-src": {
@@ -2897,7 +2955,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -3759,7 +3817,7 @@
     "gradientTo": "#fff5f5",
     "gradientAngle": 90
    },
-   "text": "Red lines = the distance past one's own purple line, which is the slack $\\xi$ to add: two points with $1.4$ each, the others $0$.",
+   "text": "Red lines: the distance past one's own purple line, which is the slack $\\xi$ to add: two points with $1.4$ each, the others $0$.",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -5542,7 +5600,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -5573,7 +5631,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 15,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -5612,7 +5670,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: Following the KP15 lecture objective; for the same six 1-D points, the optimum for each $C$ is solved by scipy on the dual and checked by grid search (compute_data.kp15x()).",
+   "text": "Source: Following the KP15 lecture objective; for the same six one-dimensional points, the optimum for each $C$ is solved by scipy on the dual and checked by grid search (compute_data.kp15x()).",
    "shapeKind": "rectangle"
   },
   "p03-tradeoff-tcbg": {
@@ -7693,7 +7751,7 @@
    "name": "p04-soft-wall-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4320,
+    "x": 5760,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -7720,7 +7778,7 @@
    "name": "p04-soft-wall-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -7747,7 +7805,7 @@
    "name": "p04-soft-wall-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -7761,7 +7819,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -7778,7 +7836,7 @@
    "name": "p04-soft-wall-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360,
+    "x": 5800,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -7809,7 +7867,7 @@
    "name": "p04-soft-wall-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -7840,7 +7898,7 @@
    "name": "p04-soft-wall-labg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4384,
+    "x": 5824,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -7867,7 +7925,7 @@
    "name": "p04-soft-wall-laax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 440.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -7904,7 +7962,7 @@
    "name": "p04-soft-wall-laay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390.0,
+    "x": 5830.0,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -7941,7 +7999,7 @@
    "name": "p04-soft-wall-laxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4370.0,
+    "x": 5810.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -7972,7 +8030,7 @@
    "name": "p04-soft-wall-laxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4578.0,
+    "x": 6018.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -8003,7 +8061,7 @@
    "name": "p04-soft-wall-laxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4786.0,
+    "x": 6226.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -8034,7 +8092,7 @@
    "name": "p04-soft-wall-lagy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 368.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -8071,7 +8129,7 @@
    "name": "p04-soft-wall-layt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4350,
+    "x": 5790,
     "y": 359.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -8102,7 +8160,7 @@
    "name": "p04-soft-wall-lagy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 297.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -8139,7 +8197,7 @@
    "name": "p04-soft-wall-layt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4350,
+    "x": 5790,
     "y": 288.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -8170,7 +8228,7 @@
    "name": "p04-soft-wall-lagy3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 225.71428571428572,
     "scaleX": 1,
     "scaleY": 1,
@@ -8207,7 +8265,7 @@
    "name": "p04-soft-wall-layt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4350,
+    "x": 5790,
     "y": 216.71428571428572,
     "scaleX": 1,
     "scaleY": 1,
@@ -8238,7 +8296,7 @@
    "name": "p04-soft-wall-laxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4720,
+    "x": 6160,
     "y": 464,
     "scaleX": 1,
     "scaleY": 1,
@@ -8269,7 +8327,7 @@
    "name": "p04-soft-wall-layl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4396,
+    "x": 5836,
     "y": 180,
     "scaleX": 1,
     "scaleY": 1,
@@ -8300,7 +8358,7 @@
    "name": "p04-soft-wall-rbbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5014,
+    "x": 6454,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -8327,7 +8385,7 @@
    "name": "p04-soft-wall-rbax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 440.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -8364,7 +8422,7 @@
    "name": "p04-soft-wall-rbay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020.0,
+    "x": 6460.0,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -8401,7 +8459,7 @@
    "name": "p04-soft-wall-rbxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5000.0,
+    "x": 6440.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -8432,7 +8490,7 @@
    "name": "p04-soft-wall-rbxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5208.0,
+    "x": 6648.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -8463,7 +8521,7 @@
    "name": "p04-soft-wall-rbxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5416.0,
+    "x": 6856.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -8494,7 +8552,7 @@
    "name": "p04-soft-wall-rbgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 368.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -8531,7 +8589,7 @@
    "name": "p04-soft-wall-rbyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4980,
+    "x": 6420,
     "y": 359.57142857142856,
     "scaleX": 1,
     "scaleY": 1,
@@ -8562,7 +8620,7 @@
    "name": "p04-soft-wall-rbgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 297.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -8599,7 +8657,7 @@
    "name": "p04-soft-wall-rbyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4980,
+    "x": 6420,
     "y": 288.1428571428571,
     "scaleX": 1,
     "scaleY": 1,
@@ -8630,7 +8688,7 @@
    "name": "p04-soft-wall-rbgy3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 225.71428571428572,
     "scaleX": 1,
     "scaleY": 1,
@@ -8667,7 +8725,7 @@
    "name": "p04-soft-wall-rbyt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4980,
+    "x": 6420,
     "y": 216.71428571428572,
     "scaleX": 1,
     "scaleY": 1,
@@ -8698,7 +8756,7 @@
    "name": "p04-soft-wall-rbxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5350,
+    "x": 6790,
     "y": 464,
     "scaleX": 1,
     "scaleY": 1,
@@ -8729,7 +8787,7 @@
    "name": "p04-soft-wall-rbyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5026,
+    "x": 6466,
     "y": 180,
     "scaleX": 1,
     "scaleY": 1,
@@ -8760,7 +8818,7 @@
    "name": "p04-soft-wall-parL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390.0,
+    "x": 5830.0,
     "y": 216.78571428571428,
     "scaleX": 1,
     "scaleY": 1,
@@ -8993,7 +9051,7 @@
    "name": "p04-soft-wall-parR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020.0,
+    "x": 6460.0,
     "y": 216.78571428571428,
     "scaleX": 1,
     "scaleY": 1,
@@ -9226,7 +9284,7 @@
    "name": "p04-soft-wall-tl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -9257,7 +9315,7 @@
    "name": "p04-soft-wall-tr",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 140,
     "scaleX": 1,
     "scaleY": 1,
@@ -9288,7 +9346,7 @@
    "name": "p04-soft-wall-wallL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4598.0,
+    "x": 6038.0,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -9327,7 +9385,7 @@
    "name": "p04-soft-wall-wallR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5228.0,
+    "x": 6668.0,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -9366,7 +9424,7 @@
    "name": "p04-soft-wall-dotL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4484.0,
+    "x": 5924.0,
     "y": 403.2142857142857,
     "scaleX": 1,
     "scaleY": 1,
@@ -9401,7 +9459,7 @@
    "name": "p04-soft-wall-dotR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5218.0,
+    "x": 6658.0,
     "y": 394.2857142857143,
     "scaleX": 1,
     "scaleY": 1,
@@ -9436,7 +9494,7 @@
    "name": "p04-soft-wall-tagL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4606.0,
+    "x": 6046.0,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
@@ -9468,7 +9526,7 @@
    "name": "p04-soft-wall-tagR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5236.0,
+    "x": 6676.0,
     "y": 200,
     "scaleX": 1,
     "scaleY": 1,
@@ -9500,7 +9558,7 @@
    "name": "p04-soft-wall-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390,
+    "x": 5830,
     "y": 486,
     "scaleX": 1,
     "scaleY": 1,
@@ -9534,7 +9592,7 @@
    "name": "p04-soft-wall-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5020,
+    "x": 6460,
     "y": 486,
     "scaleX": 1,
     "scaleY": 1,
@@ -9568,7 +9626,7 @@
    "name": "p04-soft-wall-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5500,
+    "x": 6940,
     "y": 560,
     "scaleX": 1,
     "scaleY": 1,
@@ -9604,7 +9662,7 @@
    "name": "p04-soft-wall-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4650,
+    "x": 6090,
     "y": 566,
     "scaleX": 1,
     "scaleY": 1,
@@ -9638,7 +9696,7 @@
    "name": "p04-soft-wall-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4362.48,
+    "x": 5802.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -9665,7 +9723,7 @@
    "name": "p04-soft-wall-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4387.68,
+    "x": 5827.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -9692,7 +9750,7 @@
    "name": "p04-soft-wall-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -9719,7 +9777,7 @@
    "name": "p04-soft-wall-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.84,
+    "x": 5805.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -9746,7 +9804,7 @@
    "name": "p04-soft-wall-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -9773,7 +9831,7 @@
    "name": "p04-soft-wall-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4386.0,
+    "x": 5826.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -9800,7 +9858,7 @@
    "name": "p04-soft-wall-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4377.6,
+    "x": 5817.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -9827,7 +9885,7 @@
    "name": "p04-soft-wall-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4383.9,
+    "x": 5823.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -9854,7 +9912,7 @@
    "name": "p04-soft-wall-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4403.64,
+    "x": 5843.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -9895,7 +9953,7 @@
    "name": "p04-soft-wall-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4421.7,
+    "x": 5861.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -9922,7 +9980,7 @@
    "name": "p04-soft-wall-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4364.16,
+    "x": 5804.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -9963,7 +10021,7 @@
    "name": "p04-soft-wall-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4360.38,
+    "x": 5800.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -9990,7 +10048,7 @@
    "name": "p04-soft-wall-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4404.9,
+    "x": 5844.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10017,7 +10075,7 @@
    "name": "p04-soft-wall-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4357.86,
+    "x": 5797.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -10044,7 +10102,7 @@
    "name": "p04-soft-wall-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4361.64,
+    "x": 5801.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10071,7 +10129,7 @@
    "name": "p04-soft-wall-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4366.26,
+    "x": 5806.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -10098,7 +10156,7 @@
    "name": "p04-soft-wall-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -10125,7 +10183,7 @@
    "name": "p04-soft-wall-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4368.36,
+    "x": 5808.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -10152,7 +10210,7 @@
    "name": "p04-soft-wall-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4369.2,
+    "x": 5809.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10189,7 +10247,7 @@
    "name": "p04-soft-wall-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4367.1,
+    "x": 5807.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -10216,7 +10274,7 @@
    "name": "p04-soft-wall-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4390.2,
+    "x": 5830.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10243,7 +10301,7 @@
    "name": "p04-soft-wall-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4393.56,
+    "x": 5833.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -10270,7 +10328,7 @@
    "name": "p04-soft-wall-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4394.4,
+    "x": 5834.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10297,7 +10355,7 @@
    "name": "p04-soft-wall-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4371.72,
+    "x": 5811.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -10324,7 +10382,7 @@
    "name": "p04-soft-wall-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.08,
+    "x": 5815.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -10351,7 +10409,7 @@
    "name": "p04-soft-wall-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4375.92,
+    "x": 5815.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -10378,7 +10436,7 @@
    "name": "p04-soft-wall-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4391.04,
+    "x": 5831.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -10415,7 +10473,7 @@
    "name": "p04-soft-wall-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4372.56,
+    "x": 5812.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -10452,7 +10510,7 @@
    "name": "p04-soft-wall-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4398.6,
+    "x": 5838.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -10479,7 +10537,7 @@
    "name": "p04-soft-wall-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4365.0,
+    "x": 5805.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -10506,7 +10564,7 @@
    "name": "p04-soft-wall-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4379.7,
+    "x": 5819.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -10571,7 +10629,7 @@
    "name": "p05-three-kinds-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5760,
+    "x": 7200,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -10598,7 +10656,7 @@
    "name": "p05-three-kinds-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -10625,7 +10683,7 @@
    "name": "p05-three-kinds-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -10639,7 +10697,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -10656,7 +10714,7 @@
    "name": "p05-three-kinds-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800,
+    "x": 7240,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -10670,7 +10728,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 12,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -10678,7 +10736,7 @@
     "lineHeight": 1.25,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Six 1-D points, optimum for $C=5$: $w=1$, $b=-2$, so decision point $2$ and purple lines at $1$ and $3$. Each point's $\\alpha$ is shown as a bar height, and the dashed line is the upper bound $C$.",
+   "text": "Six one-dimensional points, optimum for $C=5$: $w=1$, $b=-2$, so decision point $2$ and purple lines at $1$ and $3$. Each point's $\\alpha$ is shown as a bar height, and the dashed line is the upper bound $C$.",
    "shapeKind": "rectangle"
   },
   "p05-three-kinds-src": {
@@ -10687,7 +10745,7 @@
    "name": "p05-three-kinds-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -10718,7 +10776,7 @@
    "name": "p05-three-kinds-nlax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5860,
+    "x": 7300,
     "y": 400,
     "scaleX": 1,
     "scaleY": 1,
@@ -10755,7 +10813,7 @@
    "name": "p05-three-kinds-nltn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5844,
+    "x": 7284,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10786,7 +10844,7 @@
    "name": "p05-three-kinds-nlt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6014,
+    "x": 7454,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10817,7 +10875,7 @@
    "name": "p05-three-kinds-nlt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6184,
+    "x": 7624,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10848,7 +10906,7 @@
    "name": "p05-three-kinds-nlt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6354,
+    "x": 7794,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10879,7 +10937,7 @@
    "name": "p05-three-kinds-nlt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6524,
+    "x": 7964,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10910,7 +10968,7 @@
    "name": "p05-three-kinds-nlt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6694,
+    "x": 8134,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10941,7 +10999,7 @@
    "name": "p05-three-kinds-nlt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6864,
+    "x": 8304,
     "y": 412,
     "scaleX": 1,
     "scaleY": 1,
@@ -10972,7 +11030,7 @@
    "name": "p05-three-kinds-pbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 150,
     "scaleX": 1,
     "scaleY": 1,
@@ -10999,7 +11057,7 @@
    "name": "p05-three-kinds-gd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6370,
+    "x": 7810,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -11036,7 +11094,7 @@
    "name": "p05-three-kinds-m1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6200,
+    "x": 7640,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -11074,7 +11132,7 @@
    "name": "p05-three-kinds-m3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6540,
+    "x": 7980,
     "y": 160,
     "scaleX": 1,
     "scaleY": 1,
@@ -11112,7 +11170,7 @@
    "name": "p05-three-kinds-cap",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5870,
+    "x": 7310,
     "y": 230,
     "scaleX": 1,
     "scaleY": 1,
@@ -11150,7 +11208,7 @@
    "name": "p05-three-kinds-capt",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5874,
+    "x": 7314,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -11181,7 +11239,7 @@
    "name": "p05-three-kinds-ptp0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6291.0,
+    "x": 7731.0,
     "y": 385,
     "scaleX": 1,
     "scaleY": 1,
@@ -11215,7 +11273,7 @@
    "name": "p05-three-kinds-ptp1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6529.0,
+    "x": 7969.0,
     "y": 385,
     "scaleX": 1,
     "scaleY": 1,
@@ -11249,7 +11307,7 @@
    "name": "p05-three-kinds-ptp2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6699.0,
+    "x": 8139.0,
     "y": 385,
     "scaleX": 1,
     "scaleY": 1,
@@ -11283,7 +11341,7 @@
    "name": "p05-three-kinds-ptn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6017.0,
+    "x": 7457.0,
     "y": 384,
     "scaleX": 1,
     "scaleY": 1,
@@ -11313,7 +11371,7 @@
    "name": "p05-three-kinds-ptn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6187.0,
+    "x": 7627.0,
     "y": 384,
     "scaleX": 1,
     "scaleY": 1,
@@ -11343,7 +11401,7 @@
    "name": "p05-three-kinds-ptn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6425.0,
+    "x": 7865.0,
     "y": 384,
     "scaleX": 1,
     "scaleY": 1,
@@ -11373,7 +11431,7 @@
    "name": "p05-three-kinds-barp2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6692.0,
+    "x": 8132.0,
     "y": 376,
     "scaleX": 1,
     "scaleY": 1,
@@ -11401,7 +11459,7 @@
    "name": "p05-three-kinds-btp2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6670.0,
+    "x": 8110.0,
     "y": 348,
     "scaleX": 1,
     "scaleY": 1,
@@ -11433,7 +11491,7 @@
    "name": "p05-three-kinds-barn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6012.0,
+    "x": 7452.0,
     "y": 376,
     "scaleX": 1,
     "scaleY": 1,
@@ -11461,7 +11519,7 @@
    "name": "p05-three-kinds-btn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5990.0,
+    "x": 7430.0,
     "y": 348,
     "scaleX": 1,
     "scaleY": 1,
@@ -11493,7 +11551,7 @@
    "name": "p05-three-kinds-barp1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6522.0,
+    "x": 7962.0,
     "y": 305.0000000000005,
     "scaleX": 1,
     "scaleY": 1,
@@ -11521,7 +11579,7 @@
    "name": "p05-three-kinds-btp1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6500.0,
+    "x": 7940.0,
     "y": 277.0000000000005,
     "scaleX": 1,
     "scaleY": 1,
@@ -11553,7 +11611,7 @@
    "name": "p05-three-kinds-barn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6182.0,
+    "x": 7622.0,
     "y": 304.9999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -11581,7 +11639,7 @@
    "name": "p05-three-kinds-btn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6160.0,
+    "x": 7600.0,
     "y": 276.9999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -11613,7 +11671,7 @@
    "name": "p05-three-kinds-barp0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6284.0,
+    "x": 7724.0,
     "y": 230.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11641,7 +11699,7 @@
    "name": "p05-three-kinds-btp0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6262.0,
+    "x": 7702.0,
     "y": 202.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11673,7 +11731,7 @@
    "name": "p05-three-kinds-barn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6420.0,
+    "x": 7860.0,
     "y": 230.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11701,7 +11759,7 @@
    "name": "p05-three-kinds-btn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6398.0,
+    "x": 7838.0,
     "y": 202.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -11733,7 +11791,7 @@
    "name": "p05-three-kinds-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5820,
+    "x": 7260,
     "y": 466,
     "scaleX": 1,
     "scaleY": 1,
@@ -11767,7 +11825,7 @@
    "name": "p05-three-kinds-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6210,
+    "x": 7650,
     "y": 466,
     "scaleX": 1,
     "scaleY": 1,
@@ -11801,7 +11859,7 @@
    "name": "p05-three-kinds-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 6600,
+    "x": 8040,
     "y": 466,
     "scaleX": 1,
     "scaleY": 1,
@@ -11835,7 +11893,7 @@
    "name": "p05-three-kinds-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5802.48,
+    "x": 7242.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -11862,7 +11920,7 @@
    "name": "p05-three-kinds-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5827.68,
+    "x": 7267.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -11889,7 +11947,7 @@
    "name": "p05-three-kinds-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -11916,7 +11974,7 @@
    "name": "p05-three-kinds-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.84,
+    "x": 7245.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -11943,7 +12001,7 @@
    "name": "p05-three-kinds-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -11970,7 +12028,7 @@
    "name": "p05-three-kinds-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5826.0,
+    "x": 7266.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -11997,7 +12055,7 @@
    "name": "p05-three-kinds-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5817.6,
+    "x": 7257.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -12024,7 +12082,7 @@
    "name": "p05-three-kinds-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5823.9,
+    "x": 7263.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -12051,7 +12109,7 @@
    "name": "p05-three-kinds-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5843.64,
+    "x": 7283.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -12092,7 +12150,7 @@
    "name": "p05-three-kinds-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5861.7,
+    "x": 7301.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -12119,7 +12177,7 @@
    "name": "p05-three-kinds-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5804.16,
+    "x": 7244.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -12160,7 +12218,7 @@
    "name": "p05-three-kinds-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5800.38,
+    "x": 7240.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -12187,7 +12245,7 @@
    "name": "p05-three-kinds-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5844.9,
+    "x": 7284.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12214,7 +12272,7 @@
    "name": "p05-three-kinds-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5797.86,
+    "x": 7237.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -12241,7 +12299,7 @@
    "name": "p05-three-kinds-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5801.64,
+    "x": 7241.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12268,7 +12326,7 @@
    "name": "p05-three-kinds-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5806.26,
+    "x": 7246.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12295,7 +12353,7 @@
    "name": "p05-three-kinds-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -12322,7 +12380,7 @@
    "name": "p05-three-kinds-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5808.36,
+    "x": 7248.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12349,7 +12407,7 @@
    "name": "p05-three-kinds-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5809.2,
+    "x": 7249.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12386,7 +12444,7 @@
    "name": "p05-three-kinds-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5807.1,
+    "x": 7247.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -12413,7 +12471,7 @@
    "name": "p05-three-kinds-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5830.2,
+    "x": 7270.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12440,7 +12498,7 @@
    "name": "p05-three-kinds-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5833.56,
+    "x": 7273.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12467,7 +12525,7 @@
    "name": "p05-three-kinds-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5834.4,
+    "x": 7274.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12494,7 +12552,7 @@
    "name": "p05-three-kinds-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5811.72,
+    "x": 7251.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -12521,7 +12579,7 @@
    "name": "p05-three-kinds-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.08,
+    "x": 7255.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -12548,7 +12606,7 @@
    "name": "p05-three-kinds-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5815.92,
+    "x": 7255.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -12575,7 +12633,7 @@
    "name": "p05-three-kinds-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5831.04,
+    "x": 7271.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -12612,7 +12670,7 @@
    "name": "p05-three-kinds-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5812.56,
+    "x": 7252.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -12649,7 +12707,7 @@
    "name": "p05-three-kinds-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5838.6,
+    "x": 7278.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12676,7 +12734,7 @@
    "name": "p05-three-kinds-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5805.0,
+    "x": 7245.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -12703,7 +12761,7 @@
    "name": "p05-three-kinds-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5819.7,
+    "x": 7259.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -12768,7 +12826,7 @@
    "name": "p06-two-c-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7200,
+    "x": 8640,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12795,7 +12853,7 @@
    "name": "p06-two-c-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -12822,7 +12880,7 @@
    "name": "p06-two-c-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -12844,7 +12902,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ?",
+   "text": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ?",
    "shapeKind": "rectangle"
   },
   "p06-two-c-ctx": {
@@ -12853,7 +12911,7 @@
    "name": "p06-two-c-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -12867,7 +12925,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 15,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -12884,7 +12942,7 @@
    "name": "p06-two-c-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -12915,7 +12973,7 @@
    "name": "p06-two-c-abg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240.0,
+    "x": 8680.0,
     "y": 213.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -12942,7 +13000,7 @@
    "name": "p06-two-c-aax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7246.0,
+    "x": 8686.0,
     "y": 360,
     "scaleX": 1,
     "scaleY": 1,
@@ -12979,7 +13037,7 @@
    "name": "p06-two-c-aay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7415,
+    "x": 8855,
     "y": 219.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13016,7 +13074,7 @@
    "name": "p06-two-c-axl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7550.0,
+    "x": 8990.0,
     "y": 334,
     "scaleX": 1,
     "scaleY": 1,
@@ -13047,7 +13105,7 @@
    "name": "p06-two-c-ayl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7423,
+    "x": 8863,
     "y": 215.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13078,7 +13136,7 @@
    "name": "p06-two-c-ap0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7462.0,
+    "x": 8902.0,
     "y": 267.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13112,7 +13170,7 @@
    "name": "p06-two-c-ap1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7511.0,
+    "x": 8951.0,
     "y": 246.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13146,7 +13204,7 @@
    "name": "p06-two-c-ap2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7420.0,
+    "x": 8860.0,
     "y": 295.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13180,7 +13238,7 @@
    "name": "p06-two-c-ap3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7532.0,
+    "x": 8972.0,
     "y": 330.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13214,7 +13272,7 @@
    "name": "p06-two-c-ap4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7392.0,
+    "x": 8832.0,
     "y": 309.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13248,7 +13306,7 @@
    "name": "p06-two-c-an0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7348.0,
+    "x": 8788.0,
     "y": 434.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13278,7 +13336,7 @@
    "name": "p06-two-c-an1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7299.0,
+    "x": 8739.0,
     "y": 385.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13308,7 +13366,7 @@
    "name": "p06-two-c-an2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7383.0,
+    "x": 8823.0,
     "y": 406.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13338,7 +13396,7 @@
    "name": "p06-two-c-an3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.0,
+    "x": 8718.0,
     "y": 364.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13368,7 +13426,7 @@
    "name": "p06-two-c-an4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7425.0,
+    "x": 8865.0,
     "y": 378.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13398,7 +13456,7 @@
    "name": "p06-two-c-bbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7615.0,
+    "x": 9055.0,
     "y": 213.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13425,7 +13483,7 @@
    "name": "p06-two-c-bax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7621.0,
+    "x": 9061.0,
     "y": 360,
     "scaleX": 1,
     "scaleY": 1,
@@ -13462,7 +13520,7 @@
    "name": "p06-two-c-bay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7790,
+    "x": 9230,
     "y": 219.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13499,7 +13557,7 @@
    "name": "p06-two-c-bxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7925.0,
+    "x": 9365.0,
     "y": 334,
     "scaleX": 1,
     "scaleY": 1,
@@ -13530,7 +13588,7 @@
    "name": "p06-two-c-byl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7798,
+    "x": 9238,
     "y": 215.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13561,7 +13619,7 @@
    "name": "p06-two-c-bp0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7837.0,
+    "x": 9277.0,
     "y": 267.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13595,7 +13653,7 @@
    "name": "p06-two-c-bp1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7886.0,
+    "x": 9326.0,
     "y": 246.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13629,7 +13687,7 @@
    "name": "p06-two-c-bp2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7795.0,
+    "x": 9235.0,
     "y": 295.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13663,7 +13721,7 @@
    "name": "p06-two-c-bp3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7907.0,
+    "x": 9347.0,
     "y": 330.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13697,7 +13755,7 @@
    "name": "p06-two-c-bp4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7767.0,
+    "x": 9207.0,
     "y": 309.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13731,7 +13789,7 @@
    "name": "p06-two-c-bn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7723.0,
+    "x": 9163.0,
     "y": 434.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13761,7 +13819,7 @@
    "name": "p06-two-c-bn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7674.0,
+    "x": 9114.0,
     "y": 385.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13791,7 +13849,7 @@
    "name": "p06-two-c-bn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7758.0,
+    "x": 9198.0,
     "y": 406.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13821,7 +13879,7 @@
    "name": "p06-two-c-bn3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7653.0,
+    "x": 9093.0,
     "y": 364.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13851,7 +13909,7 @@
    "name": "p06-two-c-bn4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7800.0,
+    "x": 9240.0,
     "y": 378.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -13881,7 +13939,7 @@
    "name": "p06-two-c-ta",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240,
+    "x": 8680,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -13912,7 +13970,7 @@
    "name": "p06-two-c-tb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7615,
+    "x": 9055,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -13943,7 +14001,7 @@
    "name": "p06-two-c-ga",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240.0,
+    "x": 8680.0,
     "y": 214.85745296671416,
     "scaleX": 1,
     "scaleY": 1,
@@ -13981,7 +14039,7 @@
    "name": "p06-two-c-ma1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7385.326436781609,
+    "x": 8825.326436781608,
     "y": 213.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14020,7 +14078,7 @@
    "name": "p06-two-c-ma2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240.0,
+    "x": 8680.0,
     "y": 334.34008683067935,
     "scaleX": 1,
     "scaleY": 1,
@@ -14059,7 +14117,7 @@
    "name": "p06-two-c-gb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7615.0,
+    "x": 9055.0,
     "y": 326.225000987618,
     "scaleX": 1,
     "scaleY": 1,
@@ -14097,7 +14155,7 @@
    "name": "p06-two-c-mb1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7615.0,
+    "x": 9055.0,
     "y": 293.8500009264283,
     "scaleX": 1,
     "scaleY": 1,
@@ -14136,7 +14194,7 @@
    "name": "p06-two-c-mb2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7615.0,
+    "x": 9055.0,
     "y": 358.60000104880766,
     "scaleX": 1,
     "scaleY": 1,
@@ -14175,7 +14233,7 @@
    "name": "p06-two-c-ca",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7980,
+    "x": 9420,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -14209,7 +14267,7 @@
    "name": "p06-two-c-cb",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7980,
+    "x": 9420,
     "y": 226,
     "scaleX": 1,
     "scaleY": 1,
@@ -14243,7 +14301,7 @@
    "name": "p06-two-c-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8390,
+    "x": 9830,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -14279,7 +14337,7 @@
    "name": "p06-two-c-c3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7980,
+    "x": 9420,
     "y": 340,
     "scaleX": 1,
     "scaleY": 1,
@@ -14313,7 +14371,7 @@
    "name": "p06-two-c-wi",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7980,
+    "x": 9420,
     "y": 480,
     "scaleX": 1,
     "scaleY": 1,
@@ -14344,7 +14402,7 @@
    "name": "p06-two-c-c4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8030,
+    "x": 9470,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -14378,7 +14436,7 @@
    "name": "p06-two-c-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7242.48,
+    "x": 8682.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -14405,7 +14463,7 @@
    "name": "p06-two-c-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7267.68,
+    "x": 8707.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14432,7 +14490,7 @@
    "name": "p06-two-c-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -14459,7 +14517,7 @@
    "name": "p06-two-c-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.84,
+    "x": 8685.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14486,7 +14544,7 @@
    "name": "p06-two-c-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -14513,7 +14571,7 @@
    "name": "p06-two-c-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7266.0,
+    "x": 8706.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14540,7 +14598,7 @@
    "name": "p06-two-c-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7257.6,
+    "x": 8697.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -14567,7 +14625,7 @@
    "name": "p06-two-c-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7263.9,
+    "x": 8703.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -14594,7 +14652,7 @@
    "name": "p06-two-c-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7283.64,
+    "x": 8723.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -14635,7 +14693,7 @@
    "name": "p06-two-c-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7301.7,
+    "x": 8741.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -14662,7 +14720,7 @@
    "name": "p06-two-c-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7244.16,
+    "x": 8684.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -14703,7 +14761,7 @@
    "name": "p06-two-c-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7240.38,
+    "x": 8680.380000000001,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -14730,7 +14788,7 @@
    "name": "p06-two-c-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7284.9,
+    "x": 8724.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14757,7 +14815,7 @@
    "name": "p06-two-c-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7237.86,
+    "x": 8677.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -14784,7 +14842,7 @@
    "name": "p06-two-c-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7241.64,
+    "x": 8681.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -14811,7 +14869,7 @@
    "name": "p06-two-c-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7246.26,
+    "x": 8686.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -14838,7 +14896,7 @@
    "name": "p06-two-c-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -14865,7 +14923,7 @@
    "name": "p06-two-c-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7248.36,
+    "x": 8688.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -14892,7 +14950,7 @@
    "name": "p06-two-c-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7249.2,
+    "x": 8689.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14929,7 +14987,7 @@
    "name": "p06-two-c-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7247.1,
+    "x": 8687.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -14956,7 +15014,7 @@
    "name": "p06-two-c-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7270.2,
+    "x": 8710.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -14983,7 +15041,7 @@
    "name": "p06-two-c-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7273.56,
+    "x": 8713.560000000001,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15010,7 +15068,7 @@
    "name": "p06-two-c-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7274.4,
+    "x": 8714.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15037,7 +15095,7 @@
    "name": "p06-two-c-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7251.72,
+    "x": 8691.720000000001,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -15064,7 +15122,7 @@
    "name": "p06-two-c-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.08,
+    "x": 8695.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -15091,7 +15149,7 @@
    "name": "p06-two-c-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7255.92,
+    "x": 8695.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -15118,7 +15176,7 @@
    "name": "p06-two-c-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7271.04,
+    "x": 8711.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -15155,7 +15213,7 @@
    "name": "p06-two-c-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7252.56,
+    "x": 8692.560000000001,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -15192,7 +15250,7 @@
    "name": "p06-two-c-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7278.6,
+    "x": 8718.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15219,7 +15277,7 @@
    "name": "p06-two-c-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7245.0,
+    "x": 8685.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -15246,7 +15304,7 @@
    "name": "p06-two-c-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7259.7,
+    "x": 8699.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -15311,7 +15369,7 @@
    "name": "p07-sweep-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8640,
+    "x": 10080,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15338,7 +15396,7 @@
    "name": "p07-sweep-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -15365,7 +15423,7 @@
    "name": "p07-sweep-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -15379,7 +15437,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 21,
+    "fontSize": 26,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -15396,7 +15454,7 @@
    "name": "p07-sweep-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -15427,7 +15485,7 @@
    "name": "p07-sweep-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -15449,7 +15507,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Source: Left: the six 1-D points (compute_data.kp15x()); right: the lecture's ten 2-D points (compute_data.kp15()). Both are scipy dual solutions.",
+   "text": "Source: Left: the six one-dimensional points (compute_data.kp15x()); right: the lecture's ten two-dimensional points (compute_data.kp15()). Both are scipy dual solutions.",
    "shapeKind": "rectangle"
   },
   "p07-sweep-labg": {
@@ -15458,7 +15516,7 @@
    "name": "p07-sweep-labg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8714,
+    "x": 10154,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -15485,7 +15543,7 @@
    "name": "p07-sweep-laax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 440.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -15522,7 +15580,7 @@
    "name": "p07-sweep-laay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8928.0,
+    "x": 10368.0,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -15559,7 +15617,7 @@
    "name": "p07-sweep-laxtn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8700.0,
+    "x": 10140.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15590,7 +15648,7 @@
    "name": "p07-sweep-laxtn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8804.0,
+    "x": 10244.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15621,7 +15679,7 @@
    "name": "p07-sweep-laxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8908.0,
+    "x": 10348.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15652,7 +15710,7 @@
    "name": "p07-sweep-laxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9012.0,
+    "x": 10452.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15683,7 +15741,7 @@
    "name": "p07-sweep-laxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9116.0,
+    "x": 10556.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15714,7 +15772,7 @@
    "name": "p07-sweep-laxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9220.0,
+    "x": 10660.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15745,7 +15803,7 @@
    "name": "p07-sweep-lagy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 384.44444444444446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15782,7 +15840,7 @@
    "name": "p07-sweep-layt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 375.44444444444446,
     "scaleX": 1,
     "scaleY": 1,
@@ -15813,7 +15871,7 @@
    "name": "p07-sweep-lagy4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 328.8888888888889,
     "scaleX": 1,
     "scaleY": 1,
@@ -15850,7 +15908,7 @@
    "name": "p07-sweep-layt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 319.8888888888889,
     "scaleX": 1,
     "scaleY": 1,
@@ -15881,7 +15939,7 @@
    "name": "p07-sweep-lagy6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 273.33333333333337,
     "scaleX": 1,
     "scaleY": 1,
@@ -15918,7 +15976,7 @@
    "name": "p07-sweep-layt6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 264.33333333333337,
     "scaleX": 1,
     "scaleY": 1,
@@ -15949,7 +16007,7 @@
    "name": "p07-sweep-lagy8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 217.7777777777778,
     "scaleX": 1,
     "scaleY": 1,
@@ -15986,7 +16044,7 @@
    "name": "p07-sweep-layt8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680,
+    "x": 10120,
     "y": 208.7777777777778,
     "scaleX": 1,
     "scaleY": 1,
@@ -16017,7 +16075,7 @@
    "name": "p07-sweep-laxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9050,
+    "x": 10490,
     "y": 464,
     "scaleX": 1,
     "scaleY": 1,
@@ -16048,7 +16106,7 @@
    "name": "p07-sweep-layl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8726,
+    "x": 10166,
     "y": 180,
     "scaleX": 1,
     "scaleY": 1,
@@ -16062,7 +16120,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -16070,7 +16128,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Total slack (six 1-D points, non-separable)",
+   "text": "Total slack (six one-dimensional points, non-separable)",
    "shapeKind": "rectangle"
   },
   "p07-sweep-rbbg": {
@@ -16079,7 +16137,7 @@
    "name": "p07-sweep-rbbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9334,
+    "x": 10774,
     "y": 178,
     "scaleX": 1,
     "scaleY": 1,
@@ -16106,7 +16164,7 @@
    "name": "p07-sweep-rbax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 440.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -16143,7 +16201,7 @@
    "name": "p07-sweep-rbay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9548.0,
+    "x": 10988.0,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -16180,7 +16238,7 @@
    "name": "p07-sweep-rbxtn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9320.0,
+    "x": 10760.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16211,7 +16269,7 @@
    "name": "p07-sweep-rbxtn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9424.0,
+    "x": 10864.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16242,7 +16300,7 @@
    "name": "p07-sweep-rbxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9528.0,
+    "x": 10968.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16273,7 +16331,7 @@
    "name": "p07-sweep-rbxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9632.0,
+    "x": 11072.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16304,7 +16362,7 @@
    "name": "p07-sweep-rbxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9736.0,
+    "x": 11176.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16335,7 +16393,7 @@
    "name": "p07-sweep-rbxt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9840.0,
+    "x": 11280.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16366,7 +16424,7 @@
    "name": "p07-sweep-rbgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 384.44444444444446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16403,7 +16461,7 @@
    "name": "p07-sweep-rbyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 375.44444444444446,
     "scaleX": 1,
     "scaleY": 1,
@@ -16434,7 +16492,7 @@
    "name": "p07-sweep-rbgy4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 328.8888888888889,
     "scaleX": 1,
     "scaleY": 1,
@@ -16471,7 +16529,7 @@
    "name": "p07-sweep-rbyt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 319.8888888888889,
     "scaleX": 1,
     "scaleY": 1,
@@ -16502,7 +16560,7 @@
    "name": "p07-sweep-rbgy6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 273.33333333333337,
     "scaleX": 1,
     "scaleY": 1,
@@ -16539,7 +16597,7 @@
    "name": "p07-sweep-rbyt6",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 264.33333333333337,
     "scaleX": 1,
     "scaleY": 1,
@@ -16570,7 +16628,7 @@
    "name": "p07-sweep-rbgy8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 217.7777777777778,
     "scaleX": 1,
     "scaleY": 1,
@@ -16607,7 +16665,7 @@
    "name": "p07-sweep-rbyt8",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9300,
+    "x": 10740,
     "y": 208.7777777777778,
     "scaleX": 1,
     "scaleY": 1,
@@ -16638,7 +16696,7 @@
    "name": "p07-sweep-rbxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9670,
+    "x": 11110,
     "y": 464,
     "scaleX": 1,
     "scaleY": 1,
@@ -16669,7 +16727,7 @@
    "name": "p07-sweep-rbyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9346,
+    "x": 10786,
     "y": 180,
     "scaleX": 1,
     "scaleY": 1,
@@ -16683,7 +16741,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#64748b",
-    "fontSize": 13,
+    "fontSize": 11,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 400,
@@ -16691,7 +16749,7 @@
     "lineHeight": 1.35,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Total slack (ten 2-D points, separable)",
+   "text": "Total slack (ten two-dimensional points, separable)",
    "shapeKind": "rectangle"
   },
   "p07-sweep-cL": {
@@ -16700,7 +16758,7 @@
    "name": "p07-sweep-cL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720.0,
+    "x": 10160.0,
     "y": 280.8444444444434,
     "scaleX": 1,
     "scaleY": 1,
@@ -16774,7 +16832,7 @@
    "name": "p07-sweep-cR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340.0,
+    "x": 10780.0,
     "y": 196.5249999999989,
     "scaleX": 1,
     "scaleY": 1,
@@ -16848,7 +16906,7 @@
    "name": "p07-sweep-ptL",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8919.0,
+    "x": 10359.0,
     "y": 353.2222222222222,
     "scaleX": 1,
     "scaleY": 1,
@@ -16883,7 +16941,7 @@
    "name": "p07-sweep-ptR",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9611.692880450946,
+    "x": 11051.692880450946,
     "y": 430.9999994977168,
     "scaleX": 1,
     "scaleY": 1,
@@ -16918,7 +16976,7 @@
    "name": "p07-sweep-c1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8720,
+    "x": 10160,
     "y": 480,
     "scaleX": 1,
     "scaleY": 1,
@@ -16952,7 +17010,7 @@
    "name": "p07-sweep-c2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9340,
+    "x": 10780,
     "y": 480,
     "scaleX": 1,
     "scaleY": 1,
@@ -16986,7 +17044,7 @@
    "name": "p07-sweep-st",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 9820,
+    "x": 11260,
     "y": 540,
     "scaleX": 1,
     "scaleY": 1,
@@ -17022,7 +17080,7 @@
    "name": "p07-sweep-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8682.48,
+    "x": 10122.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -17049,7 +17107,7 @@
    "name": "p07-sweep-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8707.68,
+    "x": 10147.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -17076,7 +17134,7 @@
    "name": "p07-sweep-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -17103,7 +17161,7 @@
    "name": "p07-sweep-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.84,
+    "x": 10125.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -17130,7 +17188,7 @@
    "name": "p07-sweep-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -17157,7 +17215,7 @@
    "name": "p07-sweep-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8706.0,
+    "x": 10146.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -17184,7 +17242,7 @@
    "name": "p07-sweep-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8697.6,
+    "x": 10137.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -17211,7 +17269,7 @@
    "name": "p07-sweep-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8703.9,
+    "x": 10143.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -17238,7 +17296,7 @@
    "name": "p07-sweep-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8723.64,
+    "x": 10163.64,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -17279,7 +17337,7 @@
    "name": "p07-sweep-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8741.7,
+    "x": 10181.7,
     "y": 636.56,
     "scaleX": 1,
     "scaleY": 1,
@@ -17306,7 +17364,7 @@
    "name": "p07-sweep-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8684.16,
+    "x": 10124.16,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -17347,7 +17405,7 @@
    "name": "p07-sweep-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8680.38,
+    "x": 10120.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -17374,7 +17432,7 @@
    "name": "p07-sweep-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8724.9,
+    "x": 10164.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -17401,7 +17459,7 @@
    "name": "p07-sweep-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8677.86,
+    "x": 10117.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -17428,7 +17486,7 @@
    "name": "p07-sweep-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8681.64,
+    "x": 10121.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17455,7 +17513,7 @@
    "name": "p07-sweep-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8686.26,
+    "x": 10126.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -17482,7 +17540,7 @@
    "name": "p07-sweep-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -17509,7 +17567,7 @@
    "name": "p07-sweep-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8688.36,
+    "x": 10128.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17536,7 +17594,7 @@
    "name": "p07-sweep-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8689.2,
+    "x": 10129.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -17573,7 +17631,7 @@
    "name": "p07-sweep-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8687.1,
+    "x": 10127.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -17600,7 +17658,7 @@
    "name": "p07-sweep-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8710.2,
+    "x": 10150.2,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -17627,7 +17685,7 @@
    "name": "p07-sweep-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8713.56,
+    "x": 10153.56,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -17654,7 +17712,7 @@
    "name": "p07-sweep-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8714.4,
+    "x": 10154.4,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17681,7 +17739,7 @@
    "name": "p07-sweep-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8691.72,
+    "x": 10131.72,
     "y": 610.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -17708,7 +17766,7 @@
    "name": "p07-sweep-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.08,
+    "x": 10135.08,
     "y": 612.1999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -17735,7 +17793,7 @@
    "name": "p07-sweep-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8695.92,
+    "x": 10135.92,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -17762,7 +17820,7 @@
    "name": "p07-sweep-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8711.04,
+    "x": 10151.04,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -17799,7 +17857,7 @@
    "name": "p07-sweep-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8692.56,
+    "x": 10132.56,
     "y": 604.22,
     "scaleX": 1,
     "scaleY": 1,
@@ -17836,7 +17894,7 @@
    "name": "p07-sweep-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8718.6,
+    "x": 10158.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17863,7 +17921,7 @@
    "name": "p07-sweep-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8685.0,
+    "x": 10125.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -17890,7 +17948,7 @@
    "name": "p07-sweep-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8699.7,
+    "x": 10139.7,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -17955,7 +18013,7 @@
    "name": "p08-practice-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10080,
+    "x": 11520,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -17982,7 +18040,7 @@
    "name": "p08-practice-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -18009,7 +18067,7 @@
    "name": "p08-practice-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -18023,7 +18081,7 @@
     "fill": "transparent",
     "stroke": "transparent",
     "textColor": "#1f2937",
-    "fontSize": 24,
+    "fontSize": 28,
     "radius": 0,
     "borderWidth": 0,
     "fontWeight": 700,
@@ -18031,7 +18089,7 @@
     "lineHeight": 1.2,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Practice: C=5, one point has q=0.7 and another q=−0.3: what does each cost?",
+   "text": "Practice: C=5, one point has q=0.7 and another q=$−0.3$: what does each cost?",
    "shapeKind": "rectangle"
   },
   "p08-practice-ctx": {
@@ -18040,7 +18098,7 @@
    "name": "p08-practice-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -18071,7 +18129,7 @@
    "name": "p08-practice-src",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 604,
     "scaleX": 1,
     "scaleY": 1,
@@ -18102,7 +18160,7 @@
    "name": "p08-practice-pcbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10154,
+    "x": 11594,
     "y": 168,
     "scaleX": 1,
     "scaleY": 1,
@@ -18129,7 +18187,7 @@
    "name": "p08-practice-pcax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160,
+    "x": 11600,
     "y": 440.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18166,7 +18224,7 @@
    "name": "p08-practice-pcay",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10333.333333333334,
+    "x": 11773.333333333334,
     "y": 180,
     "scaleX": 1,
     "scaleY": 1,
@@ -18203,7 +18261,7 @@
    "name": "p08-practice-pcxtn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10140.0,
+    "x": 11580.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -18234,7 +18292,7 @@
    "name": "p08-practice-pcxt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10313.333333333334,
+    "x": 11753.333333333334,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -18265,7 +18323,7 @@
    "name": "p08-practice-pcxt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10486.666666666666,
+    "x": 11926.666666666666,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -18296,7 +18354,7 @@
    "name": "p08-practice-pcxt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10660.0,
+    "x": 12100.0,
     "y": 446,
     "scaleX": 1,
     "scaleY": 1,
@@ -18327,7 +18385,7 @@
    "name": "p08-practice-pcgy1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160,
+    "x": 11600,
     "y": 310.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18364,7 +18422,7 @@
    "name": "p08-practice-pcyt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 301.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18395,7 +18453,7 @@
    "name": "p08-practice-pcgy2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160,
+    "x": 11600,
     "y": 180.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18432,7 +18490,7 @@
    "name": "p08-practice-pcyt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10120,
+    "x": 11560,
     "y": 171.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18463,7 +18521,7 @@
    "name": "p08-practice-pcxl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10490,
+    "x": 11930,
     "y": 464,
     "scaleX": 1,
     "scaleY": 1,
@@ -18494,7 +18552,7 @@
    "name": "p08-practice-pcyl",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10166,
+    "x": 11606,
     "y": 170,
     "scaleX": 1,
     "scaleY": 1,
@@ -18525,7 +18583,7 @@
    "name": "p08-practice-hcur",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10160.0,
+    "x": 11600.0,
     "y": 180.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18678,7 +18736,7 @@
    "name": "p08-practice-q",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 130,
     "scaleX": 1,
     "scaleY": 1,
@@ -18711,7 +18769,7 @@
    "name": "p08-practice-d1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10444.666666666666,
+    "x": 11884.666666666666,
     "y": 391.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18746,7 +18804,7 @@
    "name": "p08-practice-v1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10454.666666666666,
+    "x": 11894.666666666666,
     "y": 401.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18785,7 +18843,7 @@
    "name": "p08-practice-a1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 276,
     "scaleX": 1,
     "scaleY": 1,
@@ -18819,7 +18877,7 @@
    "name": "p08-practice-d2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10271.333333333334,
+    "x": 11711.333333333334,
     "y": 261.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18854,7 +18912,7 @@
    "name": "p08-practice-v2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10281.333333333334,
+    "x": 11721.333333333334,
     "y": 271.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -18893,7 +18951,7 @@
    "name": "p08-practice-a2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 358,
     "scaleX": 1,
     "scaleY": 1,
@@ -18927,7 +18985,7 @@
    "name": "p08-practice-b1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 470,
     "scaleX": 1,
     "scaleY": 1,
@@ -18955,7 +19013,7 @@
    "name": "p08-practice-b2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 506,
     "scaleX": 1,
     "scaleY": 1,
@@ -18983,7 +19041,7 @@
    "name": "p08-practice-a3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10760,
+    "x": 12200,
     "y": 540,
     "scaleX": 1,
     "scaleY": 1,
@@ -19017,7 +19075,7 @@
    "name": "p08-practice-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10122.48,
+    "x": 11562.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -19044,7 +19102,7 @@
    "name": "p08-practice-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10147.68,
+    "x": 11587.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -19071,7 +19129,7 @@
    "name": "p08-practice-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -19098,7 +19156,7 @@
    "name": "p08-practice-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.84,
+    "x": 11565.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -19125,7 +19183,7 @@
    "name": "p08-practice-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -19152,7 +19210,7 @@
    "name": "p08-practice-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10146.0,
+    "x": 11586.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -19179,7 +19237,7 @@
    "name": "p08-practice-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10137.6,
+    "x": 11577.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -19206,7 +19264,7 @@
    "name": "p08-practice-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.9,
+    "x": 11583.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -19233,7 +19291,7 @@
    "name": "p08-practice-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10124.16,
+    "x": 11564.16,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -19274,7 +19332,7 @@
    "name": "p08-practice-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.62,
+    "x": 11569.62,
     "y": 633.62,
     "scaleX": 1,
     "scaleY": 1,
@@ -19301,7 +19359,7 @@
    "name": "p08-practice-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10163.64,
+    "x": 11603.64,
     "y": 650.84,
     "scaleX": 1,
     "scaleY": 1,
@@ -19342,7 +19400,7 @@
    "name": "p08-practice-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10162.38,
+    "x": 11602.38,
     "y": 669.74,
     "scaleX": 1,
     "scaleY": 1,
@@ -19369,7 +19427,7 @@
    "name": "p08-practice-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10164.9,
+    "x": 11604.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -19396,7 +19454,7 @@
    "name": "p08-practice-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10117.86,
+    "x": 11557.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -19423,7 +19481,7 @@
    "name": "p08-practice-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10121.64,
+    "x": 11561.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -19450,7 +19508,7 @@
    "name": "p08-practice-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10126.26,
+    "x": 11566.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -19477,7 +19535,7 @@
    "name": "p08-practice-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.08,
+    "x": 11575.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -19504,7 +19562,7 @@
    "name": "p08-practice-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10128.36,
+    "x": 11568.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -19531,7 +19589,7 @@
    "name": "p08-practice-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10129.2,
+    "x": 11569.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -19568,7 +19626,7 @@
    "name": "p08-practice-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10127.1,
+    "x": 11567.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -19595,7 +19653,7 @@
    "name": "p08-practice-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10149.78,
+    "x": 11589.78,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -19622,7 +19680,7 @@
    "name": "p08-practice-m-pupil-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.14,
+    "x": 11593.14,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -19649,7 +19707,7 @@
    "name": "p08-practice-m-glint-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10153.98,
+    "x": 11593.98,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19676,7 +19734,7 @@
    "name": "p08-practice-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10131.3,
+    "x": 11571.3,
     "y": 610.0999999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -19703,7 +19761,7 @@
    "name": "p08-practice-m-pupil-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10134.66,
+    "x": 11574.66,
     "y": 610.1,
     "scaleX": 1,
     "scaleY": 1,
@@ -19730,7 +19788,7 @@
    "name": "p08-practice-m-glint-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10135.5,
+    "x": 11575.5,
     "y": 610.94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19757,7 +19815,7 @@
    "name": "p08-practice-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10151.04,
+    "x": 11591.04,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -19794,7 +19852,7 @@
    "name": "p08-practice-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10132.56,
+    "x": 11572.56,
     "y": 601.7,
     "scaleX": 1,
     "scaleY": 1,
@@ -19831,7 +19889,7 @@
    "name": "p08-practice-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.6,
+    "x": 11598.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19858,7 +19916,7 @@
    "name": "p08-practice-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10125.0,
+    "x": 11565.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -19885,7 +19943,7 @@
    "name": "p08-practice-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10143.48,
+    "x": 11583.48,
     "y": 629.42,
     "scaleX": 1,
     "scaleY": 1,
@@ -19912,7 +19970,7 @@
    "name": "p08-practice-m-mark",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10158.8,
+    "x": 11598.8,
     "y": 577.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -19943,7 +20001,7 @@
    "name": "p09-summary-bg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11520,
+    "x": 12960,
     "y": 0,
     "scaleX": 1,
     "scaleY": 1,
@@ -19970,7 +20028,7 @@
    "name": "p09-summary-rule",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 94,
     "scaleX": 1,
     "scaleY": 1,
@@ -19997,7 +20055,7 @@
    "name": "p09-summary-title",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 16,
     "scaleX": 1,
     "scaleY": 1,
@@ -20028,7 +20086,7 @@
    "name": "p09-summary-ctx",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 64,
     "scaleX": 1,
     "scaleY": 1,
@@ -20059,7 +20117,7 @@
    "name": "p09-summary-nlax",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11590,
+    "x": 13030,
     "y": 360,
     "scaleX": 1,
     "scaleY": 1,
@@ -20096,7 +20154,7 @@
    "name": "p09-summary-nltn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11574,
+    "x": 13014,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20127,7 +20185,7 @@
    "name": "p09-summary-nlt0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11669,
+    "x": 13109,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20158,7 +20216,7 @@
    "name": "p09-summary-nlt1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11764,
+    "x": 13204,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20189,7 +20247,7 @@
    "name": "p09-summary-nlt2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11859,
+    "x": 13299,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20220,7 +20278,7 @@
    "name": "p09-summary-nlt3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11954,
+    "x": 13394,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20251,7 +20309,7 @@
    "name": "p09-summary-nlt4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12049,
+    "x": 13489,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20282,7 +20340,7 @@
    "name": "p09-summary-nlt5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12144,
+    "x": 13584,
     "y": 372,
     "scaleX": 1,
     "scaleY": 1,
@@ -20313,7 +20371,7 @@
    "name": "p09-summary-pbg",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11560,
+    "x": 13000,
     "y": 170,
     "scaleX": 1,
     "scaleY": 1,
@@ -20340,7 +20398,7 @@
    "name": "p09-summary-gd",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11875,
+    "x": 13315,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20377,7 +20435,7 @@
    "name": "p09-summary-m1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11780,
+    "x": 13220,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20415,7 +20473,7 @@
    "name": "p09-summary-m3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11970,
+    "x": 13410,
     "y": 190,
     "scaleX": 1,
     "scaleY": 1,
@@ -20453,7 +20511,7 @@
    "name": "p09-summary-s1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11837.0,
+    "x": 13277.0,
     "y": 330,
     "scaleX": 1,
     "scaleY": 1,
@@ -20490,7 +20548,7 @@
    "name": "p09-summary-s2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11780,
+    "x": 13220,
     "y": 390,
     "scaleX": 1,
     "scaleY": 1,
@@ -20527,7 +20585,7 @@
    "name": "p09-summary-ptp0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11826.0,
+    "x": 13266.0,
     "y": 345,
     "scaleX": 1,
     "scaleY": 1,
@@ -20561,7 +20619,7 @@
    "name": "p09-summary-ptp1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11959.0,
+    "x": 13399.0,
     "y": 345,
     "scaleX": 1,
     "scaleY": 1,
@@ -20595,7 +20653,7 @@
    "name": "p09-summary-ptp2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12054.0,
+    "x": 13494.0,
     "y": 345,
     "scaleX": 1,
     "scaleY": 1,
@@ -20629,7 +20687,7 @@
    "name": "p09-summary-ptn0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11672.0,
+    "x": 13112.0,
     "y": 344,
     "scaleX": 1,
     "scaleY": 1,
@@ -20659,7 +20717,7 @@
    "name": "p09-summary-ptn1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11767.0,
+    "x": 13207.0,
     "y": 344,
     "scaleX": 1,
     "scaleY": 1,
@@ -20689,7 +20747,7 @@
    "name": "p09-summary-ptn2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11900.0,
+    "x": 13340.0,
     "y": 344,
     "scaleX": 1,
     "scaleY": 1,
@@ -20719,7 +20777,7 @@
    "name": "p09-summary-e0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 112,
     "scaleX": 1,
     "scaleY": 1,
@@ -20753,7 +20811,7 @@
    "name": "p09-summary-e1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 202,
     "scaleX": 1,
     "scaleY": 1,
@@ -20787,7 +20845,7 @@
    "name": "p09-summary-e2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 292,
     "scaleX": 1,
     "scaleY": 1,
@@ -20821,7 +20879,7 @@
    "name": "p09-summary-e3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 382,
     "scaleX": 1,
     "scaleY": 1,
@@ -20855,7 +20913,7 @@
    "name": "p09-summary-e4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12220,
+    "x": 13660,
     "y": 472,
     "scaleX": 1,
     "scaleY": 1,
@@ -20889,7 +20947,7 @@
    "name": "p09-summary-s_0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 124,
     "scaleX": 1,
     "scaleY": 1,
@@ -20920,7 +20978,7 @@
    "name": "p09-summary-s_1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 214,
     "scaleX": 1,
     "scaleY": 1,
@@ -20951,7 +21009,7 @@
    "name": "p09-summary-s_2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 304,
     "scaleX": 1,
     "scaleY": 1,
@@ -20987,7 +21045,7 @@
    "name": "p09-summary-s_3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 394,
     "scaleX": 1,
     "scaleY": 1,
@@ -21018,7 +21076,7 @@
    "name": "p09-summary-s_4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 12164,
+    "x": 13604,
     "y": 484,
     "scaleX": 1,
     "scaleY": 1,
@@ -21049,7 +21107,7 @@
    "name": "p09-summary-m-shadow",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11562.48,
+    "x": 13002.48,
     "y": 685.28,
     "scaleX": 1,
     "scaleY": 1,
@@ -21076,7 +21134,7 @@
    "name": "p09-summary-m-foot-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11587.68,
+    "x": 13027.68,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -21103,7 +21161,7 @@
    "name": "p09-summary-m-foot-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 676.88,
     "scaleX": 1,
     "scaleY": 1,
@@ -21130,7 +21188,7 @@
    "name": "p09-summary-m-body",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.84,
+    "x": 13005.84,
     "y": 642.44,
     "scaleX": 1,
     "scaleY": 1,
@@ -21157,7 +21215,7 @@
    "name": "p09-summary-m-belly",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 651.68,
     "scaleX": 1,
     "scaleY": 1,
@@ -21184,7 +21242,7 @@
    "name": "p09-summary-m-bow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11586.0,
+    "x": 13026.0,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -21211,7 +21269,7 @@
    "name": "p09-summary-m-bow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 639.92,
     "scaleX": 1,
     "scaleY": 1,
@@ -21238,7 +21296,7 @@
    "name": "p09-summary-m-bow-c",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11583.9,
+    "x": 13023.9,
     "y": 640.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21265,7 +21323,7 @@
    "name": "p09-summary-m-arm-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11603.64,
+    "x": 13043.64,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21306,7 +21364,7 @@
    "name": "p09-summary-m-hand-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11609.94,
+    "x": 13049.94,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -21333,7 +21391,7 @@
    "name": "p09-summary-m-arm-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11559.12,
+    "x": 12999.12,
     "y": 619.76,
     "scaleX": 1,
     "scaleY": 1,
@@ -21374,7 +21432,7 @@
    "name": "p09-summary-m-hand-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11554.5,
+    "x": 12994.5,
     "y": 610.9399999999999,
     "scaleX": 1,
     "scaleY": 1,
@@ -21401,7 +21459,7 @@
    "name": "p09-summary-m-ear-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11604.9,
+    "x": 13044.9,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -21428,7 +21486,7 @@
    "name": "p09-summary-m-ear-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11557.86,
+    "x": 12997.86,
     "y": 613.46,
     "scaleX": 1,
     "scaleY": 1,
@@ -21455,7 +21513,7 @@
    "name": "p09-summary-m-head",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11561.64,
+    "x": 13001.64,
     "y": 592.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -21482,7 +21540,7 @@
    "name": "p09-summary-m-face",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11566.26,
+    "x": 13006.26,
     "y": 604.64,
     "scaleX": 1,
     "scaleY": 1,
@@ -21509,7 +21567,7 @@
    "name": "p09-summary-m-cap-base",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11575.08,
+    "x": 13015.08,
     "y": 590.36,
     "scaleX": 1,
     "scaleY": 1,
@@ -21536,7 +21594,7 @@
    "name": "p09-summary-m-cap-top",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11568.36,
+    "x": 13008.36,
     "y": 587.0,
     "scaleX": 1,
     "scaleY": 1,
@@ -21563,7 +21621,7 @@
    "name": "p09-summary-m-tassel",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11569.2,
+    "x": 13009.2,
     "y": 589.52,
     "scaleX": 1,
     "scaleY": 1,
@@ -21600,7 +21658,7 @@
    "name": "p09-summary-m-knot",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11567.1,
+    "x": 13007.1,
     "y": 600.86,
     "scaleX": 1,
     "scaleY": 1,
@@ -21627,7 +21685,7 @@
    "name": "p09-summary-m-eye-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -21692,7 +21750,7 @@
    "name": "p09-summary-m-eye-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 613.04,
     "scaleX": 1,
     "scaleY": 1,
@@ -21757,7 +21815,7 @@
    "name": "p09-summary-m-brow-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11591.04,
+    "x": 13031.04,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -21794,7 +21852,7 @@
    "name": "p09-summary-m-brow-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11572.56,
+    "x": 13012.56,
     "y": 603.38,
     "scaleX": 1,
     "scaleY": 1,
@@ -21831,7 +21889,7 @@
    "name": "p09-summary-m-cheek-l",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11598.6,
+    "x": 13038.6,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -21858,7 +21916,7 @@
    "name": "p09-summary-m-cheek-r",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11565.0,
+    "x": 13005.0,
     "y": 623.12,
     "scaleX": 1,
     "scaleY": 1,
@@ -21885,7 +21943,7 @@
    "name": "p09-summary-m-mouth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11577.6,
+    "x": 13017.6,
     "y": 626.9,
     "scaleX": 1,
     "scaleY": 1,
@@ -21912,7 +21970,7 @@
    "name": "p09-summary-m-teeth",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11579.28,
+    "x": 13019.28,
     "y": 627.32,
     "scaleX": 1,
     "scaleY": 1,
@@ -21961,7 +22019,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 01/09 · 1 Why relax · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 01/10 · 1 Why relax · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p01-infeasible-cue0": {
@@ -22127,7 +22185,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 02/09 · 1 Why relax · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 02/10 · 1 Why relax · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p02-slack-hinge-cue0": {
@@ -22293,7 +22351,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 03/09 · 2 The objective and C · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 03/10 · 2 The objective and C · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p03-tradeoff-cue0": {
@@ -22437,7 +22495,7 @@
    "name": "p04-soft-wall-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4470,
+    "x": 5910,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -22459,7 +22517,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 04/09 · 3 Upper bound of the multiplier · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 05/10 · 3 Upper bound of the multiplier · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p04-soft-wall-cue0": {
@@ -22468,7 +22526,7 @@
    "name": "p04-soft-wall-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22501,7 +22559,7 @@
    "name": "p04-soft-wall-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22535,7 +22593,7 @@
    "name": "p04-soft-wall-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22569,7 +22627,7 @@
    "name": "p04-soft-wall-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 4460,
+    "x": 5900,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22603,7 +22661,7 @@
    "name": "p05-three-kinds-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5910,
+    "x": 7350,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -22625,7 +22683,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 05/09 · 3 Upper bound of the multiplier · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 06/10 · 3 Upper bound of the multiplier · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p05-three-kinds-cue0": {
@@ -22634,7 +22692,7 @@
    "name": "p05-three-kinds-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22667,7 +22725,7 @@
    "name": "p05-three-kinds-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22701,7 +22759,7 @@
    "name": "p05-three-kinds-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22735,7 +22793,7 @@
    "name": "p05-three-kinds-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 5900,
+    "x": 7340,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22769,7 +22827,7 @@
    "name": "p06-two-c-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7350,
+    "x": 8790,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -22791,7 +22849,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 06/09 · 4 Two data sets · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 07/10 · 4 Two data sets · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p06-two-c-cue0": {
@@ -22800,7 +22858,7 @@
    "name": "p06-two-c-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22833,7 +22891,7 @@
    "name": "p06-two-c-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22867,7 +22925,7 @@
    "name": "p06-two-c-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22901,7 +22959,7 @@
    "name": "p06-two-c-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22935,7 +22993,7 @@
    "name": "p06-two-c-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 7340,
+    "x": 8780,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -22969,7 +23027,7 @@
    "name": "p07-sweep-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8790,
+    "x": 10230,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -22991,7 +23049,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 07/09 · 4 Two data sets · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 08/10 · 4 Two data sets · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p07-sweep-cue0": {
@@ -23000,7 +23058,7 @@
    "name": "p07-sweep-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23033,7 +23091,7 @@
    "name": "p07-sweep-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23057,7 +23115,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the left plot: six 1-D points (interleaved).",
+   "text": "    See the left plot: six one-dimensional points (interleaved).",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23067,7 +23125,7 @@
    "name": "p07-sweep-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23091,7 +23149,7 @@
     "gradientTo": "#f1f7ff",
     "gradientAngle": 90
    },
-   "text": "    See the right plot: ten 2-D points (separable).",
+   "text": "    See the right plot: ten two-dimensional points (separable).",
    "shapeKind": "rectangle",
    "initiallyHidden": true
   },
@@ -23101,7 +23159,7 @@
    "name": "p07-sweep-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 8780,
+    "x": 10220,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23135,7 +23193,7 @@
    "name": "p08-practice-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10230,
+    "x": 11670,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -23157,7 +23215,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 08/09 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 09/10 · 5 Practice · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p08-practice-cue0": {
@@ -23166,7 +23224,7 @@
    "name": "p08-practice-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23199,7 +23257,7 @@
    "name": "p08-practice-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23233,7 +23291,7 @@
    "name": "p08-practice-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23267,7 +23325,7 @@
    "name": "p08-practice-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 10220,
+    "x": 11660,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23301,7 +23359,7 @@
    "name": "p09-summary-nav",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11670,
+    "x": 13110,
     "y": 698,
     "scaleX": 1,
     "scaleY": 1,
@@ -23323,7 +23381,7 @@
     "lineHeight": 1.0,
     "fontFamily": "Noto Sans CJK TC"
    },
-   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 09/09 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 10/10 · 6 Summary · Manual: Next to advance, Prev to go back; answer first, then reveal",
    "shapeKind": "rectangle"
   },
   "p09-summary-cue0": {
@@ -23332,7 +23390,7 @@
    "name": "p09-summary-cue0",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23365,7 +23423,7 @@
    "name": "p09-summary-cue1",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23399,7 +23457,7 @@
    "name": "p09-summary-cue2",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23433,7 +23491,7 @@
    "name": "p09-summary-cue3",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23467,7 +23525,7 @@
    "name": "p09-summary-cue4",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23501,7 +23559,7 @@
    "name": "p09-summary-cue5",
    "sceneId": "scene-u01",
    "transform": {
-    "x": 11660,
+    "x": 13100,
     "y": 630,
     "scaleX": 1,
     "scaleY": 1,
@@ -23559,6 +23617,1796 @@
     "padding": 18,
     "clip": true
    }
+  },
+  "p04-lagrange-bg": {
+   "type": "shape",
+   "transform": {
+    "x": 4320,
+    "y": 0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1280,
+   "height": 720,
+   "zIndex": 0,
+   "locked": false,
+   "style": {
+    "fill": "#fbfdff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-bg",
+   "name": "p04-lagrange-bg",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-rule": {
+   "type": "shape",
+   "transform": {
+    "x": 4360,
+    "y": 94,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 2,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#dbe4ee",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-rule",
+   "name": "p04-lagrange-rule",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-title": {
+   "type": "text",
+   "transform": {
+    "x": 4360,
+    "y": 16,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 44,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 28,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "The soft-margin Lagrangian: why the push is capped at $C$",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-title",
+   "name": "p04-lagrange-title",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-ctx": {
+   "type": "text",
+   "transform": {
+    "x": 4360,
+    "y": 64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1200,
+   "height": 28,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#64748b",
+    "fontSize": 12,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.25,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Reusing the KP14 idea: give each constraint a push coefficient (multiplier). The multiplier of the margin constraint is $\\alpha_i\\ge0$ and that of the slack constraint is $\\beta_i\\ge0$ (the slack $\\xi_i\\ge0$ is also a constraint).",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-ctx",
+   "name": "p04-lagrange-ctx",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-src": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 600,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 24,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Source: KP15 lecture §2–3 (primal objective, Lagrangian, $C-\\alpha-\\beta=0$, dual); the example is the six one-dimensional points of this lecture with $C=5$ ($w=1$, $b=-2$), with primal and dual values recomputed independently. Added page: the original deck gave only the result $0\\le\\alpha\\le C$, restored derivation from the lecture.",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-src",
+   "name": "p04-lagrange-src",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-plbg": {
+   "type": "shape",
+   "transform": {
+    "x": 4370,
+    "y": 126,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 480,
+   "height": 400,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#f1f5f9",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 16,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-plbg",
+   "name": "p04-lagrange-plbg",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-tp": {
+   "type": "text",
+   "transform": {
+    "x": 4390,
+    "y": 190,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 420,
+   "height": 24,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Primal value: $\\tfrac12w^2+C\\cdot$ total slack",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-tp",
+   "name": "p04-lagrange-tp",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-td": {
+   "type": "text",
+   "transform": {
+    "x": 4390,
+    "y": 330,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 420,
+   "height": 24,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#1d4ed8",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Dual value: $\\sum\\alpha$ plus $(-\\tfrac12\\sum\\sum\\cdots)$",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-td",
+   "name": "p04-lagrange-td",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-p1": {
+   "type": "shape",
+   "transform": {
+    "x": 4400,
+    "y": 222,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 13.333333333333334,
+   "height": 60,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#86efac",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 12,
+    "radius": 6,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-p1",
+   "name": "p04-lagrange-p1",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-p2": {
+   "type": "shape",
+   "transform": {
+    "x": 4413.333333333333,
+    "y": 222,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 373.33333333333337,
+   "height": 60,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fdba74",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 12,
+    "radius": 6,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "5×2.8=14",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-p2",
+   "name": "p04-lagrange-p2",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-d1": {
+   "type": "shape",
+   "transform": {
+    "x": 4400,
+    "y": 362,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 386.6666666666667,
+   "height": 60,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#93c5fd",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 12,
+    "radius": 6,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "$\\sum\\alpha=15$ minus $0.5$",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-d1",
+   "name": "p04-lagrange-d1",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-d2": {
+   "type": "shape",
+   "transform": {
+    "x": 4786.666666666667,
+    "y": 362,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 13.333333333333334,
+   "height": 60,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#fca5a5",
+    "stroke": "transparent",
+    "textColor": "#0f172a",
+    "fontSize": 12,
+    "radius": 6,
+    "borderWidth": 0,
+    "fontWeight": 700
+   },
+   "text": "",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-d2",
+   "name": "p04-lagrange-d2",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-tq": {
+   "type": "text",
+   "transform": {
+    "x": 4390,
+    "y": 450,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 380,
+   "height": 22,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#334155",
+    "fontSize": 14,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.1,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Both are $14.5$: primal value equals dual value",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-tq",
+   "name": "p04-lagrange-tq",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-st": {
+   "type": "shape",
+   "transform": {
+    "x": 4798,
+    "y": 134,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 44,
+   "height": 44,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#b45309",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0,
+    "gradientTo": "#92400e",
+    "gradientAngle": 135,
+    "fontWeight": 700,
+    "shadowColor": "#d97706",
+    "shadowOpacity": 0.7,
+    "shadowBlur": 22,
+    "shadowOffsetX": 0,
+    "shadowOffsetY": 0
+   },
+   "text": "",
+   "shapeKind": "star",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-st",
+   "name": "p04-lagrange-st",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c0": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 118,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 57,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "Primal problem: $\\min\\tfrac12\\|\\mathbf w\\|^2+C\\sum_i\\xi_i$ subject to $y_ig_i\\ge1-\\xi_i$, $\\xi_i\\ge0$; eliminating $\\xi_i$ gives $\\min\\tfrac12\\|\\mathbf w\\|^2+C\\sum_i\\max(0,1-y_ig_i)$.",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-c0",
+   "name": "p04-lagrange-c0",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c1": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 185,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 60,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "$L=\\tfrac12\\|\\mathbf w\\|^2+C\\sum_i\\xi_i+\\sum_i\\alpha_i(1-\\xi_i-y_ig_i)-\\sum_i\\beta_i\\xi_i$. The partial derivatives in $\\mathbf w$ and $b$ are the same as in KP14: $\\mathbf w=\\sum_i\\alpha_iy_i\\mathbf x_i$ and $\\sum_i\\alpha_iy_i=0$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-c1",
+   "name": "p04-lagrange-c1",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c2": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 255,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 49,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#dcfce7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f0fdf4",
+    "gradientAngle": 90
+   },
+   "text": "What is new is the partial derivative in the slack $\\xi_i$: $C-\\alpha_i-\\beta_i=0$. Since $\\beta_i\\ge0$, we get $0\\le\\alpha_i\\le C$: a soft wall pushes with at most $C$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-c2",
+   "name": "p04-lagrange-c2",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c3": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 314,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 54,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ede9fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 14,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f5f3ff",
+    "gradientAngle": 90
+   },
+   "text": "The dual problem after substitution: $\\max\\sum_i\\alpha_i-\\tfrac12\\sum_{i,j}\\alpha_i\\alpha_jy_iy_j\\mathbf x_i^T\\mathbf x_j$ with $0\\le\\alpha_i\\le C$ and $\\sum_i\\alpha_iy_i=0$. Compared with KP14 the only addition is the upper bound $C$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-c3",
+   "name": "p04-lagrange-c3",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c4": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 378,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 52,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fef3c7",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fffbeb",
+    "gradientAngle": 90
+   },
+   "text": "Example ($C=5$, six one-dimensional points, $w=1$, $b=-2$): $\\alpha$ at $x=0,1,1.6,2.4,3,4$ is $0,2.5,5,5,2.5,0$. $\\sum\\alpha y=0$ and $\\sum\\alpha yx=1=w$. The primal value is $0.5+5\\times2.8=14.5$ and the dual value is $15-0.5=14.5$, equal.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-c4",
+   "name": "p04-lagrange-c4",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-c5": {
+   "type": "text",
+   "transform": {
+    "x": 4910,
+    "y": 440,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 640,
+   "height": 51,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#fee2e2",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 12,
+    "radius": 20,
+    "borderWidth": 0,
+    "fontWeight": 700,
+    "textAlign": "left",
+    "lineHeight": 1.45,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#fef2f2",
+    "gradientAngle": 90
+   },
+   "text": "Complementary slackness: when $\\xi_i>0$, $\\beta_i=0$ and so $\\alpha_i=C$ (the points $x=1.6$ and $2.4$); when $0<\\alpha_i<C$, $\\xi_i=0$ and $q_i=1$ (the points $x=1$ and $3$). Later pages revisit these three kinds of points.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-c5",
+   "name": "p04-lagrange-c5",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue0": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    First, the primal problem.",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-cue0",
+   "name": "p04-lagrange-cue0",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue1": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the blue card: the Lagrangian.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-cue1",
+   "name": "p04-lagrange-cue1",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue2": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the green card: $C-\\alpha-\\beta=0$ gives $0\\le\\alpha\\le C$.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-cue2",
+   "name": "p04-lagrange-cue2",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue3": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the purple card: the dual has just one extra upper bound.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-cue3",
+   "name": "p04-lagrange-cue3",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue4": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the two bars: primal and dual values are equal.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-cue4",
+   "name": "p04-lagrange-cue4",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-cue5": {
+   "type": "text",
+   "transform": {
+    "x": 4460,
+    "y": 630,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1100,
+   "height": 60,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 17,
+    "radius": 18,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.3,
+    "fontFamily": "Noto Sans CJK TC",
+    "gradientTo": "#f1f7ff",
+    "gradientAngle": 90
+   },
+   "text": "    See the gold star: complementary slackness.",
+   "shapeKind": "rectangle",
+   "initiallyHidden": true,
+   "id": "p04-lagrange-cue5",
+   "name": "p04-lagrange-cue5",
+   "sceneId": "scene-u01"
+  },
+  "p04-lagrange-m-shadow": {
+   "id": "p04-lagrange-m-shadow",
+   "type": "shape",
+   "name": "p04-lagrange-m-shadow",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4362.48,
+    "y": 685.28,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 47.04,
+   "height": 5.88,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#e2e8f0",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-foot-l": {
+   "id": "p04-lagrange-m-foot-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-foot-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4387.68,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-foot-r": {
+   "id": "p04-lagrange-m-foot-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-foot-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4369.2,
+    "y": 676.88,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 15.12,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#1e3a8a",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-body": {
+   "id": "p04-lagrange-m-body",
+   "type": "shape",
+   "name": "p04-lagrange-m-body",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4365.84,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 40.32,
+   "height": 37.8,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#7c3aed",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 15.12,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p04-lagrange-m-belly": {
+   "id": "p04-lagrange-m-belly",
+   "type": "shape",
+   "name": "p04-lagrange-m-belly",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 651.68,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 23.52,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#ddd6fe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-bow-l": {
+   "id": "p04-lagrange-m-bow-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-bow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4386.0,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-bow-r": {
+   "id": "p04-lagrange-m-bow-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-bow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4377.6,
+    "y": 639.92,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.88,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#f97316",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-bow-c": {
+   "id": "p04-lagrange-m-bow-c",
+   "type": "shape",
+   "name": "p04-lagrange-m-bow-c",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4383.9,
+    "y": 640.76,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#ea580c",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-arm-l": {
+   "id": "p04-lagrange-m-arm-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-arm-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4403.639999999999,
+    "y": 642.44,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.0,
+   "height": 8.399999999999977,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 0.0,
+     "y": 100.0
+    },
+    {
+     "x": 52.000000000000014,
+     "y": 79.99999999999918
+    },
+    {
+     "x": 100.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p04-lagrange-m-hand-l": {
+   "id": "p04-lagrange-m-hand-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-hand-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4421.7,
+    "y": 636.56,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-arm-r": {
+   "id": "p04-lagrange-m-arm-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-arm-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4364.16,
+    "y": 650.84,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.200000000000003,
+   "height": 21.839999999999918,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#6d28d9",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 6
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 61.5384615384615
+    },
+    {
+     "x": 20.000000000000068,
+     "y": 100.0
+    }
+   ]
+  },
+  "p04-lagrange-m-hand-r": {
+   "id": "p04-lagrange-m-hand-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-hand-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4360.38,
+    "y": 669.74,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fcd34d",
+    "stroke": "#d97706",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-ear-l": {
+   "id": "p04-lagrange-m-ear-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-ear-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4404.9,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-ear-r": {
+   "id": "p04-lagrange-m-ear-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-ear-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4357.860000000001,
+    "y": 613.46,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 9.24,
+   "height": 9.24,
+   "zIndex": 1,
+   "locked": false,
+   "style": {
+    "fill": "#2563eb",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-head": {
+   "id": "p04-lagrange-m-head",
+   "type": "shape",
+   "name": "p04-lagrange-m-head",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4361.639999999999,
+    "y": 592.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 48.72,
+   "height": 48.72,
+   "zIndex": 2,
+   "locked": false,
+   "style": {
+    "fill": "#3b82f6",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-face": {
+   "id": "p04-lagrange-m-face",
+   "type": "shape",
+   "name": "p04-lagrange-m-face",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4366.26,
+    "y": 604.64,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 39.48,
+   "height": 33.6,
+   "zIndex": 3,
+   "locked": false,
+   "style": {
+    "fill": "#dbeafe",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-cap-base": {
+   "id": "p04-lagrange-m-cap-base",
+   "type": "shape",
+   "name": "p04-lagrange-m-cap-base",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 590.36,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 21.84,
+   "height": 7.56,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#1e293b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 2.52,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p04-lagrange-m-cap-top": {
+   "id": "p04-lagrange-m-cap-top",
+   "type": "shape",
+   "name": "p04-lagrange-m-cap-top",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4368.360000000001,
+    "y": 587.0,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 35.28,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#334155",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 1.26,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "rectangle"
+  },
+  "p04-lagrange-m-tassel": {
+   "id": "p04-lagrange-m-tassel",
+   "type": "shape",
+   "name": "p04-lagrange-m-tassel",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4369.2,
+    "y": 589.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1.6799999999999997,
+   "height": 11.759999999999991,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#f59e0b",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 100.0
+    }
+   ]
+  },
+  "p04-lagrange-m-knot": {
+   "id": "p04-lagrange-m-knot",
+   "type": "shape",
+   "name": "p04-lagrange-m-knot",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4367.1,
+    "y": 600.86,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 4.2,
+   "height": 4.2,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#f59e0b",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-eye-l": {
+   "id": "p04-lagrange-m-eye-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-eye-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4390.2,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-pupil-l": {
+   "id": "p04-lagrange-m-pupil-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-pupil-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4393.5599999999995,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-glint-l": {
+   "id": "p04-lagrange-m-glint-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-glint-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4394.4,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-eye-r": {
+   "id": "p04-lagrange-m-eye-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-eye-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4371.719999999999,
+    "y": 610.52,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 10.08,
+   "height": 10.08,
+   "zIndex": 5,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 3
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-pupil-r": {
+   "id": "p04-lagrange-m-pupil-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-pupil-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.08,
+    "y": 612.1999999999999,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 6.72,
+   "height": 6.72,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "#1f2937",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-glint-r": {
+   "id": "p04-lagrange-m-glint-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-glint-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4375.92,
+    "y": 613.04,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 2.52,
+   "height": 2.52,
+   "zIndex": 7,
+   "locked": false,
+   "style": {
+    "fill": "#ffffff",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-brow-l": {
+   "id": "p04-lagrange-m-brow-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-brow-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4391.04,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999991,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p04-lagrange-m-brow-r": {
+   "id": "p04-lagrange-m-brow-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-brow-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4372.5599999999995,
+    "y": 604.22,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.399999999999999,
+   "height": 1,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1e3a8a",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p04-lagrange-m-cheek-l": {
+   "id": "p04-lagrange-m-cheek-l",
+   "type": "shape",
+   "name": "p04-lagrange-m-cheek-l",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4398.6,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-cheek-r": {
+   "id": "p04-lagrange-m-cheek-r",
+   "type": "shape",
+   "name": "p04-lagrange-m-cheek-r",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4365.0,
+    "y": 623.12,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 8.4,
+   "height": 5.04,
+   "zIndex": 4,
+   "locked": false,
+   "style": {
+    "fill": "#fda4af",
+    "stroke": "transparent",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 0
+   },
+   "text": "",
+   "shapeKind": "ellipse"
+  },
+  "p04-lagrange-m-mouth": {
+   "id": "p04-lagrange-m-mouth",
+   "type": "shape",
+   "name": "p04-lagrange-m-mouth",
+   "sceneId": "scene-u01",
+   "transform": {
+    "x": 4379.7,
+    "y": 629.42,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 12.599999999999994,
+   "height": 4.6200000000000045,
+   "zIndex": 6,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "#1f2937",
+    "textColor": "#1f2937",
+    "fontSize": 16,
+    "radius": 0,
+    "borderWidth": 2
+   },
+   "text": "",
+   "shapeKind": "polyline",
+   "polygonPoints": [
+    {
+     "x": 100.0,
+     "y": 0.0
+    },
+    {
+     "x": 87.49999999999997,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 75.00000000000006,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 62.500000000000036,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 50.0,
+     "y": 100.0
+    },
+    {
+     "x": 37.49999999999997,
+     "y": 93.75000000000139
+    },
+    {
+     "x": 25.0,
+     "y": 75.00000000000061
+    },
+    {
+     "x": 12.499999999999972,
+     "y": 43.750000000000156
+    },
+    {
+     "x": 0.0,
+     "y": 0.0
+    }
+   ]
+  },
+  "p04-lagrange-nav": {
+   "type": "text",
+   "transform": {
+    "x": 4470,
+    "y": 698,
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0
+   },
+   "width": 1090,
+   "height": 18,
+   "zIndex": 8,
+   "locked": false,
+   "style": {
+    "fill": "transparent",
+    "stroke": "transparent",
+    "textColor": "#94a3b8",
+    "fontSize": 11,
+    "radius": 0,
+    "borderWidth": 0,
+    "fontWeight": 400,
+    "textAlign": "left",
+    "lineHeight": 1.0,
+    "fontFamily": "Noto Sans CJK TC"
+   },
+   "text": "Pattern Recognition · Week 3 Linear Classifiers · KP15 · 04/10 · Formulas and derivation · Manual: Next to advance, Prev to go back",
+   "shapeKind": "rectangle",
+   "id": "p04-lagrange-nav",
+   "name": "p04-lagrange-nav",
+   "sceneId": "scene-u01"
   }
  },
  "steps": [
@@ -23588,7 +25436,7 @@
    "order": 1,
    "label": "When the two classes interleave on the line, can \"every point correct with enough margin\" still be done? · See the number line first: six points and the questio",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23609,7 +25457,7 @@
    "order": 2,
    "label": "When the two classes interleave on the line, can \"every point correct with enough margin\" still be done? · See the threshold $t=1.3$: the right side is judged p",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23668,7 +25516,7 @@
    "order": 3,
    "label": "When the two classes interleave on the line, can \"every point correct with enough margin\" still be done? · See the threshold $t=2$: one wrong on each side.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23737,7 +25585,7 @@
    "order": 4,
    "label": "When the two classes interleave on the line, can \"every point correct with enough margin\" still be done? · See the threshold $t=2.7$: the positive 1.6 falls on ",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23807,7 +25655,7 @@
    "order": 5,
    "label": "How far is each point from \"its own line\"? How is the minimum slack computed? · See the left first: the classifier, purple lines and six points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23828,7 +25676,7 @@
    "order": 6,
    "label": "How far is each point from \"its own line\"? How is the minimum slack computed? · See the red lines: the two points without enough margin.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23893,7 +25741,7 @@
    "order": 7,
    "label": "How far is each point from \"its own line\"? How is the minimum slack computed? · See the hinge on the right: the relation of ξ and q.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23958,7 +25806,7 @@
    "order": 8,
    "label": "How far is each point from \"its own line\"? How is the minimum slack computed? · See the gold star: the total slack.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -23999,7 +25847,7 @@
    "order": 9,
    "label": "Violation costs, and so does a wide margin: how does C trade the two off? · See the axes first: each C's optimum is a point.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24020,7 +25868,7 @@
    "order": 10,
    "label": "Violation costs, and so does a wide margin: how does C trade the two off? · See the two points on the left: small C.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24085,7 +25933,7 @@
    "order": 11,
    "label": "Violation costs, and so does a wide margin: how does C trade the two off? · See the two points on the right: large C.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24150,7 +25998,7 @@
    "order": 12,
    "label": "Violation costs, and so does a wide margin: how does C trade the two off? · See the purple dashed line and red triangle: raising C further gives no new point.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24199,11 +26047,11 @@
    }
   },
   {
-   "id": "p04-soft-wall-st0",
+   "id": "p04-lagrange-st0",
    "order": 13,
-   "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the two plots first: the same objective, two values of C.",
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · First, the primal problem.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
@@ -24220,17 +26068,279 @@
    }
   },
   {
-   "id": "p04-soft-wall-st1",
+   "id": "p04-lagrange-st1",
    "order": 14,
-   "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the left plot: C=0.5, the red point stops before the wall.",
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · See the blue card: the Lagrangian.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
      "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-lagrange-c1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-cue1",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-lagrange-cue0"
+    ]
+   }
+  },
+  {
+   "id": "p04-lagrange-st2",
+   "order": 15,
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · See the green card: $C-\\alpha-\\beta=0$ gives $0\\le\\alpha\\le C$.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-lagrange-c2",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-cue2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-lagrange-cue1"
+    ]
+   }
+  },
+  {
+   "id": "p04-lagrange-st3",
+   "order": 16,
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · See the purple card: the dual has just one extra upper bound.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-lagrange-c3",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-cue3",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-lagrange-cue2"
+    ]
+   }
+  },
+  {
+   "id": "p04-lagrange-st4",
+   "order": 17,
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · See the two bars: primal and dual values are equal.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-lagrange-p1",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-p2",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-d1",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-d2",
+      "effect": "fade",
+      "delayMs": 120,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-tq",
+      "effect": "fade",
+      "delayMs": 160,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-c4",
+      "effect": "fade",
+      "delayMs": 200,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-cue4",
+      "effect": "fade",
+      "delayMs": 240,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-lagrange-cue3"
+    ]
+   }
+  },
+  {
+   "id": "p04-lagrange-st5",
+   "order": 18,
+   "label": "The soft-margin Lagrangian: why the push is capped at $C$ · See the gold star: complementary slackness.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 4960.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   },
+   "reveal": {
+    "timing": "after-camera",
+    "enter": [
+     {
+      "nodeId": "p04-lagrange-st",
+      "effect": "fade",
+      "delayMs": 0,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-c5",
+      "effect": "fade",
+      "delayMs": 40,
+      "durationMs": 300
+     },
+     {
+      "nodeId": "p04-lagrange-cue5",
+      "effect": "fade",
+      "delayMs": 80,
+      "durationMs": 300
+     }
+    ],
+    "exitNodeIds": [
+     "p04-lagrange-cue4"
+    ]
+   }
+  },
+  {
+   "id": "p04-soft-wall-st0",
+   "order": 19,
+   "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the two plots first: the same objective, two values of C.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
+     "y": 360
+    },
+    "zoom": 1.0,
+    "referenceViewport": {
+     "width": 1280,
+     "height": 720
+    }
+   }
+  },
+  {
+   "id": "p04-soft-wall-st1",
+   "order": 20,
+   "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the left plot: C=0.5, the red point stops before the wall.",
+   "durationMs": 300,
+   "holdMs": 500,
+   "easing": "smooth",
+   "target": {
+    "kind": "scene-point",
+    "sceneId": "scene-u01",
+    "point": {
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24280,16 +26390,16 @@
   },
   {
    "id": "p04-soft-wall-st2",
-   "order": 15,
+   "order": 21,
    "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the right plot: C=3, the green point touches the wall.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24339,16 +26449,16 @@
   },
   {
    "id": "p04-soft-wall-st3",
-   "order": 16,
+   "order": 22,
    "label": "The constraint becomes a \"soft wall\": what is the most force the wall can exert? · See the gold star: both together.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 4960.0,
+     "x": 6400.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24386,16 +26496,16 @@
   },
   {
    "id": "p05-three-kinds-st0",
-   "order": 17,
+   "order": 23,
    "label": "By the size of the multiplier α, into which three classes do the six points fall? · See the number line first: points, decision point, purple lines and the uppe",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24407,16 +26517,16 @@
   },
   {
    "id": "p05-three-kinds-st1",
-   "order": 18,
+   "order": 24,
    "label": "By the size of the multiplier α, into which three classes do the six points fall? · See gray: the two points farthest from the line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24472,16 +26582,16 @@
   },
   {
    "id": "p05-three-kinds-st2",
-   "order": 19,
+   "order": 25,
    "label": "By the size of the multiplier α, into which three classes do the six points fall? · See blue: the two points exactly on the purple lines.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24537,16 +26647,16 @@
   },
   {
    "id": "p05-three-kinds-st3",
-   "order": 20,
+   "order": 26,
    "label": "By the size of the multiplier α, into which three classes do the six points fall? · See orange: the two points whose bars reach the dashed line.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 6400.0,
+     "x": 7840.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24602,16 +26712,16 @@
   },
   {
    "id": "p06-two-c-st0",
-   "order": 21,
-   "label": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ? · See the two plots first: the same ten points.",
+   "order": 27,
+   "label": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ? · See the two plots first: the same ten points.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24623,16 +26733,16 @@
   },
   {
    "id": "p06-two-c-st1",
-   "order": 22,
-   "label": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ? · See the left plot: the green line and purple dashed lines at C=0.2.",
+   "order": 28,
+   "label": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ? · See the left plot: the green line and purple dashed lines at C=0.2.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24682,16 +26792,16 @@
   },
   {
    "id": "p06-two-c-st2",
-   "order": 23,
-   "label": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ? · See the right plot: the green line and purple dashed lines at C=1000.",
+   "order": 29,
+   "label": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ? · See the right plot: the green line and purple dashed lines at C=1000.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24741,16 +26851,16 @@
   },
   {
    "id": "p06-two-c-st3",
-   "order": 24,
-   "label": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ? · See the gold star: neither misclassifies.",
+   "order": 30,
+   "label": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ? · See the gold star: neither misclassifies.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24788,16 +26898,16 @@
   },
   {
    "id": "p06-two-c-st4",
-   "order": 25,
-   "label": "The same 2-D data with C=0.2 and C=1000: how do the boundary and margin differ? · See the red triangle: a correction of the lecture's claim.",
+   "order": 31,
+   "label": "The same two-dimensional data with C=0.2 and C=1000: how do the boundary and margin differ? · See the red triangle: a correction of the lecture's claim.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 7840.0,
+     "x": 9280.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24835,16 +26945,16 @@
   },
   {
    "id": "p07-sweep-st0",
-   "order": 26,
+   "order": 32,
    "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the two plots first: the same horizontal axis, the same vertic",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24856,16 +26966,16 @@
   },
   {
    "id": "p07-sweep-st1",
-   "order": 27,
-   "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the left plot: six 1-D points (interleaved).",
+   "order": 33,
+   "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the left plot: six one-dimensional points (interleaved).",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24909,16 +27019,16 @@
   },
   {
    "id": "p07-sweep-st2",
-   "order": 28,
-   "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the right plot: ten 2-D points (separable).",
+   "order": 34,
+   "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the right plot: ten two-dimensional points (separable).",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -24962,16 +27072,16 @@
   },
   {
    "id": "p07-sweep-st3",
-   "order": 29,
+   "order": 35,
    "label": "As C keeps growing, how does the total slack of non-separable versus separable data change? · See the gold star: the contrast.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 9280.0,
+     "x": 10720.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25003,16 +27113,16 @@
   },
   {
    "id": "p08-practice-st0",
-   "order": 30,
-   "label": "Practice: C=5, one point has q=0.7 and another q=−0.3: what does each cost? · Work it out first: see the hinge and the question.",
+   "order": 36,
+   "label": "Practice: C=5, one point has q=0.7 and another q=$−0.3$: what does each cost? · Work it out first: see the hinge and the question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25024,16 +27134,16 @@
   },
   {
    "id": "p08-practice-st1",
-   "order": 31,
-   "label": "Practice: C=5, one point has q=0.7 and another q=−0.3: what does each cost? · See feedback (a): the gold point on the hinge.",
+   "order": 37,
+   "label": "Practice: C=5, one point has q=0.7 and another q=$−0.3$: what does each cost? · See feedback (a): the gold point on the hinge.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25077,16 +27187,16 @@
   },
   {
    "id": "p08-practice-st2",
-   "order": 32,
-   "label": "Practice: C=5, one point has q=0.7 and another q=−0.3: what does each cost? · See feedback (b): the red point on the hinge.",
+   "order": 38,
+   "label": "Practice: C=5, one point has q=0.7 and another q=$−0.3$: what does each cost? · See feedback (b): the red point on the hinge.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25130,16 +27240,16 @@
   },
   {
    "id": "p08-practice-st3",
-   "order": 33,
-   "label": "Practice: C=5, one point has q=0.7 and another q=−0.3: what does each cost? · See feedback (c): compare the two horizontal bars.",
+   "order": 39,
+   "label": "Practice: C=5, one point has q=0.7 and another q=$−0.3$: what does each cost? · See feedback (c): compare the two horizontal bars.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 10720.0,
+     "x": 12160.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25183,16 +27293,16 @@
   },
   {
    "id": "p09-summary-st0",
-   "order": 34,
+   "order": 40,
    "label": "Summary: slack, C and the multiplier bound · See the left first: the decision point, purple lines and two red lines.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25204,16 +27314,16 @@
   },
   {
    "id": "p09-summary-st1",
-   "order": 35,
+   "order": 41,
    "label": "Summary: slack, C and the multiplier bound · See the arrow: slack.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25251,16 +27361,16 @@
   },
   {
    "id": "p09-summary-st2",
-   "order": 36,
+   "order": 42,
    "label": "Summary: slack, C and the multiplier bound · See the diamond: the trade-off of C.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25298,16 +27408,16 @@
   },
   {
    "id": "p09-summary-st3",
-   "order": 37,
+   "order": 43,
    "label": "Summary: slack, C and the multiplier bound · See the star: the multiplier bound.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25345,16 +27455,16 @@
   },
   {
    "id": "p09-summary-st4",
-   "order": 38,
+   "order": 44,
    "label": "Summary: slack, C and the multiplier bound · See the red triangle: saturation and misconception.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
@@ -25392,16 +27502,16 @@
   },
   {
    "id": "p09-summary-st5",
-   "order": 39,
+   "order": 45,
    "label": "Summary: slack, C and the multiplier bound · See the pentagon: the next question.",
    "durationMs": 300,
-   "holdMs": 3500,
+   "holdMs": 500,
    "easing": "smooth",
    "target": {
     "kind": "scene-point",
     "sceneId": "scene-u01",
     "point": {
-     "x": 12160.0,
+     "x": 13600.0,
      "y": 360
     },
     "zoom": 1.0,
