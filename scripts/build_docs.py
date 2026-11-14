@@ -227,6 +227,21 @@ def english_title(stem: str) -> str:
     return ""
 
 
+def schedule_english_titles() -> dict[str, str]:
+    """進度表「英文版簡報」清單的英文名稱:{簡報檔 stem(不含 -en): 名稱},去掉「KPNN 」前綴與「(self-study)」。"""
+    p = ROOT / "schedule.md"
+    out: dict[str, str] = {}
+    if not p.exists():
+        return out
+    item = re.compile(r"^- (KP\d{2}.*?):\s*(?:\[Lecture\]\([^)]*\)(?:\{[^}]*\})?\s*·\s*)?\[Slides\]\(slides/([^)\s]+?)-en\.jbd\.json\)")
+    for line in p.read_text(encoding="utf-8").splitlines():
+        m = item.match(line)
+        if m:
+            name = re.sub(r"\s*\((?:self-study)[^)]*\)\s*$", "", re.sub(r"^KP\d{2}\s+", "", m.group(1).strip()))
+            out.setdefault(m.group(2), name)
+    return out
+
+
 def deck_english_title(stem: str) -> str:
     """英文版簡報(slides/<stem>-en.jbd.json)的標題,去掉「KPNN 」前綴;沒有則回傳空字串。"""
     p = ROOT / "slides" / f"{stem}-en.jbd.json"
@@ -237,6 +252,9 @@ def deck_english_title(stem: str) -> str:
     except (OSError, ValueError):
         return ""
     title = str(title).strip()
+    # 第 10 週等簡報的標題是製作用的(「Week 10 · KP03 · Feature Generation I」),改用進度表英文清單裡的教材名。
+    if re.match(r"^Week \d+\s*·", title):
+        return schedule_english_titles().get(stem, "").replace("|", "\\|")
     # 第 3 週英文簡報的標題帶製作過程的前綴與後綴(「Pattern Recognition Week 3 KP01 … (expert-first, English)」),下載頁只留教材名;基礎版加註 (basic)。
     title = re.sub(r"^Pattern Recognition Week \d+\s+", "", title)
     basic = bool(re.search(r"\(evidence-first trial, basic\)\s*$", title))
