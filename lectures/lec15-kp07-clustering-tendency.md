@@ -198,12 +198,12 @@ MST 檢定（$M=N=100$，各跑 $50$ 次）：$E(q\mid H_0)=2\cdot100\cdot100/20
 **Example** `[Added]`: The window is the unit square, and each of the three point patterns has $N=100$ points.
 MST test ($M=N=100$, $50$ runs each): $E(q\mid H_0)=2\cdot100\cdot100/200=100$; clustered data give mean $q=31.4$ and mean $q'=-9.74$, rejecting in all $50$ runs; random data give mean $q=99.5$ with a rejection rate of $0.04$, close to $\rho=0.05$; regular data give mean $q=129.8$ and mean $q'=+4.23$, never rejected by the left-tail test, but $q$ is clearly large, consistent with "a large $q$ suggests regularity".
 
-`[補充]` Hopkins 檢定（$M=10$，各跑 $200$ 次）照來源定義：叢集 $b$ 平均 $0.73$，隨機 $0.43$，規則 $0.42$，三者的分布重疊很多。
+`[補充]` Hopkins 檢定（$M=10$，各跑 $200$ 次）照來源定義：叢集 $b$ 平均 $0.73$，隨機 $0.43$，規則 $0.41$，三者的分布重疊很多。
 隨機資料的平均低於 $1/2$，一個原因是我們沒有做週期邊界；另一個原因是 $\delta_j$ 只在 $M=10$ 個點的 $X_1$ 裡找最近鄰，而且 $\mathbf{x}_j$ 是離探針最近的點，不是隨機抽出的點。
 文獻上常見的變體改成「$d_j$ 是探針到 $X$ 全體的最近距離，$\delta_j$ 是隨機抽出的資料點到 $X$ 其餘點的最近距離」；同樣的資料下，叢集 $0.98$、隨機 $0.50$、規則 $0.23$，三種點型分得很開。
 使用套件時要先確認它用的是哪一種定義。
 
-`[Added]` The Hopkins test ($M=10$, $200$ runs each) with the source's definition gives mean $b$ of $0.73$ for clustered, $0.43$ for random and $0.42$ for regular data, with heavily overlapping distributions.
+`[Added]` The Hopkins test ($M=10$, $200$ runs each) with the source's definition gives mean $b$ of $0.73$ for clustered, $0.43$ for random and $0.41$ for regular data, with heavily overlapping distributions.
 The random mean falls below $1/2$ partly because we used no periodic boundary, and partly because $\delta_j$ looks for a nearest neighbor only among the $M=10$ points of $X_1$, and $\mathbf{x}_j$ is the point nearest to a probe rather than a randomly drawn one.
 A variant common in the literature instead takes "$d_j$ as the distance from a probe to the nearest point of all of $X$, and $\delta_j$ as the distance from a randomly drawn data point to the nearest other point of $X$"; on the same data it gives $0.98$ for clustered, $0.50$ for random and $0.23$ for regular data, separating the three patterns well.
 When using a library, first check which definition it uses.
