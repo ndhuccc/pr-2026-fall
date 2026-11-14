@@ -236,7 +236,14 @@ def deck_english_title(stem: str) -> str:
         title = json.loads(p.read_text(encoding="utf-8")).get("metadata", {}).get("title", "")
     except (OSError, ValueError):
         return ""
-    title = re.sub(r"^KP\d{2}\s+", "", str(title).strip())
+    title = str(title).strip()
+    # 第 3 週英文簡報的標題帶製作過程的前綴與後綴(「Pattern Recognition Week 3 KP01 … (expert-first, English)」),下載頁只留教材名;基礎版加註 (basic)。
+    title = re.sub(r"^Pattern Recognition Week \d+\s+", "", title)
+    basic = bool(re.search(r"\(evidence-first trial, basic\)\s*$", title))
+    title = re.sub(r"\s*\((?:expert-first, English|evidence-first trial, basic)\)\s*$", "", title)
+    title = re.sub(r"^KP\d{2}\s+", "", title)
+    if basic:
+        title += " (basic)"
     # 標題常帶「 | Guided study」之類後綴;表格儲存格裡的豎線會被當成欄位分隔,整列錯位,所以只取前半段,殘留的豎線一律轉義。
     return title.split(" | ")[0].replace("|", "\\|")
 
