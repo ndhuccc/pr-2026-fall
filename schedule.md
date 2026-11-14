@@ -64,6 +64,71 @@
 - KP06 Feature subset selection:[Lecture](lectures/en/lec07-kp06-subset-selection.md) · [Slides](slides/lec07-kp06-subset-selection-en.jbd.json)
 - KP07 Feature search:[Lecture](lectures/en/lec07-kp07-search.md) · [Slides](slides/lec07-kp07-search-en.jbd.json)
 
+## 英文版簡報(English slides, week 11)
+
+第 11 週的 11 個 KP 各有英文原生簡報(不配音),內容與上表中文版簡報對應;目前只有簡報,尚無英文講義。
+
+- KP01 Why not subtract directly:[Slides](slides/lec11-kp01-motivation-en.jbd.json)
+- KP02 Grid, path and cost:[Slides](slides/lec11-kp02-grid-path-en.jbd.json)
+- KP03 Bellman and dynamic programming:[Slides](slides/lec11-kp03-dp-bellman-en.jbd.json)
+- KP04 Edit distance:[Slides](slides/lec11-kp04-edit-distance-en.jbd.json)
+- KP05 DTW setup and features:[Slides](slides/lec11-kp05-dtw-setup-en.jbd.json)
+- KP06 DTW constraints:[Slides](slides/lec11-kp06-dtw-constraints-en.jbd.json)
+- KP07 Cross-correlation template matching (self-study):[Slides](slides/lec11-kp07-cross-correlation-en.jbd.json){ .self-study }
+- KP08 Speeding up correlation matching (self-study):[Slides](slides/lec11-kp08-correlation-speedup-en.jbd.json){ .self-study }
+- KP09 Energy trade-off of deformable templates (self-study):[Slides](slides/lec11-kp09-deformable-energy-en.jbd.json){ .self-study }
+- KP10 Formulas of deformable templates (self-study):[Slides](slides/lec11-kp10-deformable-formulas-en.jbd.json){ .self-study }
+- KP11 Content retrieval and relevance feedback (self-study):[Slides](slides/lec11-kp11-retrieval-feedback-en.jbd.json){ .self-study }
+
+## 英文版簡報(English slides, week 12)
+
+第 12 週的 7 個 KP 各有英文原生簡報(不配音),內容與上表中文版簡報對應;目前只有簡報,尚無英文講義。
+
+- KP01 When neighboring observations are not independent:[Slides](slides/lec12-kp01-context-en.jbd.json)
+- KP02 Bayes classifier for sequences:[Slides](slides/lec12-kp02-sequence-bayes-en.jbd.json)
+- KP03 First-order Markov chain:[Slides](slides/lec12-kp03-markov-chain-en.jbd.json)
+- KP04 Viterbi algorithm:[Slides](slides/lec12-kp04-viterbi-en.jbd.json)
+- KP05 Viterbi worked example:[Slides](slides/lec12-kp05-viterbi-example-en.jbd.json)
+- KP06 Channel equalization (1) (self-study):[Slides](slides/lec12-kp06-equalization-isi-en.jbd.json){ .self-study }
+- KP07 Channel equalization (2) (self-study):[Slides](slides/lec12-kp07-state-fsm-en.jbd.json){ .self-study }
+
+## 英文版簡報(English slides, week 13)
+
+第 13 週的 7 個 KP 各有英文原生簡報(不配音),內容與上表中文版簡報對應;目前只有簡報,尚無英文講義。
+
+- KP01 Intuition of hidden states:[Slides](slides/lec13-kp01-hidden-states-en.jbd.json)
+- KP02 Formal definition of the HMM:[Slides](slides/lec13-kp02-hmm-definition-en.jbd.json)
+- KP03 Recognition (1): forward–backward recursion:[Slides](slides/lec13-kp03-forward-backward-en.jbd.json)
+- KP04 Recognition (2): best-path method:[Slides](slides/lec13-kp04-best-path-en.jbd.json)
+- KP05 Training (1): Baum-Welch re-estimation:[Slides](slides/lec13-kp05-baum-welch-en.jbd.json)
+- KP06 Training (2): Viterbi re-estimation (self-study):[Slides](slides/lec13-kp06-viterbi-reestimation-en.jbd.json){ .self-study }
+- KP07 Continuous-observation HMM: Gaussian-mixture emissions (self-study):[Slides](slides/lec13-kp07-continuous-hmm-en.jbd.json){ .self-study }
+
+## 英文版簡報(English slides, week 14)
+
+第 14 週的 8 個 KP 各有英文原生簡報(不配音),內容與上表中文版簡報對應;目前只有簡報,尚無英文講義。
+
+- KP01 K-means clustering:[Slides](slides/lec14-kp01-kmeans-en.jbd.json)
+- KP02 K-medoids clustering:[Slides](slides/lec14-kp02-kmedoids-en.jbd.json)
+- KP03 Agglomerative hierarchical clustering:[Slides](slides/lec14-kp03-hierarchical-gas-en.jbd.json)
+- KP04 Linkage methods and the update formula:[Slides](slides/lec14-kp04-linkage-en.jbd.json)
+- KP05 Monotonicity and graph methods:[Slides](slides/lec14-kp05-monotonicity-graph-en.jbd.json)
+- KP06 The cophenetic matrix and divisive methods:[Slides](slides/lec14-kp06-cophenetic-divisive-en.jbd.json)
+- KP07 Choosing the cut level:[Slides](slides/lec14-kp07-cut-level-en.jbd.json)
+- KP08 Hierarchical clustering for large data (self-study):[Slides](slides/lec14-kp08-large-data-hierarchical-en.jbd.json){ .self-study }
+
+## 英文版簡報(English slides, week 15)
+
+第 15 週的 7 個 KP 各有英文原生簡報(不配音),內容與上表中文版簡報對應;目前只有簡報,尚無英文講義。
+
+- KP01 The framework of cluster validity tests:[Slides](slides/lec15-kp01-validity-intro-en.jbd.json)
+- KP02 External criteria:[Slides](slides/lec15-kp02-external-indices-en.jbd.json)
+- KP03 Internal criteria:[Slides](slides/lec15-kp03-internal-indices-en.jbd.json)
+- KP04 Relative criteria:[Slides](slides/lec15-kp04-relative-criteria-en.jbd.json)
+- KP05 The modified Hubert and Dunn indices:[Slides](slides/lec15-kp05-dunn-hubert-en.jbd.json)
+- KP06 The DB index and information criteria:[Slides](slides/lec15-kp06-db-information-en.jbd.json)
+- KP07 Clustering tendency (self-study):[Slides](slides/lec15-kp07-clustering-tendency-en.jbd.json){ .self-study }
+
 ## 英文版簡報(English slides, week 10)
 
 第 10 週 Feature Generation I 的九個 KP 各有英文原生簡報，對應上表的繁中英講義；網站同時提供網頁版與 JBD 下載。
@@ -126,8 +191,10 @@
 - KP10 Conditional Mean and Best Prediction (self-study):[Slides](slides/lec03-kp10-conditional-mean-en.jbd.json){ .self-study }
 - KP11 Conditional Mean and Posterior Probability (self-study):[Slides](slides/lec03-kp11-mse-posterior-en.jbd.json){ .self-study }
 - KP12 Bias and Variance (self-study):[Slides](slides/lec03-kp12-bias-variance-en.jbd.json){ .self-study }
+- KP12 Bias and Variance, basic version (self-study, no voiceover):[Slides](slides/lec03-kp12-bias-variance-basic-en.jbd.json){ .self-study }
 - KP13 Logistic Regression:[Slides](slides/lec03-kp13-logistic-en.jbd.json)
 - KP14 Hard-Margin Support Vector Machine:[Slides](slides/lec03-kp14-hard-margin-en.jbd.json)
+- KP14 Hard-Margin Support Vector Machine, basic version (no voiceover):[Slides](slides/lec03-kp14-hard-margin-basic-en.jbd.json)
 - KP15 Soft-Margin Support Vector Machine:[Slides](slides/lec03-kp15-soft-margin-en.jbd.json)
 - KP16 Multiclass and Error-Correcting Output Codes:[Slides](slides/lec03-kp16-multiclass-ecoc-en.jbd.json)
 
