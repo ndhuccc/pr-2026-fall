@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-16 04:05（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp13-logistic.jbd.json。來源任務 `kp13-review-revision`（確認：使用者 2026-11-16 於 Claude Code 對話上傳修正後的 KP13 簡報並要求「將簡報推送到課程」；同名檔經詢問選擇「取代既有檔」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-15 14:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp13-logistic.jbd.json、slides/lec03-kp14-hard-margin.jbd.json。來源任務 `hyperframes-to-jbd`（確認：使用者 2026-11-15 於對話指示「把這二份JBD推送到課程網站」（v3），並選擇取代現行同名簡報；講者備註為旁白逐字稿，可公開）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-15 00:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 12 份成品配送到本課程：slides/lec03-kp01-pilot-en.jbd.json、slides/lec03-kp02-batch-perceptron-en.jbd.json、slides/lec03-kp03-convergence-en.jbd.json、slides/lec03-kp07-mse-projection-en.jbd.json、slides/lec03-kp08-lms-en.jbd.json、slides/lec03-kp09-least-squares-en.jbd.json、slides/lec03-kp11-mse-posterior-en.jbd.json、slides/lec03-kp12-bias-variance-en.jbd.json、slides/lec03-kp13-logistic-en.jbd.json、slides/lec03-kp14-hard-margin-en.jbd.json、slides/lec03-kp15-soft-margin-en.jbd.json、slides/lec03-kp16-multiclass-ecoc-en.jbd.json。來源任務 `en-slides`（確認：使用者 2026-11-14 在對話中回覆「確認無誤，配送到 pr-2026-fall，授權推送」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
