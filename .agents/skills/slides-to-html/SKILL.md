@@ -53,7 +53,7 @@ node .agents/skills/slides-to-html/scripts/jbd_to_html.mjs --out-dir <輸出資�
 | 字元格式 | `{color=#rrggbb}…{/color}`、`{size=N}…{/size}`、`{font=slug}…{/font}`。 |
 | 連線 | 16 個等角度掛點、直線/曲線/折點、箭頭方向與大小、虛線、連線標籤(白底卡片、`above`/`on`/`below`)。 |
 | 巢狀畫布 | 框(frame)內顯示子畫布的即時預覽(最深 4 層)。 |
-| 圖片、語音 | 內嵌 `data:` 資料,各存一份(同一張圖出現多處不會讓檔案變大)。 |
+| 圖片、語音、影片 | 內嵌 `data:` 資料,各存一份(同一張圖出現多處不會讓檔案變大);影片有控制列、按播放才播。 |
 | 其他圖形 | 橢圓、三角形、菱形、五邊形、星形、箭頭用 SVG 畫。 |
 | 填色效果 | `fillOpacity`、線性/徑向/多色漸層(`gradientTo`、`gradientType`、`gradientAngle`、`gradientStops`)、陰影(`shadowColor` 等,沿輪廓的 drop-shadow)。 |
 | 多邊形、折線 | `polygon`、`polyline`(`polygonPoints`,含 `smooth` 平滑頂點的 Catmull-Rom 曲線),折線支援虛線與圓角線端。 |
@@ -61,7 +61,8 @@ node .agents/skills/slides-to-html/scripts/jbd_to_html.mjs --out-dir <輸出資�
 
 **與原播放器的差異**(已知,可接受):
 
-- 不支援 `video`、`embed`、`group` 節點,轉換時印警告並略過。
+- 不支援 `embed`、`group` 節點,轉換時印警告並略過。
+- `video` 節點:`data:` 內嵌或 `http(s)` 網址的影片會轉成有控制列、不自動播放的 `<video>`;點影片或其控制列不會換頁,換頁時自動暫停,影片取得焦點時空白鍵與左右鍵交給影片。
 - 步驟目標若不是 `scene-point`(例如指向某個節點),以預設鏡頭顯示並印警告。
 - `asset:` 參照(只存在編輯器內)無法內嵌,圖片與語音會被略過並印警告;用 JianBauDau 的 **Export** 匯出的檔案不會有這種參照。
 - 圖形內的文字若超出方框,字級會自動縮小(最小 60%)以免被截掉。

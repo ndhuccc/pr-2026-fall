@@ -357,6 +357,13 @@ function convert(file, outFile) {
         if (!/^(data:|https?:)/.test(src)) { warn.add('有圖片參照 asset: 或相對路徑,無法內嵌,已略過'); continue; }
         const inner = src.startsWith('data:') ? `<img data-i="${imgRef(src)}" alt="${escAttr(n.image.alt || '')}" style="object-fit:${n.image.fit || 'contain'}">` : `<img src="${escAttr(src)}" alt="${escAttr(n.image.alt || '')}" style="object-fit:${n.image.fit || 'contain'}">`;
         parts.push(`<div class="n img${hc}" data-n="${escAttr(n.id)}" style="${css.join(';')}">${inner}</div>`);
+      } else if (n.type === 'video') {
+        // 影片:data: 內嵌與圖片共用同一個陣列(各存一份),由頁面載入時填入 src;有控制列、不自動播放
+        const v = n.video || {}, src = v.src || '';
+        if (!/^(data:|https?:)/.test(src)) { warn.add('有影片參照 asset: 或相對路徑,無法內嵌,已略過'); continue; }
+        const attrs = `${v.controls === false ? '' : ' controls'}${v.muted ? ' muted' : ''}${v.loop ? ' loop' : ''} playsinline preload="metadata" aria-label="${escAttr(v.alt || '')}" style="object-fit:${v.fit || 'contain'}"`;
+        const inner = src.startsWith('data:') ? `<video data-i="${imgRef(src)}"${attrs}></video>` : `<video src="${escAttr(src)}"${attrs}></video>`;
+        parts.push(`<div class="n vid${hc}" data-n="${escAttr(n.id)}" style="${css.join(';')}">${inner}</div>`);
       } else if (n.type === 'frame') {
         const f = n.frame || {};
         const pad = f.padding ?? 18;
@@ -427,6 +434,8 @@ html,body{margin:0;height:100%;background:#0f0f0d;color:#f2ede4;font-family:${DE
 .n.text{align-items:center;align-items:safe center;justify-content:flex-start}
 .n.shape{align-items:center;justify-content:center}
 .n.img{overflow:hidden}.n.img img{width:100%;height:100%;display:block}
+.n.vid{overflow:hidden}.n.vid video{width:100%;height:100%;display:block;background:#000}
+.layer.on .n.vid:not(.h){pointer-events:auto}
 .n.frame{align-items:flex-start;justify-content:flex-end;overflow:visible}
 .fprev{position:absolute}
 .flabel{position:absolute;left:0;bottom:100%;margin-bottom:6px;white-space:nowrap;font-weight:600;opacity:.9}
@@ -482,7 +491,7 @@ const EASE={smooth:'cubic-bezier(.4,0,.2,1)',easeInOut:'ease-in-out',linear:'lin
 const stage=document.getElementById('stage'),wrap=document.getElementById('stagewrap'),notes=document.getElementById('notes');
 const cnt=document.getElementById('cnt'),lab=document.getElementById('lab');
 const layers=[...document.querySelectorAll('.layer')];
-document.querySelectorAll('img[data-i]').forEach(i=>{i.src=IMGS[i.dataset.i]});
+document.querySelectorAll('img[data-i],video[data-i]').forEach(i=>{i.src=IMGS[i.dataset.i]});
 let cur=-1,audio=null,auto=false;
 const INIT=new Set([...document.querySelectorAll('[data-n].h')].map(e=>e.dataset.n));
 const nodeEls=id=>document.querySelectorAll('[data-n="'+(window.CSS&&CSS.escape?CSS.escape(id):id)+'"]');
@@ -529,7 +538,7 @@ function go(i,instant){
   layers.forEach((l,j)=>l.classList.toggle('on',j===s.layer));
   const moved=!prev||prev.layer!==s.layer||prev.x!==s.x||prev.y!==s.y||prev.z!==s.z||prev.r!==s.r;
   applyReveal(i,!instant&&prev&&i===cur+1,moved);
-  cur=i;stopAudio();
+  cur=i;stopAudio();document.querySelectorAll('video').forEach(v=>{if(!v.paused)v.pause()});
   cnt.textContent=(i+1)+' / '+STEPS.length;lab.textContent=s.label;
   notes.innerHTML=(s.notes?'<h4>講者備註</h4>'+esc(s.notes):'')+(s.tr?'<h4>語音逐字稿</h4>'+esc(s.tr):'');
   const v=document.getElementById('voice');if(v)v.disabled=s.aud<0;
@@ -553,6 +562,8 @@ const vb=document.getElementById('voice');
 if(vb){vb.onclick=()=>{audio&&!audio.paused?stopAudio():playAudio()};
   document.getElementById('auto').onclick=function(){auto=!auto;this.classList.toggle('on',auto);if(auto)playAudio()}}
 addEventListener('keydown',e=>{
+  // 影片取得焦點時,空白鍵與左右鍵交給影片(播放／暫停、快轉倒轉)
+  if(document.activeElement&&document.activeElement.tagName==='VIDEO'&&(e.key===' '||e.key==='ArrowLeft'||e.key==='ArrowRight'))return;
   if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){go(cur+1);e.preventDefault()}
   else if(e.key==='ArrowLeft'||e.key==='PageUp'){go(cur-1);e.preventDefault()}
   else if(e.key==='Home')go(0);else if(e.key==='End')go(STEPS.length-1);
@@ -560,7 +571,7 @@ addEventListener('keydown',e=>{
   else if(e.key==='f'||e.key==='F')document.getElementById('fs').click();
   else if((e.key==='v'||e.key==='V')&&vb)vb.click();
 });
-stage.addEventListener('click',e=>{if(!notes.contains(e.target))go(cur+1)});
+stage.addEventListener('click',e=>{if(!notes.contains(e.target)&&!(e.target.closest&&e.target.closest('video')))go(cur+1)});
 addEventListener('resize',fit);
 fit();
 go(Math.max(0,(parseInt(location.hash.slice(1))||1)-1),true);

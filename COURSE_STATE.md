@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-17（Asia/Taipei）— 老師同意讓網頁版簡報能播影片：修改 `.agents/skills/slides-to-html`（`scripts/jbd_to_html.mjs` 支援 `video` 節點、`SKILL.md` 更新說明）。以本機轉換 222 份簡報驗證：全部成功；KP14 網頁版第 1 頁影片可點播放、點影片不換頁、換頁自動暫停。上一筆 KP14 配送已提交並推送（bee4cb6），網站已提供新版。
+
 - 2026-11-17 05:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp14-hard-margin.jbd.json。來源任務 `kp14-svm-video`（確認：使用者 2026-11-16 於 Claude Code 對話看過新第 1 頁原生播放器截圖後指示「配送到課程網站，取代現行版」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-16 13:57（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp15-soft-margin.jbd.json、slides/lec03-kp16-multiclass-ecoc.jbd.json。來源任務 `en-decks`（確認：使用者 2026-11-16 於對話回覆「好,KP16也一樣」：KP15、KP16 中文簡報以 HyperFrames 轉 JBD 輕量版取代）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
