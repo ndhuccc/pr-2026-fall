@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-16 13:57（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 2 份成品配送到本課程：slides/lec03-kp15-soft-margin.jbd.json、slides/lec03-kp16-multiclass-ecoc.jbd.json。來源任務 `en-decks`（確認：使用者 2026-11-16 於對話回覆「好,KP16也一樣」：KP15、KP16 中文簡報以 HyperFrames 轉 JBD 輕量版取代）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-16 08:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp07-backprop-algorithm.jbd.json。來源任務 `kp07-review-revision`（確認：使用者 2026-11-16 於對話說「上架」，並選擇取代同名舊版）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-16 08:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 6 份成品配送到本課程：slides/lec05-kp01-xor.jbd.json、slides/lec05-kp02-two-layer-perceptron.jbd.json、slides/lec05-kp03-polyhedral-codes.jbd.json、slides/lec05-kp04-three-layer-perceptron.jbd.json、slides/lec05-kp05-constructive-methods.jbd.json、slides/lec05-kp06-backprop-gradient.jbd.json。來源任務 `plate-width`（確認：使用者 2026-11-16 於對話說「上架」，並選擇取代同名舊版）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
