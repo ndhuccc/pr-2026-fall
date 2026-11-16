@@ -53,6 +53,7 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-16（Asia/Taipei）— 依老師指示將第 5 週 KP08–KP12 列為自主學習：補標 KP09（schedule.md 中英連結與備註）；`CHANGELOG.md` 已記錄。
 - 2026-11-16（Asia/Taipei）— 依老師指示移除第 3 週 KP14 硬間隔 SVM 基礎版簡報（中、英兩份），`schedule.md` 移除對應連結與備註；`CHANGELOG.md` 已記錄。
 - 2026-11-16 04:05（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp13-logistic.jbd.json。來源任務 `kp13-review-revision`（確認：使用者 2026-11-16 於 Claude Code 對話上傳修正後的 KP13 簡報並要求「將簡報推送到課程」；同名檔經詢問選擇「取代既有檔」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
