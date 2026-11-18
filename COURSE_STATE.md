@@ -53,6 +53,7 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-18（Asia/Taipei）— 老師要求在投影片下載頁提供影片下載（原本想用 iframe 嵌進簡報，JBD 的 embed 節點未被網頁版轉換器支援、播放器支援度未確認，改採下載欄）。新增 `slides/videos.toml`（21 支第 2 週影片，deck→slug→片名）；修改 `scripts/build_docs.py`：`write_slides_index` 在有影片的週多一欄「影片」（▶ 片名＝新分頁播放，「下載」＝網址加 `?dl=1`，由影片 Worker 回 Content-Disposition: attachment），`videos.toml` 不發佈、不列入「其他檔案」。影片本體不在本 repo：Cloudflare R2 bucket `pr-2026-fall-videos` + Worker `videos`，原始碼與上架技能在 ndhuccc/motion-explainer。驗證：本機 build_docs + mkdocs build，第 2 週表格 4 欄、9 列、42 個連結，第 3 週仍 3 欄。
 - 2026-11-17（Asia/Taipei）— 老師同意讓網頁版簡報能播影片：修改 `.agents/skills/slides-to-html`（`scripts/jbd_to_html.mjs` 支援 `video` 節點、`SKILL.md` 更新說明）。以本機轉換 222 份簡報驗證：全部成功；KP14 網頁版第 1 頁影片可點播放、點影片不換頁、換頁自動暫停。上一筆 KP14 配送已提交並推送（bee4cb6），網站已提供新版。
 
 - 2026-11-17 05:34（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec03-kp14-hard-margin.jbd.json。來源任務 `kp14-svm-video`（確認：使用者 2026-11-16 於 Claude Code 對話看過新第 1 頁原生播放器截圖後指示「配送到課程網站，取代現行版」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。

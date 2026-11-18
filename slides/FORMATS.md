@@ -36,6 +36,10 @@
 - HTML 內含講者備註與語音逐字稿,公開程度與 `.jbd.json` 相同(見下方「發佈前必須確認」)。
 - 自己的電腦建置前,先執行一次 `npm ci --ignore-scripts --prefix .agents/skills/slides-to-html`;沒裝 Node.js 時只會警告並略過,網站仍可建置。
 
+## 影片欄（slides/videos.toml）
+
+下載頁的「影片」欄來自 `slides/videos.toml`：每支影片一筆 `[[video]]`，寫 `deck`（簡報檔名，不含 `.jbd.json`）、`slug`（影片檔名，不含 `.mp4`）、`title`（片名）。影片本體放在 `site` 指定的網站（目前是 Cloudflare 的 https://videos.ndhuccc.workers.dev/），不進本 repo；新增影片時先用 motion-explainer 的 `r2-video-publish` 技能上架，再在這裡加一筆。這個檔案只供建置腳本讀取，不會發佈到網站。
+
 ## 播放器下載
 
 網站的投影片下載頁附 JianBauDau 播放器(Windows 執行檔)的下載連結:

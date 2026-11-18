@@ -1,0 +1,110 @@
+# 投影片下載頁的「影片」欄（scripts/build_docs.py 讀取）。
+# 每支影片一筆：deck = 簡報檔名（slides/<deck>.jbd.json，不含副檔名），slug = 影片檔名（不含 .mp4），title = 片名。
+# 影片放在 Cloudflare R2，經 Worker 公開；網址 = site + /videos/<slug>.mp4，加 ?dl=1 會直接下載。
+# 影片原始專案：ndhuccc/motion-explainer（用 r2-video-publish 技能上架）。
+site = "https://videos.ndhuccc.workers.dev"
+
+[[video]]
+deck = "lec02"
+slug = "bayes-01-rule"
+title = "貝氏定理與決策規則"
+
+[[video]]
+deck = "lec02"
+slug = "bayes-02-error"
+title = "決策區域與誤判機率"
+
+[[video]]
+deck = "lec02"
+slug = "bayes-03-risk"
+title = "風險與判別函數"
+
+[[video]]
+deck = "lec02"
+slug = "bayes-04-gaussian"
+title = "高斯貝氏分類器"
+
+[[video]]
+deck = "lec02-bayesian-inference"
+slug = "bayesinf-01-inference"
+title = "貝氏推論與預測分布"
+
+[[video]]
+deck = "lec02-bayesian-inference"
+slug = "bayesinf-02-maxent"
+title = "最大熵估計"
+
+[[video]]
+deck = "lec02-bayesian-network-inference"
+slug = "bninf-01-chain"
+title = "貝氏網路推論：沿著鏈傳遞訊息"
+
+[[video]]
+deck = "lec02-bayesian-network-inference"
+slug = "bninf-02-factor"
+title = "貝氏網路推論：把求和往內分配"
+
+[[video]]
+deck = "lec02-bayesian-networks"
+slug = "bayesnet-1-structure"
+title = "貝氏網路（一）：結構與鏈鎖規則"
+
+[[video]]
+deck = "lec02-bayesian-networks"
+slug = "bayesnet-2-independence"
+title = "貝氏網路（二）：條件獨立與參數數量"
+
+[[video]]
+deck = "lec02-linear-classifiers"
+slug = "linear-1-hyperplane"
+title = "線性分類器（一）：共同共變異數下的決策超平面"
+
+[[video]]
+deck = "lec02-linear-classifiers"
+slug = "linear-2-min-distance"
+title = "線性分類器（二）：最小距離分類器"
+
+[[video]]
+deck = "lec02-mixture-models-em"
+slug = "em-01-steps"
+title = "混合模型與 EM 的兩個步驟"
+
+[[video]]
+deck = "lec02-mixture-models-em"
+slug = "em-02-guarantees"
+title = "EM 的保證與陷阱"
+
+[[video]]
+deck = "lec02-naive-bayes-and-nn"
+slug = "nbknn-01-naive-bayes"
+title = "單純貝氏分類器"
+
+[[video]]
+deck = "lec02-naive-bayes-and-nn"
+slug = "nbknn-02-knn"
+title = "最近鄰居法則"
+
+[[video]]
+deck = "lec02-nonparametric-density"
+slug = "nonparam-density-1-histogram"
+title = "無母數密度估計（一）：直方圖與格寬"
+
+[[video]]
+deck = "lec02-nonparametric-density"
+slug = "nonparam-density-2-parzen"
+title = "無母數密度估計（二）：Parzen 窗"
+
+[[video]]
+deck = "lec02-nonparametric-density"
+slug = "nonparam-density-3-knn"
+title = "無母數密度估計（三）：kNN 與維度詛咒"
+
+[[video]]
+deck = "lec02-parameter-estimation"
+slug = "mle-v01"
+title = "最大似然估計（MLE）"
+
+[[video]]
+deck = "lec02-parameter-estimation"
+slug = "map-v01"
+title = "最大後驗估計（MAP）"
