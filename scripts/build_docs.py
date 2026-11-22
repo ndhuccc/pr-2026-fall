@@ -290,7 +290,7 @@ VIDEOS_FILE = "videos.toml"
 def slide_videos() -> dict[str, list[tuple[str, str, str]]]:
     """slides/videos.toml 的影片清單:{簡報檔名: [(片名, 播放網址, 下載網址), ...]},依檔案中的順序。
 
-    影片放在課程 repo 之外(Cloudflare R2 + Worker),網址 = site/videos/<slug>.mp4;加 ?dl=1 由伺服器要求瀏覽器直接下載。
+    影片可指定播放網址 url 和附件網址 download_url。使用 slug 的既有紀錄繼續由 site 組合網址。
     """
     p = ROOT / "slides" / VIDEOS_FILE
     if not p.exists():
@@ -300,8 +300,15 @@ def slide_videos() -> dict[str, list[tuple[str, str, str]]]:
     site = str(data.get("site", "")).rstrip("/")
     out: dict[str, list[tuple[str, str, str]]] = {}
     for v in data.get("video", []):
-        url = f"{site}/videos/{v['slug']}.mp4"
-        out.setdefault(v["deck"], []).append((v.get("title", v["slug"]), url, url + "?dl=1"))
+        if "url" in v:
+            url = v["url"]
+            download = v["download_url"]
+            title = v.get("title", v["deck"])
+        else:
+            url = f"{site}/videos/{v['slug']}.mp4"
+            download = url + "?dl=1"
+            title = v.get("title", v["slug"])
+        out.setdefault(v["deck"], []).append((title, url, download))
     return out
 
 

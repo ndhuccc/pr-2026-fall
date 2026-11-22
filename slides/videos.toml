@@ -108,3 +108,77 @@ title = "最大似然估計（MLE）"
 deck = "lec02-parameter-estimation"
 slug = "map-v01"
 title = "最大後驗估計（MAP）"
+
+# 第五週中文配音簡報。url 可線上播放，download_url 可直接下載同一支 MP4。
+
+[[video]]
+deck = "lec05-kp01-xor"
+title = "KP01 XOR 與一條線的極限"
+url = "https://public.ndhuccc.workers.dev/01504e5d9cca4cfaa00ce9b7eee10bd4.mp4"
+download_url = "https://public.ndhuccc.workers.dev/e06176018826495881b7deb428fe59ac.mp4"
+
+[[video]]
+deck = "lec05-kp02-two-layer-perceptron"
+title = "KP02 兩層感知器"
+url = "https://public.ndhuccc.workers.dev/f21146f813f846bcbc9f97b322690370.mp4"
+download_url = "https://public.ndhuccc.workers.dev/f1baad63b26644128b0f01f41f2a5e8f.mp4"
+
+[[video]]
+deck = "lec05-kp03-polyhedral-codes"
+title = "KP03 多條線的編碼"
+url = "https://public.ndhuccc.workers.dev/dbd94a49952c49e897162ba09f45dea5.mp4"
+download_url = "https://public.ndhuccc.workers.dev/0506c566ad334eae9cd70a2f79d30620.mp4"
+
+[[video]]
+deck = "lec05-kp04-three-layer-perceptron"
+title = "KP04 三層感知器"
+url = "https://public.ndhuccc.workers.dev/f7d032b023ee4d2d8fc4f28a87eca744.mp4"
+download_url = "https://public.ndhuccc.workers.dev/84d4f07ab6c14e7d81d30d8202963fbd.mp4"
+
+[[video]]
+deck = "lec05-kp05-constructive-methods"
+title = "KP05 構造式方法"
+url = "https://public.ndhuccc.workers.dev/b1b5f28c0d5b4398be9a91642948ce19.mp4"
+download_url = "https://public.ndhuccc.workers.dev/96a980584b7045a498deb759df8a02d9.mp4"
+
+[[video]]
+deck = "lec05-kp06-backprop-gradient"
+title = "KP06 反向傳播的梯度"
+url = "https://public.ndhuccc.workers.dev/bb35697624ad4ebbbad2fc168f0489b5.mp4"
+download_url = "https://public.ndhuccc.workers.dev/388adc8fd1e24fca897ee5874bbb9e76.mp4"
+
+[[video]]
+deck = "lec05-kp07-backprop-algorithm"
+title = "KP07 反向傳播的演算法"
+url = "https://public.ndhuccc.workers.dev/c0a393d713654776b70a45b76b2846b1.mp4"
+download_url = "https://public.ndhuccc.workers.dev/dcc82c4dc7ad46ccb092671af39383a1.mp4"
+
+[[video]]
+deck = "lec05-kp08-backprop-speedups"
+title = "KP08 反向傳播的加速"
+url = "https://public.ndhuccc.workers.dev/b7363e5df7734eddba28161e49c6b431.mp4"
+download_url = "https://public.ndhuccc.workers.dev/7906e2dc6cf94ee2a42b11b7373fbf12.mp4"
+
+[[video]]
+deck = "lec05-kp09-cost-functions"
+title = "KP09 代價函數的選擇"
+url = "https://public.ndhuccc.workers.dev/29749a4b6da5432ebc28c51fbf5cfb47.mp4"
+download_url = "https://public.ndhuccc.workers.dev/494ad051997448e690a36c1e5e835460.mp4"
+
+[[video]]
+deck = "lec05-kp10-network-size"
+title = "KP10 網路大小與早停"
+url = "https://public.ndhuccc.workers.dev/0635a59f9a6841ac8bd163cbd26d547e.mp4"
+download_url = "https://public.ndhuccc.workers.dev/27b9cb2324954b149596d84c71524224.mp4"
+
+[[video]]
+deck = "lec05-kp11-pruning-regularization"
+title = "KP11 剪枝與正則化"
+url = "https://public.ndhuccc.workers.dev/1b707818686c43cebe2e629043f82985.mp4"
+download_url = "https://public.ndhuccc.workers.dev/c0e2e25f51f4452b99c3c81e99f3083f.mp4"
+
+[[video]]
+deck = "lec05-kp12-weight-sharing"
+title = "KP12 權重共享"
+url = "https://public.ndhuccc.workers.dev/0522d69c862146fdb6caec812be286f8.mp4"
+download_url = "https://public.ndhuccc.workers.dev/46088580b9f54f60bc352161db4e239b.mp4"
