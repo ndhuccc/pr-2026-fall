@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23 21:46（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp02-two-layer-perceptron.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「把 KP02 的取景框拿掉再換上」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 21:18（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp13-generalized-linear.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-23 21:17（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：slides/lec15-kp01-validity-intro.jbd.json、slides/lec15-kp02-external-indices.jbd.json、slides/lec15-kp03-internal-indices.jbd.json、slides/lec15-kp04-relative-criteria.jbd.json、slides/lec15-kp05-dunn-hubert.jbd.json、slides/lec15-kp06-db-information.jbd.json、slides/lec15-kp07-clustering-tendency.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
