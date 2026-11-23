@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23（Asia/Taipei）— 依老師要求，投影片下載頁更新為 JianBauDau Player 1.0.7（`ndhuccc/IDL115` 的 `player-v1.0.7`），同時提供免安裝版與安裝版；同步 `scripts/build_docs.py`、`slides/FORMATS.md` 與異動紀錄。兩個公開下載均已實際下載並核對 SHA-256；本機網站建置及產出的下載連結檢查通過。執行檔來源與測試紀錄見 Release 的 `build-report.json`。
+
 - 2026-11-22 21:27（Asia/Taipei）— 依第五週講義逐一重製 KP01–KP12 中文原生簡報與配音，取代原有 12 份 JBD。課程網站第五週「影片」欄提供各 KP 的 Cloudflare MP4 播放與下載連結。
 
 - 2026-11-22 14:12（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：slides/lec15-kp01-validity-intro.jbd.json、slides/lec15-kp02-external-indices.jbd.json、slides/lec15-kp03-internal-indices.jbd.json、slides/lec15-kp04-relative-criteria.jbd.json、slides/lec15-kp05-dunn-hubert.jbd.json、slides/lec15-kp06-db-information.jbd.json、slides/lec15-kp07-clustering-tendency.jbd.json。來源任務 `amber-recolor`（確認：老師 2026-11-22 於對話指示「舊的也都改琥珀色」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
