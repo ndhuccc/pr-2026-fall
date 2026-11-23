@@ -126,8 +126,8 @@ download_url = "https://public.ndhuccc.workers.dev/f1baad63b26644128b0f01f41f2a5
 [[video]]
 deck = "lec05-kp03-polyhedral-codes"
 title = "KP03 多條線的編碼"
-url = "https://public.ndhuccc.workers.dev/dbd94a49952c49e897162ba09f45dea5.mp4"
-download_url = "https://public.ndhuccc.workers.dev/0506c566ad334eae9cd70a2f79d30620.mp4"
+url = "https://public.ndhuccc.workers.dev/b2da27e960e04693833d90586e07a4ec.mp4"
+download_url = "https://public.ndhuccc.workers.dev/ba2f464451b8497e8990606cb4b7552a.mp4"
 
 [[video]]
 deck = "lec05-kp04-three-layer-perceptron"
