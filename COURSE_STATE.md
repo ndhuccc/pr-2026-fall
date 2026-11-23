@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23 21:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp06-backprop-gradient.jbd.json。來源任務 `kp06-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「都換上課程網站」（v2：zIndex 整數、點上淡色底））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 21:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp01-xor.jbd.json。來源任務 `kp01-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「都換上課程網站」（v2：zIndex 整數、點上淡色底））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-23 20:58（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp01-xor.jbd.json。來源任務 `kp01-highlight-voiceover`（確認：使用者 2026-11-23 於對話要求「把 KP01 換進課程網站」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
