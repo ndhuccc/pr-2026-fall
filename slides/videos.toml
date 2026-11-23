@@ -132,26 +132,26 @@ download_url = "https://public.ndhuccc.workers.dev/ba2f464451b8497e8990606cb4b75
 [[video]]
 deck = "lec05-kp04-three-layer-perceptron"
 title = "KP04 三層感知器"
-url = "https://public.ndhuccc.workers.dev/f7d032b023ee4d2d8fc4f28a87eca744.mp4"
-download_url = "https://public.ndhuccc.workers.dev/84d4f07ab6c14e7d81d30d8202963fbd.mp4"
+url = "https://public.ndhuccc.workers.dev/de4746f3505040c988ef5fbeccd81869.mp4"
+download_url = "https://public.ndhuccc.workers.dev/0efb36dce4494fc4a377d98c552ee2e2.mp4"
 
 [[video]]
 deck = "lec05-kp05-constructive-methods"
 title = "KP05 構造式方法"
-url = "https://public.ndhuccc.workers.dev/b1b5f28c0d5b4398be9a91642948ce19.mp4"
-download_url = "https://public.ndhuccc.workers.dev/96a980584b7045a498deb759df8a02d9.mp4"
+url = "https://public.ndhuccc.workers.dev/d9fdb6ad5fe64c3a89d96656de297adb.mp4"
+download_url = "https://public.ndhuccc.workers.dev/875db4772d654ba59c5e5431f197473b.mp4"
 
 [[video]]
 deck = "lec05-kp06-backprop-gradient"
 title = "KP06 反向傳播的梯度"
-url = "https://public.ndhuccc.workers.dev/bb35697624ad4ebbbad2fc168f0489b5.mp4"
-download_url = "https://public.ndhuccc.workers.dev/388adc8fd1e24fca897ee5874bbb9e76.mp4"
+url = "https://public.ndhuccc.workers.dev/f2c73ea9addb4b3ebb9b9670f08a3e54.mp4"
+download_url = "https://public.ndhuccc.workers.dev/2aafd300995048079ee67d28561205de.mp4"
 
 [[video]]
 deck = "lec05-kp07-backprop-algorithm"
 title = "KP07 反向傳播的演算法"
-url = "https://public.ndhuccc.workers.dev/c0a393d713654776b70a45b76b2846b1.mp4"
-download_url = "https://public.ndhuccc.workers.dev/dcc82c4dc7ad46ccb092671af39383a1.mp4"
+url = "https://public.ndhuccc.workers.dev/32f867ddd0dd46b3a2271f7d839d6dbb.mp4"
+download_url = "https://public.ndhuccc.workers.dev/d3eaf945ee874423a4d89fe8c7761b7c.mp4"
 
 [[video]]
 deck = "lec05-kp08-backprop-speedups"
