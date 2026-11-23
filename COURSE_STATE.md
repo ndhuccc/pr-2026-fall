@@ -53,6 +53,10 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-24 00:44（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp07-backprop-algorithm.jbd.json。來源任務 `kp07-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「確認，開始配音，完成後取代網站上的 KP07」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
+- 2026-11-24 00:44（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp07-backprop-algorithm.jbd.json。來源任務 `kp07-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「確認，開始配音，完成後取代網站上的 KP07」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 23:22（Asia/Taipei）— 第五週 KP01–KP02 依高光配音技能 1.6.1 更新琥珀色高光框與 MP4。KP01 調整框距，將網站上的 30 步影片換成與簡報同步的 186 步版。KP02 修正小點及輸入節點 x₁ 的高光圖層，保留原有 127 步配音。
 
 - 2026-11-23 23:10（Asia/Taipei）— 第五週 KP04–KP07 依高光配音技能 1.6.1 更新琥珀色高光框與 MP4。四份簡報使用 25% 琥珀色底。KP06 依現行 264 步有聲版調整框距，並以該版內嵌旁白重製十章影片。
