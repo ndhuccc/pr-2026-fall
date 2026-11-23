@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23 21:17（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 11 份成品配送到本課程：slides/lec11-kp01-motivation.jbd.json、slides/lec11-kp02-grid-path.jbd.json、slides/lec11-kp03-dp-bellman.jbd.json、slides/lec11-kp04-edit-distance.jbd.json、slides/lec11-kp05-dtw-setup.jbd.json、slides/lec11-kp06-dtw-constraints.jbd.json、slides/lec11-kp07-cross-correlation.jbd.json、slides/lec11-kp08-correlation-speedup.jbd.json、slides/lec11-kp09-deformable-energy.jbd.json、slides/lec11-kp10-deformable-formulas.jbd.json、slides/lec11-kp11-retrieval-feedback.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 21:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp06-backprop-gradient.jbd.json。來源任務 `kp06-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「都換上課程網站」（v2：zIndex 整數、點上淡色底））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-23 21:16（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp01-xor.jbd.json。來源任務 `kp01-highlight-voiceover`（確認：使用者 2026-11-23 於對話指示「都換上課程網站」（v2：zIndex 整數、點上淡色底））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
