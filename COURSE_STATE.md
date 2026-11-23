@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23 20:58（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp01-xor.jbd.json。來源任務 `kp01-highlight-voiceover`（確認：使用者 2026-11-23 於對話要求「把 KP01 換進課程網站」）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 13:25（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp06-backprop-gradient.jbd.json。來源任務 `kp06-highlight-voiceover`（確認：使用者 2026-11-23 於對話要求以此版取代課程網站 KP06 簡報）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-23（Asia/Taipei）— 依老師要求，投影片下載頁更新為 JianBauDau Player 1.0.7（`ndhuccc/IDL115` 的 `player-v1.0.7`），同時提供免安裝版與安裝版；同步 `scripts/build_docs.py`、`slides/FORMATS.md` 與異動紀錄。兩個公開下載均已實際下載並核對 SHA-256；本機網站建置及產出的下載連結檢查通過。執行檔來源與測試紀錄見 Release 的 `build-report.json`。
