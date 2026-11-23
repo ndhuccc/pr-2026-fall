@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-24 01:23（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp08-backprop-speedups.jbd.json。來源任務 `kp08-highlight-voiceover`（確認：使用者 2026-11-24 於對話指示「繼續逐一處理KP08-KP10，不必經我確認即可配音」（延續 KP07「完成後取代網站上的 KP07」的做法））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-24 01:22（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp10-network-size.jbd.json。來源任務 `kp10-highlight-voiceover`（確認：使用者 2026-11-24 於對話指示「繼續逐一處理KP08-KP10，不必經我確認即可配音」（延續 KP07「完成後取代網站上的 KP07」的做法））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-24 00:44（Asia/Taipei）— 第五週 KP07〈反向傳播的演算法〉中文簡報換成新製作的資訊圖表高光配音版（jbd-maker week05-v19 infographic-maker 1.6.0 九頁；week05-v20 infographic-highlight-voiceover 1.6.1，231 步、女聲約 19.8 分鐘）；老師 2026-11-23 於對話指示「確認，開始配音，完成後取代網站上的 KP07」。檔名不變；英文版 -en 未更動；投影片下載頁的 KP07 影片仍是舊版簡報錄製。
