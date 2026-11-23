@@ -114,14 +114,14 @@ title = "最大後驗估計（MAP）"
 [[video]]
 deck = "lec05-kp01-xor"
 title = "KP01 XOR 與一條線的極限"
-url = "https://public.ndhuccc.workers.dev/01504e5d9cca4cfaa00ce9b7eee10bd4.mp4"
-download_url = "https://public.ndhuccc.workers.dev/e06176018826495881b7deb428fe59ac.mp4"
+url = "https://public.ndhuccc.workers.dev/4751a682b5a640148f884f584c42488f.mp4"
+download_url = "https://public.ndhuccc.workers.dev/ca07df62141b477d91b85eb5b64b9322.mp4"
 
 [[video]]
 deck = "lec05-kp02-two-layer-perceptron"
 title = "KP02 兩層感知器"
-url = "https://public.ndhuccc.workers.dev/f21146f813f846bcbc9f97b322690370.mp4"
-download_url = "https://public.ndhuccc.workers.dev/f1baad63b26644128b0f01f41f2a5e8f.mp4"
+url = "https://public.ndhuccc.workers.dev/49b6118790e24de6b7310cbb2162316d.mp4"
+download_url = "https://public.ndhuccc.workers.dev/3e3b4bc4967d44fdbc664a7eda45c143.mp4"
 
 [[video]]
 deck = "lec05-kp03-polyhedral-codes"
