@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-24 01:36（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp09-cost-functions.jbd.json。來源任務 `kp09-highlight-voiceover`（確認：使用者 2026-11-24 於對話指示「繼續逐一處理KP08-KP10，不必經我確認即可配音」（延續 KP07「完成後取代網站上的 KP07」的做法））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-24 01:23（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp08-backprop-speedups.jbd.json。來源任務 `kp08-highlight-voiceover`（確認：使用者 2026-11-24 於對話指示「繼續逐一處理KP08-KP10，不必經我確認即可配音」（延續 KP07「完成後取代網站上的 KP07」的做法））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-24 01:22（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 1 份成品配送到本課程：slides/lec05-kp10-network-size.jbd.json。來源任務 `kp10-highlight-voiceover`（確認：使用者 2026-11-24 於對話指示「繼續逐一處理KP08-KP10，不必經我確認即可配音」（延續 KP07「完成後取代網站上的 KP07」的做法））；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
