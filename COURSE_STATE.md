@@ -53,6 +53,8 @@
 
 ## 決策與異動紀錄
 
+- 2026-11-23 21:17（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 8 份成品配送到本課程：slides/lec14-kp01-kmeans.jbd.json、slides/lec14-kp02-kmedoids.jbd.json、slides/lec14-kp03-hierarchical-gas.jbd.json、slides/lec14-kp04-linkage.jbd.json、slides/lec14-kp05-monotonicity-graph.jbd.json、slides/lec14-kp06-cophenetic-divisive.jbd.json、slides/lec14-kp07-cut-level.jbd.json、slides/lec14-kp08-large-data-hierarchical.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
+
 - 2026-11-23 21:17（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：slides/lec13-kp01-hidden-states.jbd.json、slides/lec13-kp02-hmm-definition.jbd.json、slides/lec13-kp03-forward-backward.jbd.json、slides/lec13-kp04-best-path.jbd.json、slides/lec13-kp05-baum-welch.jbd.json、slides/lec13-kp06-viterbi-reestimation.jbd.json、slides/lec13-kp07-continuous-hmm.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
 
 - 2026-11-23 21:17（Asia/Taipei）— 依「jbd-maker 中央工廠＋配送」流程，將 7 份成品配送到本課程：slides/lec12-kp01-context.jbd.json、slides/lec12-kp02-sequence-bayes.jbd.json、slides/lec12-kp03-markov-chain.jbd.json、slides/lec12-kp04-viterbi.jbd.json、slides/lec12-kp05-viterbi-example.jbd.json、slides/lec12-kp06-equalization-isi.jbd.json、slides/lec12-kp07-state-fsm.jbd.json。來源任務 `zindex-fix`（確認：使用者 2026-11-23 於對話指示「其餘 110 份也批次修好」並換上課程網站）；本機複製完成，尚未提交／推送時請以 `deliver_to_course.py verify` 查實際狀態。
