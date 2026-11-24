@@ -4,6 +4,8 @@
 >
 > 圖型識別｜特徵選擇單元
 
+[簡報閱讀與下載](../slides/lec07-kp05-separability-fdr.jbd.json)
+
 ## 學習目標
 
 - 算出一維兩類的 Fisher 判別比 FDR，並說出分子與分母各代表什麼。
